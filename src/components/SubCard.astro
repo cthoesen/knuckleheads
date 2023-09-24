@@ -11,10 +11,10 @@ const { href, title, body } = Astro.props;
 
 <li class="link-subcard">
 	<a href={href}>
-		<h2>
+		<h4>
 			{title}
 			<span>&rarr;</span>
-		</h2>
+		</h4>
 		<p>
 			{body}
 		</p>
@@ -43,7 +43,7 @@ const { href, title, body } = Astro.props;
 		background-color: #23262d;
 		opacity: 0.8;
 	}
-	h2 {
+	h4 {
 		margin: 0;
 		font-size: 1.15rem;
 		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
@@ -56,7 +56,7 @@ const { href, title, body } = Astro.props;
 		background-position: 0;
 		background-image: var(--accent-gradient);
 	}
-	.link-subcard:is(:hover, :focus-within) h2 {
+	.link-subcard:is(:hover, :focus-within) h4 {
 		color: rgb(var(--accent-light));
 	}
 </style>

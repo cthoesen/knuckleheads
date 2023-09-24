@@ -1,4 +1,5 @@
 ---
+import '../styles/global.css';
 import type { HTMLAttributes } from 'astro/types';
 
 type Props = HTMLAttributes<'a'>;
@@ -12,13 +13,17 @@ const isActive = href === pathname || href === pathname.replace(/\/$/, '');
 <a href={href} class:list={[className, { active: isActive }]} {...props}>
 	<slot />
 </a>
-<style>
+<!--<style>
 	a {
 		display: inline-block;
 		text-decoration: none;
 	}
 	a.active {
 		font-weight: bolder;
-		text-decoration: underline;
+		text-decoration: green wavy underline;
 	}
-</style>
+	a:hover {
+		font-weight: bolder;
+		text-decoration: blueviolet wavy underline;
+	}
+</style>-->
