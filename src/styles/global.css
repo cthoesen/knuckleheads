@@ -104,7 +104,12 @@ h3 a.active {
     gap: 2rem;
     padding: 0;
 }
-
+.link-subcard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12ch, 1fr));
+    gap: 2rem;
+    padding: 0;
+}
 /*Below is used to style the Header component on each page*/
 header {
 	color: #dbbdff;
