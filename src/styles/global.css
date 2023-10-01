@@ -1,4 +1,6 @@
 :root {
+    --footer-text: 40, 15, 85;
+    --social-icons: 125, 0, 255;
     --accent: 136, 58, 234;
     --accent-light: 224, 204, 250;
     --accent-dark: 49, 10, 101;
@@ -110,6 +112,16 @@ header {
 	padding: 0 1em;
     background: rgb(35, 38, 45);
 	box-shadow: 0 2px 8px rgba(var(--black), 5%);
+    font-family: 'Rock Salt', sans-serif;
+}
+/*Below is used to style the Footer component on each page*/
+footer {
+    padding: 2em 1em 6em 1em;
+    background: linear-gradient(var(--gray-gradient)) no-repeat;
+    /*color: rgb(var(--gray));*/
+    color: rgb(var(--footer-text));
+    text-align: center;
+    font-family: 'Rock Salt', sans-serif;
 }
 .sr-only {
 	border: 0;
@@ -143,6 +155,19 @@ nav a.active {
     text-decoration: none;
     border-bottom-color: var(--accent);
 }
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+.social-links a {
+    text-decoration: none;
+    color: rgb(var(--social-icons));
+}
+.social-links a:hover {
+    color: rgb(var(--gray-dark));
+}
 .social-links,
 .social-links a {
     display: flex;
@@ -164,7 +189,7 @@ a.active {
 }
 a:hover {
     font-weight: bolder;
-    text-decoration: blueviolet wavy underline;
+    text-decoration: blueviolet overline wavy;
 }
 /*Below is used for body section of 'Cards' on the homepage*/
 .card {
