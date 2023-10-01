@@ -40,11 +40,11 @@ main {
 .astro-a {
     position: absolute;
     top: -32px;
-    left: 50%;
-    transform: translatex(-50%);
-    width: 220px;
-    height: auto;
-    z-index: -1;
+	left: 50%;
+	transform: translatex(-50%);
+	width: 400px;
+	height: 550px;
+	z-index: -1;
 }
 h1 {
     font-size: 4rem;
