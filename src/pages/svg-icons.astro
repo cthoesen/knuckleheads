@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 import Layout from '../layouts/Layout.astro';
-import SubCard from '../components/SubCard.astro';
+import IconCard from '../components/IconCard.astro';
 ---
 
 <Layout title="Knuckleheads SVG Icons">
@@ -45,23 +45,38 @@ import SubCard from '../components/SubCard.astro';
 			This page contains icons and <code>/svgs</code> for use on <strong>MFL</strong> sites.<br />
 			
 		</p>
-		<ul role="list" class="link-subcard-grid">
-			<SubCard
-				href="/svg-icons/SVGSprites.svg"
-				title="SVG Sprite Sheet"
-				body=""
-			/>
-			<SubCard
+		<ul role="list" class="link-iconcard-grid" >
+			<IconCard
 				href="/svg-icons/Icon-Touchdown.svg"
-				title="Touchdown Icon"
-				body=""
+				title="Touchdown Icon"			
+				
 			/>
-			<SubCard
-				href="/svg-icons/Icon-Doctor.svg"
-				title="Doctor Icon"
-				body=""
+			<IconCard
+				href="/svg-icons/Icon-Lineup.svg"
+				title="Lineup Icon"			
+				
 			/>
-			
+			<IconCard
+				href="/svg-icons/Icon-Draft-KDL.svg"
+				title="KDL Draft Icon"				
+				
+			/>
+			<IconCard
+			    href="/svg-icons/Icon-Draft-KKL.svg"
+			    title="KKL Draft Icon"			
+				
+			/>
+			<IconCard
+			    href="/svg-icons/Icon-Draft-MMH.svg"
+			    title="MMH Draft Icon"
+							
+				
+			/>
+			<IconCard
+				href="/svg-icons/Icon-Auction.svg"
+				title="Doctor Icon"				
+				
+			/>
 		</ul>
 	</main>
 </Layout>

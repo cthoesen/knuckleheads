@@ -4,13 +4,14 @@ interface Props {
 	title: string;
 	body: string;
 	href: string;
+	
 }
 
-const { href, title, body } = Astro.props;
+const { href, title, body, } = Astro.props;
 ---
 
 <li class="link-subcard">
-	<a href={href}>
+	<a href={href} onclick="window.open(this)"; target="_blank"; >
 		<h4>
 			{title}
 			<span>&rarr;</span>

@@ -1,0 +1,23 @@
+---
+import '../styles/global.css';
+interface Props {
+	title: string;
+	href: string;
+	
+}
+
+const { href, title, } = Astro.props;
+---
+
+<li class="link-iconcard">
+	<!--<a href={href} onclick="window.open(this)"; target="_blank"; >-->
+		<img src={href} alt={title} class="icon">
+		<!--<h4>
+			{title}
+			<span>&rarr;</span>
+		</h4>
+		<p>
+			{body}
+		</p>
+	</a>-->
+</li>
