@@ -2,12 +2,11 @@
 import '../styles/global.css';
 interface Props {
 	title: string;
-	body: string;
 	href: string;
 	
 }
 
-const { href, title, body, } = Astro.props;
+const { href, title } = Astro.props;
 ---
 
 <li class="link-subcard">
@@ -16,8 +15,6 @@ const { href, title, body, } = Astro.props;
 			{title}
 			<span>&rarr;</span>
 		</h4>
-		<p>
-			{body}
-		</p>
+		
 	</a>
 </li>
