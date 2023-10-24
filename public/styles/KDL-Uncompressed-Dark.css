@@ -215,7 +215,7 @@ body {
   overflow-y: scroll
 }
 
-@media only screen and (max-width: 48em){
+@media only screen and (max-width: 48rem){
   body{
   --site-bg-image: #4d4a4a url("https://knuckleheads.netlify.app/images/KDL-Mobile-Background-Dark.jpg") no-repeat
   fixed center center;
@@ -232,7 +232,7 @@ body {
   background-size: cover; /* Resize the background image to cover the entire container */
   z-index: -1;
   filter: brightness(0.8) blur(0.85px);
-  /*overflow-y: scroll;*/
+  overflow-y: scroll;
   background-attachment: no-repeat fixed;
   }}
 
