@@ -220,7 +220,8 @@ body {
   --site-bg-image: #4d4a4a url("https://knuckleheads.netlify.app/images/KDL-Mobile-Background-Dark.jpg");
   background-repeat: no-repeat!important;
   background-attachment: fixed;
-  background-position: center;
+  background-position: fixed;
+  z-index: -1;
   width: 100%;
   color: #eee;
   font-size: 13px;
