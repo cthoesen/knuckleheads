@@ -217,7 +217,7 @@ body {
 
 @media only screen and (max-width: 48em){
   body{
-  --site-bg-image: #4d4a4a url("https://knuckleheads.netlify.app/images/KDL-Mobile-Background-Dark.jpg") no-repeat scroll 0 0;
+  --site-bg-image: #4d4a4a url("https://knuckleheads.netlify.app/images/KDL-Mobile-Background-Dark.jpg");
   z-index: -1;
   position: fixed;
   top: 0;
