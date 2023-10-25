@@ -942,15 +942,15 @@ label[for='sub100']+#homepagetabs {
     padding-right: 0.188rem
   }
 }
-
+/*Below defines the icon from Font Awesome that appears next to Home on the homepage tabs section*/
 #tabmenu-wrap li#tab0 a:before,
 #tabmenu-wrap #tab_title.tab0:before {
-  content: "\f7ae"
+  content: "\e066"
 }
 
 #tabmenu-wrap li#tab1 a:before,
 #tabmenu-wrap #tab_title.tab1:before {
-  content: "\f085"
+  content: "\f44f"
 }
 
 #tabmenu-wrap li#tab2 a:before,
