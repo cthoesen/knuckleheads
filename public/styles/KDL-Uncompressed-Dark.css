@@ -214,7 +214,7 @@ body {
 
 @media only screen and (max-width: 48em){
   body{
-  background-color: none;
+    --site-bg-image: rgb(29, 29, 228);
     
   }}
 
@@ -8978,7 +8978,7 @@ div.sub-content.editable .insertIcons {
   .myfantasyleague_menu {
     height: 0;
     padding-top: 2.813rem;
-    position: relative
+    position: relative;
   }
 
   .myfantasyleague_menu>label,
