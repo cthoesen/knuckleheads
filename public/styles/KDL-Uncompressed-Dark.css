@@ -218,7 +218,7 @@ body {
 @media only screen and (min-width: 48em){
   body{
   background-image: #4d4a4a url("https://knuckleheads.netlify.app/images/KDL-Mobile-Background-Dark2.jpg") ;
-  background-position: top center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: fixed;
@@ -226,7 +226,7 @@ body {
   width: 100vw;  
   }}
 
-  @media only screen and (max-width: 64em){
+ /* @media only screen and (max-width: 64em){
     body{
     --site-bg-image: #4d4a4a url("https://knuckleheads.netlify.app/images/KDL-Mobile-Background-Dark.jpg") no-repeat
     fixed center center;
@@ -242,8 +242,8 @@ body {
   -o-background-size: cover;
   background-size: cover; /* Resize the background image to cover the entire container */
   /*filter: brightness(0.9) blur(0.2px);*/
-  overflow-y: scroll
-    }}
+  /*overflow-y: scroll;*/
+    /*}}*/
 
 body a,
 body a:link,
