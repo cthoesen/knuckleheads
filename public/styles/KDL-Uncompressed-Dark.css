@@ -1,5 +1,6 @@
 @import url(https://mflscripts.com/font-awesome/css/all.min.css);
 @import url(https://mflscripts.com/font-awesome/css/v4-shims.min.css);
+@import url(https://knuckleheads.netlify.app/styles/font-awesome-animation-min.css);
 
 /* old font awesome 4.7 file
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
@@ -947,7 +948,7 @@ label[for='sub100']+#homepagetabs {
 #tabmenu-wrap #tab_title.tab0:before {
   content: "\e066"
 }
-
+/*Below defines the icon from Font Awesome that appears next to My Team on the homepage tabs section*/
 #tabmenu-wrap li#tab1 a:before,
 #tabmenu-wrap #tab_title.tab1:before {
   content: "\f44f"
