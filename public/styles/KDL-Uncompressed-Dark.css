@@ -945,7 +945,7 @@ label[for='sub100']+#homepagetabs {
 
 #tabmenu-wrap li#tab0 a:before,
 #tabmenu-wrap #tab_title.tab0:before {
-  content: "\f7ae\f7ae"
+  content: "\f7ae"
 }
 
 #tabmenu-wrap li#tab1 a:before,
