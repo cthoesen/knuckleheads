@@ -215,11 +215,7 @@ body {
 @media only screen and (max-width: 48em){
   body{
   background-color: #4d4a4a ;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: 100vw auto;
-  background-attachment: scroll;
-  
+    
   }}
 
  /* @media only screen and (max-width: 64em){
