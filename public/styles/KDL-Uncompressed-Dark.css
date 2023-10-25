@@ -198,7 +198,7 @@ input[type="radio"] {
 }
 
 body {
-  --site-bg-image: #4d4a4a url("https://knuckleheads.netlify.app/images/KDL-Background-Dark.jpg") no-repeat
+  --site-bg-image: url("https://knuckleheads.netlify.app/images/KDL-Background-Dark.jpg") no-repeat
     fixed center center;
   width: 100%;
   color: #eee;
