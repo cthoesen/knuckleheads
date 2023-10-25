@@ -597,9 +597,7 @@
 .faa-parent.animated-hover:hover > .faa-ring {
   -webkit-animation: ring 2s ease infinite;
           animation: ring 2s ease infinite;
-  transform-origin-x: 50%;
-  transform-origin-y: 0px;
-  transform-origin-z: initial;
+  transform-origin: 50% 0px initial;  
 }
 
 .faa-ring.animated.faa-fast,
@@ -858,9 +856,7 @@
 .faa-parent.animated-hover:hover > .faa-wrench {
   -webkit-animation: wrench 2.5s ease infinite;
           animation: wrench 2.5s ease infinite;
-  transform-origin-x: 90%;
-  transform-origin-y: 35%;
-  transform-origin-z: initial;
+  transform-origin: 90% 35% initial;
 }
 
 .faa-wrench.animated.faa-fast,
