@@ -221,7 +221,7 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100vw auto;
-  background-attachment: fixed;
+  background-attachment: scroll;
   
   }}
 
