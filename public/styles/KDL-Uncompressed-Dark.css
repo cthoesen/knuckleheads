@@ -20,6 +20,11 @@ Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-
   --accent-dark: #B52F00;
   --bg-opacity: rgba(181, 47, 0, .05);
   --bg-opacity-brighter: rgba(181, 47, 0, .2);
+  --fa-style-family: "Font Awesome 6 Pro";
+  --fa-style: 400;
+  --fa-border-color: red;
+  --fa-primary-color: green;
+  --fa-secondary-color: red;
 }
 
 .myfantasyleague_menu ul li.mfl-icon {
@@ -135,12 +140,6 @@ body.bettis {
   --accent-darkest: #351113;
   --bg-opacity: rgba(5, 159, 0, 0.2);
   --bg-opacity-brighter: rgba(5, 198, 21, 0.4);
-}
-
-.theme-ravenclaw {
-  --fa-secondary-opacity: 1.0;
-  --fa-primary-color: rgb(4, 56, 161);
-  --fa-secondary-color: rgb(108, 108, 108);
 }
 
 .b_name {
