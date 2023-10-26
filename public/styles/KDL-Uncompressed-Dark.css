@@ -140,9 +140,9 @@ body.bettis {
 .fa-hockey-mask {
   --fa-style-family: "Font Awesome 6 Pro";
   --fa-style: 400;
-  --fa-border-color: red;
-  --fa-primary-color: green;
-  --fa-secondary-color: red;
+  border-color: red;
+  color: green;
+  color-scheme: blue;
 }
 
 .b_name {
