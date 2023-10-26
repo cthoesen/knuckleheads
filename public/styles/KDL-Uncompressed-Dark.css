@@ -137,6 +137,12 @@ body.bettis {
   --bg-opacity-brighter: rgba(5, 198, 21, 0.4);
 }
 
+.theme-ravenclaw {
+  --fa-secondary-opacity: 1.0;
+  --fa-primary-color: rgb(4, 56, 161);
+  --fa-secondary-color: rgb(108, 108, 108);
+}
+
 .b_name {
   text-transform: uppercase;
   font-weight: 600;
