@@ -508,7 +508,7 @@ body.chat_popup .banner-container-wrap {
 .icon-bar-full a:hover i:before,
 .icon-bar i:after,
 .icon-bar a:hover i:before {
-  color: #12d34c;
+  color: orange;
   opacity: 1;
 }
 
