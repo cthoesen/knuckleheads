@@ -19,7 +19,8 @@ Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-
   --accent-light: #FA5C25;
   --accent-dark: #B52F00;
   --bg-opacity: rgba(181, 47, 0, .05);
-  --bg-opacity-brighter: rgba(181, 47, 0, .2);  
+  --bg-opacity-brighter: rgba(181, 47, 0, .2);
+  --holiday-color: #EB6123;
 }
 
 .myfantasyleague_menu ul li.mfl-icon {
@@ -508,7 +509,7 @@ body.chat_popup .banner-container-wrap {
 .icon-bar-full a:hover i:before,
 .icon-bar i:after,
 .icon-bar a:hover i:before {
-  color: orange;
+  color: var(--holiday-color, #dddddd);
   opacity: 1;
 }
 
