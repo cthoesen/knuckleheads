@@ -20,7 +20,7 @@ Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-
   --accent-dark: #B52F00;
   --bg-opacity: rgba(181, 47, 0, .05);
   --bg-opacity-brighter: rgba(181, 47, 0, .2);
-  --holiday-color: #F75F1C;
+  --holiday-color: #FC4C02;
 }
 
 .myfantasyleague_menu ul li.mfl-icon {
