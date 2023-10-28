@@ -20,7 +20,7 @@ Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-
   --accent-dark: #B52F00;
   --bg-opacity: rgba(181, 47, 0, .05);
   --bg-opacity-brighter: rgba(181, 47, 0, .2);
-  --holiday-color: #E66B09;
+  --holiday-color: #F5761A;
 }
 
 .myfantasyleague_menu ul li.mfl-icon {
@@ -71,11 +71,19 @@ body.bettis {
 }
 
 .theme-dk-gold {
-  --accent: #b2784a;
+  --accent: #ffd700;
   --accent-light: #B8835A;
   --accent-dark: #704D31;
   --bg-opacity: rgba(178, 120, 74, .05);
   --bg-opacity-brighter: rgba(178, 120, 74, .2)
+}
+
+.theme-dk-gray {
+  --accent: #777;
+  --accent-light: #ccc;
+  --accent-dark: #222;
+  --bg-opacity: rgba(45, 45, 45, .2);
+  --bg-opacity-brighter: rgba(45, 45, 45, .4);
 }
 
 .theme-dk-purple {
