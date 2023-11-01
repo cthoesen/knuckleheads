@@ -13,11 +13,11 @@ Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-
 */
 
 :root {
-  --site-bg-image: #111;
+  --site-bg-image: #000000 url("https://knuckleheads.netlify.app/images/KDL-Background-Dark.jpg") no-repeat fixed center center;
   --site-bg-image-one: #141414;
-  --accent: #ff4200;
-  --accent-light: #FA5C25;
-  --accent-dark: #B52F00;
+  --accent: #0077ff;
+  --accent-light: #25befa;
+  --accent-dark: #0054b5;
   --bg-opacity: rgba(181, 47, 0, .05);
   --bg-opacity-brighter: rgba(181, 47, 0, .2);
   --holiday-color: #F5761A;
@@ -78,7 +78,7 @@ body.bettis {
   --bg-opacity-brighter: rgba(178, 120, 74, .2)
 }
 
-.theme-dk-grey {
+.theme-dk-gray {
   --accent: #777;
   --accent-light: #ccc;
   --accent-dark: #222;
@@ -118,12 +118,32 @@ body.bettis {
   --bg-opacity-brighter: rgba(7, 56, 179, .2)
 }
 
-.theme-dk-green {
+.theme-dk-aqua {
   --accent: #008c9f;
   --accent-light: #05afc6;
   --accent-dark: #004953;
   --bg-opacity: rgba(0, 140, 159, .2);
   --bg-opacity-brighter: rgba(5, 175, 198, .4);
+}
+
+.theme-dk-lime {
+  --accent: #059f00;
+  --accent-light: #05c635;
+  --accent-dark: #005300;
+  --accent-darker: #064a0c;
+  --accent-darkest: #113511;
+  --bg-opacity: rgba(5, 159, 0, 0.2);
+  --bg-opacity-brighter: rgba(5, 198, 21, 0.4);
+}
+
+.theme-dk-rasta {
+  --accent: #078930;
+  --accent-light: #FCDD09;
+  --accent-dark: #DA121A;
+  --accent-darker: #4a060c;
+  --accent-darkest: #351113;
+  --bg-opacity: rgba(5, 159, 0, 0.2);
+  --bg-opacity-brighter: rgba(5, 198, 21, 0.4);
 }
 
 .b_name {
@@ -159,7 +179,7 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
-  min-height: 100%
+  min-height: 100%;
 }
 
 * {
@@ -184,13 +204,13 @@ input[type="radio"] {
 *::after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
-  box-sizing: inherit
+  box-sizing: inherit;
 }
 
 body {
   color: #eee;
   -webkit-font-smoothing: antialiased !important;
-  overflow-y: scroll
+  overflow-y: scroll;
 }
 
 body a,
