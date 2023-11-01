@@ -13,7 +13,7 @@ Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-
 */
 
 :root {
-  --site-bg-image: #000000 url("https://knuckleheads.netlify.app/images/KDL-Background-Dark.jpg") no-repeat fixed center center;
+  --site-bg-image: #111;
   --site-bg-image-one: #141414;
   --accent: #0077ff;
   --accent-light: #25befa;
@@ -208,6 +208,7 @@ input[type="radio"] {
 }
 
 body {
+  background-image: #000000 url("https://knuckleheads.netlify.app/images/KDL-Background-Dark.jpg") no-repeat fixed center center;
   color: #eee;
   -webkit-font-smoothing: antialiased !important;
   overflow-y: scroll;
