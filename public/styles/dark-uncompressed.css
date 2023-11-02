@@ -550,7 +550,7 @@ body.chat_popup .banner-container-wrap {
 
 .banner-container-wrap-full {
   width: 100%;
-  max-width: 71.75rem;
+  max-width: 100%; /*changed from 71.75rem to expand full width of banner*/
   margin: 0 auto;
   display: flex;
   align-items: center;
