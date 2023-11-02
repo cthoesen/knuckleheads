@@ -15,23 +15,22 @@ Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-
 :root {
   --site-bg-image: #111;
   --site-bg-image-one: #141414;
-  --accent: #0077ff;
-  --accent-light: #25befa;
-  --accent-dark: #0054b5;
+  --accent: #ff4200;
+  --accent-light: #FA5C25;
+  --accent-dark: #B52F00;
   --bg-opacity: rgba(181, 47, 0, .05);
   --bg-opacity-brighter: rgba(181, 47, 0, .2);
-  --holiday-color: #F5761A;
 }
 
 .myfantasyleague_menu ul li.mfl-icon {
-  display: none;
+  display: none
 }
 
 .myfantasyleague_menu li.mfl-icon+li a.no-sub[href*="home"] {
   visibility: hidden;
   position: relative;
   font-size: 0rem;
-  width: 2.125rem;
+  width: 2.125rem
 }
 
 .myfantasyleague_menu li.mfl-icon+li a.no-sub[href*="home"]:after {
@@ -78,7 +77,7 @@ body.bettis {
   --bg-opacity-brighter: rgba(178, 120, 74, .2)
 }
 
-.theme-dk-gray {
+.theme-dk-grey {
   --accent: #777;
   --accent-light: #ccc;
   --accent-dark: #222;
@@ -118,32 +117,12 @@ body.bettis {
   --bg-opacity-brighter: rgba(7, 56, 179, .2)
 }
 
-.theme-dk-aqua {
+.theme-dk-green {
   --accent: #008c9f;
   --accent-light: #05afc6;
   --accent-dark: #004953;
   --bg-opacity: rgba(0, 140, 159, .2);
   --bg-opacity-brighter: rgba(5, 175, 198, .4);
-}
-
-.theme-dk-lime {
-  --accent: #059f00;
-  --accent-light: #05c635;
-  --accent-dark: #005300;
-  --accent-darker: #064a0c;
-  --accent-darkest: #113511;
-  --bg-opacity: rgba(5, 159, 0, 0.2);
-  --bg-opacity-brighter: rgba(5, 198, 21, 0.4);
-}
-
-.theme-dk-rasta {
-  --accent: #078930;
-  --accent-light: #FCDD09;
-  --accent-dark: #DA121A;
-  --accent-darker: #4a060c;
-  --accent-darkest: #351113;
-  --bg-opacity: rgba(5, 159, 0, 0.2);
-  --bg-opacity-brighter: rgba(5, 198, 21, 0.4);
 }
 
 .b_name {
@@ -179,7 +158,7 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
-  min-height: 100%;
+  min-height: 100%
 }
 
 * {
@@ -204,15 +183,13 @@ input[type="radio"] {
 *::after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
-  box-sizing: inherit;
+  box-sizing: inherit
 }
 
 body {
-  /*--site-bg-image:#000000 url("https://knuckleheads.netlify.app/images/KDL-Background-Dark.jpg") no-repeat fixed center center;*/
   color: #eee;
   -webkit-font-smoothing: antialiased !important;
-  filter: brightness(0.9) blur(0.1px);
-  overflow-y: scroll;
+  overflow-y: scroll
 }
 
 body a,
@@ -260,12 +237,12 @@ body,
   background-attachment: fixed
 }
 
-/*.theme-dk-gray body {
+.theme-dk-grey body {
   background: #222 !important;
   background-image: url(https://www48.myfantasyleague.com/skins17/Onyx/bg_top.jpg), url(https://www48.myfantasyleague.com/skins17/Onyx/bg_bottom.jpg) !important;
   background-repeat: repeat-x, repeat-x !important;
   background-position: center top, center bottom !important;
-}*/
+}
 
 #loadingchatdata,
 div[id*="usmg_ad"] {
@@ -357,12 +334,12 @@ body.chat_popup .banner-container-wrap {
 .banner-rightside {
   margin: 0.313rem 0;
   overflow: auto;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch
 }
 
 .banner-icon {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: middle
 }
 
 .bannericon {
@@ -437,8 +414,6 @@ body.chat_popup .banner-container-wrap {
 
 .svg-icon:hover,
 .svg-iconlink:hover .svg-icon {
-  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
-  transition: all 3s ease;
   fill: #ddd;
   color: var(--accent-light, #FA5C25)
 }
@@ -450,30 +425,30 @@ body.chat_popup .banner-container-wrap {
 
 .icon-bar,
 .icon-bar-full {
-  white-space: nowrap;
+  white-space: nowrap
 }
 
 .svg-iconlink {
   display: inline-block;
   text-decoration: none;
   margin-right: 0.5rem;
-  text-align: center;
+  text-align: center
 }
 
 .svg-iconlink:last-of-type {
-  margin-right: 0;
+  margin-right: 0
 }
 
 .svg-icon:hover,
 .svg-iconlink:hover .svg-icon {
-  cursor: pointer;
+  cursor: pointer
 }
 
 .svg-text {
   text-align: center;
   padding: 0.313rem;
   text-transform: uppercase;
-  font-size: 0.688rem;
+  font-size: 0.688rem
 }
 
 .icon-bar-full .svg-icon,
@@ -495,12 +470,11 @@ body.chat_popup .banner-container-wrap {
   color: var(--accent, #ff4200);
 }
 
-/*color selected below defines main color on Font Awesome icons within icon bar*/
 .icon-bar-full i:after,
 .icon-bar-full a:hover i:before,
 .icon-bar i:after,
 .icon-bar a:hover i:before {
-  color: var(--holiday-color, #dddddd);
+  color: #ddd;
   opacity: 1;
 }
 
@@ -546,8 +520,6 @@ body.chat_popup .banner-container-wrap {
 .banner-container-wrap-full {
   width: 100%;
   max-width: 71.75rem;
-  /*padding: 4px 1px 6px 1px;
-  padding: 0.375rem 0.063rem 0.375rem 0.063rem;*/
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -574,7 +546,6 @@ body.chat_popup .banner-container-wrap {
   margin-top: 0.625rem;
 }
 
-/*defines the icon bar container*/
 .icon-bar-full {
   display: flex;
   justify-content: space-between;
@@ -592,15 +563,15 @@ body.chat_popup .banner-container-wrap {
 
 .standings-settings_overlay {
   background-color: #000;
-  opacity: .7;
+  opacity: .7
 }
 
 #standings-settings input+label:before {
-  color: red;
+  color: red
 }
 
 #standings-settings input:checked+label:before {
-  color: #90ee90;
+  color: #90ee90
 }
 
 #standings-settings #fname_checkbox:checked+label:before,
@@ -609,25 +580,25 @@ body.chat_popup .banner-container-wrap {
 #standings-settings #ficon_checkbox+label:before,
 #standings-settings #ficonname_checkbox:checked+label:before,
 #standings-settings #ficonname_checkbox+label:before {
-  color: red;
+  color: red
 }
 
 .standings-cog {
-  font-size: 0.938rem;
+  font-size: 0.938rem
 }
 
 .MFLSkinSelection i {
   padding-right: 0.375rem;
   font-size: 1rem;
   border: none;
-  cursor: pointer;
+  cursor: pointer
 }
 
 .MFLSkinSelectionbtn {
   color: #ccc;
   padding: 0.625rem;
   border: none;
-  cursor: pointer;
+  cursor: pointer
 }
 
 .MFLSkinSelection {
@@ -643,14 +614,14 @@ body.chat_popup .banner-container-wrap {
   min-width: 8.125rem;
   box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
-  margin-top: 0.25rem;
+  margin-top: 0.25rem
 }
 
 .MFLSkinSelection-content a {
   color: black;
   padding: 0.375rem 0.25rem;
   text-decoration: none;
-  display: block;
+  display: block
 }
 
 .MFLSkinSelection-content a:hover {
@@ -658,7 +629,7 @@ body.chat_popup .banner-container-wrap {
 }
 
 .show {
-  display: block;
+  display: block
 }
 
 .mflModal-content {
@@ -679,7 +650,7 @@ body.chat_popup .banner-container-wrap {
   border: 0;
   border-radius: 0.188rem;
   color: #fff;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch
 }
 
 .mflModal-content .mobile-wrap {
@@ -732,39 +703,39 @@ body.chat_popup .banner-container-wrap {
 .myfantasyleague_menu,
 .myfantasyleague_menu ul,
 .myfantasyleague_menu ul li ul {
-  background: none;
+  background: none
 }
 
 .myfantasyleague_menu ul ul li,
 .myfantasyleague_menu li.player-search a:hover {
-  background: rgba(45, 45, 45, .4);
+  background: rgba(45, 45, 45, .4)
 }
 
 .myfantasyleague_menu>ul>li.has-sub>a:after {
-  border-top-color: #ccc;
+  border-top-color: #ccc
 }
 
 .myfantasyleague_menu ul ul>li.has-sub>a:after {
-  border-left-color: #ccc;
+  border-left-color: #ccc
 }
 
 .myfantasyleague_menu>ul>li.has-sub:hover>a:after {
-  border-top-color: var(--accent, #ff4200);
+  border-top-color: var(--accent, #ff4200)
 }
 
 .myfantasyleague_menu ul ul>li.has-sub:hover>a:after {
-  border-left-color: var(--accent, #ff4200);
+  border-left-color: var(--accent, #ff4200)
 }
 
 .myfantasyleague_menu li.mfl-icon+li:hover a {
-  background: none;
+  background: none
 }
 
 .myfantasyleague_menu ul li a,
 .myfantasyleague_menu ul li:hover ul li a,
 .myfantasyleague_menu ul li ul li:hover ul li a,
 .myfantasyleague_menu i {
-  color: #ccc;
+  color: #ccc
 }
 
 .myfantasyleague_menu ul li:hover a,
@@ -772,32 +743,32 @@ body.chat_popup .banner-container-wrap {
 .myfantasyleague_menu ul li ul li ul li:hover a,
 .myfantasyleague_menu i:hover {
   color: #fff;
-  text-decoration: none;
+  text-decoration: none
 }
 
 .myfantasyleague_menu li:hover>a {
   background: rgba(0, 0, 0, .3);
-  box-shadow: none;
+  box-shadow: none
 }
 
 .myfantasyleague_menu ul li ul li:hover>a {
-  background: rgba(0, 0, 0, .3);
+  background: rgba(0, 0, 0, .3)
 }
 
 .myfantasyleague_menu li.player-search input[type="text"] {
-  color: #000;
+  color: #000
 }
 
 .myfantasyleague_menu li.player-search a:hover {
   color: #ccc;
-  background: none;
+  background: none
 }
 
 li.player-search a input {
   vertical-align: middle;
   padding: 0;
   margin-top: -0.125rem !important;
-  border: 0.063rem solid #111 !important;
+  border: 0.063rem solid #111 !important
 }
 
 .myfantasyleague_menu ul li ul {
@@ -807,12 +778,12 @@ li.player-search a input {
 .myfantasyleague_menu ul ul li a,
 .myfantasyleague_menu ul ul li.has-sub a,
 .myfantasyleague_menu ul ul li.has-sub li:first-of-type {
-  border-color: rgba(0, 0, 0, .4);
+  border-color: rgba(0, 0, 0, .4)
 }
 
 .myfantasyleague_menu ul li:hover>ul {
   top: 2.25rem;
-  z-index: 1;
+  z-index: 1
 }
 
 .myfantasyleague_menu>ul {
@@ -831,7 +802,7 @@ label[for='sub100']+#homepagetabs {
 
 .myfantasyleague_tabmenu #collapseLink i,
 .myfantasyleague_tabmenu #expandLink i {
-  top: 1.438rem !important;
+  top: 1.438rem !important
 }
 
 .myfantasyleague_tabmenu {
@@ -847,7 +818,7 @@ label[for='sub100']+#homepagetabs {
 
 .myfantasyleague_tabmenu #homepagetabs li {
   border-right: 0;
-  border-left: 0.063rem solid rgba(0, 0, 0, .4);
+  border-left: 0.063rem solid rgba(0, 0, 0, .4)
 }
 
 .myfantasyleague_tabmenu #homepagetabs li:first-of-type a,
@@ -858,7 +829,7 @@ label[for='sub100']+#homepagetabs {
 .myfantasyleague_tabmenu #homepagetabs li a,
 #collapseLink i,
 #expandLink i {
-  color: #ccc;
+  color: #ccc
 }
 
 .myfantasyleague_tabmenu #homepagetabs li:hover a,
@@ -868,11 +839,11 @@ label[for='sub100']+#homepagetabs {
 #expandLink:hover {
   color: #fff;
   opacity: 1 !important;
-  text-decoration: none;
+  text-decoration: none
 }
 
 .myfantasyleague_tabmenu #homepagetabs li.currenttab a {
-  color: #fff;
+  color: #fff
 }
 
 .myfantasyleague_tabmenu #homepagetabs li:hover {
@@ -902,11 +873,11 @@ label[for='sub100']+#homepagetabs {
 }
 
 .draft_warning a {
-  color: #000 !important;
+  color: #000 !important
 }
 
 .draft_warning a:hover {
-  color: #222 !important;
+  color: #222 !important
 }
 
 .theme-dk-yellow .draft_warning {
@@ -916,11 +887,11 @@ label[for='sub100']+#homepagetabs {
 }
 
 .theme-dk-yellow .draft_warning a {
-  color: red !important;
+  color: red !important
 }
 
 .theme-dk-yellow .draft_warning a:hover {
-  color: #000 !important;
+  color: #000 !important
 }
 
 @media only screen and (min-width:48em) {
@@ -958,61 +929,54 @@ label[for='sub100']+#homepagetabs {
     font-family: 'Font Awesome 6 Pro';
     width: 1.25rem;
     display: inline-flex;
-    text-indent: 0;
+    text-indent: 0
   }
 
   #tabmenu-wrap #tab_title[class*="tab"]:before {
-    margin-right: 0.125rem;
+    margin-right: 0.125rem
   }
 }
 
 @media only screen and (min-width:48.1em) {
   #tabmenu-wrap li[id*="tab"] a:before {
     font-family: 'Font Awesome 6 Pro';
-    padding-right: 0.188rem;
+    padding-right: 0.188rem
   }
 }
 
-/*Below defines the icon from Font Awesome that appears next to Home on the homepage tabs section*/
 #tabmenu-wrap li#tab0 a:before,
 #tabmenu-wrap #tab_title.tab0:before {
-  content: "\e3b3"
+  content: "\f015"
 }
 
-/*Below defines the icon from Font Awesome that appears next to My Team on the homepage tabs section*/
 #tabmenu-wrap li#tab1 a:before,
 #tabmenu-wrap #tab_title.tab1:before {
-  content: "\e533"
+  content: "\f085"
 }
 
-/*Below defines the icon from Font Awesome that appears next to Reports on the homepage tabs section*/
 #tabmenu-wrap li#tab2 a:before,
 #tabmenu-wrap #tab_title.tab2:before {
-  content: "\f65a"
+  content: "\f080"
 }
 
-/*Below defines the icon from Font Awesome that appears next to Players on the homepage tabs section*/
 #tabmenu-wrap li#tab3 a:before,
 #tabmenu-wrap #tab_title.tab3:before {
-  content: "\f44f"
-}
-
-/*Below defines the icon from Font Awesome that appears next to Latest News on the homepage tabs section*/
-#tabmenu-wrap li#tab4 a:before,
-#tabmenu-wrap #tab_title.tab4:before {
   content: "\f1ea"
 }
 
-/*Below defines the icon from Font Awesome that appears next to Playoffs on the homepage tabs section*/
-#tabmenu-wrap li#tab5 a:before,
-#tabmenu-wrap #tab_title.tab5:before {
-  content: "\f2eb"
+#tabmenu-wrap li#tab4 a:before,
+#tabmenu-wrap #tab_title.tab4:before {
+  content: "\f0c0"
 }
 
-/*Below defines the icon from Font Awesome that appears next to Pools on the homepage tabs section*/
+#tabmenu-wrap li#tab5 a:before,
+#tabmenu-wrap #tab_title.tab5:before {
+  content: "\f0cb"
+}
+
 #tabmenu-wrap li#tab6 a:before,
 #tabmenu-wrap #tab_title.tab6:before {
-  content: "\e3c5"
+  content: "\f0d6"
 }
 
 #myfantasyleague_tabs .myfantasyleague_tabmenu {
@@ -1774,7 +1738,6 @@ input[type="submit"] {
   border: 0;
   -moz-appearance: none;
   -webkit-appearance: none;
-  appearance: none;
   border: 0 !important;
   font-size: 1rem;
 }
@@ -2927,7 +2890,6 @@ footer {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
   justify-content: space-around;
   margin: 0 auto;
   text-align: left;
@@ -3543,7 +3505,6 @@ table#youtubevideo.homepagemodule.report embed,
 .flexslider .slides>li {
   display: none;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
   padding-bottom: 1.25rem
 }
 
@@ -3579,8 +3540,7 @@ html[xmlns] .flexslider .slides {
 
 .flexslider .slides img {
   height: auto;
-  -moz-user-select: none;
-  user-select: none;
+  -moz-user-select: none
 }
 
 .flex-viewport {
@@ -3601,7 +3561,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-direction-nav {
-  height: 0;
+  *height: 0
 }
 
 .flex-direction-nav a {
@@ -3713,7 +3673,7 @@ html[xmlns] .flexslider .slides {
   margin: 0 0.375rem;
   display: inline-block;
   zoom: 1;
-  /*display: inline*/
+  *display: inline
 }
 
 .flex-control-paging li a {
@@ -3763,12 +3723,11 @@ html[xmlns] .flexslider .slides {
   opacity: .7;
   cursor: pointer;
   -moz-user-select: none;
-  user-select: none;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
-  transition: all 1s ease;
+  transition: all 1s ease
 }
 
 .flex-control-thumbs img:hover {
@@ -3997,20 +3956,20 @@ html[xmlns] .flexslider .slides {
 }
 
 #body_options_180 .report th:first-of-type,
-#body_options_122 .report th:first-of-type {
-text-align: center;
-width: 1%;
-white-space: nowrap;
+#body_options_122 .report th:first-of-type,
+text-align:center;
+width:1%;
+white-space:nowrap
 }
 
 #body_options_180 .report .franchiseicon,
 #body_options_122 .report .franchiseicon {
-  max-width: 9.375rem;
+  max-width: 9.375rem
 }
 
 #body_options_06 .withfranchiseicon span,
 #body_options_07 .withfranchiseicon span {
-  font-size: 0;
+  font-size: 0
 }
 
 #body_options_112 .inputlabel {
@@ -4479,11 +4438,11 @@ div.mobile-wrap:empty {
 }
 
 .playoff-seeding-wrap #app3_fixedtipdiv {
-  width: 50% !important;
+  width: 50% !important
 }
 
 #playoffTable td i {
-  color: var(--accent, #ff4200);
+  color: var(--accent, #ff4200)
 }
 
 .franchise-icon {
@@ -4492,7 +4451,7 @@ div.mobile-wrap:empty {
 
 .playoff-report-modal-content {
   background: var(--site-bg-image, #111);
-  box-shadow: 0 0 1.563rem rgba(0, 0, 0, 1);
+  box-shadow 0 0 1.563rem rgba(0, 0, 0, 1)
 }
 
 .playoff-report-modal-header .close {
@@ -4510,7 +4469,7 @@ div.mobile-wrap:empty {
   height: 1.375rem;
   width: 1.375rem;
   line-height: 1.4;
-  font-size: 0.813rem;
+  font-size: 0.813rem
 }
 
 .playoff-report-modal-header .close:hover,
@@ -5831,7 +5790,7 @@ a.subhead {
   width: 100%;
 }
 
-#current_auctions td:nth-child(even) 
+#current_auctions td:nth-child(even) {}
 
 #current_auctions td:nth-child(1):before {
   content: "Player Name"
@@ -11392,7 +11351,7 @@ span.total_contract_bracketed span {
   background-color: red !important
 }
 
-.minichat2_blinkText
+.minichat2_blinkText {}
 
 #minichat2_chatTable tr.oddtablerow {
   background-color: #1c1c1c !important
@@ -11407,9 +11366,9 @@ span.total_contract_bracketed span {
   width: auto;
 }
 
-#minichat2_chatTable .minichat2_icon
+#minichat2_chatTable .minichat2_icon {}
 
-#minichat2_chatTable .minichat2_logo
+#minichat2_chatTable .minichat2_logo {}
 
 .minichat2_time {
   font-size: xx-small;
@@ -11490,9 +11449,9 @@ span.total_contract_bracketed span {
   height: 2.813rem;
   width: 2.813rem;
   display: inline-block;
-  /*float: left;*/
+  float: left;
   margin-left: 0.625rem;
-  margin-right: 0.313rem;
+  margin-right: 0.313rem
 }
 
 .calendarHighlight {
@@ -11981,7 +11940,7 @@ div.banner-container a:link img.sister-league:hover {
   display: none
 }
 
-.accountingFranchise
+.accountingFranchise {}
 
 .accountingIcon {
   height: 1.25rem;
