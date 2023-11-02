@@ -40,7 +40,7 @@ Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-
   font-size: 1rem;
   line-height: 2.25rem;
   display: inline-block;
-  content: '\f015';
+  content: '\e3af';
   visibility: visible;
   position: absolute;
   top: 50%;
