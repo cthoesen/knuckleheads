@@ -512,6 +512,7 @@ body.chat_popup .banner-container-wrap {
 .icon-bar i:before {
   color: var(--accent, #ff4200);
 }
+
 /*color selected below defines main color on icons within icon bar*/
 .icon-bar-full i:after,
 .icon-bar-full a:hover i:before,
