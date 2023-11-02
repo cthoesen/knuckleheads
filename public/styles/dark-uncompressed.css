@@ -237,7 +237,7 @@ body a:visited:hover {
   background: none
 }
 
-body,
+/*body,*/
 .chat_popup,
 #MFLChatPopupContainer>.report,
 #MFLPlayerPopupContainer>.report,
@@ -255,8 +255,8 @@ body,
 #bench-caption-fixed,
 #starter-caption-fixed caption,
 #bench-caption-fixed caption {
-  /*background: #424242;*/
-  background: var(--site-bg-image, #111) !important;
+  background: #424242;
+  /*background: var(--site-bg-image, #111) !important;*/
   background-attachment: fixed
 }
 
