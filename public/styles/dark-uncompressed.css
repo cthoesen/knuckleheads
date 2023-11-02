@@ -324,7 +324,7 @@ body.chat_popup .banner-container-wrap {
 .sub-content ul li:before,
 .show-sub-heads ul li:before,
 .trade-assets-wrapper li::marker {
-  content: "\f8f6";
+  content: "\f8f6"; /*changed from star f005 to alien f8f6*/
   font-family: 'Font Awesome 6 Pro';
   padding-right: 0.188rem;
   margin-left: -1.5em
@@ -4538,7 +4538,7 @@ div.mobile-wrap:empty {
 
 #playoff-report-modal-content .still-tied li::before,
 #playoff-report-modal-content .seed-group ul ul li::before {
-  content: "\f005";
+  content: "\f8f6"; /*changed from star f005 to alien f8f6*/
   font-family: 'Font Awesome 6 Pro';
   padding-right: 0.188rem;
   color: var(--accent, #ff4200)
