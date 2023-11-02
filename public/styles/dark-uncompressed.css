@@ -260,12 +260,12 @@ body,
   background-attachment: fixed
 }
 
-.theme-dk-gray body {
+/*.theme-dk-gray body {
   background: #222 !important;
   background-image: url(https://www48.myfantasyleague.com/skins17/Onyx/bg_top.jpg), url(https://www48.myfantasyleague.com/skins17/Onyx/bg_bottom.jpg) !important;
   background-repeat: repeat-x, repeat-x !important;
   background-position: center top, center bottom !important;
-}
+}*/
 
 #loadingchatdata,
 div[id*="usmg_ad"] {
