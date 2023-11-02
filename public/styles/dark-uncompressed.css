@@ -357,12 +357,12 @@ body.chat_popup .banner-container-wrap {
 .banner-rightside {
   margin: 0.313rem 0;
   overflow: auto;
-  -webkit-overflow-scrolling: touch
+  -webkit-overflow-scrolling: touch;
 }
 
 .banner-icon {
   display: inline-block;
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 .bannericon {
@@ -437,6 +437,8 @@ body.chat_popup .banner-container-wrap {
 
 .svg-icon:hover,
 .svg-iconlink:hover .svg-icon {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+  transition: all 3s ease;
   fill: #ddd;
   color: var(--accent-light, #FA5C25)
 }
