@@ -985,9 +985,10 @@ label[for='sub100']+#homepagetabs {
   content: "\e533"
 }
 
+/*Below defines the icon from Font Awesome that appears next to Reports on the homepage tabs section*/
 #tabmenu-wrap li#tab2 a:before,
 #tabmenu-wrap #tab_title.tab2:before {
-  content: "\f080"
+  content: "\f65a"
 }
 
 /*Below defines the icon from Font Awesome that appears next to Players on the homepage tabs section*/
@@ -996,19 +997,22 @@ label[for='sub100']+#homepagetabs {
   content: "\f44f"
 }
 
+/*Below defines the icon from Font Awesome that appears next to Latest News on the homepage tabs section*/
 #tabmenu-wrap li#tab4 a:before,
 #tabmenu-wrap #tab_title.tab4:before {
-  content: "\f0c0"
+  content: "\f1ea"
 }
 
+/*Below defines the icon from Font Awesome that appears next to Playoffs on the homepage tabs section*/
 #tabmenu-wrap li#tab5 a:before,
 #tabmenu-wrap #tab_title.tab5:before {
-  content: "\f0cb"
+  content: "\f2eb"
 }
 
+/*Below defines the icon from Font Awesome that appears next to Pools on the homepage tabs section*/
 #tabmenu-wrap li#tab6 a:before,
 #tabmenu-wrap #tab_title.tab6:before {
-  content: "\f0d6"
+  content: "\e3c5"
 }
 
 #myfantasyleague_tabs .myfantasyleague_tabmenu {
