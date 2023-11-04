@@ -210,8 +210,14 @@ body {
   --site-bg-image: #000000 url("https://knuckleheads.netlify.app/images/KDL-Background-Dark.jpg") no-repeat fixed center center;  
   color: #eee;
   -webkit-font-smoothing: antialiased !important;
-  overflow-y: scroll;
+  overflow-y: scroll
 }
+
+@media only screen and (max-width: 48em){
+    body{
+      --site-bg-image: rgb(0, 0, 0);
+      
+}}
 
 body a,
 body a:link,
