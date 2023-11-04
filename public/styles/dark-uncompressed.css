@@ -3593,7 +3593,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-direction-nav {
-  height: 0
+  height: 0 /*asterisk in front of this property was removed to clear error in VS Code*/
 }
 
 .flex-direction-nav a {
