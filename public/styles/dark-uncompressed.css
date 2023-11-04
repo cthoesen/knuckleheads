@@ -3548,7 +3548,7 @@ table#youtubevideo.homepagemodule.report embed,
 }
 
 .flexslider .slides:after {
-  content: "\0020";
+  content: "\0020"; /*planet-ringed Font Awesome icon*/
   display: block;
   clear: both;
   visibility: hidden;
@@ -3574,7 +3574,8 @@ html[xmlns] .flexslider .slides {
 
 .flexslider .slides img {
   height: auto;
-  -moz-user-select: none
+  -moz-user-select: none;
+  user-select: none;
 }
 
 .flex-viewport {
