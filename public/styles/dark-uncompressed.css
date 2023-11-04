@@ -982,7 +982,7 @@ label[for='sub100']+#homepagetabs {
 
 #tabmenu-wrap li#tab1 a:before,
 #tabmenu-wrap #tab_title.tab1:before {
-  content: "\f085"
+  content: "\f830"; /*defines the Font Awesome icon next to My Team on the homepage tabs section*/
 }
 
 #tabmenu-wrap li#tab2 a:before,
