@@ -982,32 +982,32 @@ label[for='sub100']+#homepagetabs {
 
 #tabmenu-wrap li#tab1 a:before,
 #tabmenu-wrap #tab_title.tab1:before {
-  content: "\f830"; /*defines the Font Awesome icon next to My Team on the homepage tabs section*/
+  content: "\f0c0"; /*defines the Font Awesome icon next to My Team on the homepage tabs section*/
 }
 
 #tabmenu-wrap li#tab2 a:before,
 #tabmenu-wrap #tab_title.tab2:before {
-  content: "\f080"
+  content: "\e5e3" /*defines the Font Awesome icon next to Reports on the homepage tabs section*/
 }
 
 #tabmenu-wrap li#tab3 a:before,
 #tabmenu-wrap #tab_title.tab3:before {
-  content: "\f1ea"
+  content: "\f44f" /*defines the Font Awesome icon next to Players on the homepage tabs section*/
 }
 
 #tabmenu-wrap li#tab4 a:before,
 #tabmenu-wrap #tab_title.tab4:before {
-  content: "\f0c0"
+  content: "\f8e7" /*defines the Font Awesome icon next to Latest News on the homepage tabs section*/
 }
 
 #tabmenu-wrap li#tab5 a:before,
 #tabmenu-wrap #tab_title.tab5:before {
-  content: "\f0cb"
+  content: "\f091" /*defines the Font Awesome icon next to Playoffs on the homepage tabs section*/
 }
 
 #tabmenu-wrap li#tab6 a:before,
 #tabmenu-wrap #tab_title.tab6:before {
-  content: "\f0d6"
+  content: "\f53d" /*defines the Font Awesome icon next to Pools on the homepage tabs section*/
 }
 
 #myfantasyleague_tabs .myfantasyleague_tabmenu {
