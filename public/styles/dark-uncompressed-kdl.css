@@ -2599,7 +2599,7 @@ body.full-width {
 }
 
 #commissioner_setup th#recently_used:before {
-  content: "\f4fe" /*Font Awesome icon next to Recently Used*/
+  content: "\f217" /*Font Awesome icon next to Recently Used*/
 }
 
 #commissioner_setup th#general_setup:before {
@@ -2622,19 +2622,19 @@ body.full-width {
 }
 
 #commissioner_setup th#players_and_rosters:before {
-  content: "\f0c0"
+  content: "\f0c0" /*Font Awesome icon next to Players and Rosters*/
 }
 
 #commissioner_setup th#adjust_scores:before {
-  content: "\f074"
+  content: "\f649" /*Font Awesome icon next to Adjust Scores and Standings*/
 }
 
 #commissioner_setup th#home_page_message_setup:before {
-  content: "\f013"
+  content: "\f4a4" /*Font Awesome icon next to Messages Setup*/
 }
 
 #commissioner_setup th#salary_cap_setup:before {
-  content: "\f0d6"
+  content: "\f51e" /*Font Awesome icon next to Salary Cap Setup*/
 }
 
 #commissioner_setup th#use_with_caution {
@@ -2652,35 +2652,35 @@ body.full-width {
 }
 
 #commissioner_setup th#use_with_caution:before {
-  content: "\f071"
+  content: "\f071" /*Font Awesome icon next to Use These Items with Caution*/
 }
 
 #commissioner_setup th#playoff_setup:before {
-  content: "\f0cb"
+  content: "\f5a2" /*Font Awesome icon next to Playoff Setup*/
 }
 
 #commissioner_setup th#other_transactions_setup:before {
-  content: "\f021"
+  content: "\f11b" /*Font Awesome icon next to Other Transactions Setup*/
 }
 
 #commissioner_setup th#waivers_setup:before {
-  content: "\f0dc"
+  content: "\e43c" /*Font Awesome icon next to Add/Drop and Waivers Setup*/
 }
 
 #commissioner_setup th#draft_setup:before {
-  content: "\f0e3"
+  content: "\e1d0" /*Font Awesome icon next to Draft Setup*/
 }
 
 #commissioner_setup th#auction_setup:before {
-  content: "\f0e3"
+  content: "\f0e3" /*Font Awesome icon next to Auction Setup*/
 }
 
 #commissioner_setup th#fantasy_schedule_setup:before {
-  content: "\f073"
+  content: "\f12e" /*Font Awesome icon next to Fantasy Schedule Setup*/
 }
 
 #commissioner_setup th#appearance_setup:before {
-  content: "\f1fc"
+  content: "\f53f" /*Font Awesome icon next to Appearance Setup*/
 }
 
 #MFLChatPopupContainer {
