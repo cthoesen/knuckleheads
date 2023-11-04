@@ -1,5 +1,6 @@
 @import url(https://mflscripts.com/font-awesome/css/all.min.css);
 @import url(https://mflscripts.com/font-awesome/css/v4-shims.min.css);
+@import url(https://knuckleheads.netlify.app/styles/font-awesome-animation-min.css);
 
 /* old font awesome 4.7 file
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
@@ -19,6 +20,7 @@ Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-
   --accent-dark: #B52F00;
   --bg-opacity: rgba(181, 47, 0, .05);
   --bg-opacity-brighter: rgba(181, 47, 0, .2);
+  --holiday-color: #F5761A;
 }
 
 .myfantasyleague_menu ul li.mfl-icon {
@@ -69,11 +71,19 @@ body.bettis {
 }
 
 .theme-dk-gold {
-  --accent: #b2784a;
+  --accent: #ffd700;
   --accent-light: #B8835A;
   --accent-dark: #704D31;
   --bg-opacity: rgba(178, 120, 74, .05);
   --bg-opacity-brighter: rgba(178, 120, 74, .2)
+}
+
+.theme-dk-gray {
+  --accent: #777;
+  --accent-light: #ccc;
+  --accent-dark: #222;
+  --bg-opacity: rgba(45, 45, 45, .2);
+  --bg-opacity-brighter: rgba(45, 45, 45, .4);
 }
 
 .theme-dk-purple {
@@ -198,7 +208,7 @@ input[type="radio"] {
 }
 
 body {
-  --site-bg-image: #4d4a4a url("https://raw.githubusercontent.com/cthoesen/MFL-Files/Global/Background_Dark.jpg") no-repeat
+  --site-bg-image: #000000 url("https://knuckleheads.netlify.app/images/KDL-Background-Dark.jpg") no-repeat
     fixed center center;
   width: 100%;
   color: #eee;
@@ -207,51 +217,35 @@ body {
   -webkit-font-smoothing: antialiased !important;
   margin: 0;
   padding: 0;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover; /* Resize the background image to cover the entire container */
-  /*filter: brightness(0.9) blur(0.2px);*/
+  filter: brightness(0.9) blur(0.1px);
   overflow-y: scroll
 }
 
 @media only screen and (max-width: 48em){
   body{
-  --site-bg-image: #4d4a4a url("https://raw.githubusercontent.com/cthoesen/MFL-Files/Global/Mobile_Background_Dark.jpg") no-repeat
-  fixed center center;
-width: 100%;
-color: #eee;
-font-size: 13px;
-font-size: .813rem;
--webkit-font-smoothing: antialiased !important;
-margin: 0;
-padding: 0;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover; /* Resize the background image to cover the entire container */
-/*filter: brightness(0.9) blur(0.2px);*/
-overflow-y: scroll
+    --site-bg-image: rgb(0, 0, 0);
+    
   }}
 
-  @media only screen and (max-width: 64em){
+ /* @media only screen and (max-width: 64em){
     body{
-    --site-bg-image: #4d4a4a url("https://raw.githubusercontent.com/cthoesen/MFL-Files/Global/Mobile_Background_Dark.jpg") no-repeat
+    --site-bg-image: #4d4a4a url("https://knuckleheads.netlify.app/images/KDL-Mobile-Background-Dark.jpg") no-repeat
     fixed center center;
-  width: 100%;
-  color: #eee;
-  font-size: 13px;
-  font-size: .813rem;
-  -webkit-font-smoothing: antialiased !important;
-  margin: 0;
-  padding: 0;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; /* Resize the background image to cover the entire container */
-  /*filter: brightness(0.9) blur(0.2px);*/
-  overflow-y: scroll
-    }}
+    width: 100%;
+    color: #eee;
+    font-size: 13px;
+    font-size: .813rem;
+    -webkit-font-smoothing: antialiased !important;
+    margin: 0;
+    padding: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; /* Resize the background image to cover the entire container */
+    /*filter: brightness(0.9) blur(0.2px);*/
+    /*overflow-y: scroll;*/
+    /*}}*/
 
 body a,
 body a:link,
@@ -519,11 +513,12 @@ body.chat_popup .banner-container-wrap {
   color: var(--accent, #ff4200);
 }
 
+/*color selected below defines main color on icons within icon bar*/
 .icon-bar-full i:after,
 .icon-bar-full a:hover i:before,
 .icon-bar i:after,
 .icon-bar a:hover i:before {
-  color: #ddd;
+  color: var(--holiday-color, #dddddd);
   opacity: 1;
 }
 
@@ -958,15 +953,15 @@ label[for='sub100']+#homepagetabs {
     padding-right: 0.188rem
   }
 }
-
+/*Below defines the icon from Font Awesome that appears next to Home on the homepage tabs section*/
 #tabmenu-wrap li#tab0 a:before,
 #tabmenu-wrap #tab_title.tab0:before {
-  content: "\f015"
+  content: "\e066"
 }
-
+/*Below defines the icon from Font Awesome that appears next to My Team on the homepage tabs section*/
 #tabmenu-wrap li#tab1 a:before,
 #tabmenu-wrap #tab_title.tab1:before {
-  content: "\f085"
+  content: "\f44f"
 }
 
 #tabmenu-wrap li#tab2 a:before,
@@ -8994,7 +8989,7 @@ div.sub-content.editable .insertIcons {
   .myfantasyleague_menu {
     height: 0;
     padding-top: 2.813rem;
-    position: relative
+    position: relative;
   }
 
   .myfantasyleague_menu>label,
