@@ -937,9 +937,9 @@ body {
   overflow-y: scroll;
 }
 
-@media only screen and (max-width: 48em){
-  body{
-    --site-bg-image: rgb(242, 242, 242);
+@media only screen and (max-width: 48em) {
+  body {
+    --body-bg: rgb(242, 242, 242);
     
 }}
 
