@@ -3989,10 +3989,10 @@ html[xmlns] .flexslider .slides {
 }
 
 #body_options_180 .report th:first-of-type,
-#body_options_122 .report th:first-of-type,
-text-align:center;
-width:1%;
-white-space:nowrap
+#body_options_122 .report th:first-of-type {
+text-align: center;
+width: 1%;
+white-space: nowrap;
 }
 
 #body_options_180 .report .franchiseicon,
