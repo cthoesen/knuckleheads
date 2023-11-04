@@ -211,7 +211,6 @@ body {
   color: #eee;
   -webkit-font-smoothing: antialiased !important;
   overflow-y: scroll;
-  filter: brightness(0.9) blur(0.1px);
 }
 
 body a,
