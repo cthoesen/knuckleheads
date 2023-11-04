@@ -1,5 +1,6 @@
 @import url(https://mflscripts.com/font-awesome/css/all.min.css);
 @import url(https://mflscripts.com/font-awesome/css/v4-shims.min.css);
+@import url(https://knuckleheads.netlify.app/styles/font-awesome-animation-min.css);
 
 /* old font awesome 4.7 file
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
@@ -19,7 +20,7 @@ Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-
   --accent-dark: #B52F00;
   --bg-opacity: rgba(181, 47, 0, .05);
   --bg-opacity-brighter: rgba(181, 47, 0, .2);
-  --holiday-color: #F5761A;
+  --fa-main-color: #F5761A;
 }
 
 .myfantasyleague_menu ul li.mfl-icon {
@@ -503,7 +504,7 @@ body.chat_popup .banner-container-wrap {
 .icon-bar-full a:hover i:before,
 .icon-bar i:after,
 .icon-bar a:hover i:before {
-  color: var(--holiday-color, #dddddd); /*color here defines main color on Font Awesome icons within icon bar*/
+  color: var(--fa-main-color, #dddddd); /*color here defines main color on Font Awesome icons within icon bar*/
   opacity: 1;
 }
 
