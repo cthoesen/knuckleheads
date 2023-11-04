@@ -503,7 +503,7 @@ body.chat_popup .banner-container-wrap {
 .icon-bar-full a:hover i:before,
 .icon-bar i:after,
 .icon-bar a:hover i:before {
-  color: #ddd;
+  color: var(--holiday-color, #dddddd); /*color here defines main color on Font Awesome icons within icon bar*/
   opacity: 1;
 }
 
