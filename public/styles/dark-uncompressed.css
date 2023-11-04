@@ -2615,7 +2615,7 @@ body.full-width {
 }
 
 #commissioner_setup th#scoring_setup:before {
-  content: "î…";
+  content: "e561";
   /*custom icon glyph*/
   font-family: Font Awesome Kit;
   /*custom icon kit*/
