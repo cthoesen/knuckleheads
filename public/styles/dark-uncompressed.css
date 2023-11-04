@@ -11485,7 +11485,7 @@ span.total_contract_bracketed span {
   height: 2.813rem;
   width: 2.813rem;
   display: inline-block;
-  float: left;
+  /*float: left;*/ /*commented out so display inline-block is not ignored*/
   margin-left: 0.625rem;
   margin-right: 0.313rem
 }
