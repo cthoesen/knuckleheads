@@ -928,7 +928,7 @@ input[type="radio"] {
 }
 
 body {
-  --body-bg: #fffefe url("https://knuckleheads.netlify.app/images/MMH-Background-Light.jpg") no-repeat fixed center center;
+  --body-bg: #f8f8f8 url("https://knuckleheads.netlify.app/images/MMH-Background-Light.jpg") no-repeat fixed center center;
   color: var(--main, #080e25);
   background: var(--body-bg, #f8f8f8);
   background-attachment: fixed;
@@ -936,6 +936,12 @@ body {
   -webkit-font-smoothing: antialiased !important;
   overflow-y: scroll;
 }
+
+@media only screen and (max-width: 48em){
+  body{
+    --site-bg-image: rgb(242, 242, 242);
+    
+}}
 
 body a,
 body a:link,
