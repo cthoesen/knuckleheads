@@ -997,7 +997,7 @@ label[for='sub100']+#homepagetabs {
 
 #tabmenu-wrap li#tab4 a:before,
 #tabmenu-wrap #tab_title.tab4:before {
-  content: "\f8e7" /*defines the Font Awesome icon next to Latest News on the homepage tabs section*/
+  content: "\f1ea" /*defines the Font Awesome icon next to Latest News on the homepage tabs section*/
 }
 
 #tabmenu-wrap li#tab5 a:before,
@@ -2599,23 +2599,23 @@ body.full-width {
 }
 
 #commissioner_setup th#recently_used:before {
-  content: "\f087"
+  content: "\f4fe" /*Font Awesome icon next to Recently Used*/
 }
 
 #commissioner_setup th#general_setup:before {
-  content: "\f085"
+  content: "\e5f1" /*Font Awesome icon next to General Setup*/
 }
 
 #commissioner_setup th#commissioner_franchise_setup:before {
-  content: "\f0ad"
+  content: "\e5fd" /*Font Awesome icon next to Commissioner/Franchise Setup*/
 }
 
 #commissioner_setup th#history_setup:before {
-  content: "\f1da"
+  content: "\f640" /*Font Awesome icon next to History Setup*/
 }
 
 #commissioner_setup th#scoring_setup:before {
-  content: "\e561"; /*Font Awesome icon next to Scoring and Standings Setup*/
+  content: "\f521"; /*Font Awesome icon next to Scoring and Standings Setup*/
   /*custom icon glyph*/
   /*font-family: Font Awesome Kit;*/
   /*custom icon kit*/
