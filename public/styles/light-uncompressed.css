@@ -1,5 +1,6 @@
 @import url(https://mflscripts.com/font-awesome/css/all.min.css);
 @import url(https://mflscripts.com/font-awesome/css/v4-shims.min.css);
+@import url(https://knuckleheads.netlify.app/styles/font-awesome-animation-min.css);
 
 /* old font awesome 4.7 file
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
@@ -3487,7 +3488,8 @@ div.mobile-wrap .reportform {
 .starter_count_sub {
   border: 0.188rem solid var(--accent-two, var(--accent, #B82601));
   background: var(--main-four, var(--main, #080e25)) !important;
-  box-shadow: 0 0 0.6rem rgba(45, 45, 45, .5) color: #fff
+  box-shadow: 0 0 0.6rem rgba(45, 45, 45, .5);
+  color: #fff;
 }
 
 #body_lineup.custom_lineup_body caption {
