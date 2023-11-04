@@ -2617,7 +2617,7 @@ body.full-width {
 #commissioner_setup th#scoring_setup:before {
   content: "\e561"; /*Font Awesome icon next to Scoring and Standings Setup*/
   /*custom icon glyph*/
-  font-family: Font Awesome Kit;
+  /*font-family: Font Awesome Kit;*/
   /*custom icon kit*/
 }
 
