@@ -11402,9 +11402,9 @@ span.total_contract_bracketed span {
   width: auto;
 }
 
-#minichat2_chatTable .minichat2_icon {}
+/*#minichat2_chatTable .minichat2_icon {}*/ /*commented out since no properties are defined for this element*/
 
-#minichat2_chatTable .minichat2_logo {}
+/*#minichat2_chatTable .minichat2_logo {}*/ /*commented out since no properties are defined for this element*/
 
 .minichat2_time {
   font-size: xx-small;
