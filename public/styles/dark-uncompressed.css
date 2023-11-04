@@ -322,7 +322,7 @@ body.chat_popup .banner-container-wrap {
 .sub-content ul li:before,
 .show-sub-heads ul li:before,
 .trade-assets-wrapper li::marker {
-  content: "\f44e"; /*changed from star (f005) to football (f44e)*/
+  content: "\f44e"; /*changed from star (f005) to football (f44e) - this affects icon next to links on MFL site*/
   font-family: 'Font Awesome 6 Pro';
   padding-right: 0.188rem;
   margin-left: -1.5em
@@ -441,6 +441,8 @@ body.chat_popup .banner-container-wrap {
 
 .svg-icon:hover,
 .svg-iconlink:hover .svg-icon {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+  transition: all 3s ease;
   fill: #ddd;
   color: var(--accent-light, #FA5C25)
 }
