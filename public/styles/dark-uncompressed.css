@@ -11387,7 +11387,7 @@ span.total_contract_bracketed span {
   background-color: red !important
 }
 
-.minichat2_blinkText {}
+/*.minichat2_blinkText {}*/ /*commented out since no properties are defined for this element*/
 
 #minichat2_chatTable tr.oddtablerow {
   background-color: #1c1c1c !important
