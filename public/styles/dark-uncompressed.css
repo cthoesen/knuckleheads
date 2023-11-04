@@ -5826,7 +5826,7 @@ a.subhead {
   width: 100%;
 }
 
-#current_auctions td:nth-child(even) {}
+/*#current_auctions td:nth-child(even) {}*/ /*commented out since no properties are defined for this element*/
 
 #current_auctions td:nth-child(1):before {
   content: "Player Name"
