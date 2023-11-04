@@ -977,7 +977,7 @@ label[for='sub100']+#homepagetabs {
 
 #tabmenu-wrap li#tab0 a:before,
 #tabmenu-wrap #tab_title.tab0:before {
-  content: "\e1b1"; /*defines the Font Awesome icon next to Home on the homepage tabs section*/
+  content: "\e00d"; /*defines the Font Awesome icon next to Home on the homepage tabs section*/
 }
 
 #tabmenu-wrap li#tab1 a:before,
