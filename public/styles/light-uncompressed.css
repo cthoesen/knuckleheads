@@ -928,6 +928,7 @@ input[type="radio"] {
 }
 
 body {
+  --body-bg: #fffefe url("https://i.imgur.com/Ml0dgEc.png") no-repeat fixed center center;
   color: var(--main, #080e25);
   background: var(--body-bg, #f8f8f8);
   background-attachment: fixed;
