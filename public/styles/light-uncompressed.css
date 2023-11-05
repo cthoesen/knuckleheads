@@ -1197,8 +1197,10 @@ body.chat_popup .banner-container-wrap {
 
 .svg-icon:hover,
 .svg-iconlink:hover .svg-icon {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+  transition: all 3s ease;
   fill: var(--main-two, var(--main, #080e25));
-  color: var(--accent, #B82601)
+  color: var(--accent, #B82601);
 }
 
 .svg-icon,
@@ -1259,13 +1261,13 @@ body.chat_popup .banner-container-wrap {
 
 .icon-bar i:after,
 .icon-bar-full i:after {
-  color: var(--main-two, var(--main, #080e25));
+  color: var(--main-two, var(--main, #080e25)); /*color here defines main color on Font Awesome icons within icon bar*/
   opacity: 1;
 }
 
 .icon-bar a:hover i:before,
 .icon-bar-full a:hover i:before {
-  color: var(--main-two, var(--main, #080e25));
+  color: var(--main-two, var(--main, #080e25)); /*color here defines main color on Font Awesome icons within icon bar*/
 }
 
 .icon-bar a:hover i:after,
@@ -1310,7 +1312,8 @@ body.chat_popup .banner-container-wrap {
 /****** ADDED 3-3-23 for full width banner ********/
 .banner-container-wrap-full {
   width: 100%;
-  max-width: 71.75rem;
+  max-width: 100%; /*changed from 71.75rem to 100% to fit full width of banner*/
+  padding: 0.375rem 0.063rem 0.375rem 0.063rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
