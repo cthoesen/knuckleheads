@@ -3833,31 +3833,31 @@ body.full-width {
 }
 
 #commissioner_setup th#playoff_setup:before {
-  content: "\f0cb"
+  content: "\f5a2" /*Font Awesome icon next to Playoff Setup*/
 }
 
 #commissioner_setup th#other_transactions_setup:before {
-  content: "\f021"
+  content: "\f11b" /*Font Awesome icon next to Other Transactions Setup*/
 }
 
 #commissioner_setup th#waivers_setup:before {
-  content: "\f0dc"
+  content: "\e43c" /*Font Awesome icon next to Add/Drop and Waivers Setup*/
 }
 
 #commissioner_setup th#draft_setup:before {
-  content: "\f0e3"
+  content: "\e1d0" /*Font Awesome icon next to Draft Setup*/
 }
 
 #commissioner_setup th#auction_setup:before {
-  content: "\f0e3"
+  content: "\f0e3" /*Font Awesome icon next to Auction Setup*/
 }
 
 #commissioner_setup th#fantasy_schedule_setup:before {
-  content: "\f073"
+  content: "\f12e" /*Font Awesome icon next to Fantasy Schedule Setup*/
 }
 
 #commissioner_setup th#appearance_setup:before {
-  content: "\f1fc"
+  content: "\f53f" /*Font Awesome icon next to Appearance Setup*/
 }
 
 
