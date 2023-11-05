@@ -8939,7 +8939,8 @@ div.ls_withposs.ls_changed,
 }
 
 #body_ajax_ls table div.ls_player_stats div {
-  font-style: normal color:var(--accent, #B82601);
+  font-style: normal;
+  color:var(--accent, #B82601);
 }
 
 #body_ajax_ls #ls_ticker_tab_id[style*="display: inline;"]+div,
