@@ -3821,15 +3821,15 @@ body.full-width {
 
 #commissioner_setup th#use_with_caution {
   background: red;
-  color: #fff;
+  color: #ffffff;
 }
 
 #commissioner_setup th#use_with_caution:before {
-  color: #fff;
+  color: #ffffff;
 }
 
 #commissioner_setup th#use_with_caution:before {
-  content: "\f071"
+  content: "\f071" /*Font Awesome icon next to Use These Items with Caution*/
 }
 
 #commissioner_setup th#playoff_setup:before {

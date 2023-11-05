@@ -2638,12 +2638,12 @@ body.full-width {
 }
 
 #commissioner_setup th#use_with_caution {
-  background: var(--accent, #ff4200);
+  background: red;
   color: #fff
 }
 
 .theme-dk-yellow #commissioner_setup th#use_with_caution {
-  background: var(--accent, #ff4200);
+  background: red;
   color: #111;
 }
 
