@@ -2744,6 +2744,7 @@ input[type="submit"] {
   border: 0;
   -moz-appearance: none;
   -webkit-appearance: none;
+  appearance: none;
   border: 0 !important;
   font-size: 1rem;
 }
