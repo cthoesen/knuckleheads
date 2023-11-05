@@ -4945,6 +4945,7 @@ html[xmlns] .flexslider .slides {
   opacity: .7;
   cursor: pointer;
   -moz-user-select: none;
+  user-select: none;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -7242,7 +7243,7 @@ a.subhead {
   width: 100%;
 }
 
-#current_auctions td:nth-child(even) {}
+/*#current_auctions td:nth-child(even) {}*/ /*commented out since no properties are defined for this element*/
 
 #current_auctions td:nth-child(1):before {
   content: "Player Name"
