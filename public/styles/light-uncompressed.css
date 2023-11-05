@@ -4728,6 +4728,7 @@ table#youtubevideo.homepagemodule.report embed,
 .flexslider .slides>li {
   display: none;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   padding-bottom: 1.25rem
 }
 
@@ -4763,7 +4764,8 @@ html[xmlns] .flexslider .slides {
 
 .flexslider .slides img {
   height: auto;
-  -moz-user-select: none
+  -moz-user-select: none;
+  user-select: none
 }
 
 .flex-viewport {
