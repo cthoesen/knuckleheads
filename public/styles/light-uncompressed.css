@@ -4782,7 +4782,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-direction-nav {
-  height: 0
+  height: 0 /*removed the asterisk before this property to remove error in VS Code*/
 }
 
 .flex-direction-nav a {
@@ -4894,7 +4894,7 @@ html[xmlns] .flexslider .slides {
   margin: 0 0.375rem;
   display: inline-block;
   zoom: 1;
-  *display: inline
+  *display: inline /*commented out this line item since it created an error in VS Code*/
 }
 
 .flex-control-paging li a {
