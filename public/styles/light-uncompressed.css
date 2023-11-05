@@ -28,7 +28,7 @@ Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-
   font-size: 1rem;
   line-height: 2.25rem;
   display: inline-block;
-  content: '\f015';
+  content: '\f015'; /*defines the home icon at the top of each MFL page*/
   visibility: visible;
   position: absolute;
   top: 50%;
@@ -1045,7 +1045,7 @@ body.chat_popup .banner-container-wrap {
 .sub-content ul li:before,
 .show-sub-heads ul li:before,
 .trade-assets-wrapper li::marker {
-  content: "\f005";
+  content: "\f44e"; /*changed from star (f005) to football (f44e) - this affects icon next to links on MFL site*/
   font-family: 'Font Awesome 6 Pro';
   padding-right: 0.188rem;
   margin-left: -1.5em
@@ -1765,7 +1765,7 @@ label[for='sub100']+#homepagetabs {
 
 #tabmenu-wrap li#tab0 a:before,
 #tabmenu-wrap #tab_title.tab0:before {
-  content: "\f015"
+  content: "\f015"; /*defines the Font Awesome icon next to Home on the homepage tabs section*/
 }
 
 #tabmenu-wrap li#tab1 a:before,
