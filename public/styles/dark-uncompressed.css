@@ -3422,6 +3422,10 @@ table#youtubevideo.homepagemodule.report embed,
   text-align: center
 }
 
+/*below settings to show all columns on mobile devices*/
+#roster td,
+#roster th{display:table-cell!important}
+
 #body_options_17 #container-wrap .mobile-wrap:last-of-type table .points:last-of-type,
 #body_live_scoring_summary tr.total td,
 #body_live_scoring_summary tr.players_yet_to_play td,
