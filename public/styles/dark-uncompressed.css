@@ -12896,8 +12896,8 @@ body.habskin #standings img[id*="franchiseicon_"] {
 @media only screen and (max-width:48em) {
   body.roster_base #roster .contractyear,
   #roster .contractyear,
-  #roster td,
-  #roster th {
+  /*#roster td,
+  #roster th*/ {
     display: table-cell !important
   }
 }
