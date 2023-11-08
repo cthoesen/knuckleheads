@@ -12888,7 +12888,7 @@ body.habskin #standings img[id*="franchiseicon_"] {
 /*below settings to show contract years column on mobile devices*/
 @media only screen and (max-width:25em) {
   body.roster_base #roster .contractyear,
-  #roster tr td:nth-of-type(5),
+  #roster .contractyear,
   #roster td,
   #roster th {
     display: table-cell !important
@@ -12898,7 +12898,7 @@ body.habskin #standings img[id*="franchiseicon_"] {
 /*below settings to show contract years column on mobile devices*/
 @media only screen and (max-width:48em) {
   body.roster_base #roster .contractyear,
-  #roster tr td:nth-of-type(5),
+  #roster .contractyear,
   #roster td,
   #roster th {
     display: table-cell !important
