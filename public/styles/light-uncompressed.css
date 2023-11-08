@@ -14949,9 +14949,10 @@ body.habskin.sdd div[class*="franTeam_"] {
 
 /*below settings to show all columns on mobile devices*/
 @media only screen and (max-width:48em) {
-  body.rosters_trades_display #roster tr td:nth-of-type(6),
   body.roster_base #roster .points,
   body.roster_base #roster .contractyear,
+  #roster .points,
+  #roster .contractyear,
   #roster td,
   #roster th {
     display: table-cell !important
