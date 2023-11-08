@@ -4632,9 +4632,11 @@ table#youtubevideo.homepagemodule.report embed,
 }
 
 /*below settings to show all columns on mobile devices*/
-#roster td,
-#roster th {
-  display: table-cell !important
+@media only screen and (max-width:48em) {
+  #roster td,
+  #roster th {
+    display: table-cell !important
+  }
 }
 
 #body_options_17 #container-wrap .mobile-wrap:last-of-type table .points:last-of-type,
