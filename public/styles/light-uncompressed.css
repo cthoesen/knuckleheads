@@ -14949,6 +14949,7 @@ body.habskin.sdd div[class*="franTeam_"] {
 
 /*below settings to show all columns on mobile devices*/
 @media only screen and (max-width:48em) {
+  body.roster_base #roster .points,
   #roster td,
   #roster th {
     display: table-cell !important
