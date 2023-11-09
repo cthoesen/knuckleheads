@@ -14953,10 +14953,10 @@ body.habskin.sdd div[class*="franTeam_"] {
   body.roster_base #roster .week,
   body.roster_base #roster .contractyear,
   body.roster_base #roster .drafted,
-  #roster .points,
-  #roster .week,
-  #roster .contractyear,
-  #roster .drafted,
+  body.rosters_full_display #roster .points,
+  body.rosters_full_display #roster .week,
+  body.rosters_full_display #roster .contractyear,
+  body.rosters_full_display #roster .drafted,
   #roster td,
   #roster th {
     display: table-cell !important
