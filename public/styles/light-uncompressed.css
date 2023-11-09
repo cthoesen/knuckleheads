@@ -14949,14 +14949,21 @@ body.habskin.sdd div[class*="franTeam_"] {
 
 /*below settings to show all columns on mobile devices*/
 @media only screen and (max-width:48em) {
-  body.roster_base #roster .points,
-  body.roster_base #roster .week,
-  body.roster_base #roster .contractyear,
-  body.roster_base #roster .drafted,
+  body.roster_base.rosters_display #roster .points,
+  body.roster_base.rosters_display #roster .week,
+  body.roster_base.rosters_display #roster .salary,
+  body.roster_base.rosters_display #roster .contractyear,
+  body.roster_base.rosters_display #roster .contractstatus,
+  body.roster_base.rosters_trades_display #roster .points,
+  body.roster_base.rosters_trades_display #roster .week,
+  body.roster_base.rosters_trades_display #roster .salary,
+  body.roster_base.rosters_trades_display #roster .contractyear,
+  body.roster_base.rosters_trades_display #roster .contractstatus,
   body.rosters_full_display #roster .points,
   body.rosters_full_display #roster .week,
+  body.rosters_full_display #roster .salary,
   body.rosters_full_display #roster .contractyear,
-  body.rosters_full_display #roster .drafted,
+  body.rosters_full_display #roster .contractstatus,
   #roster td,
   #roster th {
     display: table-cell !important
