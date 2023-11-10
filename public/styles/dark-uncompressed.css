@@ -4978,13 +4978,13 @@ tr.tradedifference td {
 }
 
 #MFLroster .checkBox input+label:before {
-  color: #aaa;
-  content: "\f096";
+  color: lightgray; /*changed from #aaa*/
+  content: "\e5b0"; /*toggle off Font Awesome icon - was f096 (checkbox)*/
 }
 
 #MFLroster .checkBox input:checked+label:before {
-  color: #90ee90;
-  content: "\f046";
+  color: green; /*changed from #90ee90*/
+  content: "\e5b1"; /*toggle on Font Awesome icon - was f046 (checked checkbox)*/
 }
 
 #MFLroster td.checkBox {
