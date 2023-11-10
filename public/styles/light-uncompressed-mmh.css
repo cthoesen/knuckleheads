@@ -6234,7 +6234,7 @@ tr.tradedifference td {
 }
 
 #MFLroster .checkBox input+label:before {
-  color: yellow; /*changed from #888*/
+  color: palegreen; /*changed from #888*/
   content: "\f204"; /*toggle off Font Awesome icon - was f096 (checkbox)*/
 }
 
