@@ -6234,13 +6234,13 @@ tr.tradedifference td {
 }
 
 #MFLroster .checkBox input+label:before {
-  color: gray; /*changed from #888*/
-  content: "\f204"; /*toggle off Font Awesome icon - was f096 (checkbox)*/
+  color: #888;
+  content: "\f44e"; /*football Font Awesome icon - was f096 (checkbox)*/
 }
 
 #MFLroster .checkBox input:checked+label:before {
   color: green;
-  content: "\e5b1"; /*toggle on Font Awesome icon - was f046 (checked checkbox)*/
+  content: "\f44f"; /*football helmet Font Awesome icon - was f046 (checked checkbox)*/
 }
 
 #MFLroster td.checkBox {
