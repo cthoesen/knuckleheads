@@ -14959,7 +14959,7 @@ body.habskin.sdd div[class*="franTeam_"] {
   body.roster_base.rosters_trades_display #roster .salary,
   body.roster_base.rosters_trades_display #roster .contractyear,
   body.roster_base.rosters_trades_display #roster .contractstatus,
-  body.rosters_full_display #roster .points,
+  body.rosters_full_display #roster .contractinfo,
   body.rosters_full_display #roster .week,
   body.rosters_full_display #roster .salary,
   body.rosters_full_display #roster .contractyear,
