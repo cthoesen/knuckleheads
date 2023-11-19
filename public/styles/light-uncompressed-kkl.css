@@ -14966,3 +14966,7 @@ body.habskin.sdd div[class*="franTeam_"] {
     display: table-cell !important
   }
 }
+
+.trade-twocolumn-table .drafted {
+  display: table-cell !important
+}
