@@ -14967,6 +14967,6 @@ body.habskin.sdd div[class*="franTeam_"] {
   }
 }
 
-.trade-twocolumn-table #roster .drafted {
+table.report.trade-twocolumn-table .drafted {
   display: table-cell !important
 }
