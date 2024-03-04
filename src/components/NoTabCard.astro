@@ -1,0 +1,20 @@
+---
+import '../styles/global.css';
+interface Props {
+	title: string;
+	href: string;
+	
+}
+
+const { href, title } = Astro.props;
+---
+
+<li class="link-no-tab-card">
+	<a href={href}>
+		<h4>
+			{title}
+			<span>&rarr;</span>
+		</h4>
+		
+	</a>
+</li>
