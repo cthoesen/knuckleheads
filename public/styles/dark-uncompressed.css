@@ -4303,11 +4303,19 @@ img {
   height: auto
 }
 
-/*#standings .franchiseicon {
-  width: 425px;
-}*/
+#standings .franchiseicon {
+  width: 425px; /* width of icon on standings screen*/
+}
 
 #standings .fname, #standings .ficon {
+  width: 300px;
+}
+
+#home #standings .franchiseicon, #roster .franchiseicon {
+  width: 250px;
+}
+
+#home #standings .fname, #home #standings .ficon {
   width: 250px;
 }
 
