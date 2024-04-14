@@ -4305,19 +4305,15 @@ img {
   width: 250px; /* this was max-width: 100% */
   height: auto
 }
-
 #standings .franchiseicon {
   width: 425px; /* width of icon on standings screen*/
 }
-
 #standings .fname, #standings .ficon {
   width: 300px;
 }
-
 #home #standings .franchiseicon, #roster .franchiseicon {
   width: 250px;
 }
-
 #home #standings .fname, #home #standings .ficon {
   width: 250px;
 }
@@ -12911,5 +12907,24 @@ body.habskin #standings img[id*="franchiseicon_"] {
   #roster td,
   #roster th {
     display: table-cell !important
+  }
+}
+
+@media only screen and (max-width: 35.5em) {
+  .franchiseicon {
+      height: auto;
+      width: 200px;
+  }
+  #standings .franchiseicon {
+      width: 200px;
+  }
+  #standings .fname, #standings .ficon {
+      width: 200px;
+  }
+  #home #standings .franchiseicon, #roster .franchiseicon {
+      width: 180px;
+  }
+  #home #standings .fname, #home #standings .ficon {
+      width: 180px;
   }
 }
