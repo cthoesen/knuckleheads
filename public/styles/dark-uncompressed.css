@@ -4307,6 +4307,10 @@ img {
   width: 425px;
 }
 
+#standings .fname, #standings .ficon {
+  width: 300px;
+}
+
 #body_login .warning {
   text-align: center
 }
