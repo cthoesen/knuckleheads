@@ -4303,6 +4303,10 @@ img {
   height: auto
 }
 
+#standings .franchiseicon {
+  width: 425px;
+}
+
 #body_login .warning {
   text-align: center
 }
