@@ -4297,7 +4297,10 @@ img {
   margin: 1.25rem 0
 }
 
-.franchiselogo,
+.franchiselogo{
+  max-width: 100%;
+  height: auto
+}
 .franchiseicon {
   width: 250px; /* this was max-width: 100% */
   height: auto
