@@ -4299,7 +4299,7 @@ img {
 
 .franchiselogo,
 .franchiseicon {
-  max-width: 100%;
+  width: 250px; /* this was max-width: 100% */
   height: auto
 }
 
