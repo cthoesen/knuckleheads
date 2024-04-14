@@ -4303,9 +4303,9 @@ img {
   height: auto
 }
 
-/*#standings .franchiseicon {
-  width: 425px;
-}*/
+#standings .franchiseicon {
+  width: 300px;
+}
 
 #standings .fname, #standings .ficon {
   width: 300px;
