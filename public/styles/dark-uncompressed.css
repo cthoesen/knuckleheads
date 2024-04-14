@@ -12910,6 +12910,7 @@ body.habskin #standings img[id*="franchiseicon_"] {
   }
 }
 
+/*below settings to decrease size of icons for standings on mobile devices*/
 @media only screen and (max-width: 35.5em) {
   .franchiseicon {
       height: auto;
