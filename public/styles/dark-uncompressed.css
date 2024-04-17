@@ -1484,10 +1484,12 @@ th a:visited:hover,
 
 .oddtablerow td,
 .eventablerow td {
-  padding: 0.188rem
+  padding: 0.188rem;
+  background: none;
+  color: #ccc
 }
 
-.oddtablerow td {
+/*.oddtablerow td {
   background: none;
   color: #dceff4
 }
@@ -1495,7 +1497,7 @@ th a:visited:hover,
 .eventablerow td {
   background: none;
   color: #dceff4
-}
+}*/
 
 .oddtablerow td a,
 .oddtablerow td a:link,
