@@ -335,7 +335,11 @@ body.chat_popup .banner-container-wrap {
 .sub-content ul li:before,
 .show-sub-heads ul li:before,
 .trade-assets-wrapper li::marker {
-  color: var(--accent, #ff4200)
+  color: var(--accent, #ff4200);
+  content: "\f44e"; /*changed from star (f005) to football (f44e) - this affects icon next to links on MFL site*/
+  font-family: 'Font Awesome 6 Pro';
+  padding-right: 0.188rem;
+  margin-left: -1.5em
 }
 
 .banner-container {
