@@ -1488,7 +1488,13 @@ th a:visited:hover,
   background: none;
   color: #ccc
 }
-
+.oddtablerow td ul li:before, .eventablerow td ul li:before {
+  content: "\e0b3";
+  font-family: 'Font Awesome 6 pro';
+  font-weight: 600;
+  display: inline-block;
+  width: 1rem;
+}
 /*.oddtablerow td {
   background: none;
   color: #dceff4
