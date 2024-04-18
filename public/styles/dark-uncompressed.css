@@ -1489,16 +1489,6 @@ th a:visited:hover,
   color: #ccc
 }
 
-/*.oddtablerow td {
-  background: none;
-  color: #dceff4
-}
-
-.eventablerow td {
-  background: none;
-  color: #dceff4
-}*/
-
 .oddtablerow td a,
 .oddtablerow td a:link,
 .oddtablerow td a:active,
