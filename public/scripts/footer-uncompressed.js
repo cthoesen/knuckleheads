@@ -1363,9 +1363,9 @@ jQuery('#calendar .month_header th').html(function (i, currHtml) {
 		.replace('Nov', 'NOVEMBER')
 		.replace('Dec', 'DECEMBER');
 });
-jQuery('#calendar .day:not(:has(div.cal-event))').each(function (index) {
-	$(this).append('<div class="cal-event"><div class="cal-event-desc" style="font-style:italic"><li style="list-style:none">No Events Today</li></div></div>');
-});
+//jQuery('#calendar .day:not(:has(div.cal-event))').each(function (index) {
+//	$(this).append('<div class="cal-event"><div class="cal-event-desc" style="font-style:italic"><li style="list-style:none">No Events Today</li></div></div>');
+//});
 jQuery('.calendarday.date a').html('<i class="fa-regular fa-square-plus" aria-hidden="true"></i>');
 jQuery('#body_options_123 h3.h3-menu').remove();
 
