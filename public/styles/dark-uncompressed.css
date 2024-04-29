@@ -1356,10 +1356,11 @@ a:active {
 caption,
 #commissioner_setup table.two_column_layout th {
   font-size: 1.375rem;
-  text-align: center;
   background: transparent url(https://knuckleheads.netlify.app/images/captions/Dark-Bubble-Fade.png);
   background-position: right 0px top;
-  padding: 0.5rem 0.313rem;
+  padding: 0.35rem 0.313rem;
+  border-bottom: 0.6rem solid rgba(15, 15, 15, 0.99);
+  border-top: 0.35rem;
   text-align: left;
   line-height: 100%;
   text-transform: uppercase;
