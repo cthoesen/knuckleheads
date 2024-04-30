@@ -1359,7 +1359,7 @@ caption,
   background: transparent url(https://knuckleheads.netlify.app/images/captions/Dark-Bubble-Fade.png);
   background-position: right 0px top;
   padding: 0.75rem 0.35rem;
-  border-bottom: 0.35rem solid rgba(15, 15, 15, 0.99);
+  border-bottom: 0.35rem solid rgba(15, 15, 15, 0.75);
   border-top: 0.35rem;
   text-align: left;
   text-shadow: 1px 1px rgb(138, 43, 226);
