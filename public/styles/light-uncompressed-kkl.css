@@ -2941,7 +2941,7 @@ li.player-search a input,
 }
 
 
-/*report form that are embedded inside a talbe - example is player bio pages*/
+/*report form that are embedded inside a table - example is player bio pages*/
 
 div.mobile-wrap .reportform {
   text-align: center;
@@ -3665,7 +3665,7 @@ th.select-total-starters {
 /*******************************************/
 
 
-/* TOOLTIPS - preivew on league setup page */
+/* TOOLTIPS - preview on league setup page */
 
 
 /*******************************************/
@@ -6310,7 +6310,7 @@ tr.tradedifference td {
 }
 
 
-/* background graident color for the banner area for scoreboard name */
+/* background gradient color for the banner area for scoreboard name */
 
 #MFLCenterTop {
   border: 0.063rem solid var(--accent, #B82601);

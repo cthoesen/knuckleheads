@@ -1,6 +1,5 @@
 @import url(https://mflscripts.com/font-awesome/css/all.min.css);
 @import url(https://mflscripts.com/font-awesome/css/v4-shims.min.css);
-@import url(https://knuckleheads.netlify.app/styles/font-awesome-animation-min.css);
 
 /* old font awesome 4.7 file
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
@@ -28,7 +27,7 @@ Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-
   font-size: 1rem;
   line-height: 2.25rem;
   display: inline-block;
-  content: '\f015'; /*defines the home icon at the top of each MFL page*/
+  content: '\f015';
   visibility: visible;
   position: absolute;
   top: 50%;
@@ -314,7 +313,7 @@ body.nra {
   --make-white: #fff;
 }
 
-.theme-gray {
+.theme-grey {
   --main: #000000;
   --accent: #888888;
   --lightest-color: #dddddd;
@@ -928,20 +927,13 @@ input[type="radio"] {
 }
 
 body {
-  --body-bg: #f8f8f8 url("https://knuckleheads.netlify.app/images/MMH-Background-Light.jpg") no-repeat fixed center center;
   color: var(--main, #080e25);
   background: var(--body-bg, #f8f8f8);
   background-attachment: fixed;
   background-position: center top;
   -webkit-font-smoothing: antialiased !important;
-  overflow-y: scroll;
+  overflow-y: scroll
 }
-
-@media only screen and (max-width: 48em) {
-  body {
-    --body-bg: rgb(242, 242, 242);
-    
-}}
 
 body a,
 body a:link,
@@ -1045,7 +1037,7 @@ body.chat_popup .banner-container-wrap {
 .sub-content ul li:before,
 .show-sub-heads ul li:before,
 .trade-assets-wrapper li::marker {
-  content: "\f44e"; /*changed from star (f005) to football (f44e) - this affects icon next to links on MFL site*/
+  content: "\f005";
   font-family: 'Font Awesome 6 Pro';
   padding-right: 0.188rem;
   margin-left: -1.5em
@@ -1197,10 +1189,8 @@ body.chat_popup .banner-container-wrap {
 
 .svg-icon:hover,
 .svg-iconlink:hover .svg-icon {
-  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
-  transition: all 3s ease;
   fill: var(--main-two, var(--main, #080e25));
-  color: var(--accent, #B82601);
+  color: var(--accent, #B82601)
 }
 
 .svg-icon,
@@ -1261,13 +1251,13 @@ body.chat_popup .banner-container-wrap {
 
 .icon-bar i:after,
 .icon-bar-full i:after {
-  color: var(--main-two, var(--main, #080e25)); /*color here defines main color on Font Awesome icons within icon bar*/
+  color: var(--main-two, var(--main, #080e25));
   opacity: 1;
 }
 
 .icon-bar a:hover i:before,
 .icon-bar-full a:hover i:before {
-  color: var(--main-two, var(--main, #080e25)); /*color here defines main color on Font Awesome icons within icon bar*/
+  color: var(--main-two, var(--main, #080e25));
 }
 
 .icon-bar a:hover i:after,
@@ -1312,8 +1302,7 @@ body.chat_popup .banner-container-wrap {
 /****** ADDED 3-3-23 for full width banner ********/
 .banner-container-wrap-full {
   width: 100%;
-  max-width: 100%; /*changed from 71.75rem to 100% to fit full width of banner*/
-  padding: 0.375rem 0.063rem 0.375rem 0.063rem;
+  max-width: 71.75rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -1765,37 +1754,37 @@ label[for='sub100']+#homepagetabs {
 
 #tabmenu-wrap li#tab0 a:before,
 #tabmenu-wrap #tab_title.tab0:before {
-  content: "\f015"; /*defines the Font Awesome icon next to Home on the homepage tabs section*/
+  content: "\f015"
 }
 
 #tabmenu-wrap li#tab1 a:before,
 #tabmenu-wrap #tab_title.tab1:before {
-  content: "\f0c0"; /*defines the Font Awesome icon next to My Team on the homepage tabs section*/
+  content: "\f085"
 }
 
 #tabmenu-wrap li#tab2 a:before,
 #tabmenu-wrap #tab_title.tab2:before {
-  content: "\e5e3" /*defines the Font Awesome icon next to Reports on the homepage tabs section*/
+  content: "\f080"
 }
 
 #tabmenu-wrap li#tab3 a:before,
 #tabmenu-wrap #tab_title.tab3:before {
-  content: "\f44f" /*defines the Font Awesome icon next to Players on the homepage tabs section*/
+  content: "\f0c0"
 }
 
 #tabmenu-wrap li#tab4 a:before,
 #tabmenu-wrap #tab_title.tab4:before {
-  content: "\f1ea" /*defines the Font Awesome icon next to Latest News on the homepage tabs section*/
+  content: "\f1ea"
 }
 
 #tabmenu-wrap li#tab5 a:before,
 #tabmenu-wrap #tab_title.tab5:before {
-  content: "\f091" /*defines the Font Awesome icon next to Playoffs on the homepage tabs section*/
+  content: "\f0cb"
 }
 
 #tabmenu-wrap li#tab6 a:before,
 #tabmenu-wrap #tab_title.tab6:before {
-  content: "\f53d" /*defines the Font Awesome icon next to Pools on the homepage tabs section*/
+  content: "\f0d6"
 }
 
 
@@ -2744,7 +2733,7 @@ input[type="submit"] {
   border: 0;
   -moz-appearance: none;
   -webkit-appearance: none;
-  appearance: none;
+  appearance: none; /*CGT - added standard property*/
   border: 0 !important;
   font-size: 1rem;
 }
@@ -2960,7 +2949,7 @@ div.mobile-wrap .reportform {
 
 
 /***************************************/
-
+#body_board_show div.hcl{background:none!important}
 #body_board_show .fa-thumbtack {
   color: green;
   margin-right: 0.125rem
@@ -3495,7 +3484,7 @@ div.mobile-wrap .reportform {
   background-image: linear-gradient(to bottom, var(--gradient-dark, #9c2000), var(--gradient-light, #cb2a01));
 }
 
-/* change background and color for drop down button that displays as you scroll down page to show current starters */
+/* CGT - change background and color for drop down button that displays as you scroll down page to show current starters */
 .starter_count_sub {
   border: 0.188rem solid var(--accent-two, var(--accent, #B82601));
   background: var(--main-four, var(--main, #080e25)) !important;
@@ -3781,83 +3770,83 @@ body.full-width {
 }
 
 #commissioner_setup th#recently_used:before {
-  content: "\f217" /*Font Awesome icon next to Recently Used*/
+  content: "\f087"
 }
 
 #commissioner_setup th#general_setup:before {
-  content: "\e5f1" /*Font Awesome icon next to General Setup*/
+  content: "\f085"
 }
 
 #commissioner_setup th#commissioner_franchise_setup:before {
-  content: "\e5fd" /*Font Awesome icon next to Commissioner/Franchise Setup*/
+  content: "\f0ad"
 }
 
 #commissioner_setup th#history_setup:before {
-  content: "\f640" /*Font Awesome icon next to History Setup*/
+  content: "\f1da"
 }
 
 #commissioner_setup th#scoring_setup:before {
-  content: "\f521"; /*Font Awesome icon next to Scoring and Standings Setup*/
+  content: "î…";
   /*custom icon glyph*/
-  /*font-family: Font Awesome Kit;*/
+  font-family: Font Awesome Kit;
   /*custom icon kit*/
 }
 
 #commissioner_setup th#players_and_rosters:before {
-  content: "\f0c0" /*Font Awesome icon next to Players and Rosters*/
+  content: "\f0c0"
 }
 
 #commissioner_setup th#adjust_scores:before {
-  content: "\f649" /*Font Awesome icon next to Adjust Scores and Standings*/
+  content: "\f074"
 }
 
 #commissioner_setup th#home_page_message_setup:before {
-  content: "\f4a4" /*Font Awesome icon next to Messages Setup*/
+  content: "\f013"
 }
 
 #commissioner_setup th#salary_cap_setup:before {
-  content: "\f51e" /*Font Awesome icon next to Salary Cap Setup*/
+  content: "\f0d6"
 }
 
 #commissioner_setup th#use_with_caution {
   background: red;
-  color: #ffffff;
+  color: #fff;
 }
 
 #commissioner_setup th#use_with_caution:before {
-  color: #ffffff;
+  color: #fff;
 }
 
 #commissioner_setup th#use_with_caution:before {
-  content: "\f071" /*Font Awesome icon next to Use These Items with Caution*/
+  content: "\f071"
 }
 
 #commissioner_setup th#playoff_setup:before {
-  content: "\f5a2" /*Font Awesome icon next to Playoff Setup*/
+  content: "\f0cb"
 }
 
 #commissioner_setup th#other_transactions_setup:before {
-  content: "\f11b" /*Font Awesome icon next to Other Transactions Setup*/
+  content: "\f021"
 }
 
 #commissioner_setup th#waivers_setup:before {
-  content: "\e43c" /*Font Awesome icon next to Add/Drop and Waivers Setup*/
+  content: "\f0dc"
 }
 
 #commissioner_setup th#draft_setup:before {
-  content: "\e1d0" /*Font Awesome icon next to Draft Setup*/
+  content: "\f0e3"
 }
 
 #commissioner_setup th#auction_setup:before {
-  content: "\f0e3" /*Font Awesome icon next to Auction Setup*/
+  content: "\f0e3"
 }
 
 #commissioner_setup th#fantasy_schedule_setup:before {
-  content: "\f12e" /*Font Awesome icon next to Fantasy Schedule Setup*/
+  content: "\f073"
 }
 
 #commissioner_setup th#appearance_setup:before {
-  content: "\f53f" /*Font Awesome icon next to Appearance Setup*/
+  content: "\f1fc"
 }
 
 
@@ -4119,7 +4108,7 @@ footer {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
+  flex-flow: row wrap; /*CGT - added standard property*/
   justify-content: space-around;
   margin: 0 auto;
   text-align: left;
@@ -4728,8 +4717,8 @@ table#youtubevideo.homepagemodule.report embed,
 .flexslider .slides>li {
   display: none;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  padding-bottom: 1.25rem
+  backface-visibility: hidden; /*CGT - added standard property*/
+  padding-bottom: 1.25rem;
 }
 
 .flexslider .slides img.slider {
@@ -4738,7 +4727,7 @@ table#youtubevideo.homepagemodule.report embed,
 }
 
 .flexslider .slides:after {
-  content: "\0020"; /*planet-ringed Font Awesome icon*/
+  content: "\0020";
   display: block;
   clear: both;
   visibility: hidden;
@@ -4765,7 +4754,7 @@ html[xmlns] .flexslider .slides {
 .flexslider .slides img {
   height: auto;
   -moz-user-select: none;
-  user-select: none
+  user-select: none; /*CGT - added standard property*/
 }
 
 .flex-viewport {
@@ -4786,8 +4775,9 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-direction-nav {
-  height: 0 /*removed the asterisk before this property to remove error in VS Code*/
+  height: 0 /*CGT - removed the asterisk before this property to remove error in VS Code*/
 }
+
 
 .flex-direction-nav a {
   text-decoration: none;
@@ -4814,13 +4804,13 @@ html[xmlns] .flexslider .slides {
   font-family: 'Font Awesome 6 Pro';
   font-size: 2.5rem;
   display: inline-block;
-  content: '\f053'; /*chevron-left Font Awesome icon*/
+  content: '\f053';
   color: rgba(0, 0, 0, 0.8);
   text-shadow: 0.063rem 0.063rem 0 rgba(255, 255, 255, 0.3)
 }
 
 .flex-direction-nav a.flex-next:before {
-  content: '\f054' /*chevron-right Font Awesome icon*/
+  content: '\f054'
 }
 
 .flex-direction-nav .flex-prev {
@@ -4875,7 +4865,7 @@ html[xmlns] .flexslider .slides {
   font-family: 'Font Awesome 6 Pro';
   font-size: 1.25rem;
   display: inline-block;
-  content: '\f004' /*heart Font Awesome icon*/
+  content: '\f004'
 }
 
 .flex-pauseplay a:hover {
@@ -4883,7 +4873,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-pauseplay a.flex-play:before {
-  content: '\f053' /*chevron-left Font Awesome icon*/
+  content: '\f053'
 }
 
 .flex-control-nav {
@@ -4898,7 +4888,7 @@ html[xmlns] .flexslider .slides {
   margin: 0 0.375rem;
   display: inline-block;
   zoom: 1;
-  /**display: inline*/ /*commented out this line item since it created an error in VS Code*/
+  /**display: inline*/ /*CGT - commented out this line item since it created an error in VS Code*/
 }
 
 .flex-control-paging li a {
@@ -4945,7 +4935,7 @@ html[xmlns] .flexslider .slides {
   opacity: .7;
   cursor: pointer;
   -moz-user-select: none;
-  user-select: none;
+  user-select: none; /*CGT - added standard property*/
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -5773,7 +5763,7 @@ div.mobile-wrap:empty {
 
 #playoff-report-modal-content .still-tied li::before,
 #playoff-report-modal-content .seed-group ul ul li::before {
-  content: "\f005"; /*star Font Awesome icon*/
+  content: "\f005";
   font-family: 'Font Awesome 6 Pro';
   padding-right: 0.188rem;
   color: var(--main-four, var(--main, #080e25))
@@ -5855,7 +5845,7 @@ tr.assets input[name^="bbid"] {
 }
 
 .shouldbench:after {
-  content: "\f103"; /*angles-down Font Awesome icon*/
+  content: "\f103";
   font-family: 'Font Awesome 6 Pro';
   margin-left: 0.25rem;
   color: red;
@@ -5867,7 +5857,7 @@ tr.assets input[name^="bbid"] {
 }
 
 .shouldstart:after {
-  content: "\f102"; /*angles-up Font Awesome icon*/
+  content: "\f102";
   font-family: 'Font Awesome 6 Pro';
   margin-left: 0.25rem;
   color: limegreen;
@@ -6235,12 +6225,12 @@ tr.tradedifference td {
 
 #MFLroster .checkBox input+label:before {
   color: #888;
-  content: "\f44e"; /*football Font Awesome icon - was f096 (checkbox)*/
+  content: "\f096";
 }
 
 #MFLroster .checkBox input:checked+label:before {
   color: green;
-  content: "\e5b1"; /*toggle on Font Awesome icon - was f046 (checked checkbox)*/
+  content: "\f046";
 }
 
 #MFLroster td.checkBox {
@@ -7243,7 +7233,7 @@ a.subhead {
   width: 100%;
 }
 
-/*#current_auctions td:nth-child(even) {}*/ /*commented out since no properties are defined for this element*/
+/*#current_auctions td:nth-child(even) {}*/ /*CGT - commented out since no properties are defined for this element*/
 
 #current_auctions td:nth-child(1):before {
   content: "Player Name"
@@ -7516,11 +7506,11 @@ a.subhead {
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="DOWN"]:before {
-  content: "\f078" /*chevron-down Font Awesome icon*/
+  content: "\f078"
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="UP"]:before {
-  content: "\f077" /*chevron-up Font Awesome icon*/
+  content: "\f077"
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="DELETE"]:before {
@@ -8944,8 +8934,8 @@ div.ls_withposs.ls_changed,
 }
 
 #body_ajax_ls table div.ls_player_stats div {
-  font-style: normal;
-  color:var(--accent, #B82601);
+  font-style: normal; /*CGT - added missing semicolon here*/
+  color: var(--accent, #B82601);
 }
 
 #body_ajax_ls #ls_ticker_tab_id[style*="display: inline;"]+div,
@@ -11086,7 +11076,8 @@ div.sub-content.editable .insertIcons {
     line-height: 1rem;
     position: absolute;
     left: 0.625rem;
-    top: 0.938rem
+    top: 0.938rem;
+    z-index: 1;
   }
 
   .myfantasyleague_tabmenu #homepagetabs li {
@@ -13245,7 +13236,7 @@ span.total_contract_bracketed span {
   height: 2.813rem;
   width: 2.813rem;
   display: inline-block;
-  /*float: left;*/ /*commented out so display inline-block is not ignored*/
+  /*float: left;*/ /*CGT - commented out so display inline-block is not ignored*/
   margin-left: 0.625rem;
   margin-right: 0.313rem
 }
@@ -13766,7 +13757,7 @@ div.banner-container a:link img.sister-league:hover {
   display: none
 }
 
-/*.accountingFranchise {}*/ /*commented out since no properties are defined for this element*/
+/*.accountingFranchise {}*/ /*CGT - commented out since no properties are defined for this element*/
 
 .accountingIcon {
   height: 1.25rem;
@@ -14690,6 +14681,7 @@ body.habskin.sdd div[class*="franTeam_"] {
 }
 
 /* COLOR SCOREBOARD MODULE FOR YOUR SITE LIGHT SKIN */
+#LSscoringBox .lsm_statusText,
 #LSscoringBox .playerContainer,
 #LSscoringBox .scoresContainer,
 #LSscoringBox .player-name a,
@@ -14712,7 +14704,9 @@ body.habskin.sdd div[class*="franTeam_"] {
 .nfl-box-scroll-wrap .nfl-box-scroll,
 #LSModuleSettings,
 #LSscoringBox h2.lsm_error,
-#teamBox {
+#teamBox,
+#LSscoringBox .lsm_statusText,
+h2.lsm_error.error_box {
   background: #fff;
 }
 
@@ -14728,7 +14722,11 @@ body.habskin.sdd div[class*="franTeam_"] {
 .nfl-box-scroll-wrap,
 #LSModuleSettings,
 #LSscoringBox h2.lsm_error,
-#teamBox {
+#teamBox,
+#LSscoringBox .lsm_statusText,
+.lsStarterstotals,
+.lsBenchstotals,
+h2.lsm_error.error_box {
   border: 0.063rem solid #eee;
 }
 
@@ -14802,7 +14800,8 @@ body.habskin.sdd div[class*="franTeam_"] {
 #LSscoringBox .lsStarterstotals,
 #LSscoringBox .lsBenchstotals,
 .franchise-score-scroll,
-.nfl-box-scroll-wrap {
+.nfl-box-scroll-wrap,
+h2.lsm_error.error_box {
   color: #000;
 }
 
@@ -14860,11 +14859,6 @@ body.habskin.sdd div[class*="franTeam_"] {
 
 #LSscoringBox .appendStats {
   background: #f5f5f5;
-}
-
-#LSscoringBox .lsStarterstotals,
-#LSscoringBox .lsBenchstotals {
-  margin-top: -0.125rem;
 }
 
 #teamBoxOverlay {
@@ -14947,25 +14941,82 @@ body.habskin.sdd div[class*="franTeam_"] {
   overflow:auto;
 }
 
-/*below settings to show all columns on mobile devices*/
-@media only screen and (max-width:48em) {
-  body.roster_base.rosters_display #roster .contractinfo,
-  body.roster_base.rosters_display #roster .week,
-  body.roster_base.rosters_display #roster .salary,
-  body.roster_base.rosters_display #roster .contractyear,
-  body.roster_base.rosters_display #roster .contractstatus,
-  body.roster_base.rosters_trades_display #roster .contractinfo,
-  body.roster_base.rosters_trades_display #roster .week,
-  body.roster_base.rosters_trades_display #roster .salary,
-  body.roster_base.rosters_trades_display #roster .contractyear,
-  body.roster_base.rosters_trades_display #roster .contractstatus,
-  body.rosters_full_display #roster .contractinfo,
-  body.rosters_full_display #roster .week,
-  body.rosters_full_display #roster .salary,
-  body.rosters_full_display #roster .contractyear,
-  body.rosters_full_display #roster .contractstatus,
-  #roster td,
-  #roster th {
-    display: table-cell !important
-  }
+td[class*=grid_pos] a {
+    background: none!important;
+    color: #fff!important;
 }
+td[class*=grid_pos] {
+    color: #fff!important;
+    border: .1rem solid #eee;
+}
+.eventablerow td.grid_pos_qb,
+.oddtablerow td.grid_pos_qb {
+    background-color: rgba(255, 128, 146, 1);
+}
+.eventablerow td.grid_pos_rb,
+.oddtablerow td.grid_pos_rb {
+    background-color: rgba(79, 123, 151, 1);
+}
+.eventablerow td.grid_pos_wr,
+.oddtablerow td.grid_pos_wr {
+    background-color: rgba(71, 158, 117, 1);
+}
+.eventablerow td.grid_pos_te,
+.oddtablerow td.grid_pos_te {
+    background-color: rgba(255, 155, 26, 1);
+}
+.eventablerow td.grid_pos_pk,
+.oddtablerow td.grid_pos_pk {
+    background-color: rgba(215, 66, 116, 1);
+}
+.eventablerow td.grid_pos_def,
+.oddtablerow td.grid_pos_def {
+    background-color: rgba(255, 195, 26, 1);
+}
+.eventablerow td.grid_pos_pn,
+.oddtablerow td.grid_pos_pn {
+    background-color: rgba(215, 66, 116, 1);
+}
+.eventablerow td.grid_pos_lb,
+.oddtablerow td.grid_pos_lb {
+    background-color: rgba(158, 204, 77, 1);
+}
+.eventablerow td.grid_pos_de,
+.oddtablerow td.grid_pos_de {
+    background-color: rgba(149, 117, 164, 1);
+}
+.eventablerow td.grid_pos_dt,
+.oddtablerow td.grid_pos_dt {
+    background-color: rgba(149, 117, 164, 1);
+}
+.eventablerow td.grid_pos_cb,
+.oddtablerow td.grid_pos_cb {
+    background-color: rgba(181, 100, 144, 1);
+}
+.eventablerow td.grid_pos_s,
+.oddtablerow td.grid_pos_s {
+    background-color: rgba(181, 100, 144, 1);
+}
+
+/*CGT - below settings configure which columns appear on mobile devices*/
+@media only screen and (max-width:48em) {
+    body.roster_base.rosters_display #roster .contractinfo,
+    body.roster_base.rosters_display #roster .week,
+    body.roster_base.rosters_display #roster .salary,
+    body.roster_base.rosters_display #roster .contractyear,
+    body.roster_base.rosters_display #roster .contractstatus,
+    body.roster_base.rosters_trades_display #roster .contractinfo,
+    body.roster_base.rosters_trades_display #roster .week,
+    body.roster_base.rosters_trades_display #roster .salary,
+    body.roster_base.rosters_trades_display #roster .contractyear,
+    body.roster_base.rosters_trades_display #roster .contractstatus,
+    body.rosters_full_display #roster .contractinfo,
+    body.rosters_full_display #roster .week,
+    body.rosters_full_display #roster .salary,
+    body.rosters_full_display #roster .contractyear,
+    body.rosters_full_display #roster .contractstatus,
+    #roster td,
+    #roster th {
+      display: table-cell !important
+    }
+  }
