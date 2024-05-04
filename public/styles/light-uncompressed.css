@@ -28,7 +28,7 @@ Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-
   font-size: 1rem;
   line-height: 2.25rem;
   display: inline-block;
-  content: '\f015'; /*defines the home icon at the top of each MFL page*/
+  content: '\f015'; /*CGT - defines the home icon at the top of each MFL page*/
   visibility: visible;
   position: absolute;
   top: 50%;
@@ -1765,37 +1765,37 @@ label[for='sub100']+#homepagetabs {
 
 #tabmenu-wrap li#tab0 a:before,
 #tabmenu-wrap #tab_title.tab0:before {
-  content: "\f015"; /*defines the Font Awesome icon next to Home on the homepage tabs section*/
+  content: "\f015"; /*CGT - defines the Font Awesome icon next to Home on the homepage tabs section*/
 }
 
 #tabmenu-wrap li#tab1 a:before,
 #tabmenu-wrap #tab_title.tab1:before {
-  content: "\f0c0"; /*defines the Font Awesome icon next to My Team on the homepage tabs section*/
+  content: "\f0c0"; /*CGT - defines the Font Awesome icon next to My Team on the homepage tabs section*/
 }
 
 #tabmenu-wrap li#tab2 a:before,
 #tabmenu-wrap #tab_title.tab2:before {
-  content: "\e5e3" /*defines the Font Awesome icon next to Reports on the homepage tabs section*/
+  content: "\e5e3" /*CGT - defines the Font Awesome icon next to Reports on the homepage tabs section*/
 }
 
 #tabmenu-wrap li#tab3 a:before,
 #tabmenu-wrap #tab_title.tab3:before {
-  content: "\f44f" /*defines the Font Awesome icon next to Players on the homepage tabs section*/
+  content: "\f44f" /*CGT - defines the Font Awesome icon next to Players on the homepage tabs section*/
 }
 
 #tabmenu-wrap li#tab4 a:before,
 #tabmenu-wrap #tab_title.tab4:before {
-  content: "\f1ea" /*defines the Font Awesome icon next to Latest News on the homepage tabs section*/
+  content: "\f1ea" /*CGT - defines the Font Awesome icon next to Latest News on the homepage tabs section*/
 }
 
 #tabmenu-wrap li#tab5 a:before,
 #tabmenu-wrap #tab_title.tab5:before {
-  content: "\f091" /*defines the Font Awesome icon next to Playoffs on the homepage tabs section*/
+  content: "\f091" /*CGT - defines the Font Awesome icon next to Playoffs on the homepage tabs section*/
 }
 
 #tabmenu-wrap li#tab6 a:before,
 #tabmenu-wrap #tab_title.tab6:before {
-  content: "\f53d" /*defines the Font Awesome icon next to Pools on the homepage tabs section*/
+  content: "\f53d" /*CGT - defines the Font Awesome icon next to Pools on the homepage tabs section*/
 }
 
 
@@ -2744,7 +2744,7 @@ input[type="submit"] {
   border: 0;
   -moz-appearance: none;
   -webkit-appearance: none;
-  appearance: none;
+  appearance: none; /*CGT - added standard property*/
   border: 0 !important;
   font-size: 1rem;
 }
@@ -2960,7 +2960,7 @@ div.mobile-wrap .reportform {
 
 
 /***************************************/
-
+#body_board_show div.hcl{background:none!important}
 #body_board_show .fa-thumbtack {
   color: green;
   margin-right: 0.125rem
@@ -3781,42 +3781,42 @@ body.full-width {
 }
 
 #commissioner_setup th#recently_used:before {
-  content: "\f217" /*Font Awesome icon next to Recently Used*/
+  content: "\f217" /*CGT - Font Awesome icon next to Recently Used*/
 }
 
 #commissioner_setup th#general_setup:before {
-  content: "\e5f1" /*Font Awesome icon next to General Setup*/
+  content: "\e5f1" /*CGT - Font Awesome icon next to General Setup*/
 }
 
 #commissioner_setup th#commissioner_franchise_setup:before {
-  content: "\e5fd" /*Font Awesome icon next to Commissioner/Franchise Setup*/
+  content: "\e5fd" /*CGT - Font Awesome icon next to Commissioner/Franchise Setup*/
 }
 
 #commissioner_setup th#history_setup:before {
-  content: "\f640" /*Font Awesome icon next to History Setup*/
+  content: "\f640" /*CGT - Font Awesome icon next to History Setup*/
 }
 
 #commissioner_setup th#scoring_setup:before {
-  content: "\f521"; /*Font Awesome icon next to Scoring and Standings Setup*/
+  content: "\f521"; /*CGT - Font Awesome icon next to Scoring and Standings Setup*/
   /*custom icon glyph*/
   /*font-family: Font Awesome Kit;*/
   /*custom icon kit*/
 }
 
 #commissioner_setup th#players_and_rosters:before {
-  content: "\f0c0" /*Font Awesome icon next to Players and Rosters*/
+  content: "\f0c0" /*CGT - Font Awesome icon next to Players and Rosters*/
 }
 
 #commissioner_setup th#adjust_scores:before {
-  content: "\f649" /*Font Awesome icon next to Adjust Scores and Standings*/
+  content: "\f649" /*CGT - Font Awesome icon next to Adjust Scores and Standings*/
 }
 
 #commissioner_setup th#home_page_message_setup:before {
-  content: "\f4a4" /*Font Awesome icon next to Messages Setup*/
+  content: "\f4a4" /*CGT - Font Awesome icon next to Messages Setup*/
 }
 
 #commissioner_setup th#salary_cap_setup:before {
-  content: "\f51e" /*Font Awesome icon next to Salary Cap Setup*/
+  content: "\f51e" /*CGT - Font Awesome icon next to Salary Cap Setup*/
 }
 
 #commissioner_setup th#use_with_caution {
@@ -3829,35 +3829,35 @@ body.full-width {
 }
 
 #commissioner_setup th#use_with_caution:before {
-  content: "\f071" /*Font Awesome icon next to Use These Items with Caution*/
+  content: "\f071" /*CGT - Font Awesome icon next to Use These Items with Caution*/
 }
 
 #commissioner_setup th#playoff_setup:before {
-  content: "\f5a2" /*Font Awesome icon next to Playoff Setup*/
+  content: "\f5a2" /*CGT - Font Awesome icon next to Playoff Setup*/
 }
 
 #commissioner_setup th#other_transactions_setup:before {
-  content: "\f11b" /*Font Awesome icon next to Other Transactions Setup*/
+  content: "\f11b" /*CGT - Font Awesome icon next to Other Transactions Setup*/
 }
 
 #commissioner_setup th#waivers_setup:before {
-  content: "\e43c" /*Font Awesome icon next to Add/Drop and Waivers Setup*/
+  content: "\e43c" /*CGT - Font Awesome icon next to Add/Drop and Waivers Setup*/
 }
 
 #commissioner_setup th#draft_setup:before {
-  content: "\e1d0" /*Font Awesome icon next to Draft Setup*/
+  content: "\e1d0" /*CGT - Font Awesome icon next to Draft Setup*/
 }
 
 #commissioner_setup th#auction_setup:before {
-  content: "\f0e3" /*Font Awesome icon next to Auction Setup*/
+  content: "\f0e3" /*CGT - Font Awesome icon next to Auction Setup*/
 }
 
 #commissioner_setup th#fantasy_schedule_setup:before {
-  content: "\f12e" /*Font Awesome icon next to Fantasy Schedule Setup*/
+  content: "\f12e" /*CGT - Font Awesome icon next to Fantasy Schedule Setup*/
 }
 
 #commissioner_setup th#appearance_setup:before {
-  content: "\f53f" /*Font Awesome icon next to Appearance Setup*/
+  content: "\f53f" /*CGT - Font Awesome icon next to Appearance Setup*/
 }
 
 
@@ -4119,7 +4119,7 @@ footer {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
+  flex-flow: row wrap; /*CGT - added standard property*/
   justify-content: space-around;
   margin: 0 auto;
   text-align: left;
@@ -4765,7 +4765,7 @@ html[xmlns] .flexslider .slides {
 .flexslider .slides img {
   height: auto;
   -moz-user-select: none;
-  user-select: none
+  user-select: none; /*CGT - added standard property*/
 }
 
 .flex-viewport {
@@ -4814,13 +4814,13 @@ html[xmlns] .flexslider .slides {
   font-family: 'Font Awesome 6 Pro';
   font-size: 2.5rem;
   display: inline-block;
-  content: '\f053'; /*chevron-left Font Awesome icon*/
+  content: '\f053'; /*CGT - chevron-left Font Awesome icon*/
   color: rgba(0, 0, 0, 0.8);
   text-shadow: 0.063rem 0.063rem 0 rgba(255, 255, 255, 0.3)
 }
 
 .flex-direction-nav a.flex-next:before {
-  content: '\f054' /*chevron-right Font Awesome icon*/
+  content: '\f054' /*CGT - chevron-right Font Awesome icon*/
 }
 
 .flex-direction-nav .flex-prev {
@@ -4875,7 +4875,7 @@ html[xmlns] .flexslider .slides {
   font-family: 'Font Awesome 6 Pro';
   font-size: 1.25rem;
   display: inline-block;
-  content: '\f004' /*heart Font Awesome icon*/
+  content: '\f004' /*CGT - heart Font Awesome icon*/
 }
 
 .flex-pauseplay a:hover {
@@ -4883,7 +4883,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-pauseplay a.flex-play:before {
-  content: '\f053' /*chevron-left Font Awesome icon*/
+  content: '\f053' /*CGT - chevron-left Font Awesome icon*/
 }
 
 .flex-control-nav {
@@ -4898,7 +4898,7 @@ html[xmlns] .flexslider .slides {
   margin: 0 0.375rem;
   display: inline-block;
   zoom: 1;
-  /**display: inline*/ /*commented out this line item since it created an error in VS Code*/
+  /**display: inline*/ /*CGT - commented out this line item since it created an error in VS Code*/
 }
 
 .flex-control-paging li a {
@@ -4945,7 +4945,7 @@ html[xmlns] .flexslider .slides {
   opacity: .7;
   cursor: pointer;
   -moz-user-select: none;
-  user-select: none;
+  user-select: none; /*CGT - added standard property*/
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
