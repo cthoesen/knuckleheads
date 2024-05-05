@@ -928,13 +928,18 @@ input[type="radio"] {
 }
 /*CGT - PC background image and settings*/
 body {
-  --body-bg: #f8f8f8 url("https://knuckleheads.netlify.app/images/MMH-Background-Light.jpg") no-repeat fixed center center;
   color: var(--main, #080e25);
+  text-rendering: optimizeLegibility;
+  --body-bg: #f8f8f8 url("https://knuckleheads.netlify.app/images/backgrounds/Hangover.png"), url("https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Light.jpg");
   background: var(--body-bg, #f8f8f8);
   background-attachment: fixed;
-  background-position: center top;
+  background-position: 50% 0% center top;
+  background-repeat: no-repeat repeat;
   -webkit-font-smoothing: antialiased !important;
-  overflow-y: scroll;
+  height: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  /*overflow-y: scroll;*/
 }
 /*CGT - mobile background image and settings*/
 @media only screen and (max-width: 48em) {
