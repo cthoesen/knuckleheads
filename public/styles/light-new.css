@@ -933,11 +933,11 @@ body {
   /*--body-bg: #f8f8f8 url("https://knuckleheads.netlify.app/images/backgrounds/Hangover.png"), url("https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Light.jpg");*/
   background-image: url("https://knuckleheads.netlify.app/images/backgrounds/Hangover.png"), url("https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Light.jpg");
   background-attachment: fixed;
-  background-position: center top;
+  background-position: center bottom;
   background-repeat: no-repeat repeat;
   -webkit-font-smoothing: antialiased !important;
   /*height: 1200px;*/
-  margin: 0 auto;
+  margin: auto;
   width: 100%;
   overflow-y: scroll;
 }
