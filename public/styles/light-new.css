@@ -14910,6 +14910,11 @@ h2.lsm_error.error_box {
 #LSscoringBox .appendStats {
   background: #f5f5f5;
 }
+/*CGT - deleted in newest CSS file, test what this affects*/
+#LSscoringBox .lsStarterstotals,
+#LSscoringBox .lsBenchstotals {
+  margin-top: -0.125rem;
+}
 
 #teamBoxOverlay {
   background: rgba(0, 0, 0, 0.7);
