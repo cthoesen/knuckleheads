@@ -4738,7 +4738,7 @@ table#youtubevideo.homepagemodule.report embed,
 }
 
 .flexslider .slides:after {
-  content: "\0020";
+  content: "\0020"; /*CGT - planet-ringed Font Awesome icon*/
   display: block;
   clear: both;
   visibility: hidden;
@@ -5519,13 +5519,53 @@ img {
   width: 100%;
   margin: 1.25rem 0
 }
+/******************************/
 
-.franchiselogo,
-.franchiseicon {
+Team Logos
+
+/******************************/
+/*below settings to set size of logo for Locker Room*/
+.franchiselogo{
   max-width: 100%;
   height: auto
 }
-
+/*below settings to increase size of icons for standings on PC*/
+.franchiseicon {
+  width: 250px; /* this was max-width: 100% */
+  height: auto
+}
+#standings .franchiseicon {
+  width: 425px; /* width of icon on standings screen*/
+}
+#standings .fname, #standings .ficon {
+  width: 300px;
+}
+#home #standings .franchiseicon, #roster .franchiseicon {
+  width: 250px;
+}
+#home #standings .fname, #home #standings .ficon {
+  width: 250px;
+}
+/*below settings to decrease size of icons for standings on mobile devices*/
+@media only screen and (max-width: 35.5em) {
+  .franchiseicon {
+      height: auto;
+      width: 200px;
+  }
+  #standings .franchiseicon {
+      width: 200px;
+  }
+  #standings .fname, #standings .ficon {
+      width: 200px;
+  }
+  #home #standings .franchiseicon, #roster .franchiseicon {
+      width: 180px;
+  }
+  #home #standings .fname, #home #standings .ficon {
+      width: 180px;
+  }
+}
+/******************************/
 #body_login .warning {
   text-align: center
 }
@@ -5773,7 +5813,7 @@ div.mobile-wrap:empty {
 
 #playoff-report-modal-content .still-tied li::before,
 #playoff-report-modal-content .seed-group ul ul li::before {
-  content: "\f005";
+  content: "\f005"; /*CGT - star Font Awesome icon*/
   font-family: 'Font Awesome 6 Pro';
   padding-right: 0.188rem;
   color: var(--main-four, var(--main, #080e25))
@@ -5855,7 +5895,7 @@ tr.assets input[name^="bbid"] {
 }
 
 .shouldbench:after {
-  content: "\f103";
+  content: "\f103"; /*CGT - angles-down Font Awesome icon*/
   font-family: 'Font Awesome 6 Pro';
   margin-left: 0.25rem;
   color: red;
@@ -5867,7 +5907,7 @@ tr.assets input[name^="bbid"] {
 }
 
 .shouldstart:after {
-  content: "\f102";
+  content: "\f102"; /*CGT - angles-up Font Awesome icon*/
   font-family: 'Font Awesome 6 Pro';
   margin-left: 0.25rem;
   color: limegreen;
@@ -6235,12 +6275,12 @@ tr.tradedifference td {
 
 #MFLroster .checkBox input+label:before {
   color: #888;
-  content: "\f096";
+  content: "\f44e"; /*CGT - football Font Awesome icon - was f096 (checkbox)*/
 }
 
 #MFLroster .checkBox input:checked+label:before {
   color: green;
-  content: "\f046";
+  content: "\e5b1"; /*CGT - toggle on Font Awesome icon - was f046 (checked checkbox)*/
 }
 
 #MFLroster td.checkBox {
@@ -7516,23 +7556,23 @@ a.subhead {
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="DOWN"]:before {
-  content: "\f078"
+  content: "\f078" /*CGT - chevron-down Font Awesome icon*/
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="UP"]:before {
-  content: "\f077"
+  content: "\f077" /*CGT - chevron-up Font Awesome icon*/
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="DELETE"]:before {
-  content: "\f014"
+  content: "\f146" /*CGT - square-minus Font Awesome icon*/
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="COPY"]:before {
-  content: "\f24d"
+  content: "\f24d" /*CGT - clone Font Awesome icon*/
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="&ROUND"]:before {
-  content: "\f040"
+  content: "\e5da" /*CGT - grid-round Font Awesome icon*/
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="DOWN"],
