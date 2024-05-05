@@ -930,16 +930,16 @@ input[type="radio"] {
 body {
   color: var(--main, #080e25);
   text-rendering: optimizeLegibility;
-  --body-bg: #f8f8f8 url("https://knuckleheads.netlify.app/images/backgrounds/Hangover.png"), url("https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Light.jpg");
-  background: var(--body-bg, #f8f8f8);
+  /*--body-bg: #f8f8f8 url("https://knuckleheads.netlify.app/images/backgrounds/Hangover.png"), url("https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Light.jpg");*/
+  background-image: url("https://knuckleheads.netlify.app/images/backgrounds/Hangover.png"), url("https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Light.jpg");
   background-attachment: fixed;
-  background-position: 50% 0% center top;
+  background-position: center top;
   background-repeat: no-repeat repeat;
   -webkit-font-smoothing: antialiased !important;
   height: 1200px;
   margin: 0 auto;
   width: 100%;
-  /*overflow-y: scroll;*/
+  overflow-y: scroll;
 }
 /*CGT - mobile background image and settings*/
 @media only screen and (max-width: 48em) {
