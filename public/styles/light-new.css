@@ -932,13 +932,13 @@ body {
   text-rendering: optimizeLegibility;
   /*--body-bg: #f8f8f8 url("https://knuckleheads.netlify.app/images/backgrounds/Hangover.png"), url("https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Light.jpg");*/
   background-image: url("https://knuckleheads.netlify.app/images/backgrounds/Hangover.png"), url("https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Light.jpg");
-  background-attachment: fixed;
-  background-position: center bottom;
+  background-attachment: fixed scroll;
+  background-position: 50% 0 center top;
   background-repeat: no-repeat repeat;
   -webkit-font-smoothing: antialiased !important;
-  /*height: 1200px;*/
+  /*height: 1200px;
   margin: auto;
-  width: 100%;
+  width: 100%;*/
   overflow-y: scroll;
 }
 /*CGT - mobile background image and settings*/
