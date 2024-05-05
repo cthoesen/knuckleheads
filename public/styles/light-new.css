@@ -936,7 +936,7 @@ body {
   background-position: center top;
   background-repeat: no-repeat repeat;
   -webkit-font-smoothing: antialiased !important;
-  height: 1200px;
+  /*height: 1200px;*/
   margin: 0 auto;
   width: 100%;
   overflow-y: scroll;
