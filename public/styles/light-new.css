@@ -938,7 +938,7 @@ body {
   -webkit-font-smoothing: antialiased !important;
   /*height: 1200px;*/
   margin: auto;
-  width: 1900px 1900px;
+  width: 100%;
   overflow-y: scroll;
 }
 /*CGT - mobile background image and settings*/
