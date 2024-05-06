@@ -931,7 +931,7 @@ body {
   color: var(--main, #080e25);
   text-rendering: optimizeLegibility;
   /*--body-bg: #f8f8f8 url("https://knuckleheads.netlify.app/images/backgrounds/Hangover.png"), url("https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Light.jpg");*/
-  background-image: url("https://knuckleheads.netlify.app/images/backgrounds/Side-Players.png"), url("https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Light.jpg");
+  background-image: url("https://knuckleheads.netlify.app/images/backgrounds/Side-Players-QB.png"), url("https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Light.jpg");
   background-attachment: fixed;
   background-position: center top;
   background-repeat: no-repeat no-repeat;
