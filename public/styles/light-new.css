@@ -936,7 +936,7 @@ body {
   background-position: center center;
   background-repeat: no-repeat no-repeat;
   -webkit-font-smoothing: antialiased !important;
-  margin: 5% 0;
+  margin: auto;
   width: 100%;
   overflow-y: scroll;
 }
