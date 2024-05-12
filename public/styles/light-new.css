@@ -2242,7 +2242,7 @@ caption,
   max-width: 100%; /*added*/
   }
 /*added to test caption svg background image*/
-.caption-stipple {
+.stipple {
   fill: #94d31b; 
 }
 
