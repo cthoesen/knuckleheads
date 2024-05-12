@@ -2260,7 +2260,8 @@ caption a:link,
 caption a:active,
 caption a:visited {
   color: var(--main-four, var(--main, #080e25));
-  fill: var(--gradient-light, #B82601);
+  path{ fill: var(--gradient-light, #B82601);
+  }
 }
 
 caption {
