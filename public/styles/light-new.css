@@ -2219,7 +2219,8 @@ a:active {
 /***************************************/
 
 .homepagemodule.report caption span {
-  pointer-events: none
+  pointer-events: none;
+  color: var(--main-four, var(--main, #080e25));
 }
 
 .homepagemodule.report caption span a,
@@ -2242,10 +2243,6 @@ caption,
   max-width: 100%; /*added*/
 }
 
-.stipple {
-    fill: var(--accent, blue); 
-}
-
 .homepagemodule caption.withfranchiseicon,
 caption.withfranchiseicon {
   background: none;
@@ -2261,7 +2258,7 @@ caption a,
 caption a:link,
 caption a:active,
 caption a:visited {
-  color: var(--main-four, var(--main, #080e25));
+  color: var(--accent, var(--accent-three, #080e25)); /*CGT - changed from main-four and main*/
 }
 
 caption {
