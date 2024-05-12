@@ -2240,7 +2240,11 @@ caption,
   text-transform: uppercase;
   width: auto; /*added*/
   max-width: 100%; /*added*/
-  }
+}
+
+.stipple {
+    fill: var(--accent, #B82601); 
+}
 
 .homepagemodule caption.withfranchiseicon,
 caption.withfranchiseicon {
