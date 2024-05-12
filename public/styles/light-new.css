@@ -2242,7 +2242,9 @@ caption,
   max-width: 100%; /*added*/
   }
 /*added to test caption svg background image*/
-
+.caption-stipple {
+  fill: #94d31b; 
+}
 
 .homepagemodule caption.withfranchiseicon,
 caption.withfranchiseicon {
@@ -2260,8 +2262,6 @@ caption a:link,
 caption a:active,
 caption a:visited {
   color: var(--main-four, var(--main, #080e25));
-  path{ fill: var(--gradient-light, #B82601);
-  }
 }
 
 caption {
