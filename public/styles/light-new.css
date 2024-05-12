@@ -2233,7 +2233,7 @@ caption,
   font-size: 1.375rem;
   text-align: center;
   background-image: url(https://knuckleheads.netlify.app/images/captions/Caption-Stipple.svg); /*added*/
-  background-color: var(--gradient-light, #B82601);
+  fill: var(--gradient-light, #B82601);
   /*background: none;*/ /*none*/
   background-position: right 0px top; /*added*/
   padding: 0.5rem 0.313rem;
