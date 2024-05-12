@@ -2234,6 +2234,7 @@ caption,
   text-align: center;
   background: rgba(0, 0, 0, 0) url(https://knuckleheads.netlify.app/images/captions/Caption-Stipple.svg); /*none*/
   background-position: right 0px top; /*added*/
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%); /*added*/
   padding: 0.5rem 0.313rem;
   text-align: left;
   line-height: 100%;
