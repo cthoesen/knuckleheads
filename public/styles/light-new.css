@@ -2241,6 +2241,10 @@ caption,
   width: auto; /*added*/
   max-width: 100%; /*added*/
 }
+/*added to test caption svg background image*/
+path {
+  fill: blue; 
+}​
 
 .homepagemodule caption.withfranchiseicon,
 caption.withfranchiseicon {
