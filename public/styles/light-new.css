@@ -2232,15 +2232,15 @@ caption,
 #commissioner_setup table.two_column_layout th {
   font-size: 1.375rem;
   text-align: center;
-  --gradient-light: var(--gradient-light, blueviolet);
-  background: rgba(0, 0, 0, 0) url(https://knuckleheads.netlify.app/images/captions/Caption-Stipple.svg); /*none*/
-  background-position: right 0px top; /*delete*/
+  mask-image: image(url(https://knuckleheads.netlify.app/images/captions/Caption-Stipple.svg), --gradient-light); /*added*/
+  background: none; /*none*/
+  background-position: right 0px top; /*added*/
   padding: 0.5rem 0.313rem;
   text-align: left;
   line-height: 100%;
   text-transform: uppercase;
-  width: auto; /*delete*/
-  max-width: 100%; /*delete*/
+  width: auto; /*added*/
+  max-width: 100%; /*added*/
 }
 
 .homepagemodule caption.withfranchiseicon,
