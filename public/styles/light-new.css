@@ -2243,7 +2243,7 @@ caption,
 }
 
 .stipple {
-    fill: var(--accent, #B82601); 
+    fill: var(--accent, blue); 
 }
 
 .homepagemodule caption.withfranchiseicon,
