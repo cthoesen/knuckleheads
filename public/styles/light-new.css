@@ -11,10 +11,6 @@ CSS target for all habman sites is body.habskin
 CSS targets for individual habman sites - body.glfffl , body.glfflplus , body.nra , body.lions-den , body.sdd
 Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-bg2 , #000000)))
 */
-:root {
-  --captioncolor: var(--gradient-light, #B82601);
-}
-
 .myfantasyleague_menu ul li.mfl-icon {
   display: none
 }
