@@ -3,7 +3,7 @@
   <style>
     /*added to test caption svg background image*/
     .stipple {
-      fill: var(--gradient-light, #94d31b); 
+      fill: var(--accent, #B82601); 
     }
   </style>
     <g id="Gradient">
