@@ -2220,7 +2220,6 @@ a:active {
 
 .homepagemodule.report caption span {
   pointer-events: none;
-  color: var(--main-four, var(--main, #080e25));
 }
 
 .homepagemodule.report caption span a,
@@ -2258,7 +2257,7 @@ caption a,
 caption a:link,
 caption a:active,
 caption a:visited {
-  color: var(--accent, var(--accent-three, #080e25)); /*CGT - changed from main-four and main*/
+  color: var(--accent-four, var(--accent-three, #080e25)); /*CGT - changed from main-four and main*/
 }
 
 caption {
