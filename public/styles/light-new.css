@@ -2240,9 +2240,7 @@ caption,
   text-transform: uppercase;
   width: auto; /*added*/
   max-width: 100%; /*added*/
-  path {
-    color: var(--gradient-light, #B82601);
-}}
+  }
 /*added to test caption svg background image*/
 
 
@@ -2261,7 +2259,8 @@ caption a,
 caption a:link,
 caption a:active,
 caption a:visited {
-  color: var(--main-four, var(--main, #080e25))
+  color: var(--main-four, var(--main, #080e25));
+  fill: var(--gradient-light, #B82601);
 }
 
 caption {
