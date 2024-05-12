@@ -2241,10 +2241,6 @@ caption,
   width: auto; /*added*/
   max-width: 100%; /*added*/
   }
-/*added to test caption svg background image*/
-.stipple {
-  fill: #94d31b; 
-}
 
 .homepagemodule caption.withfranchiseicon,
 caption.withfranchiseicon {
