@@ -2241,7 +2241,7 @@ caption,
   width: auto; /*added*/
   max-width: 100%; /*added*/
   path {
-    fill: var(--gradient-light);
+    color: var(--gradient-light, #B82601);
 }}
 /*added to test caption svg background image*/
 
