@@ -2232,7 +2232,7 @@ caption,
 #commissioner_setup table.two_column_layout th {
   font-size: 1.375rem;
   text-align: center;
-  background: rgba(0, 0, 0, 0) url(https://knuckleheads.netlify.app/images/captions/Caption-Stipple.svg); /*none*/
+  background: var(--accent, #B82601) url(https://knuckleheads.netlify.app/images/captions/Caption-Stipple.svg) var(--accent, #B82601); /*none*/
   background-position: right 0px top; /*delete*/
   padding: 0.5rem 0.313rem;
   text-align: left;
