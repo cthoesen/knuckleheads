@@ -2257,7 +2257,7 @@ caption a,
 caption a:link,
 caption a:active,
 caption a:visited {
-  color: var(--main, var(--accent, #080e25)); /*CGT - changed from main-four and main*/
+  color: var(--main-four, var(--main, #080e25)); /*CGT - changed from main-four and main*/
 }
 
 caption {
