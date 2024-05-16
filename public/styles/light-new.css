@@ -2250,7 +2250,7 @@ caption:before {
   background-size: contain;
   background-position: 25% center;
   vertical-align: 0.5rem;
-  content: "\f44f\f44f";
+  content: "\f44f";
 }
 
 .homepagemodule caption.withfranchiseicon,
