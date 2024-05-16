@@ -2234,7 +2234,7 @@ caption,
   text-align: center;
   background: rgba(0, 0, 0, 0) url(https://knuckleheads.netlify.app/images/captions/KDL-Caption-Pixel.png); /*none*/
   background-position: center; /*added*/
-  padding: 0.5rem 0.313rem;
+  padding: 0.5rem;
   text-align: left;
   line-height: 100%;
   text-transform: uppercase;
@@ -2242,7 +2242,6 @@ caption,
   max-width: 100%; /*added*/
   border: 0.5rem outset var(--gradient-dark, blue); /*added*/
   border-radius: 0.5rem; /*added*/
-  outline: 0.25rem solid var(--gradient-light, green); /*added*/
 }
 
 .homepagemodule caption.withfranchiseicon,
