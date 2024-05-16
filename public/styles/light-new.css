@@ -2232,8 +2232,11 @@ caption,
 #commissioner_setup table.two_column_layout th {
   font-size: 1.375rem;
   text-align: center;
-  background: rgba(0, 0, 0, 0) url(https://knuckleheads.netlify.app/images/captions/Caption-Stipple.svg); /*none*/
-  background-position: right 0px top; /*added*/
+  background-color: var(--accent, red);
+  -webkit-mask-image: url(https://knuckleheads.netlify.app/images/captions/Caption-Stipple.svg);
+  mask-image: url(https://knuckleheads.netlify.app/images/captions/Caption-Stipple.svg);
+  /*background: rgba(0, 0, 0, 0) url(https://knuckleheads.netlify.app/images/captions/Caption-Stipple.svg); /*none*/
+  mask-position: right 0px top; /*added*/
   padding: 0.5rem 0.313rem;
   text-align: left;
   line-height: 100%;
