@@ -2241,6 +2241,7 @@ caption,
   width: auto; /*added*/
   max-width: 100%; /*added*/
   border: 0.5rem outset var(--gradient-dark, blue); /*added*/
+  border-radius: 0.5rem; /*added*/
 }
 
 .homepagemodule caption.withfranchiseicon,
