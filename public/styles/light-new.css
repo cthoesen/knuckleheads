@@ -2236,6 +2236,7 @@ caption,
   -webkit-mask-image: url(https://knuckleheads.netlify.app/images/captions/KDL-Caption-Gradient.svg);
   mask-image: url(https://knuckleheads.netlify.app/images/captions/KDL-Caption-Gradient.svg);
   /*background: rgba(0, 0, 0, 0) url(https://knuckleheads.netlify.app/images/captions/Caption-Stipple.svg); /*none*/
+  background-position: right 0px top; /*added*/
   padding: 0.5rem 0.313rem;
   text-align: left;
   line-height: 100%;
