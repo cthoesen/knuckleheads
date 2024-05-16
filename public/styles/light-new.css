@@ -2243,6 +2243,16 @@ caption,
   border: 0.5rem outset var(--gradient-dark, blue); /*added*/
   border-radius: 0.5rem; /*added*/
 }
+/*CGT - Added below logo before captions*/
+caption:before {
+  padding: 18px 20px 22px 40px;
+  background: url(https://knuckleheads.netlify.app/svg-icons/Icon-KDL-Logo.svg) no-repeat;
+  background-size: contain;
+  background-position: 40% center;
+  vertical-align: -2px;
+  filter: contrast(-1.5);
+  content: '';
+}
 
 .homepagemodule caption.withfranchiseicon,
 caption.withfranchiseicon {
