@@ -2245,8 +2245,8 @@ caption,
 }
 /*CGT - Added below logo before captions*/
 caption:before {
-  padding: 1.15rem;
-  background: url(https://knuckleheads.netlify.app/svg-icons/Icon-Helmet.svg) no-repeat;
+  padding: 1.15rem 2rem;
+  background: url(https://knuckleheads.netlify.app/svg-icons/KDL-Logo-Alt.svg) no-repeat;
   background-size: contain;
   background-position: 25% center;
   vertical-align: 0.5rem;
