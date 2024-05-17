@@ -2220,6 +2220,7 @@ a:active {
 
 .homepagemodule.report caption span {
   pointer-events: none;
+  padding: 0.33rem;
 }
 
 .homepagemodule.report caption span a,
@@ -2241,11 +2242,11 @@ caption,
   width: auto; /*added*/
   max-width: 100%; /*added*/
   border: 0.5rem outset var(--gradient-dark, blue); /*added*/
-  border-radius: 0.5rem; /*added*/
+  border-radius: 0.25rem; /*added*/
 }
 /*CGT - Added below logo before captions*/
 caption:before {
-  padding: 1.15rem 2rem;
+  padding: 1.25rem 1.75rem 1.75rem 1.25rem;
   background: url(https://knuckleheads.netlify.app/svg-icons/KDL-Logo-Alt.svg) no-repeat;
   background-size: contain;
   background-position: 25% center;
