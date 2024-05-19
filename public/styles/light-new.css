@@ -2195,12 +2195,12 @@ a:visited:hover {
 
 
 /* report container text hover if not defined */
-
+/*CGT - added border around league banner with below settings*/
 a:link img,
 A:visited img {
-  border-color: var(--gradient-light, blue); /*CGT - was transparent*/
-  border: 0.25rem outset; /*added*/
-  border-radius: 0.125rem; /*added*/
+  border-color: var(--lightest-color, blue); /*CGT - was transparent*/
+  border: 0.5rem outset; /*added*/
+  border-radius: 0.15rem; /*added*/
 }
 
 a:hover img {
