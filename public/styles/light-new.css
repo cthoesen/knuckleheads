@@ -1330,13 +1330,11 @@ body.chat_popup .banner-container-wrap {
   border-bottom: 0.25rem solid var(--main-four, var(--main, #080e25));
   box-shadow: 0 0 0.6rem rgb(45 45 45 / 50%);
 }
-
+/*CGT - Below determines container settings for league banner*/
 .full_height_banner img {
   width: 100%;
   max-width: 100%;
   min-height: 5rem;
-  border: 0.25rem outset var(--gradient-light, blue); /*added*/
-  border-radius: 0.125rem; /*added*/
 }
 
 .bannerlinkicons-full {
@@ -2200,7 +2198,9 @@ a:visited:hover {
 
 a:link img,
 A:visited img {
-  border-color: transparent
+  border-color: var(--gradient-light, blue); /*CGT - was transparent*/
+  border: 0.25rem outset; /*added*/
+  border-radius: 0.125rem; /*added*/
 }
 
 a:hover img {
