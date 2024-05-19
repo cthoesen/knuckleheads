@@ -1335,6 +1335,8 @@ body.chat_popup .banner-container-wrap {
   width: 100%;
   max-width: 100%;
   min-height: 5rem;
+  border: 0.25rem outset var(--gradient-light, blue); /*added*/
+  border-radius: 0.125rem; /*added*/
 }
 
 .bannerlinkicons-full {
