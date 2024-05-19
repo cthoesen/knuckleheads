@@ -2224,6 +2224,11 @@ a:active {
   pointer-events: none;
   padding: 0.33rem;
 }
+/*CGT - below added for padding around HPM captions*/
+.report.addCaption caption span {
+  pointer-events: none;
+  padding: 0.33rem;
+}
 
 .homepagemodule.report caption span a,
 .homepagemodule.report caption span.module_expand {
