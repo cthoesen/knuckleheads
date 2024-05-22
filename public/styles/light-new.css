@@ -2241,8 +2241,7 @@ caption,
 #commissioner_setup table.two_column_layout th {
   font-size: 1.375rem;
   text-align: center;
-  /*background: rgba(0, 0, 0, 0) url(https://knuckleheads.netlify.app/images/captions/KDL-Caption-Pixel.png); /*none*/
-  background: var(--gradient-dark, blue) url(https://knuckleheads.netlify.app/images/captions/Caption-Pixels.svg); /*none*/
+  background: rgba(0, 0, 0, 0) url(https://knuckleheads.netlify.app/images/captions/KDL-Caption-Pixel.png); /*none*/
   background-position: center; /*added*/
   padding: 0.5rem;
   text-align: left;
