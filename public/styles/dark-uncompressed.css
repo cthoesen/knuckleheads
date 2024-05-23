@@ -1607,7 +1607,7 @@ td.reportfooter a:visited:hover {
 
 .standingslogo {
   max-width: 100%;
-  border: 0.5rem outset var(--gradient-dark, blue); /*added*/
+  border: 0.5rem outset var(--accent-light, blue); /*added*/
   border-radius: 0.25rem; /*added*/
 }
 
