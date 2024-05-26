@@ -2262,6 +2262,13 @@ caption:before {
   vertical-align: 0.5rem;
   content: "";
 }
+/*CGT - Added below to remove logo before roster icons */
+#roster caption.withfranchiseicon {
+  padding-left: 0.188rem;
+  padding-left: .188rem;
+  padding-right: 0.188rem;
+  padding-right: .188rem;
+}
 
 .homepagemodule caption.withfranchiseicon,
 caption.withfranchiseicon {
