@@ -2249,7 +2249,7 @@ caption,
   text-transform: uppercase;
   width: auto; /*added*/
   max-width: 100%; /*added*/
-  border: 0.5rem outset var(--gradient-light, blue); /*added*/
+  border: 0.33rem outset var(--gradient-light, blue); /*added*/
   border-radius: 0.25rem; /*added*/
   margin-bottom: 0.33rem;
 }
