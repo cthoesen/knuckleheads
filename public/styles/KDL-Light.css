@@ -3378,7 +3378,10 @@ div.mobile-wrap .reportform {
 .cal-event li.calendar_event_waiver_none:before {
   color: red
 }
-
+/* CGT - Added padding between captions and tables under them */
+tr {
+  padding-top: 0.25rem;
+}
 
 /*******************************************/
 
