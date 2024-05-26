@@ -5588,6 +5588,14 @@ Team Logos
   width: auto;
   padding: 0.05rem 0.05rem 0.05rem 0.25rem;
 }
+/*CGT - below settings to add background pixels on roster report*/
+#roster caption.withfranchiseicon {
+  padding-left: 0.188rem;
+  padding-left: .188rem;
+  padding-right: 0.188rem;
+  padding-right: .188rem;
+  background: rgba(0, 0, 0, 0) url(https://knuckleheads.netlify.app/images/captions/KDL-Caption-Pixel.png); /*added*/
+}
 /*below settings to decrease size of icons for standings on mobile devices*/
 @media only screen and (max-width: 35.5em) {
   .franchiseicon {
