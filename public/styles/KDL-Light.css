@@ -2263,11 +2263,10 @@ caption:before {
   content: "";
 }
 /*CGT - Added below to remove logo before roster icons */
-#roster caption.withfranchiseicon {
-  padding-left: 0.188rem;
-  padding-left: .188rem;
-  padding-right: 0.188rem;
-  padding-right: .188rem;
+caption.withfranchiseicon:before {
+  padding: 0.313rem 0;
+  text-align: center !important;
+  text-indent: 0;
 }
 
 .homepagemodule caption.withfranchiseicon,
