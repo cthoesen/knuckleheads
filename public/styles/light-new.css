@@ -5573,6 +5573,13 @@ Team Logos
 #home #standings .fname, #home #standings .ficon {
   width: 250px;
 }
+/*CGT - below settings to increase size of icons for standings on PC*/
+#TeamDetails caption span img {
+  height: 2.5rem;
+  vertical-align: middle;
+  width: auto;
+  padding: 0.05rem 0.05rem 0.05rem 0.25rem;
+}
 /*below settings to decrease size of icons for standings on mobile devices*/
 @media only screen and (max-width: 35.5em) {
   .franchiseicon {
