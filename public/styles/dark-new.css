@@ -203,17 +203,17 @@ body a,
 body a:link,
 body a:active,
 body a:visited {
-  color: #eee;
+  color: var(--accent, #eee);
   outline: none
 }
-
+/* body text */
 body a:hover,
 body a:link:hover,
 body a:active:hover,
 body a:visited:hover {
-  color: #fff
+  color: var(--main, #fff);
 }
-
+/* body text hover */
 .pagebody {
   margin-bottom: 0.625rem
 }
@@ -302,7 +302,7 @@ body.chat_popup .banner-container-wrap {
 .sub-content ul li:before,
 .show-sub-heads ul li:before,
 .trade-assets-wrapper li::marker {
-  content: "\f005";
+  content: "\f44e"; /*CGT - changed from star (f005) to football (f44e) - this affects icon next to links on MFL site*/
   font-family: 'Font Awesome 6 Pro';
   padding-right: 0.188rem;
   margin-left: -1.5em
@@ -418,10 +418,12 @@ body.chat_popup .banner-container-wrap {
   width: 3.2rem;
   height: 3.2rem
 }
-
+/*CGT - added color filter on svg icons*/
 .svg-icon:hover,
 .svg-iconlink:hover .svg-icon {
-  fill: #ddd;
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+  transition: all 3s ease;
+  fill: var(--main-two, var(--main,#ddd));
   color: var(--accent-light, #FA5C25)
 }
 
@@ -429,7 +431,7 @@ body.chat_popup .banner-container-wrap {
 .svg-iconlink {
   transition: all 0.6s ease;
 }
-
+/*IMAGE ICONS LINKS FORMATTING*/
 .icon-bar,
 .icon-bar-full {
   white-space: nowrap
@@ -472,8 +474,9 @@ body.chat_popup .banner-container-wrap {
   transform: scale(.9);
 }
 
-.icon-bar-full i:before,
-.icon-bar i:before {
+****** ADDED 6-4-23 for font awesome icons in icon bar ********/
+.icon-bar i:before,
+.icon-bar-full i:before {
   color: var(--accent, #ff4200);
 }
 
@@ -481,7 +484,7 @@ body.chat_popup .banner-container-wrap {
 .icon-bar-full a:hover i:before,
 .icon-bar i:after,
 .icon-bar a:hover i:before {
-  color: #ddd;
+  color: var(--main, #ddd); /*CGT - color here defines main color on Font Awesome icons within icon bar*/
   opacity: 1;
 }
 
@@ -491,8 +494,8 @@ body.chat_popup .banner-container-wrap {
   opacity: 1;
 }
 
-.icon-bar-full a i,
-.icon-bar a i {
+.icon-bar a i, 
+.icon-bar-full a i {
   font-size: 3rem;
   line-height: 3rem;
   width: 100%;
@@ -526,7 +529,8 @@ body.chat_popup .banner-container-wrap {
 
 .banner-container-wrap-full {
   width: 100%;
-  max-width: 71.75rem;
+  max-width: 100%; /*CGT - changed from 71.75rem to 100% to fit full width of banner*/
+  padding: 0.375rem 0.063rem 0.375rem 0.063rem; /*CGT - added padding around banner*/
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -535,11 +539,11 @@ body.chat_popup .banner-container-wrap {
 }
 
 .banner-container-full {
+  background: var(--bg-opacity, rgba(181, 47, 0, .05));
   border-bottom: 0.25rem solid var(--accent, #ff4200);
   box-shadow: inset 0 0 0.625rem rgb(0 0 0 / 80%);
-  background: var(--bg-opacity, rgba(181, 47, 0, .05));
 }
-
+/*CGT - Below determines container settings for league banner*/
 .full_height_banner img {
   width: 100%;
   max-width: 100%;
@@ -561,26 +565,36 @@ body.chat_popup .banner-container-wrap {
   padding: 0 1.25rem;
 }
 
+
+/***************************************/
+
+
+/* STANDINGS SELECTION */
+
+
+/***************************************/
+
+/* SETTING POPUP BOX */
 #standings-settings {
   box-shadow: 0 0 0.063rem 0.063rem rgba(0, 0, 0, 0.1);
   border-radius: 0.188rem;
   padding: 0.625rem !important;
   background: var(--site-bg-image, #111) !important;
 }
-
+/* POPUP OVERLAY BACKGROUND */
 .standings-settings_overlay {
   background-color: #000;
-  opacity: .7
+  opacity: 0.7;
 }
-
+/* COLOR OF AN UNCHECKED CHECKBOX */
 #standings-settings input+label:before {
-  color: red
+  color: red;
 }
-
+/* COLOR OF A CHECKED CHECKBOX */
 #standings-settings input:checked+label:before {
   color: #90ee90
 }
-
+/* COLOR OF LOCK DISPLAYED FOR LOCKED FRANCHISE COLUMNS */
 #standings-settings #fname_checkbox:checked+label:before,
 #standings-settings #fname_checkbox+label:before,
 #standings-settings #ficon_checkbox:checked+label:before,
@@ -593,6 +607,13 @@ body.chat_popup .banner-container-wrap {
 .standings-cog {
   font-size: 0.938rem
 }
+/***************************************/
+
+
+/* SKIN SELECTION */
+
+
+/***************************************/
 
 .MFLSkinSelection i {
   padding-right: 0.375rem;
@@ -638,6 +659,13 @@ body.chat_popup .banner-container-wrap {
 .show {
   display: block
 }
+/***************************************/
+
+
+/* MFL OWN POPUP */
+
+
+/***************************************/
 
 .mflModal-content {
   max-width: 31.25rem;
@@ -696,6 +724,13 @@ body.chat_popup .banner-container-wrap {
   right: 0.625rem;
   top: 1rem;
 }
+/***************************************/
+
+
+/* MFL RESPONSIVE MENU */
+
+
+/***************************************/
 
 .myfantasyleague_menu {
   box-shadow: inset 0 0 0 62.5rem rgba(45, 45, 45, .2);
@@ -796,6 +831,13 @@ li.player-search a input {
 .myfantasyleague_menu>ul {
   padding: 0 30px;
 }
+/***************************************/
+
+
+/* MFL RESPONSIVE TABS */
+
+
+/***************************************/
 
 .myfantasyleague_tabmenu ul#homepagetabs {
   border: 0;
@@ -953,27 +995,27 @@ label[for='sub100']+#homepagetabs {
 
 #tabmenu-wrap li#tab0 a:before,
 #tabmenu-wrap #tab_title.tab0:before {
-  content: "\f015"
+  content: "\f015"; /*CGT - defines the Font Awesome icon next to Home on the homepage tabs section*/
 }
 
 #tabmenu-wrap li#tab1 a:before,
 #tabmenu-wrap #tab_title.tab1:before {
-  content: "\f085"
+  content: "\f0c0"; /*CGT - defines the Font Awesome icon next to My Team on the homepage tabs section*/
 }
 
 #tabmenu-wrap li#tab2 a:before,
 #tabmenu-wrap #tab_title.tab2:before {
-  content: "\f080"
+  content: "\e5e3" /*CGT - defines the Font Awesome icon next to Reports on the homepage tabs section*/
 }
 
 #tabmenu-wrap li#tab3 a:before,
 #tabmenu-wrap #tab_title.tab3:before {
-  content: "\f1ea"
+  content: "\f44f" /*CGT - defines the Font Awesome icon next to Players on the homepage tabs section*/
 }
 
 #tabmenu-wrap li#tab4 a:before,
 #tabmenu-wrap #tab_title.tab4:before {
-  content: "\f0c0"
+  content: "\f1ea" /*CGT - defines the Font Awesome icon next to Latest News on the homepage tabs section*/
 }
 
 #tabmenu-wrap li#tab5 a:before,

@@ -1371,15 +1371,15 @@ body.chat_popup .banner-container-wrap {
 /* POPUP OVERLAY BACKGROUND */
 .standings-settings_overlay {
   background-color: #000;
-  opacity: .7
+  opacity: 0.7;
 }
 
 /* COLOR OF AN UNCHECKED CHECKBOX */
 #standings-settings input+label:before {
-  color: red
+  color: red;
 }
 
-/* COLOR OF AN CHECKED CHECKBOX */
+/* COLOR OF A CHECKED CHECKBOX */
 #standings-settings input:checked+label:before {
   color: green
 }
@@ -1679,7 +1679,7 @@ li.player-search a input {
 /***************************************/
 
 .myfantasyleague_tabmenu ul#homepagetabs {
-  border: 0
+  border: 0;
 }
 
 label[for='sub100']+#homepagetabs {
