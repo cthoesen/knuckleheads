@@ -439,7 +439,7 @@ body.chat_popup .banner-container-wrap {
   width: 3.2rem;
   height: 3.2rem
 }
-
+/*CGT - added color filter on svg icons*/
 .svg-icon:hover,
 .svg-iconlink:hover .svg-icon {
   filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
@@ -452,7 +452,7 @@ body.chat_popup .banner-container-wrap {
 .svg-iconlink {
   transition: all 0.6s ease;
 }
-
+/*IMAGE ICONS LINKS FORMATTING*/
 .icon-bar,
 .icon-bar-full {
   white-space: nowrap
@@ -495,6 +495,7 @@ body.chat_popup .banner-container-wrap {
   transform: scale(.9);
 }
 
+****** ADDED 6-4-23 for font awesome icons in icon bar ********/
 .icon-bar-full i:before,
 .icon-bar i:before {
   color: var(--accent, #ff4200);
@@ -563,7 +564,7 @@ body.chat_popup .banner-container-wrap {
   box-shadow: inset 0 0 0.625rem rgb(0 0 0 / 80%);
   background: var(--bg-opacity, rgba(181, 47, 0, .05));
 }
-
+/*CGT - Below determines container settings for league banner*/
 .full_height_banner img {
   width: 100%;
   max-width: 100%;

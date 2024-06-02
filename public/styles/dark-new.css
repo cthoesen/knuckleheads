@@ -20,6 +20,7 @@ Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-
   --accent-dark: #B52F00;
   --bg-opacity: rgba(181, 47, 0, .05);
   --bg-opacity-brighter: rgba(181, 47, 0, .2);
+  --fa-main-color: #F5761A;
 }
 
 .myfantasyleague_menu ul li.mfl-icon {
@@ -39,7 +40,7 @@ Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-
   font-size: 1rem;
   line-height: 2.25rem;
   display: inline-block;
-  content: '\f015'; /*CGT - defines the home icon at the top of each MFL page*/
+  content: '\e3af'; /*CGT - defines the home icon at the top of each MFL page*/
   visibility: visible;
   position: absolute;
   top: 50%;
@@ -77,7 +78,7 @@ body.bettis {
   --bg-opacity-brighter: rgba(178, 120, 74, .2)
 }
 
-.theme-dk-grey {
+.theme-dk-gray {
   --accent: #777;
   --accent-light: #ccc;
   --accent-dark: #222;
@@ -117,12 +118,32 @@ body.bettis {
   --bg-opacity-brighter: rgba(7, 56, 179, .2)
 }
 
-.theme-dk-green {
+.theme-dk-aqua {
   --accent: #008c9f;
   --accent-light: #05afc6;
   --accent-dark: #004953;
   --bg-opacity: rgba(0, 140, 159, .2);
   --bg-opacity-brighter: rgba(5, 175, 198, .4);
+}
+
+.theme-dk-lime {
+  --accent: #059f00;
+  --accent-light: #05c635;
+  --accent-dark: #005300;
+  --accent-darker: #064a0c;
+  --accent-darkest: #113511;
+  --bg-opacity: rgba(5, 159, 0, 0.2);
+  --bg-opacity-brighter: rgba(5, 198, 21, 0.4);
+}
+  
+.theme-dk-rasta {
+  --accent: #078930;
+  --accent-light: #FCDD09;
+  --accent-dark: #DA121A;
+  --accent-darker: #4a060c;
+  --accent-darkest: #351113;
+  --bg-opacity: rgba(5, 159, 0, 0.2);
+  --bg-opacity-brighter: rgba(5, 198, 21, 0.4);
 }
 
 .b_name {
@@ -189,7 +210,7 @@ input[type="radio"] {
 body {
   color: var(--main, #eee);
   text-rendering: optimizeLegibility;
-  background-image: url("https://knuckleheads.netlify.app/images/backgrounds/Side-Particles-Light.png"), url("https://knuckleheads.netlify.app/images/backgrounds/White-Brick.jpg");
+  --site-bg-image: url("https://knuckleheads.netlify.app/images/KDL-Background-Dark.jpg"), url("https://knuckleheads.netlify.app/images/backgrounds/White-Brick.jpg");
   background-attachment: fixed;
   background-position: center top;
   background-repeat: no-repeat no-repeat;
@@ -198,6 +219,12 @@ body {
   width: 100%;
   overflow-y: scroll
 }
+
+@media only screen and (max-width: 48em) {
+  body {
+    --site-bg-image: rgb(0, 0, 0);
+    
+}}
 
 body a,
 body a:link,
@@ -244,12 +271,12 @@ body,
   background-attachment: fixed
 }
 
-.theme-dk-grey body {
+/*.theme-dk-gray body {
   background: #222 !important;
   background-image: url(https://www48.myfantasyleague.com/skins17/Onyx/bg_top.jpg), url(https://www48.myfantasyleague.com/skins17/Onyx/bg_bottom.jpg) !important;
   background-repeat: repeat-x, repeat-x !important;
   background-position: center top, center bottom !important;
-}
+}*/
 
 #loadingchatdata,
 div[id*="usmg_ad"] {
@@ -314,7 +341,7 @@ body.chat_popup .banner-container-wrap {
 .sub-content ul li:before,
 .show-sub-heads ul li:before,
 .trade-assets-wrapper li::marker {
-  color: var(--accent, #ff4200)
+  color: var(--accent, #ff4200);
 }
 
 .banner-container {
@@ -995,7 +1022,7 @@ label[for='sub100']+#homepagetabs {
 
 #tabmenu-wrap li#tab0 a:before,
 #tabmenu-wrap #tab_title.tab0:before {
-  content: "\f015"; /*CGT - defines the Font Awesome icon next to Home on the homepage tabs section*/
+  content: "\e00d"; /*CGT - defines the Font Awesome icon next to Home on the homepage tabs section*/
 }
 
 #tabmenu-wrap li#tab1 a:before,
@@ -1020,12 +1047,12 @@ label[for='sub100']+#homepagetabs {
 
 #tabmenu-wrap li#tab5 a:before,
 #tabmenu-wrap #tab_title.tab5:before {
-  content: "\f0cb"
+  content: "\f091" /*defines the Font Awesome icon next to Playoffs on the homepage tabs section*/
 }
 
 #tabmenu-wrap li#tab6 a:before,
 #tabmenu-wrap #tab_title.tab6:before {
-  content: "\f0d6"
+  content: "\f53d" /*defines the Font Awesome icon next to Pools on the homepage tabs section*/
 }
 
 #myfantasyleague_tabs .myfantasyleague_tabmenu {
