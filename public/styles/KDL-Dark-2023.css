@@ -323,7 +323,7 @@ body.chat_popup .banner-container-wrap {
 .sub-content ul li:before,
 .show-sub-heads ul li:before,
 .trade-assets-wrapper li::marker {
-  content: "\f44e"; /*changed from star (f005) to football (f44e) - this affects icon next to links on MFL site*/
+  content: "\f44e"; /*CGT - changed from star (f005) to football (f44e) - this affects icon next to links on MFL site*/
   font-family: 'Font Awesome 6 Pro';
   padding-right: 0.188rem;
   margin-left: -1.5em
@@ -495,7 +495,7 @@ body.chat_popup .banner-container-wrap {
   transform: scale(.9);
 }
 
-****** ADDED 6-4-23 for font awesome icons in icon bar ********/
+/****** ADDED 6-4-23 for font awesome icons in icon bar ********/
 .icon-bar-full i:before,
 .icon-bar i:before {
   color: var(--accent, #ff4200);
@@ -550,8 +550,8 @@ body.chat_popup .banner-container-wrap {
 
 .banner-container-wrap-full {
   width: 100%;
-  max-width: 100%; /*changed from 71.75rem to 100% to fit full width of banner*/
-  padding: 0.375rem 0.063rem 0.375rem 0.063rem;
+  max-width: 100%; /*CGT - changed from 71.75rem to 100% to fit full width of banner*/
+  padding: 0.375rem 0.063rem 0.375rem 0.063rem; /*CGT - added padding around banner*/
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -560,9 +560,9 @@ body.chat_popup .banner-container-wrap {
 }
 
 .banner-container-full {
+  background: var(--bg-opacity, rgba(181, 47, 0, .05));
   border-bottom: 0.25rem solid var(--accent, #ff4200);
   box-shadow: inset 0 0 0.625rem rgb(0 0 0 / 80%);
-  background: var(--bg-opacity, rgba(181, 47, 0, .05));
 }
 /*CGT - Below determines container settings for league banner*/
 .full_height_banner img {
@@ -586,20 +586,29 @@ body.chat_popup .banner-container-wrap {
   padding: 0 1.25rem;
 }
 
+/***************************************/
+
+
+/* STANDINGS SELECTION */
+
+
+/***************************************/
+
+/* SETTING POPUP BOX */
 #standings-settings {
   box-shadow: 0 0 0.063rem 0.063rem rgba(0, 0, 0, 0.1);
   border-radius: 0.188rem;
   padding: 0.625rem !important;
   background: var(--site-bg-image, #111) !important;
 }
-
+/* POPUP OVERLAY BACKGROUND */
 .standings-settings_overlay {
   background-color: #000;
-  opacity: .7
+  opacity: 0.7;
 }
 
 #standings-settings input+label:before {
-  color: red
+  color: red;
 }
 
 #standings-settings input:checked+label:before {
@@ -618,6 +627,7 @@ body.chat_popup .banner-container-wrap {
 .standings-cog {
   font-size: 0.938rem
 }
+
 
 .MFLSkinSelection i {
   padding-right: 0.375rem;
@@ -1352,7 +1362,7 @@ a:active {
 .homepagemodule.report caption span.module_expand {
   pointer-events: all
 }
-
+/*CGT - below sets the image background and text formatting for captions*/
 .homepagecolumn .homepagemodule caption,
 caption,
 #commissioner_setup table.two_column_layout th {
@@ -1363,7 +1373,7 @@ caption,
   border-bottom: 0.35rem solid rgba(15, 15, 15, 0.75);
   border-top: 0.35rem;
   text-align: left;
-  text-shadow: 1px 1px rgb(212, 212, 212);
+  text-shadow: 0.5px 0.5px rgb(212, 212, 212);
   line-height: 100%;
   text-transform: uppercase;
   max-width: 100%;
@@ -1955,7 +1965,7 @@ div.mobile-wrap .reportform {
   border: 0;
   box-shadow: none
 }
-
+#body_board_show div.hcl{background:none!important}
 #body_board_show .fa-thumbtack {
   color: #90ee90;
   margin-right: 0.125rem
@@ -2598,42 +2608,42 @@ body.full-width {
 }
 
 #commissioner_setup th#recently_used:before {
-  content: "\f217" /*Font Awesome icon next to Recently Used*/
+  content: "\f217" /*CGT - Font Awesome icon next to Recently Used*/
 }
 
 #commissioner_setup th#general_setup:before {
-  content: "\e5f1" /*Font Awesome icon next to General Setup*/
+  content: "\e5f1" /*CGT - Font Awesome icon next to General Setup*/
 }
 
 #commissioner_setup th#commissioner_franchise_setup:before {
-  content: "\e5fd" /*Font Awesome icon next to Commissioner/Franchise Setup*/
+  content: "\e5fd" /*CGT - Font Awesome icon next to Commissioner/Franchise Setup*/
 }
 
 #commissioner_setup th#history_setup:before {
-  content: "\f640" /*Font Awesome icon next to History Setup*/
+  content: "\f640" /*CGT - Font Awesome icon next to History Setup*/
 }
 
 #commissioner_setup th#scoring_setup:before {
-  content: "\f521"; /*Font Awesome icon next to Scoring and Standings Setup*/
+  content: "\f521"; /*CGT - Font Awesome icon next to Scoring and Standings Setup*/
   /*custom icon glyph*/
   /*font-family: Font Awesome Kit;*/
   /*custom icon kit*/
 }
 
 #commissioner_setup th#players_and_rosters:before {
-  content: "\f0c0" /*Font Awesome icon next to Players and Rosters*/
+  content: "\f0c0" /*CGT - Font Awesome icon next to Players and Rosters*/
 }
 
 #commissioner_setup th#adjust_scores:before {
-  content: "\f649" /*Font Awesome icon next to Adjust Scores and Standings*/
+  content: "\f649" /*CGT - Font Awesome icon next to Adjust Scores and Standings*/
 }
 
 #commissioner_setup th#home_page_message_setup:before {
-  content: "\f4a4" /*Font Awesome icon next to Messages Setup*/
+  content: "\f4a4" /*CGT - Font Awesome icon next to Messages Setup*/
 }
 
 #commissioner_setup th#salary_cap_setup:before {
-  content: "\f51e" /*Font Awesome icon next to Salary Cap Setup*/
+  content: "\f51e" /*CGT - Font Awesome icon next to Salary Cap Setup*/
 }
 
 #commissioner_setup th#use_with_caution {
@@ -4295,12 +4305,12 @@ img {
   width: 100%;
   margin: 1.25rem 0
 }
-/*below settings to set size of logo for Locker Room*/
+/*CGT - below settings to set size of logo for Locker Room*/
 .franchiselogo{
   max-width: 100%;
   height: auto
 }
-/*below settings to increase size of icons for standings on PC*/
+/*CGT - below settings to increase size of icons for standings on PC*/
 .franchiseicon {
   width: 250px; /* this was max-width: 100% */
   height: auto
@@ -6127,19 +6137,19 @@ a.subhead {
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="DOWN"]:before {
-  content: "\f078"
+  content: "\f078" /*chevron down*/
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="UP"]:before {
-  content: "\f077"
+  content: "\f077" /*chevron up*/
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="DELETE"]:before {
-  content: "\f014"
+  content: "\f2ed" /*trash can*/
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="COPY"]:before {
-  content: "\f24d"
+  content: "\f0c5" /*copy*/
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="&ROUND"]:before {
@@ -8429,7 +8439,7 @@ td.mondayLoser .monday_proj_total {
   max-height: calc(90% - 3.125rem);
   overflow: auto;
 }
-
+.restoreHPMs h4{font-weight:300!important;color:lime!important;}
 .restoreHPMs input[disabled="disabled"] {
   opacity: 0.5;
   pointer-events: none;
@@ -9422,7 +9432,8 @@ div.sub-content.editable .insertIcons {
     line-height: 1rem;
     position: absolute;
     left: 0.625rem;
-    top: 0.938rem
+    top: 0.938rem;
+    z-index: 1;
   }
 
   .myfantasyleague_tabmenu #homepagetabs li {
@@ -12638,10 +12649,19 @@ body.habskin #standings img[id*="franchiseicon_"] {
   font-size: 1.25rem;
   color: var(--accent, #ff4200);
   font-family: 'Roboto Condensed', sans-serif;
+  position: sticky!important;
+  top: -.625rem;
+  background: var(--site-bg-image, #111) !important;
+  width: 100%;
+  display: block;
+  padding-top: .625rem;
+  margin-top: -.625rem;
+  border-bottom: .125rem solid var(--accent, #b82601);
 }
 
 #popup-selectLeagues-caption .as_close_btn {
   display: block;
+  top:.725rem!important
 }
 
 .theme-dk-yellow .banner-container,
@@ -12694,6 +12714,7 @@ body.habskin #standings img[id*="franchiseicon_"] {
 }
 
 /* COLOR SCOREBOARD MODULE FOR YOUR SITE DARK SKIN */
+#LSscoringBox .lsm_statusText,
 #LSscoringBox .playerContainer,
 #LSscoringBox .scoresContainer,
 #LSscoringBox .franchise-box,
@@ -12707,8 +12728,9 @@ body.habskin #standings img[id*="franchiseicon_"] {
 .franchise-score-scroll,
 .matchup-box-scroll-wrap,
 .nfl-box-scroll-wrap,
-#LSscoringBox h2.lsm_error,
-#teamBox {
+h2.lsm_error,
+#teamBox,
+h2.lsm_error.error_box {
   color: #fff;
 }
 
@@ -12723,7 +12745,8 @@ body.habskin #standings img[id*="franchiseicon_"] {
 .nfl-box-scroll-wrap,
 #LSModuleSettings,
 #LSscoringBox h2.lsm_error,
-#teamBox {
+#teamBox,
+h2.lsm_error.error_box {
   background: rgba(45, 45, 45, .4);
 }
 
@@ -12732,7 +12755,8 @@ body.habskin #standings img[id*="franchiseicon_"] {
 .nfl-box-scroll-wrap,
 #LSModuleSettings,
 #LSscoringBox h2.lsm_error,
-#teamBox {
+#teamBox,
+h2.lsm_error.error_box {
   box-shadow: 0 0 0.313rem rgba(0, 0, 0, .5);
 }
 
@@ -12758,7 +12782,8 @@ body.habskin #standings img[id*="franchiseicon_"] {
 #LSscoringBox .appendStats,
 #LSscoringBox div.franchise-score span,
 .matchup-box-scroll,
-.nfl-box-scroll-wrap .nfl-box-scroll {
+.nfl-box-scroll-wrap .nfl-box-scroll,
+#LSscoringBox .lsm_statusText {
   background: rgba(0, 0, 0, .2);
 }
 
@@ -12927,6 +12952,63 @@ body.habskin #standings img[id*="franchiseicon_"] {
 
 #home .homepagecolumn > div[style="position: relative;"]{
   overflow:auto;
+}
+
+td[class*=grid_pos] a {
+  background:none!important;
+  color:#fff!important;
+}
+td[class*=grid_pos] {
+  color:#fff!important;
+  border: .1rem solid #222;
+}
+.eventablerow td.grid_pos_qb,
+.oddtablerow td.grid_pos_qb {
+  background-color:rgba(255, 128, 146, .5)
+}
+.eventablerow td.grid_pos_rb,
+.oddtablerow td.grid_pos_rb {
+  background-color:rgba(79, 123, 151, .5)
+}
+.eventablerow td.grid_pos_wr,
+.oddtablerow td.grid_pos_wr {
+  background-color:rgba(71, 158, 117, .5)
+}
+.eventablerow td.grid_pos_te,
+.oddtablerow td.grid_pos_te {
+  background-color:rgba(255, 155, 26, .5)
+}
+.eventablerow td.grid_pos_pk,
+.oddtablerow td.grid_pos_pk {
+  background-color:rgba(215, 66, 116, .5)
+}
+.eventablerow td.grid_pos_def,
+.oddtablerow td.grid_pos_def {
+  background-color:rgba(255, 195, 26, .5)
+}
+.eventablerow td.grid_pos_pn,
+.oddtablerow td.grid_pos_pn {
+  background-color:rgba(215, 66, 116, .5)
+}
+.eventablerow td.grid_pos_lb,
+.oddtablerow td.grid_pos_lb{
+  background-color:rgba(158, 204, 77, .5)
+}
+.eventablerow td.grid_pos_de,
+.oddtablerow td.grid_pos_de {
+  background-color:rgba(149, 117, 164, .5)
+}
+.eventablerow td.grid_pos_dt,
+.oddtablerow td.grid_pos_dt {
+  background-color:rgba(149, 117, 164, .5)
+}
+.eventablerow td.grid_pos_cb,
+.oddtablerow td.grid_pos_cb {
+  background-color:rgba(181, 100, 144, .5)
+}
+.eventablerow td.grid_pos_s,
+.oddtablerow td.grid_pos_s {
+  background-color:rgba(181, 100, 144, .5)
 }
 
 /*below settings to show contract years column on mobile devices*/

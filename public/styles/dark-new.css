@@ -592,7 +592,6 @@ body.chat_popup .banner-container-wrap {
   padding: 0 1.25rem;
 }
 
-
 /***************************************/
 
 
@@ -1396,17 +1395,21 @@ a:active {
 .homepagemodule.report caption span.module_expand {
   pointer-events: all
 }
-
+/*CGT - below sets the image background and text formatting for captions*/
 .homepagecolumn .homepagemodule caption,
 caption,
 #commissioner_setup table.two_column_layout th {
   font-size: 1.375rem;
-  text-align: center;
-  background: none;
-  padding: 0.5rem 0.313rem;
+  background: transparent url(https://knuckleheads.netlify.app/images/captions/Dark-Bubble-Fade.png);
+  background-position: right 0px top;
+  padding: 0.75rem 0.35rem;
+  border-bottom: 0.35rem solid rgba(15, 15, 15, 0.75);
+  border-top: 0.35rem;
   text-align: left;
+  text-shadow: 0.5px 0.5px rgb(212, 212, 212);
   line-height: 100%;
-  text-transform: uppercase
+  text-transform: uppercase;
+  max-width: 100%;
 }
 
 .homepagemodule caption.withfranchiseicon,
@@ -1529,15 +1532,7 @@ th a:visited:hover,
 
 .oddtablerow td,
 .eventablerow td {
-  padding: 0.188rem
-}
-
-.oddtablerow td {
-  background: none;
-  color: #ccc
-}
-
-.eventablerow td {
+  padding: 0.188rem;
   background: none;
   color: #ccc
 }
@@ -1655,7 +1650,9 @@ td.reportfooter a:visited:hover {
 }
 
 .standingslogo {
-  max-width: 100%
+  max-width: 100%;
+  border: 0.5rem outset var(--accent-light, blue); /*added*/
+  border-radius: 0.25rem; /*added*/
 }
 
 .mobile-wrap h3 a,
@@ -1814,6 +1811,7 @@ input[type="submit"] {
   border: 0;
   -moz-appearance: none;
   -webkit-appearance: none;
+  appearance: none;
   border: 0 !important;
   font-size: 1rem;
 }
@@ -2643,46 +2641,46 @@ body.full-width {
 }
 
 #commissioner_setup th#recently_used:before {
-  content: "\f087"
+  content: "\f217" /*CGT - Font Awesome icon next to Recently Used*/
 }
 
 #commissioner_setup th#general_setup:before {
-  content: "\f085"
+  content: "\e5f1" /*CGT - Font Awesome icon next to General Setup*/
 }
 
 #commissioner_setup th#commissioner_franchise_setup:before {
-  content: "\f0ad"
+  content: "\e5fd" /*CGT - Font Awesome icon next to Commissioner/Franchise Setup*/
 }
 
 #commissioner_setup th#history_setup:before {
-  content: "\f1da"
+  content: "\f640" /*CGT - Font Awesome icon next to History Setup*/
 }
 
 #commissioner_setup th#scoring_setup:before {
-  content: "î…";
+  content: "\f521"; /*CGT - Font Awesome icon next to Scoring and Standings Setup*/
   /*custom icon glyph*/
-  font-family: Font Awesome Kit;
+  /*font-family: Font Awesome Kit;*/
   /*custom icon kit*/
 }
 
 #commissioner_setup th#players_and_rosters:before {
-  content: "\f0c0"
+  content: "\f0c0" /*CGT - Font Awesome icon next to Players and Rosters*/
 }
 
 #commissioner_setup th#adjust_scores:before {
-  content: "\f074"
+  content: "\f649" /*CGT - Font Awesome icon next to Adjust Scores and Standings*/
 }
 
 #commissioner_setup th#home_page_message_setup:before {
-  content: "\f013"
+  content: "\f4a4" /*CGT - Font Awesome icon next to Messages Setup*/
 }
 
 #commissioner_setup th#salary_cap_setup:before {
-  content: "\f0d6"
+  content: "\f51e" /*CGT - Font Awesome icon next to Salary Cap Setup*/
 }
 
 #commissioner_setup th#use_with_caution {
-  background: var(--accent, #ff4200);
+  background: red;
   color: #fff
 }
 
@@ -2696,35 +2694,35 @@ body.full-width {
 }
 
 #commissioner_setup th#use_with_caution:before {
-  content: "\f071"
+  content: "\f071" /*Font Awesome icon next to Use These Items with Caution*/
 }
 
 #commissioner_setup th#playoff_setup:before {
-  content: "\f0cb"
+  content: "\f5a2" /*Font Awesome icon next to Playoff Setup*/
 }
 
 #commissioner_setup th#other_transactions_setup:before {
-  content: "\f021"
+  content: "\f11b" /*Font Awesome icon next to Other Transactions Setup*/
 }
 
 #commissioner_setup th#waivers_setup:before {
-  content: "\f0dc"
+  content: "\e43c" /*Font Awesome icon next to Add/Drop and Waivers Setup*/
 }
 
 #commissioner_setup th#draft_setup:before {
-  content: "\f0e3"
+  content: "\e1d0" /*Font Awesome icon next to Draft Setup*/
 }
 
 #commissioner_setup th#auction_setup:before {
-  content: "\f0e3"
+  content: "\f0e3" /*Font Awesome icon next to Auction Setup*/
 }
 
 #commissioner_setup th#fantasy_schedule_setup:before {
-  content: "\f073"
+  content: "\f12e" /*Font Awesome icon next to Fantasy Schedule Setup*/
 }
 
 #commissioner_setup th#appearance_setup:before {
-  content: "\f1fc"
+  content: "\f53f" /*Font Awesome icon next to Appearance Setup*/
 }
 
 #MFLChatPopupContainer {
@@ -3581,6 +3579,7 @@ table#youtubevideo.homepagemodule.report embed,
 .flexslider .slides>li {
   display: none;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   padding-bottom: 1.25rem
 }
 
@@ -3590,7 +3589,7 @@ table#youtubevideo.homepagemodule.report embed,
 }
 
 .flexslider .slides:after {
-  content: "\0020";
+  content: "\0020"; /*planet-ringed Font Awesome icon*/
   display: block;
   clear: both;
   visibility: hidden;
@@ -3616,7 +3615,8 @@ html[xmlns] .flexslider .slides {
 
 .flexslider .slides img {
   height: auto;
-  -moz-user-select: none
+  -moz-user-select: none;
+  user-select: none;
 }
 
 .flex-viewport {
@@ -3637,7 +3637,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-direction-nav {
-  *height: 0
+  height: 0 /*asterisk in front of this property was removed to clear error in VS Code*/
 }
 
 .flex-direction-nav a {
@@ -3749,7 +3749,7 @@ html[xmlns] .flexslider .slides {
   margin: 0 0.375rem;
   display: inline-block;
   zoom: 1;
-  *display: inline
+  /**display: inline*/
 }
 
 .flex-control-paging li a {
@@ -3799,6 +3799,7 @@ html[xmlns] .flexslider .slides {
   opacity: .7;
   cursor: pointer;
   -moz-user-select: none;
+  user-select: none;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -4032,10 +4033,10 @@ html[xmlns] .flexslider .slides {
 }
 
 #body_options_180 .report th:first-of-type,
-#body_options_122 .report th:first-of-type,
-text-align:center;
-width:1%;
-white-space:nowrap
+#body_options_122 .report th:first-of-type {
+text-align: center;
+width: 1%;
+white-space: nowrap;
 }
 
 #body_options_180 .report .franchiseicon,
@@ -4336,11 +4337,46 @@ img {
   width: 100%;
   margin: 1.25rem 0
 }
-
-.franchiselogo,
-.franchiseicon {
+/*CGT - below settings to set size of logo for Locker Room*/
+.franchiselogo{
   max-width: 100%;
   height: auto
+}
+/*CGT - below settings to increase size of icons for standings on PC*/
+.franchiseicon {
+  width: 250px; /* this was max-width: 100% */
+  height: auto
+}
+#standings .franchiseicon {
+  width: 425px; /* width of icon on standings screen*/
+}
+#standings .fname, #standings .ficon {
+  width: 300px;
+}
+#home #standings .franchiseicon, #roster .franchiseicon {
+  width: 250px;
+}
+#home #standings .fname, #home #standings .ficon {
+  width: 250px;
+}
+/*below settings to decrease size of icons for standings on mobile devices*/
+@media only screen and (max-width: 35.5em) {
+  .franchiseicon {
+      height: auto;
+      width: 200px;
+  }
+  #standings .franchiseicon {
+      width: 200px;
+  }
+  #standings .fname, #standings .ficon {
+      width: 200px;
+  }
+  #home #standings .franchiseicon, #roster .franchiseicon {
+      width: 180px;
+  }
+  #home #standings .fname, #home #standings .ficon {
+      width: 180px;
+  }
 }
 
 #body_login .warning {
@@ -4527,7 +4563,7 @@ div.mobile-wrap:empty {
 
 .playoff-report-modal-content {
   background: var(--site-bg-image, #111);
-  box-shadow 0 0 1.563rem rgba(0, 0, 0, 1)
+  box-shadow: 0 0 1.563rem rgba(0, 0, 0, 1);
 }
 
 .playoff-report-modal-header .close {
@@ -4545,7 +4581,7 @@ div.mobile-wrap:empty {
   height: 1.375rem;
   width: 1.375rem;
   line-height: 1.4;
-  font-size: 0.813rem
+  font-size: 0.813rem;
 }
 
 .playoff-report-modal-header .close:hover,
@@ -5018,13 +5054,13 @@ tr.tradedifference td {
 }
 
 #MFLroster .checkBox input+label:before {
-  color: #aaa;
-  content: "\f096";
+  color: lightgray; /*changed from #aaa*/
+  content: "\f204"; /*toggle off Font Awesome icon - was f096 (checkbox)*/
 }
 
 #MFLroster .checkBox input:checked+label:before {
-  color: #90ee90;
-  content: "\f046";
+  color: limegreen; /*changed from #90ee90*/
+  content: "\e5b1"; /*toggle on Font Awesome icon - was f046 (checked checkbox)*/
 }
 
 #MFLroster td.checkBox {
@@ -5866,7 +5902,7 @@ a.subhead {
   width: 100%;
 }
 
-#current_auctions td:nth-child(even) {}
+/*#current_auctions td:nth-child(even) {}*/ /*commented out since no properties are defined for this element*/
 
 #current_auctions td:nth-child(1):before {
   content: "Player Name"
@@ -6133,19 +6169,19 @@ a.subhead {
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="DOWN"]:before {
-  content: "\f078"
+  content: "\f078" /*chevron down*/
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="UP"]:before {
-  content: "\f077"
+  content: "\f077" /*chevron up*/
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="DELETE"]:before {
-  content: "\f014"
+  content: "\f2ed" /*trash can*/
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="COPY"]:before {
-  content: "\f24d"
+  content: "\f0c5" /*copy*/
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="&ROUND"]:before {
@@ -10714,6 +10750,16 @@ body.bettis .calendar_event_custom,
   box-shadow: inset 0 0 0.625rem #05f;
   padding: 0.25rem
 }
+/*below settings for custom calendar events to highlight them easier*/
+.calendar_event_custom {
+  color: #fff;
+  text-shadow: 0 0.125rem 0.125rem #000;
+  background: #05f;
+  background-image: linear-gradient(to bottom right, #05f, #03f, #05f);
+  border: 0.063rem solid #05f;
+  box-shadow: inset 0 0 0.625rem #05f;
+  padding: 0.25rem
+}
 
 #options_100 body.bettis table.report {
   border-collapse: collapse
@@ -11428,7 +11474,7 @@ span.total_contract_bracketed span {
   background-color: red !important
 }
 
-.minichat2_blinkText {}
+/*.minichat2_blinkText {}*/ /*commented out since no properties are defined for this element*/
 
 #minichat2_chatTable tr.oddtablerow {
   background-color: #1c1c1c !important
@@ -11443,9 +11489,9 @@ span.total_contract_bracketed span {
   width: auto;
 }
 
-#minichat2_chatTable .minichat2_icon {}
+/*#minichat2_chatTable .minichat2_icon {}*/ /*commented out since no properties are defined for this element*/
 
-#minichat2_chatTable .minichat2_logo {}
+/*#minichat2_chatTable .minichat2_logo {}*/ /*commented out since no properties are defined for this element*/
 
 .minichat2_time {
   font-size: xx-small;
@@ -11526,7 +11572,7 @@ span.total_contract_bracketed span {
   height: 2.813rem;
   width: 2.813rem;
   display: inline-block;
-  float: left;
+  /*float: left;*/ /*commented out so display inline-block is not ignored*/
   margin-left: 0.625rem;
   margin-right: 0.313rem
 }
@@ -12017,7 +12063,7 @@ div.banner-container a:link img.sister-league:hover {
   display: none
 }
 
-.accountingFranchise {}
+/*.accountingFranchise {}*/ /*commented out since no properties are defined for this element*/
 
 .accountingIcon {
   height: 1.25rem;
@@ -12635,14 +12681,14 @@ body.habskin #standings img[id*="franchiseicon_"] {
   font-size: 1.25rem;
   color: var(--accent, #ff4200);
   font-family: 'Roboto Condensed', sans-serif;
-    position: sticky!important;
-    top: -.625rem;
-    background: var(--site-bg-image, #111) !important;
-    width: 100%;
-    display: block;
-    padding-top: .625rem;
-    margin-top: -.625rem;
-    border-bottom: .125rem solid var(--accent, #b82601);
+  position: sticky!important;
+  top: -.625rem;
+  background: var(--site-bg-image, #111) !important;
+  width: 100%;
+  display: block;
+  padding-top: .625rem;
+  margin-top: -.625rem;
+  border-bottom: .125rem solid var(--accent, #b82601);
 }
 
 #popup-selectLeagues-caption .as_close_btn {
@@ -12995,4 +13041,14 @@ td[class*=grid_pos] {
 .eventablerow td.grid_pos_s,
 .oddtablerow td.grid_pos_s {
     background-color:rgba(181, 100, 144, .5)
+}
+
+/*below settings to show contract years column on mobile devices*/
+@media only screen and (max-width:48em) {
+  body.roster_base #roster .contractyear,
+  #roster .contractyear,
+  #roster td,
+  #roster th {
+    display: table-cell !important
+  }
 }
