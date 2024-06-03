@@ -548,7 +548,7 @@ body.chat_popup .banner-container-wrap {
   transition: all 0.2s ease-in-out;
 }
 
-.icon-bar span.fa-stack
+.icon-bar span.fa-stack,
 .icon-bar-full span.fa-stack {
   padding: 0.25rem;
 }
@@ -558,20 +558,21 @@ body.chat_popup .banner-container-wrap {
   transform: scale(.9);
 }
 
-.icon-bar-full span.fa-stack i:nth-child(1):before,
-.icon-bar-full .svg-iconlink:hover span.fa-stack i:nth-child(2):before,
 .icon-bar span.fa-stack i:nth-child(1):before,
-.icon-bar .svg-iconlink:hover span.fa-stack i:nth-child(2):before {
+.icon-bar .svg-iconlink:hover span.fa-stack i:nth-child(2):before,
+.icon-bar-full span.fa-stack i:nth-child(1):before,
+.icon-bar-full .svg-iconlink:hover span.fa-stack i:nth-child(2):before {
   color: #ddd;
 }
 
-.icon-bar-full span.fa-stack i:nth-child(2):before,
-.icon-bar-full .svg-iconlink:hover span.fa-stack i:nth-child(1):before,
 .icon-bar span.fa-stack i:nth-child(2):before,
-.icon-bar .svg-iconlink:hover span.fa-stack i:nth-child(1):before {
+.icon-bar .svg-iconlink:hover span.fa-stack i:nth-child(1):before,
+.icon-bar-full span.fa-stack i:nth-child(2):before,
+.icon-bar-full .svg-iconlink:hover span.fa-stack i:nth-child(1):before {
   color: var(--accent, #ff4200);
 }
 
+/****** ADDED 3-3-23 for full width banner ********/
 .banner-container-wrap-full {
   width: 100%;
   max-width: 100%; /*CGT - changed from 71.75rem to 100% to fit full width of banner*/
@@ -651,6 +652,7 @@ body.chat_popup .banner-container-wrap {
 .standings-cog {
   font-size: 0.938rem
 }
+
 /***************************************/
 
 
@@ -1039,7 +1041,7 @@ label[for='sub100']+#homepagetabs {
 
 #tabmenu-wrap li#tab0 a:before,
 #tabmenu-wrap #tab_title.tab0:before {
-  content: "\e00d"; /*CGT - defines the Font Awesome icon next to Home on the homepage tabs section*/
+  content: "\f7ae"; /*CGT - defines the Font Awesome icon next to Home on the homepage tabs section - igloo*/
 }
 
 #tabmenu-wrap li#tab1 a:before,
@@ -1071,6 +1073,15 @@ label[for='sub100']+#homepagetabs {
 #tabmenu-wrap #tab_title.tab6:before {
   content: "\f53d" /*defines the Font Awesome icon next to Pools on the homepage tabs section*/
 }
+
+
+/***************************************/
+
+
+/* MFL CUSTOM REPORT TABS */
+
+
+/***************************************/
 
 #myfantasyleague_tabs .myfantasyleague_tabmenu {
   box-shadow: none;
@@ -1138,6 +1149,18 @@ span.custom_collapse:hover+.plus-toggle span:after {
 #collapseLink:hover+a+.plus-toggle-main span:after {
   background: #222;
 }
+
+
+/***************************************/
+
+
+/* MFL MOBILE REPLACEMENT MENU */
+
+
+/***************************************/
+
+
+/* menu button pullout */
 
 #menu-trigger {
   border: 0.063rem solid #333;
@@ -1349,6 +1372,15 @@ li.has-sub ul li.mm_sizing_head a,
   background: #fff;
 }
 
+
+/***************************************/
+
+
+/* REPORT WRAPPER */
+
+
+/***************************************/
+
 table.no-borderspacing {
   margin: 0;
   border: 0;
@@ -1385,16 +1417,32 @@ table,
   -webkit-overflow-scrolling: touch
 }
 
+
+/* style for report containers */
+
+
+/***************************************/
+
+
+/* TEXT COLORING */
+
+
+/***************************************/
+
 a:hover,
 a:link:hover,
 a:active:hover,
 a:visited:hover {
   color: #fff
 }
-
+/* report container text hover if not defined */
+/*CGT - added border around league banner with below settings*/
 a:link img,
 A:visited img {
-  border-color: transparent
+  border-color: transparent;
+  /*border-color: var(--lightest-color, blue); /*CGT - was transparent*/
+  /*border: 0.5rem outset; /*added*/
+  /*border-radius: 0.15rem; /*added*/
 }
 
 a:hover img {
@@ -1405,8 +1453,23 @@ a:active {
   background: none repeat scroll 0 0 transparent
 }
 
+
+/***************************************/
+
+
+/* REPORT CAPTIONS */
+
+
+/***************************************/
+
 .homepagemodule.report caption span {
-  pointer-events: none
+  pointer-events: none;
+  padding: 0.33rem;
+}
+/*CGT - below added for padding around HPM captions*/
+.report.addCaption caption span {
+  pointer-events: none;
+  padding: 0.33rem;
 }
 
 .homepagemodule.report caption span a,
@@ -1419,15 +1482,34 @@ caption,
 #commissioner_setup table.two_column_layout th {
   font-size: 1.375rem;
   background: transparent url(https://knuckleheads.netlify.app/images/captions/Dark-Bubble-Fade.png);
-  background-position: right 0px top;
-  padding: 0.75rem 0.35rem;
+  background-position: center; /*added*/
+  padding: 0.5rem;
   border-bottom: 0.35rem solid rgba(15, 15, 15, 0.75);
   border-top: 0.35rem;
   text-align: left;
   text-shadow: 0.5px 0.5px rgb(212, 212, 212);
   line-height: 100%;
   text-transform: uppercase;
-  max-width: 100%;
+  width: auto; /*added*/
+  max-width: 100%; /*added*/
+  border: 0.33rem outset var(--accent-light, blue); /*added*/
+  border-radius: 0.25rem; /*added*/
+  margin-bottom: 0.33rem;
+}
+/*CGT - Added below logo before captions*/
+caption:before {
+  padding: 1.25rem 1.75rem 1.75rem 1.25rem;
+  background: url(https://knuckleheads.netlify.app/svg-icons/MMH-Cube.svg) no-repeat;
+  background-size: contain;
+  background-position: 25% center;
+  vertical-align: 0.5rem;
+  content: "";
+}
+/*CGT - Added below to remove logo before roster icons */
+caption.withfranchiseicon:before {
+  padding: 0.313rem 0;
+  text-align: center !important;
+  text-indent: 0;
 }
 
 .homepagemodule caption.withfranchiseicon,
@@ -1435,6 +1517,8 @@ caption.withfranchiseicon {
   background: none;
   text-align: center
 }
+
+/* caption with icon no bg color */
 
 .homepagecolumn .homepagemodule caption,
 caption,
@@ -1449,12 +1533,16 @@ caption {
   caption-side: top !important
 }
 
+/* caption text */
+
 caption a:hover,
 caption a:link:hover,
 caption a:active:hover,
 caption a:visited:hover {
   color: #fff
 }
+
+/* caption text hover */
 
 caption.withfranchiseicon,
 caption.withfranchiseicon a,
@@ -1464,14 +1552,14 @@ caption.withfranchiseicon a:visited {
   color: var(--accent, #ff4200);
   text-align: center
 }
-
+/* caption.withfranchise icon text color different since we have different bg color */
 caption.withfranchiseicon a:hover,
 caption.withfranchiseicon a:link:hover,
 caption.withfranchiseicon a:active:hover,
 caption.withfranchiseicon a:visited:hover {
-  color: #fff
+  color: var(--accent-light, #fff)
 }
-
+/* caption.withfranchise text hover */
 caption .module_expand.custom_collapse,
 caption .module_expand.custom_expand {
   color: var(--accent, #ff4200);
@@ -1480,7 +1568,7 @@ caption .module_expand.custom_expand {
 
 caption .module_expand.custom_collapse:hover,
 caption .module_expand.custom_expand:hover {
-  color: #fff
+  color: var(--accent-light, #fff)
 }
 
 caption .ownername {
@@ -1490,11 +1578,17 @@ caption .ownername {
   padding: 0;
   background: none
 }
-
+/* owners name in caption with an icon as seen on rosters page , set to display none if you dont want to see */
 caption.withfranchiseicon .ownername {
   color: #ccc
 }
+/***************************************/
 
+
+/* REPORT TABLE HEADERS */
+
+
+/***************************************/
 th {
   background: rgba(0, 0, 0, .2);
   font-size: 0.875rem;
@@ -1589,6 +1683,7 @@ th a:visited:hover,
   border-color: var(--accent, #ff4200)
 }
 
+/* Report footer background and text - link coloring */
 .reportfooter td,
 td.reportfooter {
   color: #fff;
@@ -1619,6 +1714,14 @@ td.reportfooter a:visited:hover {
   color: #fff
 }
 
+/***************************************/
+
+
+/* MY FRANCHISE COLORING */
+
+
+/***************************************/
+
 #body_options_117 .freeagent,
 #top_starters .freeagent,
 #top_drops .freeagent,
@@ -1639,6 +1742,14 @@ td.reportfooter a:visited:hover {
   background-color: rgba(20, 255, 20, .1)
 }
 
+/***************************************/
+
+
+/* STANDINGS H3 */
+
+
+/***************************************/
+
 .homepagecolumn #standings h3,
 #standings h3,
 .homepagecolumn #brief_standings h3,
@@ -1654,7 +1765,10 @@ td.reportfooter a:visited:hover {
 }
 
 .standingslogo {
-  margin: 0.313rem 0
+  margin: 0.313rem 0;
+  max-width: 100%; /*added*/
+  border: 0.33rem outset var(--accent-light, blue); /*added*/
+  border-radius: 0.25rem; /*added*/
 }
 
 .homepagecolumn #division00 h3,
@@ -1667,11 +1781,16 @@ td.reportfooter a:visited:hover {
   font-size: 1rem
 }
 
-.standingslogo {
-  max-width: 100%;
-  border: 0.5rem outset var(--accent-light, blue); /*added*/
-  border-radius: 0.25rem; /*added*/
-}
+/***************************************/
+
+
+/* H3 */
+
+
+/***************************************/
+
+
+/* h3 that are inside table reports */
 
 .mobile-wrap h3 a,
 .mobile-wrap h3 a:link,
@@ -1694,6 +1813,7 @@ td.reportfooter a:visited:hover {
   color: var(--accent, #ff4200);
   font-size: 1.25rem
 }
+/* h3 body menu links */
 
 .h3-menu {
   color: var(--accent, #ff4200);
@@ -1720,6 +1840,14 @@ td.reportfooter a:visited:hover {
 .h3-menu a:visited:hover {
   color: #fff
 }
+
+/***************************************/
+
+
+/* PLAYER PHOTOS AND ARTICLE IMAGES */
+
+
+/***************************************/
 
 img.articlepicture,
 #my_player_photos td img,
@@ -1779,6 +1907,13 @@ img {
 #fantasy_preview .articlecaption .playerPopupIcon {
   display: none
 }
+/***************************************/
+
+
+/* WARNING TEXT */
+
+
+/***************************************/
 
 .warning,
 .warning a,
@@ -1794,6 +1929,13 @@ img {
 .warning a:visited:hover {
   color: #fff
 }
+/***************************************/
+
+
+/*SUBMIT BUTTON-CHAT BUTTON-LEAUGECHAT */
+
+
+/***************************************/
 
 .pagebody input,
 select,
@@ -1829,14 +1971,14 @@ input[type="submit"] {
   border: 0;
   -moz-appearance: none;
   -webkit-appearance: none;
-  appearance: none;
+  appearance: none; /*CGT - added standard property*/
   border: 0 !important;
   font-size: 1rem;
 }
 
 input[type="button"]:hover,
 input[type="submit"]:hover {
-  cursor: pointer
+  cursor: pointer;
 }
 
 button.tbt {
@@ -1880,12 +2022,12 @@ button.tbt img {
 #league_chat td b {
   color: var(--accent, #ff4200)
 }
-
+/* color for pvt chat messages */
 #league_chat caption span i {
   vertical-align: top;
   padding-left: 0.313rem
 }
-
+/* style buttons outside tables in the body */
 #body_ajax_ls h3#ls_error {
   max-width: 37.5rem;
   margin: 0 auto;
@@ -1932,10 +2074,10 @@ input[type="submit"]:hover {
 #league_chat .chatLapsedTime {
   color: var(--accent, #ff4200)
 }
-
+/* style chat button and field */
 #league_chat form {
   padding: 0.313rem;
-  text-align: center
+  text-align: center;
 }
 
 #league_chat input[type="button"],
@@ -1949,7 +2091,7 @@ input#chat_text_field,
 #player_search input {
   width: 100% !important;
   padding: 0.5rem;
-  margin-left: 0
+  margin-left: 0;
 }
 
 input[type="password"],
@@ -1989,6 +2131,13 @@ li.player-search a input,
 #league_chat .fa-comments:hover {
   color: #fff !important
 }
+/***************************************/
+
+
+/* REPORT FORMS */
+
+
+/***************************************/
 
 .reportform {
   text-align: center;
@@ -2004,8 +2153,9 @@ li.player-search a input,
 .reportform select {
   vertical-align: middle !important;
   margin-top: 0.125rem;
-  margin-bottom: 0.125rem
+  margin-bottom: 0.125rem;
 }
+/*report form that are embedded inside a table - example is player bio pages*/
 
 div.mobile-wrap .reportform {
   text-align: center;
@@ -2016,6 +2166,13 @@ div.mobile-wrap .reportform {
   border: 0;
   box-shadow: none
 }
+/***************************************/
+
+
+/* MESSAGE BOARD */
+
+
+/***************************************/
 #body_board_show div.hcl{background:none!important}
 #body_board_show .fa-thumbtack {
   color: #90ee90;
@@ -2039,8 +2196,15 @@ div.mobile-wrap .reportform {
 }
 
 #board_show td {
-  vertical-align: top
+  vertical-align: top;
 }
+/***************************************/
+
+
+/* HINT MESSAGES */
+
+
+/***************************************/
 
 .alert,
 .tdalert span,
@@ -2058,7 +2222,7 @@ div.mobile-wrap .reportform {
 #body_commissioner_setup .alert {
   text-align: center
 }
-
+/* style hint alerts inside tables */
 .alert-info-table,
 .tdalert span {
   width: 99%;
@@ -2095,6 +2259,7 @@ div.mobile-wrap .reportform {
 .tdalert span a:link:hover {
   color: #fff
 }
+/* style hint alerts outside tables in the body */
 
 .alert-info-body,
 #body_live_scoring_summary #live_scoring_summary span.reportnavigation {
@@ -2122,12 +2287,21 @@ div.mobile-wrap .reportform {
 .alert.alert-info-body a:visited:hover {
   color: #fff
 }
+/* style tdhint see options 63 for example */
 
 .tdalert span {
   height: auto;
   line-height: initial;
   margin: 0.125rem
 }
+
+/***************************************/
+
+
+/* WEEKLY NAV MENUS */
+
+
+/***************************************/
 
 .weekly-navbar {
   font-family: 'Roboto Condensed', sans-serif;
@@ -2201,6 +2375,15 @@ div.mobile-wrap .reportform {
   color: #555 !important;
   border: 0.063rem solid rgba(45, 45, 45, .4)
 }
+
+
+/*******************************************/
+
+
+/* MONTHLY CALENDAR */
+
+
+/*******************************************/
 
 #monthly_calendar {
   width: 100%

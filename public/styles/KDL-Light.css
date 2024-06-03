@@ -1398,7 +1398,6 @@ body.chat_popup .banner-container-wrap {
   font-size: 0.938rem
 }
 
-
 /***************************************/
 
 
@@ -1768,7 +1767,7 @@ label[for='sub100']+#homepagetabs {
 
 #tabmenu-wrap li#tab0 a:before,
 #tabmenu-wrap #tab_title.tab0:before {
-  content: "\f015"; /*CGT - defines the Font Awesome icon next to Home on the homepage tabs section*/
+  content: "\e3b3"; /*CGT - defines the Font Awesome icon next to Home on the homepage tabs section*/
 }
 
 #tabmenu-wrap li#tab1 a:before,
@@ -2234,12 +2233,11 @@ a:active {
 .homepagemodule.report caption span.module_expand {
   pointer-events: all
 }
-
+/*CGT - below sets the image background and text formatting for captions*/
 .homepagecolumn .homepagemodule caption,
 caption,
 #commissioner_setup table.two_column_layout th {
   font-size: 1.375rem;
-  text-align: center;
   background: rgba(0, 0, 0, 0) url(https://knuckleheads.netlify.app/images/captions/KDL-Caption-Pixel.png); /*none*/
   background-position: center; /*added*/
   padding: 0.5rem;
@@ -2274,7 +2272,6 @@ caption.withfranchiseicon {
   text-align: center
 }
 
-
 /* caption with icon no bg color */
 
 .homepagecolumn .homepagemodule caption,
@@ -2283,13 +2280,12 @@ caption a,
 caption a:link,
 caption a:active,
 caption a:visited {
-  color: var(--main-four, var(--main, #080e25)); /*CGT - changed from main-four and main*/
+  color: var(--main-four, var(--main, #080e25));
 }
 
 caption {
   caption-side: top !important
 }
-
 
 /* caption text */
 
@@ -2299,7 +2295,6 @@ caption a:active:hover,
 caption a:visited:hover {
   color: var(--accent, #B82601)
 }
-
 
 /* caption text hover */
 
@@ -2558,7 +2553,7 @@ td.reportfooter a:visited:hover {
 
 .standingslogo {
   margin: 0.313rem 0;
-  max-width: 100%;
+  max-width: 100%; /*added*/
   border: 0.33rem outset var(--gradient-light, blue); /*added*/
   border-radius: 0.25rem; /*added*/
 }
@@ -2571,10 +2566,6 @@ td.reportfooter a:visited:hover {
 #brief_standings h3,
 .homepagecolumn #brief_standings h3 {
   font-size: 1rem
-}
-
-.standingslogo {
-  max-width: 100%
 }
 
 
