@@ -219,7 +219,7 @@ body {
   width: 100%;
   overflow-y: scroll
 }
-
+/*CGT - mobile background image and settings*/
 @media only screen and (max-width: 48em) {
   body {
     --site-bg-image: rgb(0, 0, 0);
@@ -344,10 +344,19 @@ body.chat_popup .banner-container-wrap {
   color: var(--accent, #ff4200);
 }
 
+/***************************************/
+
+
+/* BANNER LOGO ICONS AREA */
+
+
+/***************************************/
+
 .banner-container {
   background: var(--bg-opacity, rgba(181, 47, 0, .05));
-  box-shadow: inset 0 0 0.625rem rgb(0 0 0 / 80%);
   border-bottom: 0.5rem solid var(--accent, #ff4200);
+  box-shadow: inset 0 0 0.625rem rgb(0 0 0 / 80%);
+ 
 }
 
 .banner-container-wrap {
@@ -389,6 +398,8 @@ body.chat_popup .banner-container-wrap {
   vertical-align: middle
 }
 
+/*COLOR LOGO IMAGE*/
+
 .bannericon .a {
   fill: #ccc
 }
@@ -398,7 +409,7 @@ body.chat_popup .banner-container-wrap {
 .bannericon .f,
 .bannericon .g,
 .bannericon .h {
-  fill-rule: evenodd
+  fill-rule: evenodd;
 }
 
 .bannericon .b,
@@ -431,6 +442,7 @@ body.chat_popup .banner-container-wrap {
   cursor: pointer;
 }
 
+.svg-iconlink:hover a,
 .svg-iconlink:active:hover,
 .svg-iconlink:link:hover,
 .svg-iconlink:visited:hover {
@@ -458,17 +470,19 @@ body.chat_popup .banner-container-wrap {
 .svg-iconlink {
   transition: all 0.6s ease;
 }
+
 /*IMAGE ICONS LINKS FORMATTING*/
+
 .icon-bar,
 .icon-bar-full {
-  white-space: nowrap
+  white-space: nowrap;
 }
 
 .svg-iconlink {
   display: inline-block;
   text-decoration: none;
   margin-right: 0.5rem;
-  text-align: center
+  text-align: center;
 }
 
 .svg-iconlink:last-of-type {
@@ -487,36 +501,40 @@ body.chat_popup .banner-container-wrap {
   font-size: 0.688rem
 }
 
-.icon-bar-full .svg-icon,
-.icon-bar .svg-icon {
+.icon-bar .svg-icon,
+.icon-bar-full .svg-icon {
   -webkit-transition: .3s ease-out;
   -moz-transition: .3s ease-out;
   transition: .3s ease-out;
 }
 
-.icon-bar-full a:hover .svg-icon,
-.icon-bar a:hover .svg-icon {
+.icon-bar a:hover .svg-icon,
+.icon-bar-full a:hover .svg-icon {
   -webkit-transform: scale(.9);
   -moz-transform: scale(.9);
   transform: scale(.9);
 }
 
-****** ADDED 6-4-23 for font awesome icons in icon bar ********/
+/****** ADDED 6-4-23 for font awesome icons in icon bar ********/
 .icon-bar i:before,
 .icon-bar-full i:before {
   color: var(--accent, #ff4200);
 }
 
-.icon-bar-full i:after,
-.icon-bar-full a:hover i:before,
 .icon-bar i:after,
-.icon-bar a:hover i:before {
+.icon-bar-full i:after {
   color: var(--main, #ddd); /*CGT - color here defines main color on Font Awesome icons within icon bar*/
   opacity: 1;
 }
 
-.icon-bar-full a:hover i:after,
-.icon-bar a:hover i:after {
+.icon-bar a:hover i:before,
+.icon-bar-full a:hover i:before {
+  color: var(--main, #ddd); /*CGT - color here defines main color on Font Awesome icons within icon bar*/
+  opacity: 1;
+}
+
+.icon-bar a:hover i:after,
+.icon-bar-full a:hover i:after {
   color: var(--accent, #ff4200);
   opacity: 1;
 }
@@ -530,13 +548,13 @@ body.chat_popup .banner-container-wrap {
   transition: all 0.2s ease-in-out;
 }
 
-.icon-bar-full span.fa-stack,
-.icon-bar span.fa-stack {
+.icon-bar span.fa-stack
+.icon-bar-full span.fa-stack {
   padding: 0.25rem;
 }
 
-.icon-bar-full a:hover i,
-.icon-bar a:hover i {
+.icon-bar a:hover i,
+.icon-bar-full a:hover i {
   transform: scale(.9);
 }
 
