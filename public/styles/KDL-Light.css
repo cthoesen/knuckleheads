@@ -3575,7 +3575,6 @@ th.select-total-starters {
 
 /*******************************************/
 
-
 #weather-wrapper .current-conditions-place {
   color: var(--accent, #B82601);
 }
@@ -3626,6 +3625,7 @@ th.select-total-starters {
 
 
 /*******************************************/
+
 .target_report tr.lineup_player_row {
   border-top: 0.063rem solid #ddd
 }
@@ -4463,6 +4463,8 @@ blockquote,
 #top_survivor_picks td:first-of-type,
 #roster .contractyear,
 #roster .contractstatus,
+#roster .contractinfo,
+#roster .drafted,
 #options_17 .report .timestamp,
 #options_202 .report .year,
 #options_202 .reportfooter,
@@ -5232,7 +5234,7 @@ html[xmlns] .flexslider .slides {
 #body_options_122 .report td:first-of-type {
   text-align: center;
   width: 1%;
-  white-space: nowrap
+  white-space: nowrap;
 }
 
 #body_options_180 .report .franchiseicon,
@@ -5544,6 +5546,7 @@ img {
   width: 100%;
   margin: 1.25rem 0
 }
+
 /******************************/
 
 Team Logos
@@ -5571,7 +5574,7 @@ Team Logos
 #home #standings .fname, #home #standings .ficon {
   width: 250px;
 }
-/*CGT - below settings to increase size of icons for standings on PC*/
+/*CGT - below settings to increase size of icons for team details on PC*/
 #TeamDetails caption span img {
   height: 2.5rem;
   vertical-align: middle;
@@ -5610,7 +5613,6 @@ Team Logos
 #body_login .warning {
   text-align: center
 }
-
 
 #overviewDropbox {
   text-align: center;
@@ -5957,7 +5959,6 @@ tr.assets input[name^="bbid"] {
 #championship_plaque .plaqueframe {
   background: var(--lightest-color, #FBF3F2);
   border: 0 solid var(--main, #080e25);
-  ;
   vertical-align: middle;
 }
 
