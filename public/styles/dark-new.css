@@ -9276,6 +9276,36 @@ div.sub-content.editable .insertIcons {
   overflow: auto;
 }
 
+/***************************************/
+
+
+/* ADDED CSS 8-25-23 CSS for Draft message */
+
+
+/***************************************/
+.draft_warning {
+  background: var(--tab-menu, var(--main, #080e25)) !important;
+  color: #fff !important;
+  font-weight: bold !important;
+}
+
+.draft_warning a {
+  color: #000 !important
+}
+
+.draft_warning a:hover {
+  color: #222 !important
+}
+
+
+/***************************************/
+
+
+/* RESPONSIVE STYLE */
+
+
+/***************************************/
+
 @media (pointer:coarse) {
   .head-th td.scroll-spacer {
     width: 0 !important;
@@ -9297,6 +9327,7 @@ div.sub-content.editable .insertIcons {
 }
 
 @media only screen and (max-width:120em) {
+  /* Trades page */
   .tradesTable .column-heads {
     display: none
   }
@@ -9484,10 +9515,12 @@ div.sub-content.editable .insertIcons {
     border-bottom: 0.25rem solid var(--accent, #ff4200)
   }
 
+    /* Set heights to scroll on mobiles */
   #body_csetup_revtrad div.mobile-wrap {
     max-height: 34.375rem
   }
 
+    /* NO NEED TO EDIT - name for each td on transactions page and module */
   #body_csetup_revtrad table.report tr.newposition:before {
     display: table-caption;
     width: 100%;
@@ -9548,6 +9581,7 @@ div.sub-content.editable .insertIcons {
     content: "Action:"
   }
 
+    /* COMMISH DELETE TRANSACTIONS REFORMAT STYLE */
   #body_options_67 table.report .rank {
     display: none !important
   }
@@ -9584,10 +9618,12 @@ div.sub-content.editable .insertIcons {
     width: 100% !important
   }
 
+  /* Set heights to scroll on mobiles */
   #body_options_67 div.mobile-wrap {
     max-height: 21.875rem
   }
 
+    /* NO NEED TO EDIT - name for each td on transactions page and module */
   #body_options_67 table.report td:nth-of-type(2):before {
     content: "Delete/Check"
   }
@@ -9616,6 +9652,7 @@ div.sub-content.editable .insertIcons {
     border-bottom: 0
   }
 
+    /* TRADES OFFERED TO AND FROM PAGE MOBILE */
   #body_options_05 #container-wrap>.mobile-wrap table.report .rank {
     display: none !important
   }
@@ -9652,6 +9689,7 @@ div.sub-content.editable .insertIcons {
     width: 100% !important
   }
 
+    /* Set heights to scroll on mobiles */
   #body_options_05 #container-wrap>.mobile-wrap div.mobile-wrap {
     max-height: 21.875rem
   }
@@ -9735,10 +9773,12 @@ div.sub-content.editable .insertIcons {
 }
 
 @media only screen and (min-width:49em) {
+  /* HIDE SHOW ITEMS NO NEED TO EDIT */
   .desktop-Hide {
     display: none
   }
 
+  /* Trades page toggle buttons */
   .div-wrap-trade-table {
     display: table-cell !important
   }
@@ -9760,6 +9800,8 @@ div.sub-content.editable .insertIcons {
 }
 
 @media only screen and (max-width:48em) {
+
+  /* MFL RESPONSIVE MENU FORMATTING NO NEED TO EDIT */
   .myfantasyleague_menu ul li b {
     display: none
   }
@@ -10005,6 +10047,7 @@ div.sub-content.editable .insertIcons {
     margin-top: 0
   }
 
+    /* MFL MOBILE MENU FORMATTING */
   #menu-trigger,
   .myfantasyleague_menuMobile {
     display: block !important
@@ -10016,6 +10059,7 @@ div.sub-content.editable .insertIcons {
     display: none;
   }
 
+    /* COLOR MFL RESPONSIVE MENU */
   .myfantasyleague_menu>label span {
     background: var(--accent, #ff4200)
   }
@@ -10058,6 +10102,7 @@ div.sub-content.editable .insertIcons {
     background: rgba(255, 255, 255, .1)
   }
 
+    /* MFL RESPONSIVE TABS FORMATTING NO NEED TO EDIT */
   .myfantasyleague_tabmenu ul#homepagetabs {
     padding: 0;
     list-style: none;
@@ -10223,6 +10268,7 @@ div.sub-content.editable .insertIcons {
     background-color: transparent
   }
 
+    /* COLOR MFL RESPONSIVE TABS */
   .myfantasyleague_tabmenu ul,
   .myfantasyleague_menu ul {
     background: var(--site-bg-image, #111) !important;
@@ -10284,6 +10330,7 @@ div.sub-content.editable .insertIcons {
     font-size: 1rem
   }
 
+    /* POPUP FORMATTING NO NEED TO EDIT */
   #icon-wrapper {
     position: absolute;
     top: 0;
@@ -10291,6 +10338,7 @@ div.sub-content.editable .insertIcons {
     top: 0.313rem
   }
 
+    /* RESPONSIVE DISPLAY FORMATTING FOT TABLES AND NAV MENU NO NEED TO EDIT */
   #body_player td[width="33%"],
   #body_player td[width="67%"] {
     width: 100%
@@ -10312,6 +10360,7 @@ div.sub-content.editable .insertIcons {
     display: inline-table
   }
 
+    /* HIDE SHOW ITEMS NO NEED TO EDIT */
   #body_tweets .weekly-navbar-mobile+.h3-menu,
   #body_player_history .weekly-navbar-mobile+.h3-menu,
   #body_player .weekly-navbar-mobile+.h3-menu,
@@ -10328,6 +10377,7 @@ div.sub-content.editable .insertIcons {
     display: none
   }
 
+    /* FORMAT FOR CUSTOM MODULE TAB GROUPS */
   #myfantasyleague_tabs .myfantasyleague_tabmenu #homepagetabs li {
     display: block;
     width: auto
@@ -10459,6 +10509,8 @@ div.sub-content.editable .insertIcons {
 }
 
 @media only screen and (max-width:47em) {
+
+/* POPUP FORMATTING NO NEED TO EDIT */
   #MFLPlayerPopupHeader {
     display: none
   }
@@ -10517,6 +10569,7 @@ div.sub-content.editable .insertIcons {
 
 @media (max-width:40.625em) {
 
+  /* NO NEED TO EDIT - format css for transactions module , transactions page and previous processed waivers page */
   #body_options_03 table.report[cellspacing="1"] .rank,
   #transactions .rank {
     display: none !important
@@ -10603,11 +10656,13 @@ div.sub-content.editable .insertIcons {
     width: 100%
   }
 
+    /* Set heights to scroll on mobiles */
   #body_processed_waivers div.mobile-wrap,
   #body_options_03 div.mobile-wrap {
     max-height: 21.875rem
   }
 
+    /* NO NEED TO EDIT - name for each td on transactions page and module */
   #body_options_03 table.report[cellspacing="1"] td:nth-of-type(2):before,
   #transactions td:nth-of-type(2):before {
     content: "Franchise"
@@ -10628,6 +10683,7 @@ div.sub-content.editable .insertIcons {
     content: "Date"
   }
 
+    /* NO NEED TO EDIT - name for each td on previous processed waivers page */
   #body_processed_waivers table.report.hasGroups td:nth-of-type(1):before {
     content: "Round/Group"
   }
@@ -10689,6 +10745,7 @@ div.sub-content.editable .insertIcons {
     content: "Comments : "
   }
 
+    /* NO NEED TO EDIT - name for each td on draft results page and module */
   #body_options_17 .mobile-wrap+.mobile-wrap table td.franchisename:before {
     content: "Franchise : ";
   }
@@ -10756,6 +10813,7 @@ div.sub-content.editable .insertIcons {
 }
 
 @media only screen and (max-width:35.5em) {
+  /* POPUP FORMATTING */
   .screen-hide {
     display: none !important
   }
@@ -10786,6 +10844,7 @@ div.sub-content.editable .insertIcons {
 }
 
 @media only screen and (max-height:35.5em) and (orientation:landscape) {
+  /* POPUP FORMATTING NO NEED TO EDIT */
   #MFLPlayerPopupHeader {
     display: none
   }
@@ -10822,6 +10881,7 @@ div.sub-content.editable .insertIcons {
     max-height: 9.875rem
   }
 
+    /* CUSTOM TABS RESPONSIVE DESIGN */
   #myfantasyleague_customtabs .myfantasyleague_tabmenu #homepagetabs li {
     height: 2.813rem;
     line-height: 2.813rem
@@ -11009,7 +11069,7 @@ div.sub-content.editable .insertIcons {
     max-height: calc(100vh - 2.75rem);
   }
 }
-
+/********* Bettis Settings - May Be Able to Delete *******/
 body.bettis .newposition th,
 body.bettis .newposition td,
 .theme-dk-yellow .newposition th,
@@ -11123,7 +11183,7 @@ body.bettis .offerer::before,
 .theme-dk-yellow #body_ajax_ls body #ls_ticker_tab_id td:first-of-type {
   color: #111
 }
-
+/********* Bettis Settings - May Be Able to Delete *******/
 body.habskin #roster_column_left td.no_icons a {
   display: none
 }
@@ -11625,6 +11685,7 @@ body.bettis .invalidLineup_warning:hover,
   text-align: center
 }
 
+/* FANTASY SURVIVOR */
 .fantasy_survivor_legend_highscore {
   font-weight: 700;
   color: #fff;
@@ -11677,6 +11738,7 @@ body.bettis .invalidLineup_warning:hover,
   text-decoration: none
 }
 
+/* MFL POPUP ADDON */
 .fa-check-to-slot,
 .fa-comments,
 .fa-triangle-exclamation,
@@ -11708,6 +11770,7 @@ body.bettis .invalidLineup_warning:hover,
   padding-left: 0.25rem
 }
 
+/* DRAFT TABLE SORT */
 tr.alternate {
   background-color: #111;
 }
@@ -11771,6 +11834,7 @@ table.sort01 th.table-sorted-desc {
   padding-right: 0.313rem
 }
 
+/* CONTRACT REPORTS ADDITION */
 .rfaStatus {
   color: green !important
 }
@@ -11796,11 +11860,13 @@ span.total_contract_bracketed span {
   vertical-align: top
 }
 
+/* LOMBARDI TROPHY */
 .lombardi {
   height: 2.5rem;
   float: right
 }
 
+/* MFL FRANCHISE ICON PREPEND TO TEAM */
 .franchiseIconPrependTeam {
   height: 2.5rem;
   width: 2.5rem;
@@ -11808,6 +11874,7 @@ span.total_contract_bracketed span {
   margin-right: 0.25rem;
 }
 
+/* MFL FRANCHISE ICON PREPEND TO PLAYER */
 .franchiseIconPrependPlayer {
   height: 1.25rem;
   width: 1.25rem;
@@ -11820,6 +11887,7 @@ span.total_contract_bracketed span {
   display: inline-block
 }
 
+/* TRADE NOTIFICATION TO HORIZONTAL MENU */
 .hMenuTradeContainer {
   position: absolute;
   top: 0.5rem;
@@ -11854,6 +11922,7 @@ span.total_contract_bracketed span {
   background: darkorange
 }
 
+/* FRANCHISE ACTIVITY */
 .visitorSync {
   cursor: pointer
 }
@@ -11863,6 +11932,7 @@ span.total_contract_bracketed span {
   color: red
 }
 
+/* POINTS SCORED */
 .appButton {
   width: 18.75rem
 }
@@ -12120,12 +12190,15 @@ span.total_contract_bracketed span {
   white-space: nowrap
 }
 
+
+/* PRIZE MONEY */
 #prize_money_winnings,
 #prize_money_transactions,
 #prize_money_net td {
   white-space: nowrap
 }
 
+/* MINI CHAT */
 #minichat2_wrapper {
   background-color: #fff;
   border: 0.063rem solid #555;
@@ -12189,6 +12262,7 @@ span.total_contract_bracketed span {
   font-size: smaller
 }
 
+/* TYPICAL SEASON CALENDAR */
 #typicalCalendar {
   border-collapse: collapse;
   border: 0.063rem solid black;
@@ -12258,6 +12332,7 @@ span.total_contract_bracketed span {
   padding: 0 0.25rem;
 }
 
+/* TODAYS CALENDAR */
 #todayscalendar .calendar_event_waiver_bbid {
   color: white
 }
@@ -12266,6 +12341,8 @@ span.total_contract_bracketed span {
   color: black
 }
 
+
+/* RULES CHEATSHEET */
 #cheatsheettable th {
   vertical-align: top;
   text-align: right;
@@ -12294,6 +12371,7 @@ span.total_contract_bracketed span {
   font-weight: bold
 }
 
+/* LOTTERY */
 .lottery_icon {
   height: 1.25rem;
   width: auto
@@ -12711,6 +12789,7 @@ div.banner-container a:link img.sister-league:hover {
   filter: grayscale(0%)
 }
 
+/* CUSTOM ACCOUNTING */
 #accounting_table th {
   white-space: nowrap;
   vertical-align: bottom
@@ -12798,7 +12877,7 @@ div.banner-container a:link img.sister-league:hover {
   font-weight: bold;
   color: red
 }
-
+/***** Bettis Settings *****/
 body.bettis #accounting_table th span.warning,
 .theme-dk-yellow #accounting_table th span.warning {
   color: #f15f5f;
@@ -12938,6 +13017,7 @@ body.habskin.bettis #contract_9999 table {
   border: 0.063rem solid #555
 }
 
+/* ADDED FOR ALL SITES FOR BORDER ON TABLES WITH HORIZONTAL SCROLL BARS */
 .shadow-right:after {
   width: 1.625rem !important;
   right: -0.125rem !important;
@@ -12948,6 +13028,7 @@ body.habskin.bettis #contract_9999 table {
   border-right: 0
 }
 
+/* MIKE ADDED FOR ALL SITES FOOTER JS NOTIFICATION SLIDEDOWN */
 .notification-message {
   font-weight: bold;
   height: 2.5rem;
@@ -12996,16 +13077,20 @@ body.habskin.bettis #contract_9999 table {
   border-bottom: 0.125rem solid #0000
 }
 
+/* MIKE ADDED FOR ALL SITES ALL PLAY REPORT */
+/* set width or heights for franchise icons or logos */
 .franchise-icon {
   width: 9.375rem;
   vertical-align: middle
 }
 
+/* set width or heights for franchise icons or logos used in head row */
 .franchise-icon-hr {
   width: 1.875rem;
   height: 1.875rem
 }
 
+/* table row column highlights */
 tr.allplay-lit,
 td.allplay-lit,
 td.allplay-lit span,
@@ -13015,12 +13100,14 @@ tr.allplay-lit td {
   cursor: default
 }
 
+/* table row column hilites crosshair td cell */
 tr.allplay-lit td.allplay-crosshair,
 td.allplay-crosshair span {
   background: var(--accent, #ff4200);
   color: #fff
 }
 
+/* set td display for data should be same across all leagues */
 .allplay-franchise {
   white-space: nowrap;
 }
@@ -13041,6 +13128,7 @@ td.allplay-crosshair span {
   font-size: smaller
 }
 
+/* set display for conference title when applicable */
 .allplay-conference-title {
   font-size: x-large;
   text-align: center
@@ -13717,7 +13805,7 @@ td[class*=grid_pos] {
     background-color:rgba(181, 100, 144, .5)
 }
 
-/*below settings to show contract years column on mobile devices*/
+/*CGT - below settings configure which columns appear on mobile devices*/
 @media only screen and (max-width:48em) {
   body.roster_base #roster .contractyear,
   #roster .contractyear,

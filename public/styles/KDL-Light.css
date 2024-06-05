@@ -14212,7 +14212,7 @@ table.rulestable .dldbBase td {
 }
 
 
-/* MIKE ADDED FOR ALL SITES FOR BORDER ON TABLES WITH HORIZONTAL SCROLL BARS */
+/* ADDED FOR ALL SITES FOR BORDER ON TABLES WITH HORIZONTAL SCROLL BARS */
 .shadow-right:after {
   width: 1.625rem !important;
   right: -0.125rem !important;
@@ -14286,7 +14286,7 @@ table.rulestable .dldbBase td {
   height: 1.875rem
 }
 
-/* table row column hilites */
+/* table row column highlights */
 tr.allplay-lit,
 td.allplay-lit,
 td.allplay-lit span,
