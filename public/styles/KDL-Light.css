@@ -9026,7 +9026,7 @@ div.ls_withposs.ls_changed,
 }
 
 #body_ajax_ls table div.ls_player_stats div {
-  font-style: normal; /*CGT - added missing semicolon here*/
+  font-style: normal;
   color: var(--accent, #B82601);
 }
 
@@ -9786,7 +9786,6 @@ td#diceRollResult table td:first-of-type {
 td#diceRollResult table td:last-of-type {
   font-weight: bold;
   color: var(--accent, #ff4200);
-
 }
 
 td#diceRollResult table tr:nth-child(2)>td:nth-child(1):before {

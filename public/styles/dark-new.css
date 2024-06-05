@@ -8108,7 +8108,7 @@ th.ls_projections {
 #body_ajax_ls .ls_box_gameover td.winner_mark div[class^="oggstat"] {
   opacity: 1;
 }
-
+/* SCORING NUMBERS FORMAT */
 #LS_AwayScore,
 #LS_HomeScore {
   font-size: 1.875rem;
@@ -8208,11 +8208,26 @@ div.ls_team_points {
   padding: 0 !important
 }
 
+/*******************************************/
+
+
+/* MFL SCORING COLOR CHANGES */
+
+
+/***************************************/
+
+
+/*BOXSCORES TABLE*/
+
+
+/*box score matchups bg color*/
+
 #body_ajax_ls div.ls_other_game {
   background: rgba(0, 0, 0, .2);
   border-color: rgba(45, 45, 45, .7)
 }
 
+/*box score matchups hover bg color and current game bg color*/
 #body_ajax_ls div.ls_other_game:hover {
   background: rgba(0, 0, 0, .5)
 }
@@ -8221,16 +8236,19 @@ div.ls_team_points {
   background-color: var(--bg-opacity-brighter, rgba(181, 47, 0, .2));
   border-color: var(--accent);
 }
-
+/*text color for points in box score table*/
 #body_ajax_ls td div[class^="ogffpts"] {
   color: #fff
 }
+/*main scoreboard header coloring*/
 
+
+/*color text for P-PMR-PYT*/
 #LS_TopTableHolder td.prmin {
   color: #ccc;
   width: 5.55%
 }
-
+/*border and bg around td cells*/
 #LS_TopTableHolder .LS_MainScoreboard td {
   border: 0.063rem solid rgba(45, 45, 45, .7);
   background: rgba(45, 45, 45, .4);
@@ -8241,25 +8259,28 @@ div.ls_team_points {
 #LS_TopTableHolder #LS_HomeScore {
   background: rgba(0, 0, 0, .1);
 }
+/*MAIN TABLES FOR TEAM VS TEAM PLAYERS MATCHUPS*/
 
+
+/*text color for stats of each player*/
 #body_ajax_ls div.ls_player_stats div {
   color: #aaa
 }
-
+/*text color for player total points*/
 #body_ajax_ls td div[class^="pfpts"] {
   color: #fff
 }
-
+/*add border to bottom of all td cells if desired*/
 #body_ajax_ls tr.ls_nonstarters td,
 #body_ajax_ls tr.ls_starters td {
   border-bottom: 0.063rem solid #111
 }
-
+/*background and text color for starting and bench total points rows*/
 #body_ajax_ls tr.td-totals-row td {
   background: #222;
   color: var(--accent-light, #FA5C25)
 }
-
+/*bg color for games ended and in progress*/
 #body_ajax_ls tr.ls_gameis_over {
   background-color: var(--bg-opacity, rgba(181, 47, 0, .05))
 }
@@ -8267,50 +8288,63 @@ div.ls_team_points {
 #body_ajax_ls tr.ls_gameinprogress {
   background-color: rgba(20, 255, 20, .02)
 }
+/*NFL ICONS FOR H2H GAMES AND FRANCHISE ICONS IN BOXSCORE*/
+
+
+/*icon height for franchise logos in boxscore table*/
 
 #body_ajax_ls img.ls_og_icon {
   width: 100%;
   max-width: 6.625rem;
   max-height: 1.25rem
 }
-
+/*icon height for NFL logos in table*/
 #body_ajax_ls img.ls_nfl_icon {
   margin: 0 0.125rem;
   max-width: 1.25rem;
   max-height: 0.938rem
 }
+/*SETTINGS CHECKBOXES*/
 
+
+/*settings checkbox color when not checked*/
 #body_ajax_ls #ls_setting_drop input+label:before {
   color: #90ee90
 }
-
+/*settings checkbox color when checked*/
 #body_ajax_ls #ls_setting_drop input:checked+label:before {
   color: var(--accent-light, #FA5C25)
 }
 
+/*live stats update ticker first td cell bg and text color*/
 #body_ajax_ls #ls_ticker_tab_id td:first-of-type {
   background: var(--accent-light, #FA5C25);
   color: #fff
 }
-
+/*live stats update ticker scrolling text td cell bg and text color*/
 #body_ajax_ls #ls_ticker_tab_id td:last-of-type {
   background: #fff;
   color: #000
 }
 
+/*LIVE STATS UPDATES SCROLLING STATS TABLE*/
+
+
+/*border around td cell 1st*/
 #body_ajax_ls #ls_ticker_tab_id td:first-of-type {
   border: 0.063rem solid #111
 }
-
+/*border around td cell 2nd*/
 #body_ajax_ls #ls_ticker_tab_id td:last-of-type {
   border: 0.063rem solid #111;
   border-left: 0
 }
 
+/*color when live scoring ticker data is updated every 40 seconds*/
 #body_ajax_ls #last_update.ls_changed {
   color: #90ee90
 }
-
+/*add football to players who have and dont have balls*/
 #body_ajax_ls .ls_players_table tr.ls_has_ball .td-first-type:after,
 #body_ajax_ls .ls_players_table tr.ls_nothas_ball .td-first-type:after,
 #body_ajax_ls .ls_players_table tr.ls_in_redzone .td-first-type:after {
@@ -8332,6 +8366,7 @@ div.ls_team_points {
   background-image: url('https://www.mflscripts.com/ImageDirectory/script-images/goal-post.svg')
 }
 
+/*boxscore color for F Final game mark and winner mark caret*/
 #body_ajax_ls div[class^="oggstat"] {
   color: var(--accent-light, #FA5C25)
 }
@@ -8342,11 +8377,11 @@ div.ls_team_points {
 #body_ajax_ls .nflggstat {
   color: #90ee90
 }
-
+/*color of "Final" text in NFL Boxscores table*/
 #body_ajax_ls #nfl_games span.ls_nfl_box_over {
   color: var(--accent-light, #FA5C25)
 }
-
+/*when MFL makes updates to scoreboard - change text color*/
 #LS_TopTableHolder #LS_AwayScore .ls_changed,
 #LS_TopTableHolder #LS_HomeScore .ls_changed,
 #body_ajax_ls tr.ls_gameinprogress td div[class^="pfpts"].ls_changed,
@@ -8355,7 +8390,7 @@ div.ls_team_points {
 #body_ajax_ls td div[class^="ogffpts"].ls_changed {
   color: #90ee90
 }
-
+/*Pace text color in scoreboard and td cell*/
 #body_ajax_ls tr.td-totals-row td.ffpts_pace_total {
   color: #ccc;
   font-size: 90%;
@@ -8377,7 +8412,7 @@ div.ls_team_points {
 .ls_projected {
   color: #ccc !important
 }
-
+/* Scoring Numbers Coloring */
 #LS_AwayScore span,
 #LS_HomeScore span {
   border-color: rgba(45, 45, 45, .9);
@@ -8406,7 +8441,7 @@ div.ls_team_points {
   border-color: rgba(45, 45, 45, .7);
   background: rgba(0, 0, 0, .4)
 }
-
+/*   COLOR NFL BOX SCORE POPUP    */
 .ls-modal {
   background: rgba(0, 0, 0, .7)
 }
@@ -8559,6 +8594,13 @@ div.ls_team_points {
   background: var(--site-bg-image-one, #141414)
 }
 
+/***************************************/
+
+
+/* MFL HISTORY SCRIPT */
+
+
+/***************************************/
 .hz-main-table tbody th.fixed-side {
   text-align: left !important
 }
@@ -8739,7 +8781,13 @@ td.winIcon .homeWinIcon-img img,
 td.winIcon .blankwin-img img {
   display: none
 }
+/***************************************/
 
+
+/*           DICE ROLL SCRIPT          */
+
+
+/***************************************/
 td#diceRollResult table th,
 td#diceRollResult table td {
   text-align: center
@@ -8857,6 +8905,14 @@ td.dice_value {
   font-weight: bold !important
 }
 
+/***************************************/
+
+
+/* ADDED CSS 6-25-21 FOR MY DRAFT LIST TH FILTER LIST */
+
+
+/***************************************/
+
 #sticky_filters {
   position: sticky;
   top: 0
@@ -8873,6 +8929,14 @@ td.dice_value {
 #options_129 .leftV #sticky_filters th {
   border-top: 0.125rem solid #fff
 }
+
+/***************************************/
+
+
+/* ADDED CSS 9-28-21 CSS FOR MFL LIVE SCRIPT */
+
+
+/***************************************/
 
 .as_scores {
   color: var(--accent, #ff4200)
@@ -8975,12 +9039,21 @@ td.mflLive_details_pace_behind {
   text-align: center
 }
 
+/* set the max-width to 2 times what you set the .all_scores_tablewrap at */
 @media only screen and (max-width:32.5em) {
   #body_options_247 .all_scores_tablewrap {
     margin-left: 0;
     margin-right: 0
   }
 }
+
+/***************************************/
+
+
+/* ADDED CSS 10-04-21 CSS FOR Monday Night Script */
+
+
+/***************************************/
 
 td.mondayWinner {
   color: #90ee90;
@@ -9002,12 +9075,13 @@ td.mondayLoser .monday_proj_total {
   color: #ccc
 }
 
-[data-google-query-id],
-[data-freestar-ad] {
-  display: none !important;
-  height: 0 !important;
-  width: 0 !important
-}
+/***************************************/
+
+
+/* ADDED CSS 8-9-22 CSS for backup-restore script AND Edit HPM */
+
+
+/***************************************/
 
 .restoreHPMs,
 .editHPMs {
@@ -9087,6 +9161,32 @@ td.mondayLoser .monday_proj_total {
 .edit-wrapper table tr td:first-child {
   text-align: right;
 }
+/***************************************/
+
+
+/* ADDED CSS 4-20-23 block new ads */
+
+
+/***************************************/
+
+[data-google-query-id],
+[data-freestar-ad] {
+  display: none !important;
+  height: 0 !important;
+  width: 0 !important
+}
+
+
+/***************************************/
+
+
+/* ADDED CSS 8-17-22 CSS for Notification Script */
+
+
+/***************************************/
+.notification-bar-content {
+  top: 3rem !important;
+}
 
 @media only screen and (max-width:48em) {
   .notification-bar-content {
@@ -9095,6 +9195,13 @@ td.mondayLoser .monday_proj_total {
   }
 }
 
+/***************************************/
+
+
+/* ADDED CSS 9-1-22 CSS for Editable Rules Script */
+
+
+/***************************************/
 div.sub-content.editable {
   position: relative;
   padding: 0.625rem 0;
@@ -9107,6 +9214,17 @@ div.sub-content.editable .insertIcons {
   left: -1.25rem
 }
 
+.starter_count_sub {
+  color: #fff;
+}
+
+/***************************************/
+
+
+/* ADDED CSS 5-3-23 CSS for League Reports Page - and for mfl yearly update popup */
+
+
+/***************************************/
 #body_all_reports table td.two_column_layout th {
   color: var(--accent, #ff4200);
   font-size: 1.375rem;
