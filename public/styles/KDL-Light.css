@@ -6651,7 +6651,7 @@ body #scoreboardTooltip.top:after {
 /***************************************/
 
 
-/* RULES EXANDABLE TABS */
+/* RULES EXPANDABLE TABS */
 
 
 /***************************************/
@@ -7606,7 +7606,7 @@ a.subhead {
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="DELETE"]:before {
-  content: "\f146" /*CGT - square-minus Font Awesome icon*/
+  content: "\e2ae" /*CGT - trash can Font Awesome icon*/
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="COPY"]:before {
@@ -7931,7 +7931,7 @@ table.make-pick-table>tbody>tr>td.mobile-view.leftS>table>tbody>tr:nth-child(2)>
 /***************************************/
 
 
-/* COMMISH LOAD-UNLOAD ROSER */
+/* COMMISH LOAD-UNLOAD ROSTER */
 
 
 /***************************************/
@@ -8962,7 +8962,7 @@ td::-webkit-scrollbar {
 }
 
 #body_ajax_ls .ls_append_input {
-  margin-top: 0.313rem
+  margin-top: 0.313rem;
 }
 
 #body_ajax_ls #ls_setting_drop .hide_bench {

@@ -5326,6 +5326,14 @@ table.previews_table>tbody>tr:nth-child(1)>table.report.nocaption td div {
   white-space: nowrap
 }
 
+/***************************************/
+
+
+/* ROSTERS */
+
+
+/***************************************/
+
 #roster_column_left td.no_icons a {
   background: var(--accent, #ff4200);
   color: #fff
@@ -5431,6 +5439,17 @@ tr.tradedifference td {
   position: relative
 }
 
+/***************************************/
+
+
+/* SCOREBOARD STYLE */
+
+
+/***************************************/
+
+
+/* color link of populating text in boxscores box and current week in weekly navigation */
+
 #MFLFantasyMatchupsUpdate,
 #MFLNFLMatchupsUpdate {
   color: var(--accent, #ff4200)
@@ -5441,6 +5460,7 @@ tr.tradedifference td {
   color: #aaa
 }
 
+/* border color for each fantasy and nfl box score table */
 .MFLGameTable,
 .MFLNFLGameTable {
   border-color: rgba(45, 45, 45, .7);
@@ -5455,7 +5475,7 @@ tr.tradedifference td {
 .MFLGameLinks .MFLPaceScore {
   color: #ccc;
 }
-
+/* hover and current state background opactity color for boxscores */
 #MFLBoxHolder td.matchupHilite table,
 #MFLBoxHolder td.matchupHilite:hover table {
   background: rgba(0, 0, 0, .2);
@@ -5467,30 +5487,35 @@ tr.tradedifference td {
   border-color: rgba(45, 45, 45, .7)
 }
 
+/* background and border color for the table that is holding the team - scoreboard title - scoring digits - records */
+
 .MFLMainScoreboard {
   background: none;
   border: 0 !important
 }
 
+
+/* background gradient color for the banner area for scoreboard name */
 #MFLCenterTop {
   color: #fff;
   border: 0.063rem solid rgba(45, 45, 45, .7);
   background: rgba(45, 45, 45, .4);
 }
-
+/* franchise team names and nfl team names box background and text colors */
 #MFLRoadTeamName,
 #MFLHomeTeamName {
   color: #fff;
   border-color: rgba(45, 45, 45, .7);
   background: rgba(45, 45, 45, .4);
 }
-
+/* background gradient for scoreboard scores digits */
 #MFLRoadScore span,
 #MFLHomeScore span {
   border-color: rgba(45, 45, 45, .9);
   background: rgba(0, 0, 0, .2)
 }
 
+/* color for horizontal lines in center of scoreboard scores digits */
 #MFLRoadScore span:before,
 #MFLHomeScore span:before {
   background: rgba(0, 0, 0, .6)
@@ -5500,7 +5525,7 @@ tr.tradedifference td {
 #MFLHomeScore span:after {
   background: rgba(45, 45, 45, .7)
 }
-
+/* gradient colors for the small side boxes on each side of scores digit center lines */
 #MFLRoadScore span a:after,
 #MFLHomeScore span a:after,
 #MFLRoadScore span a:before,
@@ -5509,24 +5534,27 @@ tr.tradedifference td {
   background: rgba(0, 0, 0, .4)
 }
 
+/* border color for container holding scores digits */
 #MFLRoadScore,
 #MFLHomeScore {
   border-color: rgba(45, 45, 45, .7);
   background: rgba(45, 45, 45, .4);
 }
 
+/* Franchise and Team records background and text color */
 #MFLRoadTeamRecord,
 #MFLHomeTeamRecord {
   color: #ccc;
   border-color: rgba(45, 45, 45, .7);
   background: rgba(45, 45, 45, .4);
 }
-
+/* color for scoring digits */
 #MFLRoadScore span a,
 #MFLHomeScore span a {
   color: var(--accent, #ff4200)
 }
 
+/* P-YTP-PMR backgrounds and text coloring */
 .MFLMainScoreboard td.MFLScoreboardTitle {
   color: #fff;
   border-color: rgba(45, 45, 45, .4);
@@ -5543,7 +5571,7 @@ tr.tradedifference td {
   border-color: rgba(45, 45, 45, .7);
   background: rgba(45, 45, 45, .4);
 }
-
+/* table row background color for games over or currently playing */
 .rowGameOver .MFLGameClock {
   color: var(--accent, #ff4200)
 }
@@ -5558,6 +5586,7 @@ tr.tradedifference td {
   padding: 0.625rem
 }
 
+/* change colors for S.O.S td cells for matchups poor to great */
 .MFLTeamLineup td.oppRankGreatMatchup {
   background: #04B404;
   color: #000
@@ -5582,7 +5611,7 @@ tr.tradedifference td {
   background: #FF0000;
   color: #000
 }
-
+/* the small tooltip popup arrows shown when hovering actual and pace scores */
 body #scoreboardTooltip:after {
   border-top-color: var(--accent, #ff4200) !important
 }
@@ -5598,7 +5627,7 @@ body #scoreboardTooltip.top:after {
 .MFLScoreboardLineups tr.rowCurrentlyPlaying {
   background-color: rgba(20, 255, 20, .1)
 }
-
+/* Edit Scoreboard Base CSS for this skin ================================================ */
 .MFLGameTable td,
 .MFLNFLGameTable td {
   padding: 0.125rem
@@ -5627,7 +5656,13 @@ body #scoreboardTooltip.top:after {
 #mflhistory .toggle_tabs .mobile-wrap {
   box-shadow: none;
 }
+/***************************************/
 
+
+/* MFL HISTORY */
+
+
+/***************************************/
 .standingstable .headerrow th {
   background: rgba(45, 45, 45, .7);
   color: #fff;
@@ -5669,6 +5704,13 @@ body #scoreboardTooltip.top:after {
   color: #ccc
 }
 
+/***************************************/
+
+
+/* RULES EXPANDABLE TABS */
+
+
+/***************************************/
 #rulestabs {
   color: #ddd
 }
@@ -5767,6 +5809,16 @@ a.subhead {
   color: #ccc;
   margin-left: 1.25rem
 }
+/***************************************/
+
+
+/* DRAFT ROOM STYLE */
+
+
+/***************************************/
+
+
+/* COLORING */
 
 #custom_draftroom #draft_countdown_timer:before {
   color: #ccc
@@ -5821,7 +5873,7 @@ a.subhead {
 #custom_draftroom .draft_picks_container tr {
   background: none !important
 }
-
+/* HIGHLIGHT BG COLOR */
 #custom_draftroom .moohighlight,
 #custom_draftroom .draft_picks_container tr.moohighlight {
   background-color: var(--bg-opacity, rgba(181, 47, 0, .05)) !important
@@ -5834,7 +5886,7 @@ a.subhead {
 #draft_status_table .moohighlight:first-child {
   background-color: var(--bg-opacity, rgba(181, 47, 0, .05)) !important
 }
-
+/* PLAYER PROFILE */
 #custom_draftroom #draft_player_link {
   color: var(--accent, #ff4200)
 }
@@ -5846,7 +5898,7 @@ a.subhead {
 #custom_draftroom #player-profile #draft_player_photo {
   border: 0.125rem solid var(--accent, #ff4200)
 }
-
+/* FORMATTING BELOW ======================= */
 #custom_draftroom caption span.module_expand {
   display: none !important
 }
@@ -5862,7 +5914,7 @@ a.subhead {
 #custom_draftroom .toggle_tabs {
   text-align: center;
 }
-
+/* DRAFT TIMER */
 #custom_draftroom #draft_countdown_timer:before {
   content: "Draft Timer: ";
 }
@@ -5872,7 +5924,7 @@ a.subhead {
   font-size: 0.875rem;
   font-weight: normal
 }
-
+/* DRAFT CONTROL BUTTONS */
 #custom_draftroom #draft-controller {
   position: relative;
   ;
@@ -5913,7 +5965,7 @@ a.subhead {
 #custom_draftroom #draft-pick-edit input[type="button"] {
   padding: 0.375rem 0.25rem
 }
-
+/* MAKE A PICK */
 #custom_draftroom #Customdraft_makepick h3 {
   margin: 0.938rem 0;
 }
@@ -5992,6 +6044,7 @@ a.subhead {
   vertical-align: middle
 }
 
+/* DRAFT MESSAGES */
 #custom_draftroom #draft_status {
   overflow-y: auto;
   height: 5rem
@@ -6011,6 +6064,7 @@ a.subhead {
   margin-bottom: 0.188rem
 }
 
+/* DRAFT PICKS */
 #custom_draftroom .draftpicks #draft_picks_container {
   overflow-y: auto;
   height: 34.625rem
@@ -6115,7 +6169,7 @@ a.subhead {
 .draft_picks_header th {
   background: none
 }
-
+/* PLAYER PROFILE */
 #custom_draftroom #player-profile {
   padding: 0.188rem;
   table-layout: fixed;
@@ -6148,17 +6202,17 @@ a.subhead {
 #custom_draftroom #player-profile #draft_player_photo {
   margin: 0.313rem 0
 }
-
+/* ROSTERS */
 #custom_draftroom #rostertable td:first-of-type {
   text-align: center
 }
-
+/* DRAFT CHAT */
 #custom_draftroom .franchiseicon {
   width: 100%;
   max-width: 9.375rem;
   height: auto
 }
-
+/* OWNER ACTIVITY MODULE */
 #custom_draftroom #owner_activity td,
 #custom_draftroom #owner_activity th {
   text-align: left;
@@ -6168,7 +6222,7 @@ a.subhead {
 #custom_draftroom #avg_draft_time th:last-of-type {
   text-align: center
 }
-
+/* AVG DRAFT TIME MODULE */
 #custom_draftroom #avg_draft_time td,
 #custom_draftroom #avg_draft_time th {
   text-align: left;
@@ -6178,7 +6232,7 @@ a.subhead {
 #custom_draftroom #avg_draft_time th:last-of-type {
   text-align: center
 }
-
+/* ADJUST 2 COLUMN MODULES */
 #custom_draftroom .toggle_tabs div.mobile-wrap {
   max-width: 100%;
   margin: 0.313rem;
@@ -6193,6 +6247,14 @@ a.subhead {
 #custom_draftroom .two_column_layout.mobile-view {
   padding: 0;
 }
+
+/***************************************/
+
+
+/* AUCTION DRAFT STYLE */
+
+
+/***************************************/
 
 #custom_draftroom h3[id^="auction_countdown_timer"],
 #custom_draftroom #autorotateCountdown {
@@ -6314,6 +6376,17 @@ a.subhead {
   margin-left: 0;
 }
 
+/***************************************/
+
+
+/* FIX OPTION SELECT PAGES */
+
+
+/***************************************/
+
+
+/* COLOR TO MATCH SITE */
+
 #picker tr:hover {
   background: red;
   color: #fff
@@ -6376,7 +6449,7 @@ a.subhead {
 #body_add_drop #waiver_request_list td.action a:hover {
   color: var(--accent-light, #FA5C25)
 }
-
+/* FORMATTING NO NEED TO EDIT */
 #body_ir #container-wrap .mobile-view,
 #body_taxi_squad #container-wrap .mobile-view {
   width: auto
@@ -6541,7 +6614,7 @@ a.subhead {
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="DELETE"]:before {
-  content: "\f2ed" /*trash can*/
+  content: "\e2ae" /*trash can*/
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="COPY"]:before {
@@ -6549,7 +6622,7 @@ a.subhead {
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="&ROUND"]:before {
-  content: "\f040"
+  content: "\e5da" /*CGT - grid-round Font Awesome icon*/
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="DOWN"],
@@ -6560,7 +6633,7 @@ a.subhead {
   font-size: 0;
   text-decoration: none
 }
-
+/* ADD - DROP TABLE HEADERS */
 #body_add_drop form .head-th td {
   white-space: nowrap
 }
@@ -6601,7 +6674,7 @@ a.subhead {
 #body_add_drop .table2 div {
   overflow-x: hidden !important
 }
-
+/* TD Name */
 #body_add_drop .table2 table table td[width="175px"],
 #body_add_drop .table2 table td.waiv-name {
   text-align: left;
@@ -6616,20 +6689,32 @@ a.subhead {
   overflow: visible
 }
 
+/* TD Team */
 #body_add_drop .table2 table table td:nth-child(2),
 #body_add_drop .table2 table td.waiv-team {
   min-width: 3.125rem;
 }
-
+/* TD Pos */
 #body_add_drop .table2 table table td:nth-child(3),
 #body_add_drop .table2 table td.waiv-pos {
   min-width: 3.125rem;
 }
-
+/* TD Salary */
 #body_add_drop .table2 table table td[width="50px"],
 #body_add_drop .table2 table td.waiv-salary {
   min-width: 3.125rem
 }
+
+/***************************************/
+
+
+/* MAKE A DRAFT PICK PAGES */
+
+
+/***************************************/
+
+
+/* COLOR TO MATCH SITE */
 
 .mobile-wrap.custom-draft .mobile-view,
 #contest_lineup .mobile-view.select-player,
@@ -6655,7 +6740,7 @@ a.subhead {
 .mobile-view.leftS .head-th {
   background: rgba(0, 0, 0, .2)
 }
-
+/* FORMATTING */
 .custom-draft #destination_list {
   width: 100%;
 }
@@ -6803,7 +6888,7 @@ a.subhead {
 .custom-draft-rounds th {
   text-align: left
 }
-
+/* this applies to all new custom pages */
 .toggle-hint b {
   cursor: pointer
 }
@@ -6812,6 +6897,26 @@ a.subhead {
 #body_new_predraft .reportform input[value="Now!"] {
   display: none
 }
+
+.has-buttons-left .draft-overflow {
+  border: 0.063rem solid var(--mobile-wrap-border, #eee);
+}
+
+table.make-pick-table>tbody>tr>td.mobile-view.leftS>table>tbody>tr:nth-child(2)>td {
+  padding: 0
+}
+
+
+/***************************************/
+
+
+/* COMMISH LOAD-UNLOAD ROSTER */
+
+
+/***************************************/
+
+
+/* COLORING */
 
 .custom-loadplayer-table table caption {
   color: #fff
@@ -6828,6 +6933,7 @@ a.subhead {
   background: rgba(0, 0, 0, .2);
 }
 
+/* FORMATTING BELOW  */
 div.custom-loadplayer {
   display: none
 }
@@ -6890,6 +6996,17 @@ div.custom-loadplayer {
   margin-top: 0.625rem
 }
 
+/***************************************/
+
+
+/* TRADES PAGE */
+
+
+/***************************************/
+
+
+/* COLORING */
+
 .offeredbymeTable,
 .offeredtomeTable {
   background: rgba(45, 45, 45, .8);
@@ -6924,6 +7041,7 @@ div.custom-loadplayer {
   border-bottom: 0.25rem solid rgba(0, 0, 0, .2)
 }
 
+/* FORMATTING */
 .offeredbymeTable,
 .offeredtomeTable {
   padding: 0.313rem;
@@ -7095,6 +7213,14 @@ th.players-offered-to {
   cursor: default
 }
 
+/***************************************/
+
+
+/* STATS REFORMAT STYLE */
+
+
+/***************************************/
+
 .nflStatsWeekRow td,
 .nflStatsWeekRow td span.warning {
   font-size: smaller
@@ -7240,13 +7366,24 @@ span[id*="collapseAvg_"] {
   border-bottom: 0.25rem solid rgba(0, 0, 0, .2)
 }
 
+/***************************************/
+
+
+/* TRANSACTIONS REFORMAT STYLE */
+
+
+/***************************************/
+
+
+/* COLORING */
+
 #body_options_03 div.mobile-wrap .report .franchise-date,
 #transactions td .franchise-date,
 #body_options_03 div.mobile-wrap .report span.offer-text,
 #transactions span.offer-text {
   color: #999
 }
-
+/* FORMATTING */
 #body_options_03 div.mobile-wrap .report td,
 #transactions td {
   padding: 0.625rem 0.125rem
@@ -7266,6 +7403,14 @@ span[id*="collapseAvg_"] {
   font-size: smaller;
   font-style: italic
 }
+
+/***************************************/
+
+
+/* DRAFT PAGES */
+
+
+/***************************************/
 
 #body_options_113 table.report td a {
   white-space: nowrap
@@ -7311,6 +7456,14 @@ span[id*="collapseAvg_"] {
   max-width: 9.375rem
 }
 
+/***************************************/
+
+
+/* Commish Standing Columns Setup */
+
+
+/***************************************/
+
 #options_65 .two_column_layout select {
   width: 100%;
 }
@@ -7318,6 +7471,14 @@ span[id*="collapseAvg_"] {
 #options_65 .two_column_layout td {
   text-align: center;
 }
+
+/***************************************/
+
+
+/* Homepage Message Tabs Setup */
+
+
+/***************************************/
 
 #options_71 .two_column_layout .mobile-wrap {
   background: rgba(45, 45, 45, .8);
@@ -7336,6 +7497,14 @@ span[id*="collapseAvg_"] {
 #options_71 .two_column_layout caption {
   color: var(--accent, #ff4200)
 }
+
+/***************************************/
+
+
+/* My Draft List Page */
+
+
+/***************************************/
 
 #options_129 .two_column_layout .mobile-wrap select {
   width: 100%;
@@ -7390,10 +7559,19 @@ span[id*="collapseAvg_"] {
   color: #000
 }
 
+/***************************************/
+
+
+/* CUSTOM SCROLLBAR COLORING FOR CHROME*/
+
+
+/***************************************/
+
 td::-webkit-scrollbar {
   background: #151515
 }
 
+/* Track */
 ::-webkit-scrollbar {
   width: 0.75rem;
   height: 0.75rem;
@@ -7408,6 +7586,7 @@ td::-webkit-scrollbar {
   border-right: 0;
 }
 
+/* Thumb */
 ::-webkit-scrollbar-thumb {
   background: #222;
   border: 0.063rem solid #151515;
@@ -7434,6 +7613,7 @@ td::-webkit-scrollbar {
   border-left: solid 0.125rem #151515;
 }
 
+/* Buttons */
 ::-webkit-scrollbar-button {
   border-style: solid;
   height: 0.75rem;
@@ -7441,6 +7621,7 @@ td::-webkit-scrollbar {
   background: #151515;
 }
 
+/* Up */
 ::-webkit-scrollbar-button:vertical:decrement {
   border-width: 0 0.375rem 0.625rem 0.375rem;
   border-color: transparent transparent #555 transparent;
@@ -7450,6 +7631,7 @@ td::-webkit-scrollbar {
   border-color: transparent transparent var(--accent-light, #FA5C25) transparent
 }
 
+/* Down */
 ::-webkit-scrollbar-button:vertical:increment {
   border-width: 0.625rem 0.375rem 0 0.375rem;
   border-color: #555 transparent transparent transparent;
@@ -7459,6 +7641,7 @@ td::-webkit-scrollbar {
   border-color: var(--accent-light, #FA5C25) transparent transparent transparent
 }
 
+/* Left */
 ::-webkit-scrollbar-button:horizontal:decrement {
   border-width: 0.375rem 0.625rem 0.375rem 0;
   border-color: transparent #555 transparent transparent;
@@ -7468,6 +7651,7 @@ td::-webkit-scrollbar {
   border-color: transparent var(--accent-light, #FA5C25) transparent transparent
 }
 
+/* Right */
 ::-webkit-scrollbar-button:horizontal:increment {
   border-width: 0.375rem 0 0.375rem 0.625rem;
   border-color: transparent transparent transparent #555;
@@ -7525,6 +7709,14 @@ td::-webkit-scrollbar {
 #MSG::-webkit-scrollbar-button {
   background: #eee;
 }
+
+/***************************************/
+
+
+/* MFL SCORING FORMAT */
+
+
+/***************************************/
 
 .wp_bar .lessthan {
   background: red !important;
