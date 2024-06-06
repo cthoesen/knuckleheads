@@ -450,8 +450,8 @@ body.chat_popup .banner-container-wrap {
 }
 
 .svg-icon {
-  fill: var(--accent-light, #FA5C25);
-  color: #ddd;
+  fill: var(--accent, #FA5C25); /** main color on svg icons **/
+  color: var(--accent-light, #FA5C25); /** accent color on svg icons **/
   -webkit-filter: drop-shadow(0.125rem 0.125rem 0.313rem #000);
   filter: drop-shadow(0.125rem 0.125rem 0.313rem #000);
   width: 3.2rem;
@@ -461,7 +461,7 @@ body.chat_popup .banner-container-wrap {
 .svg-icon:hover,
 .svg-iconlink:hover .svg-icon {
   filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
-  transition: all 3s ease; /*CGT - added color filter on svg icons*/
+  transition: all 3s ease; /** added color filter on svg icons **/
   fill: var(--accent-light, var(--main,#ddd));
   color: var(--accent, #FA5C25)
 }
