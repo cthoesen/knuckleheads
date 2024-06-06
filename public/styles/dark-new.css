@@ -518,7 +518,7 @@ body.chat_popup .banner-container-wrap {
 /****** ADDED 6-4-23 for font awesome icons in icon bar ********/
 .icon-bar i:before,
 .icon-bar-full i:before {
-  color: var(--accent, #ff4200);
+  color: var(--accent, #ff4200); /*CGT - color here defines main color on Font Awesome icons within icon bar*/
 }
 
 .icon-bar i:after,
@@ -529,13 +529,13 @@ body.chat_popup .banner-container-wrap {
 
 .icon-bar a:hover i:before,
 .icon-bar-full a:hover i:before {
-  color: var(--accent-light, #ddd); /*CGT - color here defines main color on Font Awesome icons within icon bar*/
+  color: var(--accent-dark, #ddd); /*CGT - color here defines main color on Font Awesome icons when hovering*/
   opacity: 1;
 }
 
 .icon-bar a:hover i:after,
 .icon-bar-full a:hover i:after {
-  color: var(--accent, #ff4200);
+  color: var(--accent-light, #ff4200); /*CGT - color here defines accent color on Font Awesome icons when hovering*/
   opacity: 1;
 }
 
