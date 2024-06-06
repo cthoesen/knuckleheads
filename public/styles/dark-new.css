@@ -529,7 +529,7 @@ body.chat_popup .banner-container-wrap {
 
 .icon-bar a:hover i:before,
 .icon-bar-full a:hover i:before {
-  color: var(--main, #ddd); /*CGT - color here defines main color on Font Awesome icons within icon bar*/
+  color: var(--accent-light, #ddd); /*CGT - color here defines main color on Font Awesome icons within icon bar*/
   opacity: 1;
 }
 
