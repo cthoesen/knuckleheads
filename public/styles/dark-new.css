@@ -457,13 +457,13 @@ body.chat_popup .banner-container-wrap {
   width: 3.2rem;
   height: 3.2rem
 }
-/*CGT - added color filter on svg icons*/
+
 .svg-icon:hover,
 .svg-iconlink:hover .svg-icon {
   filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
-  transition: all 3s ease;
-  fill: var(--main-two, var(--main,#ddd));
-  color: var(--accent-light, #FA5C25)
+  transition: all 3s ease; /*CGT - added color filter on svg icons*/
+  fill: var(--accent-light, var(--main,#ddd));
+  color: var(--accent, #FA5C25)
 }
 
 .svg-icon,
@@ -523,7 +523,7 @@ body.chat_popup .banner-container-wrap {
 
 .icon-bar i:after,
 .icon-bar-full i:after {
-  color: var(--accent-light, #ddd); /*CGT - color here defines main color on Font Awesome icons within icon bar*/
+  color: var(--accent-light, #ddd); /*CGT - color here defines accent color on Font Awesome icons within icon bar*/
   opacity: 1;
 }
 
