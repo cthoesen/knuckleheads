@@ -207,10 +207,10 @@ input[type="radio"] {
   box-sizing: inherit
 }
 /*CGT - PC background image and settings*/
-body {
+/*body {
   color: var(--main, #eee);
   text-rendering: optimizeLegibility;
-  --site-bg-image: /*url("https://knuckleheads.netlify.app/images/KDL-Background-Dark.jpg"),*/ url("https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Dark.jpg");
+  --site-bg-image: url("https://knuckleheads.netlify.app/images/KDL-Background-Dark.jpg"), url("https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Dark.jpg");
   background-attachment: fixed;
   background-position: center top;
   background-repeat: no-repeat no-repeat;
@@ -218,7 +218,15 @@ body {
   margin: auto;
   width: 100%;
   overflow-y: scroll
+}*/
+
+body {
+  --site-bg-image: #000000 url("https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Dark.jpg") no-repeat fixed center center;  
+  color: #eee;
+  -webkit-font-smoothing: antialiased !important;
+  overflow-y: scroll
 }
+
 /*CGT - mobile background image and settings*/
 @media only screen and (max-width: 48em) {
   body {
