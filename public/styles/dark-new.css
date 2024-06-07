@@ -450,20 +450,20 @@ body.chat_popup .banner-container-wrap {
 }
 
 .svg-icon {
-  fill: var(--accent, #FA5C25); /** main color on svg icons **/
-  color: var(--accent-light, #FA5C25); /** accent color on svg icons **/
+  fill: var(--accent, #FA5C25); /* main color on svg icons */
+  color: var(--accent-light, #FA5C25); /* accent color on svg icons */
   -webkit-filter: drop-shadow(0.125rem 0.125rem 0.313rem #000);
   filter: drop-shadow(0.125rem 0.125rem 0.313rem #000);
   width: 3.2rem;
-  height: 3.2rem
+  height: 3.2rem;
 }
 
 .svg-icon:hover,
 .svg-iconlink:hover .svg-icon {
   filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
-  transition: all 3s ease; /** added color filter on svg icons **/
-  fill: var(--accent-light, var(--main,#ddd));
-  color: var(--accent, #FA5C25)
+  transition: all 3s ease; /* added color filter on svg icons */
+  fill: var(--accent-light, var(--main,#ddd)); /* main color on svg icons when hovering */
+  color: var(--accent, #FA5C25); /* accent color on svg icons when hovering */
 }
 
 .svg-icon,
@@ -518,24 +518,24 @@ body.chat_popup .banner-container-wrap {
 /****** ADDED 6-4-23 for font awesome icons in icon bar ********/
 .icon-bar i:before,
 .icon-bar-full i:before {
-  color: var(--accent, #ff4200); /*CGT - color here defines main color on Font Awesome icons within icon bar*/
+  color: var(--accent, #ff4200); /* main color on Font Awesome icons within icon bar */
 }
 
 .icon-bar i:after,
 .icon-bar-full i:after {
-  color: var(--accent-light, #ddd); /*CGT - color here defines accent color on Font Awesome icons within icon bar*/
+  color: var(--accent-light, #ddd); /* accent color on Font Awesome icons within icon bar */
   opacity: 1;
 }
 
 .icon-bar a:hover i:before,
 .icon-bar-full a:hover i:before {
-  color: var(--accent-dark, #ddd); /*CGT - color here defines main color on Font Awesome icons when hovering*/
+  color: var(--accent-dark, #ddd); /* main color on Font Awesome icons when hovering */
   opacity: 1;
 }
 
 .icon-bar a:hover i:after,
 .icon-bar-full a:hover i:after {
-  color: var(--accent-light, #ff4200); /*CGT - color here defines accent color on Font Awesome icons when hovering*/
+  color: var(--accent-light, #ff4200); /* accent color on Font Awesome icons when hovering */
   opacity: 1;
 }
 
