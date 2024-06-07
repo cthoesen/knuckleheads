@@ -210,7 +210,7 @@ input[type="radio"] {
 body {
   color: var(--main, #eee);
   text-rendering: optimizeLegibility;
-  --site-bg-image: url("https://knuckleheads.netlify.app/images/KDL-Background-Dark.jpg"), url("https://knuckleheads.netlify.app/images/backgrounds/White-Brick.jpg");
+  --site-bg-image: /*url("https://knuckleheads.netlify.app/images/KDL-Background-Dark.jpg"),*/ url("https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Dark.jpg");
   background-attachment: fixed;
   background-position: center top;
   background-repeat: no-repeat no-repeat;
