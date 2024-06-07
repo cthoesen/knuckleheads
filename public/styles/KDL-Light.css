@@ -2175,6 +2175,13 @@ table,
 
 /* style for report containers */
 
+.rosters_full_display #roster_column_right div.mobile-wrap {
+  display: inline-block;
+  width: calc(50% - 0.625rem);
+  vertical-align: top;
+  margin: 0.625rem auto; /* this auto setting is what determines two columns when showing all rosters */
+}
+
 
 /***************************************/
 
