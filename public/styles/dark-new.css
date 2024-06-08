@@ -236,8 +236,17 @@ input[type="radio"] {
 
 /*CGT - mobile background image and settings*/
 @media only screen and (max-width: 48em) {
-  body {
-    --main: rgb(0, 0, 0);
+  .pagebody {
+    color: var(--main, #eee);
+    text-rendering: optimizeLegibility;
+    background-image: url("https://knuckleheads.netlify.app/images/backgrounds/BG-Dark-Cement.jpg");
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat no-repeat;
+    -webkit-font-smoothing: antialiased !important;
+    margin: auto;
+    width: 100%;
+    overflow-y: scroll;
     
 }}
 
