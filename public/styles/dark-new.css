@@ -12,16 +12,20 @@ CSS targets for individual habman sites - body.bettis
 Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-bg2 , #000000)))
 */
 
-/*:root {
+:root {
   --main: #111;
-  --main-one: #141414;
-  --accent: #ff4200;
-  --accent-light: #FA5C25;
-  --accent-dark: #B52F00;
-  --bg-opacity: rgba(181, 47, 0, .05);
-  --bg-opacity-brighter: rgba(181, 47, 0, .2);
-  --fa-main-color: #F5761A;
-}*/
+  --main-alt: #141414;
+  --accent: #72C963;
+  --accent-light: #FFBE0B;
+  --accent-dark:#2DC7FF;
+  --accent-darker: #177496;
+  --accent-darkest:#10526a;
+  --contrast: #AF2BBF;
+  --contrast-alt: #FF702D;
+  --bg-opacity: rgba(115, 201, 99, .05);
+  --bg-opacity-brighter: rgba(255, 190, 11, .2);
+  --fa-main-color: #72C963;
+}
 
 .myfantasyleague_menu ul li.mfl-icon {
   display: none
@@ -50,16 +54,6 @@ Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-
 }
 
 /* ADD ROOT TO THEME TO SET AS DEFAULT - DEFAULT ROOT MUST BE DEFINED FOR ONE THEME */
-body.bettis {
-  --accent: #f7b534;
-  --accent-light: #F5BD51;
-  --accent-dark: #9E7118;
-  --accent-darker: #4a3306;
-  --accent-darkest: #352911;
-  --bg-opacity: rgba(247, 181, 52, .05);
-  --bg-opacity-brighter: rgba(247, 181, 52, .15)
-}
-
 .theme-dk-yellow {
   --accent: #f7b534;
   --accent-light: #F5BD51;
@@ -146,6 +140,19 @@ body.bettis {
   --bg-opacity-brighter: rgba(5, 198, 21, 0.4);
 }
 
+.theme-dk-mantis {
+  --accent: #72C963;
+  --accent-light: #FFBE0B;
+  --accent-dark:#2DC7FF;
+  --accent-darker: #177496;
+  --accent-darkest:#10526a;
+  --contrast: #AF2BBF;
+  --contrast-alt: #FF702D;
+  --bg-opacity: rgba(115, 201, 99, .05);
+  --bg-opacity-brighter: rgba(255, 190, 11, .2);
+  --fa-main-color: #72C963;
+}
+
 .b_name {
   text-transform: uppercase;
   font-weight: 600;
@@ -210,7 +217,7 @@ input[type="radio"] {
 .pagebody {
   color: var(--main, #eee);
   text-rendering: optimizeLegibility;
-  background-image: url("https://knuckleheads.netlify.app/images/backgrounds/Side-Particles-MMH.png"), url("https://knuckleheads.netlify.app/images/backgrounds/BG-Dark-Cement-Floor.jpg");
+  background-image: url("https://knuckleheads.netlify.app/images/backgrounds/Side-Particles-MMH.png"), url("https://knuckleheads.netlify.app/images/backgrounds/BG-Dark-Cement.jpg");
   background-attachment: fixed;
   background-position: center top;
   background-repeat: no-repeat no-repeat;
@@ -692,7 +699,7 @@ body.chat_popup .banner-container-wrap {
 .MFLSkinSelection-content {
   display: none;
   position: absolute;
-  background: var(--main-one, #141414);
+  background: var(--main-alt, #141414);
   min-width: 8.125rem;
   box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -790,7 +797,7 @@ body.chat_popup .banner-container-wrap {
   box-shadow: inset 0 0 0 62.5rem rgba(45, 45, 45, .2);
   border-bottom: 0.375rem solid var(--accent, #ff4200);
   border-top: 0.375rem solid var(--accent);
-  background: var(--main-one, #141414) !important;
+  background: var(--main-alt, #141414) !important;
   height: 2.5rem;
   position: sticky;
   top: 0;
@@ -2039,7 +2046,7 @@ button.tbt img {
 #body_ajax_ls h3#ls_error {
   max-width: 37.5rem;
   margin: 0 auto;
-  background: var(--main-one, #141414) !important;
+  background: var(--main-alt, #141414) !important;
   color: #fff;
   padding: 0.625rem;
   border-radius: 0.313rem;
@@ -2672,7 +2679,7 @@ div.mobile-wrap .reportform {
 /*CGT - change background and color for drop down button that displays as you scroll down page to show current starters */
 .starter_count_sub {
   border: 0.188rem solid var(--accent-two, var(--accent, #ff4200));
-  background: var(--main-one, #141414) !important;
+  background: var(--main-alt, #141414) !important;
   box-shadow: 0 0 0.6rem rgba(45, 45, 45, .5);
   color: #fff
 }
@@ -4727,7 +4734,7 @@ Team Logos
   padding-left: .188rem;
   padding-right: 0.188rem;
   padding-right: .188rem;
-  background: rgba(0, 0, 0, 0) url(https://knuckleheads.netlify.app/images/captions/KDL-Caption-Pixel.png); /*added*/
+  background: rgba(0, 0, 0, 0) url(https://knuckleheads.netlify.app/images/captions/KDL-Roster-Pixel.png); /*added*/
   background-position: center; /*added*/
 }
 /*below settings to decrease size of icons for standings on mobile devices*/
@@ -5405,7 +5412,7 @@ tr.tradedifference td {
 }
 
 #MFLroster .savingsreview {
-  background: var(--main-one, #222) !important;
+  background: var(--main-alt, #222) !important;
   border-top: 0.25rem solid var(--accent-dark, var(--accent, #777));
   box-shadow: 0 0 .6rem rgba(0, 0, 0, .5);
 }
@@ -8595,11 +8602,11 @@ div.ls_team_points {
 }
 
 .hz-clone .fixed-side {
-  background: var(--main-one, #141414)
+  background: var(--main-alt, #141414)
 }
 
 .hz-clone .fixed-side.hz-hide-shadow {
-  background: var(--main-one, #141414)
+  background: var(--main-alt, #141414)
 }
 
 /***************************************/
@@ -8630,17 +8637,17 @@ div.ls_team_points {
   --popup-win: #90ee90;
   --popup-loss: red;
   --popup-tie: orange;
-  --popup-th-bg: var(--main-one, #141414);
+  --popup-th-bg: var(--main-alt, #141414);
   --my-franchise: #fff;
-  --my-franchise-bg: var(--main-one, #141414);
+  --my-franchise-bg: var(--main-alt, #141414);
   --table-separate: 0.125rem solid #333;
   --dash-x-boxes: #666;
   --highlight-separate: 0.063rem solid #111;
-  --table-header-bg: var(--main-one, #141414);
-  --table-header-bg-fixed: var(--main-one, #141414);
+  --table-header-bg: var(--main-alt, #141414);
+  --table-header-bg-fixed: var(--main-alt, #141414);
   --defunct-bg-text: #aaa;
-  --defunct-bg: var(--main-one, #141414);
-  --defunct-bg-fixed: var(--main-one, #141414);
+  --defunct-bg: var(--main-alt, #141414);
+  --defunct-bg-fixed: var(--main-alt, #141414);
 }
 
 .hs_tabs_wrap .lh_defunct_check th.fixed-side,
@@ -13029,7 +13036,7 @@ body.habskin.bettis #contract_9999 table {
 .shadow-right:after {
   width: 1.625rem !important;
   right: -0.125rem !important;
-  border-right: 0.375rem solid var(--th-bg, var(--main-one, #141414))
+  border-right: 0.375rem solid var(--th-bg, var(--main-alt, #141414))
 }
 
 .hz-hide-shadow:after {
