@@ -207,7 +207,7 @@ input[type="radio"] {
   box-sizing: inherit
 }
 /*CGT - PC background image and settings*/
-body {
+.pagebody {
   color: var(--main, #eee);
   text-rendering: optimizeLegibility;
   background-image: url("https://knuckleheads.netlify.app/images/backgrounds/MMH-Side-Particles-Dark.png"), url("https://knuckleheads.netlify.app/images/backgrounds/BG-Dark-Brick.jpg");
