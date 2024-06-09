@@ -142,7 +142,7 @@ Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-
 
 .theme-jade {
   --accent: #38b569;
-  --accent-light: #b53884; /* #e8e843;*/
+  --accent-light: #ffd449; /* #e8e843;*/
   --accent-dark: #275dad;
   --accent-darker: #1e4785;
   --accent-darkest: #173768;
