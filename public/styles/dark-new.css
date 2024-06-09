@@ -230,8 +230,8 @@ input[type="radio"] {
 /*CGT - mobile background parallax settings*/
 @media only screen and (max-width: 48em) {
   .pagebody {
-    background: url(https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Dark.jpg) center bottom no-repeat fixed #000;
-    background-size: 175%;
+    background-image: repeating-conic-gradient(rgb(50, 50, 50) 10%, rgb(0, 0, 0) 20%);
+    background-size: cover;
       
   }
 }
