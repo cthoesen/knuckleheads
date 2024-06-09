@@ -250,7 +250,6 @@ input[type="radio"] {
       left: 0;
       z-index: -5;
       background-attachment: initial;
-      filter: brightness(0.8) blur(0.85px);
   }
 }
 
