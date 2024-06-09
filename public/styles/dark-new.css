@@ -233,7 +233,7 @@ input[type="radio"] {
   color: var(--main, #eee);
   text-rendering: optimizeLegibility;
   background-image: url("https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Dark.jpg");
-  position: fixed;
+  /*position: fixed; */
   background-repeat: no-repeat;
   -webkit-font-smoothing: antialiased !important;
   margin: auto;
