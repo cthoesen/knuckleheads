@@ -364,6 +364,16 @@ body.nra {
   --make-white: #fff;
 }
 
+.theme-azure {
+  --main: #020C24;
+  --accent: #007FFF;
+  --lightest-color: #91E5F6;
+  --gradient-light: #59A5D8;
+  --gradient-dark: #133C55;
+  --th-bg: #020C24;
+  --make-white: #fff;
+}
+
 /* NFL TEAM THEME COLORING */
 .theme-niners {
   --main: #840026;
