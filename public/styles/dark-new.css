@@ -214,7 +214,7 @@ input[type="radio"] {
   box-sizing: inherit
 }
 /*CGT - PC background image and settings*/
-.pagebody {
+#custom-body {
   color: var(--main, #eee);
   text-rendering: optimizeLegibility;
   background-image: url("https://knuckleheads.netlify.app/images/backgrounds/Side-Particles-MMH.png"), url("https://knuckleheads.netlify.app/images/backgrounds/BG-Dark-Cement.jpg");
@@ -229,8 +229,8 @@ input[type="radio"] {
 
 /*CGT - mobile background parallax settings*/
 @media only screen and (max-width: 48em) {
-  .pagebody {
-    color: var(--main, #eee);
+#custom-body {
+  color: var(--main, #eee);
   text-rendering: optimizeLegibility;
   background-image: url("https://knuckleheads.netlify.app/images/backgrounds/BG-Dark-Cement.jpg");
   background-attachment: fixed;
