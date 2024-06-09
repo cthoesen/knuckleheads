@@ -232,8 +232,8 @@ input[type="radio"] {
 .pagebody {
   color: var(--main, #eee);
   text-rendering: optimizeLegibility;
-  background: #000 url("https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Dark.jpg") no-repeat scroll;
-  position: fixed;
+  background: #000 url("https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Dark.jpg") no-repeat fixed ;
+  background-position-y: top;
   -webkit-font-smoothing: antialiased !important;
   margin: auto;
   width: 100%;
