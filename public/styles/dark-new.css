@@ -240,16 +240,15 @@ input[type="radio"] {
   height: 100%;
 }}*/
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 48em) {
   .pagebody {
-      background: #000000 url(https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Dark.jpg) no-repeat scroll 0 0;
+      background: #000 url(https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Dark.jpg) no-repeat scroll;
       height: 100%;
-      left: 58%;
-      margin-left: -480px;
+      width: 100%;
       position: fixed;
       top: 0;
-      width: 920px;
-      z-index: -1;
+      left: 0;
+      z-index: -5;
       background-attachment: initial;
       filter: brightness(0.8) blur(0.85px);
   }
