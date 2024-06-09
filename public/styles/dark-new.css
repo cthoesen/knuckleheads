@@ -241,13 +241,17 @@ input[type="radio"] {
     text-rendering: optimizeLegibility;
     background-image: url("https://knuckleheads.netlify.app/images/backgrounds/BG-Dark-Cement.jpg");
     background-attachment: fixed;
-    background-position: center top;
-    background-repeat: no-repeat no-repeat;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     -webkit-font-smoothing: antialiased !important;
     margin: auto;
     width: 100%;
+    display: block;
     overflow-y: scroll;
-    
 }}
 
 body a,
