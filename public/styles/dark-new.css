@@ -16,14 +16,14 @@ Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-
   --main: #111;
   --main-alt: #141414;
   --accent: #38b569;
-  --accent-light: #95d463;
-  --accent-dark:#0080ff;
-  --accent-darker: #177496;
-  --accent-darkest:#10526a;
-  --contrast: #AF2BBF;
-  --contrast-alt: #FF702D;
-  --bg-opacity: rgba(115, 201, 99, .05);
-  --bg-opacity-brighter: rgba(255, 190, 11, .2);
+  --accent-light: #fffd82;
+  --accent-dark: #275dad;
+  --accent-darker: #1e4785;
+  --accent-darkest: #173768;
+  --contrast: #ca3cff;
+  --contrast-alt: #ff9b71;
+  --bg-opacity: rgba(56, 181, 105, .05);
+  --bg-opacity-brighter: rgba(255, 253, 130, .2);
   --fa-main-color: #38b569;
 }
 
@@ -142,14 +142,14 @@ Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-
 
 .theme-jade {
   --accent: #38b569;
-  --accent-light: #95d463;
-  --accent-dark:#0080ff;
-  --accent-darker: #f86624;
-  --accent-darkest: #515b3a;
-  --contrast: #AF2BBF;
-  --contrast-alt: #FF702D;
-  --bg-opacity: rgba(115, 201, 99, .05);
-  --bg-opacity-brighter: rgba(255, 190, 11, .2);
+  --accent-light: #fffd82;
+  --accent-dark: #275dad;
+  --accent-darker: #1e4785;
+  --accent-darkest: #173768;
+  --contrast: #ca3cff;
+  --contrast-alt: #ff9b71;
+  --bg-opacity: rgba(56, 181, 105, .05);
+  --bg-opacity-brighter: rgba(255, 253, 130, .2);
   --fa-main-color: #38b569;
 }
 
