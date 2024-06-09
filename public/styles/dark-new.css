@@ -236,7 +236,7 @@ input[type="radio"] {
 
 /*CGT - mobile background parallax settings*/
 @media only screen and (max-width: 48em) {
-  body {
+  .pagebody {
     background: #000000 url("https://knuckleheads.netlify.app/images/backgrounds/BG-Dark-Cement.jpg") no-repeat scroll top cover;
     height: 100%;
     width: 100%;
