@@ -230,7 +230,8 @@ input[type="radio"] {
 /*CGT - mobile background parallax settings*/
 @media only screen and (max-width: 48em) {
   .pagebody {
-    background-image: linear-gradient(rgb(0, 0, 0), rgb(25, 25, 25), rgb(50, 50, 50));
+    -webkit-background-image: repeating-conic-gradient(#2b2a2a 10%, #0c0c0c 15%);
+    background-image: repeating-conic-gradient(#2b2a2a 10%, #0c0c0c 15%);
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
