@@ -227,24 +227,19 @@ input[type="radio"] {
   overflow-y: scroll;
 }
 
-/*body {
-  --main: #000000 url("https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Dark.jpg") no-repeat fixed center center;  
-  color: #eee;
-  -webkit-font-smoothing: antialiased !important;
-  overflow-y: scroll
-}*/
-
 /*CGT - mobile background parallax settings*/
 @media only screen and (max-width: 48em) {
   .pagebody {
-    background: #000000 url("https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Dark.jpg") no-repeat scroll top cover;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    filter: brightness(0.8) blur(0.85px);
+    color: var(--main, #eee);
+  text-rendering: optimizeLegibility;
+  background-image: url("https://knuckleheads.netlify.app/images/backgrounds/BG-Dark-Cement.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-font-smoothing: antialiased !important;
+  margin: auto;
+  width: 100%;
+  overflow-y: scroll;
 }}
 
 body a,
