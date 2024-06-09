@@ -234,7 +234,7 @@ input[type="radio"] {
   overflow-y: scroll
 }*/
 
-/*CGT - mobile background image and settings*/
+/*CGT - mobile background parallax settings*/
 @media only screen and (max-width: 48em) {
   .pagebody {
     color: var(--main, #eee);
@@ -245,7 +245,6 @@ input[type="radio"] {
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    bottom: 0;
     left: 0;
     -webkit-font-smoothing: antialiased !important;
     margin: auto;
