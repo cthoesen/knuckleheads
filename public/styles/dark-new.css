@@ -232,7 +232,11 @@ input[type="radio"] {
   .pagebody {
     background-image: repeating-conic-gradient(rgb(50, 50, 50) 10%, rgb(0, 0, 0) 20%);
     background-size: cover;
-      
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #000;
+    backdrop-filter: invert(50%);      
   }
 }
 
