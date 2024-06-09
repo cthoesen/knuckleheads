@@ -15,16 +15,16 @@ Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-
 :root {
   --main: #111;
   --main-alt: #141414;
-  --accent: #72C963;
-  --accent-light: #FFBE0B;
-  --accent-dark:#2DC7FF;
+  --accent: #38b569;
+  --accent-light: #95d463;
+  --accent-dark:#0080ff;
   --accent-darker: #177496;
   --accent-darkest:#10526a;
   --contrast: #AF2BBF;
   --contrast-alt: #FF702D;
   --bg-opacity: rgba(115, 201, 99, .05);
   --bg-opacity-brighter: rgba(255, 190, 11, .2);
-  --fa-main-color: #72C963;
+  --fa-main-color: #38b569;
 }
 
 .myfantasyleague_menu ul li.mfl-icon {
