@@ -236,16 +236,14 @@ input[type="radio"] {
 
 /*CGT - mobile background parallax settings*/
 @media only screen and (max-width: 48em) {
-  .pagebody {
-    background: #000000 url("https://knuckleheads.netlify.app/images/backgrounds/BG-Dark-Cement.jpg") no-repeat scroll 0 0;
+  body {
+    background: #000000 url("https://knuckleheads.netlify.app/images/backgrounds/BG-Dark-Cement.jpg") no-repeat scroll top cover;
     height: 100%;
-    left: 58%;
-    margin-left: -480px;
-    position: fixed;
+    width: 100%;
+    left: 0;
+    position: absolute;
     top: 0;
-    width: 920px;
     z-index: -1;
-    background-attachment: initial;
     filter: brightness(0.8) blur(0.85px);
 }}
 
