@@ -237,37 +237,17 @@ input[type="radio"] {
 /*CGT - mobile background parallax settings*/
 @media only screen and (max-width: 48em) {
   .pagebody {
-    color: var(--main, #eee);
-    text-rendering: optimizeLegibility;
-    background-image: url("https://knuckleheads.netlify.app/images/backgrounds/BG-Dark-Cement.jpg");
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    left: 0;
-    -webkit-font-smoothing: antialiased !important;
-    margin: auto;
-    width: 100%;
-    display: block;
-    overflow-y: scroll;
+    background: #000000 url("https://knuckleheads.netlify.app/images/backgrounds/BG-Dark-Cement.jpg") no-repeat scroll 0 0;
+    height: 100%;
+    left: 58%;
+    margin-left: -480px;
+    position: fixed;
+    top: 0;
+    width: 920px;
+    z-index: -1;
+    background-attachment: initial;
+    filter: brightness(0.8) blur(0.85px);
 }}
-
-
-div.mobile-wrap {
-  box-shadow: 0 0 14px 1px rgba(30, 30, 30, 0.9) inset;
-  background: rgba(20, 44, 53, 0.43) none repeat scroll 0 0;
-  border-top: 0px !important;
-  border-bottom: 0.6rem solid rgba(0, 0, 0, 0);
-  border-radius: 5px;
-  color: #fff;
-  margin: 10px auto;
-  margin-top: 0;
-  padding: 6px;
-  padding-bottom: 10px;
-  overflow-x: auto;
-  max-width: 100%;
-}
 
 body a,
 body a:link,
