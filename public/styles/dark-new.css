@@ -220,11 +220,11 @@ input[type="radio"] {
   background: #1e1e1e;
   background-image: url("https://knuckleheads.netlify.app/images/backgrounds/Side-Particles-MMH.png"), url("https://knuckleheads.netlify.app/images/backgrounds/BG-Dark-Cement.jpg");
   position: fixed;
-  background-position: 50% -10%, center top;
+  background-position: 50% 10%, center top;
   background-repeat: no-repeat no-repeat;
   -webkit-font-smoothing: antialiased !important;
   margin: auto;
-  height: 195%;
+  height: 190%;
   width: 100%;
   overflow-y: scroll;
   z-index: -1;
