@@ -214,7 +214,7 @@ input[type="radio"] {
   box-sizing: inherit
 }
 /*CGT - PC background image and settings*/
-.pagebody {
+#body-fixed {
   color: var(--contrast, #eee);
   text-rendering: optimizeLegibility;
   background-image: url("https://knuckleheads.netlify.app/images/backgrounds/Side-Particles-MMH.png"), url("https://knuckleheads.netlify.app/images/backgrounds/BG-Dark-Cement.jpg");
@@ -229,14 +229,13 @@ input[type="radio"] {
 
 /*CGT - mobile background parallax settings*/
 @media only screen and (max-width: 48em) {
-  .pagebody {
-    background-color: #1e1c1c;
-    background-image: none;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat; 
-    -webkit-overflow-scrolling: touch;        
+  #body-fixed {
+    background: #1e1c1c url(https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Dark.jpg) no-repeat scroll;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
   }
 }
 
