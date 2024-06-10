@@ -224,6 +224,7 @@ input[type="radio"] {
   background-repeat: no-repeat no-repeat;
   -webkit-font-smoothing: antialiased !important;
   margin: auto;
+  height: 200%;
   width: 100%;
   overflow-y: scroll;
   z-index: -1;
@@ -233,7 +234,7 @@ input[type="radio"] {
 @media only screen and (max-width: 48em) {
   #body-fixed {
     background: #1e1e1e url(https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Dark.jpg) no-repeat scroll;
-    height: 150%;
+    height: 200%;
     width: 100%;
     position: fixed;
     top: 0;
