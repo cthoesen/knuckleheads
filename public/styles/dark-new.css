@@ -142,7 +142,7 @@ Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-
 
 .theme-jade {
   --accent: #38b569;
-  --accent-light: #ffd449; /* #e8e843;*/
+  --accent-light: #ffd449;
   --accent-dark: #275dad;
   --accent-darker: #1e4785;
   --accent-darkest: #173768;
@@ -215,7 +215,7 @@ input[type="radio"] {
 }
 /*CGT - PC background image and settings*/
 .pagebody {
-  color: var(--main, #eee);
+  color: var(--contrast, #eee);
   text-rendering: optimizeLegibility;
   background-image: url("https://knuckleheads.netlify.app/images/backgrounds/Side-Particles-MMH.png"), url("https://knuckleheads.netlify.app/images/backgrounds/BG-Dark-Cement.jpg");
   background-attachment: fixed;
