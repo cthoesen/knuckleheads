@@ -218,7 +218,7 @@ input[type="radio"] {
   color: var(--contrast, #eee);
   text-rendering: optimizeLegibility;
   background: #000;
-  background-image: url("https://knuckleheads.netlify.app/images/backgrounds/Side-Particles-MMH.png"), url("https://knuckleheads.netlify.app/images/backgrounds/BG-Dark-Cement.jpg");
+  background-image: url("https://knuckleheads.netlify.app/images/backgrounds/Side-Particles-MMH.png"), url("https://knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg");
   position: fixed;
   background-position: 50% -10%, center top;
   background-repeat: no-repeat no-repeat;
