@@ -240,6 +240,8 @@ input[type="radio"] {
     position: fixed;
     top: 0;
     z-index: -1;
+    background-position: 50% 60%;
+    filter: brightness(0.5) blur(0.1px);
   }
 }
 
