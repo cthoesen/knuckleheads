@@ -3281,12 +3281,12 @@ footer {
   padding: 0.625rem 0.313rem;
   background: rgba(15, 15, 15, 0.5);
   border: 0.5rem solid;
-  box-shadow: 0 0 1.75rem var(--primary);
+  box-shadow: 0 0 1.75rem var(--primary-dark);
   border-image-source: linear-gradient(to right, 
       #000, 
+      var(--primary-lighter), 
       var(--primary), 
-      var(--primary), 
-      var(--primary), 
+      var(--primary-lighter), 
       #000);
   border-image-slice: 1;
   border-bottom: 0;
