@@ -3278,9 +3278,19 @@ footer {
 
 .footercontainer-outer {
   padding: 0.625rem 0.313rem;
+  margin-top: 1.25rem;
   background: rgba(10, 10, 10, 0.5);
   border-top: 0.5rem solid rgba(0, 0, 0, 0);
-  border-image: linear-gradient(var(--accent));
+  border-bottom: 0.001rem;
+  border-image: linear-gradient(to right, rgba(10, 71, 155, 0) 0%,
+                                          rgba(10, 71, 155, 0.8) 15%,
+                                          rgba(10, 71, 155, 1) 19%,
+                                          rgba(10, 71, 155, 1) 20%,
+                                          rgba(17, 125, 255, 1) 50%,
+                                          rgba(10, 63, 147, 1) 80%,
+                                          rgba(10, 63, 147, 1) 81%,
+                                          rgba(10, 63, 147, 0.8) 85%,
+                                          rgba(10, 63, 147, 0) 100%);
   box-shadow: 0 0.125 1rem var(--accent);
 }
 
