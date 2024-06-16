@@ -16,7 +16,7 @@ Example of 3 deep variable - background: var(--primary2 , var(--neutral2 , var(-
   --neutral: #181818;
   --neutral-light: #5f5f5f;
   --neutral-dark: #0c0c0c;
-  --neutral-blur: rgba(100, 100, 100, 0.5);
+  --neutral-blur: rgba(100, 100, 100, 0.8);
   --primary: #38b569;
   --primary-light: #40cd78;
   --primary-lighter: #44e785;
