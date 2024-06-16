@@ -1501,8 +1501,8 @@ a:active {
 caption,
 #commissioner_setup table.two_column_layout th {
   font-size: 1.375rem;
-  /*background: transparent url(https://knuckleheads.netlify.app/images/captions/Dark-Bubble-Fade.png);
-  background-position: center;*/ /*added*/
+  background: transparent url(https://knuckleheads.netlify.app/images/captions/Dark-Bubble-Fade.png);
+  background-position: center; /*added*/
   box-shadow: 0 0 1.75rem var(--primary-dark);
   padding: 0.5rem;
   border-bottom: 0.35rem solid rgba(15, 15, 15, 0.75);
