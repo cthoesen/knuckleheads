@@ -927,7 +927,7 @@ label[for='sub100']+#homepagetabs {
   margin-bottom: 0;
   margin-top: 0.625rem;
   z-index: 99997;
-  border: 0.35rem solid #444;
+  border: 0.35rem solid var(--neutral-light, #444);
   border-left: 0;
   border-right: 0;
 }
