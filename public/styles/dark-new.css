@@ -9,19 +9,21 @@
 /* 
 CSS target for all habman sites is body.habskin 
 CSS targets for individual habman sites - body.bettis
-Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-bg2 , #000000)))
+Example of 3 deep variable - background: var(--primary2 , var(--neutral2 , var(--th-bg2 , #000000)))
 */
 
 :root {
-  --main: #111;
-  --main-alt: #141414;
-  --accent: #38b569;
-  --accent-light: #e8e843;
-  --accent-dark: #275dad;
-  --accent-darker: #1e4785;
-  --accent-darkest: #173768;
-  --contrast: #ca3cff;
-  --contrast-alt: #385a18;
+  --neutral: #111;
+  --neutral-alt: #141414;
+  --primary: #38b569;
+  --primary-light: #40cd78;
+  --primary-lighter: #44e785;
+  --primary-dark: #32a05e;
+  --primary-darker:#267d49;
+  --accent: #e8e843;
+  --accent-one: #ca3cff;
+  --accent-two:  #275dad;
+  --accent-three: #385a18;
   --bg-opacity: rgba(56, 181, 105, .05);
   --bg-opacity-brighter: rgba(255, 253, 130, .2);
   --fa-main-color: #38b569;
@@ -55,99 +57,98 @@ Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-
 
 /* ADD ROOT TO THEME TO SET AS DEFAULT - DEFAULT ROOT MUST BE DEFINED FOR ONE THEME */
 .theme-dk-yellow {
-  --accent: #f7b534;
-  --accent-light: #F5BD51;
-  --accent-dark: #9E7118;
-  --accent-darker: #4a3306;
-  --accent-darkest: #352911;
+  --primary: #f7b534;
+  --primary-light: #F5BD51;
+  --primary-dark: #9E7118;
+  --primary-darker: #352911;
   --bg-opacity: rgba(247, 181, 52, .05);
   --bg-opacity-brighter: rgba(247, 181, 52, .15)
 }
 
 .theme-dk-gold {
-  --accent: #b2784a;
-  --accent-light: #B8835A;
-  --accent-dark: #704D31;
+  --primary: #b2784a;
+  --primary-light: #B8835A;
+  --primary-dark: #704D31;
   --bg-opacity: rgba(178, 120, 74, .05);
   --bg-opacity-brighter: rgba(178, 120, 74, .2)
 }
 
 .theme-dk-gray {
-  --accent: #777;
-  --accent-light: #ccc;
-  --accent-dark: #222;
+  --primary: #777;
+  --primary-light: #ccc;
+  --primary-dark: #222;
   --bg-opacity: rgba(45, 45, 45, .2);
   --bg-opacity-brighter: rgba(45, 45, 45, .4);
 }
 
 .theme-dk-purple {
-  --accent: #8430c2;
-  --accent-light: #b363d1;
-  --accent-dark: #5c188e;
+  --primary: #8430c2;
+  --primary-light: #b363d1;
+  --primary-dark: #5c188e;
   --bg-opacity: rgba(92, 24, 142, .2);
   --bg-opacity-brighter: rgba(132, 48, 194, .05);
 }
 
 .theme-dk-orange {
-  --accent: #ff4200;
-  --accent-light: #FA5C25;
-  --accent-dark: #B52F00;
+  --primary: #ff4200;
+  --primary-light: #FA5C25;
+  --primary-dark: #B52F00;
   --bg-opacity: rgba(181, 47, 0, .05);
   --bg-opacity-brighter: rgba(181, 47, 0, .2)
 }
 
 .theme-dk-red {
-  --accent: #da3636;
-  --accent-light: #e63143;
-  --accent-dark: #78161F;
+  --primary: #da3636;
+  --primary-light: #e63143;
+  --primary-dark: #78161F;
   --bg-opacity: rgba(255, 20, 20, .05);
   --bg-opacity-brighter: rgba(255, 20, 20, .2)
 }
 
 .theme-dk-blue {
-  --accent: #1353F2;
-  --accent-light: #117DFF;
-  --accent-dark: #0738B3;
+  --primary: #1353F2;
+  --primary-light: #117DFF;
+  --primary-dark: #0738B3;
   --bg-opacity: rgba(7, 56, 179, .05);
   --bg-opacity-brighter: rgba(7, 56, 179, .2)
 }
 
 .theme-dk-aqua {
-  --accent: #008c9f;
-  --accent-light: #05afc6;
-  --accent-dark: #004953;
+  --primary: #008c9f;
+  --primary-light: #05afc6;
+  --primary-dark: #004953;
   --bg-opacity: rgba(0, 140, 159, .2);
   --bg-opacity-brighter: rgba(5, 175, 198, .4);
 }
 
 .theme-dk-lime {
-  --accent: #059f00;
-  --accent-light: #05c635;
-  --accent-dark: #005300;
-  --accent-darker: #064a0c;
-  --accent-darkest: #113511;
+  --primary: #059f00;
+  --primary-light: #05c635;
+  --primary-dark: #005300;
+  --primary-darker: #113511;
   --bg-opacity: rgba(5, 159, 0, 0.2);
   --bg-opacity-brighter: rgba(5, 198, 21, 0.4);
 }
   
 .theme-dk-rasta {
-  --accent: #078930;
-  --accent-light: #FCDD09;
-  --accent-dark: #DA121A;
-  --accent-darker: #4a060c;
-  --accent-darkest: #351113;
+  --primary: #078930;
+  --primary-light: #FCDD09;
+  --primary-dark: #DA121A;
+  --primary-darker: #351113;
   --bg-opacity: rgba(5, 159, 0, 0.2);
   --bg-opacity-brighter: rgba(5, 198, 21, 0.4);
 }
 
 .theme-jade {
-  --accent: #38b569;
-  --accent-light: #ffd449;
-  --accent-dark: #275dad;
-  --accent-darker: #1e4785;
-  --accent-darkest: #173768;
-  --contrast: #ca3cff;
-  --contrast-alt: #385a18;
+  --primary: #38b569;
+  --primary-light: #40cd78;
+  --primary-lighter: #44e785;
+  --primary-dark: #32a05e;
+  --primary-darker:#267d49;
+  --accent: #e8e843;
+  --accent-one: #ca3cff;
+  --accent-two:  #275dad;
+  --accent-three: #385a18;
   --bg-opacity: rgba(56, 181, 105, .05);
   --bg-opacity-brighter: rgba(255, 253, 130, .2);
   --fa-main-color: #38b569;
@@ -156,12 +157,12 @@ Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-
 .b_name {
   text-transform: uppercase;
   font-weight: 600;
-  color: var(--main, #ddd);
+  color: var(--neutral, #ddd);
   font-size: clamp(1.5rem, 10vw, 2.5rem);
 }
 
 .b_name2 {
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
   margin-left: 0.375rem
 }
 
@@ -201,7 +202,7 @@ input[type="password"] {
 
 input[type="checkbox"],
 input[type="radio"] {
-  accent-color: var(--accent, #B82601);
+  accent-color: var(--primary, #B82601);
   width: 0.875rem;
   height: 0.875rem;
 }
@@ -215,7 +216,7 @@ input[type="radio"] {
 }
 /*CGT - PC background image and settings*/
 #body-fixed {
-  color: var(--contrast, #eee);
+  color: var(--accent, #eee);
   text-rendering: optimizeLegibility;
   background: #000;
   background-image: url("https://knuckleheads.netlify.app/images/backgrounds/Side-Particles-MMH.png"), url("https://knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg");
@@ -249,7 +250,7 @@ body a,
 body a:link,
 body a:active,
 body a:visited {
-  color: var(--accent, #eee);
+  color: var(--primary, #eee);
   outline: none
 }
 /* body text */
@@ -257,7 +258,7 @@ body a:hover,
 body a:link:hover,
 body a:active:hover,
 body a:visited:hover {
-  color: var(--main, #fff);
+  color: var(--neutral, #fff);
 }
 /* body text hover */
 .pagebody {
@@ -286,7 +287,7 @@ body,
 #bench-caption-fixed,
 #starter-caption-fixed caption,
 #bench-caption-fixed caption {
-  background: var(--main, #111) !important;
+  background: var(--neutral, #111) !important;
   background-attachment: fixed
 }
 
@@ -360,7 +361,7 @@ body.chat_popup .banner-container-wrap {
 .sub-content ul li:before,
 .show-sub-heads ul li:before,
 .trade-assets-wrapper li::marker {
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
 }
 
 /***************************************/
@@ -373,7 +374,7 @@ body.chat_popup .banner-container-wrap {
 
 .banner-container {
   background: var(--bg-opacity, rgba(181, 47, 0, .05));
-  border-bottom: 0.5rem solid var(--accent, #ff4200);
+  border-bottom: 0.5rem solid var(--primary, #ff4200);
   box-shadow: inset 0 0 0.625rem rgb(0 0 0 / 80%);
  
 }
@@ -438,11 +439,11 @@ body.chat_popup .banner-container-wrap {
 
 .bannericon .c,
 .bannericon .g {
-  fill: var(--accent-dark, #B52F00)
+  fill: var(--primary-dark, #B52F00)
 }
 
 .bannericon .d {
-  fill: var(--accent, #ff4200)
+  fill: var(--primary, #ff4200)
 }
 
 .bannericon .e {
@@ -450,7 +451,7 @@ body.chat_popup .banner-container-wrap {
 }
 
 .bannericon .h {
-  fill: var(--accent-light, #FA5C25)
+  fill: var(--primary-light, #FA5C25)
 }
 
 .svg-iconlink a,
@@ -465,12 +466,12 @@ body.chat_popup .banner-container-wrap {
 .svg-iconlink:active:hover,
 .svg-iconlink:link:hover,
 .svg-iconlink:visited:hover {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 .svg-icon {
-  fill: var(--accent, #FA5C25); /* main color on svg icons */
-  color: var(--accent-light, #FA5C25); /* accent color on svg icons */
+  fill: var(--primary, #FA5C25); /* main color on svg icons */
+  color: var(--accent, #FA5C25); /* accent color on svg icons */
   -webkit-filter: drop-shadow(0.125rem 0.125rem 0.313rem #000);
   filter: drop-shadow(0.125rem 0.125rem 0.313rem #000);
   width: 3.2rem;
@@ -481,8 +482,8 @@ body.chat_popup .banner-container-wrap {
 .svg-iconlink:hover .svg-icon {
   filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
   transition: all 3s ease; /* added color filter on svg icons */
-  fill: var(--accent-light, var(--main,#ddd)); /* main color on svg icons when hovering */
-  color: var(--accent, #FA5C25); /* accent color on svg icons when hovering */
+  fill: var(--accent, var(--neutral,#ddd)); /* main color on svg icons when hovering */
+  color: var(--primary, #FA5C25); /* accent color on svg icons when hovering */
 }
 
 .svg-icon,
@@ -537,24 +538,24 @@ body.chat_popup .banner-container-wrap {
 /****** ADDED 6-4-23 for font awesome icons in icon bar ********/
 .icon-bar i:before,
 .icon-bar-full i:before {
-  color: var(--accent, #ff4200); /* main color on Font Awesome icons within icon bar */
+  color: var(--primary, #ff4200); /* main color on Font Awesome icons within icon bar */
 }
 
 .icon-bar i:after,
 .icon-bar-full i:after {
-  color: var(--accent-light, #ddd); /* accent color on Font Awesome icons within icon bar */
+  color: var(--accent, #ddd); /* accent color on Font Awesome icons within icon bar */
   opacity: 1;
 }
 
 .icon-bar a:hover i:before,
 .icon-bar-full a:hover i:before {
-  color: var(--accent-dark, #ddd); /* main color on Font Awesome icons when hovering */
+  color: var(--primary-darker, #ddd); /* main color on Font Awesome icons when hovering */
   opacity: 1;
 }
 
 .icon-bar a:hover i:after,
 .icon-bar-full a:hover i:after {
-  color: var(--accent-light, #ff4200); /* accent color on Font Awesome icons when hovering */
+  color: var(--accent-one, #ff4200); /* accent color on Font Awesome icons when hovering */
   opacity: 1;
 }
 
@@ -588,7 +589,7 @@ body.chat_popup .banner-container-wrap {
 .icon-bar .svg-iconlink:hover span.fa-stack i:nth-child(1):before,
 .icon-bar-full span.fa-stack i:nth-child(2):before,
 .icon-bar-full .svg-iconlink:hover span.fa-stack i:nth-child(1):before {
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
 }
 
 /****** ADDED 3-3-23 for full width banner ********/
@@ -605,7 +606,7 @@ body.chat_popup .banner-container-wrap {
 
 .banner-container-full {
   background: var(--bg-opacity, rgba(181, 47, 0, .05));
-  border-bottom: 0.25rem solid var(--accent, #ff4200);
+  border-bottom: 0.25rem solid var(--primary, #ff4200);
   box-shadow: inset 0 0 0.625rem rgb(0 0 0 / 80%);
 }
 /*CGT - Below determines container settings for league banner*/
@@ -643,7 +644,7 @@ body.chat_popup .banner-container-wrap {
   box-shadow: 0 0 0.063rem 0.063rem rgba(0, 0, 0, 0.1);
   border-radius: 0.188rem;
   padding: 0.625rem !important;
-  background: var(--main, #111) !important;
+  background: var(--neutral, #111) !important;
 }
 /* POPUP OVERLAY BACKGROUND */
 .standings-settings_overlay {
@@ -703,7 +704,7 @@ body.chat_popup .banner-container-wrap {
 .MFLSkinSelection-content {
   display: none;
   position: absolute;
-  background: var(--main-alt, #141414);
+  background: var(--neutral-alt, #141414);
   min-width: 8.125rem;
   box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -740,7 +741,7 @@ body.chat_popup .banner-container-wrap {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: var(--main, #111);
+  background: var(--neutral, #111);
   background-attachment: fixed;
   box-shadow: 0 0 1.563rem #000;
   border-radius: 0.188rem;
@@ -774,8 +775,8 @@ body.chat_popup .banner-container-wrap {
 }
 
 .mflModal-content button:hover {
-  background: var(--accent, #ff4200);
-  border-color: var(--accent, #ff4200);
+  background: var(--primary, #ff4200);
+  border-color: var(--primary, #ff4200);
   color: #fff;
 }
 
@@ -799,9 +800,9 @@ body.chat_popup .banner-container-wrap {
 
 .myfantasyleague_menu {
   box-shadow: inset 0 0 0 62.5rem rgba(45, 45, 45, .2);
-  border-bottom: 0.375rem solid var(--accent, #ff4200);
-  border-top: 0.375rem solid var(--accent);
-  background: var(--main-alt, #141414) !important;
+  border-bottom: 0.375rem solid var(--primary, #ff4200);
+  border-top: 0.375rem solid var(--primary);
+  background: var(--neutral-alt, #141414) !important;
   height: 2.5rem;
   position: sticky;
   top: 0;
@@ -827,11 +828,11 @@ body.chat_popup .banner-container-wrap {
 }
 
 .myfantasyleague_menu>ul>li.has-sub:hover>a:after {
-  border-top-color: var(--accent, #ff4200)
+  border-top-color: var(--primary, #ff4200)
 }
 
 .myfantasyleague_menu ul ul>li.has-sub:hover>a:after {
-  border-left-color: var(--accent, #ff4200)
+  border-left-color: var(--primary, #ff4200)
 }
 
 .myfantasyleague_menu li.mfl-icon+li:hover a {
@@ -879,7 +880,7 @@ li.player-search a input {
 }
 
 .myfantasyleague_menu ul li ul {
-  border-top: 0.375rem solid var(--accent, #ff4200);
+  border-top: 0.375rem solid var(--primary, #ff4200);
 }
 
 .myfantasyleague_menu ul ul li a,
@@ -968,7 +969,7 @@ label[for='sub100']+#homepagetabs {
 
 .myfantasyleague_tabmenu #homepagetabs li.currenttab,
 .myfantasyleague_tabmenu #homepagetabs li.currenttab:hover {
-  background-color: var(--accent, #ff4200);
+  background-color: var(--primary, #ff4200);
   transition: color 0.6s ease-in 0s, box-shadow 0.2s ease 0s;
 }
 
@@ -981,7 +982,7 @@ label[for='sub100']+#homepagetabs {
 /***************************************/
 
 .draft_warning {
-  background: var(--accent, #ff4200) !important;
+  background: var(--primary, #ff4200) !important;
   color: #fff !important;
   font-weight: bold !important;
 }
@@ -995,7 +996,7 @@ label[for='sub100']+#homepagetabs {
 }
 
 .theme-dk-yellow .draft_warning {
-  background: var(--accent, #ff4200) !important;
+  background: var(--primary, #ff4200) !important;
   color: #000 !important;
   font-weight: bold !important;
 }
@@ -1026,7 +1027,7 @@ label[for='sub100']+#homepagetabs {
     height: 0.25rem;
     bottom: 0;
     left: 0;
-    background-color: var(--accent, #ff4200);
+    background-color: var(--primary, #ff4200);
     transform-origin: bottom center;
     transition: transform 0.25s ease-out;
   }
@@ -1122,7 +1123,7 @@ label[for='sub100']+#homepagetabs {
 
 #myfantasyleague_tabs .myfantasyleague_tabmenu #homepagetabs li.currenttab,
 #myfantasyleague_tabs .myfantasyleague_tabmenu #homepagetabs li.currenttab:hover {
-  background: var(--accent, #ff4200)
+  background: var(--primary, #ff4200)
 }
 
 #myfantasyleague_tabs .myfantasyleague_tabmenu #homepagetabs li.currenttab a,
@@ -1146,7 +1147,7 @@ span.custom_expand:hover+span+.plus-toggle span:before,
 span.custom_expand:hover+span+.plus-toggle span:after,
 span.custom_collapse:hover+.plus-toggle span:before,
 span.custom_collapse:hover+.plus-toggle span:after {
-  background: var(--accent, #080e25);
+  background: var(--primary, #080e25);
 }
 
 .homepagecolumn .mobile-wrap {
@@ -1154,7 +1155,7 @@ span.custom_collapse:hover+.plus-toggle span:after {
 }
 
 .plus-toggle-main {
-  background: var(--accent, #ff4200) !important;
+  background: var(--primary, #ff4200) !important;
 }
 
 .toggle-btn-main::before,
@@ -1207,7 +1208,7 @@ span.custom_collapse:hover+.plus-toggle span:after {
 
 .myfantasyleague_menuMobile li.has-sub,
 .myfantasyleague_menuMobile li.mm-home {
-  border-bottom: 0.25rem solid var(--accent, #ff4200);
+  border-bottom: 0.25rem solid var(--primary, #ff4200);
 }
 
 .myfantasyleague_menuMobile li ul li,
@@ -1216,7 +1217,7 @@ span.custom_collapse:hover+.plus-toggle span:after {
 }
 
 .myfantasyleague_menuMobile>ul>li>a:before {
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
 }
 
 .myfantasyleague_menuMobile>ul>li.has-sub.arrow-down>a:before {
@@ -1240,7 +1241,7 @@ body.bettis .myfantasyleague_menuMobile>ul>li.has-sub.arrow-down>a:before {
   width: 0;
   height: 0;
   border: 0.35rem solid transparent;
-  border-left: 0.35rem solid var(--accent, #ff4200);
+  border-left: 0.35rem solid var(--primary, #ff4200);
   transition: left 0.2s ease-in-out;
 }
 
@@ -1292,7 +1293,7 @@ li.has-sub ul li.mm_sizing_head a,
   width: 0;
   height: 0;
   border: 0.25rem solid transparent;
-  border-left: 0.25rem solid var(--accent, #ff4200);
+  border-left: 0.25rem solid var(--primary, #ff4200);
 }
 
 .myfantasyleague_menuMobile>ul>li>ul>li>ul>li>a {
@@ -1314,7 +1315,7 @@ li.has-sub ul li.mm_sizing_head a,
 }
 
 .myfantasyleague_menuMobile>ul>li.has-sub.arrow-down>a {
-  background: var(--accent, #ff4200)
+  background: var(--primary, #ff4200)
 }
 
 .myfantasyleague_menuMobile>ul>li.has-sub>ul>li.has-sub.sub-arrow-down>a {
@@ -1323,7 +1324,7 @@ li.has-sub ul li.mm_sizing_head a,
 }
 
 .myfantasyleague_menu li.sub-default:hover ul li:hover>a {
-  border-bottom: 0.063rem solid var(--accent, #ff4200)
+  border-bottom: 0.063rem solid var(--primary, #ff4200)
 }
 
 .myfantasyleague_menu li.sub-default:hover ul li.player-search:hover>a {
@@ -1345,7 +1346,7 @@ li.has-sub ul li.mm_sizing_head a,
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   display: block;
-  background: var(--main, #111) !important;
+  background: var(--neutral, #111) !important;
 }
 
 .myfantasyleague_menuMobile span.menu_arrow:before {
@@ -1511,7 +1512,7 @@ caption,
   text-transform: uppercase;
   width: auto; /*added*/
   max-width: 100%; /*added*/
-  border: 0.33rem outset var(--accent-light, blue); /*added*/
+  border: 0.33rem outset var(--primary-light, blue); /*added*/
   border-radius: 0.25rem; /*added*/
   margin-bottom: 0.33rem;
 }
@@ -1545,7 +1546,7 @@ caption a,
 caption a:link,
 caption a:active,
 caption a:visited {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 caption {
@@ -1568,7 +1569,7 @@ caption.withfranchiseicon a,
 caption.withfranchiseicon a:link,
 caption.withfranchiseiconn a:active,
 caption.withfranchiseicon a:visited {
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
   text-align: center
 }
 /* caption.withfranchise icon text color different since we have different bg color */
@@ -1576,18 +1577,18 @@ caption.withfranchiseicon a:hover,
 caption.withfranchiseicon a:link:hover,
 caption.withfranchiseicon a:active:hover,
 caption.withfranchiseicon a:visited:hover {
-  color: var(--accent-light, #fff)
+  color: var(--primary-light, #fff)
 }
 /* caption.withfranchise text hover */
 caption .module_expand.custom_collapse,
 caption .module_expand.custom_expand {
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
   background: none
 }
 
 caption .module_expand.custom_collapse:hover,
 caption .module_expand.custom_expand:hover {
-  color: var(--accent-light, #fff)
+  color: var(--primary-light, #fff)
 }
 
 caption .ownername {
@@ -1699,7 +1700,7 @@ th a:visited:hover,
 
 .newposition td,
 .newposition th {
-  border-color: var(--accent, #ff4200)
+  border-color: var(--primary, #ff4200)
 }
 
 /* Report footer background and text - link coloring */
@@ -1786,7 +1787,7 @@ td.reportfooter a:visited:hover {
 .standingslogo {
   margin: 0.313rem 0;
   max-width: 100%; /*added*/
-  border: 0.33rem outset var(--accent-light, blue); /*added*/
+  border: 0.33rem outset var(--primary-light, blue); /*added*/
   border-radius: 0.25rem; /*added*/
 }
 
@@ -1829,13 +1830,13 @@ td.reportfooter a:visited:hover {
 
 .mobile-wrap h3,
 .mobile-wrap h3.warning {
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
   font-size: 1.25rem
 }
 /* h3 body menu links */
 
 .h3-menu {
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
   padding: 0.313rem;
   margin: 0.625rem 0;
   margin-top: 0;
@@ -1939,7 +1940,7 @@ img {
 .warning a:link,
 .warning a:active,
 .warning a:visited {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 .warning a:hover,
@@ -2017,8 +2018,8 @@ button.tbt {
 }
 
 button.tbt:hover {
-  color: var(--accent, #90ee90);
-  border-color: var(--accent, #90ee90);
+  color: var(--primary, #90ee90);
+  border-color: var(--primary, #90ee90);
   background: none;
 }
 
@@ -2039,7 +2040,7 @@ button.tbt img {
 }
 
 #league_chat td b {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 /* color for pvt chat messages */
 #league_chat caption span i {
@@ -2050,7 +2051,7 @@ button.tbt img {
 #body_ajax_ls h3#ls_error {
   max-width: 37.5rem;
   margin: 0 auto;
-  background: var(--main-alt, #141414) !important;
+  background: var(--neutral-alt, #141414) !important;
   color: #fff;
   padding: 0.625rem;
   border-radius: 0.313rem;
@@ -2068,30 +2069,30 @@ input[type="submit"] {
   border-radius: 0.188rem;
   box-shadow: 0 0 0.313rem rgba(0, 0, 0, .5);
   color: #fff;
-  background: var(--accent, #ff4200);
+  background: var(--primary, #ff4200);
   background-image: none;
-  background-image: -webkit-linear-gradient(top, var(--accent-light, #FA5C25), var(--accent-dark, #B52F00));
-  background-image: -moz-linear-gradient(top, var(--accent-light, #FA5C25), var(--accent-dark, #B52F00));
-  background-image: -ms-linear-gradient(top, var(--accent-light, #FA5C25), var(--accent-dark, #B52F00));
-  background-image: -o-linear-gradient(top, var(--accent-light, #FA5C25), var(--accent-dark, #B52F00));
-  background-image: linear-gradient(to bottom, var(--accent-light, #FA5C25), var(--accent-dark, #B52F00))
+  background-image: -webkit-linear-gradient(top, var(--primary-light, #FA5C25), var(--primary-dark, #B52F00));
+  background-image: -moz-linear-gradient(top, var(--primary-light, #FA5C25), var(--primary-dark, #B52F00));
+  background-image: -ms-linear-gradient(top, var(--primary-light, #FA5C25), var(--primary-dark, #B52F00));
+  background-image: -o-linear-gradient(top, var(--primary-light, #FA5C25), var(--primary-dark, #B52F00));
+  background-image: linear-gradient(to bottom, var(--primary-light, #FA5C25), var(--primary-dark, #B52F00))
 }
 
 #body_ajax_ls h3#ls_error a:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover {
   color: #fff;
-  background: var(--accent, #ff4200);
+  background: var(--primary, #ff4200);
   background-image: none;
-  background-image: -webkit-linear-gradient(top, var(--accent-dark, #B52F00), var(--accent-light, #FA5C25));
-  background-image: -moz-linear-gradient(top, var(--accent-dark, #B52F00), var(--accent-light, #FA5C25));
-  background-image: -ms-linear-gradient(top, var(--accent-dark, #B52F00), var(--accent-light, #FA5C25));
-  background-image: -o-linear-gradient(top, var(--accent-dark, #B52F00), var(--accent-light, #FA5C25));
-  background-image: linear-gradient(to bottom, var(--accent-dark, #B52F00), var(--accent-light, #FA5C25))
+  background-image: -webkit-linear-gradient(top, var(--primary-dark, #B52F00), var(--primary-light, #FA5C25));
+  background-image: -moz-linear-gradient(top, var(--primary-dark, #B52F00), var(--primary-light, #FA5C25));
+  background-image: -ms-linear-gradient(top, var(--primary-dark, #B52F00), var(--primary-light, #FA5C25));
+  background-image: -o-linear-gradient(top, var(--primary-dark, #B52F00), var(--primary-light, #FA5C25));
+  background-image: linear-gradient(to bottom, var(--primary-dark, #B52F00), var(--primary-light, #FA5C25))
 }
 
 #league_chat .chatLapsedTime {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 /* style chat button and field */
 #league_chat form {
@@ -2144,7 +2145,7 @@ li.player-search a input,
 
 #league_chat .fa-comments {
   margin-top: -0.313rem;
-  color: var(--accent, #ff4200) !important
+  color: var(--primary, #ff4200) !important
 }
 
 #league_chat .fa-comments:hover {
@@ -2254,7 +2255,7 @@ div.mobile-wrap .reportform {
 .alert.alert-info-table .reportnavigationheader,
 .tdalert span b {
   padding-right: 0.313rem;
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 .alert.alert-info-table a,
@@ -2289,7 +2290,7 @@ div.mobile-wrap .reportform {
 }
 
 .alert.alert-info-body .reportnavigationheader {
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
   padding-right: 0.313rem
 }
 
@@ -2367,11 +2368,11 @@ div.mobile-wrap .reportform {
 .weekly-navbar a:active:hover,
 .weekly-navbar a:visited:hover {
   color: #fff;
-  background: var(--accent, #ff4200)
+  background: var(--primary, #ff4200)
 }
 
 .weekly-navbar .currentweek {
-  background: var(--accent, #ff4200);
+  background: var(--primary, #ff4200);
   color: #fff
 }
 
@@ -2423,7 +2424,7 @@ div.mobile-wrap .reportform {
 }
 
 #monthly_calendar .month_header th a {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 #monthly_calendar td .calendarday {
@@ -2439,7 +2440,7 @@ div.mobile-wrap .reportform {
 }
 
 #monthly_calendar td.today {
-  border: 0.188rem dotted var(--accent, #ff4200)
+  border: 0.188rem dotted var(--primary, #ff4200)
 }
 
 
@@ -2459,7 +2460,7 @@ div.mobile-wrap .reportform {
 #calendar .today,
 #calendar .today.first-td,
 #calendar .today:last-of-type {
-  border: 0.188rem dotted var(--accent, #ff4200)
+  border: 0.188rem dotted var(--primary, #ff4200)
 }
 /* Border to todays date - color it accent color of site */
 #calendar th {
@@ -2548,7 +2549,7 @@ div.mobile-wrap .reportform {
 /* LINEUP COLORING */
 
 #body_submit_lineups h4.warning {
-  background: var(--accent, #ff4200);
+  background: var(--primary, #ff4200);
   padding: 0.625rem;
   border-radius: 0.188rem;
   color: #fff;
@@ -2632,7 +2633,7 @@ div.mobile-wrap .reportform {
 }
 
 #body_lineup.custom_lineup_body form tr.player_row td.pos-rank {
-  background: var(--accent, #ff4200) !important;
+  background: var(--primary, #ff4200) !important;
   color: #fff
 }
 
@@ -2650,7 +2651,7 @@ div.mobile-wrap .reportform {
 #body_lineup.custom_lineup_body form td.weekly-opp,
 #body_lineup.custom_lineup_body form td.weekly-opp a,
 .custom_lineup_submission_body tr.starter_totalsRow td {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 /* change background and color for drop down that displays as you scroll down page to show current starters */
@@ -2658,32 +2659,32 @@ div.mobile-wrap .reportform {
 .starter_count_reason_less,
 #body_lineup.custom_lineup_body .links_nav a {
   color: #fff;
-  background: var(--accent, #ff4200);
+  background: var(--primary, #ff4200);
   background-image: none;
-  background-image: -webkit-linear-gradient(top, var(--accent-light, #FA5C25), var(--accent-dark, #B52F00));
-  background-image: -moz-linear-gradient(top, var(--accent-light, #FA5C25), var(--accent-dark, #B52F00));
-  background-image: -ms-linear-gradient(top, var(--accent-light, #FA5C25), var(--accent-dark, #B52F00));
-  background-image: -o-linear-gradient(top, var(--accent-light, #FA5C25), var(--accent-dark, #B52F00));
-  background-image: linear-gradient(to bottom, var(--accent-light, #FA5C25), var(--accent-dark, #B52F00));
+  background-image: -webkit-linear-gradient(top, var(--primary-light, #FA5C25), var(--primary-dark, #B52F00));
+  background-image: -moz-linear-gradient(top, var(--primary-light, #FA5C25), var(--primary-dark, #B52F00));
+  background-image: -ms-linear-gradient(top, var(--primary-light, #FA5C25), var(--primary-dark, #B52F00));
+  background-image: -o-linear-gradient(top, var(--primary-light, #FA5C25), var(--primary-dark, #B52F00));
+  background-image: linear-gradient(to bottom, var(--primary-light, #FA5C25), var(--primary-dark, #B52F00));
 }
 
 .starter_count_reason_more:hover,
 .starter_count_reason_less:hover,
 #body_lineup.custom_lineup_body .links_nav a:hover {
   color: #fff;
-  background: var(--accent, #ff4200);
+  background: var(--primary, #ff4200);
   background-image: none;
-  background-image: -webkit-linear-gradient(top, var(--accent-dark, #B52F00), var(--accent-light, #FA5C25));
-  background-image: -moz-linear-gradient(top, var(--accent-dark, #B52F00), var(--accent-light, #FA5C25));
-  background-image: -ms-linear-gradient(top, var(--accent-dark, #B52F00), var(--accent-light, #FA5C25));
-  background-image: -o-linear-gradient(top, var(--accent-dark, #B52F00), var(--accent-light, #FA5C25));
-  background-image: linear-gradient(to bottom, var(--accent-dark, #B52F00), var(--accent-light, #FA5C25));
+  background-image: -webkit-linear-gradient(top, var(--primary-dark, #B52F00), var(--primary-light, #FA5C25));
+  background-image: -moz-linear-gradient(top, var(--primary-dark, #B52F00), var(--primary-light, #FA5C25));
+  background-image: -ms-linear-gradient(top, var(--primary-dark, #B52F00), var(--primary-light, #FA5C25));
+  background-image: -o-linear-gradient(top, var(--primary-dark, #B52F00), var(--primary-light, #FA5C25));
+  background-image: linear-gradient(to bottom, var(--primary-dark, #B52F00), var(--primary-light, #FA5C25));
 }
 
 /*CGT - change background and color for drop down button that displays as you scroll down page to show current starters */
 .starter_count_sub {
-  border: 0.188rem solid var(--accent-two, var(--accent, #ff4200));
-  background: var(--main-alt, #141414) !important;
+  border: 0.188rem solid var(--primary-two, var(--primary, #ff4200));
+  background: var(--neutral-alt, #141414) !important;
   box-shadow: 0 0 0.6rem rgba(45, 45, 45, .5);
   color: #fff
 }
@@ -2722,7 +2723,7 @@ div.mobile-wrap .reportform {
 /*******************************************/
 
 #weather-wrapper .current-conditions-place {
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
 }
 
 #weather-wrapper .as_close_btn {
@@ -2732,18 +2733,18 @@ div.mobile-wrap .reportform {
 }
 
 #weather-wrapper .as_close_btn:hover {
-  background: var(--accent, #ff4200);
-  border-color: var(--accent, #ff4200);
+  background: var(--primary, #ff4200);
+  border-color: var(--primary, #ff4200);
   color: #fff;
 }
 
 #popup-weather-wrapper #popup-weather-container {
-  background: var(--main, #111);
+  background: var(--neutral, #111);
 }
 
 .kickoff-conditions-temp,
 .current-conditions-temp {
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
 }
 
 .current-conditions-header .current-conditions-text,
@@ -2795,16 +2796,16 @@ div.mobile-wrap .reportform {
 }
 
 .target_report tr.lineup_player_row td.pos-rank {
-  background: var(--accent, #ff4200) !important;
+  background: var(--primary, #ff4200) !important;
   color: #fff
 }
 
 .target_report tr.lineup_player_row td.weekly-opp {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 .team_lineup_table .lineup_head {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 .target_report tr.lineup_player_row.previous_starter td.pphoto:before {
@@ -2840,21 +2841,21 @@ div.mobile-wrap .reportform {
 abbr {
   cursor: pointer;
   text-decoration: none;
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 #tooltip {
-  background: var(--accent, #ff4200) !important;
+  background: var(--primary, #ff4200) !important;
   font-size: 0.875rem;
   border-radius: 0.188rem
 }
 
 #tooltip:after {
-  border-top-color: var(--accent, #ff4200) !important
+  border-top-color: var(--primary, #ff4200) !important
 }
 
 #tooltip.top:after {
-  border-top-color: var(--accent, #ff4200) !important
+  border-top-color: var(--primary, #ff4200) !important
 }
 
 
@@ -2929,12 +2930,12 @@ body.full-width {
   text-transform: uppercase;
   border: 0;
   font-weight: 700;
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 #commissioner_setup table.two_column_layout li,
 #my_options li {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 #commissioner_setup table.two_column_layout th:before {
@@ -2990,7 +2991,7 @@ body.full-width {
 }
 
 .theme-dk-yellow #commissioner_setup th#use_with_caution {
-  background: var(--accent, #ff4200);
+  background: var(--primary, #ff4200);
   color: #111;
 }
 
@@ -3091,8 +3092,8 @@ body.full-width {
 }
 
 #MFLPlayerPopupClose:hover {
-  background: var(--accent, #ff4200);
-  border-color: var(--accent, #ff4200);
+  background: var(--primary, #ff4200);
+  border-color: var(--primary, #ff4200);
   color: #fff
 }
 
@@ -3123,7 +3124,7 @@ ul.MFLPlayerPopupTab li a.active,
 ul.MFLPlayerPopupTab li a.active:hover,
 ul.MFLPlayerPopupTab li a.current,
 ul.MFLPlayerPopupTab li a.current:hover {
-  background: var(--accent, #ff4200);
+  background: var(--primary, #ff4200);
   color: #fff
 }
 
@@ -3137,12 +3138,12 @@ ul.MFLPlayerPopupTab li a:hover {
   color: #fff;
   background: rgba(0, 0, 0, 0.4);
   text-decoration: none;
-  box-shadow: inset 0 -4px var(--accent, #ff4200);
+  box-shadow: inset 0 -4px var(--primary, #ff4200);
 }
 
 .MFLPlayerPopupLoader {
   border: 1rem solid #ccc;
-  border-top: 1rem solid var(--accent, #ff4200)
+  border-top: 1rem solid var(--primary, #ff4200)
 }
 
 #MFLPlayerPopupLoading {
@@ -3280,12 +3281,12 @@ footer {
   padding: 0.625rem 0.313rem;
   background: rgba(15, 15, 15, 0.5);
   border: 0.5rem solid;
-  box-shadow: 0 0 1.75rem var(--accent);
+  box-shadow: 0 0 1.75rem var(--primary);
   border-image-source: linear-gradient(to right, 
       #000, 
-      var(--accent), 
-      var(--accent), 
-      var(--accent), 
+      var(--primary), 
+      var(--primary), 
+      var(--primary), 
       #000);
   border-image-slice: 1;
   border-bottom: 0;
@@ -3326,7 +3327,7 @@ footer {
 .f-title-icon {
   text-align: left;
   text-transform: uppercase;
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
   font-size: 0.938rem;
   margin-bottom: 0.125rem;
   font-weight: 600
@@ -3356,7 +3357,7 @@ footer {
 .f-link a:link:hover,
 .f-link a:active:hover,
 .f-link a:visited:hover {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 .f-icon {
@@ -3877,7 +3878,7 @@ table#youtubevideo.homepagemodule.report embed,
 #ScoreNFLDetails th[colspan],
 #body_pro_matchup th[colspan] {
   font-size: 120%;
-  border-bottom: 0.25rem solid var(--accent, #ff4200);
+  border-bottom: 0.25rem solid var(--primary, #ff4200);
   font-weight: bold;
   text-align: center !important
 }
@@ -3886,11 +3887,11 @@ table#youtubevideo.homepagemodule.report embed,
 #ScoreDetails td.subtotal+td,
 #body_detailed td.subtotal,
 #body_detailed td.subtotal+td {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 #fullSeasonPts td b {
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
   font-weight: normal
 }
 
@@ -4185,11 +4186,11 @@ html[xmlns] .flexslider .slides {
 }
 
 #MFLBoxContainer input[type="button"]:hover {
-  background: var(--accent, #ff4200)
+  background: var(--primary, #ff4200)
 }
 
 #MFLBoxContainer input[style="cursor:default"] {
-  background: var(--accent, #ff4200)
+  background: var(--primary, #ff4200)
 }
 
 #MFLBoxMatchups {
@@ -4219,14 +4220,14 @@ html[xmlns] .flexslider .slides {
 }
 
 #MFLBoxContainer .fa-arrow-right-arrow-left:hover {
-  color: var(--accent, #f42001);
+  color: var(--primary, #f42001);
 }
 
 .MFLBoxLiveStatsContent {
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
   box-shadow: 0 0 0.313rem rgba(0, 0, 0, .5);
   border: 0.188rem solid #333;
-  background: var(--main, #111);
+  background: var(--neutral, #111);
 }
 
 .MFLBoxLiveStatsArrow {
@@ -4234,11 +4235,11 @@ html[xmlns] .flexslider .slides {
 }
 
 .MFLBoxLiveStatsClose {
-  color: var(--accent, #ff4200) !important
+  color: var(--primary, #ff4200) !important
 }
 
 #MFLBoxWrapper #MFLBoxPlayerDetails {
-  background: var(--main, #111) !important;
+  background: var(--neutral, #111) !important;
   background-attachment: fixed;
   box-shadow: 0 0 0.313rem rgba(0, 0, 0, .5);
   color: #eee;
@@ -4249,14 +4250,14 @@ html[xmlns] .flexslider .slides {
 }
 
 #MFLBoxWrapper .MFLBoxPlayerDetailsClose {
-  background: var(--accent, #ff4200);
-  border: .125rem solid var(--accent, #ff4200);
+  background: var(--primary, #ff4200);
+  border: .125rem solid var(--primary, #ff4200);
   color: #fff
 }
 
 #MFLBoxWrapper .MFLBoxPlayerDetailsClose:hover {
-  background: var(--accent, #ff4200);
-  border-color: var(--accent, #ff4200)
+  background: var(--primary, #ff4200);
+  border-color: var(--primary, #ff4200)
 }
 
 #MFLBoxWrapper #MFLBoxPlayerDetails td span[style="color:red"],
@@ -4450,7 +4451,7 @@ table.playoffbracket {
   align-items: center;
   justify-content: left;
   font-weight: bold;
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 .playoffbracket td {
@@ -4946,7 +4947,7 @@ div.mobile-wrap:empty {
 }
 
 #playoffTable td i {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 /* set width or heights for franchise icons or logos */
@@ -4955,7 +4956,7 @@ div.mobile-wrap:empty {
 }
 /* playoff popup box style to match light or dark sites */
 .playoff-report-modal-content {
-  background: var(--main, #111);
+  background: var(--neutral, #111);
   box-shadow: 0 0 1.563rem rgba(0, 0, 0, 1);
 }
 /* playoff popup box "x" button to close */
@@ -4979,8 +4980,8 @@ div.mobile-wrap:empty {
 
 .playoff-report-modal-header .close:hover,
 .playoff-report-modal-header .close:focus {
-  background: var(--accent, #ff4200);
-  border-color: var(--accent, #ff4200)
+  background: var(--primary, #ff4200);
+  border-color: var(--primary, #ff4200)
 }
 /* playoff popup box player caption area - style to match your sites captions */
 .playoff-report-modal-header h2 {
@@ -4997,7 +4998,7 @@ div.mobile-wrap:empty {
   text-align: left;
   line-height: 100%;
   text-transform: uppercase;
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
   padding-bottom: 0
 }
 
@@ -5017,15 +5018,15 @@ div.mobile-wrap:empty {
   content: "\f005"; /*CGT - star Font Awesome icon*/
   font-family: 'Font Awesome 6 Pro';
   padding-right: 0.188rem;
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 #playoff-report-modal-content .still-tied {
   font-style: italic;
   margin: 0.625rem;
   margin-bottom: 0;
-  border-top: 0.125rem solid var(--accent, #ff4200);
-  border-bottom: 0.125rem solid var(--accent, #ff4200);
+  border-top: 0.125rem solid var(--primary, #ff4200);
+  border-bottom: 0.125rem solid var(--primary, #ff4200);
   padding: 0.625rem 0
 }
 
@@ -5162,7 +5163,7 @@ tr.assets input[name^="bbid"] {
 /* year */
 #championship_plaque .plaque div h4 {
   display: table-row;
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
   margin: 0;
   padding: 0;
   font-size: 0.875rem;
@@ -5187,7 +5188,7 @@ th span[id*="showBench"] a,
 th span[id*="hideBench"] a,
 a[id*="showAssets"],
 a[id*="hideAssets"] {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 th span[id*="showBench"] a:hover,
@@ -5217,7 +5218,7 @@ a[id*="hideAssets"]:hover {
 }
 
 #hsubmenu ul li a {
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
   padding: 0;
   margin: 0
 }
@@ -5235,15 +5236,15 @@ a[id*="hideAssets"]:hover {
 }
 
 #league_champions th[colspan="2"] {
-  color: var(--accent-light, #FA5C25)
+  color: var(--primary-light, #FA5C25)
 }
 
 #last_weeks_fantasy_results td.points {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 td.is-freeagent {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 #weekly_summary .highscore {
@@ -5364,7 +5365,7 @@ table.previews_table>tbody>tr:nth-child(1)>table.report.nocaption td div {
 /***************************************/
 
 #roster_column_left td.no_icons a {
-  background: var(--accent, #ff4200);
+  background: var(--primary, #ff4200);
   color: #fff
 }
 
@@ -5426,8 +5427,8 @@ tr.tradedifference td {
 }
 
 #MFLroster .savingsreview {
-  background: var(--main-alt, #222) !important;
-  border-top: 0.25rem solid var(--accent-dark, var(--accent, #777));
+  background: var(--neutral-alt, #222) !important;
+  border-top: 0.25rem solid var(--primary-dark, var(--primary, #777));
   box-shadow: 0 0 .6rem rgba(0, 0, 0, .5);
 }
 
@@ -5481,7 +5482,7 @@ tr.tradedifference td {
 
 #MFLFantasyMatchupsUpdate,
 #MFLNFLMatchupsUpdate {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 .MFLNFLLiveClock,
@@ -5580,7 +5581,7 @@ tr.tradedifference td {
 /* color for scoring digits */
 #MFLRoadScore span a,
 #MFLHomeScore span a {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 /* P-YTP-PMR backgrounds and text coloring */
@@ -5602,7 +5603,7 @@ tr.tradedifference td {
 }
 /* table row background color for games over or currently playing */
 .rowGameOver .MFLGameClock {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 .rowCurrentlyPlaying .MFLGameClock {
@@ -5642,11 +5643,11 @@ tr.tradedifference td {
 }
 /* the small tooltip popup arrows shown when hovering actual and pace scores */
 body #scoreboardTooltip:after {
-  border-top-color: var(--accent, #ff4200) !important
+  border-top-color: var(--primary, #ff4200) !important
 }
 
 body #scoreboardTooltip.top:after {
-  border-bottom-color: var(--accent, #ff4200) !important
+  border-bottom-color: var(--primary, #ff4200) !important
 }
 
 .MFLScoreboardLineups tr.rowGameOver {
@@ -5701,11 +5702,11 @@ body #scoreboardTooltip.top:after {
 }
 
 #mflhistory td.gamedetailcell:first-of-type {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 #mflhistory .gamecentertable td.gamescore {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 #mflhistory .homepagemodule.prevmatchups caption {
@@ -5714,7 +5715,7 @@ body #scoreboardTooltip.top:after {
 }
 
 #mflhistory .winnermark {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 .dh_comments_cell {
@@ -5800,7 +5801,7 @@ a.tabheaddouble {
 
 a.subhead {
   font-size: 0.813rem;
-  color: var(--accent, #ff4200) !important;
+  color: var(--primary, #ff4200) !important;
   padding-left: 1.25rem;
   font-weight: 600;
   text-decoration: none
@@ -5858,7 +5859,7 @@ a.subhead {
 }
 
 #custom_draftroom #draft-edit a {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 #custom_draftroom #draft-edit a:hover {
@@ -5874,7 +5875,7 @@ a.subhead {
 
 #custom_draftroom .fa-pause-circle:hover,
 #custom_draftroom .fa-stop-circle:hover {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 #custom_draftroom .fa-forward-step:hover,
@@ -5892,7 +5893,7 @@ a.subhead {
 }
 
 #custom_draftroom #make_pick i:hover {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 #custom_draftroom .draft_picks_header tr {
@@ -5917,7 +5918,7 @@ a.subhead {
 }
 /* PLAYER PROFILE */
 #custom_draftroom #draft_player_link {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 #custom_draftroom #player-profile th {
@@ -5925,7 +5926,7 @@ a.subhead {
 }
 
 #custom_draftroom #player-profile #draft_player_photo {
-  border: 0.125rem solid var(--accent, #ff4200)
+  border: 0.125rem solid var(--primary, #ff4200)
 }
 /* FORMATTING BELOW ======================= */
 #custom_draftroom caption span.module_expand {
@@ -6297,7 +6298,7 @@ a.subhead {
 #auction-status td[id^="auction_status_nominate"],
 #auction-status .reportnavigationheader,
 #make_pick td .reportnavigationheader {
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
   font-weight: 600
 }
 
@@ -6308,7 +6309,7 @@ a.subhead {
 }
 
 #make_pick #current_nominator {
-  background: var(--accent, #ff4200);
+  background: var(--primary, #ff4200);
   color: #fff;
   padding: 0.125rem;
   border-radius: 0.188rem;
@@ -6463,7 +6464,7 @@ a.subhead {
 #body_add_drop #add_note_field_id,
 #body_add_drop td.locked-warning {
   background: rgba(0, 0, 0, .2);
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 #body_add_drop form .head-th {
@@ -6476,7 +6477,7 @@ a.subhead {
 }
 
 #body_add_drop #waiver_request_list td.action a:hover {
-  color: var(--accent-light, #FA5C25)
+  color: var(--primary-light, #FA5C25)
 }
 /* FORMATTING NO NEED TO EDIT */
 #body_ir #container-wrap .mobile-view,
@@ -6759,7 +6760,7 @@ a.subhead {
 }
 
 .player-to-draft #sel_name {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 .create-table p:first-of-type b {
@@ -7057,13 +7058,13 @@ div.custom-loadplayer {
 }
 
 .offerer::before {
-  background: var(--accent, #ff4200);
+  background: var(--primary, #ff4200);
   color: #fff
 }
 
 .actions-expired b,
 .trade-twocolumn-table td.draftpickTD {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 .trade-twocolumn-table td {
@@ -7260,7 +7261,7 @@ span.plus-toggle-stats {
   position: absolute;
   width: 0.875rem;
   height: 0.875rem;
-  background: var(--accent, #ff4200);
+  background: var(--primary, #ff4200);
   border-radius: 0.188rem;
   z-index: 0;
   top: 50%;
@@ -7357,13 +7358,13 @@ span[id*="collapseAvg_"] {
   cursor: pointer;
   border-radius: 0.188rem;
   box-shadow: 0 0 0.063rem 0.063rem rgba(0, 0, 0, 0.1);
-  background: var(--accent, #ff4200);
+  background: var(--primary, #ff4200);
   background-image: none;
-  background-image: -webkit-linear-gradient(top, var(--accent-light, #FA5C25), var(--accent-dark, #B52F00));
-  background-image: -moz-linear-gradient(top, var(--accent-light, #FA5C25), var(--accent-dark, #B52F00));
-  background-image: -ms-linear-gradient(top, var(--accent-light, #FA5C25), var(--accent-dark, #B52F00));
-  background-image: -o-linear-gradient(top, var(--accent-light, #FA5C25), var(--accent-dark, #B52F00));
-  background-image: linear-gradient(to bottom, var(--accent-light, #FA5C25), var(--accent-dark, #B52F00));
+  background-image: -webkit-linear-gradient(top, var(--primary-light, #FA5C25), var(--primary-dark, #B52F00));
+  background-image: -moz-linear-gradient(top, var(--primary-light, #FA5C25), var(--primary-dark, #B52F00));
+  background-image: -ms-linear-gradient(top, var(--primary-light, #FA5C25), var(--primary-dark, #B52F00));
+  background-image: -o-linear-gradient(top, var(--primary-light, #FA5C25), var(--primary-dark, #B52F00));
+  background-image: linear-gradient(to bottom, var(--primary-light, #FA5C25), var(--primary-dark, #B52F00));
   vertical-align: middle
 }
 
@@ -7371,13 +7372,13 @@ span[id*="collapseAvg_"] {
 #nflTotalActive:hover,
 #nflAvgInactive:hover,
 #nflTotalInactive:hover {
-  background: var(--accent, #ff4200);
+  background: var(--primary, #ff4200);
   background-image: none;
-  background-image: -webkit-linear-gradient(top, var(--accent-dark, #B52F00), var(--accent-light, #FA5C25));
-  background-image: -moz-linear-gradient(top, var(--accent-dark, #B52F00), var(--accent-light, #FA5C25));
-  background-image: -ms-linear-gradient(top, var(--accent-dark, #B52F00), var(--accent-light, #FA5C25));
-  background-image: -o-linear-gradient(top, var(--accent-dark, #B52F00), var(--accent-light, #FA5C25));
-  background-image: linear-gradient(to bottom, var(--accent-dark, #B52F00), var(--accent-light, #FA5C25));
+  background-image: -webkit-linear-gradient(top, var(--primary-dark, #B52F00), var(--primary-light, #FA5C25));
+  background-image: -moz-linear-gradient(top, var(--primary-dark, #B52F00), var(--primary-light, #FA5C25));
+  background-image: -ms-linear-gradient(top, var(--primary-dark, #B52F00), var(--primary-light, #FA5C25));
+  background-image: -o-linear-gradient(top, var(--primary-dark, #B52F00), var(--primary-light, #FA5C25));
+  background-image: linear-gradient(to bottom, var(--primary-dark, #B52F00), var(--primary-light, #FA5C25));
 }
 
 #nflAvgActive a,
@@ -7524,7 +7525,7 @@ span[id*="collapseAvg_"] {
 }
 
 #options_71 .two_column_layout caption {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 /***************************************/
@@ -7625,11 +7626,11 @@ td::-webkit-scrollbar {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-light, #FA5C25)
+  background: var(--primary-light, #FA5C25)
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background: var(--accent-light, #FA5C25)
+  background: var(--primary-light, #FA5C25)
 }
 
 ::-webkit-scrollbar-thumb:vertical {
@@ -7657,7 +7658,7 @@ td::-webkit-scrollbar {
 }
 
 ::-webkit-scrollbar-button:vertical:decrement:hover {
-  border-color: transparent transparent var(--accent-light, #FA5C25) transparent
+  border-color: transparent transparent var(--primary-light, #FA5C25) transparent
 }
 
 /* Down */
@@ -7667,7 +7668,7 @@ td::-webkit-scrollbar {
 }
 
 ::-webkit-scrollbar-button:vertical:increment:hover {
-  border-color: var(--accent-light, #FA5C25) transparent transparent transparent
+  border-color: var(--primary-light, #FA5C25) transparent transparent transparent
 }
 
 /* Left */
@@ -7677,7 +7678,7 @@ td::-webkit-scrollbar {
 }
 
 ::-webkit-scrollbar-button:horizontal:decrement:hover {
-  border-color: transparent var(--accent-light, #FA5C25) transparent transparent
+  border-color: transparent var(--primary-light, #FA5C25) transparent transparent
 }
 
 /* Right */
@@ -7687,7 +7688,7 @@ td::-webkit-scrollbar {
 }
 
 ::-webkit-scrollbar-button:horizontal:increment:hover {
-  border-color: transparent transparent transparent var(--accent-light, #FA5C25)
+  border-color: transparent transparent transparent var(--primary-light, #FA5C25)
 }
 
 .selectbox div::-webkit-scrollbar-track,
@@ -7716,8 +7717,8 @@ td::-webkit-scrollbar {
 .table2-sub2 div::-webkit-scrollbar-thumb:hover,
 #body_csetup_chngpick table td div::-webkit-scrollbar-thumb:hover,
 #MSG::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-light, #FA5C25);
-  border-color: var(--accent-light, #FA5C25)
+  background: var(--primary-light, #FA5C25);
+  border-color: var(--primary-light, #FA5C25)
 }
 
 .selectbox div::-webkit-scrollbar-thumb:active,
@@ -7726,8 +7727,8 @@ td::-webkit-scrollbar {
 .table2-sub2 div::-webkit-scrollbar-thumb:active,
 #body_csetup_chngpick table td div::-webkit-scrollbar-thumb:active,
 #MSG::-webkit-scrollbar-thumb:active {
-  background: var(--accent-light, #FA5C25);
-  border-color: var(--accent-light, #FA5C25)
+  background: var(--primary-light, #FA5C25);
+  border-color: var(--primary-light, #FA5C25)
 }
 
 .selectbox div::-webkit-scrollbar-button,
@@ -8263,7 +8264,7 @@ div.ls_team_points {
 
 #body_ajax_ls div.ls_other_game.current_matchup {
   background-color: var(--bg-opacity-brighter, rgba(181, 47, 0, .2));
-  border-color: var(--accent);
+  border-color: var(--primary);
 }
 /*text color for points in box score table*/
 #body_ajax_ls td div[class^="ogffpts"] {
@@ -8307,7 +8308,7 @@ div.ls_team_points {
 /*background and text color for starting and bench total points rows*/
 #body_ajax_ls tr.td-totals-row td {
   background: #222;
-  color: var(--accent-light, #FA5C25)
+  color: var(--primary-light, #FA5C25)
 }
 /*bg color for games ended and in progress*/
 #body_ajax_ls tr.ls_gameis_over {
@@ -8342,12 +8343,12 @@ div.ls_team_points {
 }
 /*settings checkbox color when checked*/
 #body_ajax_ls #ls_setting_drop input:checked+label:before {
-  color: var(--accent-light, #FA5C25)
+  color: var(--primary-light, #FA5C25)
 }
 
 /*live stats update ticker first td cell bg and text color*/
 #body_ajax_ls #ls_ticker_tab_id td:first-of-type {
-  background: var(--accent-light, #FA5C25);
+  background: var(--primary-light, #FA5C25);
   color: #fff
 }
 /*live stats update ticker scrolling text td cell bg and text color*/
@@ -8397,7 +8398,7 @@ div.ls_team_points {
 
 /*boxscore color for F Final game mark and winner mark caret*/
 #body_ajax_ls div[class^="oggstat"] {
-  color: var(--accent-light, #FA5C25)
+  color: var(--primary-light, #FA5C25)
 }
 
 #body_ajax_ls .ls_box_gameover td.winner_mark,
@@ -8408,7 +8409,7 @@ div.ls_team_points {
 }
 /*color of "Final" text in NFL Boxscores table*/
 #body_ajax_ls #nfl_games span.ls_nfl_box_over {
-  color: var(--accent-light, #FA5C25)
+  color: var(--primary-light, #FA5C25)
 }
 /*when MFL makes updates to scoreboard - change text color*/
 #LS_TopTableHolder #LS_AwayScore .ls_changed,
@@ -8450,7 +8451,7 @@ div.ls_team_points {
 
 #LS_AwayScore span a,
 #LS_HomeScore span a {
-  color: var(--accent-light, #FA5C25)
+  color: var(--primary-light, #FA5C25)
 }
 
 #LS_AwayScore span:before,
@@ -8476,12 +8477,12 @@ div.ls_team_points {
 }
 
 .ls-modal-content {
-  background: var(--main, #111) !important;
+  background: var(--neutral, #111) !important;
   box-shadow: 0 0 1.563rem rgba(0, 0, 0, 1)
 }
 
 .ls-modal-header {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 .ls-modal-content .ls-modal-header .close {
@@ -8506,8 +8507,8 @@ div.ls_team_points {
 
 .ls-modal-header .close:hover,
 .ls-modal-header .close:focus {
-  background: var(--accent, #ff4200) !important;
-  border-color: var(--accent, #ff4200) !important;
+  background: var(--primary, #ff4200) !important;
+  border-color: var(--primary, #ff4200) !important;
   color: #fff !important
 }
 
@@ -8525,7 +8526,7 @@ div.ls_team_points {
   text-align: left;
   line-height: 100%;
   text-transform: uppercase;
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 .ls-history-modal .ls-modal-header table caption {
@@ -8549,7 +8550,7 @@ div.ls_team_points {
 
 #ls-modal-content .ls-popup-position-li {
   background: #111;
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
   color: #fff
 }
 
@@ -8578,7 +8579,7 @@ div.ls_team_points {
 }
 
 .ls-explain-points-li::before {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 .ls-popup-status-ns::before,
@@ -8600,7 +8601,7 @@ div.ls_team_points {
 }
 
 .ls-popup-status-ns {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 .ls-popup-status-s {
@@ -8616,11 +8617,11 @@ div.ls_team_points {
 }
 
 .hz-clone .fixed-side {
-  background: var(--main-alt, #141414)
+  background: var(--neutral-alt, #141414)
 }
 
 .hz-clone .fixed-side.hz-hide-shadow {
-  background: var(--main-alt, #141414)
+  background: var(--neutral-alt, #141414)
 }
 
 /***************************************/
@@ -8651,17 +8652,17 @@ div.ls_team_points {
   --popup-win: #90ee90;
   --popup-loss: red;
   --popup-tie: orange;
-  --popup-th-bg: var(--main-alt, #141414);
+  --popup-th-bg: var(--neutral-alt, #141414);
   --my-franchise: #fff;
-  --my-franchise-bg: var(--main-alt, #141414);
+  --my-franchise-bg: var(--neutral-alt, #141414);
   --table-separate: 0.125rem solid #333;
   --dash-x-boxes: #666;
   --highlight-separate: 0.063rem solid #111;
-  --table-header-bg: var(--main-alt, #141414);
-  --table-header-bg-fixed: var(--main-alt, #141414);
+  --table-header-bg: var(--neutral-alt, #141414);
+  --table-header-bg-fixed: var(--neutral-alt, #141414);
   --defunct-bg-text: #aaa;
-  --defunct-bg: var(--main-alt, #141414);
-  --defunct-bg-fixed: var(--main-alt, #141414);
+  --defunct-bg: var(--neutral-alt, #141414);
+  --defunct-bg-fixed: var(--neutral-alt, #141414);
 }
 
 .hs_tabs_wrap .lh_defunct_check th.fixed-side,
@@ -8676,7 +8677,7 @@ div.ls_team_points {
 }
 
 .lh-admin-updates {
-  border-color: var(--accent, #ff4200) !important;
+  border-color: var(--primary, #ff4200) !important;
   background-color: var(--bg-opacity-brighter, rgba(181, 47, 0, .2)) !important;
 }
 
@@ -8782,12 +8783,12 @@ div.ls_team_points {
 }
 
 #league-history-wrapper .hs_tabs_wrap .hz-main-table .lh_defunct_check.rowheader th {
-  border-color: var(--accent, #ff4200) #111 var(--accent, #ff4200) #111;
+  border-color: var(--primary, #ff4200) #111 var(--primary, #ff4200) #111;
   border-width: 0.188rem 0.063rem 0.188rem 0;
 }
 
 #league-history-wrapper .hs_tabs_wrap .hz-main-table .lh_defunct_check.rowheader th:first-of-type {
-  border-color: var(--accent, #ff4200) #111 var(--accent, #ff4200) #111;
+  border-color: var(--primary, #ff4200) #111 var(--primary, #ff4200) #111;
   border-width: 0.188rem 0.063rem 0.188rem 0.063rem;
 }
 
@@ -8829,7 +8830,7 @@ td#diceRollResult table td:first-of-type {
 
 td#diceRollResult table td:last-of-type {
   font-weight: bold;
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
 }
 
 td#diceRollResult table tr:nth-child(2)>td:nth-child(1):before {
@@ -8968,7 +8969,7 @@ td.dice_value {
 /***************************************/
 
 .as_scores {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 .as_pace_box {
@@ -9015,12 +9016,12 @@ td.mflLive_details_pace_behind {
 }
 
 #popup-ignoreLeagues-caption {
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
   font-family: 'Roboto Condensed', sans-serif
 }
 
 #popup-ignoreLeagues-container {
-  background: var(--main, #111) !important
+  background: var(--neutral, #111) !important
 }
 
 .popup-league-name {
@@ -9122,7 +9123,7 @@ td.mondayLoser .monday_proj_total {
   top: 3.125rem;
   left: 50%;
   transform: translate(-50%, 0%);
-  background: var(--main, #111);
+  background: var(--neutral, #111);
   border: 0 solid rgb(0, 0, 0);
   box-shadow: rgb(0 0 0) 0 0 1.563rem;
   border-radius: 0.188rem;
@@ -9141,7 +9142,7 @@ td.mondayLoser .monday_proj_total {
 }
 
 .HPMWarning {
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
 }
 
 .notification-bar-content {
@@ -9255,7 +9256,7 @@ div.sub-content.editable .insertIcons {
 
 /***************************************/
 #body_all_reports table td.two_column_layout th {
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
   font-size: 1.375rem;
   background: none;
   text-align: left;
@@ -9296,7 +9297,7 @@ div.sub-content.editable .insertIcons {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: var(--main, #111);
+  background: var(--neutral, #111);
   border: 0rem solid #000;
   box-shadow: 0 0 1.563rem #000;
   border-radius: 0.188rem;
@@ -9313,7 +9314,7 @@ div.sub-content.editable .insertIcons {
 
 /***************************************/
 .draft_warning {
-  background: var(--tab-menu, var(--main, #080e25)) !important;
+  background: var(--tab-menu, var(--neutral, #080e25)) !important;
   color: #fff !important;
   font-weight: bold !important;
 }
@@ -9541,7 +9542,7 @@ div.sub-content.editable .insertIcons {
   }
 
   #body_csetup_revtrad table.report tr.newposition+tr td:last-of-type {
-    border-bottom: 0.25rem solid var(--accent, #ff4200)
+    border-bottom: 0.25rem solid var(--primary, #ff4200)
   }
 
     /* Set heights to scroll on mobiles */
@@ -9553,7 +9554,7 @@ div.sub-content.editable .insertIcons {
   #body_csetup_revtrad table.report tr.newposition:before {
     display: table-caption;
     width: 100%;
-    color: var(--accent, #ff4200);
+    color: var(--primary, #ff4200);
     font-weight: bold;
     text-align: center;
   }
@@ -9769,7 +9770,7 @@ div.sub-content.editable .insertIcons {
   }
 
   #body_options_05 #container-wrap>.mobile-wrap table.report tr.newposition+tr td:last-of-type {
-    border-bottom: 0.25rem solid var(--accent)
+    border-bottom: 0.25rem solid var(--primary)
   }
 }
 
@@ -10090,7 +10091,7 @@ div.sub-content.editable .insertIcons {
 
     /* COLOR MFL RESPONSIVE MENU */
   .myfantasyleague_menu>label span {
-    background: var(--accent, #ff4200)
+    background: var(--primary, #ff4200)
   }
 
   .myfantasyleague_menu ul li label span {
@@ -10104,7 +10105,7 @@ div.sub-content.editable .insertIcons {
 
   .myfantasyleague_menu ul li label span:before,
   .myfantasyleague_menu ul li label span:after {
-    background: var(--accent, #ff4200)
+    background: var(--primary, #ff4200)
   }
 
   .myfantasyleague_menu>span {
@@ -10112,7 +10113,7 @@ div.sub-content.editable .insertIcons {
   }
 
   .myfantasyleague_menu ul ul li a:before {
-    border-left-color: var(--accent, #ff4200)
+    border-left-color: var(--primary, #ff4200)
   }
 
   .myfantasyleague_menu #sub0:first-of-type:checked~ul {
@@ -10171,7 +10172,7 @@ div.sub-content.editable .insertIcons {
     position: absolute;
     right: 0.313rem;
     border-radius: 0.313rem;
-    background: var(--accent, #ff4200);
+    background: var(--primary, #ff4200);
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -10300,7 +10301,7 @@ div.sub-content.editable .insertIcons {
     /* COLOR MFL RESPONSIVE TABS */
   .myfantasyleague_tabmenu ul,
   .myfantasyleague_menu ul {
-    background: var(--main, #111) !important;
+    background: var(--neutral, #111) !important;
     background-attachment: fixed;
   }
 
@@ -10332,7 +10333,7 @@ div.sub-content.editable .insertIcons {
   .myfantasyleague_tabmenu #homepagetabs li.currenttab:hover,
   #myfantasyleague_tabs .myfantasyleague_tabmenu #homepagetabs li.currenttab,
   #myfantasyleague_tabs .myfantasyleague_tabmenu #homepagetabs li.currenttab:hover {
-    background: var(--accent, #ff4200)
+    background: var(--primary, #ff4200)
   }
 
   .myfantasyleague_tabmenu #homepagetabs li:hover {
@@ -11123,16 +11124,16 @@ body.bettis #MFLBoxContainer .MFLLiveTeam img {
 }
 
 body.bettis th {
-  background-color: var(--accent-darker, rgba(0, 0, 0, .2))
+  background-color: var(--primary-darker, rgba(0, 0, 0, .2))
 }
 
 body.bettis .myfantasyleague_menu,
 body.bettis .banner-container {
-  border-color: var(--accent-dark, var(--accent, #ff4200))
+  border-color: var(--primary-dark, var(--primary, #ff4200))
 }
 
 body.bettis .footercontainer-outer {
-  border-top-color: var(--accent-dark, var(--accent, #ff4200))
+  border-top-color: var(--primary-dark, var(--primary, #ff4200))
 }
 
 body.bettis #tabmenu-wrap li#tab1 a:before,
@@ -11360,14 +11361,14 @@ body.bettis .svg-iconlink:visited:hover,
 
 body.bettis .svg-icon,
 .theme-dk-yellow .svg-icon {
-  fill: var(--accent, #ff4200);
+  fill: var(--primary, #ff4200);
   color: #777;
 }
 
 body.bettis .svg-icon:hover,
 body.bettis .svg-iconlink:hover .svg-icon {
   fill: #777;
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
 }
 
 .theme-dk-yellow .icon-bar-full .svg-iconlink:hover span.fa-stack i.fa-inverse:before,
@@ -11385,7 +11386,7 @@ body.bettis .icon-bar-full .icon-bar a:hover i:before {
 .theme-dk-yellow .svg-icon:hover,
 .theme-dk-yellow .svg-iconlink:hover .svg-icon {
   fill: #777;
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
 }
 
 .theme-dk-yellow .icon-bar-full span.fa-stack i:nth-child(1):before,
@@ -11399,7 +11400,7 @@ body.bettis .icon-bar-full .icon-bar a:hover i:before {
 .theme-dk-yellow .icon-bar-full .svg-iconlink:hover span.fa-stack i:nth-child(1):before,
 .theme-dk-yellow .icon-bar span.fa-stack i:nth-child(2):before,
 .theme-dk-yellow .icon-bar .svg-iconlink:hover span.fa-stack i:nth-child(1):before {
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
 }
 
 body.bettis .icon-bar {
@@ -12714,7 +12715,7 @@ span.total_contract_bracketed span {
   }
 
   .banner-container {
-    border-top: 8px solid var(--accent);
+    border-top: 8px solid var(--primary);
   }
 }
 
@@ -12915,7 +12916,7 @@ body.bettis #accounting_table th span.warning,
 body.bettis .alert-info-table,
 .theme-dk-yellow .alert-info-table,
 .tdalert span {
-  background: var(--accent-darkest, rgba(0, 0, 0, .2));
+  background: var(--primary-darker, rgba(0, 0, 0, .2));
 }
 
 @media only screen and (max-width:48em) {
@@ -12974,7 +12975,7 @@ body.habskin.bettis #contractPopupTable th {
 body.habskin.bettis #contractPopupTable td,
 .theme-dk-yellow #contractPopupTable td {
   font-size: 0.625rem !important;
-  border-right: 0.063rem solid var(--accent)
+  border-right: 0.063rem solid var(--primary)
 }
 
 body.habskin.bettis #contractTable td,
@@ -12994,7 +12995,7 @@ body.habskin.bettis #contractPopupTable th {
 body.habskin.bettis .bbid_ir-modal-content,
 .theme-dk-yellow .bbid_ir-modal-content {
   background-color: var(--mobile-wrap-bg);
-  border: 0.063rem solid var(--main);
+  border: 0.063rem solid var(--neutral);
 }
 
 body.habskin.bettis #options_113 table.report td,
@@ -13050,7 +13051,7 @@ body.habskin.bettis #contract_9999 table {
 .shadow-right:after {
   width: 1.625rem !important;
   right: -0.125rem !important;
-  border-right: 0.375rem solid var(--th-bg, var(--main-alt, #141414))
+  border-right: 0.375rem solid var(--th-bg, var(--neutral-alt, #141414))
 }
 
 .hz-hide-shadow:after {
@@ -13132,7 +13133,7 @@ tr.allplay-lit td {
 /* table row column hilites crosshair td cell */
 tr.allplay-lit td.allplay-crosshair,
 td.allplay-crosshair span {
-  background: var(--accent, #ff4200);
+  background: var(--primary, #ff4200);
   color: #fff
 }
 
@@ -13182,7 +13183,7 @@ body.habskin #standings img[id*="franchiseicon_"] {
   height: 1rem;
   left: 0.125rem;
   text-align: center;
-  background: var(--accent, #B82601);
+  background: var(--primary, #B82601);
   top: 50%;
   transform: translate(0, -50%);
   line-height: 1rem;
@@ -13454,7 +13455,7 @@ body.habskin #standings img[id*="franchiseicon_"] {
   box-shadow: 0 0 1.563rem #000;
   border-radius: 0.188rem;
   padding: 0.625rem !important;
-  background: var(--main, #111) !important;
+  background: var(--neutral, #111) !important;
   z-index: 1;
   height: 18.75rem;
   max-height: 90%;
@@ -13470,16 +13471,16 @@ body.habskin #standings img[id*="franchiseicon_"] {
   text-align: left;
   text-transform: uppercase;
   font-size: 1.25rem;
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
   font-family: 'Roboto Condensed', sans-serif;
   position: sticky!important;
   top: -.625rem;
-  background: var(--main, #111) !important;
+  background: var(--neutral, #111) !important;
   width: 100%;
   display: block;
   padding-top: .625rem;
   margin-top: -.625rem;
-  border-bottom: .125rem solid var(--accent, #b82601);
+  border-bottom: .125rem solid var(--primary, #b82601);
 }
 
 #popup-selectLeagues-caption .as_close_btn {
@@ -13611,7 +13612,7 @@ h2.lsm_error.error_box {
 }
 
 #LSscoringBox .player-position {
-  background: var(--accent, #ff4200);
+  background: var(--primary, #ff4200);
 }
 
 .theme-dk-yellow #LSscoringBox .player-position {
@@ -13649,7 +13650,7 @@ h2.lsm_error.error_box {
 
 #LSscoringBox div[class*="positionChange"] {
   height: 0.125rem;
-  background: var(--accent, #ff4200);
+  background: var(--primary, #ff4200);
   margin-top: -0.063rem;
 }
 
@@ -13674,7 +13675,7 @@ h2.lsm_error.error_box {
 }
 
 #LSscoringBox div.franchise-score span a {
-  color: var(--accent-light, #FA5C25);
+  color: var(--primary-light, #FA5C25);
 }
 
 #LSscoringBox div.franchise-score span a:before,
@@ -13698,7 +13699,7 @@ h2.lsm_error.error_box {
 
 #LSModuleSettings i,
 #LSscoringBox .h2hmatchups td.points {
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
 }
 
 #LSscoringBox .lsStarterstotals,
@@ -13708,7 +13709,7 @@ h2.lsm_error.error_box {
 
 .matchup-box-scroll.active {
   background-color: var(--bg-opacity-brighter, rgba(181, 47, 0, .2));
-  border-color: var(--accent, #ff4200);
+  border-color: var(--primary, #ff4200);
 }
 
 #teamBoxOverlay {
@@ -13716,13 +13717,13 @@ h2.lsm_error.error_box {
 }
 
 #teamBox {
-  background: var(--main, #111);
+  background: var(--neutral, #111);
   box-shadow: rgb(0, 0, 0) 0 0 1.563rem;
 }
 
 #teamBox table th[colspan] {
   font-size: 120%;
-  border-bottom: 0.25rem solid var(--accent, #ff4200);
+  border-bottom: 0.25rem solid var(--primary, #ff4200);
 }
 
 #LSscoringBox .matchup-box .franchise-box span.inj_status {
@@ -13735,7 +13736,7 @@ h2.lsm_error.error_box {
 }
 
 #teamBox i.fa-solid.fa-circle-xmark:hover {
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
 }
 
 #LSscoringBox .matchup-box .franchise-pmr-wrap {
