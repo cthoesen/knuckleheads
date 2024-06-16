@@ -3278,9 +3278,10 @@ footer {
 
 .footercontainer-outer {
   padding: 0.625rem 0.313rem;
-  background: rgba(45, 45, 45, .3);
-  border-top: 0.5rem solid var(--accent, #ff4200);
-  box-shadow: 0 0 0.313rem rgb(0 0 0 / 50%);
+  background: rgba(10, 10, 10, 0.5);
+  border-top: 0.5rem solid rgba(0, 0, 0, 0);
+  border-image: linear-gradient(var(--accent));
+  box-shadow: 0 0.125 1rem var(--accent);
 }
 
 .footercontainer {
