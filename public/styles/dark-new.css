@@ -13,8 +13,9 @@ Example of 3 deep variable - background: var(--primary2 , var(--neutral2 , var(-
 */
 
 :root {
-  --neutral: #111;
-  --neutral-alt: #141414;
+  --neutral: #181818;
+  --neutral-light: #5f5f5f;
+  --neutral-dark: #0c0c0c;
   --primary: #38b569;
   --primary-light: #40cd78;
   --primary-lighter: #44e785;
@@ -704,7 +705,7 @@ body.chat_popup .banner-container-wrap {
 .MFLSkinSelection-content {
   display: none;
   position: absolute;
-  background: var(--neutral-alt, #141414);
+  background: var(--neutral-dark, #141414);
   min-width: 8.125rem;
   box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -802,7 +803,7 @@ body.chat_popup .banner-container-wrap {
   box-shadow: inset 0 0 0 62.5rem rgba(45, 45, 45, .2);
   border-bottom: 0.375rem solid var(--primary, #ff4200);
   border-top: 0.375rem solid var(--primary);
-  background: var(--neutral-alt, #141414) !important;
+  background: var(--neutral-dark, #141414) !important;
   height: 2.5rem;
   position: sticky;
   top: 0;
@@ -1503,7 +1504,7 @@ caption,
   font-size: 1.375rem;
   background: transparent url(https://knuckleheads.netlify.app/images/captions/Dark-Bubble-Fade.png);
   background-position: center; /*added*/
-  box-shadow: inset 0 -1.25rem 2.25rem -0.625rem var(--accent, blue); /*inset shadow from bottom*/
+  box-shadow: inset 0 -1.25rem 2.25rem -0.625rem var(--neutral-light, gray); /*inset shadow from bottom*/
   padding: 0.5rem;
   border-bottom: 0.35rem solid rgba(15, 15, 15, 0.75);
   border-top: 0.35rem;
@@ -2057,7 +2058,7 @@ button.tbt img {
 #body_ajax_ls h3#ls_error {
   max-width: 37.5rem;
   margin: 0 auto;
-  background: var(--neutral-alt, #141414) !important;
+  background: var(--neutral-dark, #141414) !important;
   color: #fff;
   padding: 0.625rem;
   border-radius: 0.313rem;
@@ -2690,7 +2691,7 @@ div.mobile-wrap .reportform {
 /*CGT - change background and color for drop down button that displays as you scroll down page to show current starters */
 .starter_count_sub {
   border: 0.188rem solid var(--primary-two, var(--primary, #ff4200));
-  background: var(--neutral-alt, #141414) !important;
+  background: var(--neutral-dark, #141414) !important;
   box-shadow: 0 0 0.6rem rgba(45, 45, 45, .5);
   color: #fff
 }
@@ -5433,7 +5434,7 @@ tr.tradedifference td {
 }
 
 #MFLroster .savingsreview {
-  background: var(--neutral-alt, #222) !important;
+  background: var(--neutral-dark, #222) !important;
   border-top: 0.25rem solid var(--primary-dark, var(--primary, #777));
   box-shadow: 0 0 .6rem rgba(0, 0, 0, .5);
 }
@@ -8623,11 +8624,11 @@ div.ls_team_points {
 }
 
 .hz-clone .fixed-side {
-  background: var(--neutral-alt, #141414)
+  background: var(--neutral-dark, #141414)
 }
 
 .hz-clone .fixed-side.hz-hide-shadow {
-  background: var(--neutral-alt, #141414)
+  background: var(--neutral-dark, #141414)
 }
 
 /***************************************/
@@ -8658,17 +8659,17 @@ div.ls_team_points {
   --popup-win: #90ee90;
   --popup-loss: red;
   --popup-tie: orange;
-  --popup-th-bg: var(--neutral-alt, #141414);
+  --popup-th-bg: var(--neutral-dark, #141414);
   --my-franchise: #fff;
-  --my-franchise-bg: var(--neutral-alt, #141414);
+  --my-franchise-bg: var(--neutral-dark, #141414);
   --table-separate: 0.125rem solid #333;
   --dash-x-boxes: #666;
   --highlight-separate: 0.063rem solid #111;
-  --table-header-bg: var(--neutral-alt, #141414);
-  --table-header-bg-fixed: var(--neutral-alt, #141414);
+  --table-header-bg: var(--neutral-dark, #141414);
+  --table-header-bg-fixed: var(--neutral-dark, #141414);
   --defunct-bg-text: #aaa;
-  --defunct-bg: var(--neutral-alt, #141414);
-  --defunct-bg-fixed: var(--neutral-alt, #141414);
+  --defunct-bg: var(--neutral-dark, #141414);
+  --defunct-bg-fixed: var(--neutral-dark, #141414);
 }
 
 .hs_tabs_wrap .lh_defunct_check th.fixed-side,
@@ -13057,7 +13058,7 @@ body.habskin.bettis #contract_9999 table {
 .shadow-right:after {
   width: 1.625rem !important;
   right: -0.125rem !important;
-  border-right: 0.375rem solid var(--th-bg, var(--neutral-alt, #141414))
+  border-right: 0.375rem solid var(--th-bg, var(--neutral-dark, #141414))
 }
 
 .hz-hide-shadow:after {
