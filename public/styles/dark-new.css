@@ -1507,26 +1507,24 @@ caption,
   background-position: center; /*added*/
   box-shadow:  inset 0 -1.25rem 1.5rem -0.25rem var(--neutral-blur, gray); /*inset shadow from bottom*/
   padding: 0.5rem;
-  border-bottom: 0.35rem solid rgba(15, 15, 15, 0.75);
   text-align: left;
   text-shadow: 0.5px 0.5px rgb(212, 212, 212);
   line-height: 100%;
   text-transform: uppercase;
   width: auto; /*added*/
   max-width: 100%; /*added*/
-  /*border: 0.25rem outset var(--primary-light, blue); /*added*/
-  /*border-radius: 0.25rem; /*added*/
-  /*margin-bottom: 0.33rem;*/
+  margin-bottom: 0.33rem;
   border-image-source: linear-gradient(to right, 
-      var(--neutral-light), 
+      var(--neutral-dark), 
       var(--primary-lighter), 
       var(--primary-dark), 
       var(--primary-lighter), 
-      var(--neutral-light));
+      var(--neutral-dark));
   border-image-slice: 1;
   border-top: 0;
   border-left: 0;
   border-right: 0;
+  border-bottom: 0.35rem solid rgba(15, 15, 15, 0.75);
 }
 /*CGT - Added below logo before captions*/
 caption:before {
