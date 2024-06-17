@@ -16,7 +16,7 @@ Example of 3 deep variable - background: var(--primary2 , var(--neutral2 , var(-
   --neutral: #181818;
   --neutral-light: #5f5f5f;
   --neutral-dark: #0c0c0c;
-  --neutral-blur: rgba(100, 100, 100, 0.95);
+  --neutral-blur: rgba(100, 100, 100, 0.85);
   --primary: #38b569;
   --primary-light: #40cd78;
   --primary-lighter: #44e785;
@@ -1515,9 +1515,18 @@ caption,
   text-transform: uppercase;
   width: auto; /*added*/
   max-width: 100%; /*added*/
-  border: 0.25rem outset var(--primary-light, blue); /*added*/
-  border-radius: 0.25rem; /*added*/
-  margin-bottom: 0.33rem;
+  /*border: 0.25rem outset var(--primary-light, blue); /*added*/
+  /*border-radius: 0.25rem; /*added*/
+  /*margin-bottom: 0.33rem;*/
+  border-image-source: linear-gradient(to right, 
+      var(--neutral-light), 
+      var(--primary-lighter), 
+      var(--primary-light), 
+      var(--primary-lighter), 
+      var(--neutral-light));
+  border-image-slice: 1;
+  border-left: 0;
+  border-right: 0;
 }
 /*CGT - Added below logo before captions*/
 caption:before {
