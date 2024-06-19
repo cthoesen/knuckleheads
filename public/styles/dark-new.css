@@ -26,8 +26,8 @@ Example of 3 deep variable - background: var(--primary2 , var(--neutral2 , var(-
   --accent-one: #ca3cff;
   --accent-two:  #275dad;
   --accent-three: #385a18;
-  --bg-opacity: rgba(56, 181, 106, 0.124);
-  --bg-opacity-brighter: rgba(255, 253, 130, .2);
+  --bg-opacity: rgba(0, 125, 25, 0.15);
+  --bg-opacity-brighter: rgba(255, 253, 130, 0.2);
   --fa-main-color: #38b569;
 }
 
