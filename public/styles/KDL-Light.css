@@ -9,8 +9,28 @@
 /* 
 CSS target for all habman sites is body.habskin 
 CSS targets for individual habman sites - body.glfffl , body.glfflplus , body.nra , body.lions-den , body.sdd
-Example of 3 deep variable - background: var(--accent2 , var(--main2 , var(--th-bg2 , #000000)))
+Example of 3 deep variable - background: var(--primary2 , var(--neutral2 , var(--primary-darker2 , #000000)))
 */
+
+:root {
+  --neutral: #020C24;
+  --neutral-light: #ffffff;
+  --neutral-dark: #0c0c0c;
+  --neutral-blur: rgba(100, 100, 100, 0.25);
+  --primary: #007FFF;
+  --primary-lighter: #91E5F6;
+  --primary-light: #59A5D8;
+  --primary-dark: #133C55;
+  --primary-darker: #020C24;
+  --accent: #fff275;
+  --accent-one: #ff0035;
+  --accent-two:  #29E7CD;
+  --accent-three: #0a2463;
+  --bg-opacity: rgba(0, 58, 125, 0.15);
+  --bg-opacity-brighter: rgba(130, 255, 245, 0.2);
+  --fa-main-color: #007fff;
+}
+
 .myfantasyleague_menu ul li.mfl-icon {
   display: none
 }
@@ -48,19 +68,19 @@ body.lions-den {
   /* background color of mobile wrap and popups - if not defined then #fff */
   --mobile-wrap-border: #eee;
   /* border color of mobile wrap and popups - if not defined then #eee */
-  --main: #222;
-  --accent: #0076B6;
-  --lightest-color: #def4fd;
+  --neutral: #222;
+  --primary: #0076B6;
+  --primary-lighter: #def4fd;
   /* pretty much just the custom submit lineup table th bg color */
-  --gradient-light: #008BD6;
+  --primary-light: #008BD6;
   /* this color just used from input button gradients and old scoreboard gradient */
-  --gradient-dark: #004E79;
+  --primary-dark: #004E79;
   /* this color just used from input button gradients and old scoreboard gradient */
   --banner-bg: #fff;
   /* bg color for banner - logo area */
-  --th-bg: #0076B6;
+  --primary-darker: #0076B6;
   /* bg color for all table headers - make a color where white text looks good on it */
-  --make-white: #fff;
+  --neutral-light: #fff;
   /* adjust areas for white text */
   --oddtablerow: #f1f1f1;
   /* background color of oddtablerow - if not defined then #f1f1f1 */
@@ -89,21 +109,21 @@ body.lions-den {
   /* below are optional var to overwrite some of the above colors in certain areas for light on light skins and multiple color shades */
 
   /* banner svg icon shade , mfl skin icon , menu bottom border , menu hover text color , tabs bg and outline color , standings outline color , footer border top color , tab menu bg */
-  --main-two: #999;
+  --neutral-two: #999;
   /* in areas mentioned above replace main color with this new color - otherwise for 2 tone skins set this to main color */
-  --accent-two: #999;
+  --primary-two: #999;
   /* in areas mentioned above replace accent color with this new color - otherwise for 2 tone skins set this to accent color */
 
   /* menu hover color , tab menu bg color , border menu trigger , menu border and other menu colors , div standing bg , weekly nav bg */
-  --main-three: #015990;
+  --neutral-three: #015990;
   /* in areas mentioned above replace main color with this new color - otherwise for 2 tone skins set this to main color */
-  --accent-three: #015990;
+  --primary-three: #015990;
   /* in areas mentioned above replace accent color with this new color - otherwise for 2 tone skins set this to accent color */
 
   /* this is a duplicate of normal accent color to place in other areas , banner border bottom , menu bg , caption color , tab bg */
-  --main-four: #0076B6;
+  --neutral-four: #0076B6;
   /* in areas mentioned above replace main color with this new color - otherwise for 2 tone skins set this to main color */
-  --accent-four: #0076B6;
+  --primary-four: #0076B6;
   /* in areas mentioned above replace accent color with this new color - otherwise for 2 tone skins set this to accent color */
 }
 
@@ -116,19 +136,19 @@ body.habskin.sdd,
   /* background color of mobile wrap and popups - if not defined then #fff */
   --mobile-wrap-border: #d3d7db;
   /* border color of mobile wrap and popups - if not defined then #eee */
-  --main: #333;
-  --accent: #960f00;
-  --lightest-color: #ffe4e0;
+  --neutral: #333;
+  --primary: #960f00;
+  --primary-lighter: #ffe4e0;
   /* pretty much just the custom submit lineup table th bg color */
-  --gradient-light: #ce1804;
+  --primary-light: #ce1804;
   /* this color just used from input button gradients and old scoreboard gradient */
-  --gradient-dark: #841112;
+  --primary-dark: #841112;
   /* this color just used from input button gradients and old scoreboard gradient */
   --banner-bg: #fff;
   /* bg color for banner - logo area */
-  --th-bg: #960f00;
+  --primary-darker: #960f00;
   /* bg color for all table headers - make a color where white text looks good on it */
-  --make-white: #fff;
+  --neutral-light: #fff;
   /* adjust areas for white text */
   --oddtablerow: #f0f0f0;
   /* background color of oddtablerow - if not defined then #f1f1f1 */
@@ -157,21 +177,21 @@ body.habskin.sdd,
   /* below are optional var to overwrite some of the above colors in certain areas for light on light skins and multiple color shades */
 
   /* banner svg icon shade , mfl skin icon , menu bottom border , menu hover text color , tabs bg and outline color , standings outline color , footer border top color , tab menu bg */
-  --main-two: #999;
+  --neutral-two: #999;
   /* in areas mentioned above replace main color with this new color - otherwise for 2 tone skins set this to main color */
-  --accent-two: #999;
+  --primary-two: #999;
   /* in areas mentioned above replace accent color with this new color - otherwise for 2 tone skins set this to accent color */
 
   /* menu hover color , tab menu bg color , border menu trigger , menu border and other menu colors , div standing bg , weekly nav bg */
-  --main-three: #610809;
+  --neutral-three: #610809;
   /* in areas mentioned above replace main color with this new color - otherwise for 2 tone skins set this to main color */
-  --accent-three: #610809;
+  --primary-three: #610809;
   /* in areas mentioned above replace accent color with this new color - otherwise for 2 tone skins set this to accent color */
 
   /* this is a duplicate of normal accent color to place in other areas , banner border bottom , menu bg , caption color , tab bg */
-  --main-four: #960f00;
+  --neutral-four: #960f00;
   /* in areas mentioned above replace main color with this new color - otherwise for 2 tone skins set this to main color */
-  --accent-four: #960f00;
+  --primary-four: #960f00;
   /* in areas mentioned above replace accent color with this new color - otherwise for 2 tone skins set this to accent color */
 }
 
@@ -183,19 +203,19 @@ body.nra {
   /* background color of mobile wrap and popups - if not defined then #fff */
   --mobile-wrap-border: #d3d7db;
   /* border color of mobile wrap and popups - if not defined then #eee */
-  --main: #333;
-  --accent: #524a3d;
-  --lightest-color: #ffe4e0;
+  --neutral: #333;
+  --primary: #524a3d;
+  --primary-lighter: #ffe4e0;
   /* pretty much just the custom submit lineup table th bg color */
-  --gradient-light: #827561;
+  --primary-light: #827561;
   /* this color just used from input button gradients and old scoreboard gradient */
-  --gradient-dark: #4a4338;
+  --primary-dark: #4a4338;
   /* this color just used from input button gradients and old scoreboard gradient */
   --banner-bg: #fff;
   /* bg color for banner - logo area */
-  --th-bg: #524a3d;
+  --primary-darker: #524a3d;
   /* bg color for all table headers - make a color where white text looks good on it */
-  --make-white: #fff;
+  --neutral-light: #fff;
   /* adjust areas for white text */
   --oddtablerow: #f0f0f0;
   /* background color of oddtablerow - if not defined then #f1f1f1 */
@@ -224,475 +244,475 @@ body.nra {
   /* below are optional var to overwrite some of the above colors in certain areas for light on light skins and multiple color shades */
 
   /* banner svg icon shade , mfl skin icon , menu bottom border , menu hover text color , tabs bg and outline color , standings outline color , footer border top color , tab menu bg */
-  --main-two: #999;
+  --neutral-two: #999;
   /* in areas mentioned above replace main color with this new color - otherwise for 2 tone skins set this to main color */
-  --accent-two: #999;
+  --primary-two: #999;
   /* in areas mentioned above replace accent color with this new color - otherwise for 2 tone skins set this to accent color */
 
   /* menu hover color , tab menu bg color , border menu trigger , menu border and other menu colors , div standing bg , weekly nav bg */
-  --main-three: #2b2721;
+  --neutral-three: #2b2721;
   /* in areas mentioned above replace main color with this new color - otherwise for 2 tone skins set this to main color */
-  --accent-three: #2b2721;
+  --primary-three: #2b2721;
   /* in areas mentioned above replace accent color with this new color - otherwise for 2 tone skins set this to accent color */
 
   /* this is a duplicate of normal accent color to place in other areas , banner border bottom , menu bg , caption color , tab bg */
-  --main-four: #524a3d;
+  --neutral-four: #524a3d;
   /* in areas mentioned above replace main color with this new color - otherwise for 2 tone skins set this to main color */
-  --accent-four: #524a3d;
+  --primary-four: #524a3d;
   /* in areas mentioned above replace accent color with this new color - otherwise for 2 tone skins set this to accent color */
 }
 
 /* Misc Color Themes */
-/* Note on following themes - if want white th bg - remove --th-bg and also need to remove --make-white variables */
+/* Note on following themes - if want white th bg - remove --primary-darker and also need to remove --neutral-light variables */
 .theme-blue-orange {
-  --main: #080e25;
-  --accent: #B82601;
-  --lightest-color: #FBF3F2;
-  --gradient-light: #cb2a01;
-  --gradient-dark: #9c2000;
-  --th-bg: #080e25;
-  --make-white: #fff;
+  --neutral: #080e25;
+  --primary: #B82601;
+  --primary-lighter: #FBF3F2;
+  --primary-light: #cb2a01;
+  --primary-dark: #9c2000;
+  --primary-darker: #080e25;
+  --neutral-light: #fff;
 }
 
 .theme-brown-gold {
-  --main: #443a26;
-  --accent: #c18210;
-  --lightest-color: #d2d2d2;
-  --gradient-light: #c18210;
-  --gradient-dark: #090805;
-  --th-bg: #443a26;
-  --make-white: #fff
+  --neutral: #443a26;
+  --primary: #c18210;
+  --primary-lighter: #d2d2d2;
+  --primary-light: #c18210;
+  --primary-dark: #090805;
+  --primary-darker: #443a26;
+  --neutral-light: #fff
 }
 
 .theme-blueonblue {
-  --main: #020C24;
-  --accent: #2073D6;
-  --lightest-color: #CADFFC;
-  --gradient-light: #6E98FF;
-  --gradient-dark: #2073D6;
-  --th-bg: #020C24;
-  --make-white: #fff;
+  --neutral: #020C24;
+  --primary: #2073D6;
+  --primary-lighter: #CADFFC;
+  --primary-light: #6E98FF;
+  --primary-dark: #2073D6;
+  --primary-darker: #020C24;
+  --neutral-light: #fff;
 }
 
 .theme-dark-blue {
-  --main: #000000;
-  --accent: #004e8c;
-  --lightest-color: #c2d7e8;
-  --gradient-light: #1466a7;
-  --gradient-dark: #003e6f;
-  --th-bg: #000000;
-  --make-white: #fff;
+  --neutral: #000000;
+  --primary: #004e8c;
+  --primary-lighter: #c2d7e8;
+  --primary-light: #1466a7;
+  --primary-dark: #003e6f;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
 }
 
 .theme-brown {
-  --main: #000000;
-  --accent: #61553c;
-  --lightest-color: #d2d2d2;
-  --gradient-light: #786b51;
-  --gradient-dark: #443a26;
-  --th-bg: #000000;
-  --make-white: #fff;
+  --neutral: #000000;
+  --primary: #61553c;
+  --primary-lighter: #d2d2d2;
+  --primary-light: #786b51;
+  --primary-dark: #443a26;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
 }
 
 .theme-gold {
-  --main: #000000;
-  --accent: #c18210;
-  --lightest-color: #fbecd1;
-  --gradient-light: #d19322;
-  --gradient-dark: #996301;
-  --th-bg: #000000;
-  --make-white: #fff;
+  --neutral: #000000;
+  --primary: #c18210;
+  --primary-lighter: #fbecd1;
+  --primary-light: #d19322;
+  --primary-dark: #996301;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
 }
 
 .theme-green {
-  --main: #000000;
-  --accent: #00864b;
-  --lightest-color: #effef7;
-  --gradient-light: #0c9f5e;
-  --gradient-dark: #007341;
-  --th-bg: #000000;
-  --make-white: #fff;
+  --neutral: #000000;
+  --primary: #00864b;
+  --primary-lighter: #effef7;
+  --primary-light: #0c9f5e;
+  --primary-dark: #007341;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
 }
 
 .theme-gray {
-  --main: #000000;
-  --accent: #888888;
-  --lightest-color: #dddddd;
-  --gradient-light: #aaaaaa;
-  --gradient-dark: #666666;
-  --th-bg: #000000;
-  --make-white: #fff;
+  --neutral: #000000;
+  --primary: #888888;
+  --primary-lighter: #dddddd;
+  --primary-light: #aaaaaa;
+  --primary-dark: #666666;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
 }
 
 .theme-orange {
-  --main: #000000;
-  --accent: #C46210;
-  --lightest-color: #FBF3F2;
-  --gradient-light: #C46210;
-  --gradient-dark: #9C4F0E;
-  --th-bg: #000000;
-  --make-white: #fff;
+  --neutral: #000000;
+  --primary: #C46210;
+  --primary-lighter: #FBF3F2;
+  --primary-light: #C46210;
+  --primary-dark: #9C4F0E;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
 }
 
 .theme-purple {
-  --main: #000000;
-  --accent: #592f93;
-  --lightest-color: #f7f2fe;
-  --gradient-light: #693ea4;
-  --gradient-dark: #47217a;
-  --th-bg: #000000;
-  --make-white: #fff;
+  --neutral: #000000;
+  --primary: #592f93;
+  --primary-lighter: #f7f2fe;
+  --primary-light: #693ea4;
+  --primary-dark: #47217a;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
 }
 
 .theme-red {
-  --main: #000000;
-  --accent: #D3212D;
-  --lightest-color: #FBF3F2;
-  --gradient-light: #D3212D;
-  --gradient-dark: #9B161F;
-  --th-bg: #000000;
-  --make-white: #fff;
+  --neutral: #000000;
+  --primary: #D3212D;
+  --primary-lighter: #FBF3F2;
+  --primary-light: #D3212D;
+  --primary-dark: #9B161F;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
 }
 
 .theme-teal {
-  --main: #000000;
-  --accent: #028887;
-  --lightest-color: #e3ffff;
-  --gradient-light: #059f9e;
-  --gradient-dark: #017170;
-  --th-bg: #000000;
-  --make-white: #fff;
+  --neutral: #000000;
+  --primary: #028887;
+  --primary-lighter: #e3ffff;
+  --primary-light: #059f9e;
+  --primary-dark: #017170;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
 }
 
 .theme-azure {
-  --main: #020C24;
-  --accent: #007FFF;
-  --lightest-color: #91E5F6;
-  --gradient-light: #59A5D8;
-  --gradient-dark: #133C55;
-  --th-bg: #020C24;
-  --make-white: #fff;
+  --neutral: #020C24;
+  --primary: #007FFF;
+  --primary-lighter: #91E5F6;
+  --primary-light: #59A5D8;
+  --primary-dark: #133C55;
+  --primary-darker: #020C24;
+  --neutral-light: #fff;
 }
 
 /* NFL TEAM THEME COLORING */
 .theme-niners {
-  --main: #840026;
-  --accent: #B3985B;
-  --lightest-color: #eee;
-  --gradient-light: #840026;
-  --gradient-dark: #520000;
-  --th-bg: #840026;
-  --make-white: #fff;
+  --neutral: #840026;
+  --primary: #B3985B;
+  --primary-lighter: #eee;
+  --primary-light: #840026;
+  --primary-dark: #520000;
+  --primary-darker: #840026;
+  --neutral-light: #fff;
 }
 
 .theme-bears {
-  --main: #0B162A;
-  --accent: #FE4000;
-  --lightest-color: #CECED9;
-  --gradient-light: #FE4000;
-  --gradient-dark: #521600;
-  --th-bg: #0B162A;
-  --make-white: #fff;
+  --neutral: #0B162A;
+  --primary: #FE4000;
+  --primary-lighter: #CECED9;
+  --primary-light: #FE4000;
+  --primary-dark: #521600;
+  --primary-darker: #0B162A;
+  --neutral-light: #fff;
 }
 
 .theme-bengals {
-  --main: #000000;
-  --accent: #f04e23;
-  --lightest-color: #FFC2AD;
-  --gradient-light: #FF7647;
-  --gradient-dark: #f04e23;
-  --th-bg: #000000;
-  --make-white: #fff;
+  --neutral: #000000;
+  --primary: #f04e23;
+  --primary-lighter: #FFC2AD;
+  --primary-light: #FF7647;
+  --primary-dark: #f04e23;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
 }
 
 .theme-bills {
-  --main: #194787;
-  --accent: #C60C30;
-  --lightest-color: #F2DFE3;
-  --gradient-light: #C60C30;
-  --gradient-dark: #97233F;
-  --th-bg: #194787;
-  --make-white: #fff;
+  --neutral: #194787;
+  --primary: #C60C30;
+  --primary-lighter: #F2DFE3;
+  --primary-light: #C60C30;
+  --primary-dark: #97233F;
+  --primary-darker: #194787;
+  --neutral-light: #fff;
 }
 
 .theme-broncos {
-  --main: #002244;
-  --accent: #DE6226;
-  --lightest-color: #D7D7DE;
-  --gradient-light: #132F66;
-  --gradient-dark: #002244;
-  --th-bg: #002244;
-  --make-white: #fff;
+  --neutral: #002244;
+  --primary: #DE6226;
+  --primary-lighter: #D7D7DE;
+  --primary-light: #132F66;
+  --primary-dark: #002244;
+  --primary-darker: #002244;
+  --neutral-light: #fff;
 }
 
 .theme-browns {
-  --main: #311D00;
-  --accent: #EE4923;
-  --lightest-color: #A69F95;
-  --gradient-light: #EE4923;
-  --gradient-dark: #9E2500;
-  --th-bg: #311D00;
-  --make-white: #fff;
+  --neutral: #311D00;
+  --primary: #EE4923;
+  --primary-lighter: #A69F95;
+  --primary-light: #EE4923;
+  --primary-dark: #9E2500;
+  --primary-darker: #311D00;
+  --neutral-light: #fff;
 }
 
 .theme-bucs {
-  --main: #34302B;
-  --accent: #B21E35;
-  --lightest-color: #B1BABF;
-  --gradient-light: #B21E35;
-  --gradient-dark: #800404;
-  --th-bg: #34302B;
-  --make-white: #fff;
+  --neutral: #34302B;
+  --primary: #B21E35;
+  --primary-lighter: #B1BABF;
+  --primary-light: #B21E35;
+  --primary-dark: #800404;
+  --primary-darker: #34302B;
+  --neutral-light: #fff;
 }
 
 .theme-cardinals {
-  --main: #000000;
-  --accent: #83161C;
-  --lightest-color: #FFD6E0;
-  --gradient-light: #C73054;
-  --gradient-dark: #83161C;
-  --th-bg: #000000;
-  --make-white: #fff;
+  --neutral: #000000;
+  --primary: #83161C;
+  --primary-lighter: #FFD6E0;
+  --primary-light: #C73054;
+  --primary-dark: #83161C;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
 }
 
 .theme-charger {
-  --main: #002A5E;
-  --accent: #3996D3;
-  --lightest-color: #EBE4D3;
-  --gradient-light: #3996D3;
-  --gradient-dark: #002A5E;
-  --th-bg: #002A5E;
-  --make-white: #fff;
+  --neutral: #002A5E;
+  --primary: #3996D3;
+  --primary-lighter: #EBE4D3;
+  --primary-light: #3996D3;
+  --primary-dark: #002A5E;
+  --primary-darker: #002A5E;
+  --neutral-light: #fff;
 }
 
 .theme-chiefs {
-  --main: #000000;
-  --accent: #B21F36;
-  --lightest-color: #B1BABF;
-  --gradient-light: #B21F36;
-  --gradient-dark: #731020;
-  --th-bg: #000000;
-  --make-white: #fff;
+  --neutral: #000000;
+  --primary: #B21F36;
+  --primary-lighter: #B1BABF;
+  --primary-light: #B21F36;
+  --primary-dark: #731020;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
 }
 
 .theme-colts {
-  --main: #002C5F;
-  --accent: #A2AAAD;
-  --lightest-color: #eee;
-  --gradient-light: #002C5F;
-  --gradient-dark: #000614;
-  --th-bg: #002C5F;
-  --make-white: #fff;
+  --neutral: #002C5F;
+  --primary: #A2AAAD;
+  --primary-lighter: #eee;
+  --primary-light: #002C5F;
+  --primary-dark: #000614;
+  --primary-darker: #002C5F;
+  --neutral-light: #fff;
 }
 
 .theme-cowboys {
-  --main: #041E42;
-  --accent: #777;
-  --lightest-color: #eee;
-  --gradient-light: #143491;
-  --gradient-dark: #041E42;
-  --th-bg: #041E42;
-  --make-white: #fff;
+  --neutral: #041E42;
+  --primary: #777;
+  --primary-lighter: #eee;
+  --primary-light: #143491;
+  --primary-dark: #041E42;
+  --primary-darker: #041E42;
+  --neutral-light: #fff;
 }
 
 .theme-dolphins {
-  --main: #005778;
-  --accent: #FC4C02;
-  --lightest-color: #BFD5E3;
-  --gradient-light: #008E97;
-  --gradient-dark: #005778;
-  --th-bg: #005778;
-  --make-white: #fff;
+  --neutral: #005778;
+  --primary: #FC4C02;
+  --primary-lighter: #BFD5E3;
+  --primary-light: #008E97;
+  --primary-dark: #005778;
+  --primary-darker: #005778;
+  --neutral-light: #fff;
 }
 
 .theme-eagles {
-  --main: #000000;
-  --accent: #004C54;
-  --lightest-color: #A5ACAF;
-  --gradient-light: #004C54;
-  --gradient-dark: #00131A;
-  --th-bg: #000000;
-  --make-white: #fff;
+  --neutral: #000000;
+  --primary: #004C54;
+  --primary-lighter: #A5ACAF;
+  --primary-light: #004C54;
+  --primary-dark: #00131A;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
 }
 
 .theme-falcons {
-  --main: #000000;
-  --accent: #A71930;
-  --lightest-color: #FFD6E0;
-  --gradient-light: #C73054;
-  --gradient-dark: #A71930;
-  --th-bg: #000000;
-  --make-white: #fff;
+  --neutral: #000000;
+  --primary: #A71930;
+  --primary-lighter: #FFD6E0;
+  --primary-light: #C73054;
+  --primary-dark: #A71930;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
 }
 
 .theme-giants {
-  --main: #25316A;
-  --accent: #A71930;
-  --lightest-color: #A5ACAF;
-  --gradient-light: #1A27AB;
-  --gradient-dark: #0B2265;
-  --th-bg: #25316A;
-  --make-white: #fff;
+  --neutral: #25316A;
+  --primary: #A71930;
+  --primary-lighter: #A5ACAF;
+  --primary-light: #1A27AB;
+  --primary-dark: #0B2265;
+  --primary-darker: #25316A;
+  --neutral-light: #fff;
 }
 
 .theme-jaguars {
-  --main: #000000;
-  --accent: #006778;
-  --lightest-color: #97B3BF;
-  --gradient-light: #006778;
-  --gradient-dark: #002738;
-  --th-bg: #000000;
-  --make-white: #fff;
+  --neutral: #000000;
+  --primary: #006778;
+  --primary-lighter: #97B3BF;
+  --primary-light: #006778;
+  --primary-dark: #002738;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
 }
 
 .theme-jets {
-  --main: #000000;
-  --accent: #125740;
-  --lightest-color: #eee;
-  --gradient-light: #125740;
-  --gradient-dark: #041C14;
-  --th-bg: #000000;
-  --make-white: #fff;
+  --neutral: #000000;
+  --primary: #125740;
+  --primary-lighter: #eee;
+  --primary-light: #125740;
+  --primary-dark: #041C14;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
 }
 
 .theme-lions {
-  --main: #000000;
-  --accent: #006DAF;
-  --lightest-color: #eee;
-  --gradient-light: #006DAF;
-  --gradient-dark: #0076B6;
-  --th-bg: #000000;
-  --make-white: #fff;
+  --neutral: #000000;
+  --primary: #006DAF;
+  --primary-lighter: #eee;
+  --primary-light: #006DAF;
+  --primary-dark: #0076B6;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
 }
 
 .theme-packers {
-  --main: #203731;
-  --accent: #FAC400;
-  --lightest-color: #B0B8B5;
-  --gradient-light: #40695E;
-  --gradient-dark: #203731;
-  --th-bg: #203731;
-  --make-white: #fff;
+  --neutral: #203731;
+  --primary: #FAC400;
+  --primary-lighter: #B0B8B5;
+  --primary-light: #40695E;
+  --primary-dark: #203731;
+  --primary-darker: #203731;
+  --neutral-light: #fff;
 }
 
 .theme-panthers {
-  --main: #000000;
-  --accent: #0085CA;
-  --lightest-color: #CFE6FF;
-  --gradient-light: #3997F7;
-  --gradient-dark: #0085CA;
-  --th-bg: #000000;
-  --make-white: #fff;
+  --neutral: #000000;
+  --primary: #0085CA;
+  --primary-lighter: #CFE6FF;
+  --primary-light: #3997F7;
+  --primary-dark: #0085CA;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
 }
 
 .theme-patriots {
-  --main: #002244;
-  --accent: #DA2028;
-  --lightest-color: #B0B7BC;
-  --gradient-light: #F2244C;
-  --gradient-dark: #C60C30;
-  --th-bg: #002244;
-  --make-white: #fff;
+  --neutral: #002244;
+  --primary: #DA2028;
+  --primary-lighter: #B0B7BC;
+  --primary-light: #F2244C;
+  --primary-dark: #C60C30;
+  --primary-darker: #002244;
+  --neutral-light: #fff;
 }
 
 .theme-raiders {
-  --main: #000000;
-  --accent: #A5ACAF;
-  --lightest-color: #eee;
-  --gradient-light: #666;
-  --gradient-dark: #111;
-  --th-bg: #000000;
-  --make-white: #fff;
+  --neutral: #000000;
+  --primary: #A5ACAF;
+  --primary-lighter: #eee;
+  --primary-light: #666;
+  --primary-dark: #111;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
 }
 
 .theme-rams {
-  --main: #003594;
-  --accent: #ffa300;
-  --lightest-color: #eee;
-  --gradient-light: #003594;
-  --gradient-dark: #000103;
-  --th-bg: #003594;
-  --make-white: #fff;
+  --neutral: #003594;
+  --primary: #ffa300;
+  --primary-lighter: #eee;
+  --primary-light: #003594;
+  --primary-dark: #000103;
+  --primary-darker: #003594;
+  --neutral-light: #fff;
 }
 
 .theme-ravens {
-  --main: #2C2062;
-  --accent: #D0B337;
-  --lightest-color: #F3E8FF;
-  --gradient-light: #472399;
-  --gradient-dark: #2C2062;
-  --th-bg: #2C2062;
-  --make-white: #fff;
+  --neutral: #2C2062;
+  --primary: #D0B337;
+  --primary-lighter: #F3E8FF;
+  --primary-light: #472399;
+  --primary-dark: #2C2062;
+  --primary-darker: #2C2062;
+  --neutral-light: #fff;
 }
 
 .theme-redskins {
-  --main: #5A1414;
-  --accent: #FFB612;
-  --lightest-color: #eee;
-  --gradient-light: #773141;
-  --gradient-dark: #291016;
-  --th-bg: #5A1414;
-  --make-white: #fff;
+  --neutral: #5A1414;
+  --primary: #FFB612;
+  --primary-lighter: #eee;
+  --primary-light: #773141;
+  --primary-dark: #291016;
+  --primary-darker: #5A1414;
+  --neutral-light: #fff;
 }
 
 .theme-saints {
-  --main: #000000;
-  --accent: #C6A875;
-  --lightest-color: #eee;
-  --gradient-light: #C6A875;
-  --gradient-dark: #695A3E;
-  --th-bg: #000000;
-  --make-white: #fff;
+  --neutral: #000000;
+  --primary: #C6A875;
+  --primary-lighter: #eee;
+  --primary-light: #C6A875;
+  --primary-dark: #695A3E;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
 }
 
 .theme-seahawks {
-  --main: #002244;
-  --accent: #69BE28;
-  --lightest-color: #eee;
-  --gradient-light: #69BE28;
-  --gradient-dark: #336110;
-  --th-bg: #002244;
-  --make-white: #fff;
+  --neutral: #002244;
+  --primary: #69BE28;
+  --primary-lighter: #eee;
+  --primary-light: #69BE28;
+  --primary-dark: #336110;
+  --primary-darker: #002244;
+  --neutral-light: #fff;
 }
 
 .theme-steelers {
-  --main: #000000;
-  --accent: #FFB612;
-  --lightest-color: #eee;
-  --gradient-light: #FFB612;
-  --gradient-dark: #825C05;
-  --th-bg: #000000;
-  --make-white: #fff;
+  --neutral: #000000;
+  --primary: #FFB612;
+  --primary-lighter: #eee;
+  --primary-light: #FFB612;
+  --primary-dark: #825C05;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
 }
 
 .theme-texans {
-  --main: #06192E;
-  --accent: #B21E35;
-  --lightest-color: #DFE7F7;
-  --gradient-light: #0F2A63;
-  --gradient-dark: #06192E;
-  --th-bg: #06192E;
-  --make-white: #fff;
+  --neutral: #06192E;
+  --primary: #B21E35;
+  --primary-lighter: #DFE7F7;
+  --primary-light: #0F2A63;
+  --primary-dark: #06192E;
+  --primary-darker: #06192E;
+  --neutral-light: #fff;
 }
 
 .theme-titans {
-  --main: #203262;
-  --accent: #668ECA;
-  --lightest-color: #eee;
-  --gradient-light: #4B92DB;
-  --gradient-dark: #0C2340;
-  --th-bg: #203262;
-  --make-white: #fff;
+  --neutral: #203262;
+  --primary: #668ECA;
+  --primary-lighter: #eee;
+  --primary-light: #4B92DB;
+  --primary-dark: #0C2340;
+  --primary-darker: #203262;
+  --neutral-light: #fff;
 }
 
 .theme-vikings {
-  --main: #3C1E5D;
-  --accent: #EDBF1B;
-  --lightest-color: #eee;
-  --gradient-light: #4F2683;
-  --gradient-dark: #240E33;
-  --th-bg: #3C1E5D;
-  --make-white: #fff;
+  --neutral: #3C1E5D;
+  --primary: #EDBF1B;
+  --primary-lighter: #eee;
+  --primary-light: #4F2683;
+  --primary-dark: #240E33;
+  --primary-darker: #3C1E5D;
+  --neutral-light: #fff;
 }
 
 
@@ -731,12 +751,12 @@ body.nra {
 .b_name {
   text-transform: uppercase;
   font-weight: 600;
-  color: var(--main, #080e25);
+  color: var(--neutral, #080e25);
   font-size: clamp(1.5rem, 10vw, 2.5rem);
 }
 
 .b_name2 {
-  color: var(--accent, #B82601);
+  color: var(--primary, #B82601);
   margin-left: 0.375rem
 }
 
@@ -923,7 +943,7 @@ input[type="password"] {
 
 input[type="checkbox"],
 input[type="radio"] {
-  accent-color: var(--accent, #ff4200);
+  accent-color: var(--primary, #ff4200);
   width: 0.875rem;
   height: 0.875rem;
 }
@@ -937,7 +957,7 @@ input[type="radio"] {
 }
 /*CGT - PC background image and settings*/
 body {
-  color: var(--main, #080e25);
+  color: var(--neutral, #080e25);
   text-rendering: optimizeLegibility;
   background-image: url("https://knuckleheads.netlify.app/images/backgrounds/Side-Particles-KDL.png"), url("https://knuckleheads.netlify.app/images/backgrounds/White-Brick.jpg");
   background-attachment: fixed;
@@ -959,7 +979,7 @@ body a,
 body a:link,
 body a:active,
 body a:visited {
-  color: var(--accent, #B82601);
+  color: var(--primary, #B82601);
   outline: none
 }
 
@@ -970,7 +990,7 @@ body a:hover,
 body a:link:hover,
 body a:active:hover,
 body a:visited:hover {
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 
@@ -1069,7 +1089,7 @@ body.chat_popup .banner-container-wrap {
 .sub-content ul li:before,
 .show-sub-heads ul li:before,
 .trade-assets-wrapper li::marker {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 
@@ -1083,7 +1103,7 @@ body.chat_popup .banner-container-wrap {
 
 .banner-container {
   background: var(--banner-bg, #fff);
-  border-bottom: 0.5rem solid var(--main-four, var(--main, #080e25));
+  border-bottom: 0.5rem solid var(--neutral-four, var(--neutral, #080e25));
   box-shadow: 0 0 0.6rem rgba(45, 45, 45, .5)
 }
 
@@ -1140,11 +1160,11 @@ body.chat_popup .banner-container-wrap {
 }
 
 .bannericon .b {
-  fill: var(--accent, #B82601)
+  fill: var(--primary, #B82601)
 }
 
 .bannericon .f {
-  fill: var(--accent, #B82601)
+  fill: var(--primary, #B82601)
 }
 
 .bannericon .c {
@@ -1152,7 +1172,7 @@ body.chat_popup .banner-container-wrap {
 }
 
 .bannericon g {
-  fill: var(--accent, #B82601)
+  fill: var(--primary, #B82601)
 }
 
 .theme-light-blue .bannericon {
@@ -1160,7 +1180,7 @@ body.chat_popup .banner-container-wrap {
 }
 
 .bannericon {
-  color: var(--main-three, var(--main, #080e25))
+  color: var(--neutral-three, var(--neutral, #080e25))
 }
 
 .bannericon .g {
@@ -1172,11 +1192,11 @@ body.chat_popup .banner-container-wrap {
 }
 
 .bannericon .e {
-  fill: var(--main, #080e25)
+  fill: var(--neutral, #080e25)
 }
 
 .bannericon .h {
-  fill: var(--accent, #B82601)
+  fill: var(--primary, #B82601)
 }
 
 
@@ -1189,7 +1209,7 @@ body.chat_popup .banner-container-wrap {
 .svg-iconlink:active,
 .svg-iconlink:link,
 .svg-iconlink:visited {
-  color: var(--main, #080e25);
+  color: var(--neutral, #080e25);
   cursor: pointer
 }
 
@@ -1197,12 +1217,12 @@ body.chat_popup .banner-container-wrap {
 .svg-iconlink:active:hover,
 .svg-iconlink:link:hover,
 .svg-iconlink:visited:hover {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 .svg-icon {
-  fill: var(--accent, #B82601);
-  color: var(--main-two, var(--main, #080e25));
+  fill: var(--primary, #B82601);
+  color: var(--neutral-two, var(--neutral, #080e25));
   width: 3.2rem;
   height: 3.2rem
 }
@@ -1211,8 +1231,8 @@ body.chat_popup .banner-container-wrap {
 .svg-iconlink:hover .svg-icon {
   filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
   transition: all 3s ease;
-  fill: var(--main-two, var(--main, #080e25));
-  color: var(--accent, #B82601);
+  fill: var(--neutral-two, var(--neutral, #080e25));
+  color: var(--primary, #B82601);
 }
 
 .svg-icon,
@@ -1268,23 +1288,23 @@ body.chat_popup .banner-container-wrap {
 /****** ADDED 6-4-23 for font awesome icons in icon bar ********/
 .icon-bar i:before,
 .icon-bar-full i:before {
-  color: var(--accent, #B82601);
+  color: var(--primary, #B82601);
 }
 
 .icon-bar i:after,
 .icon-bar-full i:after {
-  color: var(--main-two, var(--main, #080e25)); /*CGT - color here defines main color on Font Awesome icons within icon bar*/
+  color: var(--neutral-two, var(--neutral, #080e25)); /*CGT - color here defines main color on Font Awesome icons within icon bar*/
   opacity: 1;
 }
 
 .icon-bar a:hover i:before,
 .icon-bar-full a:hover i:before {
-  color: var(--main-two, var(--main, #080e25)); /*CGT - color here defines main color on Font Awesome icons within icon bar*/
+  color: var(--neutral-two, var(--neutral, #080e25)); /*CGT - color here defines main color on Font Awesome icons within icon bar*/
 }
 
 .icon-bar a:hover i:after,
 .icon-bar-full a:hover i:after {
-  color: var(--accent, #B82601);
+  color: var(--primary, #B82601);
   opacity: 1;
 }
 
@@ -1311,14 +1331,14 @@ body.chat_popup .banner-container-wrap {
 .icon-bar .svg-iconlink:hover span.fa-stack i:nth-child(2):before,
 .icon-bar-full span.fa-stack i:nth-child(1):before,
 .icon-bar-full .svg-iconlink:hover span.fa-stack i:nth-child(2):before {
-  color: var(--main-two, var(--main, #080e25));
+  color: var(--neutral-two, var(--neutral, #080e25));
 }
 
 .icon-bar span.fa-stack i:nth-child(2):before,
 .icon-bar .svg-iconlink:hover span.fa-stack i:nth-child(1):before,
 .icon-bar-full span.fa-stack i:nth-child(2):before,
 .icon-bar-full .svg-iconlink:hover span.fa-stack i:nth-child(1):before {
-  color: var(--accent, #B82601);
+  color: var(--primary, #B82601);
 }
 
 /****** ADDED 3-3-23 for full width banner ********/
@@ -1335,7 +1355,7 @@ body.chat_popup .banner-container-wrap {
 
 .banner-container-full {
   background: var(--banner-bg, #fff);
-  border-bottom: 0.25rem solid var(--main-four, var(--main, #080e25));
+  border-bottom: 0.25rem solid var(--neutral-four, var(--neutral, #080e25));
   box-shadow: 0 0 0.6rem rgb(45 45 45 / 50%);
 }
 /*CGT - Below determines container settings for league banner*/
@@ -1504,15 +1524,15 @@ body.chat_popup .banner-container-wrap {
   border: .125rem solid #fff;
   font-weight: 700;
   opacity: .6;
-  background: var(--accent, #B82601);
-  border-color: var(--accent, #B82601);
+  background: var(--primary, #B82601);
+  border-color: var(--primary, #B82601);
   color: #fff;
   font-family: 'Open Sans', sans-serif;
 }
 
 .mflModal-content button:hover {
-  background: var(--accent, #B82601);
-  border-color: var(--accent, #B82601);
+  background: var(--primary, #B82601);
+  border-color: var(--primary, #B82601);
   color: #fff;
   opacity: 1;
 }
@@ -1538,9 +1558,9 @@ body.chat_popup .banner-container-wrap {
 /***************************************/
 
 .myfantasyleague_menu {
-  border-bottom: 0.375rem solid var(--accent-two, var(--accent, #B82601));
-  border-top: 0.375rem solid var(--accent-two, var(--accent, #B82601));
-  background: var(--main-four, var(--main, #080e25)) !important;
+  border-bottom: 0.375rem solid var(--primary-two, var(--primary, #B82601));
+  border-top: 0.375rem solid var(--primary-two, var(--primary, #B82601));
+  background: var(--neutral-four, var(--neutral, #080e25)) !important;
   box-shadow: 0 0 0.6rem rgba(45, 45, 45, .5);
   height: 2.5rem;
   position: sticky;
@@ -1555,7 +1575,7 @@ body.chat_popup .banner-container-wrap {
 
 .myfantasyleague_menu ul ul li,
 .myfantasyleague_menu li.player-search a:hover {
-  background: var(--accent, #B82601)
+  background: var(--primary, #B82601)
 }
 
 
@@ -1576,14 +1596,14 @@ body.chat_popup .banner-container-wrap {
 /* sub menu arrow color when main menu text is hovered */
 
 .myfantasyleague_menu>ul>li.has-sub:hover>a:after {
-  border-top-color: var(--make-white, var(--accent, #fff));
+  border-top-color: var(--neutral-light, var(--primary, #fff));
 }
 
 
 /* main menu hover arrow color */
 
 .myfantasyleague_menu ul ul>li.has-sub:hover>a:after {
-  border-left-color: var(--main-three, var(--main, #080e25))
+  border-left-color: var(--neutral-three, var(--neutral, #080e25))
 }
 
 
@@ -1621,27 +1641,27 @@ body.chat_popup .banner-container-wrap {
 /* main menu text hover color */
 
 .myfantasyleague_menu ul li ul li ul li:hover a {
-  color: var(--main-three, var(--main, #080e25))
+  color: var(--neutral-three, var(--neutral, #080e25))
 }
 
 
 /* text color for hover of sub sub flyout menu */
 
 .myfantasyleague_menu li:hover>a {
-  background: var(--main-three, var(--main, #080e25));
+  background: var(--neutral-three, var(--neutral, #080e25));
   box-shadow: none
 }
 
 .myfantasyleague_menu ul li ul li:hover>a {
   background: #fff;
-  color: var(--main-three, var(--main, #080e25))
+  color: var(--neutral-three, var(--neutral, #080e25))
 }
 
 
 /* hover over a sub menu item - bg and text color */
 
 .myfantasyleague_menu li.player-search input[type="text"] {
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 .myfantasyleague_menu li.player-search a:hover {
@@ -1656,7 +1676,7 @@ li.player-search a input {
 }
 
 .myfantasyleague_menu ul li ul {
-  border-top: 0.375rem solid var(--accent-two, var(--accent, #B82601));
+  border-top: 0.375rem solid var(--primary-two, var(--primary, #B82601));
 }
 
 
@@ -1665,7 +1685,7 @@ li.player-search a input {
 .myfantasyleague_menu ul ul li a,
 .myfantasyleague_menu ul ul li.has-sub a,
 .myfantasyleague_menu ul ul li.has-sub li:first-of-type {
-  border-color: var(--main-two, var(--main, #080e25))
+  border-color: var(--neutral-two, var(--neutral, #080e25))
 }
 
 .myfantasyleague_menu ul li:hover>ul {
@@ -1702,12 +1722,12 @@ label[for='sub100']+#homepagetabs {
 }
 
 .myfantasyleague_tabmenu {
-  background: var(--tab-menu, var(--main, #080e25));
+  background: var(--tab-menu, var(--neutral, #080e25));
   margin-bottom: 0;
   margin-top: 0.625rem;
   border: 0.063rem solid #fff;
   z-index: 99997;
-  outline: 0.063rem solid var(--tab-menu, var(--main, #080e25))
+  outline: 0.063rem solid var(--tab-menu, var(--neutral, #080e25))
 }
 
 .myfantasyleague_tabmenu #homepagetabs li {
@@ -1725,7 +1745,7 @@ label[for='sub100']+#homepagetabs {
 }
 
 .myfantasyleague_tabmenu #homepagetabs li:hover {
-  background: var(--tab-menu-hover, var(--accent, #B82601));
+  background: var(--tab-menu-hover, var(--primary, #B82601));
   box-shadow: none
 }
 
@@ -1741,7 +1761,7 @@ label[for='sub100']+#homepagetabs {
 .myfantasyleague_tabmenu #homepagetabs li.currenttab,
 .myfantasyleague_tabmenu #homepagetabs li.currenttab:hover {
   box-shadow: none;
-  background: var(--tab-menu-hover, var(--accent, #B82601));
+  background: var(--tab-menu-hover, var(--primary, #B82601));
 }
 
 /***************************************/
@@ -1821,9 +1841,9 @@ label[for='sub100']+#homepagetabs {
 #myfantasyleague_tabs .myfantasyleague_tabmenu {
   box-shadow: none;
   margin: 0.188rem 0;
-  background: var(--subtab-menu, var(--accent, #B82601));
+  background: var(--subtab-menu, var(--primary, #B82601));
   border: 0.063rem solid #fff;
-  outline: 0.063rem solid var(--subtab-menu, var(--accent, #B82601));
+  outline: 0.063rem solid var(--subtab-menu, var(--primary, #B82601));
   z-index: 99996
 }
 
@@ -1845,7 +1865,7 @@ label[for='sub100']+#homepagetabs {
 }
 
 #myfantasyleague_tabs .myfantasyleague_tabmenu #homepagetabs li:hover {
-  background: var(--subtab-menu-hover, var(--main, #080e25))
+  background: var(--subtab-menu-hover, var(--neutral, #080e25))
 }
 
 #myfantasyleague_tabs .myfantasyleague_tabmenu #homepagetabs li:hover a {
@@ -1854,7 +1874,7 @@ label[for='sub100']+#homepagetabs {
 
 #myfantasyleague_tabs .myfantasyleague_tabmenu #homepagetabs li.currenttab,
 #myfantasyleague_tabs .myfantasyleague_tabmenu #homepagetabs li.currenttab:hover {
-  background: var(--subtab-menu-hover, var(--main, #080e25))
+  background: var(--subtab-menu-hover, var(--neutral, #080e25))
 }
 
 #myfantasyleague_tabs .myfantasyleague_tabmenu #homepagetabs li.currenttab a,
@@ -1878,7 +1898,7 @@ span.custom_expand:hover+span+.plus-toggle span:before,
 span.custom_expand:hover+span+.plus-toggle span:after,
 span.custom_collapse:hover+.plus-toggle span:before,
 span.custom_collapse:hover+.plus-toggle span:after {
-  background: var(--accent, #080e25);
+  background: var(--primary, #080e25);
 }
 
 .homepagecolumn .mobile-wrap {
@@ -1887,14 +1907,14 @@ span.custom_collapse:hover+.plus-toggle span:after {
 
 .toggle-btn-main::before,
 .toggle-btn-main::after {
-  background: var(--tab-menu, var(--main, #080e25));
+  background: var(--tab-menu, var(--neutral, #080e25));
 }
 
 #expandLink:hover+.plus-toggle-main span:before,
 #expandLink:hover+.plus-toggle-main span:after,
 #collapseLink:hover+a+.plus-toggle-main span:before,
 #collapseLink:hover+a+.plus-toggle-main span:after {
-  background: var(--accent, #080e25);
+  background: var(--primary, #080e25);
 }
 
 
@@ -1910,16 +1930,16 @@ span.custom_collapse:hover+.plus-toggle span:after {
 /* menu button pullout */
 
 #menu-trigger {
-  border: 0.063rem solid var(--main-three, var(--main, #080e25));
+  border: 0.063rem solid var(--neutral-three, var(--neutral, #080e25));
   background: #fff;
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 
 /* menu container */
 
 .myfantasyleague_menuMobile {
-  border-color: var(--main-three, var(--main, #080e25)) !important;
+  border-color: var(--neutral-three, var(--neutral, #080e25)) !important;
   color: #fff;
   background: #fff
 }
@@ -1941,7 +1961,7 @@ span.custom_collapse:hover+.plus-toggle span:after {
 .myfantasyleague_menuMobile>ul>li>ul>li>a:active,
 .myfantasyleague_menuMobile>ul>li>ul>li>a:visited,
 .myfantasyleague_menuMobile>ul>li>ul>li>a:hover {
-  color: var(--accent, #B82601);
+  color: var(--primary, #B82601);
   background: #fff
 }
 
@@ -1950,7 +1970,7 @@ span.custom_collapse:hover+.plus-toggle span:after {
 
 .myfantasyleague_menuMobile li.has-sub,
 .myfantasyleague_menuMobile li.mm-home {
-  border-bottom: 0.25rem solid var(--accent, #B82601);
+  border-bottom: 0.25rem solid var(--primary, #B82601);
   border-bottom: 0.25rem solid #ddd;
 }
 
@@ -1977,7 +1997,7 @@ span.custom_collapse:hover+.plus-toggle span:after {
   width: 0;
   height: 0;
   border: 0.35rem solid transparent;
-  border-left: 0.35rem solid var(--accent, #B82601);
+  border-left: 0.35rem solid var(--primary, #B82601);
   transition: left 0.2s ease-in-out;
 }
 
@@ -1993,11 +2013,11 @@ li.has-sub ul li.mm_sizing_head {
 li.has-sub ul li.mm_sizing_head a,
 .myfantasyleague_menu ul li:hover ul li.mm_sizing_head a {
   background: #fff;
-  color: var(--accent, #B82601);
+  color: var(--primary, #B82601);
 }
 
 .myfantasyleague_menuMobile li.has-sub ul li.mm_sizing_head a {
-  background: var(--accent, #B82601);
+  background: var(--primary, #B82601);
   color: #fff;
 }
 
@@ -2035,7 +2055,7 @@ li.has-sub ul li.mm_sizing_head a,
   width: 0;
   height: 0;
   border: 0.25rem solid transparent;
-  border-left: 0.25rem solid var(--accent, #B82601);
+  border-left: 0.25rem solid var(--primary, #B82601);
 }
 
 .myfantasyleague_menuMobile>ul>li>ul>li>ul>li>a {
@@ -2046,7 +2066,7 @@ li.has-sub ul li.mm_sizing_head a,
 .myfantasyleague_menuMobile>ul>li>ul>li>ul>li>a:active,
 .myfantasyleague_menuMobile>ul>li>ul>li>ul>li>a:visited,
 .myfantasyleague_menuMobile>ul>li>ul>li>ul>li>a:hover {
-  color: var(--accent, #B82601);
+  color: var(--primary, #B82601);
   padding-left: 1.25rem !important;
 }
 
@@ -2055,15 +2075,15 @@ li.has-sub ul li.mm_sizing_head a,
 
 .myfantasyleague_menuMobile a,
 .myfantasyleague_menuMobile a:active {
-  background: var(--accent, #B82601);
-  border-bottom: 0.063rem solid var(--main-two, var(--main, #080e25));
+  background: var(--primary, #B82601);
+  border-bottom: 0.063rem solid var(--neutral-two, var(--neutral, #080e25));
 }
 
 
 /* background for active first level drop down menu links */
 
 .myfantasyleague_menuMobile>ul>li.has-sub.arrow-down>a {
-  background: var(--main-three, var(--main, #080e25))
+  background: var(--neutral-three, var(--neutral, #080e25))
 }
 
 
@@ -2071,7 +2091,7 @@ li.has-sub ul li.mm_sizing_head a,
 
 .myfantasyleague_menuMobile>ul>li.has-sub>ul>li.has-sub.sub-arrow-down>a {
   background: #fff;
-  color: var(--main-four, var(--main, #080e25))
+  color: var(--neutral-four, var(--neutral, #080e25))
 }
 
 /* mobile menu animated up and down arrows */
@@ -2124,7 +2144,7 @@ li.has-sub ul li.mm_sizing_head a,
 
 .myfantasyleague_menuMobile span.menu_arrow:before,
 .myfantasyleague_menuMobile span.menu_arrow:after {
-  background: var(--accent, #B82601)
+  background: var(--primary, #B82601)
 }
 
 .myfantasyleague_menuMobile .arrow-down>a span.menu_arrow:before,
@@ -2134,7 +2154,7 @@ li.has-sub ul li.mm_sizing_head a,
   -webkit-transform: rotate(315deg);
   transform: rotate(315deg);
   transition: all .25s ease;
-  background: var(--main-three, var(--main, #080e25));
+  background: var(--neutral-three, var(--neutral, #080e25));
 }
 
 
@@ -2171,7 +2191,7 @@ table,
 #body_live_scoring_summary #live_scoring_summary span.reportnavigation+table {
   background: var(--mobile-wrap-bg, #fff);
   box-shadow: 0 0 0.063rem 0.063rem rgba(0, 0, 0, 0.1);
-  color: var(--main, #080e25);
+  color: var(--neutral, #080e25);
   border-radius: 0.188rem;
   margin: 0.625rem auto;
   margin-top: 0;
@@ -2203,7 +2223,7 @@ a:hover,
 a:link:hover,
 a:active:hover,
 a:visited:hover {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 
@@ -2212,7 +2232,7 @@ a:visited:hover {
 a:link img,
 A:visited img {
   border-color: transparent;
-  /*border-color: var(--lightest-color, blue); /*CGT - was transparent*/
+  /*border-color: var(--primary-lighter, blue); /*CGT - was transparent*/
   /*border: 0.5rem outset; /*added*/
   /*border-radius: 0.15rem; /*added*/
 }
@@ -2263,16 +2283,16 @@ caption,
   max-width: 100%; /*added*/
   margin-bottom: 0.33rem;
   border-image-source: linear-gradient(to right, 
-      var(--lightest-color), 
-      var(--gradient-light), 
-      var(--accent), 
-      var(--gradient-light), 
-      var(--lightest-color));
+      var(--primary-lighter), 
+      var(--primary-light), 
+      var(--primary), 
+      var(--primary-light), 
+      var(--primary-lighter));
   border-image-slice: 1;
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  border-bottom: 0.35rem solid var(--accent);
+  border-bottom: 0.35rem solid var(--primary);
 }
 /*CGT - Added below logo before captions*/
 caption:before {
@@ -2304,7 +2324,7 @@ caption a,
 caption a:link,
 caption a:active,
 caption a:visited {
-  color: var(--main-four, var(--main, #080e25));
+  color: var(--neutral-four, var(--neutral, #080e25));
 }
 
 caption {
@@ -2317,7 +2337,7 @@ caption a:hover,
 caption a:link:hover,
 caption a:active:hover,
 caption a:visited:hover {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 /* caption text hover */
@@ -2327,7 +2347,7 @@ caption.withfranchiseicon a,
 caption.withfranchiseicon a:link,
 caption.withfranchiseiconn a:active,
 caption.withfranchiseicon a:visited {
-  color: var(--main-four, var(--main, #080e25));
+  color: var(--neutral-four, var(--neutral, #080e25));
   text-align: center;
 }
 
@@ -2338,7 +2358,7 @@ caption.withfranchiseicon a:hover,
 caption.withfranchiseicon a:link:hover,
 caption.withfranchiseicon a:active:hover,
 caption.withfranchiseicon a:visited:hover {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 
@@ -2346,17 +2366,17 @@ caption.withfranchiseicon a:visited:hover {
 
 caption .module_expand.custom_collapse,
 caption .module_expand.custom_expand {
-  color: var(--main-two, var(--main, #080e25));
+  color: var(--neutral-two, var(--neutral, #080e25));
   background: none
 }
 
 caption .module_expand.custom_collapse:hover,
 caption .module_expand.custom_expand:hover {
-  color: var(--accent-four, var(--accent, #B82601))
+  color: var(--primary-four, var(--primary, #B82601))
 }
 
 caption .ownername {
-  color: var(--accent, #B82601);
+  color: var(--primary, #B82601);
   font-weight: normal;
   font-size: 0.75rem;
   padding: 0;
@@ -2367,7 +2387,7 @@ caption .ownername {
 /* owners name in caption with an icon as seen on rosters page , set to display none if you dont want to see */
 
 caption.withfranchiseicon .ownername {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 
@@ -2380,7 +2400,7 @@ caption.withfranchiseicon .ownername {
 /***************************************/
 
 th {
-  background: var(--th-bg, #080e25);
+  background: var(--primary-darker, #080e25);
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 300;
@@ -2403,7 +2423,7 @@ th a:visited,
 .eventablerow th a:link,
 .eventablerow th a:active,
 .eventablerow th a:visited {
-  color: var(--make-white, var(--accent, #fff));
+  color: var(--neutral-light, var(--primary, #fff));
 }
 
 th a:hover,
@@ -2420,7 +2440,7 @@ th a:visited:hover,
 .eventablerow th a:link:hover,
 .eventablerow th a:active:hover,
 .eventablerow th a:visited:hover {
-  color: var(--make-white, var(--accent, #fff));
+  color: var(--neutral-light, var(--primary, #fff));
 }
 
 
@@ -2447,12 +2467,12 @@ th a:visited:hover,
 
 .oddtablerow td {
   background: none;
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 .eventablerow td {
   background: none;
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 .oddtablerow td a,
@@ -2460,33 +2480,33 @@ th a:visited:hover,
 .oddtablerow td a:active,
 .oddtablerow td a:visited,
 #owner_activity td.franchisename {
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 .eventablerow td a,
 .eventablerow td a:link,
 .eventablerow td a:active,
 .eventablerow td a:visited {
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 .oddtablerow td a:hover,
 .oddtablerow td a:link:hover,
 .oddtablerow td a:active:hover,
 .oddtablerow td a:visited:hover {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 .eventablerow td a:hover,
 .eventablerow td a:link:hover,
 .eventablerow td a:active:hover,
 .eventablerow td a:visited:hover {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 .newposition td,
 .newposition th {
-  border-color: var(--accent, #B82601)
+  border-color: var(--primary, #B82601)
 }
 
 
@@ -2494,7 +2514,7 @@ th a:visited:hover,
 
 .reportfooter td,
 td.reportfooter {
-  color: var(--main, #080e25);
+  color: var(--neutral, #080e25);
   text-align: center;
   background: #fff;
   border-top: 0.25rem solid #ddd;
@@ -2509,7 +2529,7 @@ td.reportfooter a,
 td.reportfooter a:link,
 td.reportfooter a:active,
 td.reportfooter a:visited {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 .reportfooter td a:hover,
@@ -2520,7 +2540,7 @@ td.reportfooter a:hover,
 td.reportfooter a:link:hover,
 td.reportfooter a:active:hover,
 td.reportfooter a:visited:hover {
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 
@@ -2565,12 +2585,12 @@ td.reportfooter a:visited:hover {
 #standings h3,
 .homepagecolumn #brief_standings h3,
 #brief_standings h3 {
-  background: var(--accent-three, var(--accent, #B82601));
+  background: var(--primary-three, var(--primary, #B82601));
   color: #fff;
   font-size: 1.375rem;
   text-transform: uppercase;
   border: 0.125rem solid #fff;
-  outline: 0.125rem solid var(--main-two, var(--main, #080e25));
+  outline: 0.125rem solid var(--neutral-two, var(--neutral, #080e25));
   padding: 0.313rem 0;
   margin: 0.313rem 0
 }
@@ -2578,7 +2598,7 @@ td.reportfooter a:visited:hover {
 .standingslogo {
   margin: 0.313rem 0;
   max-width: 100%; /*added*/
-  border: 0.33rem outset var(--gradient-light, blue); /*added*/
+  border: 0.33rem outset var(--primary-light, blue); /*added*/
   border-radius: 0.25rem; /*added*/
 }
 
@@ -2609,7 +2629,7 @@ td.reportfooter a:visited:hover {
 .mobile-wrap h3 a:active,
 .mobile-wrap h3 a:visited {
   font-size: 1.25rem;
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 .mobile-wrap h3 a:hover,
@@ -2617,7 +2637,7 @@ td.reportfooter a:visited:hover {
 .mobile-wrap h3 a:active:hover,
 .mobile-wrap h3 a:visited:hover {
   font-size: 1.25rem;
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 .mobile-wrap h3,
@@ -2630,7 +2650,7 @@ td.reportfooter a:visited:hover {
 /* h3 body menu links */
 
 .h3-menu {
-  color: var(--accent, #B82601);
+  color: var(--primary, #B82601);
   padding: 0.313rem;
   margin: 0.625rem 0;
   margin-top: 0;
@@ -2644,7 +2664,7 @@ td.reportfooter a:visited:hover {
 .h3-menu a:link,
 .h3-menu a:active,
 .h3-menu a:visited {
-  color: var(--main, #080e25);
+  color: var(--neutral, #080e25);
   text-decoration: none;
 }
 
@@ -2652,7 +2672,7 @@ td.reportfooter a:visited:hover {
 .h3-menu a:link:hover,
 .h3-menu a:active:hover,
 .h3-menu a:visited:hover {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 
@@ -2670,7 +2690,7 @@ td.player_photo img {
   border: 0.188rem solid #fff;
   height: auto;
   max-width: 6.25rem;
-  outline: 0.063rem solid var(--accent, #B82601);
+  outline: 0.063rem solid var(--primary, #B82601);
   margin: 0 auto
 }
 
@@ -2822,8 +2842,8 @@ button.tbt {
 }
 
 button.tbt:hover {
-  color: var(--accent, green);
-  border-color: var(--accent, green);
+  color: var(--primary, green);
+  border-color: var(--primary, green);
   background: none;
 }
 
@@ -2844,7 +2864,7 @@ button.tbt img {
 }
 
 #league_chat td b {
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 
@@ -2861,7 +2881,7 @@ button.tbt img {
 #body_ajax_ls h3#ls_error {
   max-width: 37.5rem;
   margin: 0 auto;
-  background: var(--main-four, var(--main, #080e25)) !important;
+  background: var(--neutral-four, var(--neutral, #080e25)) !important;
   color: #fff;
   padding: 0.625rem;
   border-radius: 0.313rem;
@@ -2879,30 +2899,30 @@ input[type="submit"] {
   border-radius: 0.188rem;
   box-shadow: 0 0 0.063rem 0.063rem rgba(0, 0, 0, 0.1);
   color: #fff;
-  background: var(--gradient-dark, #9c2000);
+  background: var(--primary-dark, #9c2000);
   background-image: none;
-  background-image: -webkit-linear-gradient(top, var(--gradient-light, #cb2a01), var(--gradient-dark, #9c2000));
-  background-image: -moz-linear-gradient(top, var(--gradient-light, #cb2a01), var(--gradient-dark, #9c2000));
-  background-image: -ms-linear-gradient(top, var(--gradient-light, #cb2a01), var(--gradient-dark, #9c2000));
-  background-image: -o-linear-gradient(top, var(--gradient-light, #cb2a01), var(--gradient-dark, #9c2000));
-  background-image: linear-gradient(to bottom, var(--gradient-light, #cb2a01), var(--gradient-dark, #9c2000));
+  background-image: -webkit-linear-gradient(top, var(--primary-light, #cb2a01), var(--primary-dark, #9c2000));
+  background-image: -moz-linear-gradient(top, var(--primary-light, #cb2a01), var(--primary-dark, #9c2000));
+  background-image: -ms-linear-gradient(top, var(--primary-light, #cb2a01), var(--primary-dark, #9c2000));
+  background-image: -o-linear-gradient(top, var(--primary-light, #cb2a01), var(--primary-dark, #9c2000));
+  background-image: linear-gradient(to bottom, var(--primary-light, #cb2a01), var(--primary-dark, #9c2000));
 }
 
 #body_ajax_ls h3#ls_error a:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover {
   color: #fff;
-  background: var(--gradient-light, #cb2a01);
+  background: var(--primary-light, #cb2a01);
   background-image: none;
-  background-image: -webkit-linear-gradient(top, var(--gradient-dark, #9c2000), var(--gradient-light, #cb2a01));
-  background-image: -moz-linear-gradient(top, var(--gradient-dark, #9c2000), var(--gradient-light, #cb2a01));
-  background-image: -ms-linear-gradient(top, var(--gradient-dark, #9c2000), var(--gradient-light, #cb2a01));
-  background-image: -o-linear-gradient(top, var(--gradient-dark, #9c2000), var(--gradient-light, #cb2a01));
-  background-image: linear-gradient(to bottom, var(--gradient-dark, #9c2000), var(--gradient-light, #cb2a01));
+  background-image: -webkit-linear-gradient(top, var(--primary-dark, #9c2000), var(--primary-light, #cb2a01));
+  background-image: -moz-linear-gradient(top, var(--primary-dark, #9c2000), var(--primary-light, #cb2a01));
+  background-image: -ms-linear-gradient(top, var(--primary-dark, #9c2000), var(--primary-light, #cb2a01));
+  background-image: -o-linear-gradient(top, var(--primary-dark, #9c2000), var(--primary-light, #cb2a01));
+  background-image: linear-gradient(to bottom, var(--primary-dark, #9c2000), var(--primary-light, #cb2a01));
 }
 
 #league_chat .chatLapsedTime {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 
@@ -2949,7 +2969,7 @@ li.player-search a input,
 #add {
   background: #fff !important;
   border-color: #eee !important;
-  color: var(--main, #080e25) !important
+  color: var(--neutral, #080e25) !important
 }
 
 #league_chat img[title="New Window"] {
@@ -3070,7 +3090,7 @@ div.mobile-wrap .reportform {
 .tdalert span {
   width: 99%;
   background: #fff;
-  color: var(--accent, #B82601);
+  color: var(--primary, #B82601);
   margin: 0.188rem 0;
   box-shadow: 0 0 0.063rem 0.063rem rgba(0, 0, 0, 0.1);
 }
@@ -3078,7 +3098,7 @@ div.mobile-wrap .reportform {
 .alert.alert-info-table .reportnavigationheader,
 .tdalert span b {
   padding-right: 0.313rem;
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 .alert.alert-info-table a,
@@ -3089,7 +3109,7 @@ div.mobile-wrap .reportform {
 .tdalert span a:active,
 .tdalert span a:visited,
 .tdalert span a:link {
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 .alert.alert-info-table a:hover,
@@ -3100,7 +3120,7 @@ div.mobile-wrap .reportform {
 .tdalert span a:active:hover,
 .tdalert span a:visited:hover,
 .tdalert span a:link:hover {
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 
@@ -3110,12 +3130,12 @@ div.mobile-wrap .reportform {
 #body_live_scoring_summary #live_scoring_summary span.reportnavigation {
   width: 100%;
   background: #fff;
-  color: var(--main, #080e25);
+  color: var(--neutral, #080e25);
   box-shadow: 0 0 0.063rem 0.063rem rgba(0, 0, 0, 0.1);
 }
 
 .alert.alert-info-body .reportnavigationheader {
-  color: var(--main, #080e25);
+  color: var(--neutral, #080e25);
   padding-right: 0.313rem
 }
 
@@ -3123,14 +3143,14 @@ div.mobile-wrap .reportform {
 .alert.alert-info-body a:link,
 .alert.alert-info-body a:active,
 .alert.alert-info-body a:visited {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 .alert.alert-info-body a:hover,
 .alert.alert-info-body a:link:hover,
 .alert.alert-info-body a:active:hover,
 .alert.alert-info-body a:visited:hover {
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 
@@ -3164,7 +3184,7 @@ div.mobile-wrap .reportform {
 }
 
 .weekly-navbar .reportnavigationheader {
-  color: var(--main-three, var(--main, #080e25));
+  color: var(--neutral-three, var(--neutral, #080e25));
   vertical-align: middle;
   font-size: 0.875rem;
   text-transform: uppercase;
@@ -3177,7 +3197,7 @@ div.mobile-wrap .reportform {
 .weekly-navbar a:visited,
 .weekly-navbar .currentweek {
   color: #fff;
-  background: var(--main-three, var(--main, #080e25));
+  background: var(--neutral-three, var(--neutral, #080e25));
   border-radius: 0.125rem;
   text-decoration: none;
   display: inline-block;
@@ -3194,11 +3214,11 @@ div.mobile-wrap .reportform {
 .weekly-navbar a:active:hover,
 .weekly-navbar a:visited:hover {
   color: #fff;
-  background: var(--accent, #B82601)
+  background: var(--primary, #B82601)
 }
 
 .weekly-navbar .currentweek {
-  background: var(--accent, #B82601);
+  background: var(--primary, #B82601);
   color: #fff
 }
 
@@ -3217,7 +3237,7 @@ div.mobile-wrap .reportform {
 }
 
 .weekly-navbar .inactive {
-  background: var(--main-three, var(--main, #080e25)) !important;
+  background: var(--neutral-three, var(--neutral, #080e25)) !important;
   color: #fff !important;
   opacity: .5
 }
@@ -3250,11 +3270,11 @@ div.mobile-wrap .reportform {
 }
 
 #monthly_calendar .month_header th a {
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 #monthly_calendar td .calendarday {
-  background: var(--accent, #B82601);
+  background: var(--primary, #B82601);
   border-bottom: 0.063rem solid #555;
   border-left: 0.063rem solid #aaa;
   color: #FFF
@@ -3266,7 +3286,7 @@ div.mobile-wrap .reportform {
 }
 
 #monthly_calendar td.today {
-  border: 0.188rem dotted var(--accent, #B82601)
+  border: 0.188rem dotted var(--primary, #B82601)
 }
 
 
@@ -3310,7 +3330,7 @@ div.mobile-wrap .reportform {
 }
 
 #calendar .date {
-  background: var(--accent, #B82601);
+  background: var(--primary, #B82601);
   color: #fff;
 }
 
@@ -3448,7 +3468,7 @@ div.mobile-wrap .reportform {
 
 /* change text color for projected points header title */
 #body_lineup.custom_lineup_body form tr.starters_pos_row+tr td.proj-pts:before {
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 /* change locked player icon for Bench players games started */
@@ -3496,13 +3516,13 @@ div.mobile-wrap .reportform {
 
 /* change background and text color for players rank box that shows at bottom of each players photo */
 #body_lineup.custom_lineup_body form tr.player_row td.pos-rank {
-  background: var(--accent, #B82601) !important;
+  background: var(--primary, #B82601) !important;
   color: #fff
 }
 
 /* change bottom border color for each "th" table header for linep table */
 .starters_pos_th {
-  border-bottom: 0.188rem solid var(--accent-two, var(--accent, #B82601))
+  border-bottom: 0.188rem solid var(--primary-two, var(--primary, #B82601))
 }
 
 /* change bottom border color for each tablerow for linep table */
@@ -3514,7 +3534,7 @@ div.mobile-wrap .reportform {
 #body_lineup.custom_lineup_body form td.weekly-opp,
 #body_lineup.custom_lineup_body form td.weekly-opp a,
 .custom_lineup_submission_body tr.starter_totalsRow td {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 /* change background and color for drop down that displays as you scroll down page to show current starters */
@@ -3522,32 +3542,32 @@ div.mobile-wrap .reportform {
 .starter_count_reason_less,
 #body_lineup.custom_lineup_body .links_nav a {
   color: #fff;
-  background: var(--gradient-dark, #9c2000);
+  background: var(--primary-dark, #9c2000);
   background-image: none;
-  background-image: -webkit-linear-gradient(top, var(--gradient-light, #cb2a01), var(--gradient-dark, #9c2000));
-  background-image: -moz-linear-gradient(top, var(--gradient-light, #cb2a01), var(--gradient-dark, #9c2000));
-  background-image: -ms-linear-gradient(top, var(--gradient-light, #cb2a01), var(--gradient-dark, #9c2000));
-  background-image: -o-linear-gradient(top, var(--gradient-light, #cb2a01), var(--gradient-dark, #9c2000));
-  background-image: linear-gradient(to bottom, var(--gradient-light, #cb2a01), var(--gradient-dark, #9c2000));
+  background-image: -webkit-linear-gradient(top, var(--primary-light, #cb2a01), var(--primary-dark, #9c2000));
+  background-image: -moz-linear-gradient(top, var(--primary-light, #cb2a01), var(--primary-dark, #9c2000));
+  background-image: -ms-linear-gradient(top, var(--primary-light, #cb2a01), var(--primary-dark, #9c2000));
+  background-image: -o-linear-gradient(top, var(--primary-light, #cb2a01), var(--primary-dark, #9c2000));
+  background-image: linear-gradient(to bottom, var(--primary-light, #cb2a01), var(--primary-dark, #9c2000));
 }
 
 .starter_count_reason_more:hover,
 .starter_count_reason_less:hover,
 #body_lineup.custom_lineup_body .links_nav a:hover {
   color: #fff;
-  background: var(--gradient-light, #cb2a01);
+  background: var(--primary-light, #cb2a01);
   background-image: none;
-  background-image: -webkit-linear-gradient(top, var(--gradient-dark, #9c2000), var(--gradient-light, #cb2a01));
-  background-image: -moz-linear-gradient(top, var(--gradient-dark, #9c2000), var(--gradient-light, #cb2a01));
-  background-image: -ms-linear-gradient(top, var(--gradient-dark, #9c2000), var(--gradient-light, #cb2a01));
-  background-image: -o-linear-gradient(top, var(--gradient-dark, #9c2000), var(--gradient-light, #cb2a01));
-  background-image: linear-gradient(to bottom, var(--gradient-dark, #9c2000), var(--gradient-light, #cb2a01));
+  background-image: -webkit-linear-gradient(top, var(--primary-dark, #9c2000), var(--primary-light, #cb2a01));
+  background-image: -moz-linear-gradient(top, var(--primary-dark, #9c2000), var(--primary-light, #cb2a01));
+  background-image: -ms-linear-gradient(top, var(--primary-dark, #9c2000), var(--primary-light, #cb2a01));
+  background-image: -o-linear-gradient(top, var(--primary-dark, #9c2000), var(--primary-light, #cb2a01));
+  background-image: linear-gradient(to bottom, var(--primary-dark, #9c2000), var(--primary-light, #cb2a01));
 }
 
 /*CGT - change background and color for drop down button that displays as you scroll down page to show current starters */
 .starter_count_sub {
-  border: 0.188rem solid var(--accent-two, var(--accent, #B82601));
-  background: var(--main-four, var(--main, #080e25)) !important;
+  border: 0.188rem solid var(--primary-two, var(--primary, #B82601));
+  background: var(--neutral-four, var(--neutral, #080e25)) !important;
   box-shadow: 0 0 0.6rem rgba(45, 45, 45, .5);
   color: #fff;
 }
@@ -3600,19 +3620,19 @@ th.select-total-starters {
 /*******************************************/
 
 #weather-wrapper .current-conditions-place {
-  color: var(--accent, #B82601);
+  color: var(--primary, #B82601);
 }
 
 #weather-wrapper .as_close_btn {
-  border: 0.125rem solid var(--accent, #B82601);
-  background: var(--accent, #B82601);
+  border: 0.125rem solid var(--primary, #B82601);
+  background: var(--primary, #B82601);
   color: #fff;
   opacity: .6;
 }
 
 #weather-wrapper .as_close_btn:hover {
-  background: var(--accent, #B82601);
-  border-color: var(--accent, #B82601);
+  background: var(--primary, #B82601);
+  border-color: var(--primary, #B82601);
   color: #fff;
   opacity: 1;
 }
@@ -3623,7 +3643,7 @@ th.select-total-starters {
 
 .kickoff-conditions-temp,
 .current-conditions-temp {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 .current-conditions-header .current-conditions-text,
@@ -3675,16 +3695,16 @@ th.select-total-starters {
 }
 
 .target_report tr.lineup_player_row td.pos-rank {
-  background: var(--accent, #B82601) !important;
+  background: var(--primary, #B82601) !important;
   color: #fff
 }
 
 .target_report tr.lineup_player_row td.weekly-opp {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 .team_lineup_table .lineup_head {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 .target_report tr.lineup_player_row.previous_starter td.pphoto:before {
@@ -3722,21 +3742,21 @@ th.select-total-starters {
 abbr {
   cursor: pointer;
   text-decoration: none;
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 #tooltip {
-  background: var(--accent, #B82601) !important;
+  background: var(--primary, #B82601) !important;
   font-size: 0.875rem;
   border-radius: 0.188rem
 }
 
 #tooltip:after {
-  border-top-color: var(--accent, #B82601) !important
+  border-top-color: var(--primary, #B82601) !important
 }
 
 #tooltip.top:after {
-  border-top-color: var(--accent, #B82601) !important
+  border-top-color: var(--primary, #B82601) !important
 }
 
 
@@ -3813,19 +3833,19 @@ body.full-width {
   text-transform: uppercase;
   border: 0;
   font-weight: 700;
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 #commissioner_setup table.two_column_layout li,
 #my_options li {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 #commissioner_setup table.two_column_layout th:before {
   content: "";
   padding: 0 0.625rem;
   font-family: 'Font Awesome 6 Pro';
-  color: var(--main, #080e25);
+  color: var(--neutral, #080e25);
   font-weight: normal
 }
 
@@ -3959,8 +3979,8 @@ body.full-width {
 }
 
 #MFLPlayerPopupClose {
-  background: var(--accent, #B82601);
-  border-color: var(--accent, #B82601);
+  background: var(--primary, #B82601);
+  border-color: var(--primary, #B82601);
   color: #fff;
   right: 1.188rem;
   top: 1.063rem;
@@ -3971,15 +3991,15 @@ body.full-width {
 }
 
 #MFLPlayerPopupClose:hover {
-  background: var(--accent, #B82601);
-  border-color: var(--accent, #B82601);
+  background: var(--primary, #B82601);
+  border-color: var(--primary, #B82601);
   color: #fff;
   opacity: 1
 }
 
 ul.MFLPlayerPopupTab {
-  background: var(--accent, #B82601);
-  outline: 0.063rem solid var(--tab-menu, var(--main, #080e25));
+  background: var(--primary, #B82601);
+  outline: 0.063rem solid var(--tab-menu, var(--neutral, #080e25));
   border: 0.063rem solid #fff;
   height: auto;
   margin-bottom: 0.063rem;
@@ -3998,13 +4018,13 @@ ul.MFLPlayerPopupTab li a.active,
 ul.MFLPlayerPopupTab li a.active:hover,
 ul.MFLPlayerPopupTab li a.current,
 ul.MFLPlayerPopupTab li a.current:hover {
-  background: var(--tab-menu-hover, var(--accent, #B82601));
+  background: var(--tab-menu-hover, var(--primary, #B82601));
   color: #fff;
   text-decoration: none
 }
 
 ul.MFLPlayerPopupTab li a {
-  background: var(--tab-menu, var(--main, #080e25));
+  background: var(--tab-menu, var(--neutral, #080e25));
   color: #fff;
   border: 0;
   text-decoration: none
@@ -4012,13 +4032,13 @@ ul.MFLPlayerPopupTab li a {
 
 ul.MFLPlayerPopupTab li a:hover {
   color: #fff;
-  background: var(--tab-menu-hover, var(--accent, #B82601));
+  background: var(--tab-menu-hover, var(--primary, #B82601));
   text-decoration: none
 }
 
 .MFLPlayerPopupLoader {
   border: 1rem solid #eee;
-  border-top: 1rem solid var(--accent, #B82601)
+  border-top: 1rem solid var(--primary, #B82601)
 }
 
 #MFLPlayerPopupLoading {
@@ -4031,7 +4051,7 @@ ul.MFLPlayerPopupTab li a:hover {
 }
 
 #MFLPlayerPopupLinks {
-  background: var(--accent, #080e25);
+  background: var(--primary, #080e25);
   padding: 0.063rem 0
 }
 
@@ -4156,8 +4176,8 @@ footer {
 
 .footercontainer-outer {
   padding: 0.625rem 0.313rem;
-  background: var(--main-four, var(--main, #080e25));
-  border-top: 0.5rem solid var(--accent-two, var(--accent, #B82601));
+  background: var(--neutral-four, var(--neutral, #080e25));
+  border-top: 0.5rem solid var(--primary-two, var(--primary, #B82601));
   box-shadow: 0 0 0.6rem rgba(45, 45, 45, .5);
 }
 
@@ -4194,7 +4214,7 @@ footer {
 .f-title-icon {
   text-align: left;
   text-transform: uppercase;
-  color: var(--make-white, var(--accent, #fff));
+  color: var(--neutral-light, var(--primary, #fff));
   font-size: 0.938rem;
   margin-bottom: 0.125rem;
   font-weight: 600
@@ -4726,11 +4746,11 @@ table#youtubevideo.homepagemodule.report embed,
 #ScoreDetails td.subtotal+td,
 #body_detailed td.subtotal,
 #body_detailed td.subtotal+td {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 #fullSeasonPts td b {
-  color: var(--accent, #B82601);
+  color: var(--primary, #B82601);
   font-weight: normal
 }
 
@@ -4919,7 +4939,7 @@ html[xmlns] .flexslider .slides {
   z-index: 10;
   overflow: hidden;
   cursor: pointer;
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 .flex-pauseplay a:before {
@@ -5027,11 +5047,11 @@ html[xmlns] .flexslider .slides {
 }
 
 #MFLBoxContainer .MFLBoxDetailsArrow {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 #MFLBoxContainer .MFLBoxDetailsArrow:hover {
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 .MFLBoxArrowRight:before,
@@ -5041,7 +5061,7 @@ html[xmlns] .flexslider .slides {
 
 .MFLBoxArrowLeft:hover:before,
 .MFLBoxArrowRight:hover:before {
-  color: var(--accent, #B82601);
+  color: var(--primary, #B82601);
 }
 
 .MFLBoxArrowLeft.MFLBoxArrowFaded:before,
@@ -5051,13 +5071,13 @@ html[xmlns] .flexslider .slides {
 
 #MFLBoxWrapper .MFLBoxPlayerDetailsClose {
   color: #fff;
-  border: .125rem solid var(--accent, #B82601);
-  background: var(--accent, #B82601)
+  border: .125rem solid var(--primary, #B82601);
+  background: var(--primary, #B82601)
 }
 
 #MFLBoxWrapper .MFLBoxPlayerDetailsClose:hover {
-  background: var(--accent, #B82601);
-  border-color: var(--accent, #B82601)
+  background: var(--primary, #B82601);
+  border-color: var(--primary, #B82601)
 }
 
 #MFLBoxWrapper #MFLBoxPlayerDetails {
@@ -5067,7 +5087,7 @@ html[xmlns] .flexslider .slides {
 }
 
 #MFLBoxWrapper .MFLBoxPlayerDetailsTR:hover {
-  background-color: var(--lightest-color, #FBF3F2)
+  background-color: var(--primary-lighter, #FBF3F2)
 }
 
 #MFLBoxWrapper #MFLBoxPlayerDetails td span[style="color:red"],
@@ -5080,7 +5100,7 @@ html[xmlns] .flexslider .slides {
 }
 
 #MFLBoxWrapper .MFLBoxLiveStatsContent {
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
   box-shadow: 0 0 0.063rem 0.063rem rgba(0, 0, 0, 0.1);
   border: 0.25rem solid #aaa;
   background: #FFF;
@@ -5101,16 +5121,16 @@ html[xmlns] .flexslider .slides {
 }
 
 #MFLBoxWrapper #MFLBoxContainer input[type="button"] {
-  background: var(--main-four, var(--main, #080e25));
+  background: var(--neutral-four, var(--neutral, #080e25));
   color: #fff
 }
 
 #MFLBoxWrapper #MFLBoxContainer input[type="button"]:hover {
-  background: var(--accent-three, var(--accent, #B82601))
+  background: var(--primary-three, var(--primary, #B82601))
 }
 
 #MFLBoxWrapper #MFLBoxContainer input[style="cursor:default"] {
-  background: var(--accent-three, var(--accent, #B82601))
+  background: var(--primary-three, var(--primary, #B82601))
 }
 
 #MFLBoxWrapper td.MFLPaceScore .warning {
@@ -5126,7 +5146,7 @@ html[xmlns] .flexslider .slides {
 }
 
 #MFLBoxContainer .fa-arrow-right-arrow-left:hover {
-  color: var(--accent, #B82601);
+  color: var(--primary, #B82601);
 }
 
 #MFLBoxWrapper .MFLBoxPlayerDetailsHeader th {
@@ -5313,7 +5333,7 @@ table.playoffbracket {
   align-items: center;
   justify-content: left;
   font-weight: bold;
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 .playoffbracket td {
@@ -5364,8 +5384,8 @@ button[id^="add_to_tab_"] {
 #body_csetup_hmpgmod #home_page_setup>div.mobile-wrap>table>tbody>tr:nth-child(2)>td:before,
 #hpm_table_0:before {
   content: "Home Page Tabs";
-  background: var(--th-bg, #080e25);
-  color: var(--make-white, var(--accent, #fff));
+  background: var(--primary-darker, #080e25);
+  color: var(--neutral-light, var(--primary, #fff));
   width: 100%;
   margin-bottom: 0.313rem;
   font-size: 0.875rem;
@@ -5391,9 +5411,9 @@ button[id^="add_to_tab_"] {
 
 #body_csetup_hmpgmod table[id*="hpm_table_"] table:first-child {
   table-layout: fixed;
-  background: var(--th-bg, #080e25);
+  background: var(--primary-darker, #080e25);
   color: #fff;
-  border: 0.063rem solid var(--th-bg, #080e25)
+  border: 0.063rem solid var(--primary-darker, #080e25)
 }
 
 #body_csetup_hmpgmod table[id*="hpm_table_"] table:first-child a {
@@ -5809,7 +5829,7 @@ div.mobile-wrap:empty {
 }
 
 #playoffTable td i {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 /* set width or heights for franchise icons or logos */
@@ -5831,8 +5851,8 @@ div.mobile-wrap:empty {
   border-radius: 0.188rem;
   text-align: center;
   font-weight: 700;
-  background: var(--accent, #B82601);
-  border: 0.125rem solid var(--accent, #B82601);
+  background: var(--primary, #B82601);
+  border: 0.125rem solid var(--primary, #B82601);
   color: #fff;
   right: 0.563rem;
   top: 0.625rem;
@@ -5863,7 +5883,7 @@ div.mobile-wrap:empty {
   text-align: left;
   line-height: 100%;
   text-transform: uppercase;
-  color: var(--main-four, var(--main, #080e25));
+  color: var(--neutral-four, var(--neutral, #080e25));
   padding-bottom: 0
 }
 
@@ -5883,15 +5903,15 @@ div.mobile-wrap:empty {
   content: "\f005"; /*CGT - star Font Awesome icon*/
   font-family: 'Font Awesome 6 Pro';
   padding-right: 0.188rem;
-  color: var(--main-four, var(--main, #080e25))
+  color: var(--neutral-four, var(--neutral, #080e25))
 }
 
 #playoff-report-modal-content .still-tied {
   font-style: italic;
   margin: 0.625rem;
   margin-bottom: 0;
-  border-top: 0.125rem solid var(--main-four, var(--main, #080e25));
-  border-bottom: 0.125rem solid var(--main-four, var(--main, #080e25));
+  border-top: 0.125rem solid var(--neutral-four, var(--neutral, #080e25));
+  border-bottom: 0.125rem solid var(--neutral-four, var(--neutral, #080e25));
   padding: 0.625rem 0
 }
 
@@ -5981,8 +6001,8 @@ tr.assets input[name^="bbid"] {
 }
 
 #championship_plaque .plaqueframe {
-  background: var(--lightest-color, #FBF3F2);
-  border: 0 solid var(--main, #080e25);
+  background: var(--primary-lighter, #FBF3F2);
+  border: 0 solid var(--neutral, #080e25);
   vertical-align: middle;
 }
 
@@ -5997,16 +6017,16 @@ tr.assets input[name^="bbid"] {
   vertical-align: middle;
   margin: 0.313rem;
   border-radius: 0.188rem;
-  background: var(--accent, #B82601);
+  background: var(--primary, #B82601);
   color: #fff;
   font-size: 1.375rem;
   text-transform: uppercase;
-  border: 0.063rem solid var(--accent, #B82601);
+  border: 0.063rem solid var(--primary, #B82601);
 }
 
 #championship_plaque .plaque div {
   background: #fff;
-  border: 0.125rem solid var(--accent, #B82601);
+  border: 0.125rem solid var(--primary, #B82601);
   padding: 0.313rem;
   display: inline-table;
   float: none;
@@ -6017,7 +6037,7 @@ tr.assets input[name^="bbid"] {
 #championship_plaque .plaque div h3 {
   display: table-row;
   border: 0;
-  color: var(--accent, #B82601) !important;
+  color: var(--primary, #B82601) !important;
   margin: 0;
   padding: 0;
   font-size: 0.875rem;
@@ -6029,7 +6049,7 @@ tr.assets input[name^="bbid"] {
 
 #championship_plaque .plaque div h4 {
   display: table-row;
-  color: var(--main, #080e25);
+  color: var(--neutral, #080e25);
   margin: 0;
   padding: 0;
   font-size: 0.875rem;
@@ -6053,27 +6073,27 @@ tr.assets input[name^="bbid"] {
 /* owner name */
 
 #owner_activity td.franchisename {
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 th span[id*="showBench"] a,
 th span[id*="hideBench"] a,
 a[id*="showAssets"],
 a[id*="hideAssets"] {
-  color: var(--make-white, var(--accent, #fff))
+  color: var(--neutral-light, var(--primary, #fff))
 }
 
 th span[id*="showBench"] a:hover,
 th span[id*="hideBench"] a:hover,
 a[id*="showAssets"]:hover,
 a[id*="hideAssets"]:hover {
-  color: var(--make-white, var(--accent, #fff))
+  color: var(--neutral-light, var(--primary, #fff))
 }
 
 .bottomteam,
 .topteam,
 .bracket {
-  border-color: var(--main, #080e25)
+  border-color: var(--neutral, #080e25)
 }
 
 #hsubmenu ul li {
@@ -6097,19 +6117,19 @@ a[id*="hideAssets"]:hover {
 
 #hsubmenu ul li a:hover,
 #hsubmenu ul li:hover a {
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 #hsubmenu {
   border: 0;
   box-shadow: 0 0 0.063rem 0.063rem rgba(0, 0, 0, 0.1);
-  background: var(--accent, #B82601);
+  background: var(--primary, #B82601);
   border-radius: 0.188rem;
 }
 
 #league_champions th[colspan="2"],
 #last_weeks_fantasy_results td.points {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 td.is-freeagent {
@@ -6235,12 +6255,12 @@ table.previews_table>tbody>tr:nth-child(1)>table.report.nocaption td div {
 /***************************************/
 
 #roster_column_left td.no_icons a {
-  background: var(--accent, #B82601);
+  background: var(--primary, #B82601);
   color: #fff
 }
 
 #roster_column_left td.no_icons a.rs_active {
-  background: var(--main, #080e25)
+  background: var(--neutral, #080e25)
 }
 
 #roster_column_left img {
@@ -6311,8 +6331,8 @@ tr.tradedifference td {
 }
 
 #MFLroster .savingsreview {
-  border-top: 0.25rem solid var(--accent-two, var(--accent, #B82601));
-  background: var(--main-four, var(--main, #080e25)) !important;
+  border-top: 0.25rem solid var(--primary-two, var(--primary, #B82601));
+  background: var(--neutral-four, var(--neutral, #080e25)) !important;
   box-shadow: 0 0 .6rem rgba(45, 45, 45, .5);
 }
 
@@ -6369,7 +6389,7 @@ tr.tradedifference td {
 #MFLNFLMatchupsUpdate,
 .MFLNFLLiveClock,
 .MFLLiveClock {
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 
@@ -6385,7 +6405,7 @@ tr.tradedifference td {
 /* font color for boxscores winner arrow and pace score */
 
 .MFLGameLinks .MFLPaceScore {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 .MFLGameLinks .MFLWinMarker,
@@ -6398,12 +6418,12 @@ tr.tradedifference td {
 
 #MFLBoxHolder td.matchupHilite table,
 #MFLBoxHolder td.matchupHilite:hover table {
-  background: var(--lightest-color, #FBF3F2);
+  background: var(--primary-lighter, #FBF3F2);
   border-color: #eee
 }
 
 #MFLBoxHolder td.matchupLolite:hover table {
-  background: var(--lightest-color, #FBF3F2);
+  background: var(--primary-lighter, #FBF3F2);
   border-color: #eee
 }
 
@@ -6419,16 +6439,16 @@ tr.tradedifference td {
 /* background gradient color for the banner area for scoreboard name */
 
 #MFLCenterTop {
-  border: 0.063rem solid var(--accent, #B82601);
+  border: 0.063rem solid var(--primary, #B82601);
   background: #fff;
   color: #fff;
-  background: var(--gradient-light, #cb2a01);
+  background: var(--primary-light, #cb2a01);
   background-image: none;
-  background-image: -webkit-linear-gradient(top, var(--gradient-light, #cb2a01), var(--gradient-dark, #9c2000));
-  background-image: -moz-linear-gradient(top, var(--gradient-light, #cb2a01), var(--gradient-dark, #9c2000));
-  background-image: -ms-linear-gradient(top, var(--gradient-light, #cb2a01), var(--gradient-dark, #9c2000));
-  background-image: -o-linear-gradient(top, var(--gradient-light, #cb2a01), var(--gradient-dark, #9c2000));
-  background-image: linear-gradient(to bottom, var(--gradient-light, #cb2a01), var(--gradient-dark, #9c2000))
+  background-image: -webkit-linear-gradient(top, var(--primary-light, #cb2a01), var(--primary-dark, #9c2000));
+  background-image: -moz-linear-gradient(top, var(--primary-light, #cb2a01), var(--primary-dark, #9c2000));
+  background-image: -ms-linear-gradient(top, var(--primary-light, #cb2a01), var(--primary-dark, #9c2000));
+  background-image: -o-linear-gradient(top, var(--primary-light, #cb2a01), var(--primary-dark, #9c2000));
+  background-image: linear-gradient(to bottom, var(--primary-light, #cb2a01), var(--primary-dark, #9c2000))
 }
 
 #MFLCenterTop span {
@@ -6440,7 +6460,7 @@ tr.tradedifference td {
 
 #MFLRoadTeamName,
 #MFLHomeTeamName {
-  color: var(--accent, #B82601);
+  color: var(--primary, #B82601);
   border-color: #eee
 }
 
@@ -6490,9 +6510,9 @@ tr.tradedifference td {
 
 #MFLRoadTeamRecord,
 #MFLHomeTeamRecord {
-  color: var(--main, #080e25);
+  color: var(--neutral, #080e25);
   border-color: #eee;
-  background: var(--lightest-color, #FBF3F2)
+  background: var(--primary-lighter, #FBF3F2)
 }
 
 
@@ -6500,16 +6520,16 @@ tr.tradedifference td {
 
 #MFLRoadScore span a,
 #MFLHomeScore span a {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 
 /* P-YTP-PMR backgrounds and text coloring */
 
 .MFLMainScoreboard td.MFLScoreboardTitle {
-  color: var(--main, #080e25);
+  color: var(--neutral, #080e25);
   border-color: #eee;
-  background: var(--lightest-color, #FBF3F2)
+  background: var(--primary-lighter, #FBF3F2)
 }
 
 #MFLRoadPlayers,
@@ -6518,7 +6538,7 @@ tr.tradedifference td {
 #MFLHomePlayers,
 #MFLHomeYTP,
 #MFLHomePMR {
-  color: var(--accent, #B82601);
+  color: var(--primary, #B82601);
   border-color: #eee;
   background: #fff;
 }
@@ -6545,42 +6565,42 @@ tr.tradedifference td {
 
 .MFLTeamLineup td.oppRankGreatMatchup {
   background: #04B404;
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 .MFLScoreboardLineups td.oppRankGoodMatchup {
   background: #01DF01;
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 .MFLScoreboardLineups td.oppRankAvgMatchup {
   background: #FFFF00;
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 .MFLScoreboardLineups td.oppRankPoorMatchup {
   background: #FF8000;
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 .MFLScoreboardLineups td.oppRankBadMatchup {
   background: #FF0000;
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 
 /* the small tooltip popup arrows shown when hovering actual and pace scores */
 
 body #scoreboardTooltip:after {
-  border-top-color: var(--accent, #B82601) !important;
+  border-top-color: var(--primary, #B82601) !important;
 }
 
 body #scoreboardTooltip.top:after {
-  border-bottom-color: var(--accent, #B82601) !important;
+  border-bottom-color: var(--primary, #B82601) !important;
 }
 
 #scoreboardTooltip .MFLPlayerName b {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 .MFLScoreboardLineups tr.rowGameOver {
@@ -6629,7 +6649,7 @@ body #scoreboardTooltip.top:after {
 /***************************************/
 
 .standingstable .headerrow th {
-  background: var(--accent, #B82601);
+  background: var(--primary, #B82601);
   color: #fff;
   font-size: 1.375rem;
   text-transform: uppercase;
@@ -6637,16 +6657,16 @@ body #scoreboardTooltip.top:after {
 }
 
 #mflhistory td.gamedetailcell:first-of-type {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 #mflhistory .gamecentertable td.gamescore {
-  color: var(--accent, #B82601);
+  color: var(--primary, #B82601);
   font-weight: bold
 }
 
 #mflhistory .homepagemodule.prevmatchups caption {
-  background: var(--accent, #B82601);
+  background: var(--primary, #B82601);
   color: #fff
 }
 
@@ -6681,7 +6701,7 @@ body #scoreboardTooltip.top:after {
 /***************************************/
 
 #rulestabs {
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 #rulestabs h4 {
@@ -6730,7 +6750,7 @@ a.tabhead,
 a.tabheaddouble {
   font-size: 1rem;
   text-decoration: none;
-  color: var(--accent, #B82601) !important;
+  color: var(--primary, #B82601) !important;
   font-weight: 600
 }
 
@@ -6740,7 +6760,7 @@ a.tabheaddouble {
 
 a.subhead {
   font-size: 0.813rem;
-  color: var(--main, #080e25) !important;
+  color: var(--neutral, #080e25) !important;
   padding-left: 1.25rem;
   font-weight: 600;
   text-decoration: none
@@ -6775,7 +6795,7 @@ a.subhead {
 }
 
 #rulestabs .subtext {
-  color: var(--accent, #B82601);
+  color: var(--primary, #B82601);
   margin-left: 1.25rem
 }
 
@@ -6792,19 +6812,19 @@ a.subhead {
 /* COLORING */
 
 #custom_draftroom #draft_countdown_timer:before {
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 #custom_draftroom #draft-controller {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 #custom_draftroom #draft-edit a {
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 #custom_draftroom #draft-edit a:hover {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 #custom_draftroom .fa-pause-circle,
@@ -6841,19 +6861,19 @@ a.subhead {
 }
 
 #custom_draftroom #make_pick i {
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 #custom_draftroom #make_pick i:hover {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 
 /* HIGHLIGHT BG COLOR */
 
 #custom_draftroom .moohighlight {
-  background-color: var(--lightest-color, #FBF3F2) !important;
-  color: var(--accent, #B82601)
+  background-color: var(--primary-lighter, #FBF3F2) !important;
+  color: var(--primary, #B82601)
 }
 
 #draft_status_table .moohighlight {
@@ -6861,8 +6881,8 @@ a.subhead {
 }
 
 #draft_status_table .moohighlight:first-child {
-  background-color: var(--lightest-color, #FBF3F2) !important;
-  color: var(--accent, #B82601)
+  background-color: var(--primary-lighter, #FBF3F2) !important;
+  color: var(--primary, #B82601)
 }
 
 
@@ -6874,7 +6894,7 @@ a.subhead {
 }
 
 #custom_draftroom #draft_player_link {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 #custom_draftroom #player-profile th {
@@ -6883,11 +6903,11 @@ a.subhead {
 
 #custom_draftroom #player-profile #draft_player_photo {
   border: 0.125rem solid #fff;
-  outline: 0.063rem solid var(--accent, #B82601)
+  outline: 0.063rem solid var(--primary, #B82601)
 }
 
 #custom_draftroom #player-profile #draft_player_link {
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 
@@ -7339,7 +7359,7 @@ a.subhead {
 }
 
 #current_auctions td:before {
-  color: var(--accent, #B82601);
+  color: var(--primary, #B82601);
   text-transform: uppercase;
   font-weight: bold;
   background: #eee;
@@ -7436,7 +7456,7 @@ a.subhead {
 }
 
 #body_add_drop form .mobile-view caption {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 #body_add_drop form #add_name_field_id {
@@ -7460,7 +7480,7 @@ a.subhead {
 }
 
 #body_add_drop #waiver_request_list td.action a:hover {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 
@@ -7658,18 +7678,18 @@ a.subhead {
 }
 
 #body_add_drop form .head-th {
-  background: var(--th-bg, #080e25);
-  color: var(--make-white, var(--accent, #fff));
+  background: var(--primary-darker, #080e25);
+  color: var(--neutral-light, var(--primary, #fff));
   position: relative
 }
 
 #body_add_drop form .head-th i {
-  color: var(--make-white, var(--accent, #fff));
+  color: var(--neutral-light, var(--primary, #fff));
 }
 
 #body_add_drop form .head-th a {
   text-decoration: none;
-  color: var(--make-white, var(--accent, #fff));
+  color: var(--neutral-light, var(--primary, #fff));
 }
 
 #body_add_drop .table2 table table td,
@@ -7776,7 +7796,7 @@ a.subhead {
 
 .mobile-view.leftS .head-th a,
 .mobile-view.leftS .head-th {
-  color: var(--make-white, var(--accent, #fff))
+  color: var(--neutral-light, var(--primary, #fff))
 }
 
 
@@ -7801,7 +7821,7 @@ a.subhead {
 #body_options_256 .mobile-view.current-roster caption {
   text-align: center;
   padding-left: 0;
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 #contest_lineup .append_contest .alert-info-table,
@@ -7964,7 +7984,7 @@ table.make-pick-table>tbody>tr>td.mobile-view.leftS>table>tbody>tr:nth-child(2)>
 /* COLORING */
 
 .custom-loadplayer-table table caption {
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 .leftSL,
@@ -7976,8 +7996,8 @@ table.make-pick-table>tbody>tr>td.mobile-view.leftS>table>tbody>tr:nth-child(2)>
 
 .mobile-view.leftSL .head-th a,
 .mobile-view.leftS .head-th {
-  background: var(--th-bg, #080e25);
-  color: var(--make-white, var(--accent, #fff));
+  background: var(--primary-darker, #080e25);
+  color: var(--neutral-light, var(--primary, #fff));
 }
 
 /* FORMATTING BELOW  */
@@ -8073,11 +8093,11 @@ div.custom-loadplayer {
 .actions-by::before,
 .expires-by::before {
   background: #fff;
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 .offerer::before {
-  background: var(--accent, #B82601);
+  background: var(--primary, #B82601);
   color: #fff
 }
 
@@ -8278,7 +8298,7 @@ span.plus-toggle-stats {
   position: absolute;
   width: 0.875rem;
   height: 0.875rem;
-  background: var(--accent, #B82601);
+  background: var(--primary, #B82601);
   border-radius: 0.188rem;
   z-index: 0;
   top: 50%;
@@ -8375,13 +8395,13 @@ span[id*="collapseAvg_"] {
   cursor: pointer;
   border-radius: 0.188rem;
   box-shadow: 0 0 0.063rem 0.063rem rgba(0, 0, 0, 0.1);
-  background: var(--gradient-dark, #9c2000);
+  background: var(--primary-dark, #9c2000);
   background-image: none;
-  background-image: -webkit-linear-gradient(top, var(--gradient-light, #cb2a01), var(--gradient-dark, #9c2000));
-  background-image: -moz-linear-gradient(top, var(--gradient-light, #cb2a01), var(--gradient-dark, #9c2000));
-  background-image: -ms-linear-gradient(top, var(--gradient-light, #cb2a01), var(--gradient-dark, #9c2000));
-  background-image: -o-linear-gradient(top, var(--gradient-light, #cb2a01), var(--gradient-dark, #9c2000));
-  background-image: linear-gradient(to bottom, var(--gradient-light, #cb2a01), var(--gradient-dark, #9c2000));
+  background-image: -webkit-linear-gradient(top, var(--primary-light, #cb2a01), var(--primary-dark, #9c2000));
+  background-image: -moz-linear-gradient(top, var(--primary-light, #cb2a01), var(--primary-dark, #9c2000));
+  background-image: -ms-linear-gradient(top, var(--primary-light, #cb2a01), var(--primary-dark, #9c2000));
+  background-image: -o-linear-gradient(top, var(--primary-light, #cb2a01), var(--primary-dark, #9c2000));
+  background-image: linear-gradient(to bottom, var(--primary-light, #cb2a01), var(--primary-dark, #9c2000));
   vertical-align: middle
 }
 
@@ -8389,13 +8409,13 @@ span[id*="collapseAvg_"] {
 #nflTotalActive:hover,
 #nflAvgInactive:hover,
 #nflTotalInactive:hover {
-  background: var(--gradient-light, #cb2a01);
+  background: var(--primary-light, #cb2a01);
   background-image: none;
-  background-image: -webkit-linear-gradient(top, var(--gradient-dark, #9c2000), var(--gradient-light, #cb2a01));
-  background-image: -moz-linear-gradient(top, var(--gradient-dark, #9c2000), var(--gradient-light, #cb2a01));
-  background-image: -ms-linear-gradient(top, var(--gradient-dark, #9c2000), var(--gradient-light, #cb2a01));
-  background-image: -o-linear-gradient(top, var(--gradient-dark, #9c2000), var(--gradient-light, #cb2a01));
-  background-image: linear-gradient(to bottom, var(--gradient-dark, #9c2000), var(--gradient-light, #cb2a01));
+  background-image: -webkit-linear-gradient(top, var(--primary-dark, #9c2000), var(--primary-light, #cb2a01));
+  background-image: -moz-linear-gradient(top, var(--primary-dark, #9c2000), var(--primary-light, #cb2a01));
+  background-image: -ms-linear-gradient(top, var(--primary-dark, #9c2000), var(--primary-light, #cb2a01));
+  background-image: -o-linear-gradient(top, var(--primary-dark, #9c2000), var(--primary-light, #cb2a01));
+  background-image: linear-gradient(to bottom, var(--primary-dark, #9c2000), var(--primary-light, #cb2a01));
 }
 
 #nflAvgActive a,
@@ -8420,7 +8440,7 @@ span[id*="collapseAvg_"] {
 
 #body_options_03 div.mobile-wrap .report .franchise-date,
 #transactions td .franchise-date {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 
@@ -8483,7 +8503,7 @@ span[id*="collapseAvg_"] {
 }
 
 #body_options_182 #container-wrap>div.mobile-wrap>table>tbody>tr>td:nth-child(4) table tr:last-child td {
-  background: var(--th-bg, #080e25);
+  background: var(--primary-darker, #080e25);
   color: #fff;
 }
 
@@ -8541,7 +8561,7 @@ span[id*="collapseAvg_"] {
 }
 
 #options_71 .two_column_layout caption {
-  color: var(--main, #080e25)
+  color: var(--neutral, #080e25)
 }
 
 
@@ -8631,17 +8651,17 @@ td::-webkit-scrollbar {
 
 /* Thumb */
 ::-webkit-scrollbar-thumb {
-  background: var(--scrollbar-thumb, var(--accent, #B82601));
+  background: var(--scrollbar-thumb, var(--primary, #B82601));
   border-radius: 0.313rem;
   border: 0
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--scrollbar-thumb-active, var(--gradient-dark, #9c2000))
+  background: var(--scrollbar-thumb-active, var(--primary-dark, #9c2000))
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background: var(--scrollbar-thumb-active, var(--gradient-dark, #9c2000))
+  background: var(--scrollbar-thumb-active, var(--primary-dark, #9c2000))
 }
 
 ::-webkit-scrollbar-thumb:vertical {
@@ -8663,41 +8683,41 @@ td::-webkit-scrollbar {
 /* Up */
 ::-webkit-scrollbar-button:vertical:decrement {
   border-width: var(--scrollbar-border-width-up, 0 0.375rem 0.625rem 0.375rem);
-  border-color: transparent transparent var(--scrollbar-thumb, var(--main, #080e25)) transparent
+  border-color: transparent transparent var(--scrollbar-thumb, var(--neutral, #080e25)) transparent
 }
 
 ::-webkit-scrollbar-button:vertical:decrement:hover {
-  border-color: transparent transparent var(--accent, #B82601) transparent
+  border-color: transparent transparent var(--primary, #B82601) transparent
 }
 
 /* Down */
 ::-webkit-scrollbar-button:vertical:increment {
   border-width: var(--scrollbar-border-width-down, 0.625rem 0.375rem 0 0.375rem);
-  border-color: var(--scrollbar-thumb, var(--main, #080e25)) transparent transparent transparent
+  border-color: var(--scrollbar-thumb, var(--neutral, #080e25)) transparent transparent transparent
 }
 
 ::-webkit-scrollbar-button:vertical:increment:hover {
-  border-color: var(--accent, #B82601) transparent transparent transparent
+  border-color: var(--primary, #B82601) transparent transparent transparent
 }
 
 /* Left */
 ::-webkit-scrollbar-button:horizontal:decrement {
   border-width: var(--scrollbar-border-width-left, 0.375rem 0.625rem 0.375rem 0);
-  border-color: transparent var(--scrollbar-thumb, var(--main, #080e25)) transparent transparent
+  border-color: transparent var(--scrollbar-thumb, var(--neutral, #080e25)) transparent transparent
 }
 
 ::-webkit-scrollbar-button:horizontal:decrement:hover {
-  border-color: transparent var(--accent, #B82601) transparent transparent
+  border-color: transparent var(--primary, #B82601) transparent transparent
 }
 
 /* Right */
 ::-webkit-scrollbar-button:horizontal:increment {
   border-width: var(--scrollbar-border-width-right, 0.375rem 0 0.375rem 0.625rem);
-  border-color: transparent transparent transparent var(--scrollbar-thumb, var(--main, #080e25))
+  border-color: transparent transparent transparent var(--scrollbar-thumb, var(--neutral, #080e25))
 }
 
 ::-webkit-scrollbar-button:horizontal:increment:hover {
-  border-color: transparent transparent transparent var(--accent, #B82601)
+  border-color: transparent transparent transparent var(--primary, #B82601)
 }
 
 
@@ -9051,7 +9071,7 @@ div.ls_withposs.ls_changed,
 
 #body_ajax_ls table div.ls_player_stats div {
   font-style: normal;
-  color: var(--accent, #B82601);
+  color: var(--primary, #B82601);
 }
 
 #body_ajax_ls #ls_ticker_tab_id[style*="display: inline;"]+div,
@@ -9231,7 +9251,7 @@ div.ls_team_points {
 
 #body_ajax_ls div.ls_other_game.current_matchup {
   background-color: #eee;
-  border-color: var(--accent);
+  border-color: var(--primary);
 }
 
 
@@ -9528,8 +9548,8 @@ div.ls_team_points {
   text-align: center;
   border: 0.125rem solid #fff;
   font-weight: 700;
-  background: var(--accent, #B82601);
-  border-color: var(--accent, #B82601);
+  background: var(--primary, #B82601);
+  border-color: var(--primary, #B82601);
   color: #fff;
   right: 0.563rem;
   top: 0.625rem;
@@ -9542,8 +9562,8 @@ div.ls_team_points {
 
 .ls-modal-header .close:hover,
 .ls-modal-header .close:focus {
-  background: var(--accent, #B82601) !important;
-  border-color: var(--accent, #B82601) !important;
+  background: var(--primary, #B82601) !important;
+  border-color: var(--primary, #B82601) !important;
   color: #fff !important;
   opacity: 1
 }
@@ -9562,7 +9582,7 @@ div.ls_team_points {
   text-align: left;
   line-height: 100%;
   text-transform: uppercase;
-  color: var(--main-four, var(--main, #080e25));
+  color: var(--neutral-four, var(--neutral, #080e25));
 }
 
 .ls-history-modal .ls-modal-header table caption {
@@ -9571,7 +9591,7 @@ div.ls_team_points {
 
 .ls-history-modal .ls-modal-header h2 table+span {
   font-size: 0.75rem;
-  color: var(--main, #000);
+  color: var(--neutral, #000);
   padding-left: 0.313rem !important
 }
 
@@ -9743,11 +9763,11 @@ div.ls_team_points {
   --highlight-separate: 0.063rem solid #eee;
 
   /*set bg color of the table header (th)*/
-  --table-header-bg: var(--th-bg, #080e25);
+  --table-header-bg: var(--primary-darker, #080e25);
   /*if above background color is set to transparent you must set the following to a solid color
 so that when table is scrolled the fixed leftside th content is not transparent and will not
 show table data underneathe it - if above is set to solid color just set this to same color*/
-  --table-header-bg-fixed: var(--th-bg, #080e25);
+  --table-header-bg-fixed: var(--primary-darker, #080e25);
 
   /* set text color for defunct franchises */
   --defunct-bg-text: #fff;
@@ -9809,7 +9829,7 @@ td#diceRollResult table td:first-of-type {
 
 td#diceRollResult table td:last-of-type {
   font-weight: bold;
-  color: var(--accent, #ff4200);
+  color: var(--primary, #ff4200);
 }
 
 td#diceRollResult table tr:nth-child(2)>td:nth-child(1):before {
@@ -9945,7 +9965,7 @@ td.dice_value {
 /***************************************/
 
 .as_scores {
-  color: var(--accent, #ff4200)
+  color: var(--primary, #ff4200)
 }
 
 .as_pace_box {
@@ -9991,7 +10011,7 @@ td.mflLive_details_pace_behind {
 }
 
 #popup-ignoreLeagues-caption {
-  color: var(--accent, #b82601);
+  color: var(--primary, #b82601);
   font-family: 'Roboto Condensed', sans-serif
 }
 
@@ -10135,7 +10155,7 @@ td.mondayLoser .monday_proj_total {
   text-align: left;
   line-height: 2.5rem;
   text-transform: uppercase;
-  color: var(--main-four, var(--main, #080e25));
+  color: var(--neutral-four, var(--neutral, #080e25));
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -10233,7 +10253,7 @@ div.sub-content.editable .insertIcons {
 
 /***************************************/
 #body_all_reports table td.two_column_layout th {
-  color: var(--accent, #B82601);
+  color: var(--primary, #B82601);
   font-size: 1.375rem;
   background: none;
   text-align: left;
@@ -10294,7 +10314,7 @@ div.sub-content.editable .insertIcons {
 
 /***************************************/
 .draft_warning {
-  background: var(--tab-menu, var(--main, #080e25)) !important;
+  background: var(--tab-menu, var(--neutral, #080e25)) !important;
   color: #fff !important;
   font-weight: bold !important;
 }
@@ -10523,7 +10543,7 @@ div.sub-content.editable .insertIcons {
   }
 
   #body_csetup_revtrad table.report tr.newposition+tr td:last-of-type {
-    border-bottom: 0.25rem solid var(--accent)
+    border-bottom: 0.25rem solid var(--primary)
   }
 
   /* Set heights to scroll on mobiles */
@@ -10535,7 +10555,7 @@ div.sub-content.editable .insertIcons {
   #body_csetup_revtrad table.report tr.newposition:before {
     display: table-caption;
     width: 100%;
-    color: var(--accent);
+    color: var(--primary);
     font-weight: bold;
     text-align: center;
   }
@@ -10751,7 +10771,7 @@ div.sub-content.editable .insertIcons {
   }
 
   #body_options_05 #container-wrap>.mobile-wrap table.report tr.newposition+tr td:last-of-type {
-    border-bottom: 0.25rem solid var(--accent)
+    border-bottom: 0.25rem solid var(--primary)
   }
 }
 
@@ -11077,12 +11097,12 @@ div.sub-content.editable .insertIcons {
   }
 
   .myfantasyleague_menu ul li label span {
-    background: var(--accent, #B82601)
+    background: var(--primary, #B82601)
   }
 
   .myfantasyleague_menu>label span:before,
   .myfantasyleague_menu>label span:after {
-    background: var(--accent, #B82601)
+    background: var(--primary, #B82601)
   }
 
   .myfantasyleague_menu ul li label span:before,
@@ -11095,18 +11115,18 @@ div.sub-content.editable .insertIcons {
   }
 
   .myfantasyleague_menu ul ul li a:before {
-    border-left-color: var(--accent, #B82601)
+    border-left-color: var(--primary, #B82601)
   }
 
   .myfantasyleague_menu #sub0:first-of-type:checked~ul {
-    border-bottom: 0.25rem solid var(--accent, #B82601)
+    border-bottom: 0.25rem solid var(--primary, #B82601)
   }
 
   .myfantasyleague_menu ul ul li a,
   .myfantasyleague_menu ul ul li.has-sub a,
   .myfantasyleague_menu ul li a {
     border-top-color: rgba(0, 0, 0, .1);
-    color: var(--accent, #B82601) !important;
+    color: var(--primary, #B82601) !important;
     background: #fff !important
   }
 
@@ -11290,7 +11310,7 @@ div.sub-content.editable .insertIcons {
 
   .myfantasyleague_tabmenu>label span:before,
   .myfantasyleague_tabmenu>label span:after {
-    background: var(--tab-menu, var(--main, #080e25))
+    background: var(--tab-menu, var(--neutral, #080e25))
   }
 
   .myfantasyleague_tabmenu ul#homepagetabs {
@@ -11298,7 +11318,7 @@ div.sub-content.editable .insertIcons {
   }
 
   .myfantasyleague_tabmenu ul#homepagetabs li a {
-    color: var(--main, #080e25);
+    color: var(--neutral, #080e25);
     border-top-color: #ccc
   }
 
@@ -11310,12 +11330,12 @@ div.sub-content.editable .insertIcons {
   }
 
   .myfantasyleague_tabmenu #homepagetabs li:hover a {
-    color: var(--main, #080e25);
+    color: var(--neutral, #080e25);
     text-decoration: none
   }
 
   .myfantasyleague_tabmenu #homepagetabs li.currenttab a {
-    color: var(--accent, #B82601)
+    color: var(--primary, #B82601)
   }
 
   .myfantasyleague_tabmenu ul li:first-of-type a {
@@ -11333,15 +11353,15 @@ div.sub-content.editable .insertIcons {
 
   #myfantasyleague_tabs .myfantasyleague_tabmenu>label span:before,
   #myfantasyleague_tabs .myfantasyleague_tabmenu>label span:after {
-    background: var(--subtab-menu, var(--accent, #B82601))
+    background: var(--subtab-menu, var(--primary, #B82601))
   }
 
   #myfantasyleague_tabs .myfantasyleague_tabmenu #homepagetabs li a {
-    color: var(--main, #080e25)
+    color: var(--neutral, #080e25)
   }
 
   #myfantasyleague_tabs .myfantasyleague_tabmenu #homepagetabs li a:hover {
-    color: var(--main, #080e25)
+    color: var(--neutral, #080e25)
   }
 
   #myfantasyleague_tabs .myfantasyleague_tabmenu #homepagetabs li:hover {
@@ -11355,7 +11375,7 @@ div.sub-content.editable .insertIcons {
 
   #myfantasyleague_tabs .myfantasyleague_tabmenu #homepagetabs li.currenttab a,
   #myfantasyleague_tabs .myfantasyleague_tabmenu #homepagetabs li.currenttab:hover a {
-    color: var(--accent, #B82601)
+    color: var(--primary, #B82601)
   }
 
   .pagebody input,
@@ -11514,7 +11534,7 @@ div.sub-content.editable .insertIcons {
   }
 
   .MFLSkinSelection i.fa-paintbrush {
-    color: var(--accent, #B82601)
+    color: var(--primary, #B82601)
   }
 
   #body_csetup_hmpgmod #home_page_setup>div.mobile-wrap>table>tbody>tr:nth-child(2)>td {
@@ -11540,7 +11560,7 @@ div.sub-content.editable .insertIcons {
   }
 
   .banner-container {
-    border-top: 8px solid var(--accent);
+    border-top: 8px solid var(--primary);
   }
 }
 
@@ -12111,14 +12131,14 @@ body.habskin.sdd .bannericon {
 }
 
 body.habskin.sdd .svg-icon {
-  fill: var(--main-two, var(--main, #080e25));
+  fill: var(--neutral-two, var(--neutral, #080e25));
   color: #333
 }
 
 body.habskin.sdd .svg-icon:hover,
 body.nra .svg-iconlink:hover .svg-icon {
-  fill: var(--accent, #B82601);
-  color: var(--main-two, var(--main, #080e25))
+  fill: var(--primary, #B82601);
+  color: var(--neutral-two, var(--neutral, #080e25))
 }
 
 body.habskin.sdd .myfantasyleague_tabmenu,
@@ -12138,7 +12158,7 @@ body.habskin.sdd .myfantasyleague_tabmenu span[id*="tab_title"] {
 }
 
 body.habskin.sdd .myfantasyleague_tabmenu label {
-  background: var(--tab-menu-hover, var(--accent, #B82601))
+  background: var(--tab-menu-hover, var(--primary, #B82601))
 }
 
 body.habskin #roster_column_left td.no_icons a {
@@ -12165,7 +12185,7 @@ body.habskin #LS_TopTableHolder .franchiseicon {
 }
 
 body.habskin.sdd .banner-icon .year-text {
-  color: var(--accent);
+  color: var(--primary);
   font-size: 1.5rem;
   position: absolute;
   top: -3.75rem;
@@ -12275,14 +12295,14 @@ body.nra .bannericon {
 }
 
 body.nra .svg-icon {
-  fill: var(--main-two, var(--main, #080e25));
+  fill: var(--neutral-two, var(--neutral, #080e25));
   color: #333
 }
 
 body.nra .svg-icon:hover,
 body.nra .svg-iconlink:hover .svg-icon {
-  fill: var(--accent, #B82601);
-  color: var(--main-two, var(--main, #080e25))
+  fill: var(--primary, #B82601);
+  color: var(--neutral-two, var(--neutral, #080e25))
 }
 
 body.nra .myfantasyleague_tabmenu,
@@ -12302,7 +12322,7 @@ body.nra .myfantasyleague_tabmenu span[id*="tab_title"] {
 }
 
 body.nra .myfantasyleague_tabmenu label {
-  background: var(--tab-menu-hover, var(--accent, #B82601))
+  background: var(--tab-menu-hover, var(--primary, #B82601))
 }
 
 body.nra .banner-icon .logo-text {
@@ -12374,7 +12394,7 @@ body.lions-den .myfantasyleague_tabmenu span[id*="tab_title"] {
 body.glffl .myfantasyleague_tabmenu label,
 body.glffl-plus .myfantasyleague_tabmenu label,
 body.lions-den .myfantasyleague_tabmenu label {
-  background: var(--tab-menu-hover, var(--accent, #B82601))
+  background: var(--tab-menu-hover, var(--primary, #B82601))
 }
 
 body.glffl #tabmenu-wrap li#tab0 a:before,
@@ -12454,7 +12474,7 @@ body.lions-den #tabmenu-wrap #tab_title.tab5:before {
 /* BANNER AREA ADJUSTMENTS */
 body.habskin .alert-info-table,
 body.habskin .tdalert span {
-  background: var(--lightest-color, #fff)
+  background: var(--primary-lighter, #fff)
 }
 
 /* BANNER AREA ADJUSTMENTS */
@@ -12476,17 +12496,17 @@ body.habskin .th-warning {
 /* BOX SCORES ARROW COLORING */
 body.habskin .MFLBoxArrowLeft:before,
 body.habskin .MFLBoxArrowRight:before {
-  color: var(--accent, #B82601)
+  color: var(--primary, #B82601)
 }
 
 body.habskin .MFLBoxArrowLeft:hover:before,
 body.habskin .MFLBoxArrowRight:hover:before {
-  color: var(--gradient-light, var(--main, #080e25))
+  color: var(--primary-light, var(--neutral, #080e25))
 }
 
 body.habskin .MFLBoxArrowLeft.MFLBoxArrowFaded:hover:before,
 body.habskin .MFLBoxArrowRight.MFLBoxArrowFaded:hover:before {
-  color: var(--accent, #080e25)
+  color: var(--primary, #080e25)
 }
 
 /* LIVE SCORING ADJUSTMENTS */
@@ -14187,7 +14207,7 @@ table.rulestable .dldbBase td {
 
 #contractReportPopupContainer #contractPopupTable td {
   font-size: 0.625rem !important;
-  border-right: 0.063rem solid var(--accent)
+  border-right: 0.063rem solid var(--primary)
 }
 
 
@@ -14240,7 +14260,7 @@ table.rulestable .dldbBase td {
 .shadow-right:after {
   width: 1.625rem !important;
   right: -0.125rem !important;
-  border-right: 0.375rem solid var(--th-bg, var(--site-bg-image-one, #000))
+  border-right: 0.375rem solid var(--primary-darker, var(--site-bg-image-one, #000))
 }
 
 .hz-hide-shadow:after {
@@ -14315,7 +14335,7 @@ tr.allplay-lit,
 td.allplay-lit,
 td.allplay-lit span,
 tr.allplay-lit td {
-  background: var(--gradient-light, #cb2a01);
+  background: var(--primary-light, #cb2a01);
   color: #fff;
   cursor: default
 }
@@ -14323,7 +14343,7 @@ tr.allplay-lit td {
 /* table row column hilites crosshair td cell */
 tr.allplay-lit td.allplay-crosshair,
 td.allplay-crosshair span {
-  background: var(--gradient-dark, #9c2000);
+  background: var(--primary-dark, #9c2000);
   color: #fff
 }
 
@@ -14364,7 +14384,7 @@ body.habskin.lions-den .bbid_ir-modal-content,
 body.habskin.nra .bbid_ir-modal-content,
 body.habskin.sdd .bbid_ir-modal-content {
   background-color: var(--mobile-wrap-bg);
-  border: 0.063rem solid var(--main);
+  border: 0.063rem solid var(--neutral);
 }
 
 /* DRAFT RESULTS GRID */
@@ -14458,7 +14478,7 @@ body.habskin #standings img[id*="franchiseicon_"] {
   height: 1rem;
   left: 0.125rem;
   text-align: center;
-  background: var(--accent, #B82601);
+  background: var(--primary, #B82601);
   top: 50%;
   transform: translate(0, -50%);
   line-height: 1rem;
@@ -14775,7 +14795,7 @@ body.habskin.sdd div[class*="franTeam_"] {
   text-align: left;
   text-transform: uppercase;
   font-size: 1.25rem;
-  color: var(--accent, #b82601);
+  color: var(--primary, #b82601);
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -14803,7 +14823,7 @@ body.habskin.sdd div[class*="franTeam_"] {
 #LSscoringBox .franchise-box,
 .matchup-box-scroll-wrap,
 #teamBox {
-  color: var(--main, #080e25);
+  color: var(--neutral, #080e25);
 }
 
 #LSscoringBox .franchise-box,
@@ -14890,17 +14910,17 @@ h2.lsm_error.error_box {
 
 #LSscoringBox .players:before,
 #LSscoringBox .players-bench:before {
-  background: var(--th-bg, #080e25);
+  background: var(--primary-darker, #080e25);
 }
 
 #LSscoringBox .player-position {
-  background: var(--accent, #B82601);
+  background: var(--primary, #B82601);
 }
 
 #LSModuleSettings i,
 #LSscoringBox .h2hmatchups td.points,
 #LSscoringBox .player-name a:hover {
-  color: var(--accent, #B82601);
+  color: var(--primary, #B82601);
 }
 
 #LSscoringBox .franchise-box .player-row.playing div.player-image:before,
@@ -14938,7 +14958,7 @@ h2.lsm_error.error_box {
 
 #LSscoringBox div[class*="positionChange"] {
   height: 0.125rem;
-  background: var(--accent, #B82601);
+  background: var(--primary, #B82601);
   margin-top: -0.063rem;
 }
 
@@ -14969,7 +14989,7 @@ h2.lsm_error.error_box {
 }
 
 .matchup-box-scroll.active {
-  border-color: var(--accent, #B82601);
+  border-color: var(--primary, #B82601);
 }
 
 #LSscoringBox .appendStats {
