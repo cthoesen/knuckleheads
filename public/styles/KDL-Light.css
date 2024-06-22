@@ -2253,8 +2253,8 @@ a:active {
 caption,
 #commissioner_setup table.two_column_layout th {
   font-size: 1.375rem;
-  background: rgba(0, 0, 0, 0) url(https://knuckleheads.netlify.app/images/captions/Caption-Light.png); /*none*/
-  background-position: center left; /*added*/
+  background: rgba(0, 0, 0, 0) url(https://knuckleheads.netlify.app/images/captions/Caption-Light-Plays.png); /*none*/
+  background-position: center right; /*added*/
   padding: 0.5rem;
   text-align: left;
   line-height: 100%;
