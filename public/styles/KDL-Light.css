@@ -2254,7 +2254,7 @@ caption,
 #commissioner_setup table.two_column_layout th {
   font-size: 1.375rem;
   background: rgba(0, 0, 0, 0) url(https://knuckleheads.netlify.app/images/captions/Caption-Light.png); /*none*/
-  background-position: center right; /*added*/
+  background-position: center left; /*added*/
   padding: 0.5rem;
   text-align: left;
   line-height: 100%;
@@ -2263,16 +2263,16 @@ caption,
   max-width: 100%; /*added*/
   margin-bottom: 0.33rem;
   border-image-source: linear-gradient(to right, 
-      var(--accent-two), 
+      var(--lightest-color), 
       var(--gradient-light), 
-      var(--gradient-dark), 
+      var(--accent), 
       var(--gradient-light), 
-      var(--accent-two));
+      var(--lightest-color));
   border-image-slice: 1;
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  border-bottom: 0.35rem solid rgba(15, 15, 15, 0.75);
+  border-bottom: 0.35rem solid var(--accent);
 }
 /*CGT - Added below logo before captions*/
 caption:before {
