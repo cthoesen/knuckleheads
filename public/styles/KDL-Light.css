@@ -266,12 +266,16 @@ body.nra {
 /* Note on following themes - if want white th bg - remove --primary-darker and also need to remove --neutral-light variables */
 .theme-blue-orange {
   --neutral: #080e25;
+  --neutral-light: #fff;
   --primary: #B82601;
   --primary-lighter: #FBF3F2;
   --primary-light: #cb2a01;
   --primary-dark: #9c2000;
   --primary-darker: #080e25;
-  --neutral-light: #fff;
+  --accent: #fdfffc;
+  --accent-one: #235789;
+  --accent-two:  #f1d302;
+  --accent-three: #020100;
 }
 
 .theme-brown-gold {
