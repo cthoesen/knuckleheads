@@ -22,8 +22,8 @@ Example of 3 deep variable - background: var(--primary2 , var(--neutral2 , var(-
   --primary-light: #59A5D8;
   --primary-dark: #133C55;
   --primary-darker: #020C24;
-  --accent: #fff275;
-  --accent-one: #ff0035;
+  --accent: #ff0035;
+  --accent-one: #fff275;
   --accent-two:  #29E7CD;
   --accent-three: #0a2463;
   --bg-opacity: rgba(0, 58, 125, 0.15);
@@ -2277,8 +2277,8 @@ a:active {
 caption,
 #commissioner_setup table.two_column_layout th {
   font-size: 1.375rem;
-  background: rgba(0, 0, 0, 0) url(https://knuckleheads.netlify.app/images/captions/Caption-Light-Plays.png); /*none*/
-  background-position: center right; /*added*/
+  background: rgba(0, 0, 0, 0) url(https://knuckleheads.netlify.app/images/captions/Caption-Light.png); /*none*/
+  background-position: center; /*added*/
   padding: 0.5rem;
   text-align: left;
   line-height: 100%;
