@@ -236,7 +236,7 @@ body {
   color: var(--accent, #eee);
   background: #000 none repeat scroll 0 0;
   text-rendering: optimizeLegibility;
-  font: 400 1.2rem "Peralta", serif;
+  font: 400 11.2pt "Peralta", serif;
   height: 100%;
   margin: 0 auto;
   padding: 0;
