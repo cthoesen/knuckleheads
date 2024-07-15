@@ -236,7 +236,7 @@ body {
   color: var(--accent, #eee);
   background: #000 none repeat scroll 0 0;
   text-rendering: optimizeLegibility;
-  font: 400 11.2pt "Peralta", serif;
+  font: 400 1.2rem "Helvetica", sans-serif;
   height: 100%;
   margin: 0 auto;
   padding: 0;
@@ -3310,7 +3310,7 @@ ul.MFLPlayerPopupTab li a:hover {
 
 footer {
   display: none;
-  position: absolute;
+  position: static; /*updated this from absolute to keep the footer at the bottom*/
   left: 0;
   bottom: 0;
   height: auto;
