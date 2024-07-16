@@ -232,7 +232,7 @@ input[type="radio"] {
   z-index: -1;
 }
 
-/*body {
+body {
   color: var(--accent, #eee);
   background: #000 none repeat scroll 0 0;
   text-rendering: optimizeLegibility;
@@ -240,7 +240,7 @@ input[type="radio"] {
   height: 100%;
   margin: 0 auto;
   padding: 0;
-}*/
+}
 
 /*CGT - mobile background parallax settings*/
 @media only screen and (max-width: 48em) {
@@ -297,18 +297,8 @@ body,
 #bench-caption-fixed,
 #starter-caption-fixed caption,
 #bench-caption-fixed caption {
-  /*background: var(--neutral, #111) !important;
-  background-attachment: fixed*/
-
-  background: #1e1e1e url(https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Dark.jpg) no-repeat scroll;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: -1;
-  background-position: 50% 60%;
-  filter: brightness(0.5) blur(0.1px);
-  
+  background: var(--neutral, #111) !important;
+  background-attachment: fixed;
 }
 
 /*.theme-dk-gray body {
