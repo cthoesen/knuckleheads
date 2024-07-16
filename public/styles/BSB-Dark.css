@@ -297,8 +297,18 @@ body,
 #bench-caption-fixed,
 #starter-caption-fixed caption,
 #bench-caption-fixed caption {
-  background: var(--neutral, #111) !important;
-  background-attachment: fixed
+  /*background: var(--neutral, #111) !important;
+  background-attachment: fixed*/
+
+  background: #1e1e1e url(https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Dark.jpg) no-repeat scroll;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  background-position: 50% 60%;
+  filter: brightness(0.5) blur(0.1px);
+  
 }
 
 /*.theme-dk-gray body {
