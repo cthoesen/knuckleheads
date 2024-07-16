@@ -189,7 +189,8 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
-  min-height: 100%
+  min-height: 100%;
+  height: 100%;
 }
 
 * {
@@ -218,20 +219,27 @@ input[type="radio"] {
 }
 /*CGT - PC background image and settings*/
 #body-fixed {
-  color: var(--accent, #eee);
-  text-rendering: optimizeLegibility;
-  background: #000;
+  background-color: #000;
   background-image: url("https://knuckleheads.netlify.app/images/backgrounds/Side-Particles-MMH.png"), url("https://knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg");
   position: fixed;
   background-position: 50% -10%, center top;
-  background-repeat: no-repeat no-repeat;
-  background-size: 100% auto;
-  -webkit-font-smoothing: antialiased !important;
-  margin: auto;
-  height: 175%;
-  width: 100%;
-  overflow-y: scroll;
+  background-repeat: no-repeat repeat;
+  left: 51%;
+  margin-left: -981px;
+  top: 0;
+  height: 100%;
+  width: 1925px;
   z-index: -1;
+}
+
+body {
+  color: var(--accent, #eee);
+  background: #000 none repeat scroll 0 0;
+  text-rendering: optimizeLegibility;
+  font: 400 0.85rem "Georgia";
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 /*CGT - mobile background parallax settings*/
@@ -1529,7 +1537,7 @@ caption,
 /*CGT - Added below logo before captions*/
 caption:before {
   padding: 1.25rem 1.75rem 1.75rem 1.25rem;
-  background: url(https://knuckleheads.netlify.app/svg-icons/Cube-BSB.svg) no-repeat;
+  background: url(https://knuckleheads.netlify.app/svg-icons/MMH-Cube.svg) no-repeat;
   background-size: contain;
   background-position: 25% center;
   vertical-align: 0.5rem;
@@ -3285,7 +3293,7 @@ ul.MFLPlayerPopupTab li a:hover {
 
 footer {
   display: none;
-  position: absolute;
+  position: static; /*updated this from absolute to keep the footer at the bottom*/
   left: 0;
   bottom: 0;
   height: auto;

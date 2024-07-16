@@ -236,28 +236,11 @@ body {
   color: var(--accent, #eee);
   background: #000 none repeat scroll 0 0;
   text-rendering: optimizeLegibility;
-  font: 400 1.2rem "Helvetica", sans-serif;
+  font: 400 0.85rem "Georgia";
   height: 100%;
   margin: 0 auto;
   padding: 0;
 }
-
-/*#body-fixed {
-  color: var(--accent, #eee);
-  text-rendering: optimizeLegibility;
-  background: #000;
-  background-image: url("https://knuckleheads.netlify.app/images/backgrounds/Side-Particles-MMH.png"), url("https://knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg");
-  position: fixed;
-  background-position: 50% -10%, center top;
-  background-repeat: no-repeat no-repeat;
-  background-size: 100% auto;
-  -webkit-font-smoothing: antialiased !important;
-  margin: auto;
-  height: 175%;
-  width: 100%;
-  overflow-y: scroll;
-  z-index: -1;
-}*/
 
 /*CGT - mobile background parallax settings*/
 @media only screen and (max-width: 48em) {
