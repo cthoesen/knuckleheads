@@ -236,7 +236,7 @@ body {
   color: var(--accent, #eee);
   background: #000 none repeat scroll 0 0;
   text-rendering: optimizeLegibility;
-  font: 400 0.95rem "Chalkduster";
+  font: 400 0.85rem "Chalkduster";
   height: 100%;
   margin: 0 auto;
   padding: 0;
