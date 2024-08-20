@@ -5530,7 +5530,7 @@ img {
   height: auto
 }
 #standings .franchiseicon {
-  width: 425px; /* width of icon on standings screen*/
+  width: 250px; /* width of icon on standings screen*/
 }
 
 #body_login .warning {
