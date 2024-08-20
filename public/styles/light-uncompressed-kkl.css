@@ -5520,16 +5520,22 @@ img {
   margin: 1.25rem 0
 }
 
-.franchiselogo,
-.franchiseicon {
+.franchiselogo {
   max-width: 100%;
   height: auto
+}
+/*CGT - below settings to increase size of icons for standings on PC*/
+.franchiseicon {
+  width: 250px; /* this was max-width: 100% */
+  height: auto
+}
+#standings .franchiseicon {
+  width: 425px; /* width of icon on standings screen*/
 }
 
 #body_login .warning {
   text-align: center
 }
-
 
 #overviewDropbox {
   text-align: center;
