@@ -914,7 +914,6 @@ input[type="password"] {
 input[type="checkbox"],
 input[type="radio"] {
   accent-color: var(--accent, #ff4200);
-  ;
   width: 0.875rem;
   height: 0.875rem;
 }
