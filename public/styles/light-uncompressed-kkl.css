@@ -5531,6 +5531,11 @@ img {
 #standings .franchiseicon {
   width: 250px; /* width of icon on standings screen*/
 }
+@media only screen and (max-width: 35.5em) {
+  #home #standings .franchiseicon, #roster .franchiseicon {
+      width: 180px;
+  }
+}
 
 #body_login .warning {
   text-align: center
