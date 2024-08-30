@@ -298,7 +298,7 @@ body,
 #starter-caption-fixed caption,
 #bench-caption-fixed caption {
   background: var(--neutral, #111) !important;
-  background-attachment: fixed
+  background-attachment: fixed;
 }
 
 /*.theme-dk-gray body {
