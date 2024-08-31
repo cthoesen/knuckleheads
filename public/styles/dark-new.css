@@ -218,9 +218,9 @@ input[type="radio"] {
   box-sizing: inherit
 }
 /*CGT - PC background image and settings*/
-#body-fixed {
+/*#body-fixed {
   background-color: #000;
-  background-image: url("https://knuckleheads.netlify.app/images/backgrounds/Side-Particles-MMH.png"), url("https://knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg");
+  background-image: url(//knuckleheads.netlify.app/images/backgrounds/Side-Particles-MMH.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);
   position: fixed;
   background-position: 50% -10%, center top;
   background-repeat: no-repeat repeat;
@@ -230,20 +230,26 @@ input[type="radio"] {
   height: 100%;
   width: 1925px;
   z-index: -1;
-}
+}*/
 
 body {
+  background-color: #000;
+  background-image: url(//knuckleheads.netlify.app/images/backgrounds/Side-Particles-MMH.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);
+  background-attachment: fixed;
+  background-position: 50% 0%, center top;
+  background-repeat: no-repeat repeat;
   color: var(--accent, #eee);
-  background: #000 none repeat scroll 0 0;
   text-rendering: optimizeLegibility;
-  font: 400 0.85rem "Chalkduster";
+  font: 400 0.75rem "Cambria";
   height: 100%;
+  width: 1925px;
   margin: 0 auto;
   padding: 0;
+  border: 0;
 }
 
 /*CGT - mobile background parallax settings*/
-@media only screen and (max-width: 48em) {
+/*@media only screen and (max-width: 48em) {
   #body-fixed {
     background: #1e1e1e url(https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Dark.jpg) no-repeat scroll;
     height: 100%;
@@ -253,6 +259,16 @@ body {
     z-index: -1;
     background-position: 50% 60%;
     filter: brightness(0.5) blur(0.1px);
+  }
+}*/
+
+/*CGT - mobile background parallax settings*/
+@media only screen and (max-width: 48em) {
+  body {
+    background: #1e1e1e;
+    height: 100%;
+    width: 100%;
+    top: 0;
   }
 }
 
