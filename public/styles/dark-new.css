@@ -14,7 +14,7 @@ Example of 3 deep variable - background: var(--primary2 , var(--neutral2 , var(-
 
 :root {
   --neutral: #181818;
-  --neutral-light: #ededed;
+  --neutral-light: #cbcbcb;
   --neutral-dark: #0c0c0c;
   --neutral-blur: rgba(100, 100, 100, 0.25);
   --primary: #38b569;
@@ -240,7 +240,7 @@ body {
   background-position: 50% 0%, center top;
   background-repeat: no-repeat repeat;
   background-color: #0f0f0f;
-  font: 400 0.75rem "Spectral";
+  font: 400 0.75rem "Playfair";
   -webkit-font-smoothing: antialiased !important;
   height: 1200px;
   margin: 0 auto;
