@@ -217,7 +217,7 @@ input[type="radio"] {
   -moz-box-sizing: inherit;
   box-sizing: inherit
 }
-/*CGT - PC background image and settings*/
+/*CGT - PC background image and settings - if using this custom element, must uncomment the body-fixed div id on HPM #1 - Header */
 /*#body-fixed {
   background-color: #000;
   background-image: url(//knuckleheads.netlify.app/images/backgrounds/Side-Particles-MMH.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);
