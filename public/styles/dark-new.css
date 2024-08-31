@@ -235,7 +235,7 @@ input[type="radio"] {
 body {
   color: var(--accent, #eee);
   text-rendering: optimizeLegibility;
-  background-image: url(https://knuckleheads.netlify.app/images/backgrounds/Side-Particles-MMH.png), url(https://knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);
+  background-image: url(//knuckleheads.netlify.app/images/backgrounds/Side-Particles-MMH.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);
   background-attachment: fixed;
   background-position: center top;
   background-repeat: no-repeat repeat;
@@ -294,6 +294,7 @@ body a:visited:hover {
   background: none
 }
 
+/*body,*/ /*removed so that body element works correctly, if using #body-fixed instead, this should be uncommented*/
 .chat_popup,
 #MFLChatPopupContainer>.report,
 #MFLPlayerPopupContainer>.report,
