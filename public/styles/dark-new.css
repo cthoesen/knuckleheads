@@ -233,16 +233,17 @@ input[type="radio"] {
 }*/
 
 body {
-  color: var(--accent, #eee);
+  color: var(--accent, #ddd);
   text-rendering: optimizeLegibility;
   background-image: url(//knuckleheads.netlify.app/images/backgrounds/Side-Particles-MMH.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);
   background-attachment: fixed;
-  background-position: center top;
+  background-position: 50% 0%, center top;
   background-repeat: no-repeat repeat;
-  background-color: #000000;
-  font: 400 0.75rem "Cambria";
+  background-color: #151515;
+  font: 400 0.75rem "Lora";
   -webkit-font-smoothing: antialiased !important;
-  margin: auto;
+  height: 1200px;
+  margin: 0 auto;
   width: 100%;
   overflow-y: scroll;
 }
