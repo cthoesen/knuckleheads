@@ -233,19 +233,17 @@ input[type="radio"] {
 }*/
 
 body {
-  background-color: #000;
-  background-image: url(https://knuckleheads.netlify.app/images/backgrounds/Side-Particles-MMH.png), url(https://knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);
-  background-attachment: fixed;
-  background-position: 50% 0%, center top;
-  background-repeat: no-repeat repeat;
   color: var(--accent, #eee);
   text-rendering: optimizeLegibility;
+  background-image: url(https://knuckleheads.netlify.app/images/backgrounds/Side-Particles-MMH.png), url(https://knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat repeat;
   font: 400 0.75rem "Cambria";
-  height: 100%;
-  width: 1925px;
-  margin: 0 auto;
-  padding: 0;
-  border: 0;
+  -webkit-font-smoothing: antialiased !important;
+  margin: auto;
+  width: 100%;
+  overflow-y: scroll;
 }
 
 /*CGT - mobile background parallax settings*/
