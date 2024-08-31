@@ -22,7 +22,7 @@ Example of 3 deep variable - background: var(--primary2 , var(--neutral2 , var(-
   --primary-lighter: #44e785;
   --primary-dark: #32a05e;
   --primary-darker:#267d49;
-  --accent: #e8e843;
+  --accent: #eeee65;
   --accent-one: #ca3cff;
   --accent-two:  #275dad;
   --accent-three: #385a18;
@@ -233,14 +233,14 @@ input[type="radio"] {
 }*/
 
 body {
-  color: var(--neutral-light, #e2e2e2);
+  color: var(--accent, #f8f7c3);
   text-rendering: optimizeLegibility;
   background-image: url(//knuckleheads.netlify.app/images/backgrounds/Side-Particles-MMH.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);
   background-attachment: fixed;
   background-position: 50% 0%, center top;
   background-repeat: no-repeat repeat;
-  background-color: #151515;
-  font: 400 0.75rem "Lora";
+  background-color: #0f0f0f;
+  font: 400 0.75rem "Spectral";
   -webkit-font-smoothing: antialiased !important;
   height: 1200px;
   margin: 0 auto;
