@@ -18,18 +18,18 @@ Example of 3 deep variable - background: var(--primary2 , var(--neutral2 , var(-
   --neutral-light: #cbcbcb;
   --neutral-dark: #0c0c0c;
   --neutral-blur: rgba(100, 100, 100, 0.25);
-  --primary: #38b569;
-  --primary-light: #40cd78;
-  --primary-lighter: #44e785;
-  --primary-dark: #32a05e;
-  --primary-darker:#267d49;
-  --accent: #eeee65;
-  --accent-one: #ca3cff;
-  --accent-two:  #275dad;
-  --accent-three: #385a18;
+  --primary: #026992;
+  --primary-light: #05aff2;
+  --primary-lighter: #61cbf5;
+  --primary-dark: #163359;
+  --primary-darker:#0c1c31;
+  --accent: #05f2f2;
+  --accent-one: #d92a1a;
+  --accent-two:  #ca3cff;
+  --accent-three: #b007ed;
   --bg-opacity: rgba(0, 125, 25, 0.15);
   --bg-opacity-brighter: rgba(255, 253, 130, 0.2);
-  --fa-main-color: #38b569;
+  --fa-main-color: #026992;
 }
 
 .myfantasyleague_menu ul li.mfl-icon {
@@ -236,7 +236,7 @@ input[type="radio"] {
 body {
   color: var(--accent, #f8f7c3);
   text-rendering: optimizeLegibility;
-  background-image: url(//knuckleheads.netlify.app/images/backgrounds/Side-Particles-MMH.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);
+  background-image: url(//knuckleheads.netlify.app/images/backgrounds/Side-Particles-KKL.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);
   background-attachment: fixed;
   background-position: 50% 0%, center top;
   background-repeat: no-repeat repeat;
