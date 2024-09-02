@@ -18,7 +18,7 @@ Example of 3 deep variable - background: var(--primary2 , var(--neutral2 , var(-
   --neutral-light: #cbcbcb;
   --neutral-dark: #0c0c0c;
   --neutral-blur: rgba(100, 100, 100, 0.25);
-  --primary: #026992;
+  --primary: #007ba7;
   --primary-light: #05aff2;
   --primary-lighter: #61cbf5;
   --primary-dark: #163359;
@@ -29,7 +29,7 @@ Example of 3 deep variable - background: var(--primary2 , var(--neutral2 , var(-
   --accent-three: #b007ed;
   --bg-opacity: rgba(0, 125, 25, 0.15);
   --bg-opacity-brighter: rgba(255, 253, 130, 0.2);
-  --fa-main-color: #026992;
+  --fa-main-color: #007ba7;
 }
 
 .myfantasyleague_menu ul li.mfl-icon {
@@ -155,6 +155,21 @@ Example of 3 deep variable - background: var(--primary2 , var(--neutral2 , var(-
   --bg-opacity: rgba(56, 181, 105, .05);
   --bg-opacity-brighter: rgba(255, 253, 130, .2);
   --fa-main-color: #38b569;
+}
+
+.theme-cerulean {
+  --primary: #007ba7;
+  --primary-light: #05aff2;
+  --primary-lighter: #61cbf5;
+  --primary-dark: #163359;
+  --primary-darker:#0c1c31;
+  --accent: #05f2f2;
+  --accent-one: #d92a1a;
+  --accent-two:  #ca3cff;
+  --accent-three: #b007ed;
+  --bg-opacity: rgba(0, 46, 125, 0.15);
+  --bg-opacity-brighter: rgba(130, 255, 245, 0.2);
+  --fa-main-color: #007ba7;
 }
 
 .b_name {
