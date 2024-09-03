@@ -18,18 +18,16 @@ Example of 3 deep variable - background: var(--primary2 , var(--neutral2 , var(-
   --neutral-light: #cbcbcb;
   --neutral-dark: #0c0c0c;
   --neutral-blur: rgba(100, 100, 100, 0.25);
-  --primary: #007ba7;
-  --primary-light: #05aff2;
+  --primary: #144be4;
+  --primary-light: #007ba7;
   --primary-lighter: #61cbf5;
-  --primary-dark: #163359;
-  --primary-darker:#0c1c31;
-  --accent: #05f2f2;
-  --accent-one: #d92a1a;
-  --accent-two:  #ca3cff;
-  --accent-three: #b007ed;
-  --bg-opacity: rgba(0, 125, 25, 0.15);
-  --bg-opacity-brighter: rgba(255, 253, 130, 0.2);
-  --fa-main-color: #007ba7;
+  --primary-dark: #0d339e;
+  --primary-darker:#013244;
+  --accent: #3bc14a;
+  --accent-alt: #ffe45e;
+  --bg-opacity: rgba(0, 46, 125, 0.15);
+  --bg-opacity-brighter: rgba(130, 255, 245, 0.2);
+  --fa-main-color: #144be4;
 }
 
 .myfantasyleague_menu ul li.mfl-icon {
@@ -149,27 +147,23 @@ Example of 3 deep variable - background: var(--primary2 , var(--neutral2 , var(-
   --primary-dark: #32a05e;
   --primary-darker:#267d49;
   --accent: #e8e843;
-  --accent-one: #ca3cff;
-  --accent-two:  #275dad;
-  --accent-three: #385a18;
+  --accent-alt: #ca3cff;
   --bg-opacity: rgba(56, 181, 105, .05);
   --bg-opacity-brighter: rgba(255, 253, 130, .2);
   --fa-main-color: #38b569;
 }
 
 .theme-cerulean {
-  --primary: #007ba7;
-  --primary-light: #05aff2;
+  --primary: #144be4;
+  --primary-light: #007ba7;
   --primary-lighter: #61cbf5;
-  --primary-dark: #163359;
-  --primary-darker:#0c1c31;
-  --accent: #05f2f2;
-  --accent-one: #d92a1a;
-  --accent-two:  #ca3cff;
-  --accent-three: #b007ed;
+  --primary-dark: #0d339e;
+  --primary-darker:#013244;
+  --accent: #3bc14a;
+  --accent-alt: #ffe45e;
   --bg-opacity: rgba(0, 46, 125, 0.15);
   --bg-opacity-brighter: rgba(130, 255, 245, 0.2);
-  --fa-main-color: #007ba7;
+  --fa-main-color: #144be4;
 }
 
 .b_name {
@@ -605,7 +599,7 @@ body.chat_popup .banner-container-wrap {
 
 .icon-bar a:hover i:after,
 .icon-bar-full a:hover i:after {
-  color: var(--accent-one, #ff4200); /* accent color on Font Awesome icons when hovering */
+  color: var(--accent-alt, #ff4200); /* accent color on Font Awesome icons when hovering */
   opacity: 1;
 }
 
