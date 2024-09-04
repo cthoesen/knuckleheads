@@ -1571,7 +1571,7 @@ caption,
 /*CGT - Added below logo before captions*/
 caption:before {
   padding: 1.25rem 1.75rem 1.75rem 1.25rem;
-  background: url(https://knuckleheads.netlify.app/svg-icons/MMH-Cube.svg) no-repeat;
+  background: url(https://knuckleheads.netlify.app/svg-icons/KKL-Cube.svg) no-repeat;
   background-size: contain;
   background-position: 25% center;
   vertical-align: 0.5rem;
