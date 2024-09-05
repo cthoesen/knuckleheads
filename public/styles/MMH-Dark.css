@@ -1537,7 +1537,7 @@ caption,
 #commissioner_setup table.two_column_layout th {
   font-size: 1.375rem;
   background: transparent url(https://knuckleheads.netlify.app/images/captions/Caption-Dark-Plays.png);
-  background-position: center right; /*added*/
+  background-position: center left; /*added*/
   /*box-shadow:  inset 0 -1.25rem 1.5rem -0.25rem var(--neutral-blur, gray); /*inset shadow from bottom*/
   padding: 0.5rem;
   text-align: left;
