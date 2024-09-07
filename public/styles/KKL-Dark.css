@@ -17,7 +17,7 @@ Example of 3 deep variable - background: var(--primary2 , var(--neutral2 , var(-
   --neutral: #181818;
   --neutral-light: #cbcbcb;
   --neutral-dark: #0c0c0c;
-  --neutral-blur: rgba(100, 100, 100, 0.25);
+  --neutral-blur: rgba(69, 69, 69, 0.15);
   --primary: #144be4;
   --primary-light: #007ba7;
   --primary-lighter: #61cbf5;
@@ -25,7 +25,7 @@ Example of 3 deep variable - background: var(--primary2 , var(--neutral2 , var(-
   --primary-darker:#013244;
   --accent: #3bc14a;
   --accent-alt: #ffe45e;
-  --bg-opacity: rgba(0, 46, 125, 0.15);
+  --bg-opacity: rgba(0, 35, 95, 0.15);
   --bg-opacity-brighter: rgba(130, 255, 245, 0.2);
   --fa-main-color: #144be4;
 }
@@ -7628,7 +7628,7 @@ span[id*="collapseAvg_"] {
 }
 
 * {
-  scrollbar-color: var(--primary-lighter, #222) var(--bg-opacity-brighter, #151515);
+  scrollbar-color: var(--neutral-light, #222) var(--neutral-blur, #151515);
   scrollbar-width: auto
 }
 
