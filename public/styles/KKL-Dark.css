@@ -7628,7 +7628,7 @@ span[id*="collapseAvg_"] {
 }
 
 * {
-  scrollbar-color: #222 #151515;
+  scrollbar-color: var(--primary-lighter, #222) var(--bg-opacity-brighter, #151515);
   scrollbar-width: auto
 }
 
