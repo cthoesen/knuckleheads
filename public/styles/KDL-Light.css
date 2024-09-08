@@ -2215,6 +2215,12 @@ table,
   margin: 0.625rem auto; /* this auto setting is what determines two columns when showing all rosters */
 }
 
+.img-banner {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
 /***************************************/
 
 
