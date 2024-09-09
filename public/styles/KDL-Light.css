@@ -2215,6 +2215,7 @@ table,
   margin: 0.625rem auto; /* this auto setting is what determines two columns when showing all rosters */
 }
 
+/* style for championship banners - will not properly center banner display image without below settings */
 .img-banner {
   display: block;
   height: auto;
