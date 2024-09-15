@@ -1135,7 +1135,7 @@ label[for='sub100']+#homepagetabs {
 
 #tabmenu-wrap li#tab6 a:before,
 #tabmenu-wrap #tab_title.tab6:before {
-  content: "\f53d" /*defines the Font Awesome icon next to Pools on the homepage tabs section*/
+  content: "\f1da" /*defines the Font Awesome icon next to League History on the homepage tabs section*/
 }
 
 
