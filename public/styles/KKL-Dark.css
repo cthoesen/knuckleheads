@@ -1650,10 +1650,19 @@ caption .ownername {
   padding: 0;
   background: none
 }
+
 /* owners name in caption with an icon as seen on rosters page , set to display none if you dont want to see */
 caption.withfranchiseicon .ownername {
   color: #ccc
 }
+
+/* style for championship banners - will not properly center banner display image without below settings */
+.img-banner {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
 /***************************************/
 
 
