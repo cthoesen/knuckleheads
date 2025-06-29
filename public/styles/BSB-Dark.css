@@ -1,6 +1,7 @@
 @import url(https://mflscripts.com/font-awesome/css/all.min.css);
 @import url(https://mflscripts.com/font-awesome/css/v4-shims.min.css);
 @import url(https://knuckleheads.netlify.app/styles/font-awesome-animation-min.css);
+@import url(https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap);
 
 /* old font awesome 4.7 file
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
@@ -14,7 +15,7 @@ Example of 3 deep variable - background: var(--primary2 , var(--neutral2 , var(-
 
 :root {
   --neutral: #181818;
-  --neutral-light: #5f5f5f;
+  --neutral-light: #cbcbcb;
   --neutral-dark: #0c0c0c;
   --neutral-blur: rgba(100, 100, 100, 0.25);
   --primary: #38b569;
@@ -22,7 +23,7 @@ Example of 3 deep variable - background: var(--primary2 , var(--neutral2 , var(-
   --primary-lighter: #44e785;
   --primary-dark: #32a05e;
   --primary-darker:#267d49;
-  --accent: #e8e843;
+  --accent: #eeee65;
   --accent-one: #ca3cff;
   --accent-two:  #275dad;
   --accent-three: #385a18;
@@ -217,10 +218,10 @@ input[type="radio"] {
   -moz-box-sizing: inherit;
   box-sizing: inherit
 }
-/*CGT - PC background image and settings*/
-#body-fixed {
+/*CGT - PC background image and settings - if using this custom element, must uncomment the body-fixed div id on HPM #1 - Header */
+/*#body-fixed {
   background-color: #000;
-  background-image: url("https://knuckleheads.netlify.app/images/backgrounds/Side-Particles-MMH.png"), url("https://knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg");
+  background-image: url(//knuckleheads.netlify.app/images/backgrounds/Side-Particles-MMH.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);
   position: fixed;
   background-position: 50% -10%, center top;
   background-repeat: no-repeat repeat;
@@ -230,20 +231,30 @@ input[type="radio"] {
   height: 100%;
   width: 1925px;
   z-index: -1;
-}
+}*/
 
 body {
-  color: var(--accent, #eee);
-  background: #000 none repeat scroll 0 0;
+  color: var(--accent, #f8f7c3);
   text-rendering: optimizeLegibility;
-  font: 400 0.85rem "Chalkduster";
-  height: 100%;
+  background-image: url(//knuckleheads.netlify.app/images/backgrounds/Side-Particles-MMH.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);
+  background-attachment: fixed;
+  background-position: 50% 0%, center top;
+  background-repeat: no-repeat repeat;
+  background-color: #0f0f0f;
+  font-family: "Merriweather Sans", "Assistant", "DM Sans", "Open Sans", sans-serif;
+  font-size: 0.813rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased !important;
+  height: 1200px;
   margin: 0 auto;
-  padding: 0;
+  width: 100%;
+  overflow-y: scroll;
 }
 
 /*CGT - mobile background parallax settings*/
-@media only screen and (max-width: 48em) {
+/*@media only screen and (max-width: 48em) {
   #body-fixed {
     background: #1e1e1e url(https://knuckleheads.netlify.app/images/backgrounds/BG-FB-Field-Dark.jpg) no-repeat scroll;
     height: 100%;
@@ -253,6 +264,16 @@ body {
     z-index: -1;
     background-position: 50% 60%;
     filter: brightness(0.5) blur(0.1px);
+  }
+}*/
+
+/*CGT - mobile background parallax settings*/
+@media only screen and (max-width: 48em) {
+  body {
+    background: #1e1e1e;
+    height: 100%;
+    width: 100%;
+    top: 0;
   }
 }
 
@@ -272,14 +293,18 @@ body a:visited:hover {
 }
 /* body text hover */
 .pagebody {
-  margin-bottom: 0.625rem
+  margin-bottom: 0.25rem;
+  background: none;
+  min-height: 60rem;
+  margin-top: 0;
+  overflow: hidden;
 }
 
 .pagebody a {
   background: none
 }
 
-body,
+/*body,*/ /*removed so that body element works correctly, if using #body-fixed instead, this should be uncommented*/
 .chat_popup,
 #MFLChatPopupContainer>.report,
 #MFLPlayerPopupContainer>.report,
@@ -1447,9 +1472,14 @@ table,
   -webkit-overflow-scrolling: touch
 }
 
-
 /* style for report containers */
 
+/* style for championship banners - will not properly center banner display image without below settings */
+.img-banner {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
 
 /***************************************/
 
@@ -1537,7 +1567,7 @@ caption,
 /*CGT - Added below logo before captions*/
 caption:before {
   padding: 1.25rem 1.75rem 1.75rem 1.25rem;
-  background: url(https://knuckleheads.netlify.app/svg-icons/BSB-Cube.svg) no-repeat;
+  background: url(https://knuckleheads.netlify.app/svg-icons/MMH-Cube.svg) no-repeat;
   background-size: contain;
   background-position: 25% center;
   vertical-align: 0.5rem;
@@ -1616,10 +1646,19 @@ caption .ownername {
   padding: 0;
   background: none
 }
+
 /* owners name in caption with an icon as seen on rosters page , set to display none if you dont want to see */
 caption.withfranchiseicon .ownername {
   color: #ccc
 }
+
+/* style for championship banners - will not properly center banner display image without below settings */
+.img-banner {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
 /***************************************/
 
 
@@ -4772,7 +4811,7 @@ Team Logos
   padding-left: .188rem;
   padding-right: 0.188rem;
   padding-right: .188rem;
-  background: rgba(0, 0, 0, 0) url(https://knuckleheads.netlify.app/images/captions/KDL-Roster-Pixel.png); /*added*/
+  background: rgba(0, 0, 0, 0) url(https://knuckleheads.netlify.app/images/captions/Caption-Dark.png); /*added*/
   background-position: center; /*added*/
 }
 /*below settings to decrease size of icons for standings on mobile devices*/
@@ -7594,7 +7633,7 @@ span[id*="collapseAvg_"] {
 }
 
 * {
-  scrollbar-color: #222 #151515;
+  scrollbar-color: var(--neutral-light, #222) var(--neutral-blur, #151515);
   scrollbar-width: auto
 }
 
@@ -7845,7 +7884,7 @@ td::-webkit-scrollbar {
 #LS_TopTableHolder .franchiseicon {
   padding: 0.313rem;
   max-width: 100%;
-  max-height: 3.75rem;
+  max-height: 5.75rem;
 }
 
 #body_ajax_ls #marquee_home,
@@ -8349,7 +8388,7 @@ div.ls_team_points {
 #body_ajax_ls img.ls_og_icon {
   width: 100%;
   max-width: 6.625rem;
-  max-height: 1.25rem
+  max-height: 2.25rem;
 }
 /*icon height for NFL logos in table*/
 #body_ajax_ls img.ls_nfl_icon {
