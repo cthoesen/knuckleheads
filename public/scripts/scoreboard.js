@@ -1901,7 +1901,7 @@ async function LSMbuildMatchupsPlayers(e) {
                                               "Def" === i.position ? get_TEAMstats_str(i.team, !1) : "Off" === i.position ? get_TEAMstats_str(i.team, !0) : doLSMBoxLiveStats(e.id)
                                           }</div></div>`)
                                         : year === LSMyear
-                                        ? (s += `<div class="player-details-box"><div class="player-name"><h3><a href="player?L=${league_id}&amp;P=${e.id} class="position_${
+                                        ? (s += `<div class="player-details-box"><div class="player-name"><h3><a href="player?L=${league_id}&amp;P=${e.id}" class="position_${
                                               i.position
                                           }"" target="new" title="View Player News">${formatPlayerNameLSModule(i.name)}</a></h3><div class="player-team"><img alt="${
                                               i.team
