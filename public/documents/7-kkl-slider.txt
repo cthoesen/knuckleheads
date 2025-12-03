@@ -1,0 +1,46 @@
+<!------------------------------------------------------>
+<!----------------- Start #7 - Slider ------------------>
+<!------------------------------------------------------>
+
+
+
+<script src="https://www.mflscripts.com/mfl-apps/slider/script.js"></script>
+
+<script type="text/javascript">
+jQuery( document ).ready(function() {
+    $('.flexslider').flexslider({
+      animation: "fade",        // use slide or fade
+      slideshowSpeed: 2000,     // set speed of slides
+      animationSpeed: 400,      // set speed of animation
+      smoothHeight: true,       // remove this if you dont want the slider height to auto resize
+      pauseOnHover: true,       // pause slider when hovering
+      directionNav: false,       // Set to false to hide slider arrows
+
+      after: function(slider){  // this allows slider to restart after you have touched any of its contents
+        slider.pause(); 
+        slider.play(); 
+      }
+    });
+});
+</script>
+
+<div class="mobile-wrap flex-wrapper">
+ <div class="flexslider" style="overflow:hidden">
+  <ul class="slides">
+   <!---<li><module name="DRAFT_STATUS"/></li>--->
+   <!---<li><module name="WELCOME"/</li>--->
+   <li><img class="slider" src="https://www.mflscripts.com/mfl-apps/example_images/slider/b0.png" /></li>
+   <li><img class="slider" src="https://www.mflscripts.com/mfl-apps/example_images/slider/b1.png" /></li>
+   <li><img class="slider" src="https://www.mflscripts.com/mfl-apps/example_images/slider/b2.png" /></li>
+   <li><img class="slider" src="https://www.mflscripts.com/mfl-apps/example_images/slider/b3.png" /></li>
+   <li><img class="slider" src="https://www.mflscripts.com/mfl-apps/example_images/slider/b4.png" /></li>
+   <li><img class="slider" src="https://www.mflscripts.com/mfl-apps/example_images/slider/b5.png" /></li>
+  </ul>
+ </div>
+</div>
+
+
+
+<!------------------------------------------------------>
+<!------------------- End #7 - Slider ------------------>
+<!------------------------------------------------------>

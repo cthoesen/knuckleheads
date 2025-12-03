@@ -1,0 +1,25 @@
+<!------------------------------------------------------>
+<!--------------- Start #3 - Quick Links --------------->
+<!------------------------------------------------------>
+
+<div id="myfantasyleague_tabs">
+    <table class="homepagemodule report" id="tab_quicklinks" cellspacing="1" align="center">
+    <caption><span>Quick Links</span></caption>
+    <tbody></tbody>
+  </table>
+  <div class="toggle_tabs">
+    <table class="report">
+      <tbody>
+        <tr>
+          <td>
+            <div class="myfantasyleague_tabmenu">
+                <span class="tabName">Chat</span>
+                <input type="checkbox">
+                <label class="tabLabel"><span></span></label>
+                <ul id="homepagetabs">
+                  <li class="currenttab"><a>News</a></li>
+                  <li><a>Scores</a></li>
+                  <li><a>Schedule</a></li>
+                  <li><a>Links</a></li>
+                  <li><a>Activity</a></li>
+                </ul>
