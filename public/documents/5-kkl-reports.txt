@@ -31,15 +31,15 @@
         </tr>
       </tbody>
     </table>
-    <div class="tabs_scroll updated_tabs">
-      <div class="homepagetabcontent" style="display:block">
+    <div class="tabs_scroll">
+      <div class="homepagetabcontent">
         <module name="TRANSACTIONS" COUNT="" FRANCHISE="" TYPE="" DAYS=""></module>
       </div>
       <div class="homepagetabcontent">
         <!-- NFL SCHEDULE HTML -->
         <div id='NFL_Schedule'></div>
         <!-- NFL SCHEDULE SCRIPTS -->
-        <script src="https://www.mflscripts.com/mfl-apps/schedule/script.js"></script>
+        <script src="https://www.mflscripts.com/mfl-apps/schedule/script.js?v=1.00"></script>
       </div>
       <div class="homepagetabcontent">
         <module name="POWER_RANK" DISPLAY=""></module>
@@ -63,23 +63,20 @@
           var ov_includeSubmitLineup = true;
           var ov_tiebreakerFlexOnly = false;
         </script>
-        <script src="https://www.mflscripts.com/mfl-apps/overview/script.js"></script>
+        <script src="https://www.mflscripts.com/mfl-apps/overview/script.js?v=1.72"></script>
       </div>
       <div class="homepagetabcontent">
-        <!-- HTML FOR PLAYOFF SEEDINGS -->
+        <!-- ALL PLAY REPORT SCRIPT -->
         <div id="allplayTable"></div>
-        <!-- VAR SETTINGS FOR ALL PLAY REPORT -->
         <script>
-          var allplayAutoRun = false;              // The script makes several API calls so to avoid the potential for "too many requests" error it is suggested to set this to false so the table only populates when link is clicked.
+          var allplayAutoRun = true;              // The script makes several API calls so to avoid the potential for "too many requests" error it is suggested to set this to false so the table only populates when link is clicked.
           var allplayNameIconLogoAbbrev = 1;      // 0=name, 1=icon, 2=logo, 3=abbrev, 4=icon_name, 5=logo_name
           var allplayIncludeHeadToHead = true;    // Separate table detailing all play matchups between franchises
-          var allplayScoringDecimals = 2;         // Decimals
           var allplayEndWeek = 14;                // Final week to include in all play record
           var allplayHeadToHeadUseIcon = false;   // Unless icons are size very small keep this set to false and abbrev will be use instead
-          var allplaySeparateByConference = true; // Only applicable for leagues that use conferences
+          var allplaySeparateByConference = false; // Only applicable for leagues that use conferences
         </script>
-
-        <script src="https://www.mflscripts.com/mfl-apps/allplay/script.js"></script>
+        <script src="https://www.mflscripts.com/mfl-apps/allplay/script.js?v=1.02"></script>
       </div>
     </div>
   </div>
