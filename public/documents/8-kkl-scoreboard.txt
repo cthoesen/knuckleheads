@@ -20,12 +20,14 @@ var lsAppearance = 1;        		// set to 0,1,2,3,4,5,6,7 based on desired appear
 
 
 var lsm_hideIDP = true;     		// set to true to hide the IDP table on NFL Boxscores
-var rowCount = 6; 		        // define how many teams in each row - example 16 teams - set to 8 to show 2 rows of 4
+var lsm_hidePunt = true;		// set to true to hide the Punting table on NFL Boxscores
+var rowCount = 3; 		        // define how many teams in each row - example 16 teams - set to 8 to show 2 rows of 4
 var lsmPMR = true; 	        	// set to false to remove the row P - YTP - PMR
 var lsm_customPositions = false;	// if your league defines custom player positions , set this to true
 var lsm_swipe = true;			// enable swiping on mobile devices to swipe through matchups
 var lsm_byeMatchups = false;             // set to false to hide teams on bye weeks in scoreboard
 var ScoringTimezone = "LOCAL";            // set time zones for game times. LOCAL = user computer time , ET = Eastern Time , PT = Pacific Time , MT = Mountain Time , CT = Central Time , AKT = Alaska Time , HT = Hawaii Time
+var lsm_use_probability = true;          // set to true or false to show win probabilities between matchups - do not use for all play leagues
 </script>
 
 <style>
@@ -68,4 +70,4 @@ var ScoringTimezone = "LOCAL";            // set time zones for game times. LOCA
 
 <!--- LINK SCRIPT --->
 <script src="https://knuckleheads.netlify.app/scripts/scoreboard-min.js"></script>
-<!--- <script src="https://mflscripts.com/mfl-apps/scoreboard/moduleScoreboard/script.js?v=8.69"></script> --->
+<!--- <script src="https://mflscripts.com/mfl-apps/scoreboard/moduleScoreboard/script.js?v=8.93"></script> --->

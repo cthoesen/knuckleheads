@@ -2,8 +2,6 @@
 <!---------- Start #9 - Todays Calendar Events --------->
 <!------------------------------------------------------>
 
-
-
 <script>
 async function fetchAndProcessCalendar() {
 	try {
@@ -58,8 +56,6 @@ fetchAndProcessCalendar();
     </tbody>
   </table>
 </div>
-
-
 
 <!------------------------------------------------------>
 <!---------- End #9 - Todays Calendar Events ----------->
