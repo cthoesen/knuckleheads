@@ -475,7 +475,7 @@ var showTabsAllPages = false;     // set to false to only show tabs on homepage
 var changeMainTabName = "Home";   // rename to main tab
 var changeAllTabName = true;      // rename the tab title on mobiles to current tab name
 var MFL_customTabs_FakeTabs = new Array();
-var swipeHPM = true;              // set to true to swipe home page tab content on mobiles
+var swipeHPM = false;              // set to true to swipe home page tab content on mobiles
 var swipePosition = "content";    // swipe on tabs or swipe on content - set to "tabs" to swipe on tabs or set on "content" to swipe on content
 
 // HEADER JS FILE OPTIONS
