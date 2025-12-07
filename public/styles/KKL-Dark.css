@@ -4049,7 +4049,7 @@ table#youtubevideo.homepagemodule.report embed,
 }
 
 .flexslider .slides:after {
-  content: "\0020"; /*planet-ringed Font Awesome icon*/
+  content: "\0020"; /* planet-ringed Font Awesome icon */
   display: block;
   clear: both;
   visibility: hidden;
@@ -4076,7 +4076,7 @@ html[xmlns] .flexslider .slides {
 .flexslider .slides img {
   height: auto;
   -moz-user-select: none;
-  user-select: none; /*CGT - added standard property*/
+  user-select: none; /* added standard property */
 }
 
 .flex-viewport {
@@ -4097,7 +4097,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-direction-nav {
-  height: 0 /*asterisk in front of this property was removed to clear error in VS Code*/
+  height: 0; /* asterisk in front of this property was removed to clear error in VS Code */
 }
 
 .flex-direction-nav a {
@@ -4125,13 +4125,13 @@ html[xmlns] .flexslider .slides {
   font-family: 'Font Awesome 6 Pro';
   font-size: 2.5rem;
   display: inline-block;
-  content: '\f053'; /*CGT - chevron-left Font Awesome icon*/
+  content: '\f053'; /* chevron-left Font Awesome icon */
   color: rgba(0, 0, 0, 0.8);
   text-shadow: 0.063rem 0.063rem 0 rgba(255, 255, 255, 0.3)
 }
 
 .flex-direction-nav a.flex-next:before {
-  content: '\f054' /*CGT - chevron-right Font Awesome icon*/
+  content: '\f054' /* chevron-right Font Awesome icon */
 }
 
 .flex-direction-nav .flex-prev {
@@ -4186,7 +4186,7 @@ html[xmlns] .flexslider .slides {
   font-family: 'Font Awesome 6 Pro';
   font-size: 1.25rem;
   display: inline-block;
-  content: '\f004' /*CGT - heart Font Awesome icon*/
+  content: '\f004' /* heart Font Awesome icon */
 }
 
 .flex-pauseplay a:hover {
@@ -4194,7 +4194,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-pauseplay a.flex-play:before {
-  content: '\f053' /*CGT - chevron-left Font Awesome icon*/
+  content: '\f053' /* chevron-left Font Awesome icon */
 }
 
 .flex-control-nav {
@@ -4209,7 +4209,7 @@ html[xmlns] .flexslider .slides {
   margin: 0 0.375rem;
   display: inline-block;
   zoom: 1;
-  /**display: inline*/ /*CGT - commented out this line item since it created an error in VS Code*/
+  /**display: inline*/ /* commented out this line item since it created an error in VS Code */
 }
 
 .flex-control-paging li a {
@@ -4256,7 +4256,7 @@ html[xmlns] .flexslider .slides {
   opacity: .7;
   cursor: pointer;
   -moz-user-select: none;
-  user-select: none; /*CGT - added standard property*/
+  user-select: none; /* added standard property */
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -4417,8 +4417,8 @@ html[xmlns] .flexslider .slides {
 #top_drops .rank:first-of-type,
 #top_starters .rank:first-of-type,
 #top_owns .rank:first-of-type,
-#top_steals td:first-of-type,
-#top_busts td:first-of-type {
+#top_steals > tbody > tr > td:first-of-type,
+#top_busts > tbody > tr > td:first-of-type {
   width: 2.5rem;
 }
 
@@ -4471,37 +4471,48 @@ html[xmlns] .flexslider .slides {
   max-width: max-content;
 }
 
+#options_18 h2,
 #body_options_18 h2 {
   display: none
 }
 
+#options_18 .report.nocaption th,
+#options_18 .report.nocaption td.inputfield,
 #body_options_18 .report.nocaption th,
 #body_options_18 .report.nocaption td.inputfield {
   text-align: left;
 }
 
+#options_18 .report.nocaption th.dropplayer,
+#options_18 .report.nocaption th[align="center"],
+#options_18 .report.nocaption td.inputfield.dropplayer,
 #body_options_18 .report.nocaption th.dropplayer,
 #body_options_18 .report.nocaption th[align="center"],
 #body_options_18 .report.nocaption td.inputfield.dropplayer {
   text-align: center
 }
 
+#options_18 .report.nocaption td.inputfield input,
+#options_18 .report.nocaption td.inputfield span,
 #body_options_18 .report.nocaption td.inputfield input,
 #body_options_18 .report.nocaption td.inputfield span {
   vertical-align: middle
 }
 
+#options_18 .report.nocaption td.inputfield,
 #body_options_18 .report.nocaption td.inputfield {
   white-space: nowrap;
 }
 
+#options_180 .report td,
+#options_122 .report td,
 #body_options_180 .report td,
 #body_options_122 .report td {
   text-align: center
 }
 
-#body_options_180 .report th:first-of-type,
-#body_options_122 .report th:first-of-type,
+#options_180 .report th:first-of-type,
+#options_122 .report th:first-of-type,
 #body_options_180 .report td:first-of-type,
 #body_options_122 .report td:first-of-type {
   text-align: center;
@@ -4509,24 +4520,28 @@ html[xmlns] .flexslider .slides {
   white-space: nowrap;
 }
 
+#options_180 .report .franchiseicon,
+#options_122 .report .franchiseicon,
 #body_options_180 .report .franchiseicon,
 #body_options_122 .report .franchiseicon {
   max-width: 9.375rem
 }
 
+#options_06 .withfranchiseicon span,
+#options_07 .withfranchiseicon span,
 #body_options_06 .withfranchiseicon span,
 #body_options_07 .withfranchiseicon span {
   font-size: 0
 }
 
-#body_options_112 .inputlabel {
+[id$="options_112"] .inputlabel { /* this is using an attribute suffix match so any html element ending in options_112 */
   width: 6.25rem;
   white-space: nowrap;
   font-weight: bold;
 }
 
 #bar_chart .weeklypointtotals table td,
-#body_options_20 .weeklypointtotals table td {
+[id$="options_20"] .weeklypointtotals table td {
   border-right: 0;
   border-left: 0;
   padding-right: 0;
@@ -4638,7 +4653,7 @@ button[id^="add_to_tab_"] {
 }
 
 #MSG,
-#body_options_05 textarea {
+[id$="options_05"] textarea {
   width: 100%;
   margin: 0.625rem 0
 }
@@ -4671,18 +4686,18 @@ div.mobile-wrap>.playerBio-Table {
   display: none
 }
 
-#body_options_20 .report td img,
+[id$="options_20"] .report td img,
 #bar_chart .weeklypointtotals table td img {
   max-width: 100%
 }
 
 #bar_chart .weeklypointtotals table,
-#body_options_20 .weeklypointtotals table {
+[id$="options_20"] .weeklypointtotals table {
   width: auto
 }
 
 #bar_chart .weeklypointtotals table td,
-#body_options_20 .weeklypointtotals table td {
+[id$="options_20"] .weeklypointtotals table td {
   border-right: 0;
   border-left: 0;
   padding-right: 0;
@@ -4690,7 +4705,7 @@ div.mobile-wrap>.playerBio-Table {
 }
 
 #bar_chart .weeklypointtotals table td,
-#body_options_20 .weeklypointtotals table td {
+[id$="options_20"] .weeklypointtotals table td {
   border: 0
 }
 
@@ -4705,7 +4720,7 @@ caption.withfranchiseicon span {
   padding-left: 0
 }
 
-#body_options_13 img.franchiselogo {
+[id$="options_13"] img.franchiselogo {
   display: none
 }
 
@@ -4719,11 +4734,11 @@ caption.withfranchiseicon span {
   margin: 0.625rem auto
 }
 
-#body_options_27 textarea {
+[id$="options_27"] textarea {
   width: 100%;
 }
 
-#body_options_27 .picks {
+[id$="options_27"] .picks {
   width: 100%;
   min-width: 25rem
 }
@@ -4813,18 +4828,18 @@ img {
 Team Logos
 
 /******************************/
-/*CGT - below settings to set size of logo for Locker Room*/
+/* below settings to set size of logo for Locker Room */
 .franchiselogo{
   max-width: 100%;
   height: auto
 }
-/*CGT - below settings to increase size of icons for standings on PC*/
+/* below settings to increase size of icons for standings on PC */
 .franchiseicon {
   width: 250px; /* this was max-width: 100% */
   height: auto
 }
 #standings .franchiseicon {
-  width: 425px; /* width of icon on standings screen*/
+  width: 425px; /* width of icon on standings screen */
 }
 #standings .fname, #standings .ficon {
   width: 300px;
@@ -4835,14 +4850,14 @@ Team Logos
 #home #standings .fname, #home #standings .ficon {
   width: 250px;
 }
-/*CGT - below settings to increase size of icons for team details on PC*/
+/* below settings to increase size of icons for team details on PC */
 #TeamDetails caption span img {
   height: 2.5rem;
   vertical-align: middle;
   width: auto;
   padding: 0.05rem 0.05rem 0.05rem 0.25rem;
 }
-/*CGT - below settings to add background captions on roster report*/
+/* below settings to add background captions on roster report */
 #roster caption.withfranchiseicon {
   padding-left: 0.188rem;
   padding-left: .188rem;
@@ -4851,7 +4866,7 @@ Team Logos
   background: rgba(0, 0, 0, 0) url(https://knuckleheads.netlify.app/images/captions/Caption-Dark.png); /*added*/
   background-position: center right; /*added*/
 }
-/*below settings to decrease size of icons for standings on mobile devices*/
+/* below settings to decrease size of icons for standings on mobile devices */
 @media only screen and (max-width: 35.5em) {
   .franchiseicon {
       height: auto;
@@ -4871,6 +4886,7 @@ Team Logos
   }
 }
 /******************************/
+
 #body_login .warning {
   text-align: center
 }
@@ -5036,8 +5052,8 @@ div.mobile-wrap:empty {
   font-size: 1rem
 }
 
-#body_options_169 div.mobile-wrap:nth-child(4),
-#body_options_06 .weekly-navbar+div.mobile-wrap {
+[id$="options_169"] div.mobile-wrap:nth-child(4),
+[id$="options_06"] .weekly-navbar+div.mobile-wrap {
   display: none
 }
 
@@ -5114,7 +5130,7 @@ div.mobile-wrap:empty {
 
 #playoff-report-modal-content .still-tied li::before,
 #playoff-report-modal-content .seed-group ul ul li::before {
-  content: "\f005"; /*CGT - star Font Awesome icon*/
+  content: "\f005"; /* star - Font Awesome icon */
   font-family: 'Font Awesome 6 Pro';
   padding-right: 0.188rem;
   color: var(--primary, #ff4200)
@@ -5149,7 +5165,7 @@ div.mobile-wrap:empty {
 }
 
 #power_rank tr:nth-child(2) th,
-#body_options_101 .mobile-wrap>.report tr:nth-child(2) th {
+[id$="options_101"] .mobile-wrap>.report tr:nth-child(2) th {
   white-space: nowrap
 }
 
@@ -5197,7 +5213,7 @@ tr.assets input[name^="bbid"] {
 }
 
 .shouldbench:after {
-  content: "\f103"; /*CGT - angles-down Font Awesome icon*/
+  content: "\f103"; /* angles-down Font Awesome icon */
   font-family: 'Font Awesome 6 Pro';
   margin-left: 0.25rem;
   color: red;
@@ -5209,7 +5225,7 @@ tr.assets input[name^="bbid"] {
 }
 
 .shouldstart:after {
-  content: "\f102"; /*CGT - angles-up Font Awesome icon*/
+  content: "\f102"; /* angles-up Font Awesome icon */
   font-family: 'Font Awesome 6 Pro';
   margin-left: 0.25rem;
   color: #90ee90;
@@ -5358,38 +5374,38 @@ td.is-freeagent {
   font-weight: bold
 }
 
-#body_options_176 div.mobile-wrap table td {
+[id$="options_176"] div.mobile-wrap table td {
   width: 100%;
   display: inline-table;
   text-align: center;
 }
 
-#body_options_176 div.mobile-wrap table td[width="600"] {
+[id$="options_176"] div.mobile-wrap table td[width="600"] {
   width: 100%;
   margin: 0 auto;
   display: block;
   float: none
 }
 
-#body_options_176 div.mobile-wrap table td table {
+[id$="options_176"] div.mobile-wrap table td table {
   max-width: 25rem;
   display: inline-table;
   margin: 0.625rem
 }
 
-#body_options_176 div.mobile-wrap table td table td {
+[id$="options_176"] div.mobile-wrap table td table td {
   text-align: right
 }
 
-#body_options_176 div.mobile-wrap table td table .player {
+[id$="options_176"] div.mobile-wrap table td table .player {
   text-align: left
 }
 
-#body_options_176 div.mobile-wrap table td table td {
+[id$="options_176"] div.mobile-wrap table td table td {
   display: table-cell
 }
 
-#body_options_176 div.mobile-wrap table td table .points {
+[id$="options_176"] div.mobile-wrap table td table .points {
   text-align: center
 }
 
@@ -5404,7 +5420,7 @@ table.previews_table>tbody>tr:nth-child(1)>table.report.nocaption td div {
   width: 100% !important
 }
 
-#body_options_22 .week_optionsbox+div.mobile-wrap,
+[id$="options_22"] .week_optionsbox+div.mobile-wrap,
 #body_weekly .week_optionsbox+div.mobile-wrap {
   max-width: 25rem
 }
@@ -5446,12 +5462,12 @@ table.previews_table>tbody>tr:nth-child(1)>table.report.nocaption td div {
   width: 3.125rem
 }
 
-#body_top td.player,
-#body_top .status,
-#body_options_236 td.player,
-#body_options_236 td.week+td,
-#body_options_08 td.player,
-#body_options_08 td.status {
+#body_top #top td.player,
+#body_top #top .status,
+[id$="options_236"] td.player,
+[id$="options_236"] td.week+td,
+[id$="options_08"] td.player,
+[id$="options_08"] td.status {
   white-space: nowrap
 }
 
@@ -5544,6 +5560,16 @@ tr.tradedifference td {
   font-size: 1rem
 }
 
+#MFLroster th[class="no-checkBox"],
+#MFLroster td[class="no-checkBox"],
+#MFLroster th[class="checkBox"],
+#MFLroster td[class="checkBox"] {
+    min-width: unset!important;
+    width: unset!important;
+    margin: 0 !important;
+    padding: 0 3px !important;
+}
+
 #MFLroster .checkBox input+label:before {
   font-family: 'Font Awesome 6 Pro';
   display: inline-block;
@@ -5555,13 +5581,13 @@ tr.tradedifference td {
 }
 
 #MFLroster .checkBox input+label:before {
-  color: lightgray; /*changed from #aaa*/
-  content: "\f204"; /*toggle off Font Awesome icon - was f096 (checkbox)*/
+  color: lightgray; /* changed from #aaa */
+  content: "\f204"; /* toggle off Font Awesome icon - was f096 (checkbox) */
 }
 
 #MFLroster .checkBox input:checked+label:before {
-  color: limegreen; /*changed from #90ee90*/
-  content: "\e5b1"; /*toggle on Font Awesome icon - was f046 (checked checkbox)*/
+  color: limegreen; /* changed from #90ee90 */
+  content: "\e5b1"; /* toggle on Font Awesome icon - was f046 (checked checkbox) */
 }
 
 #MFLroster td.checkBox {
@@ -5623,13 +5649,13 @@ tr.tradedifference td {
   border: 0 !important
 }
 
-
 /* background gradient color for the banner area for scoreboard name */
 #MFLCenterTop {
   color: #fff;
   border: 0.063rem solid rgba(45, 45, 45, .7);
   background: rgba(45, 45, 45, .4);
 }
+
 /* franchise team names and nfl team names box background and text colors */
 #MFLRoadTeamName,
 #MFLHomeTeamName {
@@ -5637,6 +5663,7 @@ tr.tradedifference td {
   border-color: rgba(45, 45, 45, .7);
   background: rgba(45, 45, 45, .4);
 }
+
 /* background gradient for scoreboard scores digits */
 #MFLRoadScore span,
 #MFLHomeScore span {
@@ -5654,6 +5681,7 @@ tr.tradedifference td {
 #MFLHomeScore span:after {
   background: rgba(45, 45, 45, .7)
 }
+
 /* gradient colors for the small side boxes on each side of scores digit center lines */
 #MFLRoadScore span a:after,
 #MFLHomeScore span a:after,
@@ -5677,6 +5705,7 @@ tr.tradedifference td {
   border-color: rgba(45, 45, 45, .7);
   background: rgba(45, 45, 45, .4);
 }
+
 /* color for scoring digits */
 #MFLRoadScore span a,
 #MFLHomeScore span a {
@@ -5740,6 +5769,7 @@ tr.tradedifference td {
   background: #FF0000;
   color: #000
 }
+
 /* the small tooltip popup arrows shown when hovering actual and pace scores */
 body #scoreboardTooltip:after {
   border-top-color: var(--primary, #ff4200) !important
@@ -5756,6 +5786,7 @@ body #scoreboardTooltip.top:after {
 .MFLScoreboardLineups tr.rowCurrentlyPlaying {
   background-color: rgba(20, 255, 20, .1)
 }
+
 /* Edit Scoreboard Base CSS for this skin ================================================ */
 .MFLGameTable td,
 .MFLNFLGameTable td {
@@ -5792,6 +5823,7 @@ body #scoreboardTooltip.top:after {
 
 
 /***************************************/
+
 .standingstable .headerrow th {
   background: rgba(45, 45, 45, .7);
   color: #fff;
@@ -5840,6 +5872,7 @@ body #scoreboardTooltip.top:after {
 
 
 /***************************************/
+
 #rulestabs {
   color: #ddd
 }
@@ -5938,6 +5971,7 @@ a.subhead {
   color: #ccc;
   margin-left: 1.25rem
 }
+
 /***************************************/
 
 
@@ -5945,7 +5979,6 @@ a.subhead {
 
 
 /***************************************/
-
 
 /* COLORING */
 
@@ -6002,6 +6035,7 @@ a.subhead {
 #custom_draftroom .draft_picks_container tr {
   background: none !important
 }
+
 /* HIGHLIGHT BG COLOR */
 #custom_draftroom .moohighlight,
 #custom_draftroom .draft_picks_container tr.moohighlight {
@@ -6015,6 +6049,7 @@ a.subhead {
 #draft_status_table .moohighlight:first-child {
   background-color: var(--bg-opacity, rgba(181, 47, 0, .05)) !important
 }
+
 /* PLAYER PROFILE */
 #custom_draftroom #draft_player_link {
   color: var(--primary, #ff4200)

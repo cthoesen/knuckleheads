@@ -3577,7 +3577,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-direction-nav {
-  *height: 0
+  height: 0;
 }
 
 .flex-direction-nav a {
@@ -3962,10 +3962,10 @@ html[xmlns] .flexslider .slides {
 }
 
 #options_180 .report th:first-of-type,
-#options_122 .report th:first-of-type,
+#options_122 .report th:first-of-type {
 text-align:center;
 width:1%;
-white-space:nowrap
+white-space:nowrap;
 }
 
 #options_180 .report .franchiseicon,
