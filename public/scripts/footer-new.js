@@ -1111,11 +1111,11 @@ jQuery("#body_trade_offer .remove-table").parents(".mobile-wrap").remove(),
             .replace("Nov", "NOVEMBER")
             .replace("Dec", "DECEMBER");
     }),
-    /*jQuery("#calendar .day:not(:has(div.cal-event))").each(function (e) {
+    jQuery("#calendar .day:not(:has(div.cal-event))").each(function (e) {
         $(this).append(
-            '<div class="cal-event"><div class="cal-event-desc" style="font-style:italic"><li style="list-style:none">No Events Today</li></div></div>'
+            '<div class="cal-event"><div class="cal-event-desc" style="font-style:italic"><li style="list-style:none"> </li></div></div>'
         );
-    }),*/
+    }),
     jQuery(".calendarday.date a").html('<i class="fa-regular fa-square-plus" aria-hidden="true"></i>'),
     jQuery("#body_options_123 h3.h3-menu").remove(),
     fetch(`${baseURLDynamic}/${year}/options?L=${league_id}&O=123`)
@@ -1130,7 +1130,7 @@ jQuery("#body_trade_offer .remove-table").parents(".mobile-wrap").remove(),
                 jQuery("#monthly_events .cal-event").unwrap(),
                 jQuery("#monthly_events .cal-event-desc li").css("list-style", "none"),
                 jQuery("#monthly_events .cal_append:empty").append(
-                    '<div class="cal-event"><div class="cal-event-desc" style="font-style:italic"><li style="list-style:none">No Events Today</li></div></div>'
+                    '<div class="cal-event"><div class="cal-event-desc" style="font-style:italic"><li style="list-style:none"> </li></div></div>'
                 ),
                 jQuery("#calendar,#monthly_calendar").css("visibility", "visible"),
                 jQuery('.cal-event li a[title|="Delete This Calendar Event"]').parent("li").addClass("remove_char"),
