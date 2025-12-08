@@ -23,3 +23,27 @@
                   <li><a>Links</a></li>
                   <li><a>Activity</a></li>
                 </ul>
+                </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="tabs_scroll">
+      <div class="homepagetabcontent">
+        <module name="MY_NEWS" COUNT=""></module>
+      </div>
+      <div class="homepagetabcontent">
+        <module name="LIVESCORING_SUMMARY"></module>
+      </div>
+      <div class="homepagetabcontent">
+        <module name="FRANCHISE_SCHEDULE" FRANCHISE=""></module>
+      </div>
+      <div class="homepagetabcontent">
+        <module name="LEAGUE_LINKS"></module>
+      </div>
+      <div class="homepagetabcontent">
+        <module name="OWNER_ACTIVITY"></module>
+      </div>
+    </div>
+  </div>
+</div>
