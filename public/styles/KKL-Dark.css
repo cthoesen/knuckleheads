@@ -14213,11 +14213,15 @@ td[class*=grid_pos] {
 .inner_player_table .cus_player_wrapper {
     position: relative;
 }
-.cus_player_images .inner_player_table .cus_players_name {
+
+/***** commented out these lines since no properties are in use *****/
+/*.cus_player_images .inner_player_table .cus_players_name { 
     /*overflow: hidden;*/
     /*text-overflow: ellipsis;*/
-    /*white-space: nowrap;*/
-}
+    /*white-space: nowrap;
+}*/
+/*****************************************************************/
+
 .inner_player_table td,
 .TeamData.team_roster_table .inner_player_table td,
 .TeamData.team_roster_table .inner_player_table th,

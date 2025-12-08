@@ -14213,11 +14213,15 @@ td[class*=grid_pos] {
 .inner_player_table .cus_player_wrapper {
     position: relative;
 }
-.cus_player_images .inner_player_table .cus_players_name {
+
+/***** commented out this section since no properties in use *****/
+/*.cus_player_images .inner_player_table .cus_players_name {
     /*overflow: hidden;*/
     /*text-overflow: ellipsis;*/
-    /*white-space: nowrap;*/
-}
+    /*white-space: nowrap;
+}*/
+/*************************************************************/
+
 .inner_player_table td,
 .TeamData.team_roster_table .inner_player_table td,
 .TeamData.team_roster_table .inner_player_table th,
@@ -14550,9 +14554,12 @@ th a[data-pimg-processed] .playerImgTable .teamPositionCircle {
 #AddDropForm .shadow-fade-bottom::after {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent);
 }
-#AddDropForm .add-drop-player-row {
-    /*border-bottom: 0.063rem solid #ddd;*/
-}
+
+/***** commented out this section since no properties in use *****/
+/*#AddDropForm .add-drop-player-row {
+    /*border-bottom: 0.063rem solid #ddd;
+}*/
+/**********************************************/
 #AddDropForm .player-info {
     font-size: 0.75rem;
 }
@@ -14581,7 +14588,7 @@ th a[data-pimg-processed] .playerImgTable .teamPositionCircle {
         font-weight: 900;
         font-size: 1rem;
     }
-    #AddDropForm # add-player-list .select-btn::before {
+    #AddDropForm #add-player-list .select-btn::before {
         color: #000;
     }
     #AddDropForm #drop-player-list .select-btn::before {
