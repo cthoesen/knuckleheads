@@ -6062,7 +6062,6 @@ a.subhead {
 #custom_draftroom #player-profile #draft_player_photo {
   border: 0.125rem solid var(--primary, #ff4200)
 }
-
 /* FORMATTING BELOW ======================= */
 #custom_draftroom caption span.module_expand {
   display: none !important
@@ -6079,7 +6078,6 @@ a.subhead {
 #custom_draftroom .toggle_tabs {
   text-align: center;
 }
-
 /* DRAFT TIMER */
 #custom_draftroom #draft_countdown_timer:before {
   content: "Draft Timer: ";
@@ -6090,7 +6088,6 @@ a.subhead {
   font-size: 0.875rem;
   font-weight: normal
 }
-
 /* DRAFT CONTROL BUTTONS */
 #custom_draftroom #draft-controller {
   position: relative;
@@ -6132,7 +6129,6 @@ a.subhead {
 #custom_draftroom #draft-pick-edit input[type="button"] {
   padding: 0.375rem 0.25rem
 }
-
 /* MAKE A PICK */
 #custom_draftroom #Customdraft_makepick h3 {
   margin: 0.938rem 0;
@@ -6337,7 +6333,6 @@ a.subhead {
 .draft_picks_header th {
   background: none
 }
-
 /* PLAYER PROFILE */
 #custom_draftroom #player-profile {
   padding: 0.188rem;
@@ -6371,19 +6366,16 @@ a.subhead {
 #custom_draftroom #player-profile #draft_player_photo {
   margin: 0.313rem 0
 }
-
 /* ROSTERS */
 #custom_draftroom #rostertable td:first-of-type {
   text-align: center
 }
-
 /* DRAFT CHAT */
 #custom_draftroom .franchiseicon {
   width: 100%;
   max-width: 9.375rem;
   height: auto
 }
-
 /* OWNER ACTIVITY MODULE */
 #custom_draftroom #owner_activity td,
 #custom_draftroom #owner_activity th {
@@ -6394,7 +6386,6 @@ a.subhead {
 #custom_draftroom #avg_draft_time th:last-of-type {
   text-align: center
 }
-
 /* AVG DRAFT TIME MODULE */
 #custom_draftroom #avg_draft_time td,
 #custom_draftroom #avg_draft_time th {
@@ -6405,7 +6396,6 @@ a.subhead {
 #custom_draftroom #avg_draft_time th:last-of-type {
   text-align: center
 }
-
 /* ADJUST 2 COLUMN MODULES */
 #custom_draftroom .toggle_tabs div.mobile-wrap {
   max-width: 100%;
@@ -6502,7 +6492,7 @@ a.subhead {
   width: 100%;
 }
 
-/*#current_auctions td:nth-child(even) {}*/ /* commented out since no properties are defined for this element */
+/*#current_auctions td:nth-child(even) {}*/ /*commented out since no properties are defined for this element*/
 
 #current_auctions td:nth-child(1):before {
   content: "Player Name"
@@ -6557,6 +6547,7 @@ a.subhead {
 
 
 /***************************************/
+
 
 /* COLOR TO MATCH SITE */
 
@@ -6622,27 +6613,26 @@ a.subhead {
 #body_add_drop #waiver_request_list td.action a:hover {
   color: var(--primary-light, #FA5C25)
 }
-
 /* FORMATTING NO NEED TO EDIT */
 #body_ir #container-wrap .mobile-view,
 #body_taxi_squad #container-wrap .mobile-view {
   width: auto
 }
 
-[id$="options_27"] #container-wrap .report td[valign=center] {
+#body_options_27 #container-wrap .report td[valign=center] {
   vertical-align: middle
 }
 
 #body_add_drop #container-wrap .report tr:nth-child(2)>th,
-[id$="options_27"] td[colspan="7"] b {
+#body_options_27 td[colspan="7"] b {
   display: none
 }
 
-[id$="options_27"] #container-wrap .report td {
+#body_options_27 #container-wrap .report td {
   vertical-align: top
 }
 
-[id$="options_27"] .picks {
+#body_options_27 .picks {
   width: 100%;
   min-width: auto
 }
@@ -7080,6 +7070,7 @@ table.make-pick-table>tbody>tr>td.mobile-view.leftS>table>tbody>tr:nth-child(2)>
   padding: 0
 }
 
+
 /***************************************/
 
 
@@ -7087,6 +7078,7 @@ table.make-pick-table>tbody>tr>td.mobile-view.leftS>table>tbody>tr:nth-child(2)>
 
 
 /***************************************/
+
 
 /* COLORING */
 
@@ -7163,7 +7155,7 @@ div.custom-loadplayer {
   font-size: 0;
 }
 
-[id$="options_27"] tr.enter-player td textarea {
+#body_options_27 tr.enter-player td textarea {
   margin: 0 auto;
   margin-top: 0.625rem
 }
@@ -7175,6 +7167,7 @@ div.custom-loadplayer {
 
 
 /***************************************/
+
 
 /* COLORING */
 
@@ -7479,7 +7472,7 @@ span[id*="collapseAvg_"] {
 }
 
 #body_nfl_team_stats .mobile-wrap>.report td:first-of-type,
-[id$="options_138"] .mobile-wrap>.report td:first-of-type {
+#body_options_138 .mobile-wrap>.report td:first-of-type {
   white-space: nowrap
 }
 
@@ -7530,10 +7523,10 @@ span[id*="collapseAvg_"] {
   text-decoration: none;
 }
 
-[id$="options_03"] div.mobile-wrap .report td,
+#body_options_03 div.mobile-wrap .report td,
 #transactions td,
 #processed_waivers div.mobile-wrap .report td,
-[id$="options_17"] div.mobile-wrap .report td {
+#body_options_17 div.mobile-wrap .report td {
   border-bottom: 0.25rem solid rgba(0, 0, 0, .2)
 }
 
@@ -7548,20 +7541,19 @@ span[id*="collapseAvg_"] {
 
 /* COLORING */
 
-[id$="options_03"] div.mobile-wrap .report .franchise-date,
+#body_options_03 div.mobile-wrap .report .franchise-date,
 #transactions td .franchise-date,
-[id$="options_03"] div.mobile-wrap .report span.offer-text,
+#body_options_03 div.mobile-wrap .report span.offer-text,
 #transactions span.offer-text {
   color: #999
 }
-
 /* FORMATTING */
-[id$="options_03"] div.mobile-wrap .report td,
+#body_options_03 div.mobile-wrap .report td,
 #transactions td {
   padding: 0.625rem 0.125rem
 }
 
-[id$="options_03"] div.mobile-wrap .report td b.warning,
+#body_options_03 div.mobile-wrap .report td b.warning,
 #transactions td b.warning {
   text-align: left;
   text-transform: uppercase;
@@ -7570,7 +7562,7 @@ span[id*="collapseAvg_"] {
   padding-top: 0.313rem
 }
 
-[id$="options_03"] div.mobile-wrap .report .franchise-date,
+#body_options_03 div.mobile-wrap .report .franchise-date,
 #transactions td .franchise-date {
   font-size: smaller;
   font-style: italic
@@ -7584,47 +7576,47 @@ span[id*="collapseAvg_"] {
 
 /***************************************/
 
-[id$="options_113"] table.report td a {
+#body_options_113 table.report td a {
   white-space: nowrap
 }
 
-[id$="options_209"] table.report td,
-[id$="options_182"] table.report td,
-[id$="options_182"] table.report th,
-[id$="options_113"] table.report td,
-[id$="options_113"] table.report th {
+#body_options_209 table.report td,
+#body_options_182 table.report td,
+#body_options_182 table.report th,
+#body_options_113 table.report td,
+#body_options_113 table.report th {
   text-align: center
 }
 
-[id$="options_209"] table.report td:nth-child(2),
-[id$="options_209"] table.report td:nth-child(3),
-[id$="options_209"] table.report th:nth-child(2),
-[id$="options_209"] table.report th:nth-child(3),
-[id$="options_182"] table.report .player {
+#body_options_209 table.report td:nth-child(2),
+#body_options_209 table.report td:nth-child(3),
+#body_options_209 table.report th:nth-child(2),
+#body_options_209 table.report th:nth-child(3),
+#body_options_182 table.report .player {
   text-align: left
 }
 
-[id$="options_182"] #container-wrap>div.mobile-wrap>table>tbody>tr>td:nth-child(3),
-[id$="options_182"] #container-wrap>div.mobile-wrap>table>tbody>tr>td:nth-child(4) {
+#body_options_182 #container-wrap>div.mobile-wrap>table>tbody>tr>td:nth-child(3),
+#body_options_182 #container-wrap>div.mobile-wrap>table>tbody>tr>td:nth-child(4) {
   float: left;
   width: 100%;
   text-align: left
 }
 
-[id$="options_182"] #container-wrap>div.mobile-wrap>table>tbody>tr>td:nth-child(4) table tr:last-child td {
+#body_options_182 #container-wrap>div.mobile-wrap>table>tbody>tr>td:nth-child(4) table tr:last-child td {
   background: rgba(0, 0, 0, .2);
   color: #fff;
 }
 
-[id$="options_182"] #container-wrap>div.mobile-wrap>table>tbody>tr>td:nth-child(4) table tr:last-child td:first-child {
+#body_options_182 #container-wrap>div.mobile-wrap>table>tbody>tr>td:nth-child(4) table tr:last-child td:first-child {
   text-align: right;
 }
 
-[id$="options_182"] #container-wrap>div.mobile-wrap>table>tbody>tr:nth-child(1)>th:nth-child(4) {
+#body_options_182 #container-wrap>div.mobile-wrap>table>tbody>tr:nth-child(1)>th:nth-child(4) {
   display: none
 }
 
-[id$="options_209"] table.report .franchiseicon {
+#body_options_209 table.report .franchiseicon {
   max-width: 9.375rem
 }
 
@@ -8280,7 +8272,6 @@ th.ls_projections {
 #body_ajax_ls .ls_box_gameover td.winner_mark div[class^="oggstat"] {
   opacity: 1;
 }
-
 /* SCORING NUMBERS FORMAT */
 #LS_AwayScore,
 #LS_HomeScore {
@@ -8389,9 +8380,12 @@ div.ls_team_points {
 
 /***************************************/
 
+
 /*BOXSCORES TABLE*/
 
+
 /*box score matchups bg color*/
+
 #body_ajax_ls div.ls_other_game {
   background: rgba(0, 0, 0, .2);
   border-color: rgba(45, 45, 45, .7)
@@ -8406,7 +8400,6 @@ div.ls_team_points {
   background-color: var(--bg-opacity-brighter, rgba(181, 47, 0, .2));
   border-color: var(--primary);
 }
-
 /*text color for points in box score table*/
 #body_ajax_ls td div[class^="ogffpts"] {
   color: #fff
@@ -8432,28 +8425,25 @@ div.ls_team_points {
 }
 /*MAIN TABLES FOR TEAM VS TEAM PLAYERS MATCHUPS*/
 
+
 /*text color for stats of each player*/
 #body_ajax_ls div.ls_player_stats div {
   color: #aaa
 }
-
 /*text color for player total points*/
 #body_ajax_ls td div[class^="pfpts"] {
   color: #fff
 }
-
 /*add border to bottom of all td cells if desired*/
 #body_ajax_ls tr.ls_nonstarters td,
 #body_ajax_ls tr.ls_starters td {
   border-bottom: 0.063rem solid #111
 }
-
 /*background and text color for starting and bench total points rows*/
 #body_ajax_ls tr.td-totals-row td {
   background: #222;
   color: var(--primary-light, #FA5C25)
 }
-
 /*bg color for games ended and in progress*/
 #body_ajax_ls tr.ls_gameis_over {
   background-color: var(--bg-opacity, rgba(181, 47, 0, .05))
@@ -8462,8 +8452,8 @@ div.ls_team_points {
 #body_ajax_ls tr.ls_gameinprogress {
   background-color: rgba(20, 255, 20, .02)
 }
-
 /*NFL ICONS FOR H2H GAMES AND FRANCHISE ICONS IN BOXSCORE*/
+
 
 /*icon height for franchise logos in boxscore table*/
 
@@ -8472,21 +8462,19 @@ div.ls_team_points {
   max-width: 6.625rem;
   max-height: 2.25rem;
 }
-
 /*icon height for NFL logos in table*/
 #body_ajax_ls img.ls_nfl_icon {
   margin: 0 0.125rem;
   max-width: 1.25rem;
   max-height: 0.938rem
 }
-
 /*SETTINGS CHECKBOXES*/
+
 
 /*settings checkbox color when not checked*/
 #body_ajax_ls #ls_setting_drop input+label:before {
   color: #90ee90
 }
-
 /*settings checkbox color when checked*/
 #body_ajax_ls #ls_setting_drop input:checked+label:before {
   color: var(--primary-light, #FA5C25)
@@ -8497,7 +8485,6 @@ div.ls_team_points {
   background: var(--primary-light, #FA5C25);
   color: #fff
 }
-
 /*live stats update ticker scrolling text td cell bg and text color*/
 #body_ajax_ls #ls_ticker_tab_id td:last-of-type {
   background: #fff;
@@ -8506,11 +8493,11 @@ div.ls_team_points {
 
 /*LIVE STATS UPDATES SCROLLING STATS TABLE*/
 
+
 /*border around td cell 1st*/
 #body_ajax_ls #ls_ticker_tab_id td:first-of-type {
   border: 0.063rem solid #111
 }
-
 /*border around td cell 2nd*/
 #body_ajax_ls #ls_ticker_tab_id td:last-of-type {
   border: 0.063rem solid #111;
@@ -8521,7 +8508,6 @@ div.ls_team_points {
 #body_ajax_ls #last_update.ls_changed {
   color: #90ee90
 }
-
 /*add football to players who have and dont have balls*/
 #body_ajax_ls .ls_players_table tr.ls_has_ball .td-first-type:after,
 #body_ajax_ls .ls_players_table tr.ls_nothas_ball .td-first-type:after,
@@ -8555,12 +8541,10 @@ div.ls_team_points {
 #body_ajax_ls .nflggstat {
   color: #90ee90
 }
-
 /*color of "Final" text in NFL Boxscores table*/
 #body_ajax_ls #nfl_games span.ls_nfl_box_over {
   color: var(--primary-light, #FA5C25)
 }
-
 /*when MFL makes updates to scoreboard - change text color*/
 #LS_TopTableHolder #LS_AwayScore .ls_changed,
 #LS_TopTableHolder #LS_HomeScore .ls_changed,
@@ -8570,7 +8554,6 @@ div.ls_team_points {
 #body_ajax_ls td div[class^="ogffpts"].ls_changed {
   color: #90ee90
 }
-
 /*Pace text color in scoreboard and td cell*/
 #body_ajax_ls tr.td-totals-row td.ffpts_pace_total {
   color: #ccc;
@@ -8593,7 +8576,6 @@ div.ls_team_points {
 .ls_projected {
   color: #ccc !important
 }
-
 /* Scoring Numbers Coloring */
 #LS_AwayScore span,
 #LS_HomeScore span {
@@ -8623,7 +8605,6 @@ div.ls_team_points {
   border-color: rgba(45, 45, 45, .7);
   background: rgba(0, 0, 0, .4)
 }
-
 /*   COLOR NFL BOX SCORE POPUP    */
 .ls-modal {
   background: rgba(0, 0, 0, .7)
@@ -8784,7 +8765,6 @@ div.ls_team_points {
 
 
 /***************************************/
-
 .hz-main-table tbody th.fixed-side {
   text-align: left !important
 }
@@ -8967,10 +8947,11 @@ td.winIcon .blankwin-img img {
 }
 /***************************************/
 
+
 /*           DICE ROLL SCRIPT          */
 
-/***************************************/
 
+/***************************************/
 td#diceRollResult table th,
 td#diceRollResult table td {
   text-align: center
@@ -9189,19 +9170,19 @@ td.mflLive_details_pace_behind {
   display: block
 }
 
-[id$="options_247"] #All_Scores_Table caption {
+#body_options_247 #All_Scores_Table caption {
   margin-bottom: 0
 }
 
-[id$="options_247"] td.as_spacer_bottom {
+#body_options_247 td.as_spacer_bottom {
   border: 0 !important
 }
 
-[id$="options_247"] table.all_scores_matchup_name {
+#body_options_247 table.all_scores_matchup_name {
   margin-top: 0
 }
 
-[id$="options_247"] .all_scores_tablewrap {
+#body_options_247 .all_scores_tablewrap {
   vertical-align: top;
   max-width: 16.25rem;
   display: inline-table;
@@ -9211,14 +9192,14 @@ td.mflLive_details_pace_behind {
   padding: 0.125rem;
 }
 
-[id$="options_247"] .all_scores_tablewrap.border_none {
+#body_options_247 .all_scores_tablewrap.border_none {
   border: 0;
   padding: 0;
   margin: 0;
   width: 0
 }
 
-[id$="options_247"] #All_Scores_Table {
+#body_options_247 #All_Scores_Table {
   text-align: center
 }
 
@@ -9408,7 +9389,6 @@ div.sub-content.editable .insertIcons {
 
 
 /***************************************/
-
 #body_all_reports table td.two_column_layout th {
   color: var(--primary, #ff4200);
   font-size: 1.375rem;
@@ -9421,7 +9401,7 @@ div.sub-content.editable .insertIcons {
   padding-bottom: 0.2rem;
 }
 
-#body_commissioner_setup #commissioner_setup table td.two_column_layout .oddtablerow,
+#body_commissioner_setup table td.two_column_layout .oddtablerow,
 #body_all_reports table td.two_column_layout .oddtablerow {
   background: rgba(0, 0, 0, .2);
 }
@@ -9458,21 +9438,6 @@ div.sub-content.editable .insertIcons {
   padding: 0.625rem;
   max-height: 90%;
   overflow: auto;
-}
-
-/***************************************/
-
-/* ADDED 12-7-2025 */
-
-/***************************************/
-
-#MFLPlayerPopupStats td.week + td.points + td,
-#MFLPlayerPopupStats td.week + td.points + td + td,
-#MFLPlayerPopupProjections td.week + td.points + td,
-#MFLPlayerPopupStats > table > tbody > tr:nth-child(2) > th:nth-child(3),
-#MFLPlayerPopupStats > table > tbody > tr:nth-child(2) > th:nth-child(4),
-#MFLPlayerPopupProjections > table > tbody > tr:nth-child(2) > th:nth-child(3) {
-    text-align: left;
 }
 
 /***************************************/
@@ -9669,58 +9634,58 @@ div.sub-content.editable .insertIcons {
 
 @media only screen and (max-width:55em) {
 
-  [id$="csetup_revtrad"] table.report table,
-  [id$="csetup_revtrad"] table.report tbody,
-  [id$="csetup_revtrad"] table.report th,
-  [id$="csetup_revtrad"] table.report td,
-  [id$="csetup_revtrad"] table.report tr {
+  #body_csetup_revtrad table.report table,
+  #body_csetup_revtrad table.report tbody,
+  #body_csetup_revtrad table.report th,
+  #body_csetup_revtrad table.report td,
+  #body_csetup_revtrad table.report tr {
     display: block
   }
 
-  [id$="csetup_revtrad"] table.report th {
+  #body_csetup_revtrad table.report th {
     position: absolute;
     top: -9999rem;
     left: -9999rem
   }
 
-  [id$="csetup_revtrad"] table.report td {
+  #body_csetup_revtrad table.report td {
     position: relative;
     text-align: left
   }
 
-  [id$="csetup_revtrad"] table.report td:before {
+  #body_csetup_revtrad table.report td:before {
     position: absolute;
     left: 0.375rem;
     padding-right: 0.313rem;
     white-space: nowrap
   }
 
-  [id$="csetup_revtrad"] table.report td {
+  #body_csetup_revtrad table.report td {
     padding: 0.313rem 0;
     padding-left: 7.5rem;
     width: 100%
   }
 
-  [id$="csetup_revtrad"] table.report tr.newposition td {
+  #body_csetup_revtrad table.report tr.newposition td {
     border: 0
   }
 
-  [id$="csetup_revtrad"] table.report tr.newposition td:nth-of-type(3),
-  [id$="csetup_revtrad"] table.report tr.newposition td:nth-of-type(5) {
+  #body_csetup_revtrad table.report tr.newposition td:nth-of-type(3),
+  #body_csetup_revtrad table.report tr.newposition td:nth-of-type(5) {
     border-bottom: 0.125rem solid #111
   }
 
-  [id$="csetup_revtrad"] table.report tr.newposition+tr td:last-of-type {
+  #body_csetup_revtrad table.report tr.newposition+tr td:last-of-type {
     border-bottom: 0.25rem solid var(--primary, #ff4200)
   }
 
     /* Set heights to scroll on mobiles */
-  [id$="csetup_revtrad"] div.mobile-wrap {
+  #body_csetup_revtrad div.mobile-wrap {
     max-height: 34.375rem
   }
 
     /* NO NEED TO EDIT - name for each td on transactions page and module */
-  [id$="csetup_revtrad"] table.report tr.newposition:before {
+  #body_csetup_revtrad table.report tr.newposition:before {
     display: table-caption;
     width: 100%;
     color: var(--primary, #ff4200);
@@ -9728,217 +9693,217 @@ div.sub-content.editable .insertIcons {
     text-align: center;
   }
 
-  [id$="csetup_revtrad"] table.report tr.newposition:nth-of-type(2):before {
+  #body_csetup_revtrad table.report tr.newposition:nth-of-type(2):before {
     content: "TRADE PENDING #1"
   }
 
-  [id$="csetup_revtrad"] table.report tr.newposition:nth-of-type(4):before {
+  #body_csetup_revtrad table.report tr.newposition:nth-of-type(4):before {
     content: "TRADE PENDING #2"
   }
 
-  [id$="csetup_revtrad"] table.report tr.newposition:nth-of-type(6):before {
+  #body_csetup_revtrad table.report tr.newposition:nth-of-type(6):before {
     content: "TRADE PENDING #3"
   }
 
-  [id$="csetup_revtrad"] table.report tr.newposition:nth-of-type(8):before {
+  #body_csetup_revtrad table.report tr.newposition:nth-of-type(8):before {
     content: "TRADE PENDING #4"
   }
 
-  [id$="csetup_revtrad"] table.report tr.newposition:nth-of-type(10):before {
+  #body_csetup_revtrad table.report tr.newposition:nth-of-type(10):before {
     content: "TRADE PENDING #5"
   }
 
-  [id$="csetup_revtrad"] table.report tr.newposition:nth-of-type(12):before {
+  #body_csetup_revtrad table.report tr.newposition:nth-of-type(12):before {
     content: "TRADE PENDING #6"
   }
 
-  [id$="csetup_revtrad"] table.report tr.newposition td:nth-of-type(1):before {
+  #body_csetup_revtrad table.report tr.newposition td:nth-of-type(1):before {
     content: "Offer Date:"
   }
 
-  [id$="csetup_revtrad"] table.report tr.newposition td:nth-of-type(2):before {
+  #body_csetup_revtrad table.report tr.newposition td:nth-of-type(2):before {
     content: "From Franchise:"
   }
 
-  [id$="csetup_revtrad"] table.report tr.newposition td:nth-of-type(3):before {
+  #body_csetup_revtrad table.report tr.newposition td:nth-of-type(3):before {
     content: "Players/Picks:"
   }
 
-  [id$="csetup_revtrad"] table.report tr.newposition td:nth-of-type(4):before {
+  #body_csetup_revtrad table.report tr.newposition td:nth-of-type(4):before {
     content: "To Franchise:"
   }
 
-  [id$="csetup_revtrad"] table.report tr.newposition td:nth-of-type(5):before {
+  #body_csetup_revtrad table.report tr.newposition td:nth-of-type(5):before {
     content: "Players/Picks:"
   }
 
-  [id$="csetup_revtrad"] table.report tr.newposition td:nth-of-type(6):before {
+  #body_csetup_revtrad table.report tr.newposition td:nth-of-type(6):before {
     content: "Expires:"
   }
 
-  [id$="csetup_revtrad"] table.report tr.newposition td:nth-of-type(7):before {
+  #body_csetup_revtrad table.report tr.newposition td:nth-of-type(7):before {
     content: "Action:"
   }
 
     /* COMMISH DELETE TRANSACTIONS REFORMAT STYLE */
-  [id$="options_67"] table.report .rank {
+  #body_options_67 table.report .rank {
     display: none !important
   }
 
-  [id$="options_67"] table.report table,
-  [id$="options_67"] table.report tbody,
-  [id$="options_67"] table.report th,
-  [id$="options_67"] table.report td,
-  [id$="options_67"] table.report tr {
+  #body_options_67 table.report table,
+  #body_options_67 table.report tbody,
+  #body_options_67 table.report th,
+  #body_options_67 table.report td,
+  #body_options_67 table.report tr {
     display: block
   }
 
-  [id$="options_67"] table.report th {
+  #body_options_67 table.report th {
     position: absolute;
     top: -9999rem;
     left: -9999rem
   }
 
-  [id$="options_67"] table.report td {
+  #body_options_67 table.report td {
     position: relative;
     text-align: left !important
   }
 
-  [id$="options_67"] table.report td:before {
+  #body_options_67 table.report td:before {
     position: absolute;
     left: 0.375rem;
     padding-right: 0.313rem;
     white-space: nowrap
   }
 
-  [id$="options_67"] table.report td {
+  #body_options_67 table.report td {
     padding-left: 6.875rem !important;
     padding: 0.313rem 0;
     width: 100% !important
   }
 
   /* Set heights to scroll on mobiles */
-  [id$="options_67"] div.mobile-wrap {
+  #body_options_67 div.mobile-wrap {
     max-height: 21.875rem
   }
 
     /* NO NEED TO EDIT - name for each td on transactions page and module */
-  [id$="options_67"] table.report td:nth-of-type(2):before {
+  #body_options_67 table.report td:nth-of-type(2):before {
     content: "Delete/Check"
   }
 
-  [id$="options_67"] table.report td:nth-of-type(3):before {
+  #body_options_67 table.report td:nth-of-type(3):before {
     content: "Franchise(s)"
   }
 
-  [id$="options_67"] table.report td:nth-of-type(4):before {
+  #body_options_67 table.report td:nth-of-type(4):before {
     content: "Type"
   }
 
-  [id$="options_67"] table.report td:nth-of-type(5):before {
+  #body_options_67 table.report td:nth-of-type(5):before {
     content: "Transaction"
   }
 
-  [id$="options_67"] table.report td:nth-of-type(6):before {
+  #body_options_67 table.report td:nth-of-type(6):before {
     content: "Date"
   }
 
-  [id$="options_67"] tr td.timestamp {
+  #body_options_67 tr td.timestamp {
     border-bottom: 0.25rem solid #111
   }
 
-  [id$="options_67"] tr:last-of-type td.timestamp {
+  #body_options_67 tr:last-of-type td.timestamp {
     border-bottom: 0
   }
 
     /* TRADES OFFERED TO AND FROM PAGE MOBILE */
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report .rank {
+  #body_options_05 #container-wrap>.mobile-wrap table.report .rank {
     display: none !important
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report table,
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report tbody,
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report th,
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report td,
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report tr {
+  #body_options_05 #container-wrap>.mobile-wrap table.report table,
+  #body_options_05 #container-wrap>.mobile-wrap table.report tbody,
+  #body_options_05 #container-wrap>.mobile-wrap table.report th,
+  #body_options_05 #container-wrap>.mobile-wrap table.report td,
+  #body_options_05 #container-wrap>.mobile-wrap table.report tr {
     display: block
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report th {
+  #body_options_05 #container-wrap>.mobile-wrap table.report th {
     position: absolute;
     top: -9999rem;
     left: -9999rem
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report td {
+  #body_options_05 #container-wrap>.mobile-wrap table.report td {
     position: relative;
     text-align: left !important
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report td:before {
+  #body_options_05 #container-wrap>.mobile-wrap table.report td:before {
     position: absolute;
     left: 0.375rem;
     padding-right: 0.313rem;
     white-space: nowrap
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report td {
+  #body_options_05 #container-wrap>.mobile-wrap table.report td {
     padding-left: 8.125rem !important;
     padding: 0.313rem 0;
     width: 100% !important
   }
 
     /* Set heights to scroll on mobiles */
-  [id$="options_05"] #container-wrap>.mobile-wrap div.mobile-wrap {
+  #body_options_05 #container-wrap>.mobile-wrap div.mobile-wrap {
     max-height: 21.875rem
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report tr.newposition td:nth-of-type(1):before {
+  #body_options_05 #container-wrap>.mobile-wrap table.report tr.newposition td:nth-of-type(1):before {
     content: "Offer Date:"
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report tr.newposition td:nth-of-type(2):before {
+  #body_options_05 #container-wrap>.mobile-wrap table.report tr.newposition td:nth-of-type(2):before {
     content: "From Franchise:"
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report tr.newposition td:nth-of-type(3):before {
+  #body_options_05 #container-wrap>.mobile-wrap table.report tr.newposition td:nth-of-type(3):before {
     content: "Players/Picks:"
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report tr.newposition td:nth-of-type(4):before {
+  #body_options_05 #container-wrap>.mobile-wrap table.report tr.newposition td:nth-of-type(4):before {
     content: "To Franchise:"
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report tr.newposition td:nth-of-type(5):before {
+  #body_options_05 #container-wrap>.mobile-wrap table.report tr.newposition td:nth-of-type(5):before {
     content: "Players/Picks:"
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report td:nth-of-type(6):before {
+  #body_options_05 #container-wrap>.mobile-wrap table.report td:nth-of-type(6):before {
     content: "Expires:"
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report tr.newposition td:nth-of-type(6):before {
+  #body_options_05 #container-wrap>.mobile-wrap table.report tr.newposition td:nth-of-type(6):before {
     content: "Action:"
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap {
+  #body_options_05 #container-wrap>.mobile-wrap {
     max-height: 34.375rem
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report td textarea {
+  #body_options_05 #container-wrap>.mobile-wrap table.report td textarea {
     width: 100%
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report tr.newposition td {
+  #body_options_05 #container-wrap>.mobile-wrap table.report tr.newposition td {
     border: 0
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report tr.newposition td:nth-of-type(3),
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report tr.newposition td:nth-of-type(5) {
+  #body_options_05 #container-wrap>.mobile-wrap table.report tr.newposition td:nth-of-type(3),
+  #body_options_05 #container-wrap>.mobile-wrap table.report tr.newposition td:nth-of-type(5) {
     border-bottom: 0.125rem solid #111
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report tr.newposition+tr td:last-of-type {
+  #body_options_05 #container-wrap>.mobile-wrap table.report tr.newposition+tr td:last-of-type {
     border-bottom: 0.25rem solid var(--primary)
   }
 }
@@ -10309,14 +10274,6 @@ div.sub-content.editable .insertIcons {
     text-align: left;
     border: 0;
     box-shadow: none
-  }
-
-  .toggle_tabs .myfantasyleague_tabmenu .tabLabel:after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    content: '';
   }
 
   .myfantasyleague_tabmenu #homepagetabs li {
@@ -10760,7 +10717,7 @@ div.sub-content.editable .insertIcons {
   #body_csetup_fcustom table.report select,
   #body_csetup_fcontact table.report select,
   #body_csetup_fmobile table.report select,
-  [id$="options_68"] table.report select {
+  #body_options_68 table.report select {
     width: 100%
   }
 
@@ -10777,216 +10734,216 @@ div.sub-content.editable .insertIcons {
 @media (max-width:40.625em) {
 
   /* NO NEED TO EDIT - format css for transactions module , transactions page and previous processed waivers page */
-  [id$="options_03"] table.report[cellspacing="1"] .rank,
+  #body_options_03 table.report[cellspacing="1"] .rank,
   #transactions .rank {
     display: none !important
   }
 
-  [id$="options_03"] table.report[cellspacing="1"] table,
-  [id$="options_03"] table.report[cellspacing="1"] tbody,
-  [id$="options_03"] table.report[cellspacing="1"] th,
-  [id$="options_03"] table.report[cellspacing="1"] td,
-  [id$="options_03"] table.report[cellspacing="1"] tr,
+  #body_options_03 table.report[cellspacing="1"] table,
+  #body_options_03 table.report[cellspacing="1"] tbody,
+  #body_options_03 table.report[cellspacing="1"] th,
+  #body_options_03 table.report[cellspacing="1"] td,
+  #body_options_03 table.report[cellspacing="1"] tr,
   #transactions table,
   #transactions tbody,
   #transactions th,
   #transactions td,
   #transactions tr,
-  [id$="processed_waivers"] table.report table,
-  [id$="processed_waivers"] table.report tbody,
-  [id$="processed_waivers"] table.report th,
-  [id$="processed_waivers"] table.report td,
-  [id$="processed_waivers"] table.report tr,
-  [id$="options_17"] table.report[cellspacing="1"] table,
-  [id$="options_17"] table.report[cellspacing="1"] tbody,
-  [id$="options_17"] table.report[cellspacing="1"] th,
-  [id$="options_17"] table.report[cellspacing="1"] td,
-  [id$="options_17"] table.report[cellspacing="1"] tr {
+  #body_processed_waivers table.report table,
+  #body_processed_waivers table.report tbody,
+  #body_processed_waivers table.report th,
+  #body_processed_waivers table.report td,
+  #body_processed_waivers table.report tr,
+  #body_options_17 table.report[cellspacing="1"] table,
+  #body_options_17 table.report[cellspacing="1"] tbody,
+  #body_options_17 table.report[cellspacing="1"] th,
+  #body_options_17 table.report[cellspacing="1"] td,
+  #body_options_17 table.report[cellspacing="1"] tr {
     display: block
   }
 
-  [id$="options_03"] table.report[cellspacing="1"] th,
+  #body_options_03 table.report[cellspacing="1"] th,
   #transactions th,
-  [id$="processed_waivers"] table.report th,
-  [id$="options_17"] table.report[cellspacing="1"] th {
+  #body_processed_waivers table.report th,
+  #body_options_17 table.report[cellspacing="1"] th {
     position: absolute;
     top: -9999rem;
     left: -9999rem
   }
 
-  [id$="options_03"] table.report[cellspacing="1"] td,
+  #body_options_03 table.report[cellspacing="1"] td,
   #transactions td,
-  [id$="processed_waivers"] table.report td,
-  [id$="options_17"] table.report[cellspacing="1"] td {
+  #body_processed_waivers table.report td,
+  #body_options_17 table.report[cellspacing="1"] td {
     position: relative;
     text-align: left !important
   }
 
-  [id$="options_17"] table.report[cellspacing="1"] td {
+  #body_options_17 table.report[cellspacing="1"] td {
     min-height: 2.125rem
   }
 
-  [id$="options_03"] table.report[cellspacing="1"] td:before,
+  #body_options_03 table.report[cellspacing="1"] td:before,
   #transactions td:before,
-  [id$="processed_waivers"] table.report td:before,
-  [id$="options_17"] table.report[cellspacing="1"] td:before {
+  #body_processed_waivers table.report td:before,
+  #body_options_17 table.report[cellspacing="1"] td:before {
     position: absolute;
     left: 0.375rem;
     padding-right: 0.313rem;
     white-space: nowrap
   }
 
-  [id$="options_17"] table.report[cellspacing="1"] td:before {
+  #body_options_17 table.report[cellspacing="1"] td:before {
     width: 6.25rem;
     text-align: right
   }
 
-  [id$="processed_waivers"] table.report td:nth-of-type(6) {
+  #body_processed_waivers table.report td:nth-of-type(6) {
     display: block;
     min-height: 2.25rem
   }
 
-  [id$="options_03"] table.report[cellspacing="1"] td,
+  #body_options_03 table.report[cellspacing="1"] td,
   #transactions td,
-  [id$="processed_waivers"] table.report td,
-  [id$="options_17"] table.report[cellspacing="1"] td {
+  #body_processed_waivers table.report td,
+  #body_options_17 table.report[cellspacing="1"] td {
     padding-left: 6.875rem !important;
     padding: 0.313rem 0;
     width: 100% !important
   }
 
-  [id$="processed_waivers"] table.report td {
+  #body_processed_waivers table.report td {
     padding-left: 9.375rem !important
   }
 
-  [id$="options_17"] table.report[cellspacing="1"] td textarea {
+  #body_options_17 table.report[cellspacing="1"] td textarea {
     width: 100%
   }
 
     /* Set heights to scroll on mobiles */
-  [id$="processed_waivers"] div.mobile-wrap,
-  [id$="options_03"] div.mobile-wrap {
+  #body_processed_waivers div.mobile-wrap,
+  #body_options_03 div.mobile-wrap {
     max-height: 21.875rem
   }
 
     /* NO NEED TO EDIT - name for each td on transactions page and module */
-  [id$="options_03"] table.report[cellspacing="1"] td:nth-of-type(2):before,
+  #body_options_03 table.report[cellspacing="1"] td:nth-of-type(2):before,
   #transactions td:nth-of-type(2):before {
     content: "Franchise"
   }
 
-  [id$="options_03"] table.report[cellspacing="1"] td:nth-of-type(3):before,
+  #body_options_03 table.report[cellspacing="1"] td:nth-of-type(3):before,
   #transactions td:nth-of-type(3):before {
     content: "Type"
   }
 
-  [id$="options_03"] table.report[cellspacing="1"] td:nth-of-type(4):before,
+  #body_options_03 table.report[cellspacing="1"] td:nth-of-type(4):before,
   #transactions td:nth-of-type(4):before {
     content: "Transaction"
   }
 
-  [id$="options_03"] table.report[cellspacing="1"] td:nth-of-type(5):before,
+  #body_options_03 table.report[cellspacing="1"] td:nth-of-type(5):before,
   #transactions td:nth-of-type(5):before {
     content: "Date"
   }
 
     /* NO NEED TO EDIT - name for each td on previous processed waivers page */
-  [id$="processed_waivers"] table.report.hasGroups td:nth-of-type(1):before {
+  #body_processed_waivers table.report.hasGroups td:nth-of-type(1):before {
     content: "Round/Group"
   }
 
-  [id$="processed_waivers"] table.report td:nth-of-type(1):before,
-  [id$="processed_waivers"] table.report.hasGroups td:nth-of-type(2):before {
+  #body_processed_waivers table.report td:nth-of-type(1):before,
+  #body_processed_waivers table.report.hasGroups td:nth-of-type(2):before {
     content: "Franchise"
   }
 
-  [id$="processed_waivers"] table.report td:nth-of-type(2):before,
-  [id$="processed_waivers"] table.report.hasGroups td:nth-of-type(3):before {
+  #body_processed_waivers table.report td:nth-of-type(2):before,
+  #body_processed_waivers table.report.hasGroups td:nth-of-type(3):before {
     content: "Player(s) Added"
   }
 
-  [id$="processed_waivers"] table.report td:nth-of-type(3):before,
-  [id$="processed_waivers"] table.report.hasGroups td:nth-of-type(4):before {
+  #body_processed_waivers table.report td:nth-of-type(3):before,
+  #body_processed_waivers table.report.hasGroups td:nth-of-type(4):before {
     content: "Player(s)"
   }
 
-  [id$="processed_waivers"] table.report td:nth-of-type(4):before,
-  [id$="processed_waivers"] table.report.hasGroups td:nth-of-type(5):before {
+  #body_processed_waivers table.report td:nth-of-type(4):before,
+  #body_processed_waivers table.report.hasGroups td:nth-of-type(5):before {
     content: "Original Request"
   }
 
-  [id$="processed_waivers"] table.report td:nth-of-type(5):before,
-  [id$="processed_waivers"] table.report.hasGroups td:nth-of-type(6):before {
+  #body_processed_waivers table.report td:nth-of-type(5):before,
+  #body_processed_waivers table.report.hasGroups td:nth-of-type(6):before {
     content: "Reason Not Granted"
   }
 
-  [id$="options_17"] table.report[cellspacing="1"] td:nth-of-type(1):before {
+  #body_options_17 table.report[cellspacing="1"] td:nth-of-type(1):before {
     content: "Pick : "
   }
 
-  [id$="options_17"] table.report[cellspacing="1"] td.points:before {
+  #body_options_17 table.report[cellspacing="1"] td.points:before {
     content: "Overall Pick : "
   }
 
-  [id$="options_17"] table.report[cellspacing="1"] td.franchisename:before {
+  #body_options_17 table.report[cellspacing="1"] td.franchisename:before {
     content: "Franchise : "
   }
 
-  [id$="options_17"] table.report[cellspacing="1"] td.player:before {
+  #body_options_17 table.report[cellspacing="1"] td.player:before {
     content: "Selection : "
   }
 
-  [id$="options_17"] table.report[cellspacing="1"] td.timestamp:before {
+  #body_options_17 table.report[cellspacing="1"] td.timestamp:before {
     content: "Date/Time : "
   }
 
-  [id$="options_17"] table.report[cellspacing="1"] td.timestamp+td.points:before {
+  #body_options_17 table.report[cellspacing="1"] td.timestamp+td.points:before {
     content: "Elaspsed Time : "
   }
 
-  [id$="options_17"] table.report[cellspacing="1"] td.points+td.points:before {
+  #body_options_17 table.report[cellspacing="1"] td.points+td.points:before {
     content: "Points : "
   }
 
-  [id$="options_17"] table.report[cellspacing="1"] td:last-of-type:before {
+  #body_options_17 table.report[cellspacing="1"] td:last-of-type:before {
     content: "Comments : "
   }
 
     /* NO NEED TO EDIT - name for each td on draft results page and module */
-  [id$="options_17"] .mobile-wrap+.mobile-wrap table td.franchisename:before {
+  #body_options_17 .mobile-wrap+.mobile-wrap table td.franchisename:before {
     content: "Franchise : ";
   }
 
-  [id$="options_17"] .mobile-wrap+.mobile-wrap table td.points:before {
+  #body_options_17 .mobile-wrap+.mobile-wrap table td.points:before {
     content: "Total Wait Time : "
   }
 
-  [id$="options_17"] .mobile-wrap+.mobile-wrap table td.points+td.points:before {
+  #body_options_17 .mobile-wrap+.mobile-wrap table td.points+td.points:before {
     content: "Avg. Wait Time : "
   }
 
-  [id$="options_17"] .mobile-wrap+.mobile-wrap table td.points+td.points+td.points:before {
+  #body_options_17 .mobile-wrap+.mobile-wrap table td.points+td.points+td.points:before {
     content: "# Of Picks : "
   }
 
-  [id$="options_03"] table.report[cellspacing="1"] tr:nth-child(even),
+  #body_options_03 table.report[cellspacing="1"] tr:nth-child(even),
   #transactions tr:nth-child(even),
-  [id$="processed_waivers"] table.report tr:nth-child(even),
-  [id$="options_17"] table.report[cellspacing="1"] tr:nth-child(even) {
+  #body_processed_waivers table.report tr:nth-child(even),
+  #body_options_17 table.report[cellspacing="1"] tr:nth-child(even) {
     background: rgba(0, 0, 0, .2) !important
   }
 
-  [id$="options_03"] table.report[cellspacing="1"] tr,
+  #body_options_03 table.report[cellspacing="1"] tr,
   #transactions tr,
-  [id$="processed_waivers"] table.report tr,
-  [id$="options_17"] table.report[cellspacing="1"] tr {
+  #body_processed_waivers table.report tr,
+  #body_options_17 table.report[cellspacing="1"] tr {
     border-bottom: 0.5rem solid #151515
   }
 
-  [id$="options_03"] table.report[cellspacing="1"] td,
+  #body_options_03 table.report[cellspacing="1"] td,
   #transactions td,
-  [id$="processed_waivers"] table.report td,
-  [id$="options_17"] table.report[cellspacing="1"] td {
+  #body_processed_waivers table.report td,
+  #body_options_17 table.report[cellspacing="1"] td {
     border-bottom: 0.063rem solid #111
   }
 
@@ -11166,11 +11123,11 @@ div.sub-content.editable .insertIcons {
     display: block
   }
 
-  [id$="options_03"] div.mobile-wrap .report td:first-of-type,
+  #body_options_03 div.mobile-wrap .report td:first-of-type,
   #transactions td:first-of-type,
-  [id$="options_03"] div.mobile-wrap .report .franchise-date,
+  #body_options_03 div.mobile-wrap .report .franchise-date,
   #transactions .franchise-date,
-  [id$="options_03"] div.mobile-wrap .report .franchisename,
+  #body_options_03 div.mobile-wrap .report .franchisename,
   #transactions .franchisename {
     text-align: center
   }
@@ -11228,6 +11185,7 @@ div.sub-content.editable .insertIcons {
 }
 
 @media only screen and (max-width:22.5em) {
+
   td.ls_projections,
   th.ls_projections {
     display: none !important
@@ -11723,14 +11681,14 @@ body.bettis .calendar_event_custom,
   display: none
 }
 
-[id$="options_113"] body.bettis table.nocaption td,
-.theme-dk-yellow [id$="options_113"] table.nocaption td {
+#body_options_113 body.bettis table.nocaption td,
+.theme-dk-yellow #body_options_113 table.nocaption td {
   text-align: center;
   border-right: 0.063rem solid #444
 }
 
-[id$="options_113"] body.bettis table.nocaption th,
-.theme-dk-yellow [id$="options_113"] table.nocaption th {
+#body_options_113 body.bettis table.nocaption th,
+.theme-dk-yellow #body_options_113 table.nocaption th {
   text-align: center;
   border-right: 0.063rem solid #444
 }
@@ -13940,77 +13898,6 @@ h2.lsm_error.error_box {
   color: #ccc;
 }
 
-#LSscoringBox .head-to-head .player-score-box {
-    z-index: 2;
-}
-
-#LSscoringBox .head-to-head .player-team,#LSscoringBox .single-matchup .player-team  {
-    position: absolute;
-    height: 100%;
-    top: 0;
-    z-index: 0;
-    right: 4.5rem;
-    left: auto;
-    transform: translateY(-50%);
-    top: 50%;
-    max-width: 2.5rem;
-    opacity: 0.5;
-}
-
-#LSscoringBox .head-to-head .teamAway + .teamHome .player-team {
-    right: auto;
-    left: 4.5rem;
-}
-
-#LSscoringBox .head-to-head .player-row {
-    position: relative;
-}
-
-#LSscoringBox .head-to-head .player-team img,#LSscoringBox .single-matchup .player-team img {
-    width: 100%;
-    height: 100%;
-    max-height: unset;
-    max-width: unset;
-}
-
-@media only screen and (max-width: 780px) {
-    #LSscoringBox .head-to-head .player-team {
-        right: 0;
-        margin: 0 0.438rem;
-        min-width: 3.438rem;
-        opacity: 0.25;
-        max-width: 2.5rem;
-        text-align: center!important;
-    }
-    #LSscoringBox .head-to-head .teamAway + .teamHome .player-team {
-        left: 0;
-        margin: 0 0.438rem;
-        min-width: 3.438rem;
-        max-width: 2.5rem;
-        text-align: center!important;
-    }
-    #LSscoringBox .head-to-head .player-team img {
-        max-width: 2.5rem;
-    }
-}
-
-@media only screen and (max-width: 620px) {
-    #LSscoringBox .head-to-head .player-team {
-        display: block!important;
-        margin: 0 0.188rem;
-        min-width: 2.5rem;
-        text-align: center!important;
-    }
-    #LSscoringBox .head-to-head .teamAway + .teamHome .player-team {
-        margin: 0 0.188rem;
-        min-width: 2.5rem;
-        text-align: center!important;
-    }
-    #LSscoringBox .head-to-head .player-team img {
-        max-width: 2rem;
-    }
-}
-
 .pproj_lower,
 .ls-ppts-pts.diff-negative {
   color: #f08080;
@@ -14082,54 +13969,7 @@ td[class*=grid_pos] {
     background-color:rgba(181, 100, 144, .5)
 }
 
-.win_percentage {
-    border: 0.063rem solid rgba(45, 45, 45, .7);
-    background: rgba(45, 45, 45, .4);
-    text-align: center;
-    vertical-align: middle;
-    padding: 0.063rem 0.188rem !important;
-}
-
-.win_percentage_bar {
-    display: inline-block !important;
-    background: #191919;
-    padding: 0.125rem;
-    width: 100%;
-    border-radius: 0.625rem;
-}
-
-.winprob_home {
-    float: left;
-    text-align: left;
-    padding: 0 0.188rem;
-    min-width: fit-content;
-    border-radius: 0.5rem;
-}
-
-.winprob_away {
-    float: right;
-    text-align: right;
-    padding: 0 0.188rem;
-    min-width: fit-content;
-    border-radius: 0.5rem;
-}
-
-.win_percentage_bar .greaterthan {
-    background: #90ee90 !important;
-    color: #111 !important;
-}
-
-.win_percentage_bar .lessthan {
-    background: #da3636 !important;
-    color: #fff !important;
-}
-.avg-matchup .win_percentage,.bye-matchup .win_percentage,.matchupOver .win_percentage {
-    display:none!important
-}
-
-#fs-sticky-footer,div.ym{display:none!important}
-
-/* below settings configure which columns appear on mobile devices */
+/*CGT - below settings configure which columns appear on mobile devices*/
 @media only screen and (max-width:48em) {
   body.roster_base #roster .contractyear,
   #roster .contractyear,
