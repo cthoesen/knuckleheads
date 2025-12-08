@@ -6,7 +6,7 @@
 // ROSTERS OPTIONS
 var tradeViewPermission = true;     // true = display trade button , false = hide trade button
 // var tradeViewPermission must be set to true to set showTradesDefault to true , otherwise leave showTradesDefault as false
-var showTradesDefault      = false;  // Set to ture to display the trades tab on page load , other wise set to false to show roster tab
+var showTradesDefault   = false;    // Set to true to display the trades tab on page load , other wise set to false to show roster tab
 var fid_commish         = "0001";   // enter 4 digit franchiseID of commissioners franchise , if commish has no franchise skip
 var showNav             = false;     // true = mfl nav menu for weekly rosters and display grid , false = hide mfl nav menu
 var showMFLdefaultBtn   = true;     // set to true to add button to click and show MFL default rosters page
@@ -100,7 +100,7 @@ var notification_duration_seconds = 1.5;        // 2.5 seconds
 <div id="trade_check" style="display:none"><module name="TRADES"></module></div>
 
 <!-- GLOBAL FOOTER  -->
-<script src="https://knuckleheads.netlify.app/scripts/footer.js"></script>
+<script src="https://www.mflscripts.com/mfl-apps/global/footer.js?v=1.00"></script>
 
 <!-- STANDINGS COLUMNS SETUP  -->
 <script src="https://mflscripts.com/mfl-apps/playoffs/standingsColumns.js"></script>
