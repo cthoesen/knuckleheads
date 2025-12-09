@@ -12,6 +12,11 @@ CSS target for all habman sites is body.habskin
 CSS targets for individual habman sites - body.bettis
 Example of 3 deep variable - background: var(--primary2 , var(--neutral2 , var(--th-bg2 , #000000)))
 */
+html,
+div,
+td {
+    scrollbar-color: auto !important;
+}
 
 :root {
   --neutral: #181818;
@@ -225,7 +230,7 @@ input[type="radio"] {
 *::after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
-  box-sizing: inherit
+  box-sizing: inherit;
 }
 /*CGT - PC background image and settings - if using this custom element, must uncomment the body-fixed div id on HPM #1 - Header */
 /*#body-fixed {
@@ -293,6 +298,7 @@ body a:visited {
   color: var(--primary, #eee);
   outline: none
 }
+
 /* body text */
 body a:hover,
 body a:link:hover,
@@ -300,6 +306,7 @@ body a:active:hover,
 body a:visited:hover {
   color: var(--neutral, #fff);
 }
+
 /* body text hover */
 .pagebody {
   margin-bottom: 0.25rem;
@@ -315,8 +322,8 @@ body a:visited:hover {
 
 /*body,*/ /*removed so that body element works correctly, if using #body-fixed instead, this should be uncommented*/
 .chat_popup,
-#MFLChatPopupContainer>.report,
-#MFLPlayerPopupContainer>.report,
+#MFLChatPopupContainer > .report,
+#MFLPlayerPopupContainer > .report,
 .toggle_module_search,
 #overviewAjaxLoading .report,
 #MFLScoreboardLoading,
@@ -335,16 +342,19 @@ body a:visited:hover {
   background-attachment: fixed;
 }
 
-/*.theme-dk-gray body {
-  background: #222 !important;
-  background-image: url(https://www48.myfantasyleague.com/skins17/Onyx/bg_top.jpg), url(https://www48.myfantasyleague.com/skins17/Onyx/bg_bottom.jpg) !important;
-  background-repeat: repeat-x, repeat-x !important;
-  background-position: center top, center bottom !important;
+/*.theme-dk-grey body {
+    background: #222 !important;
+    background-image: url(https://www48.myfantasyleague.com/skins17/Onyx/bg_top.jpg),
+        url(https://www48.myfantasyleague.com/skins17/Onyx/bg_bottom.jpg) !important;
+    background-repeat: repeat-x, repeat-x !important;
+    background-position:
+        center top,
+        center bottom !important;
 }*/
 
 #loadingchatdata,
 div[id*="usmg_ad"] {
-  display: none
+  display: none;
 }
 
 #container-wrap,
@@ -355,11 +365,11 @@ div[id*="usmg_ad"] {
 }
 
 body.chat_popup #container-wrap {
-  visibility: visible
+  visibility: visible;
 }
 
 #body_home .homepagemessage {
-  display: none
+  display: none;
 }
 
 body.chat_popup .banner-container-full,
@@ -379,7 +389,7 @@ body.chat_popup .banner-container,
 body.chat_popup #tabmenu-wrap,
 body.chat_popup .MFLSkinSelection,
 body.chat_popup .banner-container-wrap {
-  display: none !important
+  display: none !important;
 }
 
 .oddtablerow td ul,
@@ -396,7 +406,7 @@ body.chat_popup .banner-container-wrap {
   content: "\f44e"; /* changed from star (f005) to football (f44e) - this affects icon next to links on MFL site */
   font-family: 'Font Awesome 6 Pro';
   padding-right: 0.188rem;
-  margin-left: -1.5em
+  margin-left: -1.5em;
 }
 
 .cal-event-desc li:before,
@@ -430,42 +440,42 @@ body.chat_popup .banner-container-wrap {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 
 .banner-leftside {
   margin: 0.313rem 0;
-  text-align: center
+  text-align: center;
 }
 
 .banner-rightside {
   margin: 0.313rem 0;
   overflow: auto;
-  -webkit-overflow-scrolling: touch
+  -webkit-overflow-scrolling: touch;
 }
 
 .banner-icon {
   display: inline-block;
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 .bannericon {
   height: 9.375rem;
   max-width: 9.375rem;
   margin-right: 0.313rem;
-  filter: drop-shadow(0.125rem 0.125rem 0.313rem #000)
+  filter: drop-shadow(0.125rem 0.125rem 0.313rem #000);
 }
 
 .bannertext {
   text-shadow: 0.125rem 0.125rem 0.625rem #000;
   display: inline-block;
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 /*COLOR LOGO IMAGE*/
 
 .bannericon .a {
-  fill: #ccc
+  fill: #ccc;
 }
 
 .bannericon .a,
@@ -478,24 +488,24 @@ body.chat_popup .banner-container-wrap {
 
 .bannericon .b,
 .bannericon .f {
-  fill: #fefefe
+  fill: #fefefe;
 }
 
 .bannericon .c,
 .bannericon .g {
-  fill: var(--primary-dark, #B52F00)
+  fill: var(--primary-dark, #B52F00);
 }
 
 .bannericon .d {
-  fill: var(--primary, #ff4200)
+  fill: var(--primary, #ff4200);
 }
 
 .bannericon .e {
-  fill: #222
+  fill: #222;
 }
 
 .bannericon .h {
-  fill: var(--primary-light, #FA5C25)
+  fill: var(--primary-light, #FA5C25);
 }
 
 .svg-iconlink a,
@@ -510,7 +520,7 @@ body.chat_popup .banner-container-wrap {
 .svg-iconlink:active:hover,
 .svg-iconlink:link:hover,
 .svg-iconlink:visited:hover {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 .svg-icon {
@@ -550,12 +560,12 @@ body.chat_popup .banner-container-wrap {
 }
 
 .svg-iconlink:last-of-type {
-  margin-right: 0
+  margin-right: 0;
 }
 
 .svg-icon:hover,
 .svg-iconlink:hover .svg-icon {
-  cursor: pointer
+  cursor: pointer;
 }
 
 .svg-text {
@@ -619,20 +629,20 @@ body.chat_popup .banner-container-wrap {
 
 .icon-bar a:hover i,
 .icon-bar-full a:hover i {
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 
-.icon-bar span.fa-stack i:nth-child(1):before,
-.icon-bar .svg-iconlink:hover span.fa-stack i:nth-child(2):before,
 .icon-bar-full span.fa-stack i:nth-child(1):before,
-.icon-bar-full .svg-iconlink:hover span.fa-stack i:nth-child(2):before {
-  color: #ddd;
+.icon-bar-full .svg-iconlink:hover span.fa-stack i:nth-child(2):before,
+.icon-bar span.fa-stack i:nth-child(1):before,
+.icon-bar .svg-iconlink:hover span.fa-stack i:nth-child(2):before {
+    color: #ddd;
 }
 
-.icon-bar span.fa-stack i:nth-child(2):before,
-.icon-bar .svg-iconlink:hover span.fa-stack i:nth-child(1):before,
 .icon-bar-full span.fa-stack i:nth-child(2):before,
-.icon-bar-full .svg-iconlink:hover span.fa-stack i:nth-child(1):before {
+.icon-bar-full .svg-iconlink:hover span.fa-stack i:nth-child(1):before,
+.icon-bar span.fa-stack i:nth-child(2):before,
+.icon-bar .svg-iconlink:hover span.fa-stack i:nth-child(1):before {
   color: var(--primary, #ff4200);
 }
 
@@ -649,10 +659,11 @@ body.chat_popup .banner-container-wrap {
 }
 
 .banner-container-full {
-  background: var(--bg-opacity, rgba(181, 47, 0, .05));
   border-bottom: 0.25rem solid var(--primary, #ff4200);
   box-shadow: inset 0 0 0.625rem rgb(0 0 0 / 80%);
+  background: var(--bg-opacity, rgba(181, 47, 0, .05));
 }
+
 /*below determines container settings for league banner*/
 .full_height_banner img {
   width: 100%;
@@ -690,31 +701,33 @@ body.chat_popup .banner-container-wrap {
   padding: 0.625rem !important;
   background: var(--neutral, #111) !important;
 }
+
 /* POPUP OVERLAY BACKGROUND */
 .standings-settings_overlay {
   background-color: #000;
   opacity: 0.7;
 }
+
 /* COLOR OF AN UNCHECKED CHECKBOX */
-#standings-settings input+label:before {
-  color: red;
+#standings-settings input + label:before {
+    color: #da3636;
 }
-/* COLOR OF A CHECKED CHECKBOX */
-#standings-settings input:checked+label:before {
-  color: #90ee90
+
+#standings-settings input:checked + label:before {
+    color: #90ee90;
 }
-/* COLOR OF LOCK DISPLAYED FOR LOCKED FRANCHISE COLUMNS */
-#standings-settings #fname_checkbox:checked+label:before,
-#standings-settings #fname_checkbox+label:before,
-#standings-settings #ficon_checkbox:checked+label:before,
-#standings-settings #ficon_checkbox+label:before,
-#standings-settings #ficonname_checkbox:checked+label:before,
-#standings-settings #ficonname_checkbox+label:before {
-  color: red
+
+#standings-settings #fname_checkbox:checked + label:before,
+#standings-settings #fname_checkbox + label:before,
+#standings-settings #ficon_checkbox:checked + label:before,
+#standings-settings #ficon_checkbox + label:before,
+#standings-settings #ficonname_checkbox:checked + label:before,
+#standings-settings #ficonname_checkbox + label:before {
+    color: #da3636;
 }
 
 .standings-cog {
-  font-size: 0.938rem
+    font-size: 0.938rem;
 }
 
 /***************************************/
@@ -729,14 +742,14 @@ body.chat_popup .banner-container-wrap {
   padding-right: 0.375rem;
   font-size: 1rem;
   border: none;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .MFLSkinSelectionbtn {
   color: #ccc;
   padding: 0.625rem;
   border: none;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .MFLSkinSelection {
@@ -752,14 +765,14 @@ body.chat_popup .banner-container-wrap {
   min-width: 8.125rem;
   box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
-  margin-top: 0.25rem
+  margin-top: 0.25rem;
 }
 
 .MFLSkinSelection-content a {
   color: black;
   padding: 0.375rem 0.25rem;
   text-decoration: none;
-  display: block
+  display: block;
 }
 
 .MFLSkinSelection-content a:hover {
@@ -767,7 +780,7 @@ body.chat_popup .banner-container-wrap {
 }
 
 .show {
-  display: block
+  display: block;
 }
 /***************************************/
 
@@ -809,13 +822,13 @@ body.chat_popup .banner-container-wrap {
 .mflModal-content button {
   cursor: pointer;
   border-radius: 0.188rem;
-  border-radius: .188rem;
+  border-radius: 0.188rem;
   text-align: center;
   font-weight: 700;
   background: #333;
-  border: .125rem solid #333;
+  border: 0.125rem solid #333;
   color: #fff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .mflModal-content button:hover {
@@ -855,39 +868,36 @@ body.chat_popup .banner-container-wrap {
 .myfantasyleague_menu,
 .myfantasyleague_menu ul,
 .myfantasyleague_menu ul li ul {
-  background: none
+  background: none;
 }
 
 .myfantasyleague_menu ul ul li,
 .myfantasyleague_menu li.player-search a:hover {
-  background: rgba(45, 45, 45, .4)
+    background: #2d2d2d66;
+}
+.myfantasyleague_menu > ul > li.has-sub > a:after {
+    border-top-color: #ccc;
+}
+.myfantasyleague_menu ul ul > li.has-sub > a:after {
+    border-left-color: #ccc;
+}
+.myfantasyleague_menu > ul > li.has-sub:hover > a:after {
+  border-top-color: var(--primary, #ff4200);
 }
 
-.myfantasyleague_menu>ul>li.has-sub>a:after {
-  border-top-color: #ccc
+.myfantasyleague_menu ul ul > li.has-sub:hover > a:after {
+  border-left-color: var(--primary, #ff4200);
 }
 
-.myfantasyleague_menu ul ul>li.has-sub>a:after {
-  border-left-color: #ccc
-}
-
-.myfantasyleague_menu>ul>li.has-sub:hover>a:after {
-  border-top-color: var(--primary, #ff4200)
-}
-
-.myfantasyleague_menu ul ul>li.has-sub:hover>a:after {
-  border-left-color: var(--primary, #ff4200)
-}
-
-.myfantasyleague_menu li.mfl-icon+li:hover a {
-  background: none
+.myfantasyleague_menu li.mfl-icon + li:hover a {
+  background: none;
 }
 
 .myfantasyleague_menu ul li a,
 .myfantasyleague_menu ul li:hover ul li a,
 .myfantasyleague_menu ul li ul li:hover ul li a,
 .myfantasyleague_menu i {
-  color: #ccc
+  color: #ccc;
 }
 
 .myfantasyleague_menu ul li:hover a,
@@ -895,32 +905,30 @@ body.chat_popup .banner-container-wrap {
 .myfantasyleague_menu ul li ul li ul li:hover a,
 .myfantasyleague_menu i:hover {
   color: #fff;
-  text-decoration: none
+  text-decoration: none;
 }
 
-.myfantasyleague_menu li:hover>a {
-  background: rgba(0, 0, 0, .3);
-  box-shadow: none
+.myfantasyleague_menu li:hover > a {
+    background: #0000004d;
+    box-shadow: none;
 }
-
-.myfantasyleague_menu ul li ul li:hover>a {
-  background: rgba(0, 0, 0, .3)
+.myfantasyleague_menu ul li ul li:hover > a {
+    background: #0000004d;
 }
-
 .myfantasyleague_menu li.player-search input[type="text"] {
-  color: #000
+    color: #000;
 }
 
 .myfantasyleague_menu li.player-search a:hover {
   color: #ccc;
-  background: none
+  background: none;
 }
 
 li.player-search a input {
   vertical-align: middle;
   padding: 0;
   margin-top: -0.125rem !important;
-  border: 0.063rem solid #111 !important
+  border: 0.063rem solid #111 !important;
 }
 
 .myfantasyleague_menu ul li ul {
@@ -930,17 +938,17 @@ li.player-search a input {
 .myfantasyleague_menu ul ul li a,
 .myfantasyleague_menu ul ul li.has-sub a,
 .myfantasyleague_menu ul ul li.has-sub li:first-of-type {
-  border-color: rgba(0, 0, 0, .4)
+    border-color: #0006;
 }
 
-.myfantasyleague_menu ul li:hover>ul {
-  top: 2.25rem;
-  z-index: 1
+.myfantasyleague_menu ul li:hover > ul {
+    top: 2.25rem;
+    z-index: 1;
+}
+.myfantasyleague_menu > ul {
+    padding: 0 30px;
 }
 
-.myfantasyleague_menu>ul {
-  padding: 0 30px;
-}
 /***************************************/
 
 
@@ -961,23 +969,23 @@ label[for='sub100']+#homepagetabs {
 
 .myfantasyleague_tabmenu #collapseLink i,
 .myfantasyleague_tabmenu #expandLink i {
-  top: 1.438rem !important
+    top: 1.438rem !important;
 }
 
 .myfantasyleague_tabmenu {
-  box-shadow: 0 0 0.313rem rgba(0, 0, 0, .5);
-  background: rgba(45, 45, 45, .4);
-  margin-bottom: 0;
-  margin-top: 0.625rem;
-  z-index: 99997;
-  border: 0.35rem solid var(--neutral-light, #444);
-  border-left: 0;
-  border-right: 0;
+    box-shadow: 0 0 0.313rem #00000080;
+    background: #2d2d2d66;
+    margin-bottom: 0;
+    margin-top: 0.625rem;
+    z-index: 99997;
+    border: 0.35rem solid #444;
+    border-left: 0;
+    border-right: 0;
 }
 
 .myfantasyleague_tabmenu #homepagetabs li {
-  border-right: 0;
-  border-left: 0.063rem solid rgba(0, 0, 0, .4)
+    border-right: 0;
+    border-left: 0.063rem solid #0006;
 }
 
 .myfantasyleague_tabmenu #homepagetabs li:first-of-type a,
@@ -988,7 +996,7 @@ label[for='sub100']+#homepagetabs {
 .myfantasyleague_tabmenu #homepagetabs li a,
 #collapseLink i,
 #expandLink i {
-  color: #ccc
+  color: #ccc;
 }
 
 .myfantasyleague_tabmenu #homepagetabs li:hover a,
@@ -998,11 +1006,11 @@ label[for='sub100']+#homepagetabs {
 #expandLink:hover {
   color: #fff;
   opacity: 1 !important;
-  text-decoration: none
+  text-decoration: none;
 }
 
 .myfantasyleague_tabmenu #homepagetabs li.currenttab a {
-  color: #fff
+  color: #fff;
 }
 
 .myfantasyleague_tabmenu #homepagetabs li:hover {
@@ -1014,7 +1022,9 @@ label[for='sub100']+#homepagetabs {
 .myfantasyleague_tabmenu #homepagetabs li.currenttab,
 .myfantasyleague_tabmenu #homepagetabs li.currenttab:hover {
   background-color: var(--primary, #ff4200);
-  transition: color 0.6s ease-in 0s, box-shadow 0.2s ease 0s;
+  transition: 
+      color 0.6s ease-in 0s, 
+      box-shadow 0.2s ease 0s;
 }
 
 /***************************************/
@@ -1028,32 +1038,32 @@ label[for='sub100']+#homepagetabs {
 .draft_warning {
   background: var(--primary, #ff4200) !important;
   color: #fff !important;
-  font-weight: bold !important;
+  font-weight: 700 !important;
 }
 
 .draft_warning a {
-  color: #000 !important
+  color: #000 !important;
 }
 
 .draft_warning a:hover {
-  color: #222 !important
+  color: #222 !important;
 }
 
 .theme-dk-yellow .draft_warning {
   background: var(--primary, #ff4200) !important;
   color: #000 !important;
-  font-weight: bold !important;
+  font-weight: 700 !important;
 }
 
 .theme-dk-yellow .draft_warning a {
-  color: red !important
+  color: red !important;
 }
 
 .theme-dk-yellow .draft_warning a:hover {
-  color: #000 !important
+  color: #000 !important;
 }
 
-@media only screen and (min-width:48em) {
+@media only screen and (min-width: 48em) {
   li[id*="tab"] {
     position: relative;
   }
@@ -1064,7 +1074,7 @@ label[for='sub100']+#homepagetabs {
   }
 
   li[id*="tab"]::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     transform: scaleX(0);
@@ -1084,23 +1094,23 @@ label[for='sub100']+#homepagetabs {
 @media only screen and (max-width:48em) {
 
   #tabmenu-wrap li[id*="tab"] a:before,
-  #tabmenu-wrap #tab_title[class*="tab"]:before {
-    font-family: 'Font Awesome 6 Pro';
-    width: 1.25rem;
-    display: inline-flex;
-    text-indent: 0
-  }
+    #tabmenu-wrap #tab_title[class*="tab"]:before {
+        font-family: "Font Awesome 6 Pro";
+        width: 1.25rem;
+        display: inline-flex;
+        text-indent: 0;
+    }
 
   #tabmenu-wrap #tab_title[class*="tab"]:before {
-    margin-right: 0.125rem
+    margin-right: 0.125rem;
   }
 }
 
-@media only screen and (min-width:48.1em) {
-  #tabmenu-wrap li[id*="tab"] a:before {
-    font-family: 'Font Awesome 6 Pro';
-    padding-right: 0.188rem
-  }
+@media only screen and (min-width: 48.1em) {
+    #tabmenu-wrap li[id*="tab"] a:before {
+        font-family: "Font Awesome 6 Pro";
+        padding-right: 0.188rem;
+    }
 }
 
 #tabmenu-wrap li#tab0 a:before,
@@ -1138,7 +1148,6 @@ label[for='sub100']+#homepagetabs {
   content: "\f1da" /* clock - defines the Font Awesome icon next to League History on the homepage tabs section */
 }
 
-
 /***************************************/
 
 
@@ -1148,38 +1157,38 @@ label[for='sub100']+#homepagetabs {
 /***************************************/
 
 #myfantasyleague_tabs .myfantasyleague_tabmenu {
-  box-shadow: none;
-  margin: 0.188rem 0;
-  border-top: 0.35rem solid rgba(255, 255, 255, .1);
-  z-index: 99996
+    box-shadow: none;
+    margin: 0.188rem 0;
+    border-top: 0.35rem solid #ffffff1a;
+    z-index: 99996;
 }
 
 #myfantasyleague_tabs .myfantasyleague_tabmenu #homepagetabs li {
-  display: table-cell;
-  width: 1%
+    display: table-cell;
+    width: 1%;
 }
 
 #myfantasyleague_tabs .myfantasyleague_tabmenu #homepagetabs li a {
   display: block;
   white-space: nowrap;
-  padding: 0 0.125rem
+  padding: 0 0.125rem;
 }
 
 #myfantasyleague_tabs .myfantasyleague_tabmenu #homepagetabs li.currenttab,
 #myfantasyleague_tabs .myfantasyleague_tabmenu #homepagetabs li.currenttab:hover {
-  background: var(--primary, #ff4200)
+  background: var(--primary, #ff4200);
 }
 
 #myfantasyleague_tabs .myfantasyleague_tabmenu #homepagetabs li.currenttab a,
 #myfantasyleague_tabs .myfantasyleague_tabmenu #homepagetabs li.currenttab:hover a {
-  color: #fff
+  color: #fff;
 }
 
 #collapseLink.collapseLink,
 #expandLink.expandLink,
 #collapseLink.collapseLink:hover,
 #expandLink.expandLink:hover {
-  color: #fff
+  color: #fff;
 }
 
 .plus-toggle span::before,
@@ -1187,15 +1196,15 @@ label[for='sub100']+#homepagetabs {
   background: #444;
 }
 
-span.custom_expand:hover+span+.plus-toggle span:before,
-span.custom_expand:hover+span+.plus-toggle span:after,
-span.custom_collapse:hover+.plus-toggle span:before,
-span.custom_collapse:hover+.plus-toggle span:after {
+span.custom_expand:hover + span + .plus-toggle span:before,
+span.custom_expand:hover + span + .plus-toggle span:after,
+span.custom_collapse:hover + .plus-toggle span:before,
+span.custom_collapse:hover + .plus-toggle span:after {
   background: var(--primary, #080e25);
 }
 
 .homepagecolumn .mobile-wrap {
-  position: relative
+  position: relative;
 }
 
 .plus-toggle-main {
@@ -1204,16 +1213,15 @@ span.custom_collapse:hover+.plus-toggle span:after {
 
 .toggle-btn-main::before,
 .toggle-btn-main::after {
-  background: #eee
+  background: #eee;
 }
 
-#expandLink:hover+.plus-toggle-main span:before,
-#expandLink:hover+.plus-toggle-main span:after,
-#collapseLink:hover+a+.plus-toggle-main span:before,
-#collapseLink:hover+a+.plus-toggle-main span:after {
+#expandLink:hover + .plus-toggle-main span:before,
+#expandLink:hover + .plus-toggle-main span:after,
+#collapseLink:hover + a + .plus-toggle-main span:before,
+#collapseLink:hover + a + .plus-toggle-main span:after {
   background: #222;
 }
-
 
 /***************************************/
 
@@ -1223,31 +1231,30 @@ span.custom_collapse:hover+.plus-toggle span:after {
 
 /***************************************/
 
-
 /* menu button pullout */
 
 #menu-trigger {
   border: 0.063rem solid #333;
-  color: #fff
+  color: #fff;
 }
 
 .myfantasyleague_menuMobile {
   border-color: #222 !important;
-  color: #fff
+  color: #fff;
 }
 
-.myfantasyleague_menuMobile>ul>li>a,
-.myfantasyleague_menuMobile>ul>li>a:active,
-.myfantasyleague_menuMobile>ul>li>a:visited,
-.myfantasyleague_menuMobile>ul>li>a:hover {
-  color: #fff
+.myfantasyleague_menuMobile > ul > li > a,
+.myfantasyleague_menuMobile > ul > li > a:active,
+.myfantasyleague_menuMobile > ul > li > a:visited,
+.myfantasyleague_menuMobile > ul > li > a:hover {
+    color: #fff;
 }
 
-.myfantasyleague_menuMobile>ul>li>ul>li>a,
-.myfantasyleague_menuMobile>ul>li>ul>li>a:active,
-.myfantasyleague_menuMobile>ul>li>ul>li>a:visited,
-.myfantasyleague_menuMobile>ul>li>ul>li>a:hover {
-  color: #fff
+.myfantasyleague_menuMobile > ul > li > ul > li > a,
+.myfantasyleague_menuMobile > ul > li > ul > li > a:active,
+.myfantasyleague_menuMobile > ul > li > ul > li > a:visited,
+.myfantasyleague_menuMobile > ul > li > ul > li > a:hover {
+    color: #fff;
 }
 
 .myfantasyleague_menuMobile li.has-sub,
@@ -1260,33 +1267,28 @@ span.custom_collapse:hover+.plus-toggle span:after {
   border-bottom: 0;
 }
 
-.myfantasyleague_menuMobile>ul>li>a:before {
+.myfantasyleague_menuMobile > ul > li > a:before {
   color: var(--primary, #ff4200);
 }
 
-.myfantasyleague_menuMobile>ul>li.has-sub.arrow-down>a:before {
+.myfantasyleague_menuMobile > ul > li.has-sub.arrow-down > a:before {
   color: #fff;
 }
 
-.theme-dk-yellow .myfantasyleague_menuMobile>ul>li.has-sub.arrow-down>a:before,
-body.bettis .myfantasyleague_menuMobile>ul>li.has-sub.arrow-down>a:before {
-  color: #111;
-}
-
 .myfantasyleague_menuMobile li.has-sub ul li a:before {
-  left: 0.5rem;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  position: absolute;
-  display: inline-block;
-  content: '';
-  width: 0;
-  height: 0;
-  border: 0.35rem solid transparent;
-  border-left: 0.35rem solid var(--primary, #ff4200);
-  transition: left 0.2s ease-in-out;
+    left: 0.5rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 0.35rem solid transparent;
+    border-left: 0.35rem solid var(--primary, #ff4200);
+    transition: left 0.2s ease-in-out;
 }
 
 .myfantasyleague_menuMobile li.has-sub ul li:hover a:before {
@@ -1314,10 +1316,10 @@ li.has-sub ul li.mm_sizing_head a,
   display: none;
 }
 
-.myfantasyleague_menuMobile>ul>li>ul>li>a,
-.myfantasyleague_menuMobile>ul>li>ul>li>a:active,
-.myfantasyleague_menuMobile>ul>li>ul>li>a:visited,
-.myfantasyleague_menuMobile>ul>li>ul>li>a:hover {
+.myfantasyleague_menuMobile > ul > li > ul > li > a,
+.myfantasyleague_menuMobile > ul > li > ul > li > a:active,
+.myfantasyleague_menuMobile > ul > li > ul > li > a:visited,
+.myfantasyleague_menuMobile > ul > li > ul > li > a:hover {
   padding-left: 1.5rem !important;
 }
 
@@ -1333,50 +1335,50 @@ li.has-sub ul li.mm_sizing_head a,
   transform: translateY(-50%);
   position: absolute;
   display: inline-block;
-  content: '';
+  content: "";
   width: 0;
   height: 0;
   border: 0.25rem solid transparent;
   border-left: 0.25rem solid var(--primary, #ff4200);
 }
 
-.myfantasyleague_menuMobile>ul>li>ul>li>ul>li>a {
+.myfantasyleague_menuMobile > ul > li > ul > li > ul > li > a {
   position: relative;
 }
 
-.myfantasyleague_menuMobile>ul>li>ul>li>ul>li>a,
-.myfantasyleague_menuMobile>ul>li>ul>li>ul>li>a:active,
-.myfantasyleague_menuMobile>ul>li>ul>li>ul>li>a:visited,
-.myfantasyleague_menuMobile>ul>li>ul>li>ul>li>a:hover {
+.myfantasyleague_menuMobile > ul > li > ul > li > ul > li > a,
+.myfantasyleague_menuMobile > ul > li > ul > li > ul > li > a:active,
+.myfantasyleague_menuMobile > ul > li > ul > li > ul > li > a:visited,
+.myfantasyleague_menuMobile > ul > li > ul > li > ul > li > a:hover {
   color: #fff;
   padding-left: 1.25rem !important;
 }
 
 .myfantasyleague_menuMobile a,
 .myfantasyleague_menuMobile a:active {
-  background: rgba(0, 0, 0, .3);
-  border-bottom: 0.063rem solid rgba(255, 255, 255, .05)
+    background: #0000004d;
+    border-bottom: 0.063rem solid #ffffff0d;
 }
 
-.myfantasyleague_menuMobile>ul>li.has-sub.arrow-down>a {
-  background: var(--primary, #ff4200)
+.myfantasyleague_menuMobile > ul > li.has-sub.arrow-down > a {
+  background: var(--primary, #ff4200);
 }
 
-.myfantasyleague_menuMobile>ul>li.has-sub>ul>li.has-sub.sub-arrow-down>a {
+.myfantasyleague_menuMobile > ul > li.has-sub > ul > li.has-sub.sub-arrow-down > a {
   background: #fff;
   color: #111;
 }
 
-.myfantasyleague_menu li.sub-default:hover ul li:hover>a {
-  border-bottom: 0.063rem solid var(--primary, #ff4200)
+.myfantasyleague_menu li.sub-default:hover ul li:hover > a {
+  border-bottom: 0.063rem solid var(--primary, #ff4200);
 }
 
-.myfantasyleague_menu li.sub-default:hover ul li.player-search:hover>a {
-  border-color: rgba(0, 0, 0, .4)
+.myfantasyleague_menu li.sub-default:hover ul li.player-search:hover > a {
+    border-color: #0006;
 }
 
-.myfantasyleague_menuMobile>ul>li>ul>li>a {
-  position: relative
+.myfantasyleague_menuMobile > ul > li > ul > li > a {
+    position: relative;
 }
 
 .myfantasyleague_menuMobile span.menu_arrow {
@@ -1403,7 +1405,7 @@ li.has-sub ul li.mm_sizing_head a,
   position: absolute;
   top: 50%;
   transform: rotate(45deg);
-  transition: all .25s ease;
+  transition: all 0.25s ease;
   width: 0.625rem;
 }
 
@@ -1417,25 +1419,24 @@ li.has-sub ul li.mm_sizing_head a,
   position: absolute;
   top: 50%;
   transform: rotate(45deg);
-  transition: all .25s ease;
+  transition: all 0.25s ease;
   width: 0.125rem;
 }
 
 .myfantasyleague_menuMobile span.menu_arrow:before,
 .myfantasyleague_menuMobile span.menu_arrow:after {
-  background: #fff
+  background: #fff;
 }
 
-.myfantasyleague_menuMobile .arrow-down>a span.menu_arrow:before,
-.myfantasyleague_menuMobile .sub-arrow-down>a span.menu_arrow:before,
-.myfantasyleague_menuMobile .arrow-down>a span.menu_arrow:after,
-.myfantasyleague_menuMobile .sub-arrow-down>a span.menu_arrow:after {
+.myfantasyleague_menuMobile .arrow-down > a span.menu_arrow:before,
+.myfantasyleague_menuMobile .sub-arrow-down > a span.menu_arrow:before,
+.myfantasyleague_menuMobile .arrow-down > a span.menu_arrow:after,
+.myfantasyleague_menuMobile .sub-arrow-down > a span.menu_arrow:after {
   -webkit-transform: rotate(315deg);
   transform: rotate(315deg);
   transition: all .25s ease;
   background: #fff;
 }
-
 
 /***************************************/
 
@@ -1448,7 +1449,7 @@ li.has-sub ul li.mm_sizing_head a,
 table.no-borderspacing {
   margin: 0;
   border: 0;
-  border-spacing: 0
+  border-spacing: 0;
 }
 
 table,
@@ -1458,28 +1459,27 @@ table,
   border: 0;
   margin: 0;
   padding: 0;
-  border-spacing: 0
+  border-spacing: 0;
 }
 
 .mobile-wrap,
 .settings-mobile-wrap,
 #options_45 #container-wrap table.report,
-#body_options_45 #container-wrap table.report,
 #body_live_scoring_summary #live_scoring_summary table.scoresummary table,
 #body_live_scoring_summary #live_scoring_summary table.teamscoresummary table,
 #body_live_scoring_summary #live_scoring_summary table[width="90%"],
-#body_live_scoring_summary #live_scoring_summary span.reportnavigation+table {
-  box-shadow: 0 0 0.313rem rgba(0, 0, 0, .5);
-  background: rgba(45, 45, 45, .4);
-  border: 0;
-  border-radius: 0.188rem;
-  color: #fff;
-  margin: 0.625rem auto;
-  margin-top: 0;
-  padding: 0.625rem;
-  overflow-x: auto;
-  max-width: 100%;
-  -webkit-overflow-scrolling: touch
+#body_live_scoring_summary #live_scoring_summary span.reportnavigation + table {
+    box-shadow: 0 0 0.313rem #00000080;
+    background: #2d2d2d66;
+    border: 0;
+    border-radius: 0.188rem;
+    color: #fff;
+    margin: 0.625rem auto;
+    margin-top: 0;
+    padding: 0.625rem;
+    overflow-x: auto;
+    max-width: 100%;
+    -webkit-overflow-scrolling: touch;
 }
 
 /* style for report containers */
@@ -1496,26 +1496,23 @@ a:hover,
 a:link:hover,
 a:active:hover,
 a:visited:hover {
-  color: #fff
+  color: #fff;
 }
+
 /* report container text hover if not defined */
 /* added border around league banner with below settings */
 a:link img,
 A:visited img {
   border-color: transparent;
-  /*border-color: var(--lightest-color, blue); /*CGT - was transparent*/
-  /*border: 0.5rem outset; /*added*/
-  /*border-radius: 0.15rem; /*added*/
 }
 
 a:hover img {
-  border-color: transparent
+  border-color: transparent;
 }
 
 a:active {
-  background: none repeat scroll 0 0 transparent
+  background: none repeat scroll 0 0 transparent;
 }
-
 
 /***************************************/
 
@@ -1529,6 +1526,7 @@ a:active {
   pointer-events: none;
   padding: 0.33rem;
 }
+
 /* below added for padding around HPM captions */
 .report.addCaption caption span {
   pointer-events: none;
@@ -1537,8 +1535,9 @@ a:active {
 
 .homepagemodule.report caption span a,
 .homepagemodule.report caption span.module_expand {
-  pointer-events: all
+  pointer-events: all;
 }
+
 /* below sets the image background and text formatting for captions */
 .homepagecolumn .homepagemodule caption,
 caption,
@@ -1567,6 +1566,7 @@ caption,
   border-right: 0;
   border-bottom: 0.35rem solid rgba(15, 15, 15, 0.75);
 }
+
 /* Added below logo before captions */
 caption:before {
   padding: 1.25rem 1.75rem 1.75rem 1.25rem;
@@ -1576,6 +1576,7 @@ caption:before {
   vertical-align: 0.5rem;
   content: "";
 }
+
 /* Added below to remove logo before roster icons */
 caption.withfranchiseicon:before {
   padding: 0.313rem 0;
@@ -1586,7 +1587,7 @@ caption.withfranchiseicon:before {
 .homepagemodule caption.withfranchiseicon,
 caption.withfranchiseicon {
   background: none;
-  text-align: center
+  text-align: center;
 }
 
 /* caption with icon no bg color */
@@ -1597,11 +1598,11 @@ caption a,
 caption a:link,
 caption a:active,
 caption a:visited {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 caption {
-  caption-side: top !important
+  caption-side: top !important;
 }
 
 /* caption text */
@@ -1610,7 +1611,7 @@ caption a:hover,
 caption a:link:hover,
 caption a:active:hover,
 caption a:visited:hover {
-  color: #fff
+  color: #fff;
 }
 
 /* caption text hover */
@@ -1621,25 +1622,25 @@ caption.withfranchiseicon a:link,
 caption.withfranchiseiconn a:active,
 caption.withfranchiseicon a:visited {
   color: var(--primary, #ff4200);
-  text-align: center
+  text-align: center;
 }
 /* caption.withfranchise icon text color different since we have different bg color */
 caption.withfranchiseicon a:hover,
 caption.withfranchiseicon a:link:hover,
 caption.withfranchiseicon a:active:hover,
 caption.withfranchiseicon a:visited:hover {
-  color: var(--primary-light, #fff)
+  color: var(--primary-light, #fff);
 }
 /* caption.withfranchise text hover */
 caption .module_expand.custom_collapse,
 caption .module_expand.custom_expand {
   color: var(--primary, #ff4200);
-  background: none
+  background: none;
 }
 
 caption .module_expand.custom_collapse:hover,
 caption .module_expand.custom_expand:hover {
-  color: var(--primary-light, #fff)
+  color: var(--primary-light, #fff);
 }
 
 caption .ownername {
@@ -1647,12 +1648,12 @@ caption .ownername {
   font-weight: normal;
   font-size: 0.75rem;
   padding: 0;
-  background: none
+  background: none;
 }
 
 /* owners name in caption with an icon as seen on rosters page , set to display none if you dont want to see */
 caption.withfranchiseicon .ownername {
-  color: #ccc
+  color: #ccc;
 }
 
 /* style for championship banners - will not properly center banner display image without below settings */
@@ -1670,12 +1671,12 @@ caption.withfranchiseicon .ownername {
 
 /***************************************/
 th {
-  background: rgba(0, 0, 0, .2);
+  background: rgba(0, 0, 0, 0.2);
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 300;
   text-align: center;
-  padding: 0.125rem
+  padding: 0.125rem;
 }
 
 tr.header th[class*="week"] {
@@ -1719,7 +1720,7 @@ th a:visited:hover,
 
 .oddtablerow,
 .eventablerow {
-  background: none
+  background: none;
 }
 
 .oddtablerow td,
@@ -1734,33 +1735,33 @@ th a:visited:hover,
 .oddtablerow td a:active,
 .oddtablerow td a:visited,
 #owner_activity td.franchisename {
-  color: #fff
+  color: #fff;
 }
 
 .eventablerow td a,
 .eventablerow td a:link,
 .eventablerow td a:active,
 .eventablerow td a:visited {
-  color: #fff
+  color: #fff;
 }
 
 .oddtablerow td a:hover,
 .oddtablerow td a:link:hover,
 .oddtablerow td a:active:hover,
 .oddtablerow td a:visited:hover {
-  color: #fff
+  color: #fff;
 }
 
 .eventablerow td a:hover,
 .eventablerow td a:link:hover,
 .eventablerow td a:active:hover,
 .eventablerow td a:visited:hover {
-  color: #fff
+  color: #fff;
 }
 
 .newposition td,
 .newposition th {
-  border-color: var(--primary, #ff4200)
+  border-color: var(--primary, #ff4200);
 }
 
 /* Report footer background and text - link coloring */
@@ -1780,7 +1781,7 @@ td.reportfooter a,
 td.reportfooter a:link,
 td.reportfooter a:active,
 td.reportfooter a:visited {
-  color: #fff
+  color: #fff;
 }
 
 .reportfooter td a:hover,
@@ -1791,7 +1792,7 @@ td.reportfooter a:hover,
 td.reportfooter a:link:hover,
 td.reportfooter a:active:hover,
 td.reportfooter a:visited:hover {
-  color: #fff
+  color: #fff;
 }
 
 /***************************************/
@@ -1803,31 +1804,23 @@ td.reportfooter a:visited:hover {
 /***************************************/
 
 #options_117 .freeagent,
-#body_options_117 .freeagent,
 #top_starters .freeagent,
 #top_drops .freeagent,
 #top_adds .freeagent,
-#body_options_08 .freeagent,
-#body_options_236 .freeagent,
 #options_08 .freeagent,
 #options_236 .freeagent,
-#body_top #top .freeagent,
-#body_top .freeagent {
-  background-color: rgba(255, 20, 20, .1)
+#body_top #top .freeagent {
+    background-color: #ff14141a;
 }
 
 #options_117 .myfranchise,
-#body_options_117 .myfranchise,
 #top_starters .myfranchise,
 #top_drops .myfranchise,
 #top_adds .myfranchise,
-#body_options_08 .myfranchise,
-#body_options_236 .myfranchise,
 #options_08 .myfranchise,
 #options_236 .myfranchise,
-#body_top #top .myfranchise,
-#body_top .myfranchise {
-  background-color: rgba(20, 255, 20, .1)
+#body_top #top .myfranchise {
+    background-color: #14ff141a;
 }
 
 /***************************************/
@@ -1842,14 +1835,14 @@ td.reportfooter a:visited:hover {
 #standings h3,
 .homepagecolumn #brief_standings h3,
 #brief_standings h3 {
-  background: rgba(45, 45, 45, .7);
+  background: #2d2d2db3;
   color: #fff;
   font-size: 1.375rem;
   text-transform: uppercase;
   border: 0.125rem solid #1f1f1f;
   outline: 0.125rem solid #111;
   padding: 0.313rem 0;
-  margin: 0.313rem 0
+  margin: 0.313rem 0;
 }
 
 .standingslogo {
@@ -1861,22 +1854,22 @@ td.reportfooter a:visited:hover {
 
 .homepagecolumn #division00 h3,
 #division00 h3 {
-  margin-top: 0
+  margin-top: 0;
 }
 
 #brief_standings h3,
 .homepagecolumn #brief_standings h3 {
-  font-size: 1rem
+  font-size: 1rem;
 }
+
 /* added padding before League Standings caption */
 .standing_cog_span {
   padding: 0.5rem;
 }
 
 .standingslogo {
-  max-width: 100%
+  max-width: 100%;
 }
-
 
 /***************************************/
 
@@ -1886,7 +1879,6 @@ td.reportfooter a:visited:hover {
 
 /***************************************/
 
-
 /* h3 that are inside table reports */
 
 .mobile-wrap h3 a,
@@ -1894,7 +1886,7 @@ td.reportfooter a:visited:hover {
 .mobile-wrap h3 a:active,
 .mobile-wrap h3 a:visited {
   font-size: 1.25rem;
-  color: #ccc
+  color: #ccc;
 }
 
 .mobile-wrap h3 a:hover,
@@ -1902,25 +1894,25 @@ td.reportfooter a:visited:hover {
 .mobile-wrap h3 a:active:hover,
 .mobile-wrap h3 a:visited:hover {
   font-size: 1.25rem;
-  color: #fff
+  color: #fff;
 }
 
 .mobile-wrap h3,
 .mobile-wrap h3.warning {
   color: var(--primary, #ff4200);
-  font-size: 1.25rem
+  font-size: 1.25rem;
 }
-/* h3 body menu links */
 
+/* h3 body menu links */
 .h3-menu {
   color: var(--primary, #ff4200);
   padding: 0.313rem;
   margin: 0.625rem 0;
   margin-top: 0;
   font-size: 1rem;
-  box-shadow: 0 0 0.313rem rgba(0, 0, 0, .5);
-  background: rgba(45, 45, 45, .4);
-  border-radius: 0.188rem
+  box-shadow: 0 0 0.313rem #00000080;
+  background: #2d2d2d66;
+  border-radius: 0.188rem;
 }
 
 .h3-menu a,
@@ -1928,14 +1920,14 @@ td.reportfooter a:visited:hover {
 .h3-menu a:active,
 .h3-menu a:visited {
   color: #ccc;
-  text-decoration: none
+  text-decoration: none;
 }
 
 .h3-menu a:hover,
 .h3-menu a:link:hover,
 .h3-menu a:active:hover,
 .h3-menu a:visited:hover {
-  color: #fff
+  color: #fff;
 }
 
 /***************************************/
@@ -1954,31 +1946,29 @@ td.player_photo img {
   max-width: 6.25rem;
   outline: 0.063rem solid #111;
   margin: 0 auto;
-  box-shadow: 0 0 0.188rem rgba(0, 0, 0, .1)
+  box-shadow: 0 0 0.188rem #0000001a;
 }
 
 img {
   image-rendering: -webkit-optimize-contrast;
-  image-rendering: optimize-contrast
+  image-rendering: optimize-contrast;
 }
 
 .tops_image {
   width: 100%;
-  max-width: 16.563rem
+  max-width: 16.563rem;
 }
 
 #fantasy_articles table.articlepicturetable,
 #options_73 table.articlepicturetable,
-#body_options_73 table.articlepicturetable,
 #article table.articlepicturetable {
-  width: auto
+  width: auto;
 }
 
 #article img.articlepicture,
-#options_73 img.articlepicture,
-#body_options_73 img.articlepicture {
-  max-width: 37.5rem;
-  width: 100%;
+#options_73 img.articlepicture {
+    max-width: 37.5rem;
+    width: 100%;
 }
 
 #fantasy_articles img.articlepicture,
@@ -1991,7 +1981,7 @@ img {
 #fantasy_articles table.articlepicturetable,
 #fantasy_recap table.articlepicturetable,
 #fantasy_preview table.articlepicturetable {
-  width: auto
+  width: auto;
 }
 
 #fantasy_articles .articlecaption,
@@ -2004,7 +1994,7 @@ img {
 #fantasy_articles .articlecaption .playerPopupIcon,
 #fantasy_recap .articlecaption .playerPopupIcon,
 #fantasy_preview .articlecaption .playerPopupIcon {
-  display: none
+  display: none;
 }
 /***************************************/
 
@@ -2019,14 +2009,14 @@ img {
 .warning a:link,
 .warning a:active,
 .warning a:visited {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 .warning a:hover,
 .warning a:link:hover,
 .warning a:active:hover,
 .warning a:visited:hover {
-  color: #fff
+  color: #fff;
 }
 /***************************************/
 
@@ -2045,23 +2035,23 @@ textarea {
   font-style: normal;
   text-decoration: none;
   outline: none;
-  border: 0.063rem solid #bbb
+  border: 0.063rem solid #bbb;
 }
 
 input[type="submit"]::-moz-focus-inner,
 input[type="button"]::-moz-focus-inner,
 button::-moz-focus-inner,
 input[type="reset"]::-moz-focus-inner {
-  border: 0 none
+  border: 0 none;
 }
 
 .pagebody input[type="text"],
 .pagebody input[type="password"] {
-  text-transform: none
+  text-transform: none;
 }
 
 .pagebody input[type="file"] {
-  border: 0
+  border: 0;
 }
 
 input[type="button"],
@@ -2093,7 +2083,7 @@ button.tbt {
   border: 0.125rem solid #222;
   vertical-align: middle;
   font-weight: bold;
-  color: #eee
+  color: #eee;
 }
 
 button.tbt:hover {
@@ -2108,25 +2098,26 @@ button.tbt img {
 
 #source_list,
 #destination_list {
-  margin: 0
+  margin: 0;
 }
 
 #fantasy_articles th select,
-#options_185 .report th select,
-#body_options_185 .report th select {
+#options_185 .report th select {
   width: 100%;
   max-width: 25rem;
-  margin: 0
+  margin: 0;
 }
 
 #league_chat td b {
   color: var(--primary, #ff4200)
 }
+
 /* color for pvt chat messages */
 #league_chat caption span i {
   vertical-align: top;
-  padding-left: 0.313rem
+  padding-left: 0.313rem;
 }
+
 /* style buttons outside tables in the body */
 #body_ajax_ls h3#ls_error {
   max-width: 37.5rem;
@@ -2155,7 +2146,7 @@ input[type="submit"] {
   background-image: -moz-linear-gradient(top, var(--primary-light, #FA5C25), var(--primary-dark, #B52F00));
   background-image: -ms-linear-gradient(top, var(--primary-light, #FA5C25), var(--primary-dark, #B52F00));
   background-image: -o-linear-gradient(top, var(--primary-light, #FA5C25), var(--primary-dark, #B52F00));
-  background-image: linear-gradient(to bottom, var(--primary-light, #FA5C25), var(--primary-dark, #B52F00))
+  background-image: linear-gradient(to bottom, var(--primary-light, #FA5C25), var(--primary-dark, #B52F00));
 }
 
 #body_ajax_ls h3#ls_error a:hover,
@@ -2168,12 +2159,13 @@ input[type="submit"]:hover {
   background-image: -moz-linear-gradient(top, var(--primary-dark, #B52F00), var(--primary-light, #FA5C25));
   background-image: -ms-linear-gradient(top, var(--primary-dark, #B52F00), var(--primary-light, #FA5C25));
   background-image: -o-linear-gradient(top, var(--primary-dark, #B52F00), var(--primary-light, #FA5C25));
-  background-image: linear-gradient(to bottom, var(--primary-dark, #B52F00), var(--primary-light, #FA5C25))
+  background-image: linear-gradient(to bottom, var(--primary-dark, #B52F00), var(--primary-light, #FA5C25));
 }
 
 #league_chat .chatLapsedTime {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
+
 /* style chat button and field */
 #league_chat form {
   padding: 0.313rem;
@@ -2184,7 +2176,7 @@ input[type="submit"]:hover {
 #player_search input[type="button"] {
   width: 100%;
   margin-left: 0;
-  border: 0 !important
+  border: 0 !important;
 }
 
 input#chat_text_field,
@@ -2198,13 +2190,13 @@ input[type="password"],
 input[type="text"] {
   padding: 0.25rem;
   font-size: 1.1rem;
-  min-width: 6.25rem
+  min-width: 6.25rem;
 }
 
 select+input[type="submit"],
 form.reportform input[type="submit"] {
   margin-left: 0.313rem;
-  padding: 0.188rem 0.938rem
+  padding: 0.188rem 0.938rem;
 }
 
 #destination_list,
@@ -2216,21 +2208,22 @@ li.player-search a input,
 #add {
   background: #fff !important;
   border-color: #fff !important;
-  color: #000 !important
+  color: #000 !important;
 }
 
 #league_chat img[title="New Window"] {
-  display: none
+  display: none;
 }
 
 #league_chat .fa-comments {
   margin-top: -0.313rem;
-  color: var(--primary, #ff4200) !important
+  color: var(--primary, #ff4200) !important;
 }
 
 #league_chat .fa-comments:hover {
-  color: #fff !important
+  color: #fff !important;
 }
+
 /***************************************/
 
 
@@ -2246,7 +2239,7 @@ li.player-search a input,
   padding: 0.313rem;
   box-shadow: 0 0 0.313rem rgba(0, 0, 0, .5);
   background: rgba(45, 45, 45, .4);
-  border-radius: 0.188rem
+  border-radius: 0.188rem;
 }
 
 .reportform input,
@@ -2255,8 +2248,8 @@ li.player-search a input,
   margin-top: 0.125rem;
   margin-bottom: 0.125rem;
 }
-/* report form that are embedded inside a table - example is player bio pages */
 
+/* report form that are embedded inside a table - example is player bio pages */
 div.mobile-wrap .reportform {
   text-align: center;
   background: none;
@@ -2264,8 +2257,9 @@ div.mobile-wrap .reportform {
   padding: 0.125rem;
   border-radius: 0;
   border: 0;
-  box-shadow: none
+  box-shadow: none;
 }
+
 /***************************************/
 
 
@@ -2273,31 +2267,36 @@ div.mobile-wrap .reportform {
 
 
 /***************************************/
-#body_board_show div.hcl{background:none!important}
+
+#body_board_show div.hcl {
+    background: none !important;
+}
+
 #body_board_show .fa-thumbtack {
   color: #90ee90;
-  margin-right: 0.125rem
+  margin-right: 0.125rem;
 }
 
 #body_board_show .fa-lock-keyhole {
   color: red;
-  margin-right: 0.125rem
+  margin-right: 0.125rem;
 }
 
 .messageboardbar {
   width: 100%;
-  display: inline-block
+  display: inline-block;
 }
 
-.messageboardbar+td {
+.messageboardbar + td {
   display: block;
   width: 100%;
-  text-align: center
+  text-align: center;
 }
 
 #board_show td {
   vertical-align: top;
 }
+
 /***************************************/
 
 
@@ -2316,12 +2315,13 @@ div.mobile-wrap .reportform {
   line-height: 1.563rem;
   display: inline-table;
   text-align: left;
-  border-radius: 0.188rem
+  border-radius: 0.188rem;
 }
 
 #body_commissioner_setup #commissioner_setup .alert {
-  text-align: center
+  text-align: center;
 }
+
 /* style hint alerts inside tables */
 .alert-info-table,
 .tdalert span {
@@ -2329,13 +2329,13 @@ div.mobile-wrap .reportform {
   background: rgba(0, 0, 0, .2);
   color: #aaa;
   margin: 0.188rem 0;
-  border: 0
+  border: 0;
 }
 
 .alert.alert-info-table .reportnavigationheader,
 .tdalert span b {
   padding-right: 0.313rem;
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 .alert.alert-info-table a,
@@ -2346,7 +2346,7 @@ div.mobile-wrap .reportform {
 .tdalert span a:active,
 .tdalert span a:visited,
 .tdalert span a:link {
-  color: #fff
+  color: #fff;
 }
 
 .alert.alert-info-table a:hover,
@@ -2357,42 +2357,42 @@ div.mobile-wrap .reportform {
 .tdalert span a:active:hover,
 .tdalert span a:visited:hover,
 .tdalert span a:link:hover {
-  color: #fff
+  color: #fff;
 }
-/* style hint alerts outside tables in the body */
 
+/* style hint alerts outside tables in the body */
 .alert-info-body,
 #body_live_scoring_summary #live_scoring_summary span.reportnavigation {
   width: 100%;
-  background: rgba(45, 45, 45, .4);
+  background: #2d2d2d66;
   color: #fff;
-  box-shadow: 0 0 0.313rem rgba(0, 0, 0, .5)
+   box-shadow: 0 0 0.313rem #00000080;
 }
 
 .alert.alert-info-body .reportnavigationheader {
   color: var(--primary, #ff4200);
-  padding-right: 0.313rem
+  padding-right: 0.313rem;
 }
 
 .alert.alert-info-body a,
 .alert.alert-info-body a:link,
 .alert.alert-info-body a:active,
 .alert.alert-info-body a:visited {
-  color: #ccc
+  color: #ccc;
 }
 
 .alert.alert-info-body a:hover,
 .alert.alert-info-body a:link:hover,
 .alert.alert-info-body a:active:hover,
 .alert.alert-info-body a:visited:hover {
-  color: #fff
+  color: #fff;
 }
-/* style tdhint see options 63 for example */
 
+/* style tdhint see options 63 for example */
 .tdalert span {
   height: auto;
   line-height: initial;
-  margin: 0.125rem
+  margin: 0.125rem;
 }
 
 /***************************************/
@@ -2404,7 +2404,7 @@ div.mobile-wrap .reportform {
 /***************************************/
 
 .weekly-navbar {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   margin: 0.625rem 0;
   margin-top: 0;
   height: 1.875rem;
@@ -2412,7 +2412,7 @@ div.mobile-wrap .reportform {
   display: inline-table;
   text-align: center;
   width: 100%;
-  font-size: 0
+  font-size: 0;
 }
 
 .weekly-navbar .reportnavigationheader {
@@ -2420,7 +2420,7 @@ div.mobile-wrap .reportform {
   vertical-align: middle;
   font-size: 0.875rem;
   text-transform: uppercase;
-  font-weight: normal
+  font-weight: 400;
 }
 
 .weekly-navbar a,
@@ -2429,8 +2429,8 @@ div.mobile-wrap .reportform {
 .weekly-navbar a:visited,
 .weekly-navbar .currentweek {
   color: #fff;
-  background: rgba(45, 45, 45, .4);
-  border: 0.063rem solid rgba(45, 45, 45, .7);
+  background: #2d2d2d66;
+  border: 0.063rem solid #2d2d2db3;
   border-radius: 0.125rem;
   text-decoration: none;
   display: inline-block;
@@ -2440,7 +2440,7 @@ div.mobile-wrap .reportform {
   vertical-align: middle;
   font-size: 0.75rem;
   margin: 0 0.188rem;
-  box-shadow: 0 0 0.313rem rgba(0, 0, 0, .5)
+  box-shadow: 0 0 0.313rem #00000080;
 }
 
 .weekly-navbar a:hover,
@@ -2448,12 +2448,12 @@ div.mobile-wrap .reportform {
 .weekly-navbar a:active:hover,
 .weekly-navbar a:visited:hover {
   color: #fff;
-  background: var(--primary, #ff4200)
+  background: var(--primary, #ff4200);
 }
 
 .weekly-navbar .currentweek {
   background: var(--primary, #ff4200);
-  color: #fff
+  color: #fff;
 }
 
 .weekly-navbar-mobile {
@@ -2463,19 +2463,18 @@ div.mobile-wrap .reportform {
   height: 1.875rem;
   line-height: 1.875rem;
   text-align: center;
-  width: 100%
+  width: 100%;
 }
 
 #hsubmenu .weekly-navbar-mobile {
-  margin: 0
+  margin: 0;
 }
 
 .weekly-navbar .inactive {
-  background: rgba(45, 45, 45, .2) !important;
-  color: #555 !important;
-  border: 0.063rem solid rgba(45, 45, 45, .4)
+    background: #2d2d2d33 !important;
+    color: #555 !important;
+    border: 0.063rem solid #2d2d2d66;
 }
-
 
 /*******************************************/
 
@@ -2486,43 +2485,42 @@ div.mobile-wrap .reportform {
 /*******************************************/
 
 #monthly_calendar {
-  width: 100%
+  width: 100%;
 }
 
 #monthly_calendar {
   text-align: left;
-  border: 0
+  border: 0;
 }
 
 #monthly_calendar td {
   border: 0.063rem solid #191919;
-  padding: 0
+  padding: 0;
 }
 
 #monthly_calendar th {
-  border: 0
+  border: 0;
 }
 
 #monthly_calendar .month_header th a {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 #monthly_calendar td .calendarday {
   background: #191919;
   border-bottom: 0.063rem solid #333;
   border-left: 0.063rem solid #111;
-  color: #FFF
+  color: #fff;
 }
 
 .calendarday {
   padding: 0 0.125rem;
-  line-height: 1.5
+  line-height: 1.5;
 }
 
 #monthly_calendar td.today {
-  border: 0.188rem dotted var(--primary, #ff4200)
+  border: 0.188rem dotted var(--primary, #ff4200);
 }
-
 
 /*******************************************/
 
@@ -2534,88 +2532,89 @@ div.mobile-wrap .reportform {
 
 #calendar,
 #monthly_calendar {
-  visibility: hidden
+  visibility: hidden;
 }
 
 #calendar .today,
 #calendar .today.first-td,
 #calendar .today:last-of-type {
-  border: 0.188rem dotted var(--primary, #ff4200)
+  border: 0.188rem dotted var(--primary, #ff4200);
 }
+
 /* Border to todays date - color it accent color of site */
 #calendar th {
   border: 0.063rem solid #111;
-  border-right: 0
+  border-right: 0;
 }
 
 #calendar th:last-of-type {
-  border-right: 0.063rem solid #111
+  border-right: 0.063rem solid #111;
 }
 
 #calendar td {
-  border-color: #111
+  border-color: #111;
 }
 
 #calendar td:last-of-type {
-  border-right: 0.063rem solid #111
+  border-right: 0.063rem solid #111;
 }
 
 #calendar .date {
-  background: #000
+  background: #000;
 }
 /* Previous and Next month arrows */
 #calendar .month_header th a[title="Next Month"]:before,
 #calendar .month_header th a[title="Previous Month"]:before {
-  text-shadow: 0 0 0.313rem rgba(0, 0, 0, .5);
-  color: #333
+  text-shadow: 0 0 0.313rem #00000080;
+  color: #333;
 }
 
 #calendar .month_header th a[title="Previous Month"]:hover:before,
 #calendar .month_header th a[title="Next Month"]:hover:before {
-  color: #ccc
+  color: #ccc;
 }
 
 .cal-event li {
   padding: 0.313rem;
   border-radius: 0.313rem;
   background: rgba(0, 0, 0, .2);
-  border: 0.063rem dashed #111
+  border: 0.063rem dashed #111;
 }
 
 .cal-event li:before {
-  color: #eee
+  color: #eee;
 }
 
 .cal-event li.calendar_event_nfl_game:before {
-  color: orange
+  color: orange;
 }
 
 .cal-event li.calendar_event_injury_report:before {
-  color: red
+  color: red;
 }
 
 .cal-event li.calendar_event_waiver_bbid:before {
-  color: green
+  color: green;
 }
 
 .cal-event li.calendar_event_waiver_lock:before {
-  color: purple
+  color: purple;
 }
 
 .cal-event li.calendar_event_trade {
-  color: red
+  color: orangered;
 }
 
 .cal-event li.calendar_event_trade:before {
-  color: #fff
+  color: #fff;
 }
 
 .cal-event li.calendar_event_waiver_none {
-  color: red
+  color: crimson;
 }
 
 .cal-event li.calendar_event_waiver_none:before {
-  color: #fff
+  color: #fff;
 }
 
 /*******************************************/
@@ -2636,51 +2635,54 @@ div.mobile-wrap .reportform {
   font-size: 0.875rem;
   max-width: 21.875rem;
   margin: 0 auto;
-  border: 0.375rem double #fff
+  border: 0.375rem double #fff;
 }
 
 #body_submit_lineups h4.warning br:first-of-type {
-  display: none
+  display: none;
 }
 
 /* change color for the small arrow to left top side of previous starters player image */
 #body_lineup.custom_lineup_body #lineup tr.previous_starter td.pphoto:before {
-  color: #90ee90
+  color: #90ee90;
 }
 
 /* change locked player icon for Starting players games started */
 #body_lineup.custom_lineup_body #lineup tr.locked_starter:after {
-  color: #90ee90
+  color: #90ee90;
 }
 
 /* change checkbox color for players you have selected to start */
 #body_lineup.custom_lineup_body #lineup tr.current_starters_row:after {
-  color: #90ee90
+  color: #90ee90;
 }
 
 /* change text color for projected points */
 #body_lineup.custom_lineup_body #lineup form td.proj-pts,
 #body_lineup.custom_lineup_body #lineup form span.points_row .proj-pts {
-  color: #90ee90
+  color: #90ee90;
 }
 
 /* change text color for projected points header title */
 #body_lineup #lineup .franchiselogo,
-#body_lineup #lineup caption .franchiseicon{display:none}
-#body_lineup.custom_lineup_body #lineup form tr.starters_pos_row+tr td.proj-pts:before,
+#body_lineup #lineup caption .franchiseicon {
+    display: none;
+}
+
+#body_lineup.custom_lineup_body #lineup form tr.starters_pos_row + tr td.proj-pts:before,
 #body_lineup.custom_lineup_body #lineup form table.position-table tr:first-child td.proj-pts:before {
-  color: #ccc
+    color: #ccc;
 }
 
 /* change locked player icon for Bench players games started */
 #body_lineup.custom_lineup_body #lineup tr.locked_bench:after {
-  color: red
+  color: firebrick;
 }
 
 /* change background and text color for the small circle on player photos that shows injury designation */
 #body_lineup.custom_lineup_body #lineup form td.inj b.warning {
   color: #fff;
-  background: red
+  background: #da3636;
 }
 
 /* change background and text color error message displayed if too many or too few starters are selected */
@@ -2688,23 +2690,23 @@ div.mobile-wrap .reportform {
 #body_lineup.custom_lineup_body #lineup .starter_count .warning_maximum_error,
 .starter_count_sub.starter_count_sub_fail:before {
   background: #000;
-  color: red
+  color: red;
 }
 
 /* change arrow up color for players not select and on bench */
 #body_lineup.custom_lineup_body #lineup tr.current_bench_row:after {
-  color: red
+  color: red;
 }
 
 /* change text color for players on bye shown in the matchup area */
 #body_lineup.custom_lineup_body #lineup form td.weekly-opp .warning {
-  color: red
+  color: red;
 }
 
 /* color of font awesome icons in the submit button and custom button at bottom of page */
 #body_lineup #lineup .form_buttons.default-btn:after,
 #body_lineup #lineup .form_buttons:before {
-  color: #fff
+  color: #fff;
 }
 
 /* change background color circular player images */
@@ -2732,24 +2734,24 @@ div.mobile-wrap .reportform {
 
 #body_lineup.custom_lineup_body #lineup form tr.player_row td.pos-rank {
   background: var(--primary, #ff4200) !important;
-  color: #fff
+  color: #fff;
 }
 
 /* change background and text color for players rank box that shows at bottom of each players photo */
 .starters_pos_th {
-  border-bottom: 0.188rem solid #111
+  border-bottom: 0.188rem solid #111;
 }
 
 /* change bottom border color for each tablerow for linep table */
 #body_lineup.custom_lineup_body #lineup form tr {
-  border-bottom: 0.063rem solid #111
+  border-bottom: 0.063rem solid #111;
 }
 
 /* change text color for weekly opponent matchups */
 #body_lineup.custom_lineup_body #lineup form td.weekly-opp,
 #body_lineup.custom_lineup_body #lineup form td.weekly-opp a,
 .custom_lineup_submission_body tr.starter_totalsRow td {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 /* change background and color for drop down that displays as you scroll down page to show current starters */
@@ -2779,26 +2781,26 @@ div.mobile-wrap .reportform {
   background-image: linear-gradient(to bottom, var(--primary-dark, #B52F00), var(--primary-light, #FA5C25));
 }
 
-/*CGT - change background and color for drop down button that displays as you scroll down page to show current starters */
+/* change background and color for drop down button that displays as you scroll down page to show current starters */
 .starter_count_sub {
   border: 0.188rem solid var(--primary-two, var(--primary, #ff4200));
   background: var(--neutral-dark, #141414) !important;
   box-shadow: 0 0 0.6rem rgba(45, 45, 45, .5);
-  color: #fff
+  color: #fff;
 }
 
 #body_lineup #lineup p.form_buttons.buttonDisabledContainer:before {
-  opacity: .5;
+  opacity: 0.5;
   pointer-events: none;
 }
 
 #body_lineup.custom_lineup_body #lineup caption {
-  text-align: left !important
+  text-align: left !important;
 }
 
 .locked_bench,
 .locked_starter {
-  cursor: default !important
+  cursor: default !important;
 }
 
 #body_lineup.custom_lineup_body #lineup .player_row td,
@@ -2809,7 +2811,7 @@ div.mobile-wrap .reportform {
 .kickoff-conditions-wrapper,
 .current-conditions-place,
 .starter_count_sub {
-  font-family: 'Roboto Condensed', sans-serif !important;
+  font-family: "Roboto Condensed", sans-serif !important;
 }
 
 /*******************************************/
@@ -2847,7 +2849,7 @@ div.mobile-wrap .reportform {
 
 .current-conditions-header .current-conditions-text,
 .kickoff-conditions-header .kickoff-conditions-text {
-  color: #fff
+  color: #fff;
 }
 
 .current-conditions-wrapper,
@@ -2870,40 +2872,40 @@ div.mobile-wrap .reportform {
 /*******************************************/
 
 .target_report tr.lineup_player_row {
-  border-top: 0.063rem solid #111
+  border-top: 0.063rem solid #111;
 }
 
 .target_report tr.lineup_player_row.last_row {
-  border-bottom: 0.063rem solid #111
+  border-bottom: 0.063rem solid #111;
 }
 
 .target_report tr.lineup_player_row.current_bench_row:after,
 .target_report tr.lineup_player_row.locked_bench:after {
-  color: red
+  color: #da3636;
 }
 
 .target_report tr.lineup_player_row td.inj b.warning {
   color: #fff;
-  background: red
+  background: #da3636;
 }
 
 .target_report tr.lineup_player_row.current_starters_row:after,
 .target_report tr.lineup_player_row.locked_starter:after,
 .target_report tr.lineup_player_row span.points_row span.proj-pts {
-  color: #90ee90
+  color: #90ee90;
 }
 
 .target_report tr.lineup_player_row td.pos-rank {
   background: var(--primary, #ff4200) !important;
-  color: #fff
+  color: #fff;
 }
 
 .target_report tr.lineup_player_row td.weekly-opp {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 .team_lineup_table .lineup_head {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 .target_report tr.lineup_player_row.previous_starter td.pphoto:before {
@@ -2939,23 +2941,22 @@ div.mobile-wrap .reportform {
 abbr {
   cursor: pointer;
   text-decoration: none;
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 #tooltip {
   background: var(--primary, #ff4200) !important;
   font-size: 0.875rem;
-  border-radius: 0.188rem
+  border-radius: 0.188rem;
 }
 
 #tooltip:after {
-  border-top-color: var(--primary, #ff4200) !important
+  border-top-color: var(--primary, #ff4200) !important;
 }
 
 #tooltip.top:after {
-  border-top-color: var(--primary, #ff4200) !important
+  border-top-color: var(--primary, #ff4200) !important;
 }
-
 
 /***************************************/
 
@@ -2968,7 +2969,7 @@ abbr {
 .franchise_offline,
 .franchise_online {
   background: none;
-  padding: 0
+  padding: 0;
 }
 
 .franchise_offline::after,
@@ -2979,16 +2980,17 @@ abbr {
   width: 0.625rem;
   height: 0.625rem;
   margin-left: 0.25rem;
-  border-radius: 0.313rem
+  border-radius: 0.313rem;
 }
 
 .franchise_offline::after {
-  background: #444
+  background: #444;
 }
 
 .franchise_online::after {
-  background: #90ee90
+  background: #90ee90;
 }
+
 /***************************************/
 
 
@@ -3001,13 +3003,12 @@ body.full-width .pagebody,
 body.full-width .myfantasyleague_menu,
 body.full-width .pageheader,
 body.full-width .pagefooter {
-  max-width: 100%
+  max-width: 100%;
 }
 
 body.full-width {
-  background-image: none
+  background-image: none;
 }
-
 
 /***************************************/
 
@@ -3018,7 +3019,7 @@ body.full-width {
 /***************************************/
 
 #body_commissioner_setup #commissioner_setup table td.two_column_layout li b {
-  display: none
+  display: none;
 }
 
 #commissioner_setup table.two_column_layout th {
