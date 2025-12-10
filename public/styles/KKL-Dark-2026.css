@@ -3029,36 +3029,36 @@ body.full-width {
   text-transform: uppercase;
   border: 0;
   font-weight: 700;
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 #commissioner_setup table.two_column_layout li,
 #my_options li {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 #commissioner_setup table.two_column_layout th:before {
   content: "";
   padding: 0 0.625rem;
-  font-family: 'Font Awesome 6 Pro';
-  color: #fff;
-  font-weight: normal
+  font-family: "Font Awesome 6 Pro";
+    color: #fff;
+    font-weight: 400;
 }
 
 #commissioner_setup th#recently_used:before {
-  content: "\f217" /* cart-plus - Font Awesome icon next to Recently Used */
+  content: "\f217"; /* cart-plus - Font Awesome icon next to Recently Used */
 }
 
 #commissioner_setup th#general_setup:before {
-  content: "\e5f1" /* flask-gear - Font Awesome icon next to General Setup */
+  content: "\e5f1"; /* flask-gear - Font Awesome icon next to General Setup */
 }
 
 #commissioner_setup th#commissioner_franchise_setup:before {
-  content: "\e5fd" /* lightbulb-gear - Font Awesome icon next to Commissioner/Franchise Setup */
+  content: "\e5fd"; /* lightbulb-gear - Font Awesome icon next to Commissioner/Franchise Setup */
 }
 
 #commissioner_setup th#history_setup:before {
-  content: "\f640" /* abacus - Font Awesome icon next to History Setup */
+  content: "\f640"; /* abacus - Font Awesome icon next to History Setup */
 }
 
 #commissioner_setup th#scoring_setup:before {
@@ -3069,24 +3069,24 @@ body.full-width {
 }
 
 #commissioner_setup th#players_and_rosters:before {
-  content: "\f0c0" /* users - Font Awesome icon next to Players and Rosters */
+  content: "\f0c0"; /* users - Font Awesome icon next to Players and Rosters */
 }
 
 #commissioner_setup th#adjust_scores:before {
-  content: "\f649" /* bullseye-pointer - Font Awesome icon next to Adjust Scores and Standings */
+  content: "\f649"; /* bullseye-pointer - Font Awesome icon next to Adjust Scores and Standings */
 }
 
 #commissioner_setup th#home_page_message_setup:before {
-  content: "\f4a4" /* message-pen- Font Awesome icon next to Messages Setup */
+  content: "\f4a4"; /* message-pen- Font Awesome icon next to Messages Setup */
 }
 
 #commissioner_setup th#salary_cap_setup:before {
-  content: "\f51e" /* coins - Font Awesome icon next to Salary Cap Setup */
+  content: "\f51e"; /* coins - Font Awesome icon next to Salary Cap Setup */
 }
 
 #commissioner_setup th#use_with_caution {
   background: red;
-  color: #fff
+  color: #fff;
 }
 
 .theme-dk-yellow #commissioner_setup th#use_with_caution {
@@ -3099,35 +3099,35 @@ body.full-width {
 }
 
 #commissioner_setup th#use_with_caution:before {
-  content: "\f071" /* triangle-exclamation - Font Awesome icon next to Use These Items with Caution */
+  content: "\f071"; /* triangle-exclamation - Font Awesome icon next to Use These Items with Caution */
 }
 
 #commissioner_setup th#playoff_setup:before {
-  content: "\f5a2" /* medal - Font Awesome icon next to Playoff Setup */
+  content: "\f5a2"; /* medal - Font Awesome icon next to Playoff Setup */
 }
 
 #commissioner_setup th#other_transactions_setup:before {
-  content: "\f11b" /* gamepad - Font Awesome icon next to Other Transactions Setup */
+  content: "\f11b"; /* gamepad - Font Awesome icon next to Other Transactions Setup */
 }
 
 #commissioner_setup th#waivers_setup:before {
-  content: "\e43c" /* plus-minus - Font Awesome icon next to Add/Drop and Waivers Setup */
+  content: "\e43c"; /* plus-minus - Font Awesome icon next to Add/Drop and Waivers Setup */
 }
 
 #commissioner_setup th#draft_setup:before {
-  content: "\e1d0" /* list-radio - Font Awesome icon next to Draft Setup */
+  content: "\e1d0"; /* list-radio - Font Awesome icon next to Draft Setup */
 }
 
 #commissioner_setup th#auction_setup:before {
-  content: "\f0e3" /* gavel - Font Awesome icon next to Auction Setup */
+  content: "\f0e3"; /* gavel - Font Awesome icon next to Auction Setup */
 }
 
 #commissioner_setup th#fantasy_schedule_setup:before {
-  content: "\f12e" /* puzzle-piece - Font Awesome icon next to Fantasy Schedule Setup */
+  content: "\f12e"; /* puzzle-piece - Font Awesome icon next to Fantasy Schedule Setup */
 }
 
 #commissioner_setup th#appearance_setup:before {
-  content: "\f53f" /* palette - Font Awesome icon next to Appearance Setup */
+  content: "\f53f"; /* palette - Font Awesome icon next to Appearance Setup */
 }
 
 
