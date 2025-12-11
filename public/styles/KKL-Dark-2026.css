@@ -5761,7 +5761,7 @@ body #scoreboardTooltip.top:after {
 /* Edit Scoreboard Base CSS for this skin ================================================ */
 .MFLGameTable td,
 .MFLNFLGameTable td {
-  padding: 0.125rem
+  padding: 0.125rem;
 }
 
 .MFLScoreboardLineups {
@@ -5773,20 +5773,21 @@ body #scoreboardTooltip.top:after {
 }
 
 .MFLNFLGameTable {
-  min-width: 4.375rem !important
+  min-width: 4.375rem !important;
 }
 
 #scoreboardTooltip #MFLPlayerPopupClose {
-  right: 0.625rem
+  right: 0.625rem;
 }
 
 #scoreboardTooltip .mobile-wrap {
-  padding: 0.625rem 0.313rem !important
+  padding: 0.625rem 0.313rem !important;
 }
 
 #mflhistory .toggle_tabs .mobile-wrap {
   box-shadow: none;
 }
+
 /***************************************/
 
 
@@ -5800,40 +5801,40 @@ body #scoreboardTooltip.top:after {
   color: #fff;
   font-size: 1.375rem;
   text-transform: uppercase;
-  border-bottom: 0.188rem solid #1f1f1f
+  border-bottom: 0.188rem solid #1f1f1f;
 }
 
 #mflhistory td.gamedetailcell:first-of-type {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 #mflhistory .gamecentertable td.gamescore {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 #mflhistory .homepagemodule.prevmatchups caption {
   background: rgba(0, 0, 0, .5);
-  color: #ccc
+  color: #ccc;
 }
 
 #mflhistory .winnermark {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 .dh_comments_cell {
   background: #000;
   border: 0.063rem solid #333;
-  color: #fff
+  color: #fff;
 }
 
 .dh-control-setting,
 .th-control-setting,
 .trh-control-setting {
-  color: #fff
+  color: #fff;
 }
 
 .ph_tabs_scroll caption {
-  color: #ccc
+  color: #ccc;
 }
 
 /***************************************/
@@ -5845,39 +5846,39 @@ body #scoreboardTooltip.top:after {
 /***************************************/
 
 #rulestabs {
-  color: #ddd
+  color: #ddd;
 }
 
 #rulestabs h4 {
   text-align: center;
   font-size: 0.875rem;
-  padding: 0.313rem 0
+  padding: 0.313rem 0;
 }
 
 #rulestabs h4 a {
   font-weight: 400;
-  text-decoration: none
+  text-decoration: none;
 }
 
 #rulestabs .number_space {
   width: 0.25rem;
-  display: inline-block
+  display: inline-block;
 }
 
 #rulestabs .number-hide {
-  visibility: hidden
+  visibility: hidden;
 }
 
 #rulestabs .tabhead+div {
-  padding-left: 0.313rem
+  padding-left: 0.313rem;
 }
 
 #rulestabs .subhead+div {
-  padding-left: 1.375rem
+  padding-left: 1.375rem;
 }
 
 #rulestabs p {
-  margin: 0.313rem 0
+  margin: 0.313rem 0;
 }
 
 #rulestabs p a:active,
@@ -5887,7 +5888,7 @@ body #scoreboardTooltip.top:after {
 }
 
 #rulestabs p a:hover {
-  text-decoration: underline
+  text-decoration: underline;
 }
 
 a.tabhead,
@@ -5895,11 +5896,11 @@ a.tabheaddouble {
   font-size: 1rem;
   text-decoration: none;
   color: #fff;
-  font-weight: 600
+  font-weight: 600;
 }
 
 a.tabheaddouble {
-  padding-left: 0.125rem
+  padding-left: 0.125rem;
 }
 
 a.subhead {
@@ -5907,40 +5908,40 @@ a.subhead {
   color: var(--primary, #ff4200) !important;
   padding-left: 1.25rem;
   font-weight: 600;
-  text-decoration: none
+  text-decoration: none;
 }
 
 #rulestabs #monthly_calendar {
-  margin-top: 0
+  margin-top: 0;
 }
 
 #rulestabs td {
-  text-align: center
+  text-align: center;
 }
 
 #rulestabs td.event {
-  text-align: left
+  text-align: left;
 }
 
 #rulestabs th.event {
-  width: 33%
+  width: 33%;
 }
 
 #rulestabs th.range {
-  width: 33%
+  width: 33%;
 }
 
 #rulestabs td.require {
-  text-align: left
+  text-align: left;
 }
 
 #rulestabs th.limit {
-  width: 12.5rem
+  width: 12.5rem;
 }
 
 #rulestabs .subtext {
   color: #ccc;
-  margin-left: 1.25rem
+  margin-left: 1.25rem;
 }
 
 /***************************************/
@@ -5954,49 +5955,49 @@ a.subhead {
 /* COLORING */
 
 #custom_draftroom #draft_countdown_timer:before {
-  color: #ccc
+  color: #ccc;
 }
 
 #custom_draftroom #draft-controller {
-  color: #fff
+  color: #fff;
 }
 
 #custom_draftroom #draft-edit a {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 #custom_draftroom #draft-edit a:hover {
-  color: #ccc
+  color: #ccc;
 }
 
 #custom_draftroom .fa-pause-circle,
 #custom_draftroom .fa-stop-circle,
 #custom_draftroom .fa-forward-step,
 #custom_draftroom .fa-play-circle {
-  color: #ccc
+  color: #ccc;
 }
 
 #custom_draftroom .fa-pause-circle:hover,
 #custom_draftroom .fa-stop-circle:hover {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 #custom_draftroom .fa-forward-step:hover,
 #custom_draftroom .fa-play-circle:hover {
-  color: #90ee90
+  color: #90ee90;
 }
 
 #custom_draftroom #make_pick th.owner-away {
   background: rgba(0, 0, 0, .2);
-  color: #ccc
+  color: #ccc;
 }
 
 #custom_draftroom #make_pick i {
-  color: #aaa
+  color: #aaa;
 }
 
 #custom_draftroom #make_pick i:hover {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 #custom_draftroom .draft_picks_header tr {
@@ -6004,47 +6005,47 @@ a.subhead {
 }
 
 #custom_draftroom .draft_picks_container tr {
-  background: none !important
+  background: none !important;
 }
 
 /* HIGHLIGHT BG COLOR */
 #custom_draftroom .moohighlight,
 #custom_draftroom .draft_picks_container tr.moohighlight {
-  background-color: var(--bg-opacity, rgba(181, 47, 0, .05)) !important
+  background-color: var(--bg-opacity, rgba(181, 47, 0, .05)) !important;
 }
 
 #draft_status_table .moohighlight {
-  background: none !important
+  background: none !important;
 }
 
 #draft_status_table .moohighlight:first-child {
-  background-color: var(--bg-opacity, rgba(181, 47, 0, .05)) !important
+  background-color: var(--bg-opacity, rgba(181, 47, 0, .05)) !important;
 }
 
 /* PLAYER PROFILE */
 #custom_draftroom #draft_player_link {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 #custom_draftroom #player-profile th {
-  background: none
+  background: none;
 }
 
 #custom_draftroom #player-profile #draft_player_photo {
-  border: 0.125rem solid var(--primary, #ff4200)
+  border: 0.125rem solid var(--primary, #ff4200);
 }
 
 /* FORMATTING BELOW ======================= */
 #custom_draftroom caption span.module_expand {
-  display: none !important
+  display: none !important;
 }
 
 #custom_draftroom .toggle_tabs .mobile-wrap {
-  padding: 0.313rem
+  padding: 0.313rem;
 }
 
 #custom_draftroom caption {
-  cursor: default
+  cursor: default;
 }
 
 #custom_draftroom .toggle_tabs {
@@ -6059,7 +6060,7 @@ a.subhead {
 #custom_draftroom #draft_countdown_timer {
   float: right;
   font-size: 0.875rem;
-  font-weight: normal
+  font-weight: 400;
 }
 
 /* DRAFT CONTROL BUTTONS */
@@ -6073,7 +6074,7 @@ a.subhead {
 }
 
 #custom_draftroom caption i {
-  cursor: pointer
+  cursor: pointer;
 }
 
 #custom_draftroom #draft-edit {
@@ -6083,12 +6084,12 @@ a.subhead {
   right: 0;
   top: 1.875rem;
   width: 2.5rem;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 #custom_draftroom #draft-control {
   text-align: center;
-  display: block
+  display: block;
 }
 
 #custom_draftroom #draft-control i {
@@ -6097,11 +6098,11 @@ a.subhead {
 }
 
 #custom_draftroom #draft-control .fa-forward-step {
-  margin-right: 6.25rem
+  margin-right: 6.25rem;
 }
 
 #custom_draftroom #draft-pick-edit input[type="button"] {
-  padding: 0.375rem 0.25rem
+  padding: 0.375rem 0.25rem;
 }
 
 /* MAKE A PICK */
@@ -6116,34 +6117,34 @@ a.subhead {
 #custom_draftroom #make_pick select {
   width: 100%;
   max-width: 100%;
-  margin: 0
+  margin: 0;
 }
 
 #custom_draftroom #make_pick select[name="position"],
 #custom_draftroom #make_pick select[name="team"] {
-  width: 6.25rem
+  width: 6.25rem;
 }
 
 #custom_draftroom #make_pick td {
   display: block;
-  text-align: center
+  text-align: center;
 }
 
 #custom_draftroom #make_pick th.owner-away {
   font-size: 0.875rem;
-  font-weight: bold;
+  font-weight: 700;
   padding: 0.188rem 0;
-  display: block
+  display: block;
 }
 
 #custom_draftroom #make_pick #source_list {
   max-height: 9.375rem;
-  margin-bottom: 0.625rem
+  margin-bottom: 0.625rem;
 }
 
 #custom_draftroom #make_pick #destination_list {
   max-height: 6.25rem;
-  margin-bottom: 0.313rem
+  margin-bottom: 0.313rem;
 }
 
 #custom_draftroom #make_pick {
@@ -6153,46 +6154,46 @@ a.subhead {
 #custom_draftroom #make_pick i {
   font-size: 1.875rem;
   vertical-align: middle;
-  cursor: pointer
+  cursor: pointer;
 }
 
 #custom_draftroom .source-list-arrow i.fa-arrow-circle-down {
   position: absolute;
   left: 0.625rem;
-  margin-top: 0
+  margin-top: 0;
 }
 
 #custom_draftroom .source-list-arrow i.fa-arrow-circle-up {
   position: absolute;
   left: 2.5rem;
-  margin-top: 0
+  margin-top: 0;
 }
 
 #custom_draftroom .draft-list-arrow {
-  margin: 0 0.625rem
+  margin: 0 0.625rem;
 }
 
 #custom_draftroom #make_pick td[valign="top"] {
-  text-align: right
+  text-align: right;
 }
 
 #custom_draftroom #make_pick .draftbutton {
   margin-top: 0;
   margin-bottom: 0;
   padding: 0.313rem;
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 /* DRAFT MESSAGES */
 #custom_draftroom #draft_status {
   overflow-y: auto;
-  height: 5rem
+  height: 5rem;
 }
 
 #custom_draftroom #draft_status ul {
   margin: 0 0.313rem;
   margin-left: 0 !important;
-  padding: 0 0.313rem
+  padding: 0 0.313rem;
 }
 
 #custom_draftroom #draft_status ul li {
@@ -6200,36 +6201,36 @@ a.subhead {
   margin: 0;
   padding: 0 0.188rem;
   border: 0;
-  margin-bottom: 0.188rem
+  margin-bottom: 0.188rem;
 }
 
 /* DRAFT PICKS */
 #custom_draftroom .draftpicks #draft_picks_container {
   overflow-y: auto;
-  height: 34.625rem
+  height: 34.625rem;
 }
 
 #custom_draftroom .draftpicks #draft_picks_container.commish-adjust {
-  height: 33.813rem
+  height: 33.813rem;
 }
 
 #custom_draftroom .draftpicks {
   text-align: center;
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 #custom_draftroom .draft_picks_header {
-  position: relative
+  position: relative;
 }
 
 #custom_draftroom .draftpicks td {
   font-size: 0.75rem;
-  text-align: left
+  text-align: left;
 }
 
 #custom_draftroom .draftpicks td.pick {
-  text-align: center
+  text-align: center;
 }
 
 #custom_draftroom .draftpicks td.franchise {
@@ -6242,23 +6243,23 @@ a.subhead {
 #custom_draftroom .draftpicks td {
   padding: 0;
   margin: 0;
-  padding: 0.125rem
+  padding: 0.125rem;
 }
 
 #custom_draftroom .draftpicks th.pick {
-  position: absolute
+  position: absolute;
 }
 
 #custom_draftroom .draftpicks .pick {
   text-align: center;
   max-width: 2.5rem;
   min-width: 2.5rem;
-  width: 2.5rem
+  width: 2.5rem;
 }
 
 #custom_draftroom .draftpicks th.franchise {
   position: absolute;
-  left: 2.5rem
+  left: 2.5rem;
 }
 
 #custom_draftroom .draftpicks th.selection {
@@ -6267,7 +6268,7 @@ a.subhead {
 }
 
 #custom_draftroom .draftpicks .selection {
-  padding-left: 0.313rem
+  padding-left: 0.313rem;
 }
 
 #custom_draftroom .draft_picks_header th:last-of-type:after {
@@ -6275,11 +6276,11 @@ a.subhead {
   position: absolute;
   right: 1.875rem;
   visibility: visible;
-  bottom: 0.125rem
+  bottom: 0.125rem;
 }
 
 #custom_draftroom .draftpicks th.timestamp {
-  visibility: hidden
+  visibility: hidden;
 }
 
 #custom_draftroom .draftpicks td.timestamp {
@@ -6288,49 +6289,49 @@ a.subhead {
   font-size: 0.625rem;
   white-space: nowrap;
   width: 4rem;
-  max-width: 4rem
+  max-width: 4rem;
 }
 
 #custom_draftroom .draftpicks b,
 #custom_draftroom .draftpicks a,
 #custom_draftroom .draftpicks br {
-  display: none !important
+  display: none !important;
 }
 
 #custom_draftroom .draftpicks {
-  font-size: 0
+  font-size: 0;
 }
 
 #custom_draftroom .draftpicks td {
-  padding: 0.625rem 0.125rem
+  padding: 0.625rem 0.125rem;
 }
 
 .draft_picks_header th {
-  background: none
+  background: none;
 }
 
 /* PLAYER PROFILE */
 #custom_draftroom #player-profile {
   padding: 0.188rem;
   table-layout: fixed;
-  position: relative
+  position: relative;
 }
 
 #custom_draftroom #player-profile caption span {
   color: transparent;
-  font-size: 0
+  font-size: 0;
 }
 
 #custom_draftroom #draft_player_link {
-  position: absolute;
-  left: 0.313rem;
-  top: 0.375rem;
-  font-size: 1.375rem;
-  font-family: 'Roboto Condensed', sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-decoration: none;
-  pointer-events: none
+    position: absolute;
+    left: 0.313rem;
+    top: 0.375rem;
+    font-size: 1.375rem;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    pointer-events: none;
 }
 
 #custom_draftroom #player-profile #player_height_weight,
@@ -6340,19 +6341,19 @@ a.subhead {
 }
 
 #custom_draftroom #player-profile #draft_player_photo {
-  margin: 0.313rem 0
+  margin: 0.313rem 0;
 }
 
 /* ROSTERS */
 #custom_draftroom #rostertable td:first-of-type {
-  text-align: center
+  text-align: center;
 }
 
 /* DRAFT CHAT */
 #custom_draftroom .franchiseicon {
   width: 100%;
   max-width: 9.375rem;
-  height: auto
+  height: auto;
 }
 
 /* OWNER ACTIVITY MODULE */
@@ -6363,7 +6364,7 @@ a.subhead {
 
 #custom_draftroom #avg_draft_time td:last-of-type,
 #custom_draftroom #avg_draft_time th:last-of-type {
-  text-align: center
+  text-align: center;
 }
 
 /* AVG DRAFT TIME MODULE */
@@ -6374,7 +6375,7 @@ a.subhead {
 
 #custom_draftroom #avg_draft_time td:last-of-type,
 #custom_draftroom #avg_draft_time th:last-of-type {
-  text-align: center
+  text-align: center;
 }
 
 /* ADJUST 2 COLUMN MODULES */
@@ -6386,7 +6387,7 @@ a.subhead {
 }
 
 #custom_draftroom .toggle_tabs caption {
-  display: table-caption !important
+  display: table-caption !important;
 }
 
 #custom_draftroom .two_column_layout.mobile-view {
@@ -6403,24 +6404,24 @@ a.subhead {
 
 #custom_draftroom h3[id^="auction_countdown_timer"],
 #custom_draftroom #autorotateCountdown {
-  visibility: hidden
+  visibility: hidden;
 }
 
 #auction-status td {
-  text-align: center
+  text-align: center;
 }
 
 #auction-status td[id^="auction_status_nominate"],
 #auction-status .reportnavigationheader,
 #make_pick td .reportnavigationheader {
   color: var(--primary, #ff4200);
-  font-weight: 600
+  font-weight: 600;
 }
 
 #auction-status .reportnavigation,
 #make_pick td .reportnavigation {
   text-align: center;
-  font-size: 0.625rem
+  font-size: 0.625rem;
 }
 
 #make_pick #current_nominator {
@@ -6431,22 +6432,22 @@ a.subhead {
 }
 
 #make_pick .detach-input input {
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 #current_auctions h3 {
   font-size: 1rem;
-  font-weight: normal;
-  text-align: left
+  font-weight: 400;
+  text-align: left;
 }
 
 #current_auctions input[type="button"] {
   padding: 0.25rem;
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 #current_auctions input {
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 #current_auctions td {
@@ -6455,7 +6456,7 @@ a.subhead {
   float: left;
   padding: 0 !important;
   line-height: 1.5rem;
-  background: none
+  background: none;
 }
 
 #current_auctions th {
@@ -6465,7 +6466,7 @@ a.subhead {
 #current_auctions td:before {
   color: #ccc;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
   background: rgba(0, 0, 0, .2);
   font-size: 0.875rem;
   float: left;
@@ -6476,35 +6477,35 @@ a.subhead {
 /*#current_auctions td:nth-child(even) {}*/ /* commented out since no properties are defined for this element */
 
 #current_auctions td:nth-child(1):before {
-  content: "Player Name"
+  content: "Player Name";
 }
 
 #current_auctions td:nth-child(2):before {
-  content: "High Bid"
+  content: "High Bid";
 }
 
 #current_auctions td:nth-child(3):before {
-  content: "Highest Bidder"
+  content: "Highest Bidder";
 }
 
 #current_auctions td:nth-child(4):before {
-  content: "Make A Bid"
+  content: "Make A Bid";
 }
 
 #current_auctions td:nth-child(5):before {
-  content: "Timer"
+  content: "Timer";
 }
 
 #current_auctions td:nth-child(6):before {
-  content: "Remove This Auction"
+  content: "Remove This Auction";
 }
 
 #current_auctions #lastAuctionOverCountdownRow td:nth-child(1):before {
-  content: "Auction Status"
+  content: "Auction Status";
 }
 
 #current_auctions #lastAuctionOverCountdownRow td:nth-child(2):before {
-  content: "Timer"
+  content: "Timer";
 }
 
 #current_auctions #lastAuctionOverCountdownRow td:nth-child(3):before {
@@ -6533,26 +6534,26 @@ a.subhead {
 
 #picker tr:hover {
   background: red;
-  color: #fff
+  color: #fff;
 }
 
 #picker tr.highlight {
   background: #0f0;
-  color: #111
+  color: #111;
 }
 
 #add tr.highlight,
 #add tr:hover {
   background: #0f0;
-  color: #000
+  color: #000;
 }
 
 #drop tr.highlight,
 #drop tr:hover {
   background: red;
-  color: #fff
+  color: #fff;
 }
-
+/* these elements were removed in the latest release from mflscripts.com
 #body_add_drop .resize table td.points {
   color: #0f0
 }
@@ -6592,12 +6593,12 @@ a.subhead {
 
 #body_add_drop #waiver_request_list td.action a:hover {
   color: var(--primary-light, #FA5C25)
-}
+}*/
 
 /* FORMATTING NO NEED TO EDIT */
 #body_ir #container-wrap .mobile-view,
 #body_taxi_squad #container-wrap .mobile-view {
-  width: auto
+  width: auto;
 }
 
 [id$="options_27"] #container-wrap .report td[valign=center] {
