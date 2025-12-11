@@ -3130,7 +3130,6 @@ body.full-width {
   content: "\f53f"; /* palette - Font Awesome icon next to Appearance Setup */
 }
 
-
 /***********************************************************/
 
 
@@ -3139,38 +3138,37 @@ body.full-width {
 
 /***********************************************************/
 
-
 /* COLORING */
 
 #MFLChatPopupContainer {
-  padding: 0.313rem
+  padding: 0.313rem;
 }
 
-#MFLChatPopupContainer>.report,
-#MFLPlayerPopupContainer>.report,
+#MFLChatPopupContainer > .report,
+#MFLPlayerPopupContainer > .report,
 .toggle_module_search,
 #overviewAjaxLoading .report,
 #MFLScoreboardLoading,
 #ajax_loading .report,
 #survivorAjaxLoading .report,
 #contractReportAjaxLoading .report {
-  box-shadow: 0 0 0.313rem rgba(0, 0, 0, .5);
+  box-shadow: 0 0 0.313rem #00000080;
   border-radius: 0.188rem;
-  padding: 0.625rem !important
+  padding: 0.625rem !important;
 }
 
 .toggle_module_search {
   left: 0;
   right: 0;
   margin: 0 auto !important;
-  margin-top: 10px !important
+  margin-top: 10px !important;
 }
 
 #MFLPlayerPopupContainer {
   width: 96%;
 }
 
-#MFLChatPopupContainer>div.report,
+#MFLChatPopupContainer > div.report,
 #MFLPlayerPopupContainer,
 #overviewAjaxLoading,
 #ajax_loading,
@@ -3187,13 +3185,13 @@ body.full-width {
   top: 1.063rem;
   height: 1.375rem;
   width: 1.375rem;
-  line-height: 1.4
+  line-height: 1.4;
 }
 
 #MFLPlayerPopupClose:hover {
   background: var(--primary, #ff4200);
   border-color: var(--primary, #ff4200);
-  color: #fff
+  color: #fff;
 }
 
 ul.MFLPlayerPopupTab {
@@ -3212,11 +3210,11 @@ ul.MFLPlayerPopupTab {
 
 ul.MFLPlayerPopupTab li {
   border: 0;
-  border-left: 0.063rem solid #222
+  border-left: 0.063rem solid #222;
 }
 
 ul.MFLPlayerPopupTab li:first-of-type {
-  border: 0
+  border: 0;
 }
 
 ul.MFLPlayerPopupTab li a.active,
@@ -3224,13 +3222,13 @@ ul.MFLPlayerPopupTab li a.active:hover,
 ul.MFLPlayerPopupTab li a.current,
 ul.MFLPlayerPopupTab li a.current:hover {
   background: var(--primary, #ff4200);
-  color: #fff
+  color: #fff;
 }
 
 ul.MFLPlayerPopupTab li a {
   color: #ccc;
   border: 0;
-  text-decoration: none
+  text-decoration: none;
 }
 
 ul.MFLPlayerPopupTab li a:hover {
@@ -3242,7 +3240,7 @@ ul.MFLPlayerPopupTab li a:hover {
 
 .MFLPlayerPopupLoader {
   border: 1rem solid #ccc;
-  border-top: 1rem solid var(--primary, #ff4200)
+  border-top: 1rem solid var(--primary, #ff4200);
 }
 
 #MFLPlayerPopupLoading {
@@ -3256,43 +3254,43 @@ ul.MFLPlayerPopupTab li a:hover {
 
 #MFLPlayerPopupLinks {
   background: rgba(0, 0, 0, 0.4);
-  padding: 0.063rem 0
+  padding: 0.063rem 0;
 }
 
 #MFLPlayerPopupContainer .headline b,
 #MFLPlayerPopupContainer .headline th {
   font-weight: normal;
   font-size: 0.75rem;
-  padding: 0.125rem
+  padding: 0.125rem;
 }
 
 .popreport th {
-  font-size: 0.688rem
+  font-size: 0.688rem;
 }
 
 /* FORMATTING */
 
-#MFLPlayerPopupOverlay[style*="display: block"]+#MFLPlayerPopupContainer {
-  display: block !important
+#MFLPlayerPopupOverlay[style*="display: block"] + #MFLPlayerPopupContainer {
+  display: block !important;
 }
 
 #overviewAjaxLoading .report,
 #MFLScoreboardLoading,
 #ajax_loading .report {
-  opacity: 1 !important
+  opacity: 1 !important;
 }
 
 #MFLChatPopupContainer .popreport {
-  margin-bottom: 0 !important
+  margin-bottom: 0 !important;
 }
 
 #MFLPlayerPopupLinks .popreport td {
-  padding: 0.125rem 0
+  padding: 0.125rem 0;
 }
 
 #MFLPlayerPopupLinks .popreport td a {
   text-decoration: none;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 #MFLChatPopupContainer input,
@@ -3304,27 +3302,27 @@ ul.MFLPlayerPopupTab li a:hover {
 
 #MFLChatPopupContainer input[type="button"] {
   margin-left: 0.313rem;
-  padding: 0.188rem 0.938rem
+  padding: 0.188rem 0.938rem;
 }
 
 #MFLPlayerPopupHeader,
 #MFLPlayerPopupBio,
 #MFLPlayerPopupArticleLoaded {
-  margin: 0
+  margin: 0;
 }
 
 #MFLPlayerPopupContainer .MFLPopTabWrap,
 #MFLPlayerPopupContainer .popreport {
-  padding: 0.125rem 0
+  padding: 0.125rem 0;
 }
 
 .MFLPopTabWrap,
 #MFLPlayerPopupContainer.MFLPlayerPopupNotificationContainer .MFLPlayerPopupTabContent {
-  margin-top: 0 !important
+  margin-top: 0 !important;
 }
 
 #MFLPlayerPopupContainer {
-  height: 32rem
+  height: 32rem;
 }
 
 #MFLPlayerPopupContainer.MFLPlayerPopupNotificationContainer {
@@ -3333,11 +3331,11 @@ ul.MFLPlayerPopupTab li a:hover {
 }
 
 #MFLPlayerPopupContainer.MFLPlayerPopupArticleContainer {
-  max-height: 16.125rem
+  max-height: 16.125rem;
 }
 
 #MFLPlayerPopupContainer .MFLPlayerPopupTabContent td {
-  padding: 0 0.125rem
+  padding: 0 0.125rem;
 }
 
 #MFLPlayerPopupHeader .popreport td,
@@ -3351,6 +3349,7 @@ ul.MFLPlayerPopupTab li a:hover {
   white-space: nowrap;
   width: 90%;
 }
+
 /***************************************/
 
 
@@ -3360,11 +3359,11 @@ ul.MFLPlayerPopupTab li a:hover {
 /***************************************/
 
 .pagefooter {
-  display: none !important
+  display: none !important;
 }
 
 .mobile-menu-open footer {
-  display: none !important
+  display: none !important;
 }
 
 footer {
@@ -3373,7 +3372,7 @@ footer {
   left: 0;
   bottom: 0;
   height: auto;
-  width: 100%
+  width: 100%;
 }
 /* below settings for footer container border */
 .footercontainer-outer {
@@ -3404,7 +3403,7 @@ footer {
   justify-content: space-around;
   margin: 0 auto;
   text-align: left;
-  max-width: 73.75rem
+  max-width: 73.75rem;
 }
 
 .footercontainer .container {
@@ -3413,13 +3412,13 @@ footer {
   margin: 0 auto;
 }
 
-.footercontainer .container>div {
+.footercontainer .container > div {
   padding: 0.313rem 0.188rem;
   border-radius: 0.188rem;
 }
 
 .footercontainer .container div span {
-  display: block
+  display: block;
 }
 
 .f-title,
@@ -3429,17 +3428,17 @@ footer {
   color: var(--primary, #ff4200);
   font-size: 0.938rem;
   margin-bottom: 0.125rem;
-  font-weight: 600
+  font-weight: 600;
 }
 
 .f-title-icon {
-  text-align: center
+  text-align: center;
 }
 
 .f-link {
   list-style: none;
   text-align: left;
-  font-size: 0.813rem
+  font-size: 0.813rem;
 }
 
 .f-link a,
@@ -3449,19 +3448,19 @@ footer {
   color: #fff;
   font-size: 0.813rem;
   cursor: pointer;
-  line-height: 1.375rem
+  line-height: 1.375rem;
 }
 
 .f-link a:hover,
 .f-link a:link:hover,
 .f-link a:active:hover,
 .f-link a:visited:hover {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 .f-icon {
   text-align: center;
-  margin-top: 1.25rem
+  margin-top: 1.25rem;
 }
 
 .f-icon+.f-link {
@@ -3473,9 +3472,8 @@ footer {
 .f-icon+.f-link a {
   text-decoration: none;
   color: #fff;
-  cursor: default
+  cursor: default;
 }
-
 
 /***************************************/
 
@@ -3490,7 +3488,6 @@ footer {
 #body_options_101 th.franchisename,
 #body_options_08 th.status,
 #options_03 .report th,
-#body_options_03 .report th,
 #body_options_16 .matchup,
 .pooltab td:first-of-type,
 #options_153 .report td:first-of-type,
@@ -3552,16 +3549,16 @@ footer {
 #bbid_summary th.franchisename,
 #top_starters .player,
 #top_owns .player,
-#top_survivor_picks th:first-of-type+th,
-#draft_tracker th:first-of-type+th,
-#my_draft_list th:first-of-type+th,
+#top_survivor_picks th:first-of-type + th,
+#draft_tracker th:first-of-type + th,
+#my_draft_list th:first-of-type + th,
 #waiver_order .franchisename,
 #article_summary th,
 #my_draft_picks th,
 #my_draft_picks td:last-of-type,
 #recent_draft_picks th,
 #recent_draft_picks td:last-of-type,
-#average_auction_values th:first-of-type+th,
+#average_auction_values th:first-of-type + th,
 #bar_chart th,
 #player_records .player,
 #top_adds .player,
@@ -3573,7 +3570,7 @@ footer {
 #roster .player,
 #news_articles .timestamp,
 #twitter_feed th,
-#league_champions th.rank+th,
+#league_champions th.rank + th,
 #record_streaks th.franchisename,
 #my_trophy_case th,
 #transactions th,
@@ -3590,16 +3587,16 @@ footer {
 #body_options_156 th.franchisename,
 #options_06 .two_column_layout .report th,
 #body_options_169 .two_column_layout .report .player,
-#body_options_169 .two_column_layout .report .points+th,
+#body_options_169 .two_column_layout .report .points + th,
 #body_accounting_report .report th,
 #body_accounting_report .report td,
 #body_options_118 .report .player,
 #body_options_118 .report th:first-of-type,
-#body_options_118 .report+.report td,
+#body_options_118 .report + .report td,
 #body_fantasy_box_score .report td:first-of-type,
 #body_fantasy_box_score .report th:first-of-type,
 #body_options_202 th,
-#options_194 .report .rank+th,
+#options_194 .report .rank + th,
 #body_options_208 .report .franchisename,
 #body_options_171 .report th:first-of-type,
 #body_options_158 .report th.franchisename,
@@ -3608,16 +3605,16 @@ footer {
 #body_options_31 .report .franchisename,
 #body_options_119 .report th:first-of-type,
 #options_153 th:first-of-type,
-#body_options_81 .report .rank+th,
-#body_options_81 .report .rank+td,
+#body_options_81 .report .rank + th,
+#body_options_81 .report .rank + td,
 #lineup .report td:first-of-type,
-#lineup .report td:first-of-type+td,
-#lineup .report th:first-of-type+th,
-#lineup .report th:first-of-type+th+th,
+#lineup .report td:first-of-type + td,
+#lineup .report th:first-of-type + th,
+#lineup .report th:first-of-type + th + th,
 #body_pro_matchup .report td:first-of-type,
-#body_pro_matchup .report tr:nth-child(2)>th:nth-child(1),
+#body_pro_matchup .report tr:nth-child(2) > th:nth-child(1),
 #body_options_215 .report th,
-#body_player .biography.report+.report th,
+#body_player .biography.report + .report th,
 #body_player #player_stats_table td,
 #body_tweets .report th,
 blockquote,
@@ -3633,9 +3630,9 @@ blockquote,
 #body_options_208 .report td:last-of-type,
 #body_options_208 .report th:last-of-type,
 #body_options_120 .report th:first-of-type,
-#body_options_205 .mobile-wrap>.report th,
-#body_options_133 .mobile-wrap>.report td,
-#body_options_133 .mobile-wrap>.report th,
+#body_options_205 .mobile-wrap > .report th,
+#body_options_133 .mobile-wrap > .report td,
+#body_options_133 .mobile-wrap > .report th,
 #top_steals th:nth-child(2),
 #top_steals th:nth-child(3),
 #top_steals td:nth-child(2),
@@ -3660,7 +3657,7 @@ blockquote,
 #next_weeks_fantasy_schedule th,
 #last_weeks_fantasy_results th,
 #body_free_agents table.report th.player,
-#body_free_agents table.report th.week+th,
+#body_free_agents table.report th.week + th,
 #body_options_152 table.report th,
 #body_options_15 table.h2hmatchups th,
 #body_options_22 table.scoresummary.report th,
@@ -3684,17 +3681,17 @@ blockquote,
 #body_reports_newplay table.report tr th,
 #owner_activity th,
 #league_chat th,
-#top_owns .player+td+td,
-#top_owns .player+th+th,
-#top_starters .player+td+td,
-#top_starters .player+th+th,
-#top_drops .player+td+td,
-#top_drops .player+th+th,
-#top_adds .player+td+td,
-#top_adds .player+th+th,
+#top_owns .player + td + td,
+#top_owns .player + th + th,
+#top_starters .player + td + td,
+#top_starters .player + th + th,
+#top_drops .player + td + td,
+#top_drops .player + th + th,
+#top_adds .player + td + td,
+#top_adds .player + th + th,
 #body_reports_aav .pagebody table.report th,
 #body_reports_aav .pagebody table.report td {
-  text-align: left
+    text-align: left;
 }
 
 #body_options_17 div.mobile-wrap:nth-child(4) .franchisename,
@@ -3709,7 +3706,7 @@ blockquote,
 #ScoreDetails th,
 #ScoreNFLDetails td:first-child,
 #ScoreNFLDetails th:first-child {
-  text-align: left !important
+  text-align: left !important;
 }
 
 #body_live_scoring .points,
@@ -3779,11 +3776,11 @@ table#youtubevideo.homepagemodule.report embed,
 #options_08 .report td,
 #body_top .report td,
 #youtubevideo td,
-#power_rank td+td,
-#body_options_101 .report td+td,
+#power_rank td + td,
+#body_options_101 .report td + td,
 #body_options_20 .report td.points,
 #body_options_151 .report td:first-of-type,
-#body_options_119 .report td+td,
+#body_options_119 .report td + td,
 #body_options_236 .report td,
 #standings td,
 #standings th,
@@ -3844,7 +3841,7 @@ table#youtubevideo.homepagemodule.report embed,
 #body_accounting_report .report th.debit,
 #body_accounting_report .report th.credit,
 #body_options_118 .report td,
-#body_options_118 .report+.report td:first-of-type,
+#body_options_118 .report + .report td:first-of-type,
 #body_fantasy_box_score .report td,
 #body_fantasy_box_score .report th,
 #body_fantasy_box_score .report td:first-of-type.points,
@@ -3857,15 +3854,15 @@ table#youtubevideo.homepagemodule.report embed,
 #body_player #player_stats_table th,
 #body_player #player_stats_table td.points,
 #body_player #player_stats_table td.week,
-#body_player .biography.report+.report+.report td,
+#body_player .biography.report + .report + .report td,
 #body_player #player_stats_table .reportfooter,
 #who_should_i_start .points,
-#body_player .biography.report+.report td.reportfooter,
+#body_player .biography.report + .report td.reportfooter,
 #body_accounting_report .report.nocaption th,
 #body_options_17 div.mobile-wrap:nth-child(6) .report td:last-of-type,
 #body_options_17 div.mobile-wrap:nth-child(6) .report th:last-of-type,
-#body_options_54 .mobile-wrap>.report td,
-#body_options_205 .mobile-wrap>.report .points,
+#body_options_54 .mobile-wrap > .report td,
+#body_options_205 .mobile-wrap > .report .points,
 #top_steals th,
 #top_steals td,
 #top_busts td,
@@ -3888,9 +3885,9 @@ table#youtubevideo.homepagemodule.report embed,
 #body_options_22 td.two_column_layout table.report tr td.points,
 #body_live_scoring_summary #live_scoring_summary span.reportnavigation,
 #body_options_17 #container-wrap .mobile-wrap table th:first-of-type,
-#body_options_17 #container-wrap .mobile-wrap table th:first-of-type+.points,
+#body_options_17 #container-wrap .mobile-wrap table th:first-of-type + .points,
 #body_options_17 #container-wrap .mobile-wrap table td:first-of-type,
-#body_options_17 #container-wrap .mobile-wrap table td:first-of-type+.points,
+#body_options_17 #container-wrap .mobile-wrap table td:first-of-type + .points,
 #top_survivor_picks .points,
 #body_options_100 table.report th:first-child,
 #body_options_100 table.report th:last-child,
@@ -3912,7 +3909,7 @@ table#youtubevideo.homepagemodule.report embed,
 #body_reports_aav .pagebody table.report .salary,
 #body_reports_aav .pagebody table.report .points,
 #body_reports_aav .pagebody table.report tr.reportfooter td {
-  text-align: center
+  text-align: center;
 }
 
 #body_options_17 #container-wrap .mobile-wrap:last-of-type table .points:last-of-type,
@@ -3922,57 +3919,57 @@ table#youtubevideo.homepagemodule.report embed,
 #body_live_scoring_summary tr.player_minutes_remaining td,
 #ScoreNFLDetails td,
 #ScoreNFLDetails th {
-  text-align: center !important
+  text-align: center !important;
 }
 
 #body_live_scoring_summary tr.total th,
 #body_live_scoring_summary tr.players_yet_to_play th,
 #body_live_scoring_summary tr.players_currently_playing th,
 #body_live_scoring_summary tr.player_minutes_remaining th {
-  text-align: right !important
+  text-align: right !important;
 }
 
 .report {
-  text-align: left
+  text-align: left;
 }
 
 #body_options_210 .mobile-wrap .report th {
-  white-space: nowrap
+  white-space: nowrap;
 }
 
 .depth_chart_page table.report th {
-  text-align: center
+  text-align: center;
 }
 
 .depth_chart_page table.report td {
-  text-align: left
+  text-align: left;
 }
 
-.depth_chart_page table.report tr+tr td:first-of-type,
-.depth_chart_page table.report td:first-of-type+td {
-  width: 3.125rem;
-  text-align: center
+.depth_chart_page table.report tr + tr td:first-of-type,
+.depth_chart_page table.report td:first-of-type + td {
+    width: 3.125rem;
+    text-align: center;
 }
 
 .depth_chart_page table.report th.status,
 .depth_chart_page table.report td:last-of-type,
-.depth_chart_page table.report th.depth+th {
+.depth_chart_page table.report th.depth + th {
   text-align: left;
 }
 
 .depth_chart_page table.report th[colspan="4"] {
-  border-bottom: 0.063rem solid #111
+  border-bottom: 0.063rem solid #111;
 }
 
 .depth_chart_page table.report tr:first-of-type th[colspan="4"] {
-  border-top: 0
+  border-top: 0;
 }
 
 #body_options_15 table.h2hmatchups th.points,
 #body_options_22 table.scoresummary.report .points,
 #body_options_22 table.report th,
 #body_weekly .two_column_layout table th {
-  text-align: right
+  text-align: right;
 }
 
 #ScoreNFLDetails th[colspan],
@@ -3980,21 +3977,20 @@ table#youtubevideo.homepagemodule.report embed,
   font-size: 120%;
   border-bottom: 0.25rem solid var(--primary, #ff4200);
   font-weight: bold;
-  text-align: center !important
+  text-align: center !important;
 }
 
 #ScoreDetails td.subtotal,
 #ScoreDetails td.subtotal+td,
 #body_detailed td.subtotal,
 #body_detailed td.subtotal+td {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 #fullSeasonPts td b {
   color: var(--primary, #ff4200);
-  font-weight: normal
+  font-weight: normal;
 }
-
 
 /***************************************/
 
@@ -4005,7 +4001,7 @@ table#youtubevideo.homepagemodule.report embed,
 /***************************************/
 
 .flexslider .report caption span.module_expand {
-  display: none
+  display: none;
 }
 
 .flexslider .report tbody {
@@ -4015,7 +4011,7 @@ table#youtubevideo.homepagemodule.report embed,
 
 .flex-container a:hover,
 .flex-slider a:hover {
-  outline: none
+  outline: none;
 }
 
 .slides,
@@ -4024,17 +4020,17 @@ table#youtubevideo.homepagemodule.report embed,
 .flex-direction-nav {
   margin: 0;
   padding: 0;
-  list-style: none
+  list-style: none;
 }
 
 .flex-pauseplay span {
-  text-transform: capitalize
+  text-transform: capitalize;
 }
 
 .flexslider {
   position: relative;
   zoom: 1;
-  padding: 0
+  padding: 0;
 }
 
 .flexslider .slides>li {
@@ -4046,7 +4042,7 @@ table#youtubevideo.homepagemodule.report embed,
 
 .flexslider .slides img.slider {
   width: 100%;
-  display: block
+  display: block;
 }
 
 .flexslider .slides:after {
@@ -4055,23 +4051,23 @@ table#youtubevideo.homepagemodule.report embed,
   clear: both;
   visibility: hidden;
   line-height: 0;
-  height: 0
+  height: 0;
 }
 
 html[xmlns] .flexslider .slides {
-  display: block
+  display: block;
 }
 
 * html .flexslider .slides {
-  height: 1%
+  height: 1%;
 }
 
 .no-js .flexslider .slides>li:first-child {
-  display: block
+  display: block;
 }
 
 .flexslider .slides {
-  zoom: 1
+  zoom: 1;
 }
 
 .flexslider .slides img {
@@ -4086,15 +4082,15 @@ html[xmlns] .flexslider .slides {
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
-  transition: all 1s ease
+  transition: all 1s ease;
 }
 
 .loading .flex-viewport {
-  max-height: 18.75rem
+  max-height: 18.75rem;
 }
 
 .carousel li {
-  margin-right: 0.313rem
+  margin-right: 0.313rem;
 }
 
 .flex-direction-nav {
@@ -4113,60 +4109,60 @@ html[xmlns] .flexslider .slides {
   overflow: hidden;
   opacity: 0;
   cursor: pointer;
-  color: rgba(0, 0, 0, 0.8);
-  text-shadow: 0.063rem 0.063rem 0 rgba(255, 255, 255, 0.3);
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -ms-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out
+  color: #000c;
+    text-shadow: 0.063rem 0.063rem 0 #ffffff4d;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .flex-direction-nav a:before {
-  font-family: 'Font Awesome 6 Pro';
+  font-family: "Font Awesome 6 Pro";
   font-size: 2.5rem;
   display: inline-block;
-  content: '\f053'; /* chevron-left Font Awesome icon */
+  content: "\f053"; /* chevron-left Font Awesome icon */
   color: rgba(0, 0, 0, 0.8);
-  text-shadow: 0.063rem 0.063rem 0 rgba(255, 255, 255, 0.3)
+  text-shadow: 0.063rem 0.063rem 0 rgba(255, 255, 255, 0.3);
 }
 
 .flex-direction-nav a.flex-next:before {
-  content: '\f054' /* chevron-right Font Awesome icon */
+  content: "\f054"; /* chevron-right Font Awesome icon */
 }
 
 .flex-direction-nav .flex-prev {
-  left: -3.125rem
+  left: -3.125rem;
 }
 
 .flex-direction-nav .flex-next {
   right: -3.125rem;
-  text-align: right
+  text-align: right;
 }
 
 .flexslider:hover .flex-direction-nav .flex-prev {
-  opacity: .7;
-  left: 0.625rem
+  opacity: 0.7;
+  left: 0.625rem;
 }
 
 .flexslider:hover .flex-direction-nav .flex-prev:hover {
-  opacity: 1
+  opacity: 1;
 }
 
 .flexslider:hover .flex-direction-nav .flex-next {
-  opacity: .7;
-  right: 0.625rem
+  opacity: 0.7;
+  right: 0.625rem;
 }
 
 .flexslider:hover .flex-direction-nav .flex-next:hover {
-  opacity: 1
+  opacity: 1;
 }
 
 .flex-direction-nav .flex-disabled {
   opacity: 0 !important;
   filter: alpha(opacity=0);
   cursor: default;
-  z-index: -1
+  z-index: -1;
 }
 
 .flex-pauseplay a {
@@ -4176,26 +4172,26 @@ html[xmlns] .flexslider .slides {
   position: absolute;
   bottom: 0.313rem;
   left: 0.625rem;
-  opacity: .8;
+  opacity: 0.8;
   z-index: 10;
   overflow: hidden;
   cursor: pointer;
-  color: #000
+  color: #000;
 }
 
 .flex-pauseplay a:before {
-  font-family: 'Font Awesome 6 Pro';
+  font-family: "Font Awesome 6 Pro";
   font-size: 1.25rem;
   display: inline-block;
-  content: '\f004' /* heart Font Awesome icon */
+  content: "\f004" /* heart Font Awesome icon */
 }
 
 .flex-pauseplay a:hover {
-  opacity: 1
+  opacity: 1;
 }
 
 .flex-pauseplay a.flex-play:before {
-  content: '\f053' /* chevron-left Font Awesome icon */
+  content: "\f053"; /* chevron-left Font Awesome icon */
 }
 
 .flex-control-nav {
@@ -4203,7 +4199,7 @@ html[xmlns] .flexslider .slides {
   position: absolute;
   bottom: 0;
   text-align: center;
-  z-index: 2
+  z-index: 2;
 }
 
 .flex-control-nav li {
@@ -4226,35 +4222,37 @@ html[xmlns] .flexslider .slides {
   box-shadow: inset 0 0 0.188rem rgba(0, 0, 0, 0.3);
   -webkit-border-radius: 1.25rem;
   -moz-border-radius: 1.25rem;
-  border-radius: 1.25rem
+  border-radius: 1.25rem;
 }
 
 .flex-control-paging li a:hover {
-  background: rgba(0, 0, 0, 0.7)
+    background: #333;
+    background: #000000b3;
 }
 
 .flex-control-paging li a.flex-active {
-  background: rgba(0, 0, 0, 0.9);
-  cursor: default
+    background: #000;
+    background: #000000e6;
+    cursor: default;
 }
 
 .flex-control-thumbs {
   margin: 0.313rem 0 0;
   position: static;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .flex-control-thumbs li {
   width: 25%;
   float: left;
-  margin: 0
+  margin: 0;
 }
 
 .flex-control-thumbs img {
   width: 100%;
   height: auto;
   display: block;
-  opacity: .7;
+  opacity: 0.7;
   cursor: pointer;
   -moz-user-select: none;
   user-select: none; /* added standard property */
@@ -4262,16 +4260,16 @@ html[xmlns] .flexslider .slides {
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
-  transition: all 1s ease
+  transition: all 1s ease;
 }
 
 .flex-control-thumbs img:hover {
-  opacity: 1
+  opacity: 1;
 }
 
 .flex-control-thumbs .flex-active {
   opacity: 1;
-  cursor: default
+  cursor: default;
 }
 
 #MFLBoxMatchups div.warning {
@@ -4286,11 +4284,11 @@ html[xmlns] .flexslider .slides {
 }
 
 #MFLBoxContainer input[type="button"]:hover {
-  background: var(--primary, #ff4200)
+  background: var(--primary, #ff4200);
 }
 
 #MFLBoxContainer input[style="cursor:default"] {
-  background: var(--primary, #ff4200)
+  background: var(--primary, #ff4200);
 }
 
 #MFLBoxMatchups {
@@ -4311,12 +4309,12 @@ html[xmlns] .flexslider .slides {
 
 .MFLBoxArrowLeft:hover:before,
 .MFLBoxArrowRight:hover:before {
-  color: #ccc
+  color: #ccc;
 }
 
 .MFLBoxArrowLeft.MFLBoxArrowFaded:before,
 .MFLBoxArrowRight.MFLBoxArrowFaded:before {
-  color: #333
+  color: #333;
 }
 
 #MFLBoxContainer .fa-arrow-right-arrow-left:hover {
@@ -4331,11 +4329,11 @@ html[xmlns] .flexslider .slides {
 }
 
 .MFLBoxLiveStatsArrow {
-  border-top: 0.625rem solid #333 !important
+  border-top: 0.625rem solid #333 !important;
 }
 
 .MFLBoxLiveStatsClose {
-  color: var(--primary, #ff4200) !important
+  color: var(--primary, #ff4200) !important;
 }
 
 #MFLBoxWrapper #MFLBoxPlayerDetails {
@@ -4346,18 +4344,18 @@ html[xmlns] .flexslider .slides {
 }
 
 .MFLBoxPlayerDetailsTR:hover {
-  background-color: var(--bg-opacity-brighter, rgba(181, 47, 0, .2))
+  background-color: var(--bg-opacity-brighter, rgba(181, 47, 0, .2));
 }
 
 #MFLBoxWrapper .MFLBoxPlayerDetailsClose {
   background: var(--primary, #ff4200);
   border: .125rem solid var(--primary, #ff4200);
-  color: #fff
+  color: #fff;
 }
 
 #MFLBoxWrapper .MFLBoxPlayerDetailsClose:hover {
   background: var(--primary, #ff4200);
-  border-color: var(--primary, #ff4200)
+  border-color: var(--primary, #ff4200);
 }
 
 #MFLBoxWrapper #MFLBoxPlayerDetails td span[style="color:red"],
@@ -4389,7 +4387,6 @@ html[xmlns] .flexslider .slides {
 
 /***************************************/
 
-
 /* FORMATTING */
 
 #player td.player_photo {
@@ -4397,21 +4394,15 @@ html[xmlns] .flexslider .slides {
   height: 0;
 }
 
-#body_options_257 div[class="style-input"] {
-  max-height: 16.875rem !important;
-  vertical-align: middle;
-  height: 16.875rem;
-}
-
 #my_draft_picks th:first-of-type,
 #recent_draft_picks th:first-of-type,
 #draft_tracker th:first-of-type,
 #my_draft_list th:first-of-type {
-  width: 3.75rem
+  width: 3.75rem;
 }
 
 #recent_draft_picks span.warning {
-  font-weight: bold
+  font-weight: bold;
 }
 
 #top_adds .rank:first-of-type,
@@ -4438,17 +4429,13 @@ html[xmlns] .flexslider .slides {
   white-space: nowrap;
 }
 
-#body_options_129 #picker td:first-of-type {
-  text-align: left
-}
-
 #body_options_234 table #SCRATCHPAD {
-  width: 100%
+  width: 100%;
 }
 
 #body_options_179 table th,
 #body_options_121 table th {
-  text-align: left
+  text-align: left;
 }
 
 #body_csetup_draftpref .mobile-wrap table {
@@ -4465,89 +4452,72 @@ html[xmlns] .flexslider .slides {
 }
 
 #body_csetup_draftpref .mobile-wrap table td input {
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 #body_csetup_draftpref .mobile-wrap {
   max-width: max-content;
 }
 
-#options_18 h2,
-#body_options_18 h2 {
-  display: none
+#options_18 h2 {
+  display: none;
 }
 
 #options_18 .report.nocaption th,
-#options_18 .report.nocaption td.inputfield,
-#body_options_18 .report.nocaption th,
-#body_options_18 .report.nocaption td.inputfield {
-  text-align: left;
+#options_18 .report.nocaption td.inputfield {
+    text-align: left;
 }
 
 #options_18 .report.nocaption th.dropplayer,
 #options_18 .report.nocaption th[align="center"],
-#options_18 .report.nocaption td.inputfield.dropplayer,
-#body_options_18 .report.nocaption th.dropplayer,
-#body_options_18 .report.nocaption th[align="center"],
-#body_options_18 .report.nocaption td.inputfield.dropplayer {
-  text-align: center
+#options_18 .report.nocaption td.inputfield.dropplayer {
+    text-align: center;
 }
 
 #options_18 .report.nocaption td.inputfield input,
-#options_18 .report.nocaption td.inputfield span,
-#body_options_18 .report.nocaption td.inputfield input,
-#body_options_18 .report.nocaption td.inputfield span {
-  vertical-align: middle
+#options_18 .report.nocaption td.inputfield span {
+    vertical-align: middle;
 }
 
-#options_18 .report.nocaption td.inputfield,
-#body_options_18 .report.nocaption td.inputfield {
-  white-space: nowrap;
+#options_18 .report.nocaption td.inputfield {
+    white-space: nowrap;
 }
 
 #options_180 .report td,
-#options_122 .report td,
-#body_options_180 .report td,
-#body_options_122 .report td {
-  text-align: center
+#options_122 .report td {
+    text-align: center;
 }
 
 #options_180 .report th:first-of-type,
-#options_122 .report th:first-of-type,
-#body_options_180 .report td:first-of-type,
-#body_options_122 .report td:first-of-type {
+#options_122 .report th:first-of-type {
   text-align: center;
   width: 1%;
   white-space: nowrap;
 }
 
 #options_180 .report .franchiseicon,
-#options_122 .report .franchiseicon,
-#body_options_180 .report .franchiseicon,
-#body_options_122 .report .franchiseicon {
-  max-width: 9.375rem
+#options_122 .report .franchiseicon {
+    max-width: 9.375rem;
 }
 
 #options_06 .withfranchiseicon span,
-#options_07 .withfranchiseicon span,
-#body_options_06 .withfranchiseicon span,
-#body_options_07 .withfranchiseicon span {
-  font-size: 0
+#options_07 .withfranchiseicon span {
+    font-size: 0;
 }
 
 [id$="options_112"] .inputlabel { /* this is using an attribute suffix match so any html element ending in options_112 */
   width: 6.25rem;
   white-space: nowrap;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 #bar_chart .weeklypointtotals table td,
-[id$="options_20"] .weeklypointtotals table td {
-  border-right: 0;
-  border-left: 0;
-  padding-right: 0;
-  padding-left: 0;
-  border: 0
+#options_20 .weeklypointtotals table td {
+    border-right: 0;
+    border-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+    border: 0;
 }
 
 table.playoffbracket {
@@ -4557,7 +4527,7 @@ table.playoffbracket {
 .playoffbracket .franchiseicon {
   max-width: 12.5rem;
   width: 100%;
-  padding: 0 0.313rem
+  padding: 0 0.313rem;
 }
 
 .playoffbracket td.bottomteam,
@@ -4565,16 +4535,16 @@ table.playoffbracket {
   display: flex;
   align-items: center;
   justify-content: left;
-  font-weight: bold;
-  color: var(--primary, #ff4200)
+  font-weight: 700;
+  color: var(--primary, #ff4200);
 }
 
 .playoffbracket td {
-  text-align: center
+  text-align: center;
 }
 
 #csetup_hmpgmsg form {
-  text-align: center
+  text-align: center;
 }
 
 #body_csetup_hmpgmod #home_page_setup table[id^="hpm_table_"] select {
@@ -4582,7 +4552,7 @@ table.playoffbracket {
   max-height: 6.25rem;
   overflow: auto;
   margin: 0.313rem 0;
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 
 #body_csetup_hmpgmod #home_page_setup table[id^="hpm_table_"] {
@@ -4598,35 +4568,35 @@ table.playoffbracket {
 #body_csetup_hmpgmod #home_page_setup table[id^="hpm_table_"] td[valign="middle"] {
   min-width: 4.375rem;
   width: 4.375rem;
-  text-align: center
+  text-align: center;
 }
 
 #body_csetup_hmpgmod #home_page_setup table[id^="hpm_table_"] button[name^="add_tab_"],
 button[id^="add_to_tab_"] {
-  margin-top: 0.313rem
+  margin-top: 0.313rem;
 }
 
-#body_csetup_hmpgmod #home_page_setup>div.mobile-wrap>table {
-  text-align: center
-}
-
-#body_csetup_hmpgmod #home_page_setup>div.mobile-wrap>table>tbody>tr:nth-child(1) {
-  display: none
-}
-
-#body_csetup_hmpgmod #home_page_setup>div.mobile-wrap>table>tbody>tr:nth-child(2)>td:before,
-#hpm_table_0:before {
-  content: "Home Page Tabs";
-  background: rgba(0, 0, 0, .2);
-  color: #ccc;
-  width: 100%;
-  margin-bottom: 0.313rem;
-  font-size: 0.875rem;
-  font-style: normal;
-  font-weight: 300;
+#body_csetup_hmpgmod #home_page_setup > div.mobile-wrap > table {
   text-align: center;
-  padding: 0.125rem;
-  font-family: 'Roboto Condensed', sans-serif
+}
+
+#body_csetup_hmpgmod #home_page_setup > div.mobile-wrap > table > tbody > tr:nth-child(1) {
+  display: none;
+}
+
+#body_csetup_hmpgmod #home_page_setup > div.mobile-wrap > table > tbody > tr:nth-child(2) > td:before,
+#hpm_table_0:before {
+    content: "Home Page Tabs";
+    background: #0003;
+    color: #ccc;
+    width: 100%;
+    margin-bottom: 0.313rem;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+    padding: 0.125rem;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 #hpm_table_0:before {
@@ -4636,7 +4606,7 @@ button[id^="add_to_tab_"] {
   margin-top: -0.375rem;
 }
 
-#body_csetup_hmpgmod #home_page_setup>div.mobile-wrap>table>tbody>tr:nth-child(2)>td:before {
+#body_csetup_hmpgmod #home_page_setup > div.mobile-wrap > table > tbody > tr:nth-child(2) > td:before {
   content: "Available Modules";
   display: block;
   margin-top: -0.125rem;
@@ -4646,45 +4616,45 @@ button[id^="add_to_tab_"] {
   table-layout: fixed;
   background: rgba(0, 0, 0, .2);
   color: #ccc;
-  border: 0.063rem solid rgba(0, 0, 0, .2)
+  border: 0.063rem solid rgba(0, 0, 0, .2);
 }
 
 #body_csetup_hmpgmod table[id*="hpm_table_"] table:first-child a {
-  color: #ccc
+  color: #ccc;
 }
 
 #MSG,
 [id$="options_05"] textarea {
   width: 100%;
-  margin: 0.625rem 0
+  margin: 0.625rem 0;
 }
 
 form[name="home_page_setup"] {
-  text-align: center
+  text-align: center;
 }
 
 .playerBio-Table {
-  table-layout: fixed
+  table-layout: fixed;
 }
 
-div.mobile-wrap>.playerBio-Table {
-  table-layout: auto
+div.mobile-wrap > .playerBio-Table {
+  table-layout: auto;
 }
 
 #body_player td[width="33%"] {
-  width: 33%
+  width: 33%;
 }
 
 #body_player td[width="67%"] {
-  width: 67%
+  width: 67%;
 }
 
 #body_player .reportnaviation {
-  display: none
+  display: none;
 }
 
 #chat_audio_clip {
-  display: none
+  display: none;
 }
 
 [id$="options_20"] .report td img,
@@ -4702,37 +4672,37 @@ div.mobile-wrap>.playerBio-Table {
   border-right: 0;
   border-left: 0;
   padding-right: 0;
-  padding-left: 0
+  padding-left: 0;
 }
 
 #bar_chart .weeklypointtotals table td,
 [id$="options_20"] .weeklypointtotals table td {
-  border: 0
+  border: 0;
 }
 
 caption.withfranchiseicon {
   padding: 0.313rem 0;
   text-align: center !important;
-  text-indent: 0
+  text-indent: 0;
 }
 
 caption.withfranchiseicon span {
   background: none !important;
-  padding-left: 0
+  padding-left: 0;
 }
 
 [id$="options_13"] img.franchiselogo {
-  display: none
+  display: none;
 }
 
 #options_13 .franchiselogo {
-  display: none
+  display: none;
 }
 
 .franchiselogo {
   height: auto;
   max-width: 98%;
-  margin: 0.625rem auto
+  margin: 0.625rem auto;
 }
 
 [id$="options_27"] textarea {
@@ -4741,19 +4711,19 @@ caption.withfranchiseicon span {
 
 [id$="options_27"] .picks {
   width: 100%;
-  min-width: 25rem
+  min-width: 25rem;
 }
 
 #homepagecolumns {
   width: 100%;
-  table-layout: fixed
+  table-layout: fixed;
 }
 
 #container-wrap,
 #body_live_scoring_summary {
   padding: 0.625rem 0.188rem;
   margin: 0 auto;
-  max-width: 71.75rem
+  max-width: 71.75rem;
 }
 
 .chat_popup .mobile-wrap {
@@ -4763,7 +4733,7 @@ caption.withfranchiseicon span {
 #MFLBoxWrapper {
   margin: 0.625rem auto;
   width: calc(100% - 0.375rem);
-  max-width: calc(71.75rem - 0.375rem)
+  max-width: calc(71.75rem - 0.375rem);
 }
 
 #container-wrap .ticker-wrapper {
@@ -4771,16 +4741,16 @@ caption.withfranchiseicon span {
 }
 
 .ticker-wrapper {
-  width: calc(100% - 0.375rem)
+  width: calc(100% - 0.375rem);
 }
 
 #tabmenu-wrap {
   max-width: 71.75rem;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 .mobile-view {
-  width: 50%
+  width: 50%;
 }
 
 #icon-wrapper i {
@@ -4796,22 +4766,22 @@ caption.withfranchiseicon span {
 }
 
 #icon-wrapper {
-  width: 3.75rem
+  width: 3.75rem;
 }
 
 .homepagecolumn,
 .mobile-view {
   vertical-align: top;
-  padding-right: 0.625rem
+  padding-right: 0.625rem;
 }
 
 .homepagecolumn:last-child,
 .mobile-view:last-child {
-  padding-right: 0
+  padding-right: 0;
 }
 
 img {
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 .pageheader {
@@ -4821,7 +4791,7 @@ img {
 .pagetitle h1 {
   font-size: 1.875rem;
   width: 100%;
-  margin: 1.25rem 0
+  margin: 1.25rem 0;
 }
 
 /******************************/
@@ -4889,7 +4859,7 @@ Team Logos
 /******************************/
 
 #body_login .warning {
-  text-align: center
+  text-align: center;
 }
 
 #overviewDropbox {
@@ -4959,18 +4929,18 @@ div.mobile-wrap:empty {
   border-radius: 0;
   background: none;
   box-shadow: none;
-  padding: 0
+  padding: 0;
 }
 
 #messageBoxDIV textarea {
   width: 100%;
-  margin-left: 0
+  margin-left: 0;
 }
 
 #commishContainer table input {
   padding: 0;
   font-size: 0.875rem;
-  font-weight: normal
+  font-weight: 400;
 }
 
 .playoffbracket tr.lastrow,
@@ -4979,12 +4949,12 @@ div.mobile-wrap:empty {
   color: transparent;
   font-size: 0;
   line-height: 0.625rem;
-  box-shadow: none
+  box-shadow: none;
 }
 
 #article iframe {
   max-width: 28.75rem;
-  max-width: 28.75rem
+  max-width: 28.75rem;
 }
 
 #youtubevideo embed,
@@ -4992,8 +4962,8 @@ div.mobile-wrap:empty {
   width: auto !important;
   max-width: 98% !important;
   margin: 0.625rem auto;
-  margin: .625rem auto;
-  background: transparent
+  margin: 0.625rem auto;
+  background: transparent;
 }
 
 #hsubmenu {
@@ -5002,73 +4972,73 @@ div.mobile-wrap:empty {
 }
 
 #body_login td[width="175"] {
-  display: none
+  display: none;
 }
 
 #owner_activity td.franchisename {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #welcome #welcome caption span i {
-  display: none
+  display: none;
 }
 
 #welcome #welcome caption span {
-  pointer-events: none
+  pointer-events: none;
 }
 
-#player_records .rank:first-of-type+th,
-#player_records .rank:first-of-type+td {
-  display: none
+#player_records .rank:first-of-type + th,
+#player_records .rank:first-of-type + td {
+  display: none;
 }
 
 #player_records th {
-  text-align: left
+  text-align: left;
 }
 
 #player_records td {
-  text-align: left
+  text-align: left;
 }
 
 #player_records .rank,
 #player_records .week,
 #player_records .points,
 #player_records .reportfooter td {
-  text-align: center
+  text-align: center;
 }
 
 #league_champions th[colspan="2"] {
   font-size: 1rem;
   background: none;
-  font-weight: bold;
-  padding: 0.313rem
+  font-weight: 700;
+  padding: 0.313rem;
 }
 
 #owner_activity .videoconferenceicon {
-  display: none
+  display: none;
 }
 
 #last_weeks_fantasy_results td.points {
-  font-weight: bold;
-  font-size: 1rem
+  font-weight: 700;
+  font-size: 1rem;
 }
 
-[id$="options_169"] div.mobile-wrap:nth-child(4),
-[id$="options_06"] .weekly-navbar+div.mobile-wrap {
-  display: none
+#options_169 div.mobile-wrap:nth-child(4),
+#options_06 .weekly-navbar + div.mobile-wrap {
+    display: none;
 }
 
 .playoff-seeding-wrap #app3_fixedtipdiv {
-  width: 50% !important
+  width: 50% !important;
 }
 
 #playoffTable td i {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 /* set width or heights for franchise icons or logos */
 .franchise-icon {
-  width: 9.375rem
+  width: 9.375rem;
 }
 /* playoff popup box style to match light or dark sites */
 .playoff-report-modal-content {
@@ -5097,7 +5067,7 @@ div.mobile-wrap:empty {
 .playoff-report-modal-header .close:hover,
 .playoff-report-modal-header .close:focus {
   background: var(--primary, #ff4200);
-  border-color: var(--primary, #ff4200)
+  border-color: var(--primary, #ff4200);
 }
 /* playoff popup box player caption area - style to match your sites captions */
 .playoff-report-modal-header h2 {
@@ -5115,26 +5085,26 @@ div.mobile-wrap:empty {
   line-height: 100%;
   text-transform: uppercase;
   color: var(--primary, #ff4200);
-  padding-bottom: 0
+  padding-bottom: 0;
 }
 
 #playoff-report-modal-content .seed-group ul,
 #playoff-report-modal-content .still-tied ul {
   font-size: smaller;
-  padding-left: 1.25rem
+  padding-left: 1.25rem;
 }
 
 #playoff-report-modal-content .seed-group ul ul {
   font-size: smaller;
-  padding-left: 1.25rem
+  padding-left: 1.25rem;
 }
 
 #playoff-report-modal-content .still-tied li::before,
 #playoff-report-modal-content .seed-group ul ul li::before {
   content: "\f005"; /* star - Font Awesome icon */
-  font-family: 'Font Awesome 6 Pro';
+  font-family: "Font Awesome 6 Pro";
   padding-right: 0.188rem;
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 #playoff-report-modal-content .still-tied {
@@ -5143,54 +5113,54 @@ div.mobile-wrap:empty {
   margin-bottom: 0;
   border-top: 0.125rem solid var(--primary, #ff4200);
   border-bottom: 0.125rem solid var(--primary, #ff4200);
-  padding: 0.625rem 0
+  padding: 0.625rem 0;
 }
 
 .seed-advanced {
-  font-weight: 700
+  font-weight: 700;
 }
 
 .seed-eliminated {
-  text-decoration: line-through
+  text-decoration: line-through;
 }
 
 .tie-broken {
   font-weight: 700;
   text-align: center;
   font-size: large;
-  padding-top: 0.625rem
+  padding-top: 0.625rem;
 }
 
 .tie-broken-team {
-  text-align: center
+  text-align: center;
 }
 
 #power_rank tr:nth-child(2) th,
-[id$="options_101"] .mobile-wrap>.report tr:nth-child(2) th {
-  white-space: nowrap
+#options_101 .mobile-wrap > .report tr:nth-child(2) th {
+  white-space: nowrap;
 }
 
 textarea#IN_EXCHANGE_FOR {
-  width: 100%
+  width: 100%;
 }
 
 tr.assets input[name^="bbid"] {
   width: 100%;
-  min-width: 100%
+  min-width: 100%;
 }
 
 #comments_field_id textarea {
   width: 100%;
-  margin: 0.313rem
+  margin: 0.313rem;
 }
 
 .style-input {
-  border-color: #fff !important
+  border-color: #fff !important;
 }
 
 #body_adp #container-wrap,
 #body_api_info #container-wrap {
-  visibility: visible
+  visibility: visible;
 }
 
 #body_player .playerBio-Table td[width="45%"],
@@ -5205,29 +5175,29 @@ tr.assets input[name^="bbid"] {
 }
 
 #body_player .playerBio-Table td[width="55%"] p {
-  text-align: center
+  text-align: center;
 }
 /* COLORING */
 .shouldbench {
   padding: 0;
-  background: none
+  background: none;
 }
 
 .shouldbench:after {
   content: "\f103"; /* angles-down Font Awesome icon */
-  font-family: 'Font Awesome 6 Pro';
+  font-family: "Font Awesome 6 Pro";
   margin-left: 0.25rem;
   color: red;
 }
 
 .shouldstart {
   padding: 0;
-  background: none
+  background: none;
 }
 
 .shouldstart:after {
   content: "\f102"; /* angles-up Font Awesome icon */
-  font-family: 'Font Awesome 6 Pro';
+  font-family: "Font Awesome 6 Pro";
   margin-left: 0.25rem;
   color: #90ee90;
 }
@@ -5264,7 +5234,7 @@ tr.assets input[name^="bbid"] {
   display: inline-table;
   float: none;
   margin: 0.313rem;
-  border-radius: 0.188rem
+  border-radius: 0.188rem;
 }
 
 #championship_plaque .plaque div h3 {
@@ -5274,8 +5244,9 @@ tr.assets input[name^="bbid"] {
   margin: 0;
   padding: 0;
   font-size: 0.875rem;
-  line-height: 1.5rem
+  line-height: 1.5rem;
 }
+
 /* year */
 #championship_plaque .plaque div h4 {
   display: table-row;
@@ -5284,8 +5255,9 @@ tr.assets input[name^="bbid"] {
   padding: 0;
   font-size: 0.875rem;
   line-height: 0.875rem;
-  height: auto
+  height: auto;
 }
+
 /* team name */
 #championship_plaque .plaque div p {
   display: table-row;
@@ -5293,31 +5265,32 @@ tr.assets input[name^="bbid"] {
   margin: 0;
   padding: 0;
   font-size: 0.75rem;
-  line-height: 1.5rem
+  line-height: 1.5rem;
 }
+
 /* owner name */
 #owner_activity td.franchisename {
-  color: #fff
+  color: #fff;
 }
 
 th span[id*="showBench"] a,
 th span[id*="hideBench"] a,
 a[id*="showAssets"],
 a[id*="hideAssets"] {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 th span[id*="showBench"] a:hover,
 th span[id*="hideBench"] a:hover,
 a[id*="showAssets"]:hover,
 a[id*="hideAssets"]:hover {
-  color: #fff
+  color: #fff;
 }
 
 .bottomteam,
 .topteam,
 .bracket {
-  border-color: var(--bg-opacity-brighter, rgba(181, 47, 0, .2))
+  border-color: var(--bg-opacity-brighter, rgba(181, 47, 0, .2));
 }
 
 #hsubmenu ul li {
@@ -5330,18 +5303,18 @@ a[id*="hideAssets"]:hover {
 }
 
 #hsubmenu ul li:last-of-type {
-  border: 0
+  border: 0;
 }
 
 #hsubmenu ul li a {
   color: var(--primary, #ff4200);
   padding: 0;
-  margin: 0
+  margin: 0;
 }
 
 #hsubmenu ul li a:hover,
 #hsubmenu ul li:hover a {
-  color: #fff
+  color: #fff;
 }
 
 #hsubmenu {
@@ -5352,27 +5325,27 @@ a[id*="hideAssets"]:hover {
 }
 
 #league_champions th[colspan="2"] {
-  color: var(--primary-light, #FA5C25)
+  color: var(--primary-light, #FA5C25);
 }
 
 #last_weeks_fantasy_results td.points {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 td.is-freeagent {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 #weekly_summary .highscore {
   color: #90ee90;
-  font-weight: bold
+  font-weight: 700;
 }
 
 #weekly_summary .lowscore {
   color: red;
   font-style: normal;
   text-decoration: none;
-  font-weight: bold
+  font-weight: 700;
 }
 
 [id$="options_176"] div.mobile-wrap table td {
@@ -5385,91 +5358,91 @@ td.is-freeagent {
   width: 100%;
   margin: 0 auto;
   display: block;
-  float: none
+  float: none;
 }
 
 [id$="options_176"] div.mobile-wrap table td table {
   max-width: 25rem;
   display: inline-table;
-  margin: 0.625rem
+  margin: 0.625rem;
 }
 
 [id$="options_176"] div.mobile-wrap table td table td {
-  text-align: right
+  text-align: right;
 }
 
 [id$="options_176"] div.mobile-wrap table td table .player {
-  text-align: left
+  text-align: left;
 }
 
 [id$="options_176"] div.mobile-wrap table td table td {
-  display: table-cell
+  display: table-cell;
 }
 
 [id$="options_176"] div.mobile-wrap table td table .points {
-  text-align: center
+  text-align: center;
 }
 
 table.previews_table>tbody>tr:nth-child(1)>table.report.nocaption td {
   width: 50% !important;
   text-align: center;
-  font-weight: bold;
-  font-size: 1.25rem
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 
-table.previews_table>tbody>tr:nth-child(1)>table.report.nocaption td div {
-  width: 100% !important
+table.previews_table > tbody > tr:nth-child(1) > table.report.nocaption td div {
+    width: 100% !important;
 }
 
-[id$="options_22"] .week_optionsbox+div.mobile-wrap,
-#body_weekly .week_optionsbox+div.mobile-wrap {
-  max-width: 25rem
+#options_22 .week_optionsbox + div.mobile-wrap,
+#body_weekly .week_optionsbox + div.mobile-wrap {
+    max-width: 25rem;
 }
 
 #body_reports_fsummary table.report td,
 #body_reports_fsummary table.report th {
-  text-align: center
+  text-align: center;
 }
 
 #body_reports_fsummary table.report .franchisename {
   width: 1%;
-  white-space: nowrap
+  white-space: nowrap;
 }
 
 #body_reports_fsummary table.report .franchisename,
-#body_reports_fsummary table.report .franchisename+td,
-#body_reports_fsummary table.report .franchisename+th {
-  text-align: left
+#body_reports_fsummary table.report .franchisename + td,
+#body_reports_fsummary table.report .franchisename + th {
+    text-align: left;
 }
 
-#top_owns .player+td,
-#top_owns .player+th,
-#top_drops .player+td,
-#top_drops .player+th,
-#top_starters .player+td,
-#top_starters .player+th,
-#top_adds .player+td,
-#top_adds .player+th {
-  display: none
+#top_owns .player + td,
+#top_owns .player + th,
+#top_drops .player + td,
+#top_drops .player + th,
+#top_starters .player + td,
+#top_starters .player + th,
+#top_adds .player + td,
+#top_adds .player + th {
+    display: none;
 }
 
 #top_performers .rank,
 #top_fa .rank {
-  width: 1.875rem
+  width: 1.875rem;
 }
 
 #top_performers .points,
 #top_fa .points {
-  width: 3.125rem
+  width: 3.125rem;
 }
 
 #body_top #top td.player,
 #body_top #top .status,
-[id$="options_236"] td.player,
-[id$="options_236"] td.week+td,
-[id$="options_08"] td.player,
-[id$="options_08"] td.status {
-  white-space: nowrap
+#options_236 td.player,
+#options_236 td.week + td,
+#options_08 td.player,
+#options_08 td.status {
+    white-space: nowrap;
 }
 
 /***************************************/
@@ -5482,24 +5455,24 @@ table.previews_table>tbody>tr:nth-child(1)>table.report.nocaption td div {
 
 #roster_column_left td.no_icons a {
   background: var(--primary, #ff4200);
-  color: #fff
+  color: #fff;
 }
 
 #roster_column_left td.no_icons a.rs_active {
-  background: #444
+  background: #444;
 }
 
 #roster_column_left img {
-  opacity: .5
+  opacity: 0.5;
 }
 
 #roster_column_left .rs_active img {
-  opacity: 1
+  opacity: 1;
 }
 
 #roster_column_left img:hover,
 #roster_column_left .rs_active img:hover {
-  opacity: 1
+  opacity: 1;
 }
 
 #MFLroster th {
@@ -5524,66 +5497,63 @@ table.previews_table>tbody>tr:nth-child(1)>table.report.nocaption td div {
 
 #MFLroster td.salary,
 #MFLroster td.drafted {
-  text-align: center
+  text-align: center;
 }
 
 #MFLroster tr.total_salary_row th,
 tr.tradedifference td {
-  color: #fff
+  color: #fff;
 }
 
 #MFLroster tr.total_salary_row th {
   background: #90ee90;
-  color: #000
+  color: #000;
 }
 
 #MFLroster tr.salary_cap_row th {
   background: #f08080;
-  color: #000
+  color: #000;
 }
 
 #MFLroster .savingsreview {
   background: var(--neutral-dark, #222) !important;
   border-top: 0.25rem solid var(--primary-dark, var(--primary, #777));
-  box-shadow: 0 0 .6rem rgba(0, 0, 0, .5);
+  box-shadow: 0 0 0.6rem rgba(0, 0, 0, .5);
 }
 
 #tradereview th.pointstotal,
 #tradereview th.pointsdifference {
-  text-align: center !important
+  text-align: center !important;
 }
 
 #MFLroster .checkBox input {
-  display: none
+  display: none;
 }
 
 #MFLroster .checkBox label {
-  font-size: 1rem
+  font-size: 1rem;
 }
 
 #MFLroster th[class="no-checkBox"],
 #MFLroster td[class="no-checkBox"],
 #MFLroster th[class="checkBox"],
 #MFLroster td[class="checkBox"] {
-    min-width: unset!important;
-    width: unset!important;
+    min-width: unset !important;
+    width: unset !important;
     margin: 0 !important;
     padding: 0 3px !important;
 }
 
-#MFLroster .checkBox input+label:before {
-  font-family: 'Font Awesome 6 Pro';
-  display: inline-block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  cursor: pointer
-}
-
-#MFLroster .checkBox input+label:before {
-  color: lightgray; /* changed from #aaa */
-  content: "\f204"; /* toggle off Font Awesome icon - was f096 (checkbox) */
+#MFLroster .checkBox input + label:before {
+    font-family: "Font Awesome 6 Pro";
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    color: lightgray; /* changed from #aaa */
+    content: "\f204"; /* toggle off Font Awesome icon - was f096 (checkbox) */
 }
 
 #MFLroster .checkBox input:checked+label:before {
@@ -5592,7 +5562,7 @@ tr.tradedifference td {
 }
 
 #MFLroster td.checkBox {
-  position: relative
+  position: relative;
 }
 
 /***************************************/
@@ -5608,12 +5578,12 @@ tr.tradedifference td {
 
 #MFLFantasyMatchupsUpdate,
 #MFLNFLMatchupsUpdate {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 .MFLNFLLiveClock,
 .MFLLiveClock {
-  color: #aaa
+  color: #aaa;
 }
 
 /* border color for each fantasy and nfl box score table */
@@ -5635,19 +5605,19 @@ tr.tradedifference td {
 #MFLBoxHolder td.matchupHilite table,
 #MFLBoxHolder td.matchupHilite:hover table {
   background: rgba(0, 0, 0, .2);
-  border-color: rgba(45, 45, 45, .7)
+  border-color: rgba(45, 45, 45, .7);
 }
 
 #MFLBoxHolder td.matchupLolite:hover table {
   background: rgba(0, 0, 0, .2);
-  border-color: rgba(45, 45, 45, .7)
+  border-color: rgba(45, 45, 45, .7);
 }
 
 /* background and border color for the table that is holding the team - scoreboard title - scoring digits - records */
 
 .MFLMainScoreboard {
   background: none;
-  border: 0 !important
+  border: 0 !important;
 }
 
 /* background gradient color for the banner area for scoreboard name */
@@ -5669,18 +5639,18 @@ tr.tradedifference td {
 #MFLRoadScore span,
 #MFLHomeScore span {
   border-color: rgba(45, 45, 45, .9);
-  background: rgba(0, 0, 0, .2)
+  background: rgba(0, 0, 0, .2);
 }
 
 /* color for horizontal lines in center of scoreboard scores digits */
 #MFLRoadScore span:before,
 #MFLHomeScore span:before {
-  background: rgba(0, 0, 0, .6)
+  background: rgba(0, 0, 0, .6);
 }
 
 #MFLRoadScore span:after,
 #MFLHomeScore span:after {
-  background: rgba(45, 45, 45, .7)
+  background: rgba(45, 45, 45, .7);
 }
 
 /* gradient colors for the small side boxes on each side of scores digit center lines */
@@ -5689,7 +5659,7 @@ tr.tradedifference td {
 #MFLRoadScore span a:before,
 #MFLHomeScore span a:before {
   border-color: rgba(45, 45, 45, .7);
-  background: rgba(0, 0, 0, .4)
+  background: rgba(0, 0, 0, .4);
 }
 
 /* border color for container holding scores digits */
@@ -5710,14 +5680,14 @@ tr.tradedifference td {
 /* color for scoring digits */
 #MFLRoadScore span a,
 #MFLHomeScore span a {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 /* P-YTP-PMR backgrounds and text coloring */
 .MFLMainScoreboard td.MFLScoreboardTitle {
   color: #fff;
   border-color: rgba(45, 45, 45, .4);
-  background: rgba(0, 0, 0, .1)
+  background: rgba(0, 0, 0, .1);
 }
 
 #MFLRoadPlayers,
@@ -5732,60 +5702,60 @@ tr.tradedifference td {
 }
 /* table row background color for games over or currently playing */
 .rowGameOver .MFLGameClock {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 .rowCurrentlyPlaying .MFLGameClock {
-  color: #90ee90
+  color: #90ee90;
 }
 
 .MFLTeamLineup {
   border: 0.063rem solid rgba(45, 45, 45, .7);
   background: rgba(45, 45, 45, .4);
-  padding: 0.625rem
+  padding: 0.625rem;
 }
 
 /* change colors for S.O.S td cells for matchups poor to great */
 .MFLTeamLineup td.oppRankGreatMatchup {
   background: #04B404;
-  color: #000
+  color: #000;
 }
 
 .MFLScoreboardLineups td.oppRankGoodMatchup {
   background: #01DF01;
-  color: #000
+  color: #000;
 }
 
 .MFLScoreboardLineups td.oppRankAvgMatchup {
   background: #FFFF00;
-  color: #000
+  color: #000;
 }
 
 .MFLScoreboardLineups td.oppRankPoorMatchup {
   background: #FF8000;
-  color: #000
+  color: #000;
 }
 
 .MFLScoreboardLineups td.oppRankBadMatchup {
   background: #FF0000;
-  color: #000
+  color: #000;
 }
 
 /* the small tooltip popup arrows shown when hovering actual and pace scores */
 body #scoreboardTooltip:after {
-  border-top-color: var(--primary, #ff4200) !important
+  border-top-color: var(--primary, #ff4200) !important;
 }
 
 body #scoreboardTooltip.top:after {
-  border-bottom-color: var(--primary, #ff4200) !important
+  border-bottom-color: var(--primary, #ff4200) !important;
 }
 
 .MFLScoreboardLineups tr.rowGameOver {
-  background-color: var(--bg-opacity, rgba(181, 47, 0, .05))
+  background-color: var(--bg-opacity, rgba(181, 47, 0, .05));
 }
 
 .MFLScoreboardLineups tr.rowCurrentlyPlaying {
-  background-color: rgba(20, 255, 20, .1)
+  background-color: rgba(20, 255, 20, .1);
 }
 
 /* Edit Scoreboard Base CSS for this skin ================================================ */
