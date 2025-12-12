@@ -6813,6 +6813,7 @@ div.sub-content.editable .insertIcons {
 #MFLPlayerPopupProjections > table > tbody > tr:nth-child(2) > th:nth-child(3) {
     text-align: left;
 }
+
 @media (pointer: coarse) {
     .head-th td.scroll-spacer {
         width: 0 !important;

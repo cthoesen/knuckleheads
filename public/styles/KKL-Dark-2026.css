@@ -6593,16 +6593,6 @@ a.subhead {
 
 #body_add_drop #waiver_request_list td.action a:hover {
   color: var(--primary-light, #FA5C25)
-}*/
-
-/* FORMATTING NO NEED TO EDIT */
-#body_ir #container-wrap .mobile-view,
-#body_taxi_squad #container-wrap .mobile-view {
-  width: auto;
-}
-
-[id$="options_27"] #container-wrap .report td[valign=center] {
-  vertical-align: middle
 }
 
 #body_add_drop #container-wrap .report tr:nth-child(2)>th,
@@ -6610,22 +6600,6 @@ a.subhead {
   display: none
 }
 
-[id$="options_27"] #container-wrap .report td {
-  vertical-align: top
-}
-
-[id$="options_27"] .picks {
-  width: 100%;
-  min-width: auto
-}
-
-#picker tr:hover,
-#add tr.highlight,
-#add tr:hover,
-#drop tr.highlight,
-#drop tr:hover {
-  cursor: pointer
-}
 
 #body_add_drop .mobile-wrap+br,
 #body_add_drop form #pickertop,
@@ -6750,25 +6724,25 @@ a.subhead {
   padding: 0 0.188rem;
   font-size: 0.875rem
 }
-
+/*
 #body_add_drop #waiver_request_list td.action a[href*="DOWN"]:before {
-  content: "\f078" /*chevron down*/
+  content: "\f078" /*chevron down
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="UP"]:before {
-  content: "\f077" /*chevron up*/
+  content: "\f077" /*chevron up
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="DELETE"]:before {
-  content: "\e2ae" /*trash can*/
+  content: "\e2ae" /*trash can
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="COPY"]:before {
-  content: "\f0c5" /*copy*/
+  content: "\f0c5" /*copy
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="&ROUND"]:before {
-  content: "\e5da" /*CGT - grid-round Font Awesome icon*/
+  content: "\e5da" /*CGT - grid-round Font Awesome icon
 }
 
 #body_add_drop #waiver_request_list td.action a[href*="DOWN"],
@@ -6779,7 +6753,7 @@ a.subhead {
   font-size: 0;
   text-decoration: none
 }
-/* ADD - DROP TABLE HEADERS */
+/* ADD - DROP TABLE HEADERS 
 #body_add_drop form .head-th td {
   white-space: nowrap
 }
@@ -6820,7 +6794,7 @@ a.subhead {
 #body_add_drop .table2 div {
   overflow-x: hidden !important
 }
-/* TD Name */
+/* TD Name 
 #body_add_drop .table2 table table td[width="175px"],
 #body_add_drop .table2 table td.waiv-name {
   text-align: left;
@@ -6835,20 +6809,48 @@ a.subhead {
   overflow: visible
 }
 
-/* TD Team */
+/* TD Team 
 #body_add_drop .table2 table table td:nth-child(2),
 #body_add_drop .table2 table td.waiv-team {
   min-width: 3.125rem;
 }
-/* TD Pos */
+/* TD Pos 
 #body_add_drop .table2 table table td:nth-child(3),
 #body_add_drop .table2 table td.waiv-pos {
   min-width: 3.125rem;
 }
-/* TD Salary */
+/* TD Salary 
 #body_add_drop .table2 table table td[width="50px"],
 #body_add_drop .table2 table td.waiv-salary {
   min-width: 3.125rem
+}
+*/
+
+/* FORMATTING NO NEED TO EDIT */
+#body_ir #container-wrap .mobile-view,
+#body_taxi_squad #container-wrap .mobile-view {
+  width: auto;
+}
+
+[id$="options_27"] #container-wrap .report td[valign=center] {
+  vertical-align: middle;
+}
+
+[id$="options_27"] #container-wrap .report td {
+  vertical-align: top;
+}
+
+[id$="options_27"] .picks {
+  width: 100%;
+  min-width: auto;
+}
+
+#picker tr:hover,
+#add tr.highlight,
+#add tr:hover,
+#drop tr.highlight,
+#drop tr:hover {
+  cursor: pointer;
 }
 
 /***************************************/
@@ -6859,9 +6861,9 @@ a.subhead {
 
 /***************************************/
 
-
+/* these elements were removed in the latest release from mflscripts.com */
 /* COLOR TO MATCH SITE */
-
+/*
 .mobile-wrap.custom-draft .mobile-view,
 #contest_lineup .mobile-view.select-player,
 #contest_lineup .mobile-view.current-roster {
@@ -6872,32 +6874,9 @@ a.subhead {
 }
 
 .mobile-wrap.custom-draft .mobile-view caption {
-  color: #fff
+  color: #fff;
 }
 
-.player-to-draft #sel_name {
-  color: var(--primary, #ff4200)
-}
-
-.create-table p:first-of-type b {
-  background: rgba(0, 0, 0, .2)
-}
-
-.mobile-view.leftS .head-th {
-  background: rgba(0, 0, 0, .2)
-}
-/* FORMATTING */
-.custom-draft #destination_list {
-  width: 100%;
-}
-
-.player-to-draft p {
-  margin: 0
-}
-
-.player-to-draft textarea {
-  width: 100%
-}
 
 .mobile-wrap.custom-draft .mobile-view {
   padding: 0.313rem !important;
@@ -6925,25 +6904,50 @@ a.subhead {
   text-align: right
 }
 
-.create-table p:first-of-type b {
-  padding: 0;
-  padding: 0.125rem 0;
-  display: block
-}
-
-.create-table p:first-of-type br {
-  display: none
-}
-
-.create-table textarea {
-  margin: 0;
-  border-radius: 0;
-}
-
 .custom-draft .alert {
   width: 100%;
   margin-top: 0.625rem;
   margin-bottom: 0
+}
+
+.custom-draft #destination_list {
+  border-radius: 0;
+  min-height: 16.375rem
+}
+.custom-draft .head-th td,
+#body_options_129 .leftV #sticky_filters th,
+#body_options_129 .mobile-view.leftV table#picker td {
+  width: auto;
+  text-align: center !important
+}
+    */
+.player-to-draft #sel_name {
+    color: var(--accent, #ff4200);
+}
+.create-table p:first-of-type b {
+    background: #0003;
+}
+.mobile-view.leftS .head-th {
+    background: #0003;
+}
+.player-to-draft p {
+    margin: 0;
+}
+.player-to-draft textarea {
+    width: 100%;
+}
+
+.create-table p:first-of-type b {
+    padding: 0;
+    padding: 0.125rem 0;
+    display: block;
+}
+.create-table p:first-of-type br {
+    display: none;
+}
+.create-table textarea {
+    margin: 0;
+    border-radius: 0;
 }
 
 .mobile-view.leftS td {
@@ -6955,39 +6959,28 @@ a.subhead {
   text-decoration: none
 }
 
-.custom-draft #destination_list {
-  border-radius: 0;
-  min-height: 16.375rem
-}
-
 .has-buttons-right input {
   margin-top: 0.875rem
 }
 
-.custom-draft .head-th td,
-.mobile-view.leftS table#picker td,
-#body_options_129 .leftV #sticky_filters th,
-#body_options_129 .mobile-view.leftV table#picker td {
+.mobile-view.leftS table#picker td {
   width: auto;
-  text-align: center !important
+  text-align: center !important;
 }
 
-.mobile-view.leftS>table,
+.mobile-view.leftS > table,
 .mobile-view.leftS table#picker {
-  table-layout: fixed
+    table-layout: fixed;
 }
 
-.custom-draft .head-th td:nth-child(1),
-.mobile-view.leftS table#picker td:nth-child(1),
-#body_options_129 .leftV #sticky_filters th:nth-child(1),
-#body_options_129 .mobile-view.leftV table#picker td:nth-child(1) {
+
+.mobile-view.leftS table#picker td:nth-child(1) {
   text-align: left !important;
   width: 8.75rem;
   min-width: 8.75rem;
-  max-width: 8.75rem
+  max-width: 8.75rem;
 }
 
-.custom-draft .has_my_ranks .head-th td:nth-child(1),
 .mobile-view.leftS .has_my_ranks table#picker td:nth-child(1) {
   width: 1.25rem !important;
   max-width: auto !important;
@@ -6995,7 +6988,6 @@ a.subhead {
   text-align: center !important;
 }
 
-.custom-draft .has_my_ranks .head-th td:nth-child(2),
 .mobile-view.leftS .has_my_ranks table#picker td:nth-child(2) {
   text-align: left !important;
   width: 8.75rem;
@@ -7006,9 +6998,9 @@ a.subhead {
 .head-th td.scroll-spacer {
   width: 0.875rem !important;
   min-width: 0.875rem !important;
-  max-width: 0.875rem !important
+  max-width: 0.875rem !important;
 }
-
+/* these elements were removed in the latest release from mflscripts.com 
 .custom-draft .make-pick-table .make-pick-title a {
   display: block;
   padding: 0.313rem
@@ -7034,10 +7026,28 @@ a.subhead {
 .custom-draft-rounds th {
   text-align: left
 }
-/* this applies to all new custom pages */
-.toggle-hint b {
-  cursor: pointer
+.custom-draft .head-th td:nth-child(1),
+#body_options_129 .leftV #sticky_filters th:nth-child(1),
+#body_options_129 .mobile-view.leftV table#picker td:nth-child(1) {
+  text-align: left !important;
+  width: 8.75rem;
+  min-width: 8.75rem;
+  max-width: 8.75rem
 }
+.custom-draft .has_my_ranks .head-th td:nth-child(1) {
+  width: 1.25rem !important;
+  max-width: auto !important;
+  min-width: auto !important;
+  text-align: center !important;
+}
+
+.custom-draft .has_my_ranks .head-th td:nth-child(2) {
+  text-align: left !important;
+  width: 8.75rem;
+  min-width: 8.75rem;
+  max-width: 8.75rem;
+}
+
 
 #options_52 .reportform input[value="Now!"],
 #body_new_predraft .reportform input[value="Now!"] {
@@ -7052,6 +7062,13 @@ table.make-pick-table>tbody>tr>td.mobile-view.leftS>table>tbody>tr:nth-child(2)>
   padding: 0
 }
 
+/****** these elements above were removed in the latest release from mflscripts.com *******/
+
+/* this applies to all new custom pages */
+.toggle-hint b {
+  cursor: pointer;
+}
+
 /***************************************/
 
 
@@ -7063,7 +7080,7 @@ table.make-pick-table>tbody>tr>td.mobile-view.leftS>table>tbody>tr:nth-child(2)>
 /* COLORING */
 
 .custom-loadplayer-table table caption {
-  color: #fff
+  color: #fff;
 }
 
 .leftSL,
@@ -7079,23 +7096,23 @@ table.make-pick-table>tbody>tr>td.mobile-view.leftS>table>tbody>tr:nth-child(2)>
 
 /* FORMATTING BELOW  */
 div.custom-loadplayer {
-  display: none
+  display: none;
 }
 
 .has-buttons-rightL #destination_list {
   max-height: 16.438rem;
-  border-radius: 0
+  border-radius: 0;
 }
 
 .custom-loadplayer-table table caption {
   text-align: center;
-  padding-left: 0
+  padding-left: 0;
 }
 
 .leftSL,
 .rightSL {
   padding: 0.313rem !important;
-  border-radius: 0.188rem
+  border-radius: 0.188rem;
 }
 
 .custom-loadplayer-table .head-th td,
@@ -7119,11 +7136,11 @@ div.custom-loadplayer {
   width: 7.5rem;
   min-width: 7.5rem;
   max-width: 7.5rem;
-  text-indent: 0.188rem
+  text-indent: 0.188rem;
 }
 
 .mobile-view.leftSL table {
-  table-layout: fixed
+  table-layout: fixed;
 }
 
 .mobile-view.leftSL .head-th td:nth-child(6),
@@ -7137,7 +7154,7 @@ div.custom-loadplayer {
 
 [id$="options_27"] tr.enter-player td textarea {
   margin: 0 auto;
-  margin-top: 0.625rem
+  margin-top: 0.625rem;
 }
 
 /***************************************/
@@ -7153,11 +7170,11 @@ div.custom-loadplayer {
 .offeredbymeTable,
 .offeredtomeTable {
   background: rgba(45, 45, 45, .8);
-  border: 0.063rem solid #333
+  border: 0.063rem solid #333;
 }
 
 .divide-trades {
-  background: #222
+  background: #222;
 }
 
 .offerer::before,
@@ -7167,21 +7184,21 @@ div.custom-loadplayer {
 .expires-by::before,
 .comments-to-textarea {
   background: rgba(0, 0, 0, .2);
-  color: #ccc
+  color: #ccc;
 }
 
 .offerer::before {
   background: var(--primary, #ff4200);
-  color: #fff
+  color: #fff;
 }
 
 .actions-expired b,
 .trade-twocolumn-table td.draftpickTD {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 .trade-twocolumn-table td {
-  border-bottom: 0.25rem solid rgba(0, 0, 0, .2)
+  border-bottom: 0.25rem solid rgba(0, 0, 0, .2);
 }
 
 /* FORMATTING */
@@ -7194,27 +7211,27 @@ div.custom-loadplayer {
 }
 
 .column-heads.no-trades {
-  display: none
+  display: none;
 }
 
 .trade-offer td {
   padding: 0.625rem 0.188rem;
-  border: 0
+  border: 0;
 }
 
 .trade-offer:last-of-type td {
-  border-bottom: 0
+  border-bottom: 0;
 }
 
 .trade-offer ul,
 .trade-offer ol {
   list-style: none;
   padding: 0;
-  margin: 0
+  margin: 0;
 }
 
 .trade-offer ul li {
-  margin: 0
+  margin: 0;
 }
 
 .comments-to textarea {
@@ -7222,33 +7239,33 @@ div.custom-loadplayer {
   padding: 0;
   max-width: 12.5rem;
   min-height: 9.375rem;
-  border: 0.063rem solid #ccc !important
+  border: 0.063rem solid #ccc !important;
 }
 
 .column-heads th {
   white-space: nowrap;
-  padding: 0.188rem
+  padding: 0.188rem;
 }
 
 .tradesTable table {
-  text-align: center
+  text-align: center;
 }
 
 .trade-offer,
 .column-heads th {
-  text-align: left
+  text-align: left;
 }
 
 .trade-offer ol li {
-  white-space: pre-wrap
+  white-space: pre-wrap;
 }
 
 .offeredtomeTable .comments-to-textarea {
-  display: none
+  display: none;
 }
 
 .offeredtomeTable .comments-disabled {
-  margin-bottom: 0.25rem
+  margin-bottom: 0.25rem;
 }
 
 .comments-disabled {
@@ -7258,70 +7275,70 @@ div.custom-loadplayer {
   background-color: #ddd;
   color: #444;
   padding: 0.188rem;
-  width: 12.5rem
+  width: 12.5rem;
 }
 
 .offerer,
 .offeree {
-  display: table-cell
+  display: table-cell;
 }
 
 .franchise-offered-by,
 .franchise-offered-to {
-  min-width: 6.25rem
+  min-width: 6.25rem;
 }
 
 .divide-trades {
-  height: 0.25rem
+  height: 0.25rem;
 }
 
 .divide-trades:last-of-type {
-  display: none
+  display: none;
 }
 
 th.players-offered-by,
 th.players-offered-to {
-  display: none
+  display: none;
 }
 
 .expires-by {
-  display: none
+  display: none;
 }
 
 .actions-expired {
-  font-size: smaller
+  font-size: smaller;
 }
 
 .offerer,
 .offeree {
-  max-width: 18.75rem
+  max-width: 18.75rem;
 }
 
 .trade-toggle-mobile {
-  display: none
+  display: none;
 }
 
 .div-wrap-trade-table.lastTable {
-  display: table-cell
+  display: table-cell;
 }
 
 .trade-twocolumn-table th {
   text-align: center;
-  padding: 0.125rem
+  padding: 0.125rem;
 }
 
 .trade-twocolumn-table .trade-player {
-  text-align: left
+  text-align: left;
 }
 
 .trade-twocolumn-table td {
   padding: 0.313rem 0.125rem;
-  text-align: center
+  text-align: center;
 }
 
 .trade-twocolumn-table td.draftpickTD,
 .trade-twocolumn-table td.trade-bbid-amt {
-  text-align: left
+  text-align: left;
 }
 
 .trade-twocolumn-table td.trade-bbid-amt {
@@ -7332,28 +7349,28 @@ th.players-offered-to {
 .trade-twocolumn-table td.trade-bbid-amt span {
   display: block;
   white-space: nowrap;
-  font-size: 1rem
+  font-size: 1rem;
 }
 
 .trade-twocolumn-table td.trade-bbid-amt input {
   width: 100%;
   max-width: 15.625rem;
-  margin: 0.313rem
+  margin: 0.313rem;
 }
 
 .trade-twocolumn-table tr:last-of-type td {
-  border-bottom: 0
+  border-bottom: 0;
 }
 
 #body_trade_offer table.report td {
-  text-align: center
+  text-align: center;
 }
 
 .offeredtomeTable input[type="submit"]:disabled,
 .offeredtomeTable input[type="submit"][disabled] {
   background-image: none;
   background-color: gray;
-  cursor: default
+  cursor: default;
 }
 
 /***************************************/
@@ -7366,7 +7383,7 @@ th.players-offered-to {
 
 .nflStatsWeekRow td,
 .nflStatsWeekRow td span.warning {
-  font-size: smaller
+  font-size: smaller;
 }
 
 span.plus-toggle-stats {
@@ -7378,48 +7395,45 @@ span.plus-toggle-stats {
   border-radius: 0.188rem;
   z-index: 0;
   top: 50%;
-  transform: translateY(-50%)
+  transform: translateY(-50%);
 }
 
 .plus-toggle-stats span::before,
 .plus-toggle-stats span::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: .15rem;
-  border-radius: 1.4rem;
-  height: .65rem;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0.15rem;
+    border-radius: 1.4rem;
+    height: 0.65rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.nflStatsTotalRow span[style="display: none;"]+span+.plus-toggle-stats span::before,
-.nflStatsAvgRow span[style="display: none;"]+span+.plus-toggle-stats span::before {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  width: .15rem
+.nflStatsTotalRow span[style="display: none;"] + span + .plus-toggle-stats span::before,
+.nflStatsAvgRow span[style="display: none;"] + span + .plus-toggle-stats span::before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    width: 0.15rem;
 }
-
-.nflStatsTotalRow span[style="display: none;"]+span+.plus-toggle-stats span::after,
-.nflStatsAvgRow span[style="display: none;"]+span+.plus-toggle-stats span::after {
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-  opacity: 0
+.nflStatsTotalRow span[style="display: none;"] + span + .plus-toggle-stats span::after,
+.nflStatsAvgRow span[style="display: none;"] + span + .plus-toggle-stats span::after {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    opacity: 0;
 }
-
 .plus-toggle-stats span::after {
-  width: .65rem;
-  height: .15rem
+    width: 0.65rem;
+    height: 0.15rem;
 }
-
 .plus-toggle-stats span::before,
 .plus-toggle-stats span::after {
-  background: #fff
+    background: #fff;
 }
 
 span[id*="expandTotal_"]:before,
@@ -7432,7 +7446,7 @@ span[id*="collapseAvg_"]::before {
   height: 0.875rem;
   left: 0.188rem;
   visibility: visible;
-  z-index: 1
+  z-index: 1;
 }
 
 span[id*="expandTotal_"],
@@ -7442,23 +7456,23 @@ span[id*="collapseAvg_"] {
   width: 1.375rem;
   height: 0.875rem;
   display: inline-block;
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 .nflStatsTotalRow td:first-of-type,
 .nflStatsAvgRow td:first-of-type {
-  position: relative
+  position: relative;
 }
 
-#body_nfl_team_stats .mobile-wrap>.report td:first-of-type,
-[id$="options_138"] .mobile-wrap>.report td:first-of-type {
-  white-space: nowrap
+#body_nfl_team_stats .mobile-wrap > .report td:first-of-type,
+[id$="options_138"] .mobile-wrap > .report td:first-of-type {
+  white-space: nowrap;
 }
 
 #nflAvgActive,
 #nflTotalActive {
   pointer-events: none;
-  opacity: .8
+  opacity: 0.8;
 }
 
 #nflAvgActive,
@@ -7478,7 +7492,7 @@ span[id*="collapseAvg_"] {
   background-image: -ms-linear-gradient(top, var(--primary-light, #FA5C25), var(--primary-dark, #B52F00));
   background-image: -o-linear-gradient(top, var(--primary-light, #FA5C25), var(--primary-dark, #B52F00));
   background-image: linear-gradient(to bottom, var(--primary-light, #FA5C25), var(--primary-dark, #B52F00));
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 #nflAvgActive:hover,
@@ -7506,7 +7520,7 @@ span[id*="collapseAvg_"] {
 #transactions td,
 #processed_waivers div.mobile-wrap .report td,
 [id$="options_17"] div.mobile-wrap .report td {
-  border-bottom: 0.25rem solid rgba(0, 0, 0, .2)
+  border-bottom: 0.25rem solid rgba(0, 0, 0, .2);
 }
 
 /***************************************/
@@ -7517,20 +7531,19 @@ span[id*="collapseAvg_"] {
 
 /***************************************/
 
-
 /* COLORING */
 
 [id$="options_03"] div.mobile-wrap .report .franchise-date,
 #transactions td .franchise-date,
 [id$="options_03"] div.mobile-wrap .report span.offer-text,
 #transactions span.offer-text {
-  color: #999
+  color: #999;
 }
 
 /* FORMATTING */
 [id$="options_03"] div.mobile-wrap .report td,
 #transactions td {
-  padding: 0.625rem 0.125rem
+  padding: 0.625rem 0.125rem;
 }
 
 [id$="options_03"] div.mobile-wrap .report td b.warning,
@@ -7539,13 +7552,13 @@ span[id*="collapseAvg_"] {
   text-transform: uppercase;
   padding-left: 0.625rem;
   display: inline-block;
-  padding-top: 0.313rem
+  padding-top: 0.313rem;
 }
 
 [id$="options_03"] div.mobile-wrap .report .franchise-date,
 #transactions td .franchise-date {
   font-size: smaller;
-  font-style: italic
+  font-style: italic;
 }
 
 /***************************************/
@@ -7557,7 +7570,7 @@ span[id*="collapseAvg_"] {
 /***************************************/
 
 [id$="options_113"] table.report td a {
-  white-space: nowrap
+  white-space: nowrap;
 }
 
 [id$="options_209"] table.report td,
@@ -7565,7 +7578,7 @@ span[id*="collapseAvg_"] {
 [id$="options_182"] table.report th,
 [id$="options_113"] table.report td,
 [id$="options_113"] table.report th {
-  text-align: center
+  text-align: center;
 }
 
 [id$="options_209"] table.report td:nth-child(2),
@@ -7573,31 +7586,38 @@ span[id*="collapseAvg_"] {
 [id$="options_209"] table.report th:nth-child(2),
 [id$="options_209"] table.report th:nth-child(3),
 [id$="options_182"] table.report .player {
-  text-align: left
+  text-align: left;
 }
 
-[id$="options_182"] #container-wrap>div.mobile-wrap>table>tbody>tr>td:nth-child(3),
-[id$="options_182"] #container-wrap>div.mobile-wrap>table>tbody>tr>td:nth-child(4) {
-  float: left;
-  width: 100%;
-  text-align: left
+#options_182 #container-wrap > div.mobile-wrap > table > tbody > tr > td:nth-child(3),
+#options_182 #container-wrap > div.mobile-wrap > table > tbody > tr > td:nth-child(4) {
+    float: left;
+    width: 100%;
+    text-align: left;
 }
-
-[id$="options_182"] #container-wrap>div.mobile-wrap>table>tbody>tr>td:nth-child(4) table tr:last-child td {
-  background: rgba(0, 0, 0, .2);
-  color: #fff;
+#options_182 #container-wrap > div.mobile-wrap > table > tbody > tr > td:nth-child(4) table tr:last-child td {
+    background: #0003;
+    color: #fff;
 }
-
-[id$="options_182"] #container-wrap>div.mobile-wrap>table>tbody>tr>td:nth-child(4) table tr:last-child td:first-child {
-  text-align: right;
+#options_182
+    #container-wrap
+    > div.mobile-wrap
+    > table
+    > tbody
+    > tr
+    > td:nth-child(4)
+    table
+    tr:last-child
+    td:first-child {
+    text-align: right;
 }
 
 [id$="options_182"] #container-wrap>div.mobile-wrap>table>tbody>tr:nth-child(1)>th:nth-child(4) {
-  display: none
+  display: none;
 }
 
 [id$="options_209"] table.report .franchiseicon {
-  max-width: 9.375rem
+  max-width: 9.375rem;
 }
 
 /***************************************/
@@ -7627,19 +7647,24 @@ span[id*="collapseAvg_"] {
 #options_71 .two_column_layout .mobile-wrap {
   background: rgba(45, 45, 45, .8);
   border: 0.063rem solid #333;
-  box-shadow: none
+  box-shadow: none;
 }
 
 #options_71 .two_column_layout .mobile-wrap td {
-  text-align: center
+  text-align: center;
 }
 
 #options_71 .two_column_layout .mobile-wrap select {
-  width: 100%
+  width: 100%;
 }
 
 #options_71 .two_column_layout caption {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
+}
+
+* {
+  scrollbar-color: var(--neutral-light, #222) var(--neutral-blur, #151515);
+  scrollbar-width: auto;
 }
 
 /***************************************/
@@ -7649,7 +7674,7 @@ span[id*="collapseAvg_"] {
 
 
 /***************************************/
-
+/* these elements were removed in the latest release from mflscripts.com 
 #options_129 .two_column_layout .mobile-wrap select {
   width: 100%;
 }
@@ -7683,24 +7708,17 @@ span[id*="collapseAvg_"] {
 #options_129 div.mobile-wrap .report th.th-playername {
   text-align: left
 }
-
-* {
-  scrollbar-color: var(--neutral-light, #222) var(--neutral-blur, #151515);
-  scrollbar-width: auto
-}
-
+*********************************************************/
 .selectbox div,
 #destination_list,
-.table2-sub1 div,
-.table2-sub2 div,
 #body_csetup_chngpick table td div,
 #MSG {
   scrollbar-color: #333 #eee;
-  scrollbar-width: auto
+  scrollbar-width: auto;
 }
 
 #body_csetup_chngpick #picker td {
-  color: #000
+  color: #000;
 }
 
 /***************************************/
@@ -7712,7 +7730,7 @@ span[id*="collapseAvg_"] {
 /***************************************/
 
 td::-webkit-scrollbar {
-  background: #151515
+  background: #151515;
 }
 
 /* Track */
@@ -7736,15 +7754,15 @@ td::-webkit-scrollbar {
   border: 0.063rem solid #151515;
   border-left: 0;
   border-right: 0;
-  border-radius: 0.313rem
+  border-radius: 0.313rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--primary-light, #FA5C25)
+  background: var(--primary-light, #FA5C25);
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background: var(--primary-light, #FA5C25)
+  background: var(--primary-light, #FA5C25);
 }
 
 ::-webkit-scrollbar-thumb:vertical {
@@ -7767,22 +7785,22 @@ td::-webkit-scrollbar {
 
 /* Up */
 ::-webkit-scrollbar-button:vertical:decrement {
-  border-width: 0 0.375rem 0.625rem 0.375rem;
-  border-color: transparent transparent #555 transparent;
+  border-width: 0 0.375rem 0.625rem;
+  border-color: transparent transparent #555;
 }
 
 ::-webkit-scrollbar-button:vertical:decrement:hover {
-  border-color: transparent transparent var(--primary-light, #FA5C25) transparent
+  border-color: transparent transparent var(--primary-light, #FA5C25);
 }
 
 /* Down */
 ::-webkit-scrollbar-button:vertical:increment {
-  border-width: 0.625rem 0.375rem 0 0.375rem;
-  border-color: #555 transparent transparent transparent;
+  border-width: 0.625rem 0.375rem 0;
+  border-color: #555 transparent transparent;
 }
 
 ::-webkit-scrollbar-button:vertical:increment:hover {
-  border-color: var(--primary-light, #FA5C25) transparent transparent transparent
+  border-color: var(--primary-light, #FA5C25) transparent transparent;
 }
 
 /* Left */
@@ -7792,7 +7810,7 @@ td::-webkit-scrollbar {
 }
 
 ::-webkit-scrollbar-button:horizontal:decrement:hover {
-  border-color: transparent var(--primary-light, #FA5C25) transparent transparent
+  border-color: transparent var(--primary-light, #FA5C25) transparent transparent;
 }
 
 /* Right */
@@ -7802,13 +7820,11 @@ td::-webkit-scrollbar {
 }
 
 ::-webkit-scrollbar-button:horizontal:increment:hover {
-  border-color: transparent transparent transparent var(--primary-light, #FA5C25)
+  border-color: transparent transparent transparent var(--primary-light, #FA5C25);
 }
 
 .selectbox div::-webkit-scrollbar-track,
 #destination_list::-webkit-scrollbar-track,
-.table2-sub1 div::-webkit-scrollbar-track,
-.table2-sub2 div::-webkit-scrollbar-track,
 #body_csetup_chngpick table td div::-webkit-scrollbar-track,
 #MSG::-webkit-scrollbar-track {
   background: #eee;
@@ -7817,8 +7833,6 @@ td::-webkit-scrollbar {
 
 .selectbox div::-webkit-scrollbar-thumb,
 #destination_list::-webkit-scrollbar-thumb,
-.table2-sub1 div::-webkit-scrollbar-thumb,
-.table2-sub2 div::-webkit-scrollbar-thumb,
 #body_csetup_chngpick table td div::-webkit-scrollbar-thumb,
 #MSG::-webkit-scrollbar-thumb {
   background: #999;
@@ -7827,28 +7841,22 @@ td::-webkit-scrollbar {
 
 .selectbox div::-webkit-scrollbar-thumb:hover,
 #destination_list::-webkit-scrollbar-thumb:hover,
-.table2-sub1 div::-webkit-scrollbar-thumb:hover,
-.table2-sub2 div::-webkit-scrollbar-thumb:hover,
 #body_csetup_chngpick table td div::-webkit-scrollbar-thumb:hover,
 #MSG::-webkit-scrollbar-thumb:hover {
   background: var(--primary-light, #FA5C25);
-  border-color: var(--primary-light, #FA5C25)
+  border-color: var(--primary-light, #FA5C25);
 }
 
 .selectbox div::-webkit-scrollbar-thumb:active,
 #destination_list::-webkit-scrollbar-thumb:active,
-.table2-sub1 div::-webkit-scrollbar-thumb:active,
-.table2-sub2 div::-webkit-scrollbar-thumb:active,
 #body_csetup_chngpick table td div::-webkit-scrollbar-thumb:active,
 #MSG::-webkit-scrollbar-thumb:active {
   background: var(--primary-light, #FA5C25);
-  border-color: var(--primary-light, #FA5C25)
+  border-color: var(--primary-light, #FA5C25);
 }
 
 .selectbox div::-webkit-scrollbar-button,
 #destination_list::-webkit-scrollbar-button,
-.table2-sub1 div::-webkit-scrollbar-button,
-.table2-sub2 div::-webkit-scrollbar-button,
 #body_csetup_chngpick table td div::-webkit-scrollbar-button,
 #MSG::-webkit-scrollbar-button {
   background: #eee;
@@ -7888,21 +7896,21 @@ td::-webkit-scrollbar {
 #body_ajax_ls .ls-outer-table,
 #body_ajax_ls #ls_ticker_tab_id,
 #body_ajax_ls #ls_mfl_notes {
-  font-family: 'Roboto Condensed', sans-serif
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 #body_ajax_ls .ls-boxscore {
-  white-space: nowrap
+  white-space: nowrap;
 }
 
 #LS_TopTableHolder .LS_MainScoreboard {
-  border-spacing: 0.125rem !important
+  border-spacing: 0.125rem !important;
 }
 
 #LS_CenterTop {
   position: relative;
   font-weight: 700;
-  font-size: 2.25rem
+  font-size: 2.25rem;
 }
 
 #LS_CenterTop span.hometeam {
@@ -7910,7 +7918,7 @@ td::-webkit-scrollbar {
   right: 1%;
   bottom: 0.25rem;
   font-size: 0.688rem;
-  font-weight: normal
+  font-weight: normal;
 }
 
 #LS_CenterTop span.awayteam {
@@ -7918,7 +7926,7 @@ td::-webkit-scrollbar {
   left: 1%;
   bottom: 0.25rem;
   font-size: 0.688rem;
-  font-weight: normal
+  font-weight: normal;
 }
 
 #LS_CenterTop .awayteam:before {
@@ -7929,24 +7937,24 @@ td::-webkit-scrollbar {
 
 #LS_CenterTop .hometeam:after {
   content: "\f0da";
-  font-family: 'Font Awesome 6 Pro';
+  font-family: "Font Awesome 6 Pro";
   padding-left: 0.188rem;
 }
 
 #LS_TopTableHolder .franchiseicon {
   padding: 0.313rem;
   max-width: 100%;
-  max-height: 5.75rem;
+  max-height: 5.75rem; /* changed from 3.75 */
 }
 
 #body_ajax_ls #marquee_home,
 #body_ajax_ls #marquee_away {
-  display: none
+  display: none;
 }
 
 #LS_TopTableHolder .LS_MainScoreboard td {
   text-align: center;
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 #LS_TopTableHolder #LS_AwayTeamName,
@@ -7957,27 +7965,27 @@ td::-webkit-scrollbar {
 #LS_AwayTeamName,
 #LS_HomeTeamName,
 #LS_CenterTop {
-  width: 33.3%
+  width: 33.3%;
 }
 
 #body_ajax_ls #other_games {
-  table-layout: fixed
+  table-layout: fixed;
 }
 
 #body_ajax_ls div.ls_other_game {
   cursor: pointer;
   vertical-align: middle;
   padding: 0.125rem 0.188rem;
-  min-width: 11.375rem
+  min-width: 11.375rem;
 }
 
 #body_ajax_ls td.ls_og_cell {
   padding-left: 0;
-  width: auto
+  width: auto;
 }
 
 #other_games .ls_other_game tr {
-  height: 1.5rem
+  height: 1.5rem;
 }
 
 #body_ajax_ls div.ls_player_stats {
@@ -7988,36 +7996,36 @@ td::-webkit-scrollbar {
   margin: 0;
   border: 0 !important;
   position: absolute;
-  bottom: 0
+  bottom: 0;
 }
 
 #body_ajax_ls div.ls_player_stats div {
   font-size: 0.625rem;
-  white-space: nowrap
+  white-space: nowrap;
 }
 
 #body_ajax_ls td div[class^="pfpts"] {
   cursor: pointer;
-  font-size: 0.875rem
+  font-size: 0.875rem;
 }
 
 #body_ajax_ls th.ls_player_stats,
 #body_ajax_ls tr.td-totals-row .ls_player_stats {
-  display: none !important
+  display: none !important;
 }
 
 #body_ajax_ls td a[href^="player"] {
-  white-space: nowrap
+  white-space: nowrap;
 }
 
 #body_ajax_ls #other_games {
-  margin: 0 !important
+  margin: 0 !important;
 }
 
 #body_ajax_ls #marquee_away .ls_changed,
 #body_ajax_ls #marquee_home .ls_changed {
   background: none;
-  color: inherit
+  color: inherit;
 }
 
 #body_ajax_ls #roster_away td,
@@ -8040,26 +8048,26 @@ td::-webkit-scrollbar {
   border-bottom: 0.313rem solid #111 !important;
   padding-bottom: 0 !important;
   line-height: 1.875rem;
-  font-size: 0.875rem
+  font-size: 0.875rem;
 }
 
 #body_ajax_ls #last_update.ls_changed {
-  background: none
+  background: none;
 }
 
 #body_ajax_ls #roster_away th,
 #body_ajax_ls #roster_home th {
-  text-align: center
+  text-align: center;
 }
 
 #body_ajax_ls #roster_away th:first-of-type,
 #body_ajax_ls #roster_home th:first-of-type {
   text-align: left;
-  text-indent: 0.125rem
+  text-indent: 0.125rem;
 }
 
 #body_ajax_ls td.td-first-type {
-  position: relative
+  position: relative;
 }
 
 #body_ajax_ls #roster_away .ls_starters td,
@@ -8078,13 +8086,13 @@ td::-webkit-scrollbar {
 }
 
 #body_ajax_ls .ls-matchup td.td-first-type {
-  width: 11.875rem
+  width: 11.875rem;
 }
 
 #body_ajax_ls .ls-matchup td.ls_game_info,
 #body_ajax_ls th.ls_game_info {
   width: 6.563rem;
-  min-width: 6.563rem
+  min-width: 6.563rem;
 }
 
 #body_ajax_ls .ls-matchup td.ls_projections {
@@ -8092,25 +8100,25 @@ td::-webkit-scrollbar {
 }
 
 #body_ajax_ls .mobile-view {
-  padding-right: 0.313rem
+  padding-right: 0.313rem;
 }
 
 #body_ajax_ls .mobile-view:last-child {
   padding: 0;
-  padding-left: 0.188rem
+  padding-left: 0.188rem;
 }
 
 #body_ajax_ls table#roster_away,
 #body_ajax_ls table#roster_home {
-  margin: 0
+  margin: 0;
 }
 
 #body_ajax_ls #ls_setting_drop input {
-  display: none
+  display: none;
 }
 
 #body_ajax_ls #ls_setting_drop input+label:before {
-  font-family: 'Font Awesome 6 Pro';
+  font-family: "Font Awesome 6 Pro";
   display: inline-block;
   content: "\f046";
   position: absolute;
@@ -8120,11 +8128,11 @@ td::-webkit-scrollbar {
 }
 
 #body_ajax_ls #ls_setting_drop input:checked+label:before {
-  content: "\f096"
+  content: "\f096";
 }
 
 #body_ajax_ls #ls_setting_drop {
-  text-align: left
+  text-align: left;
 }
 
 #body_ajax_ls #ls_setting_drop label {
@@ -8151,20 +8159,20 @@ td::-webkit-scrollbar {
 }
 
 #body_ajax_ls #ls_mfl_notes {
-  text-align: center
+  text-align: center;
 }
 
 #body_ajax_ls div.ls_og_selected,
 #body_ajax_ls div#ls_ticker_label {
-  font-weight: normal
+  font-weight: normal;
 }
 
 #ls_ticker_tab_id {
-  line-height: 1.875rem
+  line-height: 1.875rem;
 }
 
 #body_ajax_ls .ls_game_info div a {
-  text-decoration: none
+  text-decoration: none;
 }
 
 #body_ajax_ls table .ls_changed,
@@ -8172,15 +8180,15 @@ td::-webkit-scrollbar {
 #body_ajax_ls table .ls_changed a {
   background: none;
   color: inherit;
-  border: none
+  border: none;
 }
 
 #body_ajax_ls table div.ls_withposs {
-  border: 0
+  border: 0;
 }
 
 #body_ajax_ls table div.ls_noposs {
-  border: 0
+  border: 0;
 }
 
 #body_ajax_ls table div.ls_noposs.ls_changed,
@@ -8193,13 +8201,13 @@ div.ls_withposs.ls_changed,
 #body_ajax_ls table td.ls_game_info div,
 #body_ajax_ls table td.td-first-type {
   font-size: 0.625rem;
-  font-style: italic
+  font-style: italic;
 }
 
 #body_ajax_ls table td.ls_game_info div a,
 #body_ajax_ls table td.td-first-type a {
   font-size: 0.813rem;
-  font-style: normal
+  font-style: normal;
 }
 
 #body_ajax_ls table div.ls_player_stats div {
@@ -8207,23 +8215,23 @@ div.ls_withposs.ls_changed,
   color: #90ee90;
 }
 
-#body_ajax_ls #ls_ticker_tab_id[style*="display: inline;"]+div,
-#body_ajax_ls #ls_ticker_tab_id+div {
-  margin-top: 0.625rem
+#body_ajax_ls #ls_ticker_tab_id[style*="display: inline;"] + div,
+#body_ajax_ls #ls_ticker_tab_id + div {
+    margin-top: 0.625rem;
 }
 
 #body_ajax_ls #ls_ticker_tab_id[style*="display: none;"]+div {
-  margin-top: 0
+  margin-top: 0;
 }
 
 #body_ajax_ls .ls_other_game td.ls_projections {
   font-size: 80%;
   width: 1.625rem;
-  padding: 0
+  padding: 0;
 }
 
 .ls_pace_box {
-  text-align: center
+  text-align: center;
 }
 
 .ls_projections {
@@ -8232,21 +8240,21 @@ div.ls_withposs.ls_changed,
 }
 
 th.ls_projections {
-  font-style: normal
+  font-style: normal;
 }
 
 #body_ajax_ls td div[class^="oggstat"] {
   opacity: 0;
   width: 0.25rem;
-  font-size: 0
+  font-size: 0;
 }
 
 #body_ajax_ls td div[class^="oggstat"] i {
-  font-size: 0.813rem
+  font-size: 0.813rem;
 }
 
 #other_games td[style="border:none;"]:last-of-type {
-  padding: 0
+  padding: 0;
 }
 
 #body_ajax_ls .ls_box_gameover td.winner_mark div[class^="oggstat"] {
@@ -8257,7 +8265,7 @@ th.ls_projections {
 #LS_AwayScore,
 #LS_HomeScore {
   font-size: 1.875rem;
-  padding: 0
+  padding: 0;
 }
 
 #LS_AwayScore span.blank a,
@@ -8280,7 +8288,7 @@ th.ls_projections {
   line-height: normal;
   cursor: default;
   border-width: 0.063rem;
-  border-style: solid
+  border-style: solid;
 }
 
 #LS_AwayScore span:before,
@@ -8318,7 +8326,7 @@ th.ls_projections {
   top: 50%;
   transform: translateY(-50%);
   left: 0;
-  z-index: 1
+  z-index: 1;
 }
 
 #LS_AwayScore span a:before,
@@ -8331,7 +8339,7 @@ th.ls_projections {
   top: 50%;
   transform: translateY(-50%);
   right: 0;
-  z-index: 1
+  z-index: 1;
 }
 
 .MFLMainScoreboard,
@@ -8340,17 +8348,17 @@ th.ls_projections {
 #LS_AwayScore span a:before,
 #LS_HomeScore span a:before {
   border-width: 0.063rem;
-  border-style: solid
+  border-style: solid;
 }
 
 #LS_AwayScore div,
 #LS_HomeScore div {
   border-spacing: 0.063rem;
-  width: 100%
+  width: 100%;
 }
 
 div.ls_team_points {
-  padding: 0 !important
+  padding: 0 !important;
 }
 
 /*******************************************/
@@ -8366,12 +8374,12 @@ div.ls_team_points {
 /*box score matchups bg color*/
 #body_ajax_ls div.ls_other_game {
   background: rgba(0, 0, 0, .2);
-  border-color: rgba(45, 45, 45, .7)
+  border-color: rgba(45, 45, 45, .7);
 }
 
 /*box score matchups hover bg color and current game bg color*/
 #body_ajax_ls div.ls_other_game:hover {
-  background: rgba(0, 0, 0, .5)
+  background: rgba(0, 0, 0, .5);
 }
 
 #body_ajax_ls div.ls_other_game.current_matchup {
@@ -8381,15 +8389,14 @@ div.ls_team_points {
 
 /*text color for points in box score table*/
 #body_ajax_ls td div[class^="ogffpts"] {
-  color: #fff
+  color: #fff;
 }
 /*main scoreboard header coloring*/
-
 
 /*color text for P-PMR-PYT*/
 #LS_TopTableHolder td.prmin {
   color: #ccc;
-  width: 5.55%
+  width: 5.55%;
 }
 /*border and bg around td cells*/
 #LS_TopTableHolder .LS_MainScoreboard td {
@@ -8406,33 +8413,33 @@ div.ls_team_points {
 
 /*text color for stats of each player*/
 #body_ajax_ls div.ls_player_stats div {
-  color: #aaa
+  color: #aaa;
 }
 
 /*text color for player total points*/
 #body_ajax_ls td div[class^="pfpts"] {
-  color: #fff
+  color: #fff;
 }
 
 /*add border to bottom of all td cells if desired*/
 #body_ajax_ls tr.ls_nonstarters td,
 #body_ajax_ls tr.ls_starters td {
-  border-bottom: 0.063rem solid #111
+  border-bottom: 0.063rem solid #111;
 }
 
 /*background and text color for starting and bench total points rows*/
 #body_ajax_ls tr.td-totals-row td {
   background: #222;
-  color: var(--primary-light, #FA5C25)
+  color: var(--primary-light, #FA5C25);
 }
 
 /*bg color for games ended and in progress*/
 #body_ajax_ls tr.ls_gameis_over {
-  background-color: var(--bg-opacity, rgba(181, 47, 0, .05))
+  background-color: var(--bg-opacity, rgba(181, 47, 0, .05));
 }
 
 #body_ajax_ls tr.ls_gameinprogress {
-  background-color: rgba(20, 255, 20, .02)
+  background-color: rgba(20, 255, 20, .02);
 }
 
 /*NFL ICONS FOR H2H GAMES AND FRANCHISE ICONS IN BOXSCORE*/
@@ -8442,95 +8449,95 @@ div.ls_team_points {
 #body_ajax_ls img.ls_og_icon {
   width: 100%;
   max-width: 6.625rem;
-  max-height: 2.25rem;
+  max-height: 2.25rem; /* changed from 1.25 */
 }
 
 /*icon height for NFL logos in table*/
 #body_ajax_ls img.ls_nfl_icon {
   margin: 0 0.125rem;
   max-width: 1.25rem;
-  max-height: 0.938rem
+  max-height: 0.938rem;
 }
 
 /*SETTINGS CHECKBOXES*/
 
 /*settings checkbox color when not checked*/
-#body_ajax_ls #ls_setting_drop input+label:before {
-  color: #90ee90
+#body_ajax_ls #ls_setting_drop input + label:before {
+    color: #90ee90;
 }
 
 /*settings checkbox color when checked*/
-#body_ajax_ls #ls_setting_drop input:checked+label:before {
-  color: var(--primary-light, #FA5C25)
+#body_ajax_ls #ls_setting_drop input:checked + label:before {
+  color: var(--primary-light, #FA5C25);
 }
 
 /*live stats update ticker first td cell bg and text color*/
 #body_ajax_ls #ls_ticker_tab_id td:first-of-type {
   background: var(--primary-light, #FA5C25);
-  color: #fff
+  color: #fff;
 }
 
 /*live stats update ticker scrolling text td cell bg and text color*/
 #body_ajax_ls #ls_ticker_tab_id td:last-of-type {
   background: #fff;
-  color: #000
+  color: #000;
 }
 
 /*LIVE STATS UPDATES SCROLLING STATS TABLE*/
 
 /*border around td cell 1st*/
 #body_ajax_ls #ls_ticker_tab_id td:first-of-type {
-  border: 0.063rem solid #111
+  border: 0.063rem solid #111;
 }
 
 /*border around td cell 2nd*/
 #body_ajax_ls #ls_ticker_tab_id td:last-of-type {
   border: 0.063rem solid #111;
-  border-left: 0
+  border-left: 0;
 }
 
 /*color when live scoring ticker data is updated every 40 seconds*/
 #body_ajax_ls #last_update.ls_changed {
-  color: #90ee90
+  color: #90ee90;
 }
 
 /*add football to players who have and dont have balls*/
 #body_ajax_ls .ls_players_table tr.ls_has_ball .td-first-type:after,
 #body_ajax_ls .ls_players_table tr.ls_nothas_ball .td-first-type:after,
 #body_ajax_ls .ls_players_table tr.ls_in_redzone .td-first-type:after {
-  content: '';
+  content: "";
   background-image: url('https://www.mflscripts.com/ImageDirectory/script-images/football.svg');
   background-size: 0.75rem 0.75rem;
   height: 0.75rem;
   width: 0.75rem;
   position: absolute;
   margin-left: 0.313rem;
-  margin-top: 0.063rem
+  margin-top: 0.063rem;
 }
 
 #body_ajax_ls .ls_players_table tr.ls_nothas_ball .td-first-type:after {
-  opacity: .3
+  opacity: 0.3;
 }
 
 #body_ajax_ls .ls_players_table tr.ls_in_redzone .td-first-type:after {
-  background-image: url('https://www.mflscripts.com/ImageDirectory/script-images/goal-post.svg')
+  background-image: url('https://www.mflscripts.com/ImageDirectory/script-images/goal-post.svg');
 }
 
 /*boxscore color for F Final game mark and winner mark caret*/
 #body_ajax_ls div[class^="oggstat"] {
-  color: var(--primary-light, #FA5C25)
+  color: var(--primary-light, #FA5C25);
 }
 
 #body_ajax_ls .ls_box_gameover td.winner_mark,
 #body_ajax_ls .ls_box_gameover div[class^="oggstat"],
 #body_ajax_ls #nfl_games span.ls_nfl_box_inprog,
 #body_ajax_ls .nflggstat {
-  color: #90ee90
+  color: #90ee90;
 }
 
 /*color of "Final" text in NFL Boxscores table*/
 #body_ajax_ls #nfl_games span.ls_nfl_box_over {
-  color: var(--primary-light, #FA5C25)
+  color: var(--primary-light, #FA5C25);
 }
 
 /*when MFL makes updates to scoreboard - change text color*/
@@ -8540,30 +8547,30 @@ div.ls_team_points {
 #body_ajax_ls div[id^="fspts"].ls_changed,
 #body_ajax_ls td.prmin div.ls_changed,
 #body_ajax_ls td div[class^="ogffpts"].ls_changed {
-  color: #90ee90
+  color: #90ee90;
 }
 
 /*Pace text color in scoreboard and td cell*/
 #body_ajax_ls tr.td-totals-row td.ffpts_pace_total {
   color: #ccc;
   font-size: 90%;
-  font-weight: bold
+  font-weight: bold;
 }
 
 .ls_above_projected {
-  color: #90ee90 !important
+  color: #90ee90 !important;
 }
 
 .ls_below_projected {
-  color: #f08080 !important
+  color: #f08080 !important;
 }
 
 .ls_at_projected {
-  color: #fff !important
+  color: #fff !important;
 }
 
 .ls_projected {
-  color: #ccc !important
+  color: #ccc !important;
 }
 
 /* Scoring Numbers Coloring */
@@ -8575,7 +8582,7 @@ div.ls_team_points {
 
 #LS_AwayScore span a,
 #LS_HomeScore span a {
-  color: var(--primary-light, #FA5C25)
+  color: var(--primary-light, #FA5C25);
 }
 
 #LS_AwayScore span:before,
@@ -8593,21 +8600,21 @@ div.ls_team_points {
 #LS_AwayScore span a::before,
 #LS_HomeScore span a::before {
   border-color: rgba(45, 45, 45, .7);
-  background: rgba(0, 0, 0, .4)
+  background: rgba(0, 0, 0, .4);
 }
 
 /*   COLOR NFL BOX SCORE POPUP    */
 .ls-modal {
-  background: rgba(0, 0, 0, .7)
+  background: rgba(0, 0, 0, .7);
 }
 
 .ls-modal-content {
   background: var(--neutral, #111) !important;
-  box-shadow: 0 0 1.563rem rgba(0, 0, 0, 1)
+  box-shadow: 0 0 1.563rem rgba(0, 0, 0, 1);
 }
 
 .ls-modal-header {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 .ls-modal-content .ls-modal-header .close {
@@ -8627,14 +8634,14 @@ div.ls_team_points {
   height: 1.375rem;
   width: 1.375rem;
   line-height: 1.4;
-  font-size: 0.813rem
+  font-size: 0.813rem;
 }
 
 .ls-modal-header .close:hover,
 .ls-modal-header .close:focus {
   background: var(--primary, #ff4200) !important;
   border-color: var(--primary, #ff4200) !important;
-  color: #fff !important
+  color: #fff !important;
 }
 
 .ls-modal-header h2[id*="ls-modal-"] {
@@ -8651,44 +8658,44 @@ div.ls_team_points {
   text-align: left;
   line-height: 100%;
   text-transform: uppercase;
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 .ls-history-modal .ls-modal-header table caption {
-  padding: 0
+  padding: 0;
 }
 
 .ls-history-modal .ls-modal-header h2 table+span {
   font-size: 0.75rem;
   color: #ccc;
-  padding-left: 0.313rem !important
+  padding-left: 0.313rem !important;
 }
 
 #ls-modal-2-header-content,
 #ls-modal-3-header-content {
-  padding-bottom: 0
+  padding-bottom: 0;
 }
 
 .ls-modal-body {
-  color: #eee
+  color: #eee;
 }
 
 #ls-modal-content .ls-popup-position-li {
   background: #111;
   color: var(--primary, #ff4200);
-  color: #fff
+  color: #fff;
 }
 
 #ls-modal-content .ls-popup-player-li {
-  border-bottom: 0.125rem solid var(--bg-opacity-brighter, rgba(181, 47, 0, .2))
+  border-bottom: 0.125rem solid var(--bg-opacity-brighter, rgba(181, 47, 0, .2));
 }
 
 #ls-modal-content .ls-popup-stats {
-  color: #aaa
+  color: #aaa;
 }
 
 #ls-modal-content span.ls-popup-points {
-  color: #90ee90
+  color: #90ee90;
 }
 
 .ls-explain-points-name {
@@ -8700,11 +8707,11 @@ div.ls_team_points {
 }
 
 .ls-explain-points-total::before {
-  color: #fff
+  color: #fff;
 }
 
 .ls-explain-points-li::before {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 .ls-popup-status-ns::before,
@@ -8714,7 +8721,7 @@ div.ls_team_points {
   content: "-";
   color: #eee;
   font-style: normal;
-  padding-right: 0.063rem
+  padding-right: 0.063rem;
 }
 
 .ls-popup-status-ns,
@@ -8722,31 +8729,31 @@ div.ls_team_points {
 .ls-popup-status-ts,
 .ls-popup-status-ir {
   font-style: italic;
-  padding-left: 0.125rem
+  padding-left: 0.125rem;
 }
 
 .ls-popup-status-ns {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 .ls-popup-status-s {
-  color: #90ee90
+  color: #90ee90;
 }
 
 .ls-popup-status-ts {
-  color: orange
+  color: orange;
 }
 
 .ls-popup-status-ir {
-  color: red
+  color: red;
 }
 
 .hz-clone .fixed-side {
-  background: var(--neutral-dark, #141414)
+  background: var(--neutral-dark, #141414);
 }
 
 .hz-clone .fixed-side.hz-hide-shadow {
-  background: var(--neutral-dark, #141414)
+  background: var(--neutral-dark, #141414);
 }
 
 /***************************************/
@@ -8758,16 +8765,16 @@ div.ls_team_points {
 /***************************************/
 
 .hz-main-table tbody th.fixed-side {
-  text-align: left !important
+  text-align: left !important;
 }
 
 .hz-main-table tbody .lh_defunct_check th.fixed-side,
 .hz-main-table .lh_defunct_check th.lh_overall_franchise.fixed-side {
-  text-align: left !important
+  text-align: left !important;
 }
 
 .hz-main-table tbody th.fixed-side.has-ficon {
-  text-align: center !important
+  text-align: center !important;
 }
 
 .hs_tabs_wrap,
@@ -8799,7 +8806,7 @@ div.ls_team_points {
 .hs_tabs_wrap tr.myfranchise td,
 .hs_tabs_wrap tr.myfranchise th,
 .hs_tabs_wrap tr.myfranchise th.fixed-side.hz-hide-shadow {
-  box-shadow: inset 0 0 0 62.5rem var(--bg-opacity-brighter, rgba(181, 47, 0, .2))
+  box-shadow: inset 0 0 0 62.5rem var(--bg-opacity-brighter, rgba(181, 47, 0, .2));
 }
 
 .lh-admin-updates {
@@ -8826,14 +8833,14 @@ div.ls_team_points {
 #league-history-wrapper .hs_tabs_wrap #team_points_content td.mobile-view th.lh_rank,
 #league-history-wrapper .hs_tabs_wrap #player_content td.mobile-view th.lh_rank,
 #league-history-wrapper .hs_tabs_wrap #misc_content td.mobile-view th.lh_rank,
-#league-history-wrapper #team_points_content tr.oddtablerow.myfranchise+tr.myfranchise.eventablerow td,
-#league-history-wrapper #team_points_content tr.eventablerow.myfranchise+tr.myfranchise.oddtablerow td,
-#league-history-wrapper #team_points_content tr.oddtablerow.myfranchise+tr.myfranchise.eventablerow td.lh_rank,
-#league-history-wrapper #team_points_content tr.eventablerow.myfranchise+tr.myfranchise.oddtablerow td.lh_rank,
-#league-history-wrapper #misc_content tr.oddtablerow.myfranchise+tr.myfranchise.eventablerow td,
-#league-history-wrapper #misc_content tr.eventablerow.myfranchise+tr.myfranchise.oddtablerow td,
-#league-history-wrapper #player_content tr.oddtablerow.myfranchise+tr.myfranchise.eventablerow td,
-#league-history-wrapper #player_content tr.eventablerow.myfranchise+tr.myfranchise.oddtablerow td {
+#league-history-wrapper #team_points_content tr.oddtablerow.myfranchise + tr.myfranchise.eventablerow td,
+#league-history-wrapper #team_points_content tr.eventablerow.myfranchise + tr.myfranchise.oddtablerow td,
+#league-history-wrapper #team_points_content tr.oddtablerow.myfranchise + tr.myfranchise.eventablerow td.lh_rank,
+#league-history-wrapper #team_points_content tr.eventablerow.myfranchise + tr.myfranchise.oddtablerow td.lh_rank,
+#league-history-wrapper #misc_content tr.oddtablerow.myfranchise + tr.myfranchise.eventablerow td,
+#league-history-wrapper #misc_content tr.eventablerow.myfranchise + tr.myfranchise.oddtablerow td,
+#league-history-wrapper #player_content tr.oddtablerow.myfranchise + tr.myfranchise.eventablerow td,
+#league-history-wrapper #player_content tr.eventablerow.myfranchise + tr.myfranchise.oddtablerow td {
   border-style: solid;
   margin: 0;
 }
@@ -8858,14 +8865,14 @@ div.ls_team_points {
 #league-history-wrapper .hs_tabs_wrap #team_points_content td.mobile-view td.lh_rank,
 #league-history-wrapper .hs_tabs_wrap #player_content td.mobile-view td.lh_rank,
 #league-history-wrapper .hs_tabs_wrap #misc_content td.mobile-view td.lh_rank,
-#league-history-wrapper #team_points_content tr.oddtablerow.myfranchise+tr.myfranchise.eventablerow td,
-#league-history-wrapper #team_points_content tr.eventablerow.myfranchise+tr.myfranchise.oddtablerow td,
-#league-history-wrapper #team_points_content tr.oddtablerow.myfranchise+tr.myfranchise.eventablerow td.lh_rank,
-#league-history-wrapper #team_points_content tr.eventablerow.myfranchise+tr.myfranchise.oddtablerow td.lh_rank,
-#league-history-wrapper #misc_content tr.oddtablerow.myfranchise+tr.myfranchise.eventablerow td,
-#league-history-wrapper #misc_content tr.eventablerow.myfranchise+tr.myfranchise.oddtablerow td,
-#league-history-wrapper #player_content tr.oddtablerow.myfranchise+tr.myfranchise.eventablerow td,
-#league-history-wrapper #player_content tr.eventablerow.myfranchise+tr.myfranchise.oddtablerow td {
+#league-history-wrapper #team_points_content tr.oddtablerow.myfranchise + tr.myfranchise.eventablerow td,
+#league-history-wrapper #team_points_content tr.eventablerow.myfranchise + tr.myfranchise.oddtablerow td,
+#league-history-wrapper #team_points_content tr.oddtablerow.myfranchise + tr.myfranchise.eventablerow td.lh_rank,
+#league-history-wrapper #team_points_content tr.eventablerow.myfranchise + tr.myfranchise.oddtablerow td.lh_rank,
+#league-history-wrapper #misc_content tr.oddtablerow.myfranchise + tr.myfranchise.eventablerow td,
+#league-history-wrapper #misc_content tr.eventablerow.myfranchise + tr.myfranchise.oddtablerow td,
+#league-history-wrapper #player_content tr.oddtablerow.myfranchise + tr.myfranchise.eventablerow td,
+#league-history-wrapper #player_content tr.eventablerow.myfranchise + tr.myfranchise.oddtablerow td {
   border-color: #151515;
 }
 
@@ -8880,18 +8887,18 @@ div.ls_team_points {
 #league-history-wrapper .hs_tabs_wrap #team_points_content td.mobile-view th.lh_rank,
 #league-history-wrapper .hs_tabs_wrap #player_content td.mobile-view th.lh_rank,
 #league-history-wrapper .hs_tabs_wrap #misc_content td.mobile-view th.lh_rank {
-  border-width: 0.063rem 0.063rem 0.063rem 0.063rem;
+  border-width: 0.063rem;
 }
 
 #league-history-wrapper .hs_tabs_wrap .hz-main-table th.fixed-side,
 #league-history-wrapper .hs_tabs_wrap #team_points_content td.mobile-view td.lh_rank,
 #league-history-wrapper .hs_tabs_wrap #player_content td.mobile-view td.lh_rank,
 #league-history-wrapper .hs_tabs_wrap #misc_content td.mobile-view td.lh_rank,
-#league-history-wrapper #team_points_content tr.oddtablerow.myfranchise+tr.myfranchise.eventablerow td.lh_rank,
-#league-history-wrapper #team_points_content tr.eventablerow.myfranchise+tr.myfranchise.oddtablerow td.lh_rank,
-#league-history-wrapper #player_content tr.oddtablerow.myfranchise+tr.myfranchise.eventablerow td.lh_rank,
-#league-history-wrapper #player_content tr.eventablerow.myfranchise+tr.myfranchise.oddtablerow td.lh_rank {
-  border-width: 0 0.063rem 0.063rem 0.063rem;
+#league-history-wrapper #team_points_content tr.oddtablerow.myfranchise + tr.myfranchise.eventablerow td.lh_rank,
+#league-history-wrapper #team_points_content tr.eventablerow.myfranchise + tr.myfranchise.oddtablerow td.lh_rank,
+#league-history-wrapper #player_content tr.oddtablerow.myfranchise + tr.myfranchise.eventablerow td.lh_rank,
+#league-history-wrapper #player_content tr.eventablerow.myfranchise + tr.myfranchise.oddtablerow td.lh_rank {
+    border-width: 0 0.063rem 0.063rem;
 }
 
 #league-history-wrapper .hs_tabs_wrap .hz-main-table .oddtablerow td,
@@ -8899,13 +8906,13 @@ div.ls_team_points {
 #league-history-wrapper .hs_tabs_wrap #team_points_content td.mobile-view td,
 #league-history-wrapper .hs_tabs_wrap #player_content td.mobile-view td,
 #league-history-wrapper .hs_tabs_wrap #misc_content td.mobile-view td,
-#league-history-wrapper #team_points_content tr.oddtablerow.myfranchise+tr.myfranchise.eventablerow td,
-#league-history-wrapper #team_points_content tr.eventablerow.myfranchise+tr.myfranchise.oddtablerow td,
-#league-history-wrapper #misc_content tr.oddtablerow.myfranchise+tr.myfranchise.eventablerow td,
-#league-history-wrapper #misc_content tr.eventablerow.myfranchise+tr.myfranchise.oddtablerow td,
-#league-history-wrapper #player_content tr.oddtablerow.myfranchise+tr.myfranchise.eventablerow td,
-#league-history-wrapper #player_content tr.eventablerow.myfranchise+tr.myfranchise.oddtablerow td {
-  border-width: 0 0.063rem 0.063rem 0;
+#league-history-wrapper #team_points_content tr.oddtablerow.myfranchise + tr.myfranchise.eventablerow td,
+#league-history-wrapper #team_points_content tr.eventablerow.myfranchise + tr.myfranchise.oddtablerow td,
+#league-history-wrapper #misc_content tr.oddtablerow.myfranchise + tr.myfranchise.eventablerow td,
+#league-history-wrapper #misc_content tr.eventablerow.myfranchise + tr.myfranchise.oddtablerow td,
+#league-history-wrapper #player_content tr.oddtablerow.myfranchise + tr.myfranchise.eventablerow td,
+#league-history-wrapper #player_content tr.eventablerow.myfranchise + tr.myfranchise.oddtablerow td {
+    border-width: 0 0.063rem 0.063rem 0;
 }
 
 #league-history-wrapper .hs_tabs_wrap .hz-main-table .lh_defunct_check.rowheader th {
@@ -8919,23 +8926,23 @@ div.ls_team_points {
 }
 
 td.winIcon .roadWinIcon-img:before {
-  font-family: 'Font Awesome 6 Pro';
+  font-family: "Font Awesome 6 Pro";
   content: "\f0d9";
   color: #90ee90;
-  font-size: 1rem
+  font-size: 1rem;
 }
 
 td.winIcon .homeWinIcon-img:before {
-  font-family: 'Font Awesome 6 Pro';
+  font-family: "Font Awesome 6 Pro";
   content: "\f0da";
   color: #90ee90;
-  font-size: 1rem
+  font-size: 1rem;
 }
 
 td.winIcon .roadWinIcon-img img,
 td.winIcon .homeWinIcon-img img,
 td.winIcon .blankwin-img img {
-  display: none
+  display: none;
 }
 /***************************************/
 
@@ -8945,12 +8952,12 @@ td.winIcon .blankwin-img img {
 
 td#diceRollResult table th,
 td#diceRollResult table td {
-  text-align: center
+  text-align: center;
 }
 
 td#diceRollResult table th:first-of-type,
 td#diceRollResult table td:first-of-type {
-  text-align: left
+  text-align: left;
 }
 
 td#diceRollResult table td:last-of-type {
@@ -8958,91 +8965,80 @@ td#diceRollResult table td:last-of-type {
   color: var(--primary, #ff4200);
 }
 
-td#diceRollResult table tr:nth-child(2)>td:nth-child(1):before {
+td#diceRollResult table tr:nth-child(2) > td:nth-child(1):before {
   content: "1.";
   padding-right: 0.313rem;
 }
 
-td#diceRollResult table tr:nth-child(3)>td:nth-child(1):before {
+td#diceRollResult table tr:nth-child(3) > td:nth-child(1):before {
   content: "2.";
   padding-right: 0.313rem;
 }
 
-td#diceRollResult table tr:nth-child(4)>td:nth-child(1):before {
-  content: "3.";
-  padding-right: 0.313rem;
+td#diceRollResult table tr:nth-child(4) > td:nth-child(1):before {
+    content: "3.";
+    padding-right: 0.313rem;
+}
+td#diceRollResult table tr:nth-child(5) > td:nth-child(1):before {
+    content: "4.";
+    padding-right: 0.313rem;
+}
+td#diceRollResult table tr:nth-child(6) > td:nth-child(1):before {
+    content: "5.";
+    padding-right: 0.313rem;
 }
 
-td#diceRollResult table tr:nth-child(5)>td:nth-child(1):before {
-  content: "4.";
-  padding-right: 0.313rem;
+td#diceRollResult table tr:nth-child(7) > td:nth-child(1):before {
+    content: "6.";
+    padding-right: 0.313rem;
+}
+td#diceRollResult table tr:nth-child(8) > td:nth-child(1):before {
+    content: "7.";
+    padding-right: 0.313rem;
+}
+td#diceRollResult table tr:nth-child(9) > td:nth-child(1):before {
+    content: "8.";
+    padding-right: 0.313rem;
+}
+td#diceRollResult table tr:nth-child(10) > td:nth-child(1):before {
+    content: "9.";
+    padding-right: 0.313rem;
+}
+td#diceRollResult table tr:nth-child(11) > td:nth-child(1):before {
+    content: "10.";
+    padding-right: 0.313rem;
+}
+td#diceRollResult table tr:nth-child(12) > td:nth-child(1):before {
+    content: "11.";
+    padding-right: 0.313rem;
 }
 
-td#diceRollResult table tr:nth-child(6)>td:nth-child(1):before {
-  content: "5.";
-  padding-right: 0.313rem;
+td#diceRollResult table tr:nth-child(13) > td:nth-child(1):before {
+    content: "12.";
+    padding-right: 0.313rem;
 }
-
-td#diceRollResult table tr:nth-child(7)>td:nth-child(1):before {
-  content: "6.";
-  padding-right: 0.313rem;
+td#diceRollResult table tr:nth-child(14) > td:nth-child(1):before {
+    content: "13.";
+    padding-right: 0.313rem;
 }
-
-td#diceRollResult table tr:nth-child(8)>td:nth-child(1):before {
-  content: "7.";
-  padding-right: 0.313rem;
+td#diceRollResult table tr:nth-child(15) > td:nth-child(1):before {
+    content: "14.";
+    padding-right: 0.313rem;
 }
-
-td#diceRollResult table tr:nth-child(9)>td:nth-child(1):before {
-  content: "8.";
-  padding-right: 0.313rem;
+td#diceRollResult table tr:nth-child(16) > td:nth-child(1):before {
+    content: "15.";
+    padding-right: 0.313rem;
 }
-
-td#diceRollResult table tr:nth-child(10)>td:nth-child(1):before {
-  content: "9.";
-  padding-right: 0.313rem;
-}
-
-td#diceRollResult table tr:nth-child(11)>td:nth-child(1):before {
-  content: "10.";
-  padding-right: 0.313rem;
-}
-
-td#diceRollResult table tr:nth-child(12)>td:nth-child(1):before {
-  content: "11.";
-  padding-right: 0.313rem;
-}
-
-td#diceRollResult table tr:nth-child(13)>td:nth-child(1):before {
-  content: "12.";
-  padding-right: 0.313rem;
-}
-
-td#diceRollResult table tr:nth-child(14)>td:nth-child(1):before {
-  content: "13.";
-  padding-right: 0.313rem;
-}
-
-td#diceRollResult table tr:nth-child(15)>td:nth-child(1):before {
-  content: "14.";
-  padding-right: 0.313rem;
-}
-
-td#diceRollResult table tr:nth-child(16)>td:nth-child(1):before {
-  content: "15.";
-  padding-right: 0.313rem;
-}
-
-td#diceRollResult table tr:nth-child(17)>td:nth-child(1):before {
-  content: "16.";
-  padding-right: 0.313rem;
+td#diceRollResult table tr:nth-child(17) > td:nth-child(1):before {
+    content: "16.";
+    padding-right: 0.313rem;
 }
 
 td#diceRollResult table td:first-of-type:before {
   width: 1.5rem;
   display: inline-block;
   text-align: center;
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 #diceRemoveBtn {
@@ -9052,12 +9048,12 @@ td#diceRollResult table td:first-of-type:before {
 }
 
 #diceRollResult th {
-  pointer-events: none
+  pointer-events: none;
 }
 
 td.dice_value {
   color: limegreen;
-  font-weight: bold !important
+  font-weight: bold !important;
 }
 
 /***************************************/
@@ -9070,13 +9066,13 @@ td.dice_value {
 
 #sticky_filters {
   position: sticky;
-  top: 0
+  top: 0;
 }
 
 #sticky_filters th {
-  background: #222
+  background: #222;
 }
-
+/* removed in newest version of css 
 #options_129 .leftV td.selectbox .style-input {
   padding-top: 0
 }
@@ -9084,7 +9080,7 @@ td.dice_value {
 #options_129 .leftV #sticky_filters th {
   border-top: 0.125rem solid #fff
 }
-
+*********************************************/
 /***************************************/
 
 
@@ -9094,83 +9090,80 @@ td.dice_value {
 /***************************************/
 
 .as_scores {
-  color: var(--primary, #ff4200)
+  color: var(--primary, #ff4200);
 }
 
 .as_pace_box {
-  color: #90ee90
+  color: #90ee90;
 }
 
 .as_spacer_bottom {
-  border-bottom: 0.25rem solid #111 !important
+  border-bottom: 0.25rem solid #111 !important;
 }
 
 .all_scores_matchup input {
   background: #222 !important;
   color: #999 !important;
-  ;
-  border: 0.063rem solid #444 !important
+  border: 0.063rem solid #444 !important;
 }
 
 .all_scores_matchup input:hover {
   background: #999 !important;
   color: #111 !important;
-  border: 0.063rem solid #444 !important
+  border: 0.063rem solid #444 !important;
 }
 
 .all_scores_matchup td[class*="as_winner"] {
-  color: #90ee90
+  color: #90ee90;
 }
 
 td.mflLive_details_pace_ahead {
-  color: #90ee90
+  color: #90ee90;
 }
 
-#popup-ignoreLeagues-table td.label-input input:checked+label:before,
-#popup-ignoreLeagues-table span.label-input input:checked+label:before {
-  color: #90ee90
+#popup-ignoreLeagues-table td.label-input input:checked + label:before,
+#popup-ignoreLeagues-table span.label-input input:checked + label:before {
+    color: #90ee90;
 }
-
-#popup-ignoreLeagues-table td.label-input input+label:before,
-#popup-ignoreLeagues-table span.label-input input+label:before {
-  color: red
+#popup-ignoreLeagues-table td.label-input input + label:before,
+#popup-ignoreLeagues-table span.label-input input + label:before {
+    color: #da3636;
 }
-
 td.mflLive_details_pace_behind {
-  color: red
+    color: #da3636;
 }
 
 #popup-ignoreLeagues-caption {
   color: var(--primary, #ff4200);
-  font-family: 'Roboto Condensed', sans-serif
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 #popup-ignoreLeagues-container {
-  background: var(--neutral, #111) !important
+  background: var(--neutral, #111) !important;
 }
 
 .popup-league-name {
-  color: #eee
+  color: #eee;
 }
 
 #popup-ignoreLeagues-content tr.details_pop_players_row th {
-  border-top: 0.125rem solid #111
+  border-top: 0.125rem solid #111;
 }
 
 #popup-ignoreLeagues-caption .as_close_btn {
-  display: block
+  display: block;
 }
 
 [id$="options_247"] #All_Scores_Table caption {
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 
 [id$="options_247"] td.as_spacer_bottom {
-  border: 0 !important
+  border: 0 !important;
 }
 
 [id$="options_247"] table.all_scores_matchup_name {
-  margin-top: 0
+  margin-top: 0;
 }
 
 [id$="options_247"] .all_scores_tablewrap {
@@ -9187,19 +9180,19 @@ td.mflLive_details_pace_behind {
   border: 0;
   padding: 0;
   margin: 0;
-  width: 0
+  width: 0;
 }
 
 [id$="options_247"] #All_Scores_Table {
-  text-align: center
+  text-align: center;
 }
 
 /* set the max-width to 2 times what you set the .all_scores_tablewrap at */
-@media only screen and (max-width:32.5em) {
-  #body_options_247 .all_scores_tablewrap {
-    margin-left: 0;
-    margin-right: 0
-  }
+@media only screen and (max-width: 32.5em) {
+    #options_247 .all_scores_tablewrap {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 /***************************************/
@@ -9212,22 +9205,37 @@ td.mflLive_details_pace_behind {
 
 td.mondayWinner {
   color: #90ee90;
-  font-weight: bold
+  font-weight: bold;
 }
 
 td.mondayLoser {
   color: red;
-  font-weight: bold
+  font-weight: bold;
 }
 
 div.monday_proj_total {
-  color: #90ee90
+  color: #90ee90;
 }
 
 td.mondayWinner .monday_proj_total,
 td.mondayLoser .monday_proj_total {
   font-weight: normal;
-  color: #ccc
+  color: #ccc;
+}
+
+/***************************************/
+
+
+/* ADDED CSS 4-20-23 block new ads */
+
+
+/***************************************/
+
+[data-google-query-id],
+[data-freestar-ad] {
+    display: none !important;
+    height: 0 !important;
+    width: 0 !important;
 }
 
 /***************************************/
@@ -9256,7 +9264,11 @@ td.mondayLoser .monday_proj_total {
   max-height: calc(90% - 3.125rem);
   overflow: auto;
 }
-.restoreHPMs h4{font-weight:300!important;color:lime!important;}
+
+.restoreHPMs h4 {
+    font-weight: 300 !important;
+    color: lime !important;
+}
 .restoreHPMs input[disabled="disabled"] {
   opacity: 0.5;
   pointer-events: none;
@@ -9291,8 +9303,7 @@ td.mondayLoser .monday_proj_total {
   white-space: nowrap;
   width: 90%;
   font-weight: 700;
-  font-family: 'Roboto Condensed', sans-serif;
-
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .editHPMs textarea {
@@ -9300,13 +9311,13 @@ td.mondayLoser .monday_proj_total {
   border-radius: unset;
 }
 
-.edit-wrapper input+b,
-.edit-wrapper input+b+br {
-  display: none
+.edit-wrapper input + b,
+.edit-wrapper input + b + br {
+    display: none;
 }
 
 .edit-wrapper input[name="LABEL"] {
-  border: 0
+  border: 0;
 }
 
 .edit-wrapper input[name="LABEL"]:focus {
@@ -9316,21 +9327,6 @@ td.mondayLoser .monday_proj_total {
 .edit-wrapper table tr td:first-child {
   text-align: right;
 }
-/***************************************/
-
-
-/* ADDED CSS 4-20-23 block new ads */
-
-
-/***************************************/
-
-[data-google-query-id],
-[data-freestar-ad] {
-  display: none !important;
-  height: 0 !important;
-  width: 0 !important
-}
-
 
 /***************************************/
 
@@ -9339,9 +9335,10 @@ td.mondayLoser .monday_proj_total {
 
 
 /***************************************/
+/* below was in previous css 
 .notification-bar-content {
   top: 3rem !important;
-}
+} */
 
 @media only screen and (max-width:48em) {
   .notification-bar-content {
@@ -9357,22 +9354,23 @@ td.mondayLoser .monday_proj_total {
 
 
 /***************************************/
+
 div.sub-content.editable {
   position: relative;
   padding: 0.625rem 0;
-  padding-left: 0.625rem
+  padding-left: 0.625rem;
 }
 
 div.sub-content.editable .insertIcons {
   position: absolute;
   top: 0.813rem;
-  left: -1.25rem
+  left: -1.25rem;
 }
-
+/* below was in previous css 
 .starter_count_sub {
   color: #fff;
 }
-
+*/
 /***************************************/
 
 
@@ -9398,9 +9396,9 @@ div.sub-content.editable .insertIcons {
   background: rgba(0, 0, 0, .2);
 }
 
-#body_all_reports table>tbody>tr>td:nth-child(1)>div>table>tbody>tr:nth-child(1)>th,
-#body_all_reports table>tbody>tr>td:nth-child(2)>div>table>tbody>tr:nth-child(1)>th {
-  padding-top: 0;
+#body_all_reports table > tbody > tr > td:nth-child(1) > div > table > tbody > tr:nth-child(1) > th,
+#body_all_reports table > tbody > tr > td:nth-child(2) > div > table > tbody > tr:nth-child(1) > th {
+    padding-top: 0;
 }
 
 .mflUpdateWrap {
@@ -9454,6 +9452,7 @@ div.sub-content.editable .insertIcons {
 
 
 /***************************************/
+/* below was removed from latest css update
 .draft_warning {
   background: var(--tab-menu, var(--neutral, #080e25)) !important;
   color: #fff !important;
@@ -9468,6 +9467,7 @@ div.sub-content.editable .insertIcons {
   color: #222 !important
 }
 
+********************************************/
 
 /***************************************/
 
@@ -9477,57 +9477,45 @@ div.sub-content.editable .insertIcons {
 
 /***************************************/
 
-@media (pointer:coarse) {
+@media (pointer: coarse) {
   .head-th td.scroll-spacer {
     width: 0 !important;
     min-width: 0 !important;
-    max-width: 0 !important
+    max-width: 0 !important;
   }
-
   .head-th td span[style="position:relative"] {
-    display: none
+    display: none;
   }
-
-  #body_add_drop .head-th td span {
-    display: none
-  }
-
   #custom_draftroom .draft_picks_header th:last-of-type:after {
-    right: 0.938rem
+    right: 0.938rem;
   }
 }
 
-@media only screen and (max-width:120em) {
-  /* Trades page */
-  .tradesTable .column-heads {
-    display: none
-  }
-
-  .tradesTable .trade-offer td {
-    padding: 0.188rem
-  }
-
-  .tradesTable .divide-trades {
-    display: none
-  }
-
-  .tradesTable .offerer,
-  .tradesTable .offeree {
-    float: left;
-    clear: left;
-    width: 100%;
-    max-width: 100%
-  }
-
+@media only screen and (max-width: 120em) {
+    .tradesTable .column-heads {
+        display: none;
+    }
+    .tradesTable .trade-offer td {
+        padding: 0.188rem;
+    }
+    .tradesTable .divide-trades {
+        display: none;
+    }
+    .tradesTable .offerer,
+    .tradesTable .offeree {
+        float: left;
+        clear: left;
+        width: 100%;
+        max-width: 100%;
+    }
   .tradesTable .comments-to,
   .actions-by,
   .comments-to-textarea {
     float: left;
     clear: left;
     display: block;
-    width: 100%
+    width: 100%;
   }
-
   .tradesTable .offerer::before,
   .tradesTable .comments-to::before,
   .tradesTable .offeree::before,
@@ -9539,80 +9527,62 @@ div.sub-content.editable .insertIcons {
     text-indent: 0.125rem;
     display: block;
     width: 100%;
-    margin: 0.313rem 0
+    margin: 0.313rem 0;
   }
-
   .tradesTable .offerer::before {
     content: "I Have Offered :";
-    font-weight: bold
+    font-weight: bold;
   }
-
   .tradesTable .offeredtomeTable .offerer::before {
-    content: "You Have Been Offered :"
+    content: "You Have Been Offered :";
   }
-
   .tradesTable .offeredbymeTable .comments-to::before,
   .tradesTable .offeredtomeTable .comments-to::before {
-    content: "Trade Comment :"
+    content: "Trade Comment :";
   }
-
   .tradesTable .comments-to-textarea {
-    display: block !important
+    display: block !important;
   }
-
   .tradesTable .comments-disabled {
-    width: 100%
+    width: 100%;
   }
-
   .tradesTable .offeree::before {
-    content: "For :"
+    content: "For :";
   }
-
   .tradesTable .expires-by::before {
-    content: "Trade Expires On :"
+    content: "Trade Expires On :";
   }
-
   .tradesTable .actions-by::before {
-    content: "Take Action On This Trade :"
+    content: "Take Action On This Trade :";
   }
-
   .tradesTable .comments-to textarea {
     min-height: auto;
     max-width: 100%;
   }
-
   .tradesTable .actions-by input[type="submit"] {
     margin: 0 auto;
     margin-top: 0.625rem;
-    display: block
+    display: block;
   }
-
   .tradesTable .actions-expired {
     text-align: center;
     font-size: 100%;
     display: block;
-    margin: 0.313rem
+    margin: 0.313rem;
   }
 }
-
-@media only screen and (max-width:65em) {
-  .bannericon {
-    height: 8.125rem
-  }
+@media only screen and (max-width: 65em) {
+    .bannericon {
+        height: 8.125rem;
+    }
 }
-
+/* below was removed from newest css file
 @media only screen and (max-width:63em) {
 
   #body_add_drop .table2 table table td[width="50px"]+td+td+td,
   .waiv-salary+td+td+td {
     width: 0 !important;
     visibility: hidden
-  }
-}
-
-@media only screen and (min-width:60em) {
-  .icon-hide {
-    display: none;
   }
 }
 
@@ -9638,6 +9608,12 @@ div.sub-content.editable .insertIcons {
     visibility: visible;
   }
 }
+*********************************************/
+@media only screen and (min-width: 60em) {
+    .icon-hide {
+        display: none;
+    }
+}
 
 @media only screen and (max-width:55em) {
 
@@ -9646,49 +9622,49 @@ div.sub-content.editable .insertIcons {
   [id$="csetup_revtrad"] table.report th,
   [id$="csetup_revtrad"] table.report td,
   [id$="csetup_revtrad"] table.report tr {
-    display: block
+    display: block;
   }
 
   [id$="csetup_revtrad"] table.report th {
     position: absolute;
     top: -9999rem;
-    left: -9999rem
+    left: -9999rem;
   }
 
   [id$="csetup_revtrad"] table.report td {
     position: relative;
-    text-align: left
+    text-align: left;
   }
 
   [id$="csetup_revtrad"] table.report td:before {
     position: absolute;
     left: 0.375rem;
     padding-right: 0.313rem;
-    white-space: nowrap
+    white-space: nowrap;
   }
 
   [id$="csetup_revtrad"] table.report td {
     padding: 0.313rem 0;
     padding-left: 7.5rem;
-    width: 100%
+    width: 100%;
   }
 
   [id$="csetup_revtrad"] table.report tr.newposition td {
-    border: 0
+    border: 0;
   }
 
   [id$="csetup_revtrad"] table.report tr.newposition td:nth-of-type(3),
   [id$="csetup_revtrad"] table.report tr.newposition td:nth-of-type(5) {
-    border-bottom: 0.125rem solid #111
+    border-bottom: 0.125rem solid #111;
   }
 
   [id$="csetup_revtrad"] table.report tr.newposition+tr td:last-of-type {
-    border-bottom: 0.25rem solid var(--primary, #ff4200)
+    border-bottom: 0.25rem solid var(--primary, #ff4200);
   }
 
     /* Set heights to scroll on mobiles */
   [id$="csetup_revtrad"] div.mobile-wrap {
-    max-height: 34.375rem
+    max-height: 34.375rem;
   }
 
     /* NO NEED TO EDIT - name for each td on transactions page and module */
@@ -9701,60 +9677,60 @@ div.sub-content.editable .insertIcons {
   }
 
   [id$="csetup_revtrad"] table.report tr.newposition:nth-of-type(2):before {
-    content: "TRADE PENDING #1"
+    content: "TRADE PENDING #1";
   }
 
   [id$="csetup_revtrad"] table.report tr.newposition:nth-of-type(4):before {
-    content: "TRADE PENDING #2"
+    content: "TRADE PENDING #2";
   }
 
   [id$="csetup_revtrad"] table.report tr.newposition:nth-of-type(6):before {
-    content: "TRADE PENDING #3"
+    content: "TRADE PENDING #3";
   }
 
   [id$="csetup_revtrad"] table.report tr.newposition:nth-of-type(8):before {
-    content: "TRADE PENDING #4"
+    content: "TRADE PENDING #4";
   }
 
   [id$="csetup_revtrad"] table.report tr.newposition:nth-of-type(10):before {
-    content: "TRADE PENDING #5"
+    content: "TRADE PENDING #5";
   }
 
   [id$="csetup_revtrad"] table.report tr.newposition:nth-of-type(12):before {
-    content: "TRADE PENDING #6"
+    content: "TRADE PENDING #6";
   }
 
   [id$="csetup_revtrad"] table.report tr.newposition td:nth-of-type(1):before {
-    content: "Offer Date:"
+    content: "Offer Date:";
   }
 
   [id$="csetup_revtrad"] table.report tr.newposition td:nth-of-type(2):before {
-    content: "From Franchise:"
+    content: "From Franchise:";
   }
 
   [id$="csetup_revtrad"] table.report tr.newposition td:nth-of-type(3):before {
-    content: "Players/Picks:"
+    content: "Players/Picks:";
   }
 
   [id$="csetup_revtrad"] table.report tr.newposition td:nth-of-type(4):before {
-    content: "To Franchise:"
+    content: "To Franchise:";
   }
 
   [id$="csetup_revtrad"] table.report tr.newposition td:nth-of-type(5):before {
-    content: "Players/Picks:"
+    content: "Players/Picks:";
   }
 
   [id$="csetup_revtrad"] table.report tr.newposition td:nth-of-type(6):before {
-    content: "Expires:"
+    content: "Expires:";
   }
 
   [id$="csetup_revtrad"] table.report tr.newposition td:nth-of-type(7):before {
-    content: "Action:"
+    content: "Action:";
   }
 
     /* COMMISH DELETE TRANSACTIONS REFORMAT STYLE */
   [id$="options_67"] table.report .rank {
-    display: none !important
+    display: none !important;
   }
 
   [id$="options_67"] table.report table,
@@ -9762,228 +9738,228 @@ div.sub-content.editable .insertIcons {
   [id$="options_67"] table.report th,
   [id$="options_67"] table.report td,
   [id$="options_67"] table.report tr {
-    display: block
+    display: block;
   }
 
   [id$="options_67"] table.report th {
     position: absolute;
     top: -9999rem;
-    left: -9999rem
+    left: -9999rem;
   }
 
   [id$="options_67"] table.report td {
     position: relative;
-    text-align: left !important
+    text-align: left !important;
   }
 
   [id$="options_67"] table.report td:before {
     position: absolute;
     left: 0.375rem;
     padding-right: 0.313rem;
-    white-space: nowrap
+    white-space: nowrap;
   }
 
   [id$="options_67"] table.report td {
     padding-left: 6.875rem !important;
     padding: 0.313rem 0;
-    width: 100% !important
+    width: 100% !important;
   }
 
   /* Set heights to scroll on mobiles */
   [id$="options_67"] div.mobile-wrap {
-    max-height: 21.875rem
+    max-height: 21.875rem;
   }
 
     /* NO NEED TO EDIT - name for each td on transactions page and module */
   [id$="options_67"] table.report td:nth-of-type(2):before {
-    content: "Delete/Check"
+    content: "Delete/Check";
   }
 
   [id$="options_67"] table.report td:nth-of-type(3):before {
-    content: "Franchise(s)"
+    content: "Franchise(s)";
   }
 
   [id$="options_67"] table.report td:nth-of-type(4):before {
-    content: "Type"
+    content: "Type";
   }
 
   [id$="options_67"] table.report td:nth-of-type(5):before {
-    content: "Transaction"
+    content: "Transaction";
   }
 
   [id$="options_67"] table.report td:nth-of-type(6):before {
-    content: "Date"
+    content: "Date";
   }
 
   [id$="options_67"] tr td.timestamp {
-    border-bottom: 0.25rem solid #111
+    border-bottom: 0.25rem solid #111;
   }
 
   [id$="options_67"] tr:last-of-type td.timestamp {
-    border-bottom: 0
+    border-bottom: 0;
   }
 
     /* TRADES OFFERED TO AND FROM PAGE MOBILE */
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report .rank {
-    display: none !important
+  [id$="options_05"] #container-wrap > .mobile-wrap table.report .rank {
+    display: none !important;
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report table,
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report tbody,
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report th,
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report td,
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report tr {
-    display: block
+  [id$="options_05"] #container-wrap > .mobile-wrap table.report table,
+  [id$="options_05"] #container-wrap > .mobile-wrap table.report tbody,
+  [id$="options_05"] #container-wrap > .mobile-wrap table.report th,
+  [id$="options_05"] #container-wrap > .mobile-wrap table.report td,
+  [id$="options_05"] #container-wrap > .mobile-wrap table.report tr {
+    display: block;
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report th {
+  [id$="options_05"] #container-wrap > .mobile-wrap table.report th {
     position: absolute;
     top: -9999rem;
-    left: -9999rem
+    left: -9999rem;
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report td {
+  [id$="options_05"] #container-wrap > .mobile-wrap table.report td {
     position: relative;
-    text-align: left !important
+    text-align: left !important;
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report td:before {
+  [id$="options_05"] #container-wrap > .mobile-wrap table.report td:before {
     position: absolute;
     left: 0.375rem;
     padding-right: 0.313rem;
-    white-space: nowrap
+    white-space: nowrap;
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report td {
+  [id$="options_05"] #container-wrap > .mobile-wrap table.report td {
     padding-left: 8.125rem !important;
     padding: 0.313rem 0;
-    width: 100% !important
+    width: 100% !important;
   }
 
     /* Set heights to scroll on mobiles */
-  [id$="options_05"] #container-wrap>.mobile-wrap div.mobile-wrap {
-    max-height: 21.875rem
+  [id$="options_05"] #container-wrap > .mobile-wrap div.mobile-wrap {
+    max-height: 21.875rem;
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report tr.newposition td:nth-of-type(1):before {
-    content: "Offer Date:"
+  [id$="options_05"] #container-wrap > .mobile-wrap table.report tr.newposition td:nth-of-type(1):before {
+    content: "Offer Date:";
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report tr.newposition td:nth-of-type(2):before {
-    content: "From Franchise:"
+  [id$="options_05"] #container-wrap > .mobile-wrap table.report tr.newposition td:nth-of-type(2):before {
+    content: "From Franchise:";
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report tr.newposition td:nth-of-type(3):before {
-    content: "Players/Picks:"
+  [id$="options_05"] #container-wrap > .mobile-wrap table.report tr.newposition td:nth-of-type(3):before {
+    content: "Players/Picks:";
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report tr.newposition td:nth-of-type(4):before {
-    content: "To Franchise:"
+  [id$="options_05"] #container-wrap > .mobile-wrap table.report tr.newposition td:nth-of-type(4):before {
+    content: "To Franchise:";
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report tr.newposition td:nth-of-type(5):before {
-    content: "Players/Picks:"
+  [id$="options_05"] #container-wrap > .mobile-wrap table.report tr.newposition td:nth-of-type(5):before {
+    content: "Players/Picks:";
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report td:nth-of-type(6):before {
-    content: "Expires:"
+  [id$="options_05"] #container-wrap > .mobile-wrap table.report td:nth-of-type(6):before {
+    content: "Expires:";
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report tr.newposition td:nth-of-type(6):before {
-    content: "Action:"
+  [id$="options_05"] #container-wrap > .mobile-wrap table.report tr.newposition td:nth-of-type(6):before {
+    content: "Action:";
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap {
-    max-height: 34.375rem
+  [id$="options_05"] #container-wrap > .mobile-wrap {
+    max-height: 34.375rem;
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report td textarea {
-    width: 100%
+  [id$="options_05"] #container-wrap > .mobile-wrap table.report td textarea {
+    width: 100%;
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report tr.newposition td {
-    border: 0
+  [id$="options_05"] #container-wrap > .mobile-wrap table.report tr.newposition td {
+    border: 0;
   }
 
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report tr.newposition td:nth-of-type(3),
-  [id$="options_05"] #container-wrap>.mobile-wrap table.report tr.newposition td:nth-of-type(5) {
-    border-bottom: 0.125rem solid #111
+  [id$="options_05"] #container-wrap > .mobile-wrap table.report tr.newposition td:nth-of-type(3),
+  [id$="options_05"] #container-wrap > .mobile-wrap table.report tr.newposition td:nth-of-type(5) {
+    border-bottom: 0.125rem solid #111;
   }
 
   [id$="options_05"] #container-wrap>.mobile-wrap table.report tr.newposition+tr td:last-of-type {
-    border-bottom: 0.25rem solid var(--primary)
+    border-bottom: 0.25rem solid var(--primary);
   }
 }
 
-@media only screen and (max-width:54.25em) {
+@media only screen and (max-width: 54.25em) {
   #outerMFLScoreboardDiv .mobile-view {
     width: 100% !important;
-    float: left
+    float: left;
   }
 
   #LS_TopTableHolder #LS_CenterTop,
   #LS_TopTableHolder .prmin,
   #LS_TopTableHolder .LS_ScoreboardTitle {
-    display: none
+    display: none;
   }
 
   #LS_AwayTeamName,
   #LS_HomeTeamName {
-    width: 50%
+    width: 50%;
   }
 
   .flex-direction-nav .flex-prev {
     opacity: 1;
-    left: 0.625rem
+    left: 0.625rem;
   }
 
   .flex-direction-nav .flex-next {
     opacity: 1;
-    right: 0.625rem
+    right: 0.625rem;
   }
 }
 
-@media only screen and (min-width:49em) {
+@media only screen and (min-width: 49em) {
   /* HIDE SHOW ITEMS NO NEED TO EDIT */
   .desktop-Hide {
-    display: none
+    display: none;
   }
 
   /* Trades page toggle buttons */
   .div-wrap-trade-table {
-    display: table-cell !important
+    display: table-cell !important;
   }
 }
 
-@media only screen and (min-width:48.1em) {
+@media only screen and (min-width: 48.1em) {
   #body_ajax_ls .ls-outer-table {
-    table-layout: fixed
+    table-layout: fixed;
   }
 
   #body_ajax_ls #roster_away caption,
   #roster_home caption {
-    display: none
+    display: none;
   }
 
   div.myfantasyleague_menu .mm-thispage {
-    display: none
+    display: none;
   }
 }
 
-@media only screen and (max-width:48em) {
+@media only screen and (max-width: 48em) {
 
   /* MFL RESPONSIVE MENU FORMATTING NO NEED TO EDIT */
   .myfantasyleague_menu ul li b {
-    display: none
+    display: none;
   }
 
   .myfantasyleague_menu {
     height: 0;
     padding-top: 2.813rem;
-    position: relative
+    position: relative;
   }
 
-  .myfantasyleague_menu>label,
+  .myfantasyleague_menu > label,
   .myfantasyleague_menu ul li label {
     display: block;
     width: 100%;
@@ -9992,25 +9968,25 @@ div.sub-content.editable .insertIcons {
     position: absolute;
     right: 0;
     top: 0;
-    cursor: pointer
+    cursor: pointer;
   }
 
-  .myfantasyleague_menu>label span,
+  .myfantasyleague_menu > label span,
   .myfantasyleague_menu ul li label span {
     width: 2.188rem;
     height: 2.188rem;
     position: absolute;
     right: 0.313rem;
     top: 0.375rem;
-    border-radius: 0.313rem
+    border-radius: 0.313rem;
   }
 
   .myfantasyleague_menu ul li ul li.has-sub label span {
     right: 1.5rem;
-    right: 1.5rem
+    right: 1.5rem;
   }
 
-  .myfantasyleague_menu>label span:before,
+  .myfantasyleague_menu > label span:before,
   .myfantasyleague_menu ul li label span:before {
     display: block;
     content: "";
@@ -10021,11 +9997,11 @@ div.sub-content.editable .insertIcons {
     top: 50%;
     margin-left: -0.563rem;
     margin-top: -0.063rem;
-    -webkit-transition: .25s;
-    transition: .25s
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
   }
 
-  .myfantasyleague_menu>label span:after,
+  .myfantasyleague_menu > label span:after,
   .myfantasyleague_menu ul li label span:after {
     display: block;
     content: "";
@@ -10036,22 +10012,22 @@ div.sub-content.editable .insertIcons {
     top: 50%;
     margin-left: -0.063rem;
     margin-top: -0.563rem;
-    -webkit-transition: .25s;
-    transition: .25s
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
   }
 
-  .myfantasyleague_menu>span {
+  .myfantasyleague_menu > span {
     display: block;
     font-size: 1rem;
     line-height: 1rem;
     position: absolute;
     left: 0.625rem;
     top: 0.938rem;
-    top: .9375rem
+    top: 0.9375rem;
   }
 
   .myfantasyleague_menu li {
-    display: block
+    display: block;
   }
 
   .myfantasyleague_menu ul,
