@@ -10898,7 +10898,7 @@ th a[data-pimg-processed] .playerImgTable .teamPositionCircle {
         font-weight: 900;
         font-size: 1rem;
     }
-    #AddDropForm # add-player-list .select-btn::before {
+    #AddDropForm #add-player-list .select-btn::before {
         color: #000;
     }
     #AddDropForm #drop-player-list .select-btn::before {
