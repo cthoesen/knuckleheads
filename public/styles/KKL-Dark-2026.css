@@ -15088,13 +15088,9 @@ th a[data-pimg-processed] .playerImgTable .teamPositionCircle {
     text-align: center;
 }
 
-/* below settings configure which columns appear on mobile devices
+/* below settings configure which columns appear on mobile devices */
 @media only screen and (max-width:48em) {
-  body.roster_base #roster .contractyear,
-  #roster .contractyear,
-  #roster td,
-  #roster th {
+  #roster tr td:nth-of-type(6) {
     display: table-cell !important
   }
 }
-******************************************************/
