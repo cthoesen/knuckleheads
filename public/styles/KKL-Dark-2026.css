@@ -2630,6 +2630,18 @@ div.mobile-wrap .reportform {
   padding: 0.25rem
 }
 /***********************************************************/
+
+/****** added custom styles for draft start calendar events *******/
+.cal-event li.calendar_event_draft_start:before {
+  color: #0070ff;
+}
+.calendar_event_draft_start {
+  color: #000000;
+  background-image: linear-gradient(to bottom right, #ffc500, #ffa500, #ffc500);
+  box-shadow: inset 0 0 0.625rem #ffa500;
+  padding: 0.25rem
+}
+/***********************************************************/
 /*below settings for custom calendar events to highlight them easier
 .calendar_event_custom {
   color: #fff;
