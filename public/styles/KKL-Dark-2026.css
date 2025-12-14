@@ -403,7 +403,7 @@ body.chat_popup .banner-container-wrap {
 .sub-content ul li:before,
 .show-sub-heads ul li:before,
 .trade-assets-wrapper li::marker {
-  content: "\f013"; /* changed from star (f005) to gear (f013) - this affects icon next to links on MFL site */
+  content: "\f085"; /* changed from star (f005) to gears (f085) - this affects icon next to links on MFL site */
   font-family: "Font Awesome 6 Pro";
   padding-right: 0.188rem;
   margin-left: -1.5em;
