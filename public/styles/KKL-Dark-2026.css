@@ -2618,7 +2618,7 @@ div.mobile-wrap .reportform {
 }
 /****** added custom styles for keeper selection calendar events *******/
 .cal-event li.calendar_event_keepers:before {
-  color: #f500ff;
+  color: #740278;
 }
 .calendar_event_keepers {
   color: #000000;
@@ -2632,7 +2632,7 @@ div.mobile-wrap .reportform {
 /***********************************************************/
 /****** added custom styles for draft start calendar events *******/
 .cal-event li.calendar_event_draft_start:before {
-  color: #0004ff;
+  color: #0104a9;
 }
 .calendar_event_draft_start {
   color: #000000;
@@ -2643,13 +2643,13 @@ div.mobile-wrap .reportform {
 /***********************************************************/
 /*below settings for custom calendar events to highlight them easier */
 .cal-event li.calendar_event_custom:before {
-  color: #fae800;
+  color: #ff3
 }
 .calendar_event_custom {
-  color: #ffffff;
+  color: #fff;
   text-shadow: 0 0.15rem 0.15rem #0e0e0e;
-  background-image: linear-gradient(to bottom right, #00c0f9, #00a4d6, #00c0f9);
-  box-shadow: inset 0 0 0.625rem #0043ff;
+  background-image: linear-gradient(to bottom right, #1f51ff, #0134ef, #1f51ff);
+  box-shadow: inset 0 0 0.625rem #04f;
   padding: 0.25rem
 }
 /************* above removed in latest css ***************/
