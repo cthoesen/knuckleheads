@@ -403,7 +403,7 @@ body.chat_popup .banner-container-wrap {
 .sub-content ul li:before,
 .show-sub-heads ul li:before,
 .trade-assets-wrapper li::marker {
-  content: "\f12e"; /* changed from star (f005) to puzzle piece (f12e) - this affects icon next to links on MFL site */
+  content: "\f44f"; /* changed from star (f005) to football helmet (f44f) - this affects icon next to links on MFL site */
   font-family: "Font Awesome 6 Pro";
   padding-right: 0.188rem;
   margin-left: -1.5em;
