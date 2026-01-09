@@ -47,3 +47,41 @@
     </div>
   </div>
 </div>
+
+<!------------------------------------------------------>
+<!----------------- End #3 - Quick Links --------------->
+<!------------------------------------------------------>
+
+
+<!------------------------------------------------------>
+<!------------- MENU LINKS IF ISSUE ON SITE ------------>
+<!------------------------------------------------------>
+
+<script>
+(function addCustomBasicLinks() {
+  try {
+    const baseURLDynamic = window.baseURLDynamic || "https://www48.myfantasyleague.com";
+    const year = window.year || "2025";
+    const league_id = window.league_id || "43570";
+
+    const mflCustomURL = `${baseURLDynamic}/${year}/logout?L=${league_id}&HIDE_CUST=0`;
+    const MFLBasicURL = `${baseURLDynamic}/${year}/logout?L=${league_id}&HIDE_CUST=1`;
+
+    document.querySelectorAll(".mm-help ul").forEach(ul => {
+      // Prevent duplicates if already added
+      if (ul.querySelector('a[href*="HIDE_CUST=0"]')) return;
+
+      const liCustom = document.createElement("li");
+      liCustom.innerHTML = `<a class="no-sub" href="${mflCustomURL}" title="Click to reinstall all custom coding. Click MFL Basic to remove">MFL Custom</a>`;
+
+      const liBasic = document.createElement("li");
+      liBasic.innerHTML = `<a class="no-sub" href="${MFLBasicURL}" title="Click to remove all custom coding. Click MFL Custom to revert">MFL Basic</a>`;
+
+      ul.appendChild(liCustom);
+      ul.appendChild(liBasic);
+    });
+  } catch (err) {
+    console.error("Error adding MFL Custom/Basic links", err);
+  }
+})();
+</script>
