@@ -2,8 +2,6 @@
 <!------------- Start #12 - Draft Reports -------------->
 <!------------------------------------------------------>
 
-
-
 <div id="myfantasyleague_tabs" class="mobile-wrap">
     <table class="homepagemodule report" id="tab_draft" cellspacing="1" align="center">
     <caption><span>Draft Reports</span></caption>
@@ -31,8 +29,8 @@
         </tr>
       </tbody>
     </table>
-    <div class="tabs_scroll updated_tabs">
-      <div id="tabbedcontent_1" class="homepagetabcontent" style="display:block">
+    <div class="tabs_scroll">
+      <div id="tabbedcontent_1" class="homepagetabcontent">
         <module name="DRAFT_STATUS"></module>
       </div>
       <div id="tabbedcontent_2" class="homepagetabcontent">
@@ -135,11 +133,13 @@ function refresh_Draft_Status() {
 }
 function refresh_Recent_Picks() {
 	const div = document.querySelector('#recent_draft_picks');
-	// Remove all images from the div
-	const images = div.querySelectorAll('img');
+	// Remove all images EXCEPT those inside .cus_player_wrapper
+	const images = div.querySelectorAll('img:not(.cus_player_wrapper img):not(.playerWrapper img)');
 	images.forEach(image => image.remove());
-	// Set inner HTML
+
+	// Reset inner HTML (forces refresh/reflow of DOM)
 	div.innerHTML = div.innerHTML;
+
 	try {
 		MFLPlayerPopupNewsIcon('recent_draft_picks');
 	} catch (error) {
@@ -176,9 +176,6 @@ document.addEventListener('click', function(e) {
 #myfantasyleague_tabs #avg_draft_time th:last-of-type{text-align:center}
 #myfantasyleague_tabs #avg_draft_time .franchiseicon{max-width:9.375rem}
 </style>
-
-
-
 
 <!------------------------------------------------------>
 <!-------------- End #12 - Draft Reports --------------->

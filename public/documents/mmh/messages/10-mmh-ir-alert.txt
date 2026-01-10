@@ -2,8 +2,6 @@
 <!------------ Start #10 - Lineup & IR Alert ----------->
 <!------------------------------------------------------>
 
-
-
 <!-----  LOAD LINEUP ALERT SCRIPT  ------>
 <script>
 var donotcountBye = true; // SETTING TO FALSE WILL NOT ALERT IF A OWNER IS STARTING A BYE WEEK PLAYER
@@ -28,9 +26,7 @@ var donotcountO = true; // SETTING TO FALSE WILL NOT ALERT IF A OWNER IS STARTIN
     </tbody>
 </table>
 </div>
-<script src="https://www.mflscripts.com/mfl-apps/lineups/alert/script.js"></script>
-
-
+<script src="https://www.mflscripts.com/mfl-apps/lineups/alert/script.js?v=1.12"></script>
 
 <style>
 #IRviolations .franchiseicon {
@@ -38,7 +34,6 @@ var donotcountO = true; // SETTING TO FALSE WILL NOT ALERT IF A OWNER IS STARTIN
     max-height: 3.125rem;
 }
 </style>
-
 
 <!-----  IR ALERT HTML  ------>
 <div class="mobile-wrap IRviolationsWrap">
@@ -61,14 +56,28 @@ var donotcountO = true; // SETTING TO FALSE WILL NOT ALERT IF A OWNER IS STARTIN
 
 <!-----  LOAD IR ALERT SCRIPT  ------>
 <script>    
-if (irAlert_offseason_hide === undefined) var irAlert_offseason_hide = false;
-if (deactivate_all_offseason === undefined) var deactivate_all_offseason = false;
-if ((is_offseason && irAlert_offseason_hide) || (is_offseason && deactivate_all_offseason)) {
-	var irWrapper = document.querySelectorAll('.IRviolationsWrap');
-	for (var i = 0; i < irWrapper.length; i++) {
-		irWrapper[i].parentNode.removeChild(irWrapper[i]);
-	}
-	console.log("Offseason - IR Alert Script");
+const irAlertElement = document.getElementById('IRviolations');
+
+if (irAlertElement) {
+	if (endWeek <= completedWeek) {
+		const theadElement = irAlertElement.querySelector('th');
+		const tfootElement = irAlertElement.querySelector('.reportfooter');
+		if (theadElement) {
+			theadElement.style.display = '';
+			if (tfootElement) tfootElement.style.display = 'none';
+			const newText = `${year} MFL season has ended - IR Alert Disabled`;
+			theadElement.textContent = newText;
+		}
+	} else if (startWeek > liveScoringWeek) {
+		const theadElement = irAlertElement.querySelector('th');
+		const tfootElement = irAlertElement.querySelector('.reportfooter');
+		if (theadElement) {
+			theadElement.style.display = '';
+			if (tfootElement) tfootElement.style.display = 'none';
+			const newText = `${year} MFL season has not started - IR Alert Disabled`;
+			theadElement.textContent = newText;
+		}
+		console.log("Season not started - IR Report will display 24 hour prior to first game on the week")
 } else {
 	var xhrAlerts = new XMLHttpRequest();
 	xhrAlerts.onreadystatechange = function () {
@@ -100,10 +109,9 @@ if ((is_offseason && irAlert_offseason_hide) || (is_offseason && deactivate_all_
 	};
 	xhrAlerts.open("GET", baseURLDynamic + "/" + year + "/options?L=" + league_id + "&O=07&PRINTER=1", true);
 	xhrAlerts.send();
+	}
 }
 </script>
-
-
 
 <!------------------------------------------------------>
 <!------------ End #10 - Lineup & IR Alert ------------->

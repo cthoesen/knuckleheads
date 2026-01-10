@@ -11,7 +11,7 @@ var playoffNameIconLogoAbbrev = 1;      // 0=name, 1=icon, 2=logo, 3=abbrev, 4=i
 var displayColumns = [6,7,13,8];        // Columns to display  (SEE FULL COLUMNS LIST BELOW)
 var divisionTieBreaker = [1,2,4,12];    // Tiebreaker array for division winners (SEE FULL TIEBREAKER LIST BELOW)
 var wildCardTieBreaker = [1,4,12];      // Tiebreaker array for wildcard winners (SEE FULL TIEBREAKER LIST BELOW) 
-var numDivisionTeams = 3;               // Set to 1 for only one division winner per division 
+var numDivisionTeams = 1;               // Set to 1 for only one division winner per division 
 var numWildCardTeams = 4;               // Set the total number of wildcard teams (this is by conference not total)
 var useSweepRule = false;           	// Set to false (NFL Rule for wildcard tiebreaker when 3 teams tied) 
 var useWinPctRule = 1;              	// For head to head 0 - use only for 2 teams tied; 1 - MFL Default; 2 - 1 game minimum req'd; 3 - Must have played all the tied teams at least once

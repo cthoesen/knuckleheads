@@ -2,8 +2,6 @@
 <!--------------- Start #19 - IR Report ---------------->
 <!------------------------------------------------------>
 
-
-
 <!-- IR REPORT VARIABLES -->
 <script>
 var irReport_qualifier = ({ "Q":false , "D":false , "O":true , "I": true , "C":true , "H":false , "S":false });
@@ -49,8 +47,6 @@ var irReport_activationDate = 0;        //If league uses minimum days on IR then
   .ir-report-modal-header h2{width:100%;border-left:0;border-right:0;border-top:0;display:inline-block;border-radius:0;font-weight:700;font-size:1.375rem;background:none;padding:0.5rem 0.313rem;text-align:left;line-height:100%;text-transform:uppercase;color:var(--main-four,var(--main,#080e25));padding-bottom:0}
 
 </style>
-
-
 
 <!------------------------------------------------------>
 <!---------------- End #19 - IR Report ----------------->

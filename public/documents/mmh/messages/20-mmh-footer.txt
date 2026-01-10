@@ -2,12 +2,11 @@
 <!----------------- Start #20 - Footer ----------------->
 <!------------------------------------------------------>
 
-
 <script>
 // ROSTERS OPTIONS
 var tradeViewPermission = true;     // true = display trade button , false = hide trade button
 // var tradeViewPermission must be set to true to set showTradesDefault to true , otherwise leave showTradesDefault as false
-var showTradesDefault      = false;  // Set to ture to display the trades tab on page load , other wise set to false to show roster tab
+var showTradesDefault   = false;  // Set to true to display the trades tab on page load , other wise set to false to show roster tab
 var fid_commish         = "0001";   // enter 4 digit franchiseID of commissioners franchise , if commish has no franchise skip
 var showNav             = false;     // true = mfl nav menu for weekly rosters and display grid , false = hide mfl nav menu
 var showMFLdefaultBtn   = true;     // set to true to add button to click and show MFL default rosters page
@@ -25,7 +24,7 @@ var SetCaptionIconWidth = '15.625';      // set width of icons in roster table c
 
 var RosterEnableMedia   = true;     // true = if your skin is using responsive design must set true , false = skin not using responsive css
 
-// Show Trade calculator for sarlary and contrace leagues
+// Show Trade calculator for salary and contract leagues
 var showCalculator      = true;     // set to true to add calculations to the trade section
 var showTopCalculator   = true;     // set to true to display calculations at the top of your screen (useful for large rosters)
 var calcHeaderName = 'Giving Away';  // Title for what your team is trading away or giving up in the trade
@@ -46,7 +45,7 @@ var ls_popup_abbrev_name_icon = 2;             // -1=disable; 0=abbrev; 1=name; 
 var ls_orig_proj_when_final = true;            //set true to change pace to projection when games go final
 var ls_popup_status = true;                    //set true to add status of player to popup
 var ls_box_abbrev_name_icon = 2;               //0=abbrev; 1=name; 2=icon; 3=icon+abbrev; 4=icon+name
-var ls_hide_bye_teams = true;                 //set to true to hide boxscore matchup teams on bye weeks
+var ls_hide_bye_teams = false;                 //set to true to hide boxscore matchup teams on bye weeks
 var ls_show_win_probability = true;            //set to true to show MFL H2H win probability - only used for H2H leagues and MFL setting must be set to "Yes"
 var BreakRows     = 1;       			//1=1 row of matchups(default);   2=2 rows of matchups;  3=3 rows of matchups
 
@@ -70,7 +69,7 @@ var load_topsHistory_script      = true;
 var load_contractHistory_script  = false;
 var load_history_script          = true;       //Set to true to load https://www.mflscripts.com/mfl-apps/history/integrated/script.js
 var load_irReport_script         = true;       //Set to true to load https://www.mflscripts.com/mfl-apps/injuredReserve/IRreport/script.js
-var load_diceRoll_script         = true;       //Set to true to load https://www.mflscripts.com/mfl-apps/diceRoll/script.js
+var load_diceRoll_script         = false;       //Set to true to load https://www.mflscripts.com/mfl-apps/diceRoll/script.js
 
 // MFL POPUP ADD-ON
 var enableAddonNewPM = true;
@@ -101,7 +100,8 @@ var notification_duration_seconds = 1.5;        // 2.5 seconds
 <div id="trade_check" style="display:none"><module name="TRADES"></module></div>
 
 <!-- GLOBAL FOOTER  -->
-<script src="https://knuckleheads.netlify.app/scripts/footer.js"></script>
+<!-- <script src="https://www.mflscripts.com/mfl-apps/global/footer.js?v=1.00"></script> -->
+<script src="https://knuckleheads.netlify.app/scripts/footer-new.js"></script>
 
 <!-- STANDINGS COLUMNS SETUP  -->
 <script src="https://mflscripts.com/mfl-apps/playoffs/standingsColumns.js"></script>
@@ -112,7 +112,8 @@ var notification_duration_seconds = 1.5;        // 2.5 seconds
 <footer>
 <div class="footercontainer-outer"><div class="footercontainer"><div class="container first-container">
 <div>
-<span class="f-title-icon">Defending League Champion</span><span class="f-icon"><img alt=Twisters Auction height=75 src="https://knuckleheads.netlify.app/images/teams/mmh/Icon-MMH-Twisters.png" title="Twisters Auction"></span>
+<span class="f-title-icon">Defending League Champion</span>
+<span class="f-icon"><img alt=Twisters Auction height=75 src="https://knuckleheads.netlify.app/images/teams/mmh/Icon-MMH-Twisters.png" title="2024 Twisters Auction"></span>
 <span class="f-link"><a>2024 Twisters Auction</a></span>
 </div></div>
 <div class="container"><div><span class="f-title">Management</span>
@@ -141,8 +142,6 @@ var notification_duration_seconds = 1.5;        // 2.5 seconds
 <span class="f-link"><a href="//%HOST%/%YEAR%/options?L=%LEAGUEID%&O=101">Power Rank</a></span>
 </div></div></div></div>
 </footer>
-
-
 
 <!------------------------------------------------------>
 <!------------------ End #20 - Footer ------------------>
