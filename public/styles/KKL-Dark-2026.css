@@ -2616,7 +2616,8 @@ div.mobile-wrap .reportform {
 .cal-event li.calendar_event_waiver_none:before {
   color: #fff;
 }
-/****** added custom styles for keeper selection calendar events *******/
+
+/****** added custom styles for keeper selection calendar events ******/
 .cal-event li.calendar_event_keepers:before {
   color: #740278;
 }

@@ -1543,7 +1543,7 @@ a:active {
 caption,
 #commissioner_setup table.two_column_layout th {
   font-size: 1.375rem;
-  background: transparent url(https://knuckleheads.netlify.app/images/captions/Caption-Dark.png);
+  background: transparent url(https://knuckleheads.netlify.app/images/captions/caption-dark.png);
   background-position: center right; /*added*/
   /*box-shadow:  inset 0 -1.25rem 1.5rem -0.25rem var(--neutral-blur, gray); /*inset shadow from bottom*/
   padding: 0.5rem;
@@ -1570,7 +1570,7 @@ caption,
 /* Added below logo before captions */
 caption:before {
   padding: 1.25rem 1.75rem 1.75rem 1.25rem;
-  background: url(https://knuckleheads.netlify.app/svg-icons/KKL-Cube.svg) no-repeat;
+  background: url(https://knuckleheads.netlify.app/svg-icons/mmh-cube.svg) no-repeat;
   background-size: contain;
   background-position: 25% center;
   vertical-align: 0.5rem;
@@ -4871,7 +4871,7 @@ Team Logos
   padding-left: .188rem;
   padding-right: 0.188rem;
   padding-right: .188rem;
-  background: rgba(0, 0, 0, 0) url(https://knuckleheads.netlify.app/images/captions/Caption-Dark.png); /*added*/
+  background: rgba(0, 0, 0, 0) url(https://knuckleheads.netlify.app/images/captions/caption-dark.png); /*added*/
   background-position: center right; /*added*/
 }
 /* below settings to decrease size of icons for standings on mobile devices */
@@ -4991,14 +4991,12 @@ div.mobile-wrap:empty {
 
 #article iframe {
   max-width: 28.75rem;
-  max-width: 28.75rem;
 }
 
 #youtubevideo embed,
 #trash_talk_video {
   width: auto !important;
   max-width: 98% !important;
-  margin: 0.625rem auto;
   margin: 0.625rem auto;
   background: transparent;
 }
@@ -8964,14 +8962,14 @@ div.ls_team_points {
 
 td.winIcon .roadWinIcon-img:before {
   font-family: "Font Awesome 6 Pro";
-  content: "\f0d9";
+  content: "\f0d9"; /* caret left */
   color: #90ee90;
   font-size: 1rem;
 }
 
 td.winIcon .homeWinIcon-img:before {
   font-family: "Font Awesome 6 Pro";
-  content: "\f0da";
+  content: "\f0da"; /* caret right */
   color: #90ee90;
   font-size: 1rem;
 }
@@ -10019,8 +10017,7 @@ div.sub-content.editable .insertIcons {
   }
 
   .myfantasyleague_menu ul li ul li.has-sub label span {
-    right: 1.5rem;
-    right: 1.5rem;
+    right: 1.5rem;    
   }
 
   .myfantasyleague_menu > label span:before,
@@ -10068,7 +10065,7 @@ div.sub-content.editable .insertIcons {
   }
 
   .myfantasyleague_menu ul,
-    .myfantasyleague_menu ul ul {
+  .myfantasyleague_menu ul ul {
         margin: 0;
         display: block;
         position: static;
@@ -10104,8 +10101,7 @@ div.sub-content.editable .insertIcons {
         border-style: solid;
         border-top-width: 0.063rem;
         text-indent: 0.625rem;
-        font-size: 0.875rem;
-        font-size: 0.875rem;
+        font-size: 0.875rem;        
     }
     .myfantasyleague_menu ul ul li a {
         border: 0;
@@ -10114,8 +10110,7 @@ div.sub-content.editable .insertIcons {
     }
     .myfantasyleague_menu li ul li a,
     .myfantasyleague_menu li a {
-        line-height: 2.813rem;
-        line-height: 2.813rem;
+        line-height: 2.813rem;        
     }
    .myfantasyleague_menu ul ul li a:before {
         top: 50%;
@@ -10129,23 +10124,19 @@ div.sub-content.editable .insertIcons {
         border-left: 0.375rem solid #fff;
     }
     .myfantasyleague_menu ul li ul li a {
-        text-indent: 1.563rem;
-        text-indent: 1.563rem;
+        text-indent: 1.563rem;        
     }
     .myfantasyleague_menu ul li ul li.player-search a {
         text-indent: 0.625rem;
     }
     .myfantasyleague_menu ul li ul li a:before {
-        left: 1.25rem;
-        left: 1.25rem;
+        left: 1.25rem;        
     }
     .myfantasyleague_menu ul li ul li.has-sub ul li a {
-        text-indent: 2.5rem;
-        text-indent: 2.5rem;
+        text-indent: 2.5rem;        
     }
     .myfantasyleague_menu ul li ul li.has-sub ul li a:before {
-        left: 2.188rem;
-        left: 2.188rem;
+        left: 2.188rem;        
     }
     .myfantasyleague_menu li:hover > a {
         text-decoration: none;
@@ -10164,8 +10155,7 @@ div.sub-content.editable .insertIcons {
         transform: rotate(270deg);
     }
     .myfantasyleague_menu input:checked ~ ul {
-        max-height: 500rem;
-        max-height: 500rem;
+        max-height: 500rem;        
     }
     .myfantasyleague_menu ul ul {
         border: 0;
@@ -14231,7 +14221,6 @@ th a[data-pimg-processed] .playerImgTable .teamPositionCircle {
 .playerImgTable .playerPosition {
     color: var(--accent, #000);
 }
-
 
 /* mobile adjustment */
 @media only screen and (max-width: 28.125rem) {

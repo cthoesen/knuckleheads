@@ -1474,13 +1474,6 @@ table,
 
 /* style for report containers */
 
-/* style for championship banners - will not properly center banner display image without below settings */
-.img-banner {
-  display: block;
-  height: auto;
-  max-width: 100%;
-}
-
 /***************************************/
 
 
