@@ -395,7 +395,7 @@ body.chat_popup .banner-container-wrap {
 .oddtablerow td ul,
 .eventablerow td ul,
 .sub-content ul {
-  list-style-type: none
+  list-style-type: none;
 }
 
 .oddtablerow td ul li:before,
