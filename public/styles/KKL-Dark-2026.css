@@ -164,7 +164,7 @@ td {
   --primary-dark: #0d339e;
   --primary-darker:#013244;
   --accent: #3bc14a;
-  --accent-alt: #f18118;
+  --accent-alt: #ff13f0;
   --bg-opacity: rgba(0, 35, 95, 0.15);
   --bg-opacity-brighter: rgba(130, 255, 245, 0.2);
   --fa-main-color: #204fd1;
@@ -254,7 +254,7 @@ body {
   background-position: 50% 0%, center top;
   background-repeat: no-repeat repeat;
   background-color: #080808;
-  font-family: "ASAP Condensed", "Roboto Condensed", "Oswald", "Bebas Neue", "Open Sans", sans-serif;
+  font-family: "League Gothic", "Roboto Condensed", "Oswald", "Bebas Neue", "Open Sans", sans-serif;
   font-size: 0.813rem;
   font-optical-sizing: auto;
   font-weight: 400;
