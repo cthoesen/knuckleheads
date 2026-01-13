@@ -3192,6 +3192,7 @@ body.full-width {
   box-shadow: 0 0 0.313rem #00000080;
   border-radius: 0.188rem;
   padding: 0.625rem !important;
+  overflow: hidden scroll;
 }
 
 .toggle_module_search {
