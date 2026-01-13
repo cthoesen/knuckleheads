@@ -22,13 +22,13 @@ td {
   --neutral-light: #cbcbcb;
   --neutral-dark: #0c0c0c;
   --neutral-blur: rgba(69, 69, 69, 0.15);
-  --primary: #144be4; /*this is the primary color for button icons*/
+  --primary: #204fd1; /*this is the primary color for button icons*/
   --primary-light: #007ba7;
   --primary-lighter: #61cbf5;
   --primary-dark: #0d339e;
   --primary-darker:#013244;
   --accent: #3bc14a; /*this is the accent color for button icons*/
-  --accent-alt: #ffe45e;
+  --accent-alt: #f18118; /* warning color for roster report */
   --bg-opacity: rgba(0, 35, 95, 0.15);
   --bg-opacity-brighter: rgba(130, 255, 245, 0.2);
   --fa-main-color: #144be4;
@@ -158,16 +158,16 @@ td {
 }
 
 .theme-cerulean {
-  --primary: #144be4;
+  --primary: #204fd1;
   --primary-light: #007ba7;
   --primary-lighter: #61cbf5;
   --primary-dark: #0d339e;
   --primary-darker:#013244;
   --accent: #3bc14a;
-  --accent-alt: #ffe45e;
-  --bg-opacity: rgba(0, 46, 125, 0.15);
+  --accent-alt: #f18118;
+  --bg-opacity: rgba(0, 35, 95, 0.15);
   --bg-opacity-brighter: rgba(130, 255, 245, 0.2);
-  --fa-main-color: #144be4;
+  --fa-main-color: #204fd1;
 }
 
 .b_name {
@@ -254,7 +254,7 @@ body {
   background-position: 50% 0%, center top;
   background-repeat: no-repeat repeat;
   background-color: #080808;
-  font-family: "Roboto Condensed", "Oswald", "Bebas Neue", "Open Sans", sans-serif;
+  font-family: "ASAP Condensed", "Roboto Condensed", "Oswald", "Bebas Neue", "Open Sans", sans-serif;
   font-size: 0.813rem;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -2008,7 +2008,7 @@ img {
 .warning a:link,
 .warning a:active,
 .warning a:visited {
-  color: var(--primary, #ff4200);
+  color: var(--accent-alt, #ff4200);
 }
 
 .warning a:hover,
