@@ -28,7 +28,7 @@ td {
   --primary-dark: #0d339e;
   --primary-darker:#013244;
   --accent: #3bc14a; /*this is the accent color for button icons*/
-  --accent-alt: #f18118; /* warning color for roster report */
+  --accent-alt: #ff13f0; /* warning color for roster report */
   --bg-opacity: rgba(0, 35, 95, 0.15);
   --bg-opacity-brighter: rgba(130, 255, 245, 0.2);
   --fa-main-color: #144be4;
@@ -3192,7 +3192,7 @@ body.full-width {
   box-shadow: 0 0 0.313rem #00000080;
   border-radius: 0.188rem;
   padding: 0.625rem !important;
-  overflow: hidden scroll;
+  overflow: hidden scroll; /* added to allow vertical scroll on player popup*/
 }
 
 .toggle_module_search {
