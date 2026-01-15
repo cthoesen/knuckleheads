@@ -645,6 +645,22 @@ body.chat_popup .banner-container-wrap {
   color: var(--primary, #ff4200);
 }
 
+/* Base styles: Hide the mobile image by default */
+.mobile-only {
+    display: none;
+}
+
+/* Styles for screens smaller than 768px (common mobile breakpoint) */
+@media screen and (max-width: 767px) {
+    .desktop-only {
+        display: none;
+    }
+    .mobile-only {
+        display: block; /* Show the mobile image */
+        width: 100%; /* Ensure it's responsive */
+    }
+}
+
 /****** ADDED 3-3-23 for full width banner ********/
 .banner-container-wrap-full {
   width: 100%;
