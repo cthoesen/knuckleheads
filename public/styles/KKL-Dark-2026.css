@@ -254,7 +254,7 @@ body {
   background-position: 50% 0%, center top;
   background-repeat: no-repeat repeat;
   background-color: #080808;
-  font-family: "News Cycle", "Oswald", "Open Sans", sans-serif;
+  font-family: "Google Sans", "Lato", "Noto Sans", "News Cycle", "Oswald", "Open Sans", sans-serif;
   font-size: 0.813rem;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -2009,6 +2009,7 @@ img {
 .warning a:active,
 .warning a:visited {
   color: var(--accent-alt, #ff4200);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .warning a:hover,
