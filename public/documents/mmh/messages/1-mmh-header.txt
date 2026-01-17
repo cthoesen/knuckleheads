@@ -11,7 +11,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=News+Cycle:wght@400;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 
 <style>
 #tabmenu-wrap li#tab7 a:before, #tabmenu-wrap #tab_title.tab7:before{content:"\f155";}
@@ -75,8 +75,6 @@ function getStoredTheme(year, league_id, defaultTheme) {
 })();
 </script>
 
-
-
 <!-------------------------------------->
 <!---------- HEADER SECTION 2 ---------->
 <!-------------------------------------->
@@ -90,8 +88,6 @@ linkRelIco.setAttribute('rel', 'shortcut icon');
 linkRelIco.setAttribute('type', 'image/x-icon');
 document.head.appendChild(linkRelIco);
 </script>
-
-
 
 <!-------------------------------------->
 <!---------- HEADER SECTION 3 ---------->
@@ -127,9 +123,9 @@ document.head.appendChild(linkRelIco);
 	<div class="banner-container-wrap-full">
 		<a class="full_height_banner" href="//%HOST%/%YEAR%/home/%LEAGUEID%" title="Return to home page">
 
-			<!-- INSERT URL PATH OF YOUR OWN CUSTOM BANNER - RECOMMENDED DEMISIONS ARE 1148px wide and 220px tall -->
-			<img src="https://knuckleheads.netlify.app/images/league/mmh-league-banner.jpg">
-
+			<!-- INSERT URL PATH OF YOUR OWN CUSTOM BANNER - RECOMMENDED DIMENSIONS ARE 1148px wide and 220px tall -->
+			<img src="https://knuckleheads.netlify.app/images/league/mmh-banner-2026.jpg" alt="Desktop Banner" class="desktop-only">
+                <img src="https://knuckleheads.netlify.app/images/league/kkl-banner-small-2026.jpg" alt="Mobile Banner" class="mobile-only">
 
 		</a>
 	</div>
@@ -439,11 +435,33 @@ var chatFranchiseIconHeight = 1.25;  // value currently set to a "rem" value - v
 var chatImageMaxHeight = 3.125;  // value currently set to a "rem" value - var useREM = true; in header required for REM values , or set to px value
 var chatImageMaxWidth = 12.5;  // value currently set to a "rem" value - var useREM = true; in header required for REM values , or set to px value
 
-//ENABLE PLAYER NEWS POPUP
-var MFLPopupEnablePlayerNews = true;
+// ======================= SETTINGS FOR SHOWING PLAYER IMAGES =======================================
+var MFLEnablePlayerImages = true; 	// set to false to remove player images from tables
+var HidePlayerDetails = false;		// set to true to remove players position and team to right of each player image and names
 
-//ENABLE ARTICLE POPUP
+// Optional: add your own selectors to remove player images from players
+window.DO_NOT_PROCESS_IMAGES_EXTRA = [
+  '.addAnElementClass',
+  '#addAnElementID'
+];
+
+// =================== SETTINGS FOR SHOWING NEWS ICONS BY PLAYERS NAMES =============================
+var MFLPopupEnablePlayerNews = true; // set to false to remove player news icons from tables
+
+// Optional: add your own selectors to remove news icons from players
+window.DO_NOT_PROCESS_NEWSICONS_EXTRA = [
+  '.addAnElementClass',
+  '#addAnElementID'
+];
+
+// ==================== SETTINGS FOR SHOWING NEWS ICONS FOR ARTICLES ================================
 var MFLPopupEnableArticle = true;
+
+// Optional: add your own selectors to remove news icons from article links
+window.DO_NOT_PROCESS_ARTICLEICONS_EXTRA = [
+  '.addAnElementClass',
+  '#addAnElementID'
+];
 
 //ENABLE SCORES POPUP
 var MFLScoreDetailsPopup = true;  // Set to true to enable a popup for player scores
@@ -485,6 +503,7 @@ var MFLPlayerPopupIncludeNFLLogo = true;
 var ShowMFLsearch = true; // Set this to true to have a player button added to menu
 
 // CUSTOM SUBMIT LINEUP VAR
+var lu_includeValidation = true;     // set to false to remove lineup validation
 var hideFantasySharks = false;	    //Set to true to hide links to Fantasy Sharks
 var hideOptionalMsg   = false;       //Set to true to hide optional message input below lineup table
 var hideLineupHint    = false;	    //Set to true to hide the lineup "Hint" message below lineup table
@@ -604,12 +623,12 @@ var controlsRed     = "red";                           // set color for the cont
 <!-- MINI SCOREBOARD HTML -->
 <div id="MFLBoxWrapper"></div>
 
-<!-- HIDE IN OFFSEASON -->
+<!-- In-Season Mini Scoreboard -->
 <script>
-// Below is example of the 2023 season - start date 1 day prior to preseason game 1 , end date 1 day after Superbowl
+// Below is an example of the 2024 season - start date 1 day prior to preseason game 1 , end date 1 day after Superbowl
 //var setCustomDates = true;
-//var nflStartWk = "08/02/2024";  // define a date 1 day prior to when you want offseason script to start
-//var nflEndWk   = "02/12/2025";  // define a date 1 day after you want offseason scripts to be removed
+//var nflStartWk = "08/01/2025";  // define a date 1 day prior to when you want offseason script to start
+//var nflEndWk   = "02/01/2026";  // define a date 1 day after you want offseason scripts to be removed
 
 // Hide these scripts in offseason
 var deactivate_all_offseason = false;     //set to true to deactivate ALL eligible scripts during the offseason

@@ -60,7 +60,7 @@ td {
   transform: translate(-50%, -50%);
 }
 
-/* ADD ROOT TO THEME TO SET AS DEFAULT - DEFAULT ROOT MUST BE DEFINED FOR ONE THEME */
+/* ADD THEME TO ROOT TO SET AS DEFAULT - DEFAULT ROOT MUST BE DEFINED FOR ONE THEME */
 .theme-dk-yellow {
   --primary: #f7b534;
   --primary-light: #F5BD51;
@@ -394,7 +394,7 @@ body.chat_popup .banner-container-wrap {
 .oddtablerow td ul,
 .eventablerow td ul,
 .sub-content ul {
-  list-style-type: none
+  list-style-type: none;
 }
 
 .oddtablerow td ul li:before,
@@ -2633,7 +2633,7 @@ div.mobile-wrap .reportform {
   color: #fff;
 }
 
-/****** added custom styles for keeper selection calendar events ******/
+/****** added custom styles for keeper selection calendar events *******/
 .cal-event li.calendar_event_keepers:before {
   color: #740278;
 }
@@ -5009,14 +5009,12 @@ div.mobile-wrap:empty {
 
 #article iframe {
   max-width: 28.75rem;
-  max-width: 28.75rem;
 }
 
 #youtubevideo embed,
 #trash_talk_video {
   width: auto !important;
   max-width: 98% !important;
-  margin: 0.625rem auto;
   margin: 0.625rem auto;
   background: transparent;
 }
@@ -10148,21 +10146,17 @@ div.sub-content.editable .insertIcons {
     }
     .myfantasyleague_menu ul li ul li a {
         text-indent: 1.563rem;
-        text-indent: 1.563rem;
     }
     .myfantasyleague_menu ul li ul li.player-search a {
         text-indent: 0.625rem;
     }
     .myfantasyleague_menu ul li ul li a:before {
         left: 1.25rem;
-        left: 1.25rem;
     }
     .myfantasyleague_menu ul li ul li.has-sub ul li a {
         text-indent: 2.5rem;
-        text-indent: 2.5rem;
     }
     .myfantasyleague_menu ul li ul li.has-sub ul li a:before {
-        left: 2.188rem;
         left: 2.188rem;
     }
     .myfantasyleague_menu li:hover > a {
@@ -10182,7 +10176,6 @@ div.sub-content.editable .insertIcons {
         transform: rotate(270deg);
     }
     .myfantasyleague_menu input:checked ~ ul {
-        max-height: 500rem;
         max-height: 500rem;
     }
     .myfantasyleague_menu ul ul {
@@ -14249,7 +14242,6 @@ th a[data-pimg-processed] .playerImgTable .teamPositionCircle {
 .playerImgTable .playerPosition {
     color: var(--accent, #000);
 }
-
 
 /* mobile adjustment */
 @media only screen and (max-width: 28.125rem) {

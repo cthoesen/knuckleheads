@@ -158,16 +158,16 @@ td {
 }
 
 .theme-cerulean {
-  --primary: #144be4;
+  --primary: #204fd1;
   --primary-light: #007ba7;
   --primary-lighter: #61cbf5;
   --primary-dark: #0d339e;
   --primary-darker:#013244;
   --accent: #3bc14a;
-  --accent-alt: #ffe45e;
-  --bg-opacity: rgba(0, 46, 125, 0.15);
+  --accent-alt: #ff13f0;
+  --bg-opacity: rgba(0, 35, 95, 0.15);
   --bg-opacity-brighter: rgba(130, 255, 245, 0.2);
-  --fa-main-color: #144be4;
+  --fa-main-color: #204fd1;
 }
 
 .b_name {
@@ -254,7 +254,7 @@ body {
   background-position: 50% 0%, center top;
   background-repeat: no-repeat repeat;
   background-color: #030303;
-  font-family: "Roboto Condensed", "Oswald", "Bebas Neue", "Open Sans", sans-serif;
+  font-family: "Google Sans", "Lato", "Noto Sans", "News Cycle", "Oswald", "Open Sans", sans-serif;
   font-size: 0.813rem;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -643,6 +643,22 @@ body.chat_popup .banner-container-wrap {
 .icon-bar span.fa-stack i:nth-child(2):before,
 .icon-bar .svg-iconlink:hover span.fa-stack i:nth-child(1):before {
   color: var(--primary, #ff4200);
+}
+
+/* Base styles: Hide the mobile image by default */
+.mobile-only {
+    display: none;
+}
+
+/* Styles for screens smaller than 768px (common mobile breakpoint) */
+@media screen and (max-width: 767px) {
+    .desktop-only {
+        display: none;
+    }
+    .mobile-only {
+        display: block; /* Show the mobile image */
+        width: 100%; /* Ensure it's responsive */
+    }
 }
 
 /****** ADDED 3-3-23 for full width banner ********/
@@ -2009,6 +2025,7 @@ img {
 .warning a:active,
 .warning a:visited {
   color: var(--accent-alt, #ff4200);
+  font-family: "Noto Sans", sans-serif;
 }
 
 .warning a:hover,
@@ -2615,6 +2632,7 @@ div.mobile-wrap .reportform {
 .cal-event li.calendar_event_waiver_none:before {
   color: #fff;
 }
+
 /****** added custom styles for keeper selection calendar events *******/
 .cal-event li.calendar_event_keepers:before {
   color: #740278;
