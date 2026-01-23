@@ -249,7 +249,7 @@ input[type="radio"] {
 body {
   color: var(--accent, #f8f7c3);
   text-rendering: optimizeLegibility;
-  background-image: url(//knuckleheads.netlify.app/images/backgrounds/mmh-side-particles.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);
+  background-image: url(//knuckleheads.netlify.app/images/backgrounds/bsb-side-particles.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);
   background-attachment: fixed;
   background-position: 50% 0%, center top;
   background-repeat: no-repeat repeat;
@@ -15133,7 +15133,10 @@ th a[data-pimg-processed] .playerImgTable .teamPositionCircle {
 
 /* below settings configure which columns appear on mobile devices
 @media only screen and (max-width:48em) {
-  #roster tr td:nth-of-type(6) {
+  body.roster_base #roster .contractyear,
+  #roster .contractyear,
+  #roster td,
+  #roster th {
     display: table-cell !important
   }
 }
