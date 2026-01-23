@@ -32,7 +32,7 @@ var hideTilClk = true; // Set to true to hide the calculations tables until play
 
 // LIVE SCORING OPTIONS
 var ls_scoreboardName = "SCOREBOARD";   //enter text to name your scoreboard
-var ls_commish_id = "0001";			//set the franchise ID of commissioners franchise to show that matchup 1st when commish
+var ls_commish_id = "0001";			//set the franchise ID of commissioners franchise to show that matchup first when commish
 var ls_loader = true;				//use loading screen if scoreboard takes too long to load
 var largeLeagueSB = false;			//set to true if scoreboard doesn't load all the time - this is for large leagues
 var showTeamName = false;                      //set to true to display franchise names in scoreboard header
@@ -112,9 +112,8 @@ var notification_duration_seconds = 1.5;        // 2.5 seconds
 <footer>
 <div class="footercontainer-outer"><div class="footercontainer"><div class="container first-container">
 <div>
-<span class="f-title-icon">Defending League Champion</span>
-<span class="f-icon"><img alt=Twisters Auction height=75 src="https://knuckleheads.netlify.app/images/teams/mmh/Icon-MMH-Twisters.png" title="2024 Twisters Auction"></span>
-<span class="f-link"><a>2024 Twisters Auction</a></span>
+<span class="f-title-icon">Defending League Champion</span><span class="f-icon"><img alt=To Be Determined height=75 src="https://knuckleheads.netlify.app/images/teams/bsb/Icon-BSB-TBD.png" title="To Be Determined"></span>
+<span class="f-link"><a>To Be Determined</a></span>
 </div></div>
 <div class="container"><div><span class="f-title">Management</span>
 <span class="f-link"><a href="//%HOST%/%YEAR%/options?L=%LEAGUEID%&O=02">Submit Lineup</a></span>
