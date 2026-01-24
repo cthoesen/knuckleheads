@@ -162,16 +162,16 @@ td {
 }
 
 .theme-cerulean {
-  --primary: #204fd1;
-  --primary-light: #43c0f1;
-  --primary-lighter: #61cbf5;
-  --primary-dark: #0d339e;
-  --primary-darker:#013244;
-  --accent: #38aecc; /*this is the accent color for button icons*/
-  --accent-alt: #e313f2; /* this is the color for warnings */
+  --primary: #1f4fd1;
+  --primary-light: #1facd1;
+  --primary-lighter: #65bbd1;
+  --primary-dark: #143285;
+  --primary-darker:#102767;
+  --accent: #89d11f; /*this is the accent color for button icons*/
+  --accent-alt: #631fd1; /* this is the color for warnings */
   --bg-opacity: rgba(0, 35, 95, 0.15);
   --bg-opacity-brighter: rgba(130, 255, 245, 0.2);
-  --fa-main-color: #204fd1;
+  --fa-main-color: #1f4fd1;
 }
 
 .b_name {
