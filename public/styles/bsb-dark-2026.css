@@ -251,8 +251,8 @@ input[type="radio"] {
 }*/
 
 body:has(#body-kkl) {
-  color: var(--accent, #f8f7c3);
-  text-rendering: optimizeLegibility;
+  /*color: var(--accent, #f8f7c3);
+  text-rendering: optimizeLegibility;*/
   background-image: url(//knuckleheads.netlify.app/images/backgrounds/kkl-side-particles.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);
   background-attachment: fixed;
   background-position: 50% 0%, center top;
@@ -273,10 +273,10 @@ body:has(#body-kkl) {
 body {
   color: var(--accent, #f8f7c3);
   text-rendering: optimizeLegibility;
-  background-image: url(//knuckleheads.netlify.app/images/backgrounds/bsb-side-particles.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);
+  /*background-image: url(//knuckleheads.netlify.app/images/backgrounds/bsb-side-particles.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);
   background-attachment: fixed;
   background-position: 50% 0%, center top;
-  background-repeat: no-repeat repeat;
+  background-repeat: no-repeat repeat;*/
   background-color: #030303;
   font-family: "Google Sans", "Lato", "Noto Sans", "News Cycle", "Oswald", "Open Sans", sans-serif;
   font-size: 0.813rem;
@@ -291,8 +291,13 @@ body {
 }
 
 /* Added below logo before captions for kkl */
-#body-kkl caption:before {
-  background: url(https://knuckleheads.netlify.app/svg-icons/KKL-Cube.svg) no-repeat;  
+#body-kkl caption::before {
+  padding: 1.25rem 1.75rem 1.75rem 1.25rem;
+  background: url(https://knuckleheads.netlify.app/svg-icons/KKL-Cube.svg) no-repeat; 
+  background-size: contain;
+  background-position: 25% center;
+  vertical-align: 0.5rem;
+  content: "";
 }
 
 /*CGT - mobile background parallax settings*/
