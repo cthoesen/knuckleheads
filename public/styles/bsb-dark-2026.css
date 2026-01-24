@@ -154,8 +154,8 @@ td {
   --primary-lighter: #44e785;
   --primary-dark: #32a05e;
   --primary-darker:#267d49;
-  --accent: #e8e843;
-  --accent-alt: #ca3cff;
+  --accent: #e8e843; /* this is the accent color for button icons and also player positions */
+  --accent-alt: #ca3cff; /* this is the color for warnings */
   --bg-opacity: rgba(56, 181, 105, .05);
   --bg-opacity-brighter: rgba(255, 253, 130, .2);
   --fa-main-color: #38b569;
@@ -14268,8 +14268,8 @@ div.ym {
 }
 /*set bg color for team position circle - visible on mobile displays and color of text in circle*/
 .playerImgTable .teamPositionCircle {
-    background: var(--accent, #000);
-    color: #fff;
+    background: var(--accent, #fff);
+    color: #000;
 }
 .theme-dk-yellow .playerImgTable .teamPositionCircle {
     color: #000;
