@@ -198,6 +198,317 @@ td {
   --neutral-light: #fff;
 }
 
+.theme-bears {
+  --primary: #0B162A;
+  --accent: #FE4000;
+  --primary-lighter: #CECED9;
+  --primary-light: #FE4000;
+  --primary-dark: #521600;
+  --primary-darker: #0B162A;
+  --neutral-light: #fff;
+}
+
+.theme-bengals {
+  --primary: #000000;
+  --accent: #f04e23;
+  --primary-lighter: #FFC2AD;
+  --primary-light: #FF7647;
+  --primary-dark: #f04e23;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
+}
+
+.theme-bills {
+  --primary: #194787;
+  --accent: #C60C30;
+  --primary-lighter: #F2DFE3;
+  --primary-light: #C60C30;
+  --primary-dark: #97233F;
+  --primary-darker: #194787;
+  --neutral-light: #fff;
+}
+
+.theme-broncos {
+  --primary: #002244;
+  --accent: #DE6226;
+  --primary-lighter: #D7D7DE;
+  --primary-light: #132F66;
+  --primary-dark: #002244;
+  --primary-darker: #002244;
+  --neutral-light: #fff;
+}
+
+.theme-browns {
+  --primary: #311D00;
+  --accent: #EE4923;
+  --primary-lighter: #A69F95;
+  --primary-light: #EE4923;
+  --primary-dark: #9E2500;
+  --primary-darker: #311D00;
+  --neutral-light: #fff;
+}
+
+.theme-bucs {
+  --primary: #34302B;
+  --accent: #B21E35;
+  --primary-lighter: #B1BABF;
+  --primary-light: #B21E35;
+  --primary-dark: #800404;
+  --primary-darker: #34302B;
+  --neutral-light: #fff;
+}
+
+.theme-cardinals {
+  --primary: #000000;
+  --accent: #83161C;
+  --primary-lighter: #FFD6E0;
+  --primary-light: #C73054;
+  --primary-dark: #83161C;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
+}
+
+.theme-charger {
+  --primary: #002A5E;
+  --accent: #3996D3;
+  --primary-lighter: #EBE4D3;
+  --primary-light: #3996D3;
+  --primary-dark: #002A5E;
+  --primary-darker: #002A5E;
+  --neutral-light: #fff;
+}
+
+.theme-chiefs {
+  --primary: #000000;
+  --accent: #B21F36;
+  --primary-lighter: #B1BABF;
+  --primary-light: #B21F36;
+  --primary-dark: #731020;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
+}
+
+.theme-colts {
+  --primary: #002C5F;
+  --accent: #A2AAAD;
+  --primary-lighter: #eee;
+  --primary-light: #002C5F;
+  --primary-dark: #000614;
+  --primary-darker: #002C5F;
+  --neutral-light: #fff;
+}
+
+.theme-cowboys {
+  --primary: #041E42;
+  --accent: #777;
+  --primary-lighter: #eee;
+  --primary-light: #143491;
+  --primary-dark: #041E42;
+  --primary-darker: #041E42;
+  --neutral-light: #fff;
+}
+
+.theme-dolphins {
+  --primary: #005778;
+  --accent: #FC4C02;
+  --primary-lighter: #BFD5E3;
+  --primary-light: #008E97;
+  --primary-dark: #005778;
+  --primary-darker: #005778;
+  --neutral-light: #fff;
+}
+
+.theme-eagles {
+  --primary: #000000;
+  --accent: #004C54;
+  --primary-lighter: #A5ACAF;
+  --primary-light: #004C54;
+  --primary-dark: #00131A;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
+}
+
+.theme-falcons {
+  --primary: #000000;
+  --accent: #A71930;
+  --primary-lighter: #FFD6E0;
+  --primary-light: #C73054;
+  --primary-dark: #A71930;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
+}
+
+.theme-giants {
+  --primary: #25316A;
+  --accent: #A71930;
+  --primary-lighter: #A5ACAF;
+  --primary-light: #1A27AB;
+  --primary-dark: #0B2265;
+  --primary-darker: #25316A;
+  --neutral-light: #fff;
+}
+
+.theme-jaguars {
+  --primary: #000000;
+  --accent: #006778;
+  --primary-lighter: #97B3BF;
+  --primary-light: #006778;
+  --primary-dark: #002738;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
+}
+
+.theme-jets {
+  --primary: #000000;
+  --accent: #125740;
+  --primary-lighter: #eee;
+  --primary-light: #125740;
+  --primary-dark: #041C14;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
+}
+
+.theme-lions {
+  --primary: #000000;
+  --accent: #006DAF;
+  --primary-lighter: #eee;
+  --primary-light: #006DAF;
+  --primary-dark: #0076B6;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
+}
+
+.theme-packers {
+  --primary: #203731;
+  --accent: #FAC400;
+  --primary-lighter: #B0B8B5;
+  --primary-light: #40695E;
+  --primary-dark: #203731;
+  --primary-darker: #203731;
+  --neutral-light: #fff;
+}
+
+.theme-panthers {
+  --primary: #000000;
+  --accent: #0085CA;
+  --primary-lighter: #CFE6FF;
+  --primary-light: #3997F7;
+  --primary-dark: #0085CA;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
+}
+
+.theme-patriots {
+  --primary: #002244;
+  --accent: #DA2028;
+  --primary-lighter: #B0B7BC;
+  --primary-light: #F2244C;
+  --primary-dark: #C60C30;
+  --primary-darker: #002244;
+  --neutral-light: #fff;
+}
+
+.theme-raiders {
+  --primary: #000000;
+  --accent: #A5ACAF;
+  --primary-lighter: #eee;
+  --primary-light: #666;
+  --primary-dark: #111;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
+}
+
+.theme-rams {
+  --primary: #003594;
+  --accent: #ffa300;
+  --primary-lighter: #eee;
+  --primary-light: #003594;
+  --primary-dark: #000103;
+  --primary-darker: #003594;
+  --neutral-light: #fff;
+}
+
+.theme-ravens {
+  --primary: #2C2062;
+  --accent: #D0B337;
+  --primary-lighter: #F3E8FF;
+  --primary-light: #472399;
+  --primary-dark: #2C2062;
+  --primary-darker: #2C2062;
+  --neutral-light: #fff;
+}
+
+.theme-redskins {
+  --primary: #5A1414;
+  --accent: #FFB612;
+  --primary-lighter: #eee;
+  --primary-light: #773141;
+  --primary-dark: #291016;
+  --primary-darker: #5A1414;
+  --neutral-light: #fff;
+}
+
+.theme-saints {
+  --primary: #000000;
+  --accent: #C6A875;
+  --primary-lighter: #eee;
+  --primary-light: #C6A875;
+  --primary-dark: #695A3E;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
+}
+
+.theme-seahawks {
+  --primary: #002244;
+  --accent: #69BE28;
+  --primary-lighter: #eee;
+  --primary-light: #69BE28;
+  --primary-dark: #336110;
+  --primary-darker: #002244;
+  --neutral-light: #fff;
+}
+
+.theme-steelers {
+  --primary: #000000;
+  --accent: #FFB612;
+  --primary-lighter: #eee;
+  --primary-light: #FFB612;
+  --primary-dark: #825C05;
+  --primary-darker: #000000;
+  --neutral-light: #fff;
+}
+
+.theme-texans {
+  --primary: #06192E;
+  --accent: #B21E35;
+  --primary-lighter: #DFE7F7;
+  --primary-light: #0F2A63;
+  --primary-dark: #06192E;
+  --primary-darker: #06192E;
+  --neutral-light: #fff;
+}
+
+.theme-titans {
+  --primary: #203262;
+  --accent: #668ECA;
+  --primary-lighter: #eee;
+  --primary-light: #4B92DB;
+  --primary-dark: #0C2340;
+  --primary-darker: #203262;
+  --neutral-light: #fff;
+}
+
+.theme-vikings {
+  --primary: #3C1E5D;
+  --accent: #EDBF1B;
+  --primary-lighter: #eee;
+  --primary-light: #4F2683;
+  --primary-dark: #240E33;
+  --primary-darker: #3C1E5D;
+  --neutral-light: #fff;
+}
+/***************************************/
+
 .b_name {
   text-transform: uppercase;
   font-weight: 600;
