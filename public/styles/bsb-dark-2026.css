@@ -270,7 +270,7 @@ body {
   overflow-y: scroll;
 }
 
-.site-kkl body {
+#body-kkl body {
   background-image: url(//knuckleheads.netlify.app/images/backgrounds/kkl-side-particles.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);  
 }
 
@@ -1600,8 +1600,8 @@ caption:before {
   content: "";
 }
 
-/* Added below logo before captions for kkl*/
-.site-kkl caption:before {
+/* Added below logo before captions for kkl */
+#body-kkl caption:before {
   background: url(https://knuckleheads.netlify.app/svg-icons/KKL-Cube.svg) no-repeat;  
 }
 
