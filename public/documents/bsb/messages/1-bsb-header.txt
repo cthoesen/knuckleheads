@@ -1,7 +1,7 @@
 <!------------------------------------------------------>
 <!----------------- Start #1 - Header ------------------>
 <!------------------------------------------------------>
-<!--<div id="body-fixed"></div>-->
+<div id="body-bsb">
 
 <!-- Pre-resolve DNS and preconnect -->
 <link rel="dns-prefetch" href="https://www.mflscripts.com">
@@ -69,7 +69,7 @@ function getStoredTheme(year, league_id, defaultTheme) {
   return storedTheme || defaultTheme;
 }
 (function() {
-  const defaultTheme = 'theme-jade';
+  const defaultTheme = 'theme-dk-blue';
   const storedTheme = getStoredTheme(year, league_id, defaultTheme);
   applyTheme(storedTheme);
 })();
@@ -109,6 +109,7 @@ document.head.appendChild(linkRelIco);
 <a href="#" onclick="setTheme('theme-dk-rasta')" style="color:#FCDD09;!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Rasta"></i>Rasta</a>
 <a href="#" onclick="setTheme('theme-jade')" style="color:#38b569;!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Jade"></i>Jade</a>
 <a href="#" onclick="setTheme('theme-cerulean')" style="color:#007BA7;!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Cerulean"></i>Cerulean</a>
+<a href="#" onclick="setTheme('theme-creamsicle')" style="color:#fa7c2a;!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Creamsicle"></i>Creamsicle</a>
 </div></div>
 
 <!-------------------------------------->

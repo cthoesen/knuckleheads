@@ -1,7 +1,7 @@
 <!------------------------------------------------------>
 <!----------------- Start #1 - Header ------------------>
 <!------------------------------------------------------>
-<!--<div id="body-fixed"></div>-->
+<div id="body-kkl">
 
 <!-- Pre-resolve DNS and preconnect -->
 <link rel="dns-prefetch" href="https://www.mflscripts.com">
@@ -109,6 +109,7 @@ document.head.appendChild(linkRelIco);
 <a href="#" onclick="setTheme('theme-dk-rasta')" style="color:#FCDD09;!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Rasta"></i>Rasta</a>
 <a href="#" onclick="setTheme('theme-jade')" style="color:#38b569;!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Jade"></i>Jade</a>
 <a href="#" onclick="setTheme('theme-cerulean')" style="color:#007BA7;!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Cerulean"></i>Cerulean</a>
+<a href="#" onclick="setTheme('theme-creamsicle')" style="color:#fa7c2a;!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Creamsicle"></i>Creamsicle</a>
 </div></div>
 
 
@@ -123,7 +124,7 @@ document.head.appendChild(linkRelIco);
 	<div class="banner-container-wrap-full">
 		<a class="full_height_banner" href="//%HOST%/%YEAR%/home/%LEAGUEID%" title="Return to home page">
 
-			<!-- INSERT URL PATH OF YOUR OWN CUSTOM BANNER - RECOMMENDED DIMENSIONS ARE 1148px wide and 220px tall -->
+			<!-- INSERT URL PATH OF YOUR OWN CUSTOM BANNER - RECOMMENDED DEMISIONS ARE 1148px wide and 220px tall -->
 		<img src="https://knuckleheads.netlify.app/images/league/kkl-banner-2026.jpg" alt="Desktop Banner" class="desktop-only">
                 <img src="https://knuckleheads.netlify.app/images/league/kkl-banner-small-2026.jpg" alt="Mobile Banner" class="mobile-only">
 
@@ -151,13 +152,13 @@ document.head.appendChild(linkRelIco);
 
 	<div class="icon-bar-full">
 
-<!-- SELECT KEEPERS SVG -->
-<!-- <a class="svg-iconlink" href="//%HOST%/%YEAR%/options?L=%LEAGUEID%&O=144"> --> 
-<!-- <svg class="svg-icon Icon-Keeper" viewBox="0 0 99.37 72">  -->
-<!-- <use xlink:href="#Icon-Keeper" /> -->
+          <!-- SELECT KEEPERS SVG -->
+    <!-- <a class="svg-iconlink" href="//%HOST%/%YEAR%/options?L=%LEAGUEID%&O=144">  -->
+  <!-- <svg class="svg-icon Icon-Keeper" viewBox="0 0 99.37 72">  -->
+<!-- <use xlink:href="#Icon-Keeper" />  -->
 <!-- </svg>  -->
 <!-- <div class="svg-text">Select<br>Keepers</div>  -->
-<!-- </a>  -->
+ </a>
 
 
 <!-- STANDINGS SVG -->
@@ -249,19 +250,6 @@ document.head.appendChild(linkRelIco);
 <div class="svg-text">Trade<br>Players</div>
 </a>
 
-<!-- INJURED RESERVE SVG -->
-<a class="svg-iconlink" href="//%HOST%/%YEAR%/options?L=%LEAGUEID%&O=18">
-<svg class="svg-icon Icon-Doctor" viewBox="0 0 72 82.24">
-<use xlink:href="#Icon-Doctor"></use>
-</svg>
-
-<!--<span class="faa-parent animated-hover">
-<i class="fa-duotone fa-ghost faa-spin animated-hover"></i>              
-</span>-->
-
-<div class="svg-text">Injured<br>Reserve</div>
-</a>
-
 
 <!-- ROSTER SVG -->
 <a class="svg-iconlink" href="//%HOST%/%YEAR%/options?L=%LEAGUEID%&O=07">
@@ -292,7 +280,7 @@ document.head.appendChild(linkRelIco);
 
 
 <!-- CHAT SVG -->
-<!-- <a class="svg-iconlink" href="//%HOST%/%YEAR%/home/%LEAGUEID%?MODULE=LEAGUE_CHAT" onclick="openChatWindow(this); return false;" target="_blank"> -->
+            <!-- <a class="svg-iconlink" href="//%HOST%/%YEAR%/home/%LEAGUEID%?MODULE=LEAGUE_CHAT" onclick="openChatWindow(this); return false;" target="_blank"> -->
 
             <a class="svg-iconlink" href="https://groupme.com/join_group/94782961/5PyaebDf" onclick="openChatWindow(this); return false;" target="_blank">
   <svg class="svg-icon Icon-GroupMe" viewBox="0 0 72 94.98">
