@@ -4889,7 +4889,7 @@ Team Logos
   padding-left: .188rem;
   padding-right: 0.188rem;
   padding-right: .188rem;
-  background: rgba(0, 0, 0, 0) url(https://knuckleheads.netlify.app/images/captions/Caption-Dark.png); /*added*/
+  background: rgba(0, 0, 0, 0) url(https://knuckleheads.netlify.app/images/captions/caption-dark.png); /*added*/
   background-position: center right; /*added*/
 }
 /* below settings to decrease size of icons for standings on mobile devices */
@@ -8980,14 +8980,14 @@ div.ls_team_points {
 
 td.winIcon .roadWinIcon-img:before {
   font-family: "Font Awesome 6 Pro";
-  content: "\f0d9";
+  content: "\f0d9"; /* caret left */
   color: #90ee90;
   font-size: 1rem;
 }
 
 td.winIcon .homeWinIcon-img:before {
   font-family: "Font Awesome 6 Pro";
-  content: "\f0da";
+  content: "\f0da"; /* caret right */
   color: #90ee90;
   font-size: 1rem;
 }
@@ -10036,7 +10036,6 @@ div.sub-content.editable .insertIcons {
 
   .myfantasyleague_menu ul li ul li.has-sub label span {
     right: 1.5rem;
-    right: 1.5rem;
   }
 
   .myfantasyleague_menu > label span:before,
@@ -10121,7 +10120,6 @@ div.sub-content.editable .insertIcons {
         border-top-width: 0.063rem;
         text-indent: 0.625rem;
         font-size: 0.875rem;
-        font-size: 0.875rem;
     }
     .myfantasyleague_menu ul ul li a {
         border: 0;
@@ -10130,7 +10128,6 @@ div.sub-content.editable .insertIcons {
     }
     .myfantasyleague_menu li ul li a,
     .myfantasyleague_menu li a {
-        line-height: 2.813rem;
         line-height: 2.813rem;
     }
    .myfantasyleague_menu ul ul li a:before {

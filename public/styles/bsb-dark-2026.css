@@ -270,6 +270,10 @@ body {
   overflow-y: scroll;
 }
 
+.site-kkl body {
+  background-image: url(//knuckleheads.netlify.app/images/backgrounds/kkl-side-particles.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);  
+}
+
 /*CGT - mobile background parallax settings*/
 /*@media only screen and (max-width: 48em) {
   #body-fixed {
@@ -1594,6 +1598,11 @@ caption:before {
   background-position: 25% center;
   vertical-align: 0.5rem;
   content: "";
+}
+
+/* Added below logo before captions for kkl*/
+.site-kkl caption:before {
+  background: url(https://knuckleheads.netlify.app/svg-icons/KKL-Cube.svg) no-repeat;  
 }
 
 /* Added below to remove logo before roster icons */
@@ -10124,7 +10133,7 @@ div.sub-content.editable .insertIcons {
         border-style: solid;
         border-top-width: 0.063rem;
         text-indent: 0.625rem;
-        font-size: 0.875rem;        
+        font-size: 0.875rem;
     }
     .myfantasyleague_menu ul ul li a {
         border: 0;
