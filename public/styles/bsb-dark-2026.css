@@ -250,7 +250,7 @@ input[type="radio"] {
   z-index: -1;
 }*/
 
-#body-kkl {
+#body-kkl body {
   color: var(--accent, #f8f7c3);
   text-rendering: optimizeLegibility;
   background-image: url(//knuckleheads.netlify.app/images/backgrounds/kkl-side-particles.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);
@@ -288,6 +288,11 @@ body {
   margin: 0 auto;
   width: 100%;
   overflow-y: scroll;
+}
+
+/* Added below logo before captions for kkl */
+#body-kkl caption::before {
+  background: url(https://knuckleheads.netlify.app/svg-icons/KKL-Cube.svg) no-repeat;  
 }
 
 /*CGT - mobile background parallax settings*/
@@ -1604,11 +1609,6 @@ caption,
   border-left: 0;
   border-right: 0;
   border-bottom: 0.35rem solid rgba(15, 15, 15, 0.75);
-}
-
-/* Added below logo before captions for kkl */
-#body-kkl caption:before {
-  background: url(https://knuckleheads.netlify.app/svg-icons/KKL-Cube.svg) no-repeat;  
 }
 
 /* Added below logo before captions */
