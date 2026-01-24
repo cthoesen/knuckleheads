@@ -250,6 +250,10 @@ input[type="radio"] {
   z-index: -1;
 }*/
 
+#body-kkl body {
+  background-image: url(//knuckleheads.netlify.app/images/backgrounds/kkl-side-particles.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);  
+}
+
 body {
   color: var(--accent, #f8f7c3);
   text-rendering: optimizeLegibility;
@@ -268,10 +272,6 @@ body {
   margin: 0 auto;
   width: 100%;
   overflow-y: scroll;
-}
-
-#body-kkl body {
-  background-image: url(//knuckleheads.netlify.app/images/backgrounds/kkl-side-particles.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);  
 }
 
 /*CGT - mobile background parallax settings*/
@@ -1590,6 +1590,11 @@ caption,
   border-bottom: 0.35rem solid rgba(15, 15, 15, 0.75);
 }
 
+/* Added below logo before captions for kkl */
+#body-kkl caption:before {
+  background: url(https://knuckleheads.netlify.app/svg-icons/KKL-Cube.svg) no-repeat;  
+}
+
 /* Added below logo before captions */
 caption:before {
   padding: 1.25rem 1.75rem 1.75rem 1.25rem;
@@ -1598,11 +1603,6 @@ caption:before {
   background-position: 25% center;
   vertical-align: 0.5rem;
   content: "";
-}
-
-/* Added below logo before captions for kkl */
-#body-kkl caption:before {
-  background: url(https://knuckleheads.netlify.app/svg-icons/KKL-Cube.svg) no-repeat;  
 }
 
 /* Added below to remove logo before roster icons */
