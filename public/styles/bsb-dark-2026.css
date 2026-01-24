@@ -116,7 +116,7 @@ td {
   --primary-lighter: #4194f9;
   --primary-dark: #0738B3;
   --primary-darker:#052a86;
-  --accent: #13c8f2; /*this is the accent color for button icons*/
+  --accent: #13c8f2; /* this is the accent color for button icons and also player positions */
   --accent-alt: #13f224; /* this is the color for warnings */
   --bg-opacity: rgba(7, 56, 179, .05);
   --bg-opacity-brighter: rgba(7, 56, 179, .2)
@@ -167,7 +167,7 @@ td {
   --primary-lighter: #65bbd1;
   --primary-dark: #143285;
   --primary-darker:#102767;
-  --accent: #12ec24; /* this is the accent color for button icons and also player positions */
+  --accent: #f7ec59; /* this is the accent color for button icons and also player positions */
   --accent-alt: #2af5ff; /* this is the color for warnings */
   --bg-opacity: rgba(0, 35, 95, 0.15);
   --bg-opacity-brighter: rgba(130, 255, 245, 0.2);
