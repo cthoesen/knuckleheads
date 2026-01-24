@@ -251,32 +251,40 @@ input[type="radio"] {
 }*/
 
 body:has(#body-kkl) {
-  /*color: var(--accent, #f8f7c3);
-  text-rendering: optimizeLegibility;*/
   background-image: url(//knuckleheads.netlify.app/images/backgrounds/kkl-side-particles.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);
   background-attachment: fixed;
   background-position: 50% 0%, center top;
   background-repeat: no-repeat repeat;
-  /*background-color: #030303;
-  font-family: "Google Sans", "Lato", "Noto Sans", "News Cycle", "Oswald", "Open Sans", sans-serif;
-  font-size: 0.813rem;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased !important;
-  height: 1200px;
-  margin: 0 auto;
-  width: 100%;
-  overflow-y: scroll;*/
+  background-color: #030303;
+}
+
+body:has(#body-kdl) {
+  background-image: url(//knuckleheads.netlify.app/images/backgrounds/kdl-side-particles.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);
+  background-attachment: fixed;
+  background-position: 50% 0%, center top;
+  background-repeat: no-repeat repeat;
+  background-color: #030303;
+}
+
+body:has(#body-mmh) {
+  background-image: url(//knuckleheads.netlify.app/images/backgrounds/mmh-side-particles.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);
+  background-attachment: fixed;
+  background-position: 50% 0%, center top;
+  background-repeat: no-repeat repeat;
+  background-color: #030303;
+}
+
+body:has(#body-bsb) {
+  background-image: url(//knuckleheads.netlify.app/images/backgrounds/bsb-side-particles.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);
+  background-attachment: fixed;
+  background-position: 50% 0%, center top;
+  background-repeat: no-repeat repeat;
+  background-color: #030303;
 }
 
 body {
   color: var(--accent, #f8f7c3);
   text-rendering: optimizeLegibility;
-  /*background-image: url(//knuckleheads.netlify.app/images/backgrounds/bsb-side-particles.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);
-  background-attachment: fixed;
-  background-position: 50% 0%, center top;
-  background-repeat: no-repeat repeat;*/
   background-color: #030303;
   font-family: "Google Sans", "Lato", "Noto Sans", "News Cycle", "Oswald", "Open Sans", sans-serif;
   font-size: 0.813rem;
@@ -294,6 +302,16 @@ body {
 #body-kkl caption::before {
   padding: 1.25rem 1.75rem 1.75rem 1.25rem;
   background: url(https://knuckleheads.netlify.app/svg-icons/KKL-Cube.svg) no-repeat; 
+  background-size: contain;
+  background-position: 25% center;
+  vertical-align: 0.5rem;
+  content: "";
+}
+
+/* Added below logo before captions for kkl */
+#body-bsb caption::before {
+  padding: 1.25rem 1.75rem 1.75rem 1.25rem;
+  background: url(https://knuckleheads.netlify.app/svg-icons/bsb-cube.svg) no-repeat; 
   background-size: contain;
   background-position: 25% center;
   vertical-align: 0.5rem;
