@@ -28,7 +28,7 @@ td {
   --primary-dark: #32a05e;
   --primary-darker:#267d49;
   --accent: #eeee65; /*this is the accent color for button icons*/
-  --accent-alt: #ff13f0;
+  --accent-alt: #ff13f0; /* this is the color for warnings */
   --bg-opacity: rgba(0, 35, 95, 0.15);
   --bg-opacity-brighter: rgba(130, 255, 245, 0.2);
   --fa-main-color: #38b569;
@@ -113,7 +113,11 @@ td {
 .theme-dk-blue {
   --primary: #1353F2;
   --primary-light: #117DFF;
+  --primary-lighter: #11b4ff;
   --primary-dark: #0738B3;
+  --primary-darker:#052a86;
+  --accent: #ceeaf7; /*this is the accent color for button icons*/
+  --accent-alt: #dc0073; /* this is the color for warnings */
   --bg-opacity: rgba(7, 56, 179, .05);
   --bg-opacity-brighter: rgba(7, 56, 179, .2)
 }
