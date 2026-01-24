@@ -47,7 +47,7 @@ var ScoringTimezone = "LOCAL";            // set time zones for game times. LOCA
 /* ADJUST ICON SIZE FOR ICONS IN PLAYER LIVE SCORE BOX */
 #LSscoringBox .franchise-icon img {
   width: 100%;
-  max-width: 27rem;
+  max-width: 28rem;
   max-height: 9rem;
 }
 

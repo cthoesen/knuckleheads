@@ -106,7 +106,6 @@ var notification_duration_seconds = 1.5;        // 2.5 seconds
 <!-- STANDINGS COLUMNS SETUP  -->
 <script src="https://mflscripts.com/mfl-apps/playoffs/standingsColumns.js"></script>
 
-
 </div><!--- CLOSE CONTAINER WRAP IN HEADER -->
 
 <footer>
