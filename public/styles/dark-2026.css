@@ -194,18 +194,19 @@ td {
   --primary-lighter: #ae0132;
   --primary-dark: #520000;
   --primary-darker: #370000;
-  --accent: #b3995d;
-  --neutral-light: #fff;
+  --accent: #b3995d; /* this is the accent color for button icons and also player positions */
+  --accent-alt: #e8440d; /* this is the color for warnings */
+  --fa-main-color: #aa0000;
 }
 
 .theme-bears {
-  --primary: #0B162A;
-  --accent: #FE4000;
-  --primary-lighter: #CECED9;
-  --primary-light: #FE4000;
-  --primary-dark: #521600;
-  --primary-darker: #0B162A;
-  --neutral-light: #fff;
+  --primary: #c83803;
+  --accent: #0B162A;
+  --primary-lighter: #c84103;
+  --primary-light: #c85503;
+  --primary-dark: #9f2c02;
+  --primary-darker: #772102;
+  --accent-alt: #05a8aa;
 }
 
 .theme-bengals {
@@ -215,7 +216,7 @@ td {
   --primary-light: #FF7647;
   --primary-dark: #f04e23;
   --primary-darker: #000000;
-  --neutral-light: #fff;
+  --accent-alt: #fff;
 }
 
 .theme-bills {
@@ -225,7 +226,7 @@ td {
   --primary-light: #C60C30;
   --primary-dark: #97233F;
   --primary-darker: #194787;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-broncos {
@@ -235,7 +236,7 @@ td {
   --primary-light: #132F66;
   --primary-dark: #002244;
   --primary-darker: #002244;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-browns {
@@ -245,7 +246,7 @@ td {
   --primary-light: #EE4923;
   --primary-dark: #9E2500;
   --primary-darker: #311D00;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-bucs {
@@ -255,7 +256,7 @@ td {
   --primary-light: #B21E35;
   --primary-dark: #800404;
   --primary-darker: #34302B;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-cardinals {
@@ -265,7 +266,7 @@ td {
   --primary-light: #C73054;
   --primary-dark: #83161C;
   --primary-darker: #000000;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-charger {
@@ -275,7 +276,7 @@ td {
   --primary-light: #3996D3;
   --primary-dark: #002A5E;
   --primary-darker: #002A5E;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-chiefs {
@@ -285,7 +286,7 @@ td {
   --primary-light: #B21F36;
   --primary-dark: #731020;
   --primary-darker: #000000;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-colts {
@@ -295,7 +296,7 @@ td {
   --primary-light: #002C5F;
   --primary-dark: #000614;
   --primary-darker: #002C5F;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-cowboys {
@@ -305,7 +306,7 @@ td {
   --primary-light: #143491;
   --primary-dark: #041E42;
   --primary-darker: #041E42;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-dolphins {
@@ -315,7 +316,7 @@ td {
   --primary-light: #008E97;
   --primary-dark: #005778;
   --primary-darker: #005778;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-eagles {
@@ -325,7 +326,7 @@ td {
   --primary-light: #004C54;
   --primary-dark: #00131A;
   --primary-darker: #000000;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-falcons {
@@ -335,7 +336,7 @@ td {
   --primary-light: #C73054;
   --primary-dark: #A71930;
   --primary-darker: #000000;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-giants {
@@ -345,7 +346,7 @@ td {
   --primary-light: #1A27AB;
   --primary-dark: #0B2265;
   --primary-darker: #25316A;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-jaguars {
@@ -355,7 +356,7 @@ td {
   --primary-light: #006778;
   --primary-dark: #002738;
   --primary-darker: #000000;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-jets {
@@ -365,7 +366,7 @@ td {
   --primary-light: #125740;
   --primary-dark: #041C14;
   --primary-darker: #000000;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-lions {
@@ -375,7 +376,7 @@ td {
   --primary-light: #006DAF;
   --primary-dark: #0076B6;
   --primary-darker: #000000;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-packers {
@@ -385,7 +386,7 @@ td {
   --primary-light: #40695E;
   --primary-dark: #203731;
   --primary-darker: #203731;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-panthers {
@@ -395,7 +396,7 @@ td {
   --primary-light: #3997F7;
   --primary-dark: #0085CA;
   --primary-darker: #000000;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-patriots {
@@ -405,7 +406,7 @@ td {
   --primary-light: #F2244C;
   --primary-dark: #C60C30;
   --primary-darker: #002244;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-raiders {
@@ -415,7 +416,7 @@ td {
   --primary-light: #666;
   --primary-dark: #111;
   --primary-darker: #000000;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-rams {
@@ -425,7 +426,7 @@ td {
   --primary-light: #003594;
   --primary-dark: #000103;
   --primary-darker: #003594;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-ravens {
@@ -435,7 +436,7 @@ td {
   --primary-light: #472399;
   --primary-dark: #2C2062;
   --primary-darker: #2C2062;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-redskins {
@@ -445,7 +446,7 @@ td {
   --primary-light: #773141;
   --primary-dark: #291016;
   --primary-darker: #5A1414;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-saints {
@@ -455,7 +456,7 @@ td {
   --primary-light: #C6A875;
   --primary-dark: #695A3E;
   --primary-darker: #000000;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-seahawks {
@@ -465,7 +466,7 @@ td {
   --primary-light: #69BE28;
   --primary-dark: #336110;
   --primary-darker: #002244;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-steelers {
@@ -475,7 +476,7 @@ td {
   --primary-light: #FFB612;
   --primary-dark: #825C05;
   --primary-darker: #000000;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-texans {
@@ -485,7 +486,7 @@ td {
   --primary-light: #0F2A63;
   --primary-dark: #06192E;
   --primary-darker: #06192E;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-titans {
@@ -495,7 +496,7 @@ td {
   --primary-light: #4B92DB;
   --primary-dark: #0C2340;
   --primary-darker: #203262;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 
 .theme-vikings {
@@ -505,7 +506,7 @@ td {
   --primary-light: #4F2683;
   --primary-dark: #240E33;
   --primary-darker: #3C1E5D;
-  --neutral-light: #fff;
+  --accent-alt:: #fff;
 }
 /***************************************/
 
@@ -14603,7 +14604,7 @@ div.ym {
 }
 /*set bg color for team position circle - visible on mobile displays and color of text in circle*/
 .playerImgTable .teamPositionCircle {
-    background: var(--accent, #fff);
+    background: var(--accent-alt, #fff);
     color: #000;
 }
 .theme-dk-yellow .playerImgTable .teamPositionCircle {
