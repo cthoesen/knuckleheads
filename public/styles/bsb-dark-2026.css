@@ -23,7 +23,7 @@ td {
   --neutral-dark: #0c0c0c;
   --neutral-blur: rgba(69, 69, 69, 0.15);
   --primary: #38b569; /*this is the primary color for button icons*/
-  --primary-light: #040cd78;
+  --primary-light: #24da6d;
   --primary-lighter: #44e785;
   --primary-dark: #32a05e;
   --primary-darker:#267d49;
@@ -163,12 +163,12 @@ td {
 
 .theme-cerulean {
   --primary: #204fd1;
-  --primary-light: #007ba7;
+  --primary-light: #43c0f1;
   --primary-lighter: #61cbf5;
   --primary-dark: #0d339e;
   --primary-darker:#013244;
-  --accent: #3bc14a;
-  --accent-alt: #ff13f0;
+  --accent: #38aecc; /*this is the accent color for button icons*/
+  --accent-alt: #e313f2; /* this is the color for warnings */
   --bg-opacity: rgba(0, 35, 95, 0.15);
   --bg-opacity-brighter: rgba(130, 255, 245, 0.2);
   --fa-main-color: #204fd1;
@@ -308,7 +308,7 @@ body {
   content: "";
 }
 
-/* Added below logo before captions for kkl */
+/* Added below logo before captions for bsb */
 #body-bsb caption::before {
   padding: 1.25rem 1.75rem 1.75rem 1.25rem;
   background: url(https://knuckleheads.netlify.app/svg-icons/bsb-cube.svg) no-repeat; 
@@ -1624,7 +1624,7 @@ caption,
   border-image-source: linear-gradient(to right, 
       var(--neutral-dark), 
       var(--primary-lighter), 
-      var(--primary-dark), 
+      var(--primary-light), 
       var(--primary-lighter), 
       var(--neutral-dark));
   border-image-slice: 1;
