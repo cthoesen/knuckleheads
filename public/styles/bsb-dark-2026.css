@@ -257,7 +257,7 @@ body:has(#body-kkl) {
   background-attachment: fixed;
   background-position: 50% 0%, center top;
   background-repeat: no-repeat repeat;
-  background-color: #030303;
+  /*background-color: #030303;
   font-family: "Google Sans", "Lato", "Noto Sans", "News Cycle", "Oswald", "Open Sans", sans-serif;
   font-size: 0.813rem;
   font-optical-sizing: auto;
@@ -267,7 +267,7 @@ body:has(#body-kkl) {
   height: 1200px;
   margin: 0 auto;
   width: 100%;
-  overflow-y: scroll;
+  overflow-y: scroll;*/
 }
 
 body {
@@ -291,7 +291,7 @@ body {
 }
 
 /* Added below logo before captions for kkl */
-#body-kkl caption::before {
+#body-kkl caption:before {
   background: url(https://knuckleheads.netlify.app/svg-icons/KKL-Cube.svg) no-repeat;  
 }
 
