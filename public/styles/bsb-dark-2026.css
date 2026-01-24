@@ -270,7 +270,7 @@ input[type="radio"] {
   overflow-y: scroll;
 }
 
-/*body {
+body {
   color: var(--accent, #f8f7c3);
   text-rendering: optimizeLegibility;
   background-image: url(//knuckleheads.netlify.app/images/backgrounds/bsb-side-particles.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);
@@ -288,7 +288,7 @@ input[type="radio"] {
   margin: 0 auto;
   width: 100%;
   overflow-y: scroll;
-}*/
+}
 
 /*CGT - mobile background parallax settings*/
 /*@media only screen and (max-width: 48em) {
