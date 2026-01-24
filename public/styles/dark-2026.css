@@ -187,6 +187,17 @@ td {
   --fa-main-color: #ff570f;
 }
 
+/* NFL TEAM THEME COLORING */
+.theme-niners {
+  --primary: #aa0000;
+  --primary-light: #840026;
+  --primary-lighter: #ae0132;
+  --primary-dark: #520000;
+  --primary-darker: #370000;
+  --accent: #b3995d;
+  --neutral-light: #fff;
+}
+
 .b_name {
   text-transform: uppercase;
   font-weight: 600;
