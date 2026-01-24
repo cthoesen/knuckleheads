@@ -113,11 +113,11 @@ td {
 .theme-dk-blue {
   --primary: #1353F2;
   --primary-light: #117DFF;
-  --primary-lighter: #11b4ff;
+  --primary-lighter: #4194f9;
   --primary-dark: #0738B3;
   --primary-darker:#052a86;
-  --accent: #ceeaf7; /*this is the accent color for button icons*/
-  --accent-alt: #dc0073; /* this is the color for warnings */
+  --accent: #13c8f2; /*this is the accent color for button icons*/
+  --accent-alt: #13f224; /* this is the color for warnings */
   --bg-opacity: rgba(7, 56, 179, .05);
   --bg-opacity-brighter: rgba(7, 56, 179, .2)
 }
