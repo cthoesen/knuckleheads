@@ -174,6 +174,19 @@ td {
   --fa-main-color: #1f4fd1;
 }
 
+.theme-creamsicle {
+  --primary: #ff580f;
+  --primary-light: #fa7c2a;
+  --primary-lighter: #ff9b4d;
+  --primary-dark: #b23e0b;
+  --primary-darker:#7d2c08;
+  --accent: #f21366; /* this is the accent color for button icons and also player positions */
+  --accent-alt: #05a8aa; /* this is the color for warnings */
+  --bg-opacity: rgba(0, 35, 95, 0.15);
+  --bg-opacity-brighter: rgba(130, 255, 245, 0.2);
+  --fa-main-color: #ff580f;
+}
+
 .b_name {
   text-transform: uppercase;
   font-weight: 600;
