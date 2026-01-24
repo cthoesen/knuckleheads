@@ -250,7 +250,7 @@ input[type="radio"] {
   z-index: -1;
 }*/
 
-#body-kkl body {
+#body-kkl {
   background-image: url(//knuckleheads.netlify.app/images/backgrounds/kkl-side-particles.png), url(//knuckleheads.netlify.app/images/backgrounds/BG-Dark-Grunge.jpg);  
 }
 
