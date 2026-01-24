@@ -185,23 +185,14 @@ document.head.appendChild(linkRelIco);
 
 	<div class="icon-bar-full">
 
-<!-- SELECT KEEPERS SVG -->
-<!-- <a class="svg-iconlink" href="//%HOST%/%YEAR%/options?L=%LEAGUEID%&O=144"> --> 
-<!-- <svg class="svg-icon Icon-Keeper" viewBox="0 0 99.37 72">  -->
-<!-- <use xlink:href="#Icon-Keeper" /> -->
-<!-- </svg>  -->
-<!-- <div class="svg-text">Select<br>Keepers</div>  -->
-<!-- </a>  -->
-
-
 <!-- STANDINGS SVG -->
-<a class="svg-iconlink" href="//%HOST%/%YEAR%/standings?L=%LEAGUEID%">
-
-<span class="faa-parent animated-hover">
-<i class="fa-duotone fa-crown faa-rising animated-hover"></i>
+<!-- <a class="svg-iconlink" href="//%HOST%/%YEAR%/standings?L=%LEAGUEID%">
+<span class="fa-stack fa-2x">
+<i class="fa-kit fa-standings-1 fa-stack-2x"></i>
+<i class="fa-kit fa-standings-2 fa-stack-2x fa-inverse"></i>
 </span>
-<div class="svg-text">League<br>Standings</div>
-</a>
+<div class="svg-text">Standings</div>
+</a> -->
 
 
 <!-- SCOREBOARD SVG -->
@@ -233,17 +224,17 @@ document.head.appendChild(linkRelIco);
 
 
 <!-- DRAFT SVG -->
-<!--<a class="svg-iconlink" href="//%HOST%/%YEAR%/options?L=%LEAGUEID%&O=52"> -->
-<!-- <a class="svg-iconlink" href="//%HOST%/%YEAR%/options?L=%LEAGUEID%&O=17"> --> 
-<!--<svg class="svg-icon Icon-Draft-MMH" viewBox="0 0 76.3 72"> -->
-<!--<use xlink:href="#Icon-Draft-MMH"></use> -->
-<!--</svg> -->
-<!--<div class="svg-text">Draft<br>Pick</div> -->
-<!--</a> -->                
+<!-- <a class="svg-iconlink" href="//%HOST%/%YEAR%/options?L=%LEAGUEID%&O=52"> --> <!-- Comment out after draft is complete -->
+<!-- <a class="svg-iconlink" href="//%HOST%/%YEAR%/options?L=%LEAGUEID%&O=17"> --> <!-- Comment out during draft -->
+<!-- <svg class="svg-icon Icon-Draft-KDL" viewBox="0 0 76.3 72">  -->  
+<!-- <use xlink:href="#Icon-Draft-KDL"></use>  -->  
+<!-- </svg>  -->  
+<!-- <div class="svg-text">Draft<br>Results</div> <!-- Change to Draft Pick or Draft Results -->
+<!-- </a> -->                
 
 
 <!-- AUCTION SVG - Hide after auction ends -->
-<!-- <a class="svg-iconlink" href="//%HOST%/%YEAR%/options?L=%LEAGUEID%&O=43"> --> 
+<!-- <a class="svg-iconlink" href="//%HOST%/%YEAR%/options?L=%LEAGUEID%&O=43"> -->
 <!-- <svg class="svg-icon Icon-Auction" viewBox="0 0 72.4 72"> -->
 <!-- <use xlink:href="#Icon-Auction"></use> -->
 <!-- </svg> -->
@@ -251,7 +242,7 @@ document.head.appendChild(linkRelIco);
 <!-- </a> -->
          
    
-<!-- ADD-DROP SVG -->
+<!-- ADD DROP SVG -->
 <a class="svg-iconlink" href="//%HOST%/%YEAR%/add_drop?L=%LEAGUEID%">
 <svg class="svg-icon Icon-Add-Drop" viewBox="0 0 73.14 72">
 <use xlink:href="#Icon-Add-Drop"></use>
@@ -359,7 +350,7 @@ document.head.appendChild(linkRelIco);
 
 
 <!-- GROUPME SVG  -->
-<a class="svg-iconlink" href="https://groupme.com/join_group/94619327/ZqpNXDGE" onclick="openChatWindow(this); return false;" target="_blank">
+<a class="svg-iconlink" href="https://groupme.com/join_group/94621851/Ywe2pi1h" onclick="openChatWindow(this); return false;" target="_blank">
 <svg class="svg-icon Icon-GroupMe" viewBox="0 0 72 94.98">
 <use xlink:href="#Icon-GroupMe"></use>
 </svg>
@@ -397,17 +388,17 @@ document.head.appendChild(linkRelIco);
 
 
 <!-- HISTORY SVG -->
-<!--<a class="svg-iconlink" href="//%HOST%/%YEAR%/options?L=%LEAGUEID%&O=247&SEQNO=6">
+<a class="svg-iconlink" href="//%HOST%/%YEAR%/options?L=%LEAGUEID%&O=247&SEQNO=6">
 <svg class="svg-icon Icon-Turntable" viewBox="0 0 91.5 72">
 <use xlink:href="#Icon-Turntable"></use>
-</svg>-->
+</svg>
 
 <!--<span class="faa-parent animated-hover">
 <i class="fa-duotone fa-bat faa-tada animated-hover"></i>              
 </span>-->
   
-<!--<div class="svg-text">Old<br>School</div>
-</a>-->
+<div class="svg-text">Old<br>School</div>
+</a>
 
 
 <!-- RULES SVG -->
@@ -418,14 +409,13 @@ document.head.appendChild(linkRelIco);
 <div class="svg-text">League <br> Bylaws</div> 
 </a> -->
 
-<a class="svg-iconlink" href="https://knuckleheads.netlify.app/documents/mmh/MMH-Bylaws.pdf" target="_blank">
-<svg class="svg-icon Icon-Logo-MMH" viewBox="0 0 72.05 98.54">
-<use href="#Icon-Logo-MMH"></use>
+<a class="svg-iconlink" href="https://knuckleheads.netlify.app/documents/kdl/KDL-Bylaws.pdf" target="_blank">
+<svg class="svg-icon Icon-Logo-KDL" viewBox="0 0 72.05 98.54">
+<use href="#Icon-Logo-KDL"></use>
 </svg>
   
 <div class="svg-text">League<br>Bylaws</div>
 </a>
-
 
 	</div> <!--- Close icon-bar-full --->
 
@@ -530,7 +520,7 @@ var MFLPopupEnableTradePoll = true;
 var MFLPopupEnableReminders = false;
 var MFLPopupEnableMessages = false;
 var MFLPopupEnableCommishMessage = false;
-var MFLPopupCommishMessage = "Welcome to Monday Morning Hangover. Cannot wait to get the season started.";
+var MFLPopupCommishMessage = "Welcome to Knuckleheads Dynasty League. Cannot wait to get the season started.";
 var MFLPlayerPopupIncludeNFLLogo = true;
 
 //ENABLE MENU POPUP SEARCH
@@ -640,7 +630,7 @@ var tickerTxtTrans  = "none";                          // set the text-transform
 var tickerLinkClr   = "#eee";                          // set the color for the links in scrolling text
 var tickerLinkHvr   = "#fff";                          // set the color for the links on hover in scrolling text
 var tickerBoxShdw   = "0 0 0.313rem rgba(0,0,0,.5)";   // set box shadow - if you dont want shadow set to "none"
-var controlsGreen   = "lime";                          // set color for the controls boxes when positive setting - current color green
+var controlsGreen   = "green";                          // set color for the controls boxes when positive setting - current color green
 var controlsRed     = "red";                           // set color for the controls boxes when negative setting - current color red
 </script>
 
@@ -659,7 +649,7 @@ var controlsRed     = "red";                           // set color for the cont
 
 <!-- In-Season Mini Scoreboard -->
 <script>
-// Below is an example of the 2024 season - start date 1 day prior to preseason game 1 , end date 1 day after Superbowl
+// Below is an example of the 2025 season - start date 1 day prior to preseason game 1 , end date 1 day after Superbowl
 //var setCustomDates = true;
 //var nflStartWk = "08/01/2025";  // define a date 1 day prior to when you want offseason script to start
 //var nflEndWk   = "02/01/2026";  // define a date 1 day after you want offseason scripts to be removed
@@ -676,8 +666,6 @@ var deactivate_all_offseason = false;     //set to true to deactivate ALL eligib
 
 <!-- WRAP ALL CONTENT -->
 <div id="container-wrap"><!--- ENTER ALL HPMS AFTER THIS AND CLOSE IN FOOTER -->
-
-
 
 <!------------------------------------------------------>
 <!------------------ End #1 - Header ------------------->

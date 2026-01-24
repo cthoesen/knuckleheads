@@ -609,7 +609,7 @@ var controlsRed     = "red";                           // set color for the cont
 
 <!-- In-Season Mini Scoreboard -->
 <script>
-// Below is an example of the 2024 season - start date 1 day prior to preseason game 1 , end date 1 day after Superbowl
+// Below is an example of the 2025 season - start date 1 day prior to preseason game 1 , end date 1 day after Superbowl
 //var setCustomDates = true;
 //var nflStartWk = "08/01/2025";  // define a date 1 day prior to when you want offseason script to start
 //var nflEndWk   = "02/01/2026";  // define a date 1 day after you want offseason scripts to be removed

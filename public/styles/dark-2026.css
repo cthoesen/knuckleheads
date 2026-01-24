@@ -195,18 +195,18 @@ td {
   --primary-dark: #520000;
   --primary-darker: #370000;
   --accent: #b3995d; /* this is the accent color for button icons */
-  --accent-alt: #e8440d; /* this is the color for warnings and also player positions */
+  --accent-alt: #05a8aa; /* this is the color for warnings and also player positions */
   --fa-main-color: #aa0000;
 }
 
 .theme-bears {
   --primary: #c83803;
-  --accent: #113a86; /* this is the accent color for button icons */
+  --accent: #0d5f95; /* this is the accent color for button icons */
   --primary-lighter: #c84103;
   --primary-light: #c85503;
   --primary-dark: #9f2c02;
   --primary-darker: #772102;
-  --accent-alt: #064ed5; /* this is the color for warnings and also player positions */
+  --accent-alt: #1282cc; /* this is the color for warnings and also player positions */
   --fa-main-color: #c83803;
 }
 
