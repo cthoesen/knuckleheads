@@ -30,6 +30,7 @@ td {
   --accent: #eeee65; /* accent color for button icons */
   --accent-one: #ff13f0; /* color for warnings */
   --accent-two: #ffac13; /* color for player positions, bye week font */
+  --variant: #b2f1ff; /* color for mfl live scoring font */
   --bg-opacity: rgba(0, 35, 95, 0.15);
   --bg-opacity-brighter: rgba(130, 255, 245, 0.2);
   --fa-main-color: #38b569;
@@ -173,7 +174,7 @@ td {
   --primary-lighter: #44e785; /* mfl scoreboard font */
   --primary-dark: #28a428;
   --primary-darker: #1f7d1f;
-  --accent: #ffbb00; /* accent color for button icons */
+  --accent: #f1f7ee; /* accent color for button icons */
   --accent-one: #ed254e; /* color for warnings */
   --accent-two: #3CFA3C; /* color for position circles, bye week font */
   --bg-opacity: rgba(5, 159, 0, 0.2);
@@ -195,8 +196,8 @@ td {
   --primary-lighter: #44e785; /* mfl scoreboard font */
   --primary-dark: #32a05e;
   --primary-darker:#267d49;
-  --accent: #30c5ff; /* accent color for button icons */
-  --accent-one: #ca3cff; /* color for warnings */
+  --accent: #eeee65; /* accent color for button icons */
+  --accent-one: #f23cff; /* color for warnings */
   --accent-two: #3CFA3C; /* color for position circles, bye week font */
   --bg-opacity: rgba(56, 181, 105, .05);
   --bg-opacity-brighter: rgba(255, 253, 130, .2);
@@ -720,7 +721,7 @@ body {
 
 /* Added below for mfl live score box font settings */
 #MFLBoxContainer .MFLGameLinks .MFLLiveScore, .MFLNFLLiveScore {
-    color: var(--primary-lighter, #c3f8f8);
+    color: var(--variant, #c3f8f8);
 }
 
 /* Added below for mfl live score box BYE font settings */
