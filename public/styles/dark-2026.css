@@ -23,6 +23,7 @@ td {
   --neutral-dark: #0c0c0c;
   --neutral-blur: rgba(69, 69, 69, 0.15);
   --primary: #38b569; /*this is the primary color for button icons*/
+  --fa-main-color: #38b569;
   --primary-light: #24da6d;
   --primary-lighter: #44e785;
   --primary-dark: #32a05e;
@@ -33,8 +34,7 @@ td {
   --variant: #b2f1ff; /* color for mfl live scoring font */
   --bg-opacity: rgba(0, 35, 95, 0.15);
   --bg-opacity-brighter: rgba(130, 255, 245, 0.2);
-  --fa-main-color: #38b569;
-}
+ }
 
 .myfantasyleague_menu ul li.mfl-icon {
   display: none
@@ -79,6 +79,7 @@ td {
 
 .theme-dk-gold {
   --primary: #d4af37;
+  --fa-main-color: #d4af37;
   --primary-light: #d4c07e;
   --primary-lighter: #ead99e; /* mfl scoreboard font */
   --primary-dark: #a98c2c;
@@ -92,6 +93,7 @@ td {
 
 .theme-dk-gray {
   --primary: #676767;
+  --fa-main-color: #676767;
   --primary-light: #a5a5a5;
   --primary-lighter: #bdbdbd; /* mfl scoreboard font */
   --primary-dark: #484848;
@@ -105,6 +107,7 @@ td {
 
 .theme-dk-purple {
   --primary: #7e22ce;
+  --fa-main-color: #7e22ce;
   --primary-light: #a14de0;
   --primary-lighter: #d9c0e8; /* mfl scoreboard font */
   --primary-dark: #5c188e;
@@ -118,6 +121,7 @@ td {
 
 .theme-dk-orange {
   --primary: #ff4200;
+  --fa-main-color: #ff4200;
   --primary-light: #ff6a1a;
   --primary-lighter: #ff9b4d; /* mfl scoreboard font */
   --primary-dark: #b23300;
@@ -131,6 +135,7 @@ td {
 
 .theme-dk-red {
   --primary: #d93636;
+  --fa-main-color: #d93636;
   --primary-light: #d84141;
   --primary-lighter: #d85050; /* mfl scoreboard font */
   --primary-dark: #b23300;
@@ -144,6 +149,7 @@ td {
 
 .theme-dk-blue {
   --primary: #1353F2;
+  --fa-main-color: #1353F2;
   --primary-light: #117DFF;
   --primary-lighter: #4194f9; /* mfl scoreboard font */
   --primary-dark: #0738B3;
@@ -157,6 +163,7 @@ td {
 
 .theme-dk-aqua {
   --primary: #008C9E;
+  
   --primary-light: #09a7bb;
   --primary-lighter: #17bed4; /* mfl scoreboard font */
   --primary-dark: #006374;
@@ -170,42 +177,49 @@ td {
 
 .theme-dk-lime {
   --primary: #31cc31;
-  --primary-light: #40cd78;
-  --primary-lighter: #44e785; /* mfl scoreboard font */
+  --fa-main-color: #31cc31;
+  --primary-light: #36e236;
+  --primary-lighter: #4df54d; /* mfl scoreboard font */
   --primary-dark: #28a428;
   --primary-darker: #1f7d1f;
-  --accent: #f1f7ee; /* accent color for button icons */
-  --accent-one: #ed254e; /* color for warnings */
-  --accent-two: #3CFA3C; /* color for position circles, bye week font */
+  --accent: #fcea70; /* accent color for button icons */
+  --accent-one: #e72027; /* color for warnings */
+  --accent-two: #3cdafa; /* color for position circles, bye week font */
   --bg-opacity: rgba(5, 159, 0, 0.2);
   --bg-opacity-brighter: rgba(5, 198, 21, 0.4);
 }
   
 .theme-dk-rasta {
   --primary: #078930;
-  --primary-light: #FCDD09;
-  --primary-dark: #DA121A;
-  --primary-darker: #351113;
+  --fa-main-color: #078930;
+  --primary-light: #0ACC48;
+  --primary-lighter: #0BE04F;
+  --primary-dark: #155F2C;
+  --primary-darker: #04521D;
+  --accent: #fcdd09; /* accent color for button icons */
+  --accent-one: #da121a; /* color for warnings */
+  --accent-two: #3CFA3C; /* color for position circles, bye week font */
   --bg-opacity: rgba(5, 159, 0, 0.2);
   --bg-opacity-brighter: rgba(5, 198, 21, 0.4);
 }
 
 .theme-jade {
   --primary: #38b569;
+  --fa-main-color: #38b569;
   --primary-light: #40cd78;
   --primary-lighter: #44e785; /* mfl scoreboard font */
   --primary-dark: #32a05e;
   --primary-darker:#267d49;
   --accent: #eeee65; /* accent color for button icons */
   --accent-one: #f23cff; /* color for warnings */
-  --accent-two: #3CFA3C; /* color for position circles, bye week font */
+  --accent-two: #3ca4fa; /* color for position circles, bye week font */
   --bg-opacity: rgba(56, 181, 105, .05);
-  --bg-opacity-brighter: rgba(255, 253, 130, .2);
-  --fa-main-color: #38b569;
+  --bg-opacity-brighter: rgba(255, 253, 130, .2);  
 }
 
 .theme-cerulean {
   --primary: #1f4fd1;
+  --fa-main-color: #1f4fd1;
   --primary-light: #1facd1;
   --primary-lighter: #65bbd1; /* mfl scoreboard font */
   --primary-dark: #143285;
@@ -214,33 +228,34 @@ td {
   --accent-one: #ff13f0; /* color for warnings */
   --accent-two: #ffac13; /* color for player positions, bye week font */
   --bg-opacity: rgba(0, 35, 95, 0.15);
-  --bg-opacity-brighter: rgba(130, 255, 245, 0.2);
-  --fa-main-color: #1f4fd1;
+  --bg-opacity-brighter: rgba(130, 255, 245, 0.2);  
 }
 
 .theme-creamsicle {
   --primary: #ff570f;
+  --fa-main-color: #ff570f;
   --primary-light: #fa7c2a;
   --primary-lighter: #ff9b4d;
   --primary-dark: #b23e0b;
   --primary-darker:#7d2c08;
-  --accent: #fffd0f; /* this is the accent color for button icons */
-  --accent-one: #05a8aa; /* this is the color for warnings and also player positions */
+  --accent: #fffd0f; /* accent color for button icons */
+  --accent-one: #aa0505; /* color for warnings */
+  --accent-two: #a9ff13; /* color for player positions, bye week font */
   --bg-opacity: rgba(0, 35, 95, 0.15);
   --bg-opacity-brighter: rgba(130, 255, 245, 0.2);
-  --fa-main-color: #ff570f;
 }
 
 /* NFL TEAM THEME COLORING */
 .theme-niners {
   --primary: #aa0000;
+  --fa-main-color: #aa0000;
   --primary-light: #840026;
   --primary-lighter: #ae0132;
   --primary-dark: #520000;
   --primary-darker: #370000;
-  --accent: #b3995d; /* this is the accent color for button icons */
-  --accent-one: #05a8aa; /* this is the color for warnings and also player positions */
-  --fa-main-color: #aa0000;
+  --accent: #b3995d; /* accent color for button icons */
+  --accent-one: #05a8aa; /* color for warnings */
+  --accent-two: #00ab30; /* color for player positions, bye week font */
 }
 
 .theme-bears {
