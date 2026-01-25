@@ -64,49 +64,79 @@ td {
 /* ADD THEME TO ROOT TO SET AS DEFAULT - DEFAULT ROOT MUST BE DEFINED FOR ONE THEME */
 .theme-dk-yellow {
   --primary: #f7b534;
+  --fa-main-color: #f7b534;
   --primary-light: #F5BD51;
+  --primary-lighter: #f5e0a0; /* mfl scoreboard font */
   --primary-dark: #9E7118;
-  --primary-darker: #352911;
+  --primary-darker: #7d590f;
+  --accent: #F7E534; /* accent color for button icons */
+  --accent-one: #F734A7; /* color for warnings */
+  --accent-two: #40F734; /* color for player positions, bye week font */
   --bg-opacity: rgba(247, 181, 52, .05);
   --bg-opacity-brighter: rgba(247, 181, 52, .15)
 }
 
 .theme-dk-gold {
-  --primary: #b2784a;
-  --primary-light: #B8835A;
-  --primary-dark: #704D31;
+  --primary: #d4af37;
+  --primary-light: #d4c07e;
+  --primary-lighter: #ead99e; /* mfl scoreboard font */
+  --primary-dark: #a98c2c;
+  --primary-darker: #877023;
+  --accent: #F1E5AC; /* accent color for button icons */
+  --accent-one: #d43745; /* color for warnings */
+  --accent-two: #37d45b; /* color for player positions, bye week font */
   --bg-opacity: rgba(178, 120, 74, .05);
   --bg-opacity-brighter: rgba(178, 120, 74, .2)
 }
 
 .theme-dk-gray {
-  --primary: #777;
-  --primary-light: #ccc;
-  --primary-dark: #222;
+  --primary: #676767;
+  --primary-light: #a5a5a5;
+  --primary-lighter: #bdbdbd; /* mfl scoreboard font */
+  --primary-dark: #484848;
+  --primary-darker: #313131;
+  --accent: #5da9e9; /* accent color for button icons */
+  --accent-one: #fe5d26; /* color for warnings */
+  --accent-two: #c09bd8; /* color for player positions, bye week font */
   --bg-opacity: rgba(45, 45, 45, .2);
   --bg-opacity-brighter: rgba(45, 45, 45, .4);
 }
 
 .theme-dk-purple {
-  --primary: #8430c2;
-  --primary-light: #b363d1;
+  --primary: #7e22ce;
+  --primary-light: #a14de0;
+  --primary-lighter: #d9c0e8; /* mfl scoreboard font */
   --primary-dark: #5c188e;
+  --primary-darker: #3e0f65;
+  --accent: #CFBD23; /* accent color for button icons */
+  --accent-one: #cf239e; /* color for warnings */
+  --accent-two: #7dcf23; /* color for player positions, bye week font */
   --bg-opacity: rgba(92, 24, 142, .2);
   --bg-opacity-brighter: rgba(132, 48, 194, .05);
 }
 
 .theme-dk-orange {
   --primary: #ff4200;
-  --primary-light: #FA5C25;
-  --primary-dark: #B52F00;
+  --primary-light: #ff6a1a;
+  --primary-lighter: #ff9b4d; /* mfl scoreboard font */
+  --primary-dark: #b23300;
+  --primary-darker: #7d2200;
+  --accent: #ffac13; /* accent color for button icons */
+  --accent-one: #FF0184; /* color for warnings */
+  --accent-two: #00DEFF; /* color for player positions, bye week font */
   --bg-opacity: rgba(181, 47, 0, .05);
   --bg-opacity-brighter: rgba(181, 47, 0, .2)
 }
 
 .theme-dk-red {
-  --primary: #da3636;
-  --primary-light: #e63143;
-  --primary-dark: #78161F;
+  --primary: #d93636;
+  --primary-light: #d84141;
+  --primary-lighter: #d85050; /* mfl scoreboard font */
+  --primary-dark: #b23300;
+  --primary-darker: #7d2200;
+  --accent: #D9D736; /* accent color for button icons */
+  --accent-one: #D936D9; /* color for warnings */
+  --accent-two: #36D964; /* color for player positions, bye week font */
   --bg-opacity: rgba(255, 20, 20, .05);
   --bg-opacity-brighter: rgba(255, 20, 20, .2)
 }
@@ -114,29 +144,38 @@ td {
 .theme-dk-blue {
   --primary: #1353F2;
   --primary-light: #117DFF;
-  --primary-lighter: #4194f9;
+  --primary-lighter: #4194f9; /* mfl scoreboard font */
   --primary-dark: #0738B3;
   --primary-darker:#052a86;
-  --accent: #13c8f2; /* this is the accent color for button icons */
-  --accent-one: #f21366; /* this is the color for warnings */
-  --accent-two: #ffac13; /* this is the color for position circles */
+  --accent: #13c8f2; /* accent color for button icons */
+  --accent-one: #f21366; /* color for warnings */
+  --accent-two: #ffac13; /* color for position circles, bye week font */
   --bg-opacity: rgba(7, 56, 179, .05);
   --bg-opacity-brighter: rgba(7, 56, 179, .2)
 }
 
 .theme-dk-aqua {
-  --primary: #008c9f;
-  --primary-light: #05afc6;
-  --primary-dark: #004953;
+  --primary: #008C9E;
+  --primary-light: #09a7bb;
+  --primary-lighter: #17bed4; /* mfl scoreboard font */
+  --primary-dark: #006374;
+  --primary-darker:#004651;
+  --accent: #9E8C00; /* accent color for button icons */
+  --accent-one: #9E0051; /* color for warnings */
+  --accent-two: #00c9e3; /* color for position circles, bye week font */
   --bg-opacity: rgba(0, 140, 159, .2);
   --bg-opacity-brighter: rgba(5, 175, 198, .4);
 }
 
 .theme-dk-lime {
-  --primary: #059f00;
-  --primary-light: #05c635;
-  --primary-dark: #005300;
-  --primary-darker: #113511;
+  --primary: #31cc31;
+  --primary-light: #40cd78;
+  --primary-lighter: #44e785; /* mfl scoreboard font */
+  --primary-dark: #28a428;
+  --primary-darker: #1f7d1f;
+  --accent: #ed254e; /* accent color for button icons */
+  --accent-one: #C431CC; /* color for warnings */
+  --accent-two: #3CFA3C; /* color for position circles, bye week font */
   --bg-opacity: rgba(5, 159, 0, 0.2);
   --bg-opacity-brighter: rgba(5, 198, 21, 0.4);
 }
