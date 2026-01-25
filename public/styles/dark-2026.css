@@ -260,83 +260,98 @@ td {
 
 .theme-bears {
   --primary: #c83803;
-  --accent: #0d5f95; /* this is the accent color for button icons */
-  --primary-lighter: #c84103;
+  --fa-main-color: #c83803;
   --primary-light: #c85503;
+  --primary-lighter: #e68a4d;
   --primary-dark: #9f2c02;
   --primary-darker: #772102;
-  --accent-one: #1282cc; /* this is the color for warnings and also player positions */
-  --fa-main-color: #c83803;
+  --accent: #0d5f95; /* accent color for button icons */
+  --accent-one: #1282cc; /* color for warnings */
+  --accent-two: #02c7a0; /* color for player positions, bye week font */
 }
 
 .theme-bengals {
-  --primary: #000000;
-  --accent: #f04e23;
-  --primary-lighter: #FFC2AD;
-  --primary-light: #FF7647;
-  --primary-dark: #f04e23;
-  --primary-darker: #000000;
-  --accent-one: #fff;
+  --primary: #fb4f14;
+  --fa-main-color: #fb4f14;
+  --primary-light: #c85503;
+  --primary-lighter: #e68a4d;
+  --primary-dark: #9f2c02;
+  --primary-darker: #772102;
+  --accent: #404040; /* accent color for button icons */
+  --accent-one: #6B14FA; /* color for warnings */
+  --accent-two: #7BFA14; /* color for player positions, bye week font */
 }
 
 .theme-bills {
-  --primary: #194787;
-  --accent: #C60C30;
-  --primary-lighter: #F2DFE3;
-  --primary-light: #C60C30;
-  --primary-dark: #97233F;
-  --primary-darker: #194787;
-  --accent-one:: #fff;
+  --primary: #00338D;
+  --fa-main-color: #00338D;
+  --primary-light: #0053E3;
+  --primary-lighter: #1563e9;
+  --primary-dark: #002E7D;
+  --primary-darker: #002669;
+  --accent: #c60c30; /* accent color for button icons */
+  --accent-one: #c814fa; /* color for warnings */
+  --accent-two: #038C00; /* color for player positions, bye week font */
 }
 
 .theme-broncos {
-  --primary: #002244;
-  --accent: #DE6226;
-  --primary-lighter: #D7D7DE;
-  --primary-light: #132F66;
+  --primary: #FB4F14;
+  --fa-main-color: #FB4F14;
+  --primary-light: #001aae;
+  --primary-lighter: #0c2ad0;
   --primary-dark: #002244;
-  --primary-darker: #002244;
-  --accent-one:: #fff;
+  --primary-darker: #001932;
+  --accent: #001489;
+  --accent-one: #c92387; /* color for warnings */
+  --accent-two: #14FAC5; /* color for player positions, bye week font */
 }
 
 .theme-browns {
-  --primary: #311D00;
-  --accent: #EE4923;
-  --primary-lighter: #A69F95;
-  --primary-light: #EE4923;
-  --primary-dark: #9E2500;
-  --primary-darker: #311D00;
-  --accent-one:: #fff;
+  --primary: #ff3c00;
+  --fa-main-color: #ff3c00;
+  --primary-light: #4c2e00;
+  --primary-lighter: #613b01;
+  --primary-dark: #311D00;
+  --primary-darker: #231500;
+  --accent: #342624;
+  --accent-one: #FF0066; /* color for warnings */
+  --accent-two: #FF9500; /* color for player positions, bye week font */
 }
 
 .theme-bucs {
-  --primary: #34302B;
-  --accent: #B21E35;
-  --primary-lighter: #B1BABF;
-  --primary-light: #B21E35;
-  --primary-dark: #800404;
-  --primary-darker: #34302B;
-  --accent-one:: #fff;
+  --primary: #FF8200;
+  --fa-main-color: #FF8200;
+  --primary-light: #696158;
+  --primary-lighter: #7d766f;
+  --primary-dark: #34302B;
+  --primary-darker: #2a2723;
+  --accent: #C8102E;
+  --accent-one: #e60e2e; /* color for warnings */
+  --accent-two: #f6ff00; /* color for player positions, bye week font */
 }
 
 .theme-cardinals {
-  --primary: #000000;
-  --accent: #83161C;
-  --primary-lighter: #FFD6E0;
-  --primary-light: #C73054;
-  --primary-dark: #83161C;
-  --primary-darker: #000000;
-  --accent-one:: #fff;
+  --primary: #97233F;
+  --fa-main-color: #97233F;
+  --primary-light: #3a3a3a;
+  --primary-lighter: #4a4a4a;
+  --primary-dark: #1f1f1f;
+  --primary-darker: #353535;
+  --accent: #FFB612;
+  --accent-one: #882396; /* color for warnings */
+  --accent-two: #239676; /* color for player positions, bye week font */
 }
 
-.theme-charger {
-  --primary: #002A5E;
-  --accent: #3996D3;
-  --primary-lighter: #EBE4D3;
-  --primary-light: #3996D3;
-  --primary-dark: #002A5E;
-  --primary-darker: #002A5E;
-  --accent-one:: #fff;
+.theme-chargers {
+  --primary: #97233F;
+  --fa-main-color: #97233F;
+  --primary-light: #3a3a3a;
+  --primary-lighter: #4a4a4a;
+  --primary-dark: #1f1f1f;
+  --primary-darker: #353535;
+  --accent: #FFB612;
+  --accent-one: #882396; /* color for warnings */
+  --accent-two: #239676; /* color for player positions, bye week font */
 }
 
 .theme-chiefs {
