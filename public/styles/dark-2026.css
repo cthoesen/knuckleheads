@@ -173,8 +173,8 @@ td {
   --primary-lighter: #44e785; /* mfl scoreboard font */
   --primary-dark: #28a428;
   --primary-darker: #1f7d1f;
-  --accent: #ed254e; /* accent color for button icons */
-  --accent-one: #C431CC; /* color for warnings */
+  --accent: #30C5FF; /* accent color for button icons */
+  --accent-one: #ed254e; /* color for warnings */
   --accent-two: #3CFA3C; /* color for position circles, bye week font */
   --bg-opacity: rgba(5, 159, 0, 0.2);
   --bg-opacity-brighter: rgba(5, 198, 21, 0.4);
@@ -192,11 +192,12 @@ td {
 .theme-jade {
   --primary: #38b569;
   --primary-light: #40cd78;
-  --primary-lighter: #44e785;
+  --primary-lighter: #44e785; /* mfl scoreboard font */
   --primary-dark: #32a05e;
   --primary-darker:#267d49;
-  --accent: #e8e843; /* this is the accent color for button icons */
-  --accent-one: #ca3cff; /* this is the color for warnings and also player positions */
+  --accent: #30c5ff; /* accent color for button icons */
+  --accent-one: #ca3cff; /* color for warnings */
+  --accent-two: #3CFA3C; /* color for position circles, bye week font */
   --bg-opacity: rgba(56, 181, 105, .05);
   --bg-opacity-brighter: rgba(255, 253, 130, .2);
   --fa-main-color: #38b569;
