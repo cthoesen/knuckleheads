@@ -166,7 +166,7 @@ td {
 .theme-cerulean {
   --primary: #1f4fd1;
   --primary-light: #1facd1;
-  --primary-lighter: #65bbd1;
+  --primary-lighter: #65bbd1; /* mfl scoreboard font */
   --primary-dark: #143285;
   --primary-darker:#102767;
   --accent: #23ce6b; /* accent color for button icons */
@@ -680,7 +680,7 @@ body {
 
 /* Added below for mfl live score box font settings */
 #MFLBoxContainer .MFLGameLinks .MFLLiveScore, .MFLNFLLiveScore {
-    color: var(--accent-one, #f8f7c3);
+    color: var(--primary-lighter, #c3f8f8);
 }
 
 /* Added below for mfl live score box BYE font settings */
