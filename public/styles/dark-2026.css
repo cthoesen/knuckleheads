@@ -117,8 +117,9 @@ td {
   --primary-lighter: #4194f9;
   --primary-dark: #0738B3;
   --primary-darker:#052a86;
-  --accent: #13c8f2; /* this is the accent color for button icons and also player positions */
+  --accent: #13c8f2; /* this is the accent color for button icons */
   --accent-one: #f21366; /* this is the color for warnings */
+  --accent-two: #ffac13; /* this is the color for position circles */
   --bg-opacity: rgba(7, 56, 179, .05);
   --bg-opacity-brighter: rgba(7, 56, 179, .2)
 }
@@ -646,6 +647,26 @@ body {
   content: "";
 }
 
+/* Added below logo before captions for kdl */
+#body-kdl caption::before {
+  padding: 1.25rem 1.75rem 1.75rem 1.25rem;
+  background: url(https://knuckleheads.netlify.app/svg-icons/caption-logo.svg) no-repeat;
+  background-size: contain;
+  background-position: 25% center;
+  vertical-align: 0.5rem;
+  content: "";
+}
+
+/* Added below logo before captions for mmh */
+#body-mmh caption::before {
+  padding: 1.25rem 1.75rem 1.75rem 1.25rem;
+  background: url(https://knuckleheads.netlify.app/svg-icons/caption-logo.svg) no-repeat;
+  background-size: contain;
+  background-position: 25% center;
+  vertical-align: 0.5rem;
+  content: "";
+}
+
 /* Added below logo before captions for bsb */
 #body-bsb caption::before {
   padding: 1.25rem 1.75rem 1.75rem 1.25rem;
@@ -656,12 +677,14 @@ body {
   content: "";
 }
 
+/* Added below for mfl live score box font settings */
 #MFLBoxContainer .MFLGameLinks .MFLLiveScore, .MFLNFLLiveScore {
-    color: whitesmoke !important;
+    color: var(--accent-one, #f8f7c3);
 }
 
+/* Added below for mfl live score box BYE font settings */
 .mflBoxBye {
-    color: rgb(213, 10, 236) !important;
+    color: var(--accent-two, #f8f7c3);
 }
 
 /*CGT - mobile background parallax settings*/
@@ -14554,7 +14577,6 @@ div.ym {
 .inner_player_table .cus_player_wrapper {
     position: relative;
 }
-
 /***** commented out this section since no properties in use *****/
 /*.cus_player_images .inner_player_table .cus_players_name {
     /*overflow: hidden;*/
@@ -14614,7 +14636,7 @@ div.ym {
 }
 /*set bg color for team position circle - visible on mobile displays and color of text in circle*/
 .playerImgTable .teamPositionCircle {
-    background: var(--accent-one, #fff);
+    background: var(--accent-two, #ffb431);
     color: #000;
 }
 .theme-dk-yellow .playerImgTable .teamPositionCircle {
