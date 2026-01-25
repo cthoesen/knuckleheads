@@ -173,7 +173,7 @@ td {
   --primary-lighter: #44e785; /* mfl scoreboard font */
   --primary-dark: #28a428;
   --primary-darker: #1f7d1f;
-  --accent: #30C5FF; /* accent color for button icons */
+  --accent: #ffbb00; /* accent color for button icons */
   --accent-one: #ed254e; /* color for warnings */
   --accent-two: #3CFA3C; /* color for position circles, bye week font */
   --bg-opacity: rgba(5, 159, 0, 0.2);
