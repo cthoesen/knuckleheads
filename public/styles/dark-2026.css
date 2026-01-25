@@ -639,8 +639,6 @@ body {
 #body-kkl caption::before {
   padding: 1.25rem 1.75rem 1.75rem 1.25rem;
   background: url(https://knuckleheads.netlify.app/svg-icons/caption-logo.svg) no-repeat;
-  fill: var(--primary, #FA5C25);
-  color: var(--accent, #fa9e25);
   background-size: contain;
   background-position: 25% center;
   vertical-align: 0.5rem;
