@@ -28,7 +28,8 @@ td {
   --primary-dark: #32a05e;
   --primary-darker:#267d49;
   --accent: #eeee65; /*this is the accent color for button icons*/
-  --accent-alt: #ff13f0; /* this is the color for warnings */
+  --accent-one: #ff13f0; /* this is the color for warnings */
+  --accent-two: #ffac13; /* this is the color for player positions */
   --bg-opacity: rgba(0, 35, 95, 0.15);
   --bg-opacity-brighter: rgba(130, 255, 245, 0.2);
   --fa-main-color: #38b569;
@@ -117,7 +118,7 @@ td {
   --primary-dark: #0738B3;
   --primary-darker:#052a86;
   --accent: #13c8f2; /* this is the accent color for button icons and also player positions */
-  --accent-alt: #f21366; /* this is the color for warnings */
+  --accent-one: #f21366; /* this is the color for warnings */
   --bg-opacity: rgba(7, 56, 179, .05);
   --bg-opacity-brighter: rgba(7, 56, 179, .2)
 }
@@ -155,7 +156,7 @@ td {
   --primary-dark: #32a05e;
   --primary-darker:#267d49;
   --accent: #e8e843; /* this is the accent color for button icons */
-  --accent-alt: #ca3cff; /* this is the color for warnings and also player positions */
+  --accent-one: #ca3cff; /* this is the color for warnings and also player positions */
   --bg-opacity: rgba(56, 181, 105, .05);
   --bg-opacity-brighter: rgba(255, 253, 130, .2);
   --fa-main-color: #38b569;
@@ -168,7 +169,7 @@ td {
   --primary-dark: #143285;
   --primary-darker:#102767;
   --accent: #23ce6b; /* this is the accent color for button icons */
-  --accent-alt: #2af5ff; /* this is the color for warnings and also player positions */
+  --accent-one: #2af5ff; /* this is the color for warnings and also player positions */
   --bg-opacity: rgba(0, 35, 95, 0.15);
   --bg-opacity-brighter: rgba(130, 255, 245, 0.2);
   --fa-main-color: #1f4fd1;
@@ -181,7 +182,7 @@ td {
   --primary-dark: #b23e0b;
   --primary-darker:#7d2c08;
   --accent: #fffd0f; /* this is the accent color for button icons */
-  --accent-alt: #05a8aa; /* this is the color for warnings and also player positions */
+  --accent-one: #05a8aa; /* this is the color for warnings and also player positions */
   --bg-opacity: rgba(0, 35, 95, 0.15);
   --bg-opacity-brighter: rgba(130, 255, 245, 0.2);
   --fa-main-color: #ff570f;
@@ -195,7 +196,7 @@ td {
   --primary-dark: #520000;
   --primary-darker: #370000;
   --accent: #b3995d; /* this is the accent color for button icons */
-  --accent-alt: #05a8aa; /* this is the color for warnings and also player positions */
+  --accent-one: #05a8aa; /* this is the color for warnings and also player positions */
   --fa-main-color: #aa0000;
 }
 
@@ -206,7 +207,7 @@ td {
   --primary-light: #c85503;
   --primary-dark: #9f2c02;
   --primary-darker: #772102;
-  --accent-alt: #1282cc; /* this is the color for warnings and also player positions */
+  --accent-one: #1282cc; /* this is the color for warnings and also player positions */
   --fa-main-color: #c83803;
 }
 
@@ -217,7 +218,7 @@ td {
   --primary-light: #FF7647;
   --primary-dark: #f04e23;
   --primary-darker: #000000;
-  --accent-alt: #fff;
+  --accent-one: #fff;
 }
 
 .theme-bills {
@@ -227,7 +228,7 @@ td {
   --primary-light: #C60C30;
   --primary-dark: #97233F;
   --primary-darker: #194787;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-broncos {
@@ -237,7 +238,7 @@ td {
   --primary-light: #132F66;
   --primary-dark: #002244;
   --primary-darker: #002244;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-browns {
@@ -247,7 +248,7 @@ td {
   --primary-light: #EE4923;
   --primary-dark: #9E2500;
   --primary-darker: #311D00;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-bucs {
@@ -257,7 +258,7 @@ td {
   --primary-light: #B21E35;
   --primary-dark: #800404;
   --primary-darker: #34302B;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-cardinals {
@@ -267,7 +268,7 @@ td {
   --primary-light: #C73054;
   --primary-dark: #83161C;
   --primary-darker: #000000;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-charger {
@@ -277,7 +278,7 @@ td {
   --primary-light: #3996D3;
   --primary-dark: #002A5E;
   --primary-darker: #002A5E;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-chiefs {
@@ -287,7 +288,7 @@ td {
   --primary-light: #B21F36;
   --primary-dark: #731020;
   --primary-darker: #000000;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-colts {
@@ -297,7 +298,7 @@ td {
   --primary-light: #002C5F;
   --primary-dark: #000614;
   --primary-darker: #002C5F;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-cowboys {
@@ -307,7 +308,7 @@ td {
   --primary-light: #143491;
   --primary-dark: #041E42;
   --primary-darker: #041E42;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-dolphins {
@@ -317,7 +318,7 @@ td {
   --primary-light: #008E97;
   --primary-dark: #005778;
   --primary-darker: #005778;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-eagles {
@@ -327,7 +328,7 @@ td {
   --primary-light: #004C54;
   --primary-dark: #00131A;
   --primary-darker: #000000;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-falcons {
@@ -337,7 +338,7 @@ td {
   --primary-light: #C73054;
   --primary-dark: #A71930;
   --primary-darker: #000000;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-giants {
@@ -347,7 +348,7 @@ td {
   --primary-light: #1A27AB;
   --primary-dark: #0B2265;
   --primary-darker: #25316A;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-jaguars {
@@ -357,7 +358,7 @@ td {
   --primary-light: #006778;
   --primary-dark: #002738;
   --primary-darker: #000000;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-jets {
@@ -367,7 +368,7 @@ td {
   --primary-light: #125740;
   --primary-dark: #041C14;
   --primary-darker: #000000;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-lions {
@@ -377,7 +378,7 @@ td {
   --primary-light: #006DAF;
   --primary-dark: #0076B6;
   --primary-darker: #000000;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-packers {
@@ -387,7 +388,7 @@ td {
   --primary-light: #40695E;
   --primary-dark: #203731;
   --primary-darker: #203731;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-panthers {
@@ -397,7 +398,7 @@ td {
   --primary-light: #3997F7;
   --primary-dark: #0085CA;
   --primary-darker: #000000;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-patriots {
@@ -407,7 +408,7 @@ td {
   --primary-light: #F2244C;
   --primary-dark: #C60C30;
   --primary-darker: #002244;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-raiders {
@@ -417,7 +418,7 @@ td {
   --primary-light: #666;
   --primary-dark: #111;
   --primary-darker: #000000;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-rams {
@@ -427,7 +428,7 @@ td {
   --primary-light: #003594;
   --primary-dark: #000103;
   --primary-darker: #003594;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-ravens {
@@ -437,7 +438,7 @@ td {
   --primary-light: #472399;
   --primary-dark: #2C2062;
   --primary-darker: #2C2062;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-redskins {
@@ -447,7 +448,7 @@ td {
   --primary-light: #773141;
   --primary-dark: #291016;
   --primary-darker: #5A1414;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-saints {
@@ -457,7 +458,7 @@ td {
   --primary-light: #C6A875;
   --primary-dark: #695A3E;
   --primary-darker: #000000;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-seahawks {
@@ -467,7 +468,7 @@ td {
   --primary-light: #69BE28;
   --primary-dark: #336110;
   --primary-darker: #002244;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-steelers {
@@ -477,7 +478,7 @@ td {
   --primary-light: #FFB612;
   --primary-dark: #825C05;
   --primary-darker: #000000;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-texans {
@@ -487,7 +488,7 @@ td {
   --primary-light: #0F2A63;
   --primary-dark: #06192E;
   --primary-darker: #06192E;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-titans {
@@ -497,7 +498,7 @@ td {
   --primary-light: #4B92DB;
   --primary-dark: #0C2340;
   --primary-darker: #203262;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 
 .theme-vikings {
@@ -507,7 +508,7 @@ td {
   --primary-light: #4F2683;
   --primary-dark: #240E33;
   --primary-darker: #3C1E5D;
-  --accent-alt:: #fff;
+  --accent-one:: #fff;
 }
 /***************************************/
 
@@ -648,11 +649,15 @@ body {
 /* Added below logo before captions for bsb */
 #body-bsb caption::before {
   padding: 1.25rem 1.75rem 1.75rem 1.25rem;
-  background: url(https://knuckleheads.netlify.app/svg-icons/bsb-cube.svg) no-repeat; 
+  background: url(https://knuckleheads.netlify.app/svg-icons/caption-logo.svg) no-repeat; 
   background-size: contain;
   background-position: 25% center;
   vertical-align: 0.5rem;
   content: "";
+}
+
+#MFLBoxContainer .MFLGameLinks .MFLLiveScore, .MFLNFLLiveScore {
+    color: whitesmoke !important;
 }
 
 /*CGT - mobile background parallax settings*/
@@ -997,7 +1002,7 @@ body.chat_popup .banner-container-wrap {
 
 .icon-bar a:hover i:after,
 .icon-bar-full a:hover i:after {
-  color: var(--accent-alt, #ff4200); /* accent color on Font Awesome icons when hovering */
+  color: var(--accent-one, #ff4200); /* accent color on Font Awesome icons when hovering */
   opacity: 1;
 }
 
@@ -2414,7 +2419,7 @@ img {
 .warning a:link,
 .warning a:active,
 .warning a:visited {
-  color: var(--accent-alt, #ff4200);
+  color: var(--accent-one, #ff4200);
   font-family: "Noto Sans", sans-serif;
 }
 
@@ -14605,7 +14610,7 @@ div.ym {
 }
 /*set bg color for team position circle - visible on mobile displays and color of text in circle*/
 .playerImgTable .teamPositionCircle {
-    background: var(--accent-alt, #fff);
+    background: var(--accent-one, #fff);
     color: #000;
 }
 .theme-dk-yellow .playerImgTable .teamPositionCircle {
