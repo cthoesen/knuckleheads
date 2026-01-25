@@ -660,6 +660,10 @@ body {
     color: whitesmoke !important;
 }
 
+.mflBoxBye {
+    color: rgb(213, 10, 236) !important;
+}
+
 /*CGT - mobile background parallax settings*/
 /*@media only screen and (max-width: 48em) {
   #body-fixed {
