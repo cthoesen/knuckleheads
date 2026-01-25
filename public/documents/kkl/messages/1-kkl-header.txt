@@ -98,18 +98,20 @@ document.head.appendChild(linkRelIco);
 <div id="myMFLSkinSelection" class="MFLSkinSelection-content" style="display:none">
 <div id="popup-selectLeagues-caption" style="position:relative">Select Skin<span id="MFLPlayerPopupClose" class="as_close_btn" style="transform:none;top:0;right:0;font-size:0.813rem;font-family:'Open Sans',sans-serif">X</span></div>
 
-<a href="#" onclick="setTheme('theme-dk-green')" style="color:#008c9f!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Aqua"></i>Aqua</a>
-<a href="#" onclick="setTheme('theme-dk-blue')" style="color:#117DFF!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Blue"></i>Blue</a>
-<a href="#" onclick="setTheme('theme-dk-gold')" style="color:#b2784a!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Gold"></i>Gold</a>
-<a href="#" onclick="setTheme('theme-dk-grey')" style="color:#555!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Grey"></i>Grey</a>
-<a href="#" onclick="setTheme('theme-dk-orange')" style="color:#ff4200!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Orange"></i>Orange</a>
-<a href="#" onclick="setTheme('theme-dk-purple')" style="color:#8430c2!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Purple"></i>Purple</a>
-<a href="#" onclick="setTheme('theme-dk-red')" style="color:#da3636!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Red"></i>Red</a>
 <a href="#" onclick="setTheme('theme-dk-yellow')" style="color:#f7b534!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Yellow"></i>Yellow</a>
-<a href="#" onclick="setTheme('theme-dk-rasta')" style="color:#FCDD09;!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Rasta"></i>Rasta</a>
+<a href="#" onclick="setTheme('theme-dk-gold')" style="color:#d4af37!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Gold"></i>Gold</a>
+<a href="#" onclick="setTheme('theme-dk-gray')" style="color:#676767!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Grey"></i>Grey</a>
+<a href="#" onclick="setTheme('theme-dk-purple')" style="color:#7e22ce!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Purple"></i>Purple</a>
+<a href="#" onclick="setTheme('theme-dk-orange')" style="color:#ff4200!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Orange"></i>Orange</a>
+<a href="#" onclick="setTheme('theme-dk-red')" style="color:#d93636!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Red"></i>Red</a>
+<a href="#" onclick="setTheme('theme-dk-blue')" style="color:#1353f2!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Blue"></i>Blue</a>
+<a href="#" onclick="setTheme('theme-dk-aqua')" style="color:#008c9e!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Aqua"></i>Aqua</a>
+<a href="#" onclick="setTheme('theme-dk-lime')" style="color:#31cc31!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Lime"></i>Lime</a>
+<a href="#" onclick="setTheme('theme-dk-rasta')" style="color:#078930;!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Rasta"></i>Rasta</a>
 <a href="#" onclick="setTheme('theme-jade')" style="color:#38b569;!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Jade"></i>Jade</a>
-<a href="#" onclick="setTheme('theme-cerulean')" style="color:#007BA7;!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Cerulean"></i>Cerulean</a>
-<a href="#" onclick="setTheme('theme-creamsicle')" style="color:#fa7c2a;!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Creamsicle"></i>Creamsicle</a>
+<a href="#" onclick="setTheme('theme-cerulean')" style="color:#1f4fd1;!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Cerulean"></i>Cerulean</a>
+<a href="#" onclick="setTheme('theme-creamsicle')" style="color:#ff570f;!important"><i class="fa-regular fa-paintbrush" aria-hidden="true" title="Creamsicle"></i>Creamsicle</a>
+
 <a onclick="setTheme('theme-niners nfltheme')" style="color:#fff;cursor:pointer"><img src="https://www.mflscripts.com/ImageDirectory/script-images/nflTeamsvg_2/SFO.svg" style="width:1.875rem;margin-right:0.625rem;max-height:1.25rem">49ers</a>
 <a onclick="setTheme('theme-bears nfltheme')" style="color:#fff;cursor:pointer"><img src="https://www.mflscripts.com/ImageDirectory/script-images/nflTeamsvg_2/CHI.svg" style="width:1.875rem;margin-right:0.625rem;max-height:1.25rem">Bears</a>
 <a onclick="setTheme('theme-bengals nfltheme')" style="color:#fff;cursor:pointer"><img src="https://www.mflscripts.com/ImageDirectory/script-images/nflTeamsvg_2/CIN.svg" style="width:1.875rem;margin-right:0.625rem;max-height:1.25rem">Bengals</a>
@@ -118,7 +120,7 @@ document.head.appendChild(linkRelIco);
 <a onclick="setTheme('theme-browns nfltheme')" style="color:#fff;cursor:pointer"><img src="https://www.mflscripts.com/ImageDirectory/script-images/nflTeamsvg_2/CLE.svg" style="width:1.875rem;margin-right:0.625rem;max-height:1.25rem">Browns</a>
 <a onclick="setTheme('theme-bucs nfltheme')" style="color:#fff;cursor:pointer"><img src="https://www.mflscripts.com/ImageDirectory/script-images/nflTeamsvg_2/TBB.svg" style="width:1.875rem;margin-right:0.625rem;max-height:1.25rem">Bucs</a>
 <a onclick="setTheme('theme-cardinals nfltheme')" style="color:#fff;cursor:pointer;cursor:pointer"><img src="https://www.mflscripts.com/ImageDirectory/script-images/nflTeamsvg_2/ARI.svg" style="width:1.875rem;margin-right:0.625rem;max-height:1.25rem">Cardinals</a>
-<a onclick="setTheme('theme-charger nfltheme')" style="color:#fff;cursor:pointer"><img src="https://www.mflscripts.com/ImageDirectory/script-images/nflTeamsvg_2/LAC.svg" style="width:1.875rem;margin-right:0.625rem;max-height:1.25rem">Chargers</a>
+<a onclick="setTheme('theme-chargers nfltheme')" style="color:#fff;cursor:pointer"><img src="https://www.mflscripts.com/ImageDirectory/script-images/nflTeamsvg_2/LAC.svg" style="width:1.875rem;margin-right:0.625rem;max-height:1.25rem">Chargers</a>
 <a onclick="setTheme('theme-chiefs nfltheme')" style="color:#fff;cursor:pointer"><img src="https://www.mflscripts.com/ImageDirectory/script-images/nflTeamsvg_2/KCC.svg" style="width:1.875rem;margin-right:0.625rem;max-height:1.25rem">Chiefs</a>
 <a onclick="setTheme('theme-colts nfltheme')" style="color:#fff;cursor:pointer"><img src="https://www.mflscripts.com/ImageDirectory/script-images/nflTeamsvg_2/IND.svg" style="width:1.875rem;margin-right:0.625rem;max-height:1.25rem">Colts</a>
 <a onclick="setTheme('theme-redskins nfltheme')" style="color:#fff;cursor:pointer"><img src="https://www.mflscripts.com/ImageDirectory/script-images/nflTeamsvg_2/WAS.svg" style="width:1.875rem;margin-right:0.625rem;max-height:1.25rem">Commanders</a>
@@ -609,7 +611,7 @@ var controlsRed     = "red";                           // set color for the cont
 
 <!-- In-Season Mini Scoreboard -->
 <script>
-// Below is an example of the 2025 season - start date 1 day prior to preseason game 1 , end date 1 day after Superbowl
+// Below is an example of the 2024 season - start date 1 day prior to preseason game 1 , end date 1 day after Superbowl
 //var setCustomDates = true;
 //var nflStartWk = "08/01/2025";  // define a date 1 day prior to when you want offseason script to start
 //var nflEndWk   = "02/01/2026";  // define a date 1 day after you want offseason scripts to be removed
