@@ -34,7 +34,8 @@ td {
   --variant: #b2f1ff; /* color for mfl live scoring font */
   --bg-opacity: rgba(0, 35, 95, 0.15);
   --bg-opacity-brighter: rgba(130, 255, 245, 0.2);
- }
+  --theme-swatch: initial;
+}
 
 .myfantasyleague_menu ul li.mfl-icon {
   display: none
@@ -60,6 +61,24 @@ td {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+/* OPTIONS FOR THEME TO REMOVE NEED FOR INLINE STYLING */
+.theme-option--team img {
+  width: 1.875rem;
+  max-height: 1.25rem;
+}
+
+.theme-option {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--theme-swatch, var(--primary));
+}
+.theme-option i { 
+  color: var(--theme-swatch, var(--fa-main-color)); 
 }
 
 /* ADD THEME TO ROOT TO SET AS DEFAULT - DEFAULT ROOT MUST BE DEFINED FOR ONE THEME */
@@ -163,7 +182,7 @@ td {
 
 .theme-dk-aqua {
   --primary: #008C9E;
-  
+  --fa-main-color: #008C9E;
   --primary-light: #09a7bb;
   --primary-lighter: #17bed4; /* mfl scoreboard font */
   --primary-dark: #006374;
@@ -217,7 +236,7 @@ td {
   --bg-opacity-brighter: rgba(255, 253, 130, .2);  
 }
 
-.theme-cerulean {
+html.theme-cerulean {
   --primary: #1f4fd1;
   --fa-main-color: #1f4fd1;
   --primary-light: #1facd1;
@@ -374,6 +393,16 @@ td {
   --accent-one:: #fff;
 }
 
+.theme-commanders {
+  --primary: #5A1414;
+  --accent: #FFB612;
+  --primary-lighter: #eee;
+  --primary-light: #773141;
+  --primary-dark: #291016;
+  --primary-darker: #5A1414;
+  --accent-one:: #fff;
+}
+
 .theme-cowboys {
   --primary: #041E42;
   --accent: #777;
@@ -511,16 +540,6 @@ td {
   --primary-light: #472399;
   --primary-dark: #2C2062;
   --primary-darker: #2C2062;
-  --accent-one:: #fff;
-}
-
-.theme-redskins {
-  --primary: #5A1414;
-  --accent: #FFB612;
-  --primary-lighter: #eee;
-  --primary-light: #773141;
-  --primary-dark: #291016;
-  --primary-darker: #5A1414;
   --accent-one:: #fff;
 }
 
