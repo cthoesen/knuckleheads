@@ -768,6 +768,14 @@ body {
   content: "";
 }
 
+/* removes logo before captions for roster report */
+#body-kkl #body-kdl #body-mmh #body-bsb caption.withfranchiseicon:before {
+    padding: 0.313rem 0;
+    text-align: center !important;
+    text-indent: 0;
+    background: none;
+}
+
 /* Added below for mfl live score box font settings */
 #MFLBoxContainer .MFLGameLinks .MFLLiveScore, .MFLNFLLiveScore {
     color: var(--variant, #c3f8f8);
