@@ -28,10 +28,10 @@ td {
   --primary-lighter: #44e785;
   --primary-dark: #32a05e;
   --primary-darker:#267d49;
-  --accent: #eeee65; /* accent color for button icons */
-  --accent-one: #ff13f0; /* color for warnings */
-  --accent-two: #ffac13; /* color for player positions, bye week font */
-  --variant: #b2f1ff; /* color for mfl live scoring font */
+  --accent: #f7e534; /* accent color for button icons */
+  --accent-one: #f734a7; /* color for warnings */
+  --accent-two: #40f734; /* color for player positions, bye week font */
+  --variant: #dbdbdb; /* color for mfl live scoring font */
   --bg-opacity: rgba(0, 35, 95, 0.15);
   --bg-opacity-brighter: rgba(130, 255, 245, 0.2);
   --theme-swatch: initial;
@@ -82,187 +82,1105 @@ td {
 }
 
 /* ADD THEME TO ROOT TO SET AS DEFAULT - DEFAULT ROOT MUST BE DEFINED FOR ONE THEME */
-.theme-dk-yellow {
+html.theme-dk-yellow {
   --primary: #f7b534;
   --fa-main-color: #f7b534;
-  --primary-light: #F5BD51;
-  --primary-lighter: #f5e0a0; /* mfl scoreboard font */
-  --primary-dark: #9E7118;
-  --primary-darker: #7d590f;
-  --accent: #F7E534; /* accent color for button icons */
-  --accent-one: #F734A7; /* color for warnings */
-  --accent-two: #40F734; /* color for player positions, bye week font */
-  --bg-opacity: rgba(247, 181, 52, .05);
-  --bg-opacity-brighter: rgba(247, 181, 52, .15)
+  --primary-light: #f9ca6f;
+  --primary-lighter: #fbd893; /* mfl scoreboard font */
+  --primary-dark: #db9409;
+  --primary-darker: #a06c06;
+  --accent: #f7e534; /* accent color for button icons */
+  --bg-opacity: rgba(219, 148, 9, 0.05);
+  --bg-opacity-brighter: rgba(219, 148, 9, 0.2);
 }
 
-.theme-dk-gold {
+html.theme-dk-gold {
   --primary: #d4af37;
   --fa-main-color: #d4af37;
-  --primary-light: #d4c07e;
-  --primary-lighter: #ead99e; /* mfl scoreboard font */
-  --primary-dark: #a98c2c;
-  --primary-darker: #877023;
+  --primary-light: #dfc369;
+  --primary-lighter: #ebdaa3; /* mfl scoreboard font */
+  --primary-dark: #a18323;
+  --primary-darker: #6f5a18;
   --accent: #F1E5AC; /* accent color for button icons */
-  --accent-one: #d43745; /* color for warnings */
-  --accent-two: #37d45b; /* color for player positions, bye week font */
-  --bg-opacity: rgba(178, 120, 74, .05);
-  --bg-opacity-brighter: rgba(178, 120, 74, .2)
+  --bg-opacity: rgba(161, 131, 35, 0.05);
+  --bg-opacity-brighter: rgba(161, 131, 35, 0.2);
 }
 
-.theme-dk-gray {
-  --primary: #676767;
-  --fa-main-color: #676767;
-  --primary-light: #a5a5a5;
-  --primary-lighter: #bdbdbd; /* mfl scoreboard font */
-  --primary-dark: #484848;
-  --primary-darker: #313131;
-  --accent: #5da9e9; /* accent color for button icons */
-  --accent-one: #fe5d26; /* color for warnings */
-  --accent-two: #c09bd8; /* color for player positions, bye week font */
-  --bg-opacity: rgba(45, 45, 45, .2);
-  --bg-opacity-brighter: rgba(45, 45, 45, .4);
-}
-
-.theme-dk-purple {
+html.theme-dk-purple {
   --primary: #7e22ce;
   --fa-main-color: #7e22ce;
-  --primary-light: #a14de0;
-  --primary-lighter: #d9c0e8; /* mfl scoreboard font */
-  --primary-dark: #5c188e;
-  --primary-darker: #3e0f65;
-  --accent: #CFBD23; /* accent color for button icons */
-  --accent-one: #cf239e; /* color for warnings */
-  --accent-two: #7dcf23; /* color for player positions, bye week font */
-  --bg-opacity: rgba(92, 24, 142, .2);
-  --bg-opacity-brighter: rgba(132, 48, 194, .05);
+  --primary-light: #9c4ce1;
+  --primary-lighter: #be89ec; /* mfl scoreboard font */
+  --primary-dark: #591891;
+  --primary-darker: #380f5c;
+  --accent: #a7a0a0; /* accent color for button icons */
+  --bg-opacity: rgba(89, 24, 145, 0.05);
+  --bg-opacity-brighter: rgba(89, 24, 145, 0.2);
 }
 
-.theme-dk-orange {
-  --primary: #ff4200;
-  --fa-main-color: #ff4200;
-  --primary-light: #ff6a1a;
-  --primary-lighter: #ff9b4d; /* mfl scoreboard font */
-  --primary-dark: #b23300;
-  --primary-darker: #7d2200;
-  --accent: #ffac13; /* accent color for button icons */
-  --accent-one: #FF0184; /* color for warnings */
-  --accent-two: #00DEFF; /* color for player positions, bye week font */
-  --bg-opacity: rgba(181, 47, 0, .05);
-  --bg-opacity-brighter: rgba(181, 47, 0, .2)
-}
-
-.theme-dk-red {
+html.theme-dk-red {
   --primary: #d93636;
   --fa-main-color: #d93636;
-  --primary-light: #d84141;
-  --primary-lighter: #d85050; /* mfl scoreboard font */
-  --primary-dark: #b23300;
-  --primary-darker: #7d2200;
-  --accent: #D9D736; /* accent color for button icons */
-  --accent-one: #D936D9; /* color for warnings */
-  --accent-two: #36D964; /* color for player positions, bye week font */
-  --bg-opacity: rgba(255, 20, 20, .05);
-  --bg-opacity-brighter: rgba(255, 20, 20, .2)
+  --primary-light: #e36969;
+  --primary-lighter: #eda1a1; /* mfl scoreboard font */
+  --primary-dark: #a82020;
+  --primary-darker: #741616;
+  --accent: #dc9cae; /* accent color for button icons */
+  --bg-opacity: rgba(168, 32, 32, 0.05);
+  --bg-opacity-brighter: rgba(168, 32, 32, 0.2);
 }
 
-.theme-dk-blue {
-  --primary: #1353F2;
-  --fa-main-color: #1353F2;
-  --primary-light: #117DFF;
-  --primary-lighter: #4194f9; /* mfl scoreboard font */
-  --primary-dark: #0738B3;
-  --primary-darker:#052a86;
-  --accent: #13c8f2; /* accent color for button icons */
-  --accent-one: #f21366; /* color for warnings */
-  --accent-two: #ffac13; /* color for position circles, bye week font */
-  --bg-opacity: rgba(7, 56, 179, .05);
-  --bg-opacity-brighter: rgba(7, 56, 179, .2)
+html.theme-dk-blue {
+  --primary: #1353f2;
+  --fa-main-color: #1353f2;
+  --primary-light: #4d7df5;
+  --primary-lighter: #91aff9; /* mfl scoreboard font */
+  --primary-dark: #0a3bb4;
+  --primary-darker: #07287a;
+  --accent: #13dff2; /* accent color for button icons */
+  --bg-opacity: rgba(10, 59, 180, 0.05);
+  --bg-opacity-brighter: rgba(10, 59, 180, 0.2);
 }
 
-.theme-dk-aqua {
-  --primary: #008C9E;
-  --fa-main-color: #008C9E;
-  --primary-light: #09a7bb;
-  --primary-lighter: #17bed4; /* mfl scoreboard font */
-  --primary-dark: #006374;
-  --primary-darker:#004651;
-  --accent: #9E8C00; /* accent color for button icons */
-  --accent-one: #9E0051; /* color for warnings */
-  --accent-two: #00c9e3; /* color for position circles, bye week font */
-  --bg-opacity: rgba(0, 140, 159, .2);
-  --bg-opacity-brighter: rgba(5, 175, 198, .4);
+html.theme-dk-aqua {
+  --primary: #04899a;
+  --fa-main-color: #04899a;
+  --primary-light: #05bed6;
+  --primary-lighter: #29e2fa; /* mfl scoreboard font */
+  --primary-dark: #02505a;
+  --primary-darker: #02505a;
+  --accent: #049a7f; /* accent color for button icons */
+  --bg-opacity: rgba(2, 80, 90, 0.05);
+  --bg-opacity-brighter: rgba(2, 80, 90, 0.2);
 }
 
-.theme-dk-lime {
+html.theme-dk-lime {
   --primary: #31cc31;
   --fa-main-color: #31cc31;
-  --primary-light: #36e236;
-  --primary-lighter: #4df54d; /* mfl scoreboard font */
-  --primary-dark: #28a428;
-  --primary-darker: #1f7d1f;
-  --accent: #fcea70; /* accent color for button icons */
-  --accent-one: #e72027; /* color for warnings */
-  --accent-two: #3cdafa; /* color for position circles, bye week font */
-  --bg-opacity: rgba(5, 159, 0, 0.2);
-  --bg-opacity-brighter: rgba(5, 198, 21, 0.4);
-}
-  
-.theme-dk-rasta {
-  --primary: #078930;
-  --fa-main-color: #078930;
-  --primary-light: #0ACC48;
-  --primary-lighter: #0BE04F;
-  --primary-dark: #155F2C;
-  --primary-darker: #04521D;
-  --accent: #fcdd09; /* accent color for button icons */
-  --accent-one: #da121a; /* color for warnings */
-  --accent-two: #3CFA3C; /* color for position circles, bye week font */
-  --bg-opacity: rgba(5, 159, 0, 0.2);
-  --bg-opacity-brighter: rgba(5, 198, 21, 0.4);
-}
-
-.theme-jade {
-  --primary: #38b569;
-  --fa-main-color: #38b569;
-  --primary-light: #40cd78;
-  --primary-lighter: #44e785; /* mfl scoreboard font */
-  --primary-dark: #32a05e;
-  --primary-darker:#267d49;
-  --accent: #eeee65; /* accent color for button icons */
-  --accent-one: #f23cff; /* color for warnings */
-  --accent-two: #3ca4fa; /* color for position circles, bye week font */
-  --bg-opacity: rgba(56, 181, 105, .05);
-  --bg-opacity-brighter: rgba(255, 253, 130, .2);  
+  --primary-light: #61d961;
+  --primary-lighter: #9be79b; /* mfl scoreboard font */
+  --primary-dark: #239223;
+  --primary-darker: #176117;
+  --accent: #b2cc31; /* accent color for button icons */
+  --bg-opacity: rgba(35, 146, 35, 0.05);
+  --bg-opacity-brighter: rgba(35, 146, 35, 0.2);
 }
 
 html.theme-cerulean {
   --primary: #1f4fd1;
   --fa-main-color: #1f4fd1;
-  --primary-light: #1facd1;
-  --primary-lighter: #65bbd1; /* mfl scoreboard font */
-  --primary-dark: #143285;
-  --primary-darker:#102767;
+  --primary-light: #4973e4;
+  --primary-lighter: #87a3ed; /* mfl scoreboard font */
+  --primary-dark: #163793;
+  --primary-darker: #0e235e;
   --accent: #23ce6b; /* accent color for button icons */
   --accent-one: #ff13f0; /* color for warnings */
   --accent-two: #ffac13; /* color for player positions, bye week font */
-  --bg-opacity: rgba(0, 35, 95, 0.15);
-  --bg-opacity-brighter: rgba(130, 255, 245, 0.2);  
+  --bg-opacity: rgba(22, 55, 147, 0.05);
+  --bg-opacity-brighter: rgba(22, 55, 147, 0.2);
 }
 
-.theme-creamsicle {
-  --primary: #ff570f;
-  --fa-main-color: #ff570f;
-  --primary-light: #fa7c2a;
-  --primary-lighter: #ff9b4d;
-  --primary-dark: #b23e0b;
-  --primary-darker:#7d2c08;
-  --accent: #fffd0f; /* accent color for button icons */
-  --accent-one: #aa0505; /* color for warnings */
-  --accent-two: #a9ff13; /* color for player positions, bye week font */
-  --bg-opacity: rgba(0, 35, 95, 0.15);
-  --bg-opacity-brighter: rgba(130, 255, 245, 0.2);
+html.theme-creamsicle {
+  --primary: #f95915;
+  --fa-main-color: #f95915;
+  --primary-light: #fb8451;
+  --primary-lighter: #fcb292; /* mfl scoreboard font */
+  --primary-dark: #c23e05;
+  --primary-darker: #862b03;
+  --accent: #f9d715; /* accent color for button icons */
+  --bg-opacity: rgba(194, 62, 5, 0.05);
+  --bg-opacity-brighter: rgba(194, 62, 5, 0.2);
 }
+
+html.theme-jade {
+  --primary: #38b569;
+  --fa-main-color: #38b569;
+  --primary-light: #5dcd89;
+  --primary-lighter: #94deb1; /* mfl scoreboard font */
+  --primary-dark: #277e49;
+  --primary-darker: #19502e;
+  --accent: #c8ec17; /* accent color for button icons */
+  --bg-opacity: rgba(39, 126, 73, 0.05);
+  --bg-opacity-brighter: rgba(39, 126, 73, 0.2);
+}
+
+html.theme-dk-gray {
+   --primary: #676767;
+  --fa-main-color: #676767;
+  --primary-light: #a5a5a5;
+  --primary-lighter: #bdbdbd;
+  --primary-dark: #484848;
+  --primary-darker: #313131;
+  --accent: #5da9e9; /* accent color for button icons */
+  --bg-opacity: rgba(91, 44, 44, 0.05);
+  --bg-opacity-brighter: rgba(91, 44, 44, 0.2);
+}
+
+html.theme-dk-orange {
+  --primary: #f94506;
+  --fa-main-color: #f94506;
+  --primary-light: #fa7242;
+  --primary-lighter: #fca688; /* mfl scoreboard font */
+  --primary-dark: #b33205;
+  --primary-darker: #772103;
+  --accent: #f9bc06; /* accent color for button icons */
+  --bg-opacity: rgba(179, 50, 5, 0.05);
+  --bg-opacity-brighter: rgba(179, 50, 5, 0.2);
+}
+
+html.theme-dk-rasta {
+  --primary: #078930;
+  --fa-main-color: #078930;
+  --primary-light: #0ac344;
+  --primary-lighter: #21f463; /* mfl scoreboard font */
+  --primary-dark: #04571f;
+  --primary-darker: #04571f;
+  --accent: #fcdd09; /* accent color for button icons */
+  --accent-one: #da121a; /* color for warnings */
+  --accent-two: #3CFA3C; /* color for position circles, bye week font */
+  --bg-opacity: rgba(4, 87, 31, 0.05);
+  --bg-opacity-brighter: rgba(4, 87, 31, 0.2);
+}
+
+/* NFL TEAM THEME COLORING */
+html.theme-niners {
+  --primary: #a60404;
+  --fa-main-color: #a60404;
+  --primary-light: #e10606;
+  --primary-lighter: #fa3535; /* mfl scoreboard font */
+  --primary-dark: #600202;
+  --primary-darker: #5a0202;
+  --accent: #55a604; /* accent color for button icons */
+  --accent-one: #04a6a6; /* color for warnings */
+  --accent-two: #0455a6; /* color for player positions, bye week font */
+  --bg-opacity: rgba(96, 2, 2, 0.05);
+  --bg-opacity-brighter: rgba(96, 2, 2, 0.2);
+}
+
+html.theme-niners2 {
+  --primary: #b3995d;
+  --fa-main-color: #b3995d;
+  --primary-light: #c7b387;
+  --primary-lighter: #dbcfb3; /* mfl scoreboard font */
+  --primary-dark: #897340;
+  --primary-darker: #5f502d;
+  --accent: #5db36e; /* accent color for button icons */
+  --accent-one: #5d77b3; /* color for warnings */
+  --accent-two: #6e5db3; /* color for player positions, bye week font */
+  --bg-opacity: rgba(137, 115, 64, 0.05);
+  --bg-opacity-brighter: rgba(137, 115, 64, 0.2);
+}
+
+html.theme-bears {
+  --primary: #c63905;
+  --fa-main-color: #c63905;
+  --primary-light: #f94e0f;
+  --primary-lighter: #fb8255; /* mfl scoreboard font */
+  --primary-dark: #802503;
+  --primary-darker: #5a1a02;
+  --accent: #32c605; /* accent color for button icons */
+  --accent-one: #0592c6; /* color for warnings */
+  --accent-two: #0532c6; /* color for player positions, bye week font */
+  --bg-opacity: rgba(128, 37, 3, 0.05);
+  --bg-opacity-brighter: rgba(128, 37, 3, 0.2);
+}
+
+html.theme-bears2 {
+  --primary: #132649;
+  --fa-main-color: #132649;
+  --primary-light: #204079;
+  --primary-lighter: #2f5db2; /* mfl scoreboard font */
+  --primary-dark: #132649;
+  --primary-darker: #132649;
+  --accent: #491341; /* accent color for button icons */
+  --accent-one: #493613; /* color for warnings */
+  --accent-two: #414913; /* color for player positions, bye week font */
+  --bg-opacity: rgba(19, 38, 73, 0.05);
+  --bg-opacity-brighter: rgba(19, 38, 73, 0.2);
+}
+
+html.theme-bengals {
+  --primary: #f95016;
+  --fa-main-color: #f95016;
+  --primary-light: #fb7d52;
+  --primary-lighter: #fcad92; /* mfl scoreboard font */
+  --primary-dark: #c33505;
+  --primary-darker: #872503;
+  --accent: #4ef916; /* accent color for button icons */
+  --accent-one: #16bff9; /* color for warnings */
+  --accent-two: #164ef9; /* color for player positions, bye week font */
+  --bg-opacity: rgba(195, 53, 5, 0.05);
+  --bg-opacity-brighter: rgba(195, 53, 5, 0.2);
+}
+
+html.theme-bengals2 {
+  --primary: #3e1e1e;
+  --fa-main-color: #3e1e1e;
+  --primary-light: #673232;
+  --primary-lighter: #974949; /* mfl scoreboard font */
+  --primary-dark: #3e1e1e;
+  --primary-darker: #3e1e1e;
+  --accent: #2e3e1e; /* accent color for button icons */
+  --accent-one: #1e3e3e; /* color for warnings */
+  --accent-two: #1e2e3e; /* color for player positions, bye week font */
+  --bg-opacity: rgba(62, 30, 30, 0.05);
+  --bg-opacity-brighter: rgba(62, 30, 30, 0.2);
+}
+
+html.theme-bills {
+  --primary: #043489;
+  --fa-main-color: #043489;
+  --primary-light: #054bc5;
+  --primary-lighter: #196af9; /* mfl scoreboard font */
+  --primary-dark: #02225a;
+  --primary-darker: #02225a;
+  --accent: #890477; /* accent color for button icons */
+  --accent-one: #895904; /* color for warnings */
+  --accent-two: #778904; /* color for player positions, bye week font */
+  --bg-opacity: rgba(2, 34, 90, 0.05);
+  --bg-opacity-brighter: rgba(2, 34, 90, 0.2);
+}
+
+html.theme-bills2 {
+  --primary: #c60c30;
+  --fa-main-color: #c60c30;
+  --primary-light: #f11e47;
+  --primary-lighter: #f5617e; /* mfl scoreboard font */
+  --primary-dark: #830820;
+  --primary-darker: #570515;
+  --accent: #8dc60c; /* accent color for button icons */
+  --accent-one: #0cc6a2; /* color for warnings */
+  --accent-two: #0c8dc6; /* color for player positions, bye week font */
+  --bg-opacity: rgba(131, 8, 32, 0.05);
+  --bg-opacity-brighter: rgba(131, 8, 32, 0.2);
+}
+
+html.theme-broncos {
+  --primary: #f95016;
+  --fa-main-color: #f95016;
+  --primary-light: #fb7d52;
+  --primary-lighter: #fcad92; /* mfl scoreboard font */
+  --primary-dark: #c33505;
+  --primary-darker: #872503;
+  --accent: #4ef916; /* accent color for button icons */
+  --accent-one: #16bff9; /* color for warnings */
+  --accent-two: #164ef9; /* color for player positions, bye week font */
+  --bg-opacity: rgba(195, 53, 5, 0.05);
+  --bg-opacity-brighter: rgba(195, 53, 5, 0.2);
+}
+
+html.theme-broncos2 {
+  --primary: #031686;
+  --fa-main-color: #031686;
+  --primary-light: #0520c1;
+  --primary-lighter: #1536f9; /* mfl scoreboard font */
+  --primary-dark: #020f5a;
+  --primary-darker: #020f5a;
+  --accent: #860357; /* accent color for button icons */
+  --accent-one: #867303; /* color for warnings */
+  --accent-two: #578603; /* color for player positions, bye week font */
+  --bg-opacity: rgba(2, 15, 90, 0.05);
+  --bg-opacity-brighter: rgba(2, 15, 90, 0.2);
+}
+
+html.theme-browns {
+  --primary: #f93f06;
+  --fa-main-color: #f93f06;
+  --primary-light: #fa6d42;
+  --primary-lighter: #fca388; /* mfl scoreboard font */
+  --primary-dark: #b32e05;
+  --primary-darker: #771e03;
+  --accent: #46f906; /* accent color for button icons */
+  --accent-one: #06c0f9; /* color for warnings */
+  --accent-two: #0646f9; /* color for player positions, bye week font */
+  --bg-opacity: rgba(179, 46, 5, 0.05);
+  --bg-opacity-brighter: rgba(179, 46, 5, 0.2);
+}
+
+html.theme-browns2 {
+  --primary: #5a3602;
+  --fa-main-color: #5a3602;
+  --primary-light: #955a04;
+  --primary-lighter: #db8406; /* mfl scoreboard font */
+  --primary-dark: #5a3602;
+  --primary-darker: #5a3602;
+  --accent: #025a0a; /* accent color for button icons */
+  --accent-one: #02265a; /* color for warnings */
+  --accent-two: #0a025a; /* color for player positions, bye week font */
+  --bg-opacity: rgba(90, 54, 2, 0.05);
+  --bg-opacity-brighter: rgba(90, 54, 2, 0.2);
+}
+
+html.theme-bucs {
+  --primary: #f98206;
+  --fa-main-color: #f98206;
+  --primary-light: #faa042;
+  --primary-lighter: #fcc388; /* mfl scoreboard font */
+  --primary-dark: #b35e05;
+  --primary-darker: #773e03;
+  --accent: #06f909; /* accent color for button icons */
+  --accent-one: #067df9; /* color for warnings */
+  --accent-two: #0906f9; /* color for player positions, bye week font */
+  --bg-opacity: rgba(179, 94, 5, 0.05);
+  --bg-opacity-brighter: rgba(179, 94, 5, 0.2);
+}
+
+html.theme-bucs2 {
+  --primary: #d50a0a;
+  --fa-main-color: #d50a0a;
+  --primary-light: #f52727;
+  --primary-lighter: #f86c6c; /* mfl scoreboard font */
+  --primary-dark: #910707;
+  --primary-darker: #580404;
+  --accent: #70d50a; /* accent color for button icons */
+  --accent-one: #0ad5d5; /* color for warnings */
+  --accent-two: #0a70d5; /* color for player positions, bye week font */
+  --bg-opacity: rgba(145, 7, 7, 0.05);
+  --bg-opacity-brighter: rgba(145, 7, 7, 0.2);
+}
+
+html.theme-bucs3 {
+  --primary: #82623f;
+  --fa-main-color: #82623f;
+  --primary-light: #ac8253;
+  --primary-lighter: #c3a583; /* mfl scoreboard font */
+  --primary-dark: #523e28;
+  --primary-darker: #3e2f1e;
+  --accent: #3f8241; /* accent color for button icons */
+  --accent-one: #3f5f82; /* color for warnings */
+  --accent-two: #413f82; /* color for player positions, bye week font */
+  --bg-opacity: rgba(82, 62, 40, 0.05);
+  --bg-opacity-brighter: rgba(82, 62, 40, 0.2);
+}
+
+html.theme-cardinals {
+  --primary: #97233f;
+  --fa-main-color: #97233f;
+  --primary-light: #c92f54;
+  --primary-lighter: #db6480; /* mfl scoreboard font */
+  --primary-dark: #5d1627;
+  --primary-darker: #4b111f;
+  --accent: #799723; /* accent color for button icons */
+  --accent-one: #23977b; /* color for warnings */
+  --accent-two: #237997; /* color for player positions, bye week font */
+  --bg-opacity: rgba(93, 22, 39, 0.05);
+  --bg-opacity-brighter: rgba(93, 22, 39, 0.2);
+}
+
+html.theme-cardinals2 {
+  --primary: #f9b418;
+  --fa-main-color: #f9b418;
+  --primary-light: #fbc754;
+  --primary-lighter: #fcdb92; /* mfl scoreboard font */
+  --primary-dark: #c58a05;
+  --primary-darker: #896004;
+  --accent: #18f943; /* accent color for button icons */
+  --accent-one: #185df9; /* color for warnings */
+  --accent-two: #4318f9; /* color for player positions, bye week font */
+  --bg-opacity: rgba(197, 138, 5, 0.05);
+  --bg-opacity-brighter: rgba(197, 138, 5, 0.2);
+}
+
+html.theme-chargers {
+  --primary: #057fc1;
+  --fa-main-color: #057fc1;
+  --primary-light: #0aa4f9;
+  --primary-lighter: #50befb; /* mfl scoreboard font */
+  --primary-dark: #03517b;
+  --primary-darker: #023b5a;
+  --accent: #a605c1; /* accent color for button icons */
+  --accent-one: #c14705; /* color for warnings */
+  --accent-two: #c1a605; /* color for player positions, bye week font */
+  --bg-opacity: rgba(3, 81, 123, 0.05);
+  --bg-opacity-brighter: rgba(3, 81, 123, 0.2);
+}
+
+html.theme-chargers2 {
+  --primary: #f9bf14;
+  --fa-main-color: #f9bf14;
+  --primary-light: #fbcf50;
+  --primary-lighter: #fce192; /* mfl scoreboard font */
+  --primary-dark: #c19105;
+  --primary-darker: #856403;
+  --accent: #14f94d; /* accent color for button icons */
+  --accent-one: #144ef9; /* color for warnings */
+  --accent-two: #4d14f9; /* color for player positions, bye week font */
+  --bg-opacity: rgba(193, 145, 5, 0.05);
+  --bg-opacity-brighter: rgba(193, 145, 5, 0.2);
+}
+
+html.theme-chargers3 {
+  --primary: #02245a;
+  --fa-main-color: #02245a;
+  --primary-light: #043d95;
+  --primary-lighter: #0659db; /* mfl scoreboard font */
+  --primary-dark: #02245a;
+  --primary-darker: #02245a;
+  --accent: #5a0250; /* accent color for button icons */
+  --accent-one: #5a3702; /* color for warnings */
+  --accent-two: #505a02; /* color for player positions, bye week font */
+  --bg-opacity: rgba(2, 36, 90, 0.05);
+  --bg-opacity-brighter: rgba(2, 36, 90, 0.2);
+}
+
+html.theme-chiefs {
+  --primary: #e31837;
+  --fa-main-color: #e31837;
+  --primary-light: #ec4c65;
+  --primary-lighter: #f38d9c; /* mfl scoreboard font */
+  --primary-dark: #a21127;
+  --primary-darker: #6b0b1a;
+  --accent: #9ce318; /* accent color for button icons */
+  --accent-one: #18e3c4; /* color for warnings */
+  --accent-two: #189ce3; /* color for player positions, bye week font */
+  --bg-opacity: rgba(162, 17, 39, 0.05);
+  --bg-opacity-brighter: rgba(162, 17, 39, 0.2);
+}
+
+html.theme-chiefs2 {
+  --primary: #f9b622;
+  --fa-main-color: #f9b622;
+  --primary-light: #fbca5d;
+  --primary-lighter: #fcdb92; /* mfl scoreboard font */
+  --primary-dark: #ce8f05;
+  --primary-darker: #936604;
+  --accent: #22f94a; /* accent color for button icons */
+  --accent-one: #2265f9; /* color for warnings */
+  --accent-two: #4a22f9; /* color for player positions, bye week font */
+  --bg-opacity: rgba(206, 143, 5, 0.05);
+  --bg-opacity-brighter: rgba(206, 143, 5, 0.2);
+}
+
+html.theme-colts {
+  --primary: #022c5d;
+  --fa-main-color: #022c5d;
+  --primary-light: #044998;
+  --primary-lighter: #066ade; /* mfl scoreboard font */
+  --primary-dark: #022b5a;
+  --primary-darker: #022b5a;
+  --accent: #5d0259; /* accent color for button icons */
+  --accent-one: #5d3302; /* color for warnings */
+  --accent-two: #595d02; /* color for player positions, bye week font */
+  --bg-opacity: rgba(2, 43, 90, 0.05);
+  --bg-opacity-brighter: rgba(2, 43, 90, 0.2);
+}
+
+html.theme-colts2 {
+  --primary: #89b5c6;
+  --fa-main-color: #89b5c6;
+  --primary-light: #b2cfda;
+  --primary-lighter: #b3d0db; /* mfl scoreboard font */
+  --primary-dark: #5997af;
+  --primary-darker: #427589;
+  --accent: #b889c6; /* accent color for button icons */
+  --accent-one: #c69a89; /* color for warnings */
+  --accent-two: #c6b889; /* color for player positions, bye week font */
+  --bg-opacity: rgba(89, 151, 175, 0.05);
+  --bg-opacity-brighter: rgba(89, 151, 175, 0.2);
+}
+
+html.theme-commanders {
+  --primary: #773141;
+  --fa-main-color: #773141;
+  --primary-light: #a24359;
+  --primary-lighter: #c26b7f; /* mfl scoreboard font */
+  --primary-dark: #441c25;
+  --primary-darker: #411b24;
+  --accent: #647731; /* accent color for button icons */
+  --accent-one: #317767; /* color for warnings */
+  --accent-two: #316477; /* color for player positions, bye week font */
+  --bg-opacity: rgba(68, 28, 37, 0.05);
+  --bg-opacity-brighter: rgba(68, 28, 37, 0.2);
+}
+
+html.theme-commanders2 {
+  --primary: #f9b418;
+  --fa-main-color: #f9b418;
+  --primary-light: #fbc754;
+  --primary-lighter: #fcdb92; /* mfl scoreboard font */
+  --primary-dark: #c58a05;
+  --primary-darker: #896004;
+  --accent: #18f943; /* accent color for button icons */
+  --accent-one: #185df9; /* color for warnings */
+  --accent-two: #4318f9; /* color for player positions, bye week font */
+  --bg-opacity: rgba(197, 138, 5, 0.05);
+  --bg-opacity-brighter: rgba(197, 138, 5, 0.2);
+}
+
+html.theme-cowboys {
+  --primary: #052757;
+  --fa-main-color: #052757;
+  --primary-light: #094290;
+  --primary-lighter: #0d60d4; /* mfl scoreboard font */
+  --primary-dark: #052757;
+  --primary-darker: #052757;
+  --accent: #570550; /* accent color for button icons */
+  --accent-one: #573405; /* color for warnings */
+  --accent-two: #505705; /* color for player positions, bye week font */
+  --bg-opacity: rgba(5, 39, 87, 0.05);
+  --bg-opacity-brighter: rgba(5, 39, 87, 0.2);
+}
+
+html.theme-cowboys2 {
+  --primary: #043690;
+  --fa-main-color: #043690;
+  --primary-light: #054ccc;
+  --primary-lighter: #1f6df9; /* mfl scoreboard font */
+  --primary-dark: #02225a;
+  --primary-darker: #02225a;
+  --accent: #90047c; /* accent color for button icons */
+  --accent-one: #905e04; /* color for warnings */
+  --accent-two: #7c9004; /* color for player positions, bye week font */
+  --bg-opacity: rgba(2, 34, 90, 0.05);
+  --bg-opacity-brighter: rgba(2, 34, 90, 0.2);
+}
+
+html.theme-cowboys3 {
+  --primary: #67a3b6;
+  --fa-main-color: #67a3b6;
+  --primary-light: #90bcca;
+  --primary-lighter: #b3d1db; /* mfl scoreboard font */
+  --primary-dark: #457f90;
+  --primary-darker: #325a67;
+  --accent: #a167b6; /* accent color for button icons */
+  --accent-one: #b67a67; /* color for warnings */
+  --accent-two: #b6a167; /* color for player positions, bye week font */
+  --bg-opacity: rgba(69, 127, 144, 0.05);
+  --bg-opacity-brighter: rgba(69, 127, 144, 0.2);
+}
+
+html.theme-dolphins {
+  --primary: #048b93;
+  --fa-main-color: #048b93;
+  --primary-light: #05c3cf;
+  --primary-lighter: #22edf9; /* mfl scoreboard font */
+  --primary-dark: #02545a;
+  --primary-darker: #02545a;
+  --accent: #540493; /* accent color for button icons */
+  --accent-one: #930c04; /* color for warnings */
+  --accent-two: #935404; /* color for player positions, bye week font */
+  --bg-opacity: rgba(2, 84, 90, 0.05);
+  --bg-opacity-brighter: rgba(2, 84, 90, 0.2);
+}
+
+html.theme-dolphins2 {
+  --primary: #f84e06;
+  --fa-main-color: #f84e06;
+  --primary-light: #fa7841;
+  --primary-lighter: #fca987; /* mfl scoreboard font */
+  --primary-dark: #b23805;
+  --primary-darker: #762503;
+  --accent: #38f806; /* accent color for button icons */
+  --accent-one: #06b0f8; /* color for warnings */
+  --accent-two: #0638f8; /* color for player positions, bye week font */
+  --bg-opacity: rgba(178, 56, 5, 0.05);
+  --bg-opacity-brighter: rgba(178, 56, 5, 0.2);
+}
+
+html.theme-eagles {
+  --primary: #02515a;
+  --fa-main-color: #02515a;
+  --primary-light: #048795;
+  --primary-lighter: #06c6db; /* mfl scoreboard font */
+  --primary-dark: #02515a;
+  --primary-darker: #02515a;
+  --accent: #36025a; /* accent color for button icons */
+  --accent-one: #5a0b02; /* color for warnings */
+  --accent-two: #5a3602; /* color for player positions, bye week font */
+  --bg-opacity: rgba(2, 81, 90, 0.05);
+  --bg-opacity-brighter: rgba(2, 81, 90, 0.2);
+}
+
+html.theme-eagles2 {
+  --primary: #8cb6c8;
+  --fa-main-color: #8cb6c8;
+  --primary-light: #b3cfdb;
+  --primary-lighter: #b3cfdb; /* mfl scoreboard font */
+  --primary-dark: #5c97b1;
+  --primary-darker: #43768c;
+  --accent: #bc8cc8; /* accent color for button icons */
+  --accent-one: #c89e8c; /* color for warnings */
+  --accent-two: #c8bc8c; /* color for player positions, bye week font */
+  --bg-opacity: rgba(92, 151, 177, 0.05);
+  --bg-opacity-brighter: rgba(92, 151, 177, 0.2);
+}
+
+html.theme-falcons {
+  --primary: #3e1e1e;
+  --fa-main-color: #3e1e1e;
+  --primary-light: #673232;
+  --primary-lighter: #974949; /* mfl scoreboard font */
+  --primary-dark: #3e1e1e;
+  --primary-darker: #3e1e1e;
+  --accent: #2e3e1e; /* accent color for button icons */
+  --accent-one: #1e3e3e; /* color for warnings */
+  --accent-two: #1e2e3e; /* color for player positions, bye week font */
+  --bg-opacity: rgba(62, 30, 30, 0.05);
+  --bg-opacity-brighter: rgba(62, 30, 30, 0.2);
+}
+
+html.theme-falcons2 {
+  --primary: #a71930;
+  --fa-main-color: #a71930;
+  --primary-light: #dc213f;
+  --primary-lighter: #e75e74; /* mfl scoreboard font */
+  --primary-dark: #69101e;
+  --primary-darker: #500c17;
+  --accent: #77a719; /* accent color for button icons */
+  --accent-one: #19a790; /* color for warnings */
+  --accent-two: #1977a7; /* color for player positions, bye week font */
+  --bg-opacity: rgba(105, 16, 30, 0.05);
+  --bg-opacity-brighter: rgba(105, 16, 30, 0.2);
+}
+
+html.theme-giants {
+  --primary: #0b2265;
+  --fa-main-color: #0b2265;
+  --primary-light: #11359c;
+  --primary-lighter: #184add; /* mfl scoreboard font */
+  --primary-dark: #091c53;
+  --primary-darker: #091c53;
+  --accent: #650b4f; /* accent color for button icons */
+  --accent-one: #654e0b; /* color for warnings */
+  --accent-two: #4f650b; /* color for player positions, bye week font */
+  --bg-opacity: rgba(9, 28, 83, 0.05);
+  --bg-opacity-brighter: rgba(9, 28, 83, 0.2);
+}
+
+html.theme-giants2 {
+  --primary: #a71930;
+  --fa-main-color: #a71930;
+  --primary-light: #dc213f;
+  --primary-lighter: #e75e74; /* mfl scoreboard font */
+  --primary-dark: #69101e;
+  --primary-darker: #500c17;
+  --accent: #77a719; /* accent color for button icons */
+  --accent-one: #19a790; /* color for warnings */
+  --accent-two: #1977a7; /* color for player positions, bye week font */
+  --bg-opacity: rgba(105, 16, 30, 0.05);
+  --bg-opacity-brighter: rgba(105, 16, 30, 0.2);
+}
+
+html.theme-jaguars {
+  --primary: #036575;
+  --fa-main-color: #036575;
+  --primary-light: #0598b1;
+  --primary-lighter: #06d4f6; /* mfl scoreboard font */
+  --primary-dark: #024d5a;
+  --primary-darker: #024d5a;
+  --accent: #4c0375; /* accent color for button icons */
+  --accent-one: #751303; /* color for warnings */
+  --accent-two: #754c03; /* color for player positions, bye week font */
+  --bg-opacity: rgba(2, 77, 90, 0.05);
+  --bg-opacity-brighter: rgba(2, 77, 90, 0.2);
+}
+
+html.theme-jaguars2 {
+  --primary: #d7a22a;
+  --fa-main-color: #d7a22a;
+  --primary-light: #e1b85e;
+  --primary-lighter: #ecd39a; /* mfl scoreboard font */
+  --primary-dark: #9c751d;
+  --primary-darker: #694f14;
+  --accent: #2ad74c; /* accent color for button icons */
+  --accent-one: #2a5fd7; /* color for warnings */
+  --accent-two: #4c2ad7; /* color for player positions, bye week font */
+  --bg-opacity: rgba(156, 117, 29, 0.05);
+  --bg-opacity-brighter: rgba(156, 117, 29, 0.2);
+}
+
+html.theme-jets {
+  --primary: #125740;
+  --fa-main-color: #125740;
+  --primary-light: #1c8a65;
+  --primary-lighter: #29c591; /* mfl scoreboard font */
+  --primary-dark: #104c38;
+  --primary-darker: #104c38;
+  --accent: #1e1257; /* accent color for button icons */
+  --accent-one: #571229; /* color for warnings */
+  --accent-two: #571d12; /* color for player positions, bye week font */
+  --bg-opacity: rgba(16, 76, 56, 0.05);
+  --bg-opacity-brighter: rgba(16, 76, 56, 0.2);
+}
+
+html.theme-jets2 {
+  --primary: #3e1e1e;
+  --fa-main-color: #3e1e1e;
+  --primary-light: #673232;
+  --primary-lighter: #974949; /* mfl scoreboard font */
+  --primary-dark: #3e1e1e;
+  --primary-darker: #3e1e1e;
+  --accent: #2e3e1e; /* accent color for button icons */
+  --accent-one: #1e3e3e; /* color for warnings */
+  --accent-two: #1e2e3e; /* color for player positions, bye week font */
+  --bg-opacity: rgba(62, 30, 30, 0.05);
+  --bg-opacity-brighter: rgba(62, 30, 30, 0.2);
+}
+
+html.theme-lions {
+  --primary: #9cbad0;
+  --fa-main-color: #9cbad0;
+  --primary-light: #b3cadb;
+  --primary-lighter: #b3cadb; /* mfl scoreboard font */
+  --primary-dark: #6c99b8;
+  --primary-darker: #4b7a9c;
+  --accent: #cb9cd0; /* accent color for button icons */
+  --accent-one: #d0b29c; /* color for warnings */
+  --accent-two: #d0cb9c; /* color for player positions, bye week font */
+  --bg-opacity: rgba(108, 153, 184, 0.05);
+  --bg-opacity-brighter: rgba(108, 153, 184, 0.2);
+}
+
+html.theme-lions2 {
+  --primary: #0575b1;
+  --fa-main-color: #0575b1;
+  --primary-light: #069ced;
+  --primary-lighter: #40b9fa; /* mfl scoreboard font */
+  --primary-dark: #03476c;
+  --primary-darker: #023b5a;
+  --accent: #9805b1; /* accent color for button icons */
+  --accent-one: #b14105; /* color for warnings */
+  --accent-two: #b19805; /* color for player positions, bye week font */
+  --bg-opacity: rgba(3, 71, 108, 0.05);
+  --bg-opacity-brighter: rgba(3, 71, 108, 0.2);
+}
+
+html.theme-packers {
+  --primary: #1e3e36;
+  --fa-main-color: #1e3e36;
+  --primary-light: #326759;
+  --primary-lighter: #499783; /* mfl scoreboard font */
+  --primary-dark: #1e3e36;
+  --primary-darker: #1e3e36;
+  --accent: #261e3e; /* accent color for button icons */
+  --accent-one: #3e1e26; /* color for warnings */
+  --accent-two: #3e261e; /* color for player positions, bye week font */
+  --bg-opacity: rgba(30, 62, 54, 0.05);
+  --bg-opacity-brighter: rgba(30, 62, 54, 0.2);
+}
+
+html.theme-packers2 {
+  --primary: #f9b418;
+  --fa-main-color: #f9b418;
+  --primary-light: #fbc754;
+  --primary-lighter: #fcdb92; /* mfl scoreboard font */
+  --primary-dark: #c58a05;
+  --primary-darker: #896004;
+  --accent: #18f943; /* accent color for button icons */
+  --accent-one: #185df9; /* color for warnings */
+  --accent-two: #4318f9; /* color for player positions, bye week font */
+  --bg-opacity: rgba(197, 138, 5, 0.05);
+  --bg-opacity-brighter: rgba(197, 138, 5, 0.2);
+}
+
+html.theme-panthers {
+  --primary: #0583c5;
+  --fa-main-color: #0583c5;
+  --primary-light: #0ea9f9;
+  --primary-lighter: #54c2fb; /* mfl scoreboard font */
+  --primary-dark: #03557f;
+  --primary-darker: #023c5a;
+  --accent: #a705c5; /* accent color for button icons */
+  --accent-one: #c54705; /* color for warnings */
+  --accent-two: #c5a705; /* color for player positions, bye week font */
+  --bg-opacity: rgba(3, 85, 127, 0.05);
+  --bg-opacity-brighter: rgba(3, 85, 127, 0.2);
+}
+
+html.theme-panthers2 {
+  --primary: #a9d6a9;
+  --fa-main-color: #a9d6a9;
+  --primary-light: #b3dbb3;
+  --primary-lighter: #b3dbb3; /* mfl scoreboard font */
+  --primary-dark: #79bf79;
+  --primary-darker: #51a951;
+  --accent: #a9c0d6; /* accent color for button icons */
+  --accent-one: #d6a9d6; /* color for warnings */
+  --accent-two: #d6a9c0; /* color for player positions, bye week font */
+  --bg-opacity: rgba(121, 191, 121, 0.05);
+  --bg-opacity-brighter: rgba(121, 191, 121, 0.2);
+}
+
+html.theme-patriots {
+  --primary: #c60c30;
+  --fa-main-color: #c60c30;
+  --primary-light: #f11e47;
+  --primary-lighter: #f5617e; /* mfl scoreboard font */
+  --primary-dark: #830820;
+  --primary-darker: #570515;
+  --accent: #8dc60c; /* accent color for button icons */
+  --accent-one: #0cc6a2; /* color for warnings */
+  --accent-two: #0c8dc6; /* color for player positions, bye week font */
+  --bg-opacity: rgba(131, 8, 32, 0.05);
+  --bg-opacity-brighter: rgba(131, 8, 32, 0.2);
+}
+
+html.theme-patriots2 {
+  --primary: #022e5a;
+  --fa-main-color: #022e5a;
+  --primary-light: #044d95;
+  --primary-lighter: #0670db; /* mfl scoreboard font */
+  --primary-dark: #022e5a;
+  --primary-darker: #022e5a;
+  --accent: #5a025a; /* accent color for button icons */
+  --accent-one: #5a2e02; /* color for warnings */
+  --accent-two: #5a5a02; /* color for player positions, bye week font */
+  --bg-opacity: rgba(2, 46, 90, 0.05);
+  --bg-opacity-brighter: rgba(2, 46, 90, 0.2);
+}
+
+html.theme-raiders {
+  --primary: #8cb6c8;
+  --fa-main-color: #8cb6c8;
+  --primary-light: #b3cfdb;
+  --primary-lighter: #b3cfdb; /* mfl scoreboard font */
+  --primary-dark: #5c97b1;
+  --primary-darker: #43768c;
+  --accent: #bc8cc8; /* accent color for button icons */
+  --accent-one: #c89e8c; /* color for warnings */
+  --accent-two: #c8bc8c; /* color for player positions, bye week font */
+  --bg-opacity: rgba(92, 151, 177, 0.05);
+  --bg-opacity-brighter: rgba(92, 151, 177, 0.2);
+}
+
+html.theme-raiders2 {
+  --primary: #3e1e1e;
+  --fa-main-color: #3e1e1e;
+  --primary-light: #673232;
+  --primary-lighter: #974949; /* mfl scoreboard font */
+  --primary-dark: #3e1e1e;
+  --primary-darker: #3e1e1e;
+  --accent: #2e3e1e; /* accent color for button icons */
+  --accent-one: #1e3e3e; /* color for warnings */
+  --accent-two: #1e2e3e; /* color for player positions, bye week font */
+  --bg-opacity: rgba(62, 30, 30, 0.05);
+  --bg-opacity-brighter: rgba(62, 30, 30, 0.2);
+}
+
+html.theme-rams {
+  --primary: #f9a106;
+  --fa-main-color: #f9a106;
+  --primary-light: #fab842;
+  --primary-lighter: #fcd288; /* mfl scoreboard font */
+  --primary-dark: #b37405;
+  --primary-darker: #774d03;
+  --accent: #06f928; /* accent color for button icons */
+  --accent-one: #065ef9; /* color for warnings */
+  --accent-two: #2806f9; /* color for player positions, bye week font */
+  --bg-opacity: rgba(179, 116, 5, 0.05);
+  --bg-opacity-brighter: rgba(179, 116, 5, 0.2);
+}
+
+html.theme-rams2 {
+  --primary: #043690;
+  --fa-main-color: #043690;
+  --primary-light: #054ccc;
+  --primary-lighter: #1f6df9; /* mfl scoreboard font */
+  --primary-dark: #02225a;
+  --primary-darker: #02225a;
+  --accent: #90047c; /* accent color for button icons */
+  --accent-one: #905e04; /* color for warnings */
+  --accent-two: #7c9004; /* color for player positions, bye week font */
+  --bg-opacity: rgba(2, 34, 90, 0.05);
+  --bg-opacity-brighter: rgba(2, 34, 90, 0.2);
+}
+
+html.theme-ravens {
+  --primary: #241773;
+  --fa-main-color: #241773;
+  --primary-light: #3421a6;
+  --primary-lighter: #4e38d7; /* mfl scoreboard font */
+  --primary-dark: #180f4d;
+  --primary-darker: #180f4d;
+  --accent: #731738; /* accent color for button icons */
+  --accent-one: #667317; /* color for warnings */
+  --accent-two: #387317; /* color for player positions, bye week font */
+  --bg-opacity: rgba(24, 15, 77, 0.05);
+  --bg-opacity-brighter: rgba(24, 15, 77, 0.2);
+}
+
+html.theme-ravens2 {
+  --primary: #9e7c0c;
+  --fa-main-color: #9e7c0c;
+  --primary-light: #d7a910;
+  --primary-lighter: #f0c73e; /* mfl scoreboard font */
+  --primary-dark: #5c4807;
+  --primary-darker: #554306;
+  --accent: #0c9e33; /* accent color for button icons */
+  --accent-one: #0c2e9e; /* color for warnings */
+  --accent-two: #330c9e; /* color for player positions, bye week font */
+  --bg-opacity: rgba(92, 72, 7, 0.05);
+  --bg-opacity-brighter: rgba(92, 72, 7, 0.2);
+}
+
+html.theme-saints {
+  --primary: #1e2e3e;
+  --fa-main-color: #1e2e3e;
+  --primary-light: #324d67;
+  --primary-lighter: #497097; /* mfl scoreboard font */
+  --primary-dark: #1e2e3e;
+  --primary-darker: #1e2e3e;
+  --accent: #3e1e3e; /* accent color for button icons */
+  --accent-one: #3e2e1e; /* color for warnings */
+  --accent-two: #3e3e1e; /* color for player positions, bye week font */
+  --bg-opacity: rgba(30, 46, 62, 0.05);
+  --bg-opacity-brighter: rgba(30, 46, 62, 0.2);
+}
+
+html.theme-saints2 {
+  --primary: #d3bc8d;
+  --fa-main-color: #d3bc8d;
+  --primary-light: #e0cfae;
+  --primary-lighter: #e0cfae; /* mfl scoreboard font */
+  --primary-dark: #bf9e59;
+  --primary-darker: #9e7e3d;
+  --accent: #8dd399; /* accent color for button icons */
+  --accent-one: #8da4d3; /* color for warnings */
+  --accent-two: #998dd3; /* color for player positions, bye week font */
+  --bg-opacity: rgba(191, 158, 89, 0.05);
+  --bg-opacity-brighter: rgba(191, 158, 89, 0.2);
+}
+
+html.theme-seahawks {
+  --primary: #022e5a;
+  --fa-main-color: #022e5a;
+  --primary-light: #044d95;
+  --primary-lighter: #0670db; /* mfl scoreboard font */
+  --primary-dark: #022e5a;
+  --primary-darker: #022e5a;
+  --accent: #5a025a; /* accent color for button icons */
+  --accent-one: #5a2e02; /* color for warnings */
+  --accent-two: #5a5a02; /* color for player positions, bye week font */
+  --bg-opacity: rgba(2, 46, 90, 0.05);
+  --bg-opacity-brighter: rgba(2, 46, 90, 0.2);
+}
+
+html.theme-seahawks2 {
+  --primary: #69be28;
+  --fa-main-color: #69be28;
+  --primary-light: #88d94a;
+  --primary-lighter: #afe585; /* mfl scoreboard font */
+  --primary-dark: #48831c;
+  --primary-darker: #2c5011;
+  --accent: #28b4be; /* accent color for button icons */
+  --accent-one: #7d28be; /* color for warnings */
+  --accent-two: #be28b4; /* color for player positions, bye week font */
+  --bg-opacity: rgba(72, 131, 28, 0.05);
+  --bg-opacity-brighter: rgba(72, 131, 28, 0.2);
+}
+
+html.theme-steelers {
+  --primary: #f9b418;
+  --fa-main-color: #f9b418;
+  --primary-light: #fbc754;
+  --primary-lighter: #fcdb92; /* mfl scoreboard font */
+  --primary-dark: #c58a05;
+  --primary-darker: #896004;
+  --accent: #18f943; /* accent color for button icons */
+  --accent-one: #185df9; /* color for warnings */
+  --accent-two: #4318f9; /* color for player positions, bye week font */
+  --bg-opacity: rgba(197, 138, 5, 0.05);
+  --bg-opacity-brighter: rgba(197, 138, 5, 0.2);
+}
+
+html.theme-steelers2 {
+  --primary: #1e2e3e;
+  --fa-main-color: #1e2e3e;
+  --primary-light: #324d67;
+  --primary-lighter: #497097; /* mfl scoreboard font */
+  --primary-dark: #1e2e3e;
+  --primary-darker: #1e2e3e;
+  --accent: #3e1e3e; /* accent color for button icons */
+  --accent-one: #3e2e1e; /* color for warnings */
+  --accent-two: #3e3e1e; /* color for player positions, bye week font */
+  --bg-opacity: rgba(30, 46, 62, 0.05);
+  --bg-opacity-brighter: rgba(30, 46, 62, 0.2);
+}
+
+html.theme-texans {
+  --primary: #a71930;
+  --fa-main-color: #a71930;
+  --primary-light: #dc213f;
+  --primary-lighter: #e75e74; /* mfl scoreboard font */
+  --primary-dark: #69101e;
+  --primary-darker: #500c17;
+  --accent: #77a719; /* accent color for button icons */
+  --accent-one: #19a790; /* color for warnings */
+  --accent-two: #1977a7; /* color for player positions, bye week font */
+  --bg-opacity: rgba(105, 16, 30, 0.05);
+  --bg-opacity-brighter: rgba(105, 16, 30, 0.2);
+}
+
+html.theme-texans2 {
+  --primary: #063b56;
+  --fa-main-color: #063b56;
+  --primary-light: #096290;
+  --primary-lighter: #0d90d3; /* mfl scoreboard font */
+  --primary-dark: #063b56;
+  --primary-darker: #063b56;
+  --accent: #490656; /* accent color for button icons */
+  --accent-one: #562106; /* color for warnings */
+  --accent-two: #564906; /* color for player positions, bye week font */
+  --bg-opacity: rgba(6, 59, 86, 0.05);
+  --bg-opacity-brighter: rgba(6, 59, 86, 0.2);
+}
+
+html.theme-titans {
+  --primary: #4b92db;
+  --fa-main-color: #4b92db;
+  --primary-light: #7eb1e5;
+  --primary-lighter: #a2c6ec; /* mfl scoreboard font */
+  --primary-dark: #256eb9;
+  --primary-darker: #1b5086;
+  --accent: #db4bda; /* accent color for button icons */
+  --accent-one: #db944b; /* color for warnings */
+  --accent-two: #dadb4b; /* color for player positions, bye week font */
+  --bg-opacity: rgba(37, 110, 185, 0.05);
+  --bg-opacity-brighter: rgba(37, 110, 185, 0.2);
+}
+
+html.theme-titans2 {
+  --primary: #c8102e;
+  --fa-main-color: #c8102e;
+  --primary-light: #ee2748;
+  --primary-lighter: #f36a80; /* mfl scoreboard font */
+  --primary-dark: #860b1f;
+  --primary-darker: #550714;
+  --accent: #8ac810; /* accent color for button icons */
+  --accent-one: #10c8aa; /* color for warnings */
+  --accent-two: #108ac8; /* color for player positions, bye week font */
+  --bg-opacity: rgba(134, 11, 31, 0.05);
+  --bg-opacity-brighter: rgba(134, 11, 31, 0.2);
+}
+
+html.theme-vikings {
+  --primary: #fac434;
+  --fa-main-color: #fac434;
+  --primary-light: #fbd570;
+  --primary-lighter: #fcdf92; /* mfl scoreboard font */
+  --primary-dark: #e1a506;
+  --primary-darker: #a57904;
+  --accent: #34fa61; /* accent color for button icons */
+  --accent-one: #346afa; /* color for warnings */
+  --accent-two: #6134fa; /* color for player positions, bye week font */
+  --bg-opacity: rgba(225, 165, 6, 0.05);
+  --bg-opacity-brighter: rgba(225, 165, 6, 0.2);
+}
+
+html.theme-vikings2 {
+  --primary: #4f2683;
+  --fa-main-color: #4f2683;
+  --primary-light: #6c34b2;
+  --primary-lighter: #905dd0; /* mfl scoreboard font */
+  --primary-dark: #2e164c;
+  --primary-darker: #2b1547;
+  --accent: #83262b; /* accent color for button icons */
+  --accent-one: #5a8326; /* color for warnings */
+  --accent-two: #2b8326; /* color for player positions, bye week font */
+  --bg-opacity: rgba(46, 22, 76, 0.05);
+  --bg-opacity-brighter: rgba(46, 22, 76, 0.2);
+}
+
 
 /* NFL TEAM THEME COLORING */
 .theme-niners {
