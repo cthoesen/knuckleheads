@@ -769,7 +769,7 @@ body {
 }
 
 /* removes logo before captions for roster report */
-#body-kkl #body-kdl #body-mmh #body-bsb caption.withfranchiseicon:before {
+#body-bsb caption.withfranchiseicon:before {
     padding: 0.313rem 0;
     text-align: center !important;
     text-indent: 0;
