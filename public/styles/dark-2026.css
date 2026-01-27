@@ -738,6 +738,13 @@ body {
   content: "";
 }
 
+/* removes logo before captions for roster report */
+#body-kkl caption.withfranchiseicon:before {
+    padding: 0.313rem 0;
+    text-align: center !important;
+    text-indent: 0;
+}
+
 /* Added below logo before captions for kdl */
 #body-kdl caption::before {
   padding: 1.25rem 1.75rem 1.75rem 1.25rem;
@@ -748,6 +755,13 @@ body {
   content: "";
 }
 
+/* removes logo before captions for roster report */
+#body-kdl caption.withfranchiseicon:before {
+    padding: 0.313rem 0;
+    text-align: center !important;
+    text-indent: 0;
+}
+
 /* Added below logo before captions for mmh */
 #body-mmh caption::before {
   padding: 1.25rem 1.75rem 1.75rem 1.25rem;
@@ -756,6 +770,13 @@ body {
   background-position: 25% center;
   vertical-align: 0.5rem;
   content: "";
+}
+
+/* removes logo before captions for roster report */
+#body-mmh caption.withfranchiseicon:before {
+    padding: 0.313rem 0;
+    text-align: center !important;
+    text-indent: 0;
 }
 
 /* Added below logo before captions for bsb */
@@ -773,7 +794,6 @@ body {
     padding: 0.313rem 0;
     text-align: center !important;
     text-indent: 0;
-    background: none;
 }
 
 /* Added below for mfl live score box font settings */
@@ -2105,7 +2125,7 @@ caption,
 /* Added below logo before captions */
 caption:before {
   padding: 1.25rem 1.75rem 1.75rem 1.25rem;
-  background: url(https://knuckleheads.netlify.app/svg-icons/mmh-cube.svg) no-repeat;
+  background: url(https://knuckleheads.netlify.app/svg-icons/caption-logo.svg) no-repeat;
   background-size: contain;
   background-position: 25% center;
   vertical-align: 0.5rem;
