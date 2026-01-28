@@ -29,12 +29,11 @@ td {
   --primary-dark: #32a05e;
   --primary-darker:#267d49;
   --accent: #f7e534; /* accent color for button icons */
-  --accent-one: #f734a7; /* color for warnings */
-  --accent-two: #40f734; /* color for player positions, bye week font */
+  --accent-one: #ff073a; /* color for warnings */
+  --accent-two: #2cff05; /* color for player positions, bye week font */
   --variant: #dbdbdb; /* color for mfl live scoring font */
   --bg-opacity: rgba(0, 35, 95, 0.15);
-  --bg-opacity-brighter: rgba(130, 255, 245, 0.2);
-  --theme-swatch: initial;
+  --bg-opacity-brighter: rgba(130, 255, 245, 0.2);  
 }
 
 .myfantasyleague_menu ul li.mfl-icon {
