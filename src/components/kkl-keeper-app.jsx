@@ -3,213 +3,221 @@ import { Search, Award, XCircle, CheckCircle, AlertCircle, Trophy } from 'lucide
 
 // Parse CSV data
 const csvData = `Team,Owner,Player,YTD Pts,Bye,Years,Keeper,Acquired
-Hipster Doofus,Corey Thoesen,"Mariota, Marcus WAS QB (Q)",158.55,12,,,
+Hipster Doofus,Corey Thoesen,"Mariota, Marcus WAS QB (Q)",158.55,12,,,
 Hipster Doofus,Corey Thoesen,"Williams, Caleb CHI QB",378.3,5,,,9.07
-Hipster Doofus,Corey Thoesen,"Charbonnet, Zach SEA RB (I)",165.7,8,,,8.06
-Hipster Doofus,Corey Thoesen,"Henderson, TreVeyon NEP RB (R)",221.35,14,,,2.06
-Hipster Doofus,Corey Thoesen,"Mixon, Joe HOU RB (I)",‐,6,,,10.05
-Hipster Doofus,Corey Thoesen,"Tuten, Bhayshul JAC RB (R)",107.55,8,,,10.06
+Hipster Doofus,Corey Thoesen,"Charbonnet, Zach SEA RB (I)",165.7,8,,,8.06
+Hipster Doofus,Corey Thoesen,"Henderson, TreVeyon NEP RB (R)",221.35,14,,,2.06
+Hipster Doofus,Corey Thoesen,"Mixon, Joe HOU RB (I)",‐,6,,,10.05
+Hipster Doofus,Corey Thoesen,"Tuten, Bhayshul JAC RB (R)",107.55,8,,,10.06
 Hipster Doofus,Corey Thoesen,"Williams, Kyren LAR RB",255.6,8,1,K11,11.07
-Hipster Doofus,Corey Thoesen,"Aiyuk, Brandon SFO WR (H)",‐,14,,,15.07
-Hipster Doofus,Corey Thoesen,"Ayomanor, Elic TEN WR (R)",108.5,10,,,
-Hipster Doofus,Corey Thoesen,"Egbuka, Emeka TBB WR (R)",206.9,9,,,5.07
+Hipster Doofus,Corey Thoesen,"Aiyuk, Brandon SFO WR (H)",‐,14,,,15.07
+Hipster Doofus,Corey Thoesen,"Ayomanor, Elic TEN WR (R)",108.5,10,,,
+Hipster Doofus,Corey Thoesen,"Egbuka, Emeka TBB WR (R)",206.9,9,,,5.07
 Hipster Doofus,Corey Thoesen,"Lamb, CeeDee DAL WR",221.5,10,,,1.07
-Hipster Doofus,Corey Thoesen,"McMillan, Tetairoa CAR WR (R)",208.9,14,,,3.07
+Hipster Doofus,Corey Thoesen,"McMillan, Tetairoa CAR WR (R)",208.9,14,,,3.07
 Hipster Doofus,Corey Thoesen,"Odunze, Rome CHI WR",152.1,5,3,K6,6.06
 Hipster Doofus,Corey Thoesen,"Reed, Jayden GBP WR",49.55,5,,,5.06
-Hipster Doofus,Corey Thoesen,"Bowers, Brock LVR TE (I)",182.6,8,3,K7,7.12
-Hipster Doofus,Corey Thoesen,"Fannin, Harold CLE TE (R) (Q)",189.4,9,,,
+Hipster Doofus,Corey Thoesen,"Bowers, Brock LVR TE (I)",182.6,8,3,K7,7.12
+Hipster Doofus,Corey Thoesen,"Fannin, Harold CLE TE (R) (Q)",189.4,9,,,
 Hipster Doofus,Corey Thoesen,"Mevis, Harrison LAR PK",66,8,,,
 Hipster Doofus,Corey Thoesen,"Bears, Chicago CHI Def",114,5,,,
-Wa Wa Wee Wa ,Mike Stein,"Burrow, Joe CIN QB",146.05,10,,,3.04
-Wa Wa Wee Wa ,Mike Stein,"Dart, Jaxson NYG QB (R)",259.9,14,,,16.01
-Wa Wa Wee Wa ,Mike Stein,"Carter, Michael ARI RB",93.45,8,,,
-Wa Wa Wee Wa ,Mike Stein,"Harvey, RJ DEN RB (R)",222.05,12,,,4.01
-Wa Wa Wee Wa ,Mike Stein,"Marks, Woody HOU RB (R)",144.8,6,,,14.06
-Wa Wa Wee Wa ,Mike Stein,"Mitchell, Keaton BAL RB",81.75,7,,,18.01
-Wa Wa Wee Wa ,Mike Stein,"Pollard, Tony TEN RB",189.3,10,,,4.09
-Wa Wa Wee Wa ,Mike Stein,"Swift, D'Andre CHI RB",236,5,,,4.06
-Wa Wa Wee Wa ,Mike Stein,"Taylor, Jonathan IND RB",381.4,11,,,1.12
-Wa Wa Wee Wa ,Mike Stein,"Tracy, Tyrone NYG RB",140.3,14,3,K15,15.08
-Wa Wa Wee Wa ,Mike Stein,"Brown, A.J. PHI WR",235.3,9,,,2.05
-Wa Wa Wee Wa ,Mike Stein,"Evans, Mike TBB WR",82.4,9,,,2.11
-Wa Wa Wee Wa ,Mike Stein,"London, Drake ATL WR",199.1,5,,,2.01
-Wa Wa Wee Wa ,Mike Stein,"Pittman, Michael IND WR",202.3,11,,,6.01
-Wa Wa Wee Wa ,Mike Stein,"Waddle, Jaylen MIA WR (Q)",201.2,12,,,5.12
-Wa Wa Wee Wa ,Mike Stein,"McBride, Trey ARI TE",311.4,8,2,K12,12.06
-Wa Wa Wee Wa ,Mike Stein,"Aubrey, Brandon DAL PK",179.6,10,,,11.12
-Wa Wa Wee Wa ,Mike Stein,"Lions, Detroit DET Def",100,8,,,13.06
-Phoenix Force,Chris Culbreath,"Allen, Josh BUF QB (Q)",449.3,7,,,2.03
+Wa Wa Wee Wa,Mike Stein,"Burrow, Joe CIN QB",146.05,10,,,3.04
+Wa Wa Wee Wa,Mike Stein,"Dart, Jaxson NYG QB (R)",259.9,14,,,16.01
+Wa Wa Wee Wa,Mike Stein,"Carter, Michael ARI RB",93.45,8,,,
+Wa Wa Wee Wa,Mike Stein,"Harvey, RJ DEN RB (R)",222.05,12,,,4.01
+Wa Wa Wee Wa,Mike Stein,"Marks, Woody HOU RB (R)",144.8,6,,,14.06
+Wa Wa Wee Wa,Mike Stein,"Mitchell, Keaton BAL RB",81.75,7,,,18.01
+Wa Wa Wee Wa,Mike Stein,"Pollard, Tony TEN RB",189.3,10,,,4.09
+Wa Wa Wee Wa,Mike Stein,"Swift, D'Andre CHI RB",236,5,,,4.06
+Wa Wa Wee Wa,Mike Stein,"Taylor, Jonathan IND RB",381.4,11,,,1.12
+Wa Wa Wee Wa,Mike Stein,"Tracy, Tyrone NYG RB",140.3,14,3,K15,15.08
+Wa Wa Wee Wa,Mike Stein,"Brown, A.J. PHI WR",235.3,9,,,2.05
+Wa Wa Wee Wa,Mike Stein,"Evans, Mike TBB WR",82.4,9,,,2.11
+Wa Wa Wee Wa,Mike Stein,"London, Drake ATL WR",199.1,5,,,2.01
+Wa Wa Wee Wa,Mike Stein,"Pittman, Michael IND WR",202.3,11,,,6.01
+Wa Wa Wee Wa,Mike Stein,"Waddle, Jaylen MIA WR (Q)",201.2,12,,,5.12
+Wa Wa Wee Wa,Mike Stein,"McBride, Trey ARI TE",311.4,8,2,K12,12.06
+Wa Wa Wee Wa,Mike Stein,"Aubrey, Brandon DAL PK",179.6,10,,,11.12
+Wa Wa Wee Wa,Mike Stein,"Lions, Detroit DET Def",100,8,,,13.06
+Phoenix Force,Chris Culbreath,"Allen, Josh BUF QB (Q)",449.3,7,,,2.03
 Phoenix Force,Chris Culbreath,"Hubbard, Chuba CAR RB",133.35,14,3,K6,6.03
 Phoenix Force,Chris Culbreath,"Jacobs, Josh GBP RB",239.1,5,,,1.1
-Phoenix Force,Chris Culbreath,"Knight, Bam ARI RB (I)",105.9,8,,,
+Phoenix Force,Chris Culbreath,"Knight, Bam ARI RB (I)",105.9,8,,,
 Phoenix Force,Chris Culbreath,"Pacheco, Isiah KCC RB",87.6,10,,,5.1
 Phoenix Force,Chris Culbreath,"Perine, Samaje CIN RB",91.2,10,,,
 Phoenix Force,Chris Culbreath,"Wilson, Emanuel GBP RB",102.3,5,,,
 Phoenix Force,Chris Culbreath,"Allen, Keenan LAC WR",175.1,12,,,11.1
-Phoenix Force,Chris Culbreath,"Bond, Isaiah CLE WR (R)",52.55,9,,,14.03
-Phoenix Force,Chris Culbreath,"Higgins, Jayden HOU WR (R)",123.2,6,,,9.1
+Phoenix Force,Chris Culbreath,"Bond, Isaiah CLE WR (R)",52.55,9,,,14.03
+Phoenix Force,Chris Culbreath,"Higgins, Jayden HOU WR (R)",123.2,6,,,9.1
 Phoenix Force,Chris Culbreath,"McConkey, Ladd LAC WR",188.05,12,3,K7,7.1
 Phoenix Force,Chris Culbreath,"Nacua, Puka LAR WR",371,8,2,K12,12.03
-Phoenix Force,Chris Culbreath,"Wilson, Garrett NYJ WR (I)",99.5,9,1,K4,4.03
-Phoenix Force,Chris Culbreath,"Kelce, Travis KCC TE",‐,10,,,13.1
-Phoenix Force,Chris Culbreath,"Zuerlein, Greg NYJ PK",‐,9,,,
-Phoenix Force,Chris Culbreath,"Commanders, Washington WAS Def",118,12,,,
-Howie's Hammers,Howard Silverstein,"Daniels, Jayden WAS QB",289.95,12,,,1.08
-Howie's Hammers,Howard Silverstein,"Garoppolo, Jimmy LAR QB",137.75,8,,,
-Howie's Hammers,Howard Silverstein,"Allen, Justice DET RB (R)",159.6,8,,,10.08
-Howie's Hammers,Howard Silverstein,"Gibson, Antonio NEP RB",94.15,14,,,
-Howie's Hammers,Howard Silverstein,"McCaffrey, Christian SFO RB (I)",‐,14,,,7.08
-Howie's Hammers,Howard Silverstein,"McVay, Jovantae MIA RB (R)",163.85,12,,,
-Howie's Hammers,Howard Silverstein,"Owens, Isiah CLE RB (R)",80.95,9,,,13.08
-Howie's Hammers,Howard Silverstein,"Robinson, Bijan ATL RB",301.45,5,,,1.05
-Howie's Hammers,Howard Silverstein,"Thomas, Jahmyr PHI RB (R)",56.05,9,,,
-Howie's Hammers,Howard Silverstein,"Thomas, Miyan LVR RB",‐,8,,,
-Howie's Hammers,Howard Silverstein,"Downs, Josh IND WR",155,11,3,K8,8.08
-Howie's Hammers,Howard Silverstein,"Jennings, Jauan SFO WR",134.85,14,,,14.08
-Howie's Hammers,Howard Silverstein,"Moore, Rondale ATL WR (Q)",37.6,5,,,
-Howie's Hammers,Howard Silverstein,"Nabers, Malik NYG WR",263.5,14,,,4.08
-Howie's Hammers,Howard Silverstein,"Olave, Chris NOS WR (O)",181.15,13,,,2.08
-Howie's Hammers,Howard Silverstein,"Sanders, Emmanuel CAR WR",106.8,14,,,
-Howie's Hammers,Howard Silverstein,"Thomas, Jordan TBB WR",64.9,9,,,
-Howie's Hammers,Howard Silverstein,"Ertz, Zach WAS TE (Q)",142.5,12,,,
-Howie's Hammers,Howard Silverstein,"Kincaid, Dalton BUF TE",139.85,7,2,K9,9.08
-Howie's Hammers,Howard Silverstein,"Bass, Tyler BUF PK",119.5,7,,,15.08
-Howie's Hammers,Howard Silverstein,"Bills, Buffalo BUF Def",104,7,,,
-Skinner's Skins,Jeff Skinner,"Hurts, Jalen PHI QB",411.7,9,,,1.04
-Skinner's Skins,Jeff Skinner,"Levis, Will TEN QB",185.75,10,,,
-Skinner's Skins,Jeff Skinner,"Evans, Demond CAR RB (R)",233.1,14,,,6.04
-Skinner's Skins,Jeff Skinner,"Gibson, Brian NOS RB (R)",184.7,13,,,17.04
-Skinner's Skins,Jeff Skinner,"Guerendo, Isaac SFO RB (I)",‐,14,,,
-Skinner's Skins,Jeff Skinner,"Henry, Derrick BAL RB",346.1,7,,,2.04
-Skinner's Skins,Jeff Skinner,"Jones, Aaron GBP RB (I)",‐,5,1,K16,16.04
-Skinner's Skins,Jeff Skinner,"Brown, Marquise KCC WR (O)",3.4,10,,,
-Skinner's Skins,Jeff Skinner,"Hopkins, DeAndre KCC WR",145.9,10,,,4.11
-Skinner's Skins,Jeff Skinner,"Jefferson, Justin MIN WR",309.3,8,,,1.11
-Skinner's Skins,Jeff Skinner,"Metchie, John HOU WR (Q)",101.1,6,,,
-Skinner's Skins,Jeff Skinner,"Rice, Rashee KCC WR (H)",‐,10,,,11.04
-Skinner's Skins,Jeff Skinner,"Smith, Devonta PHI WR",192,9,,,3.11
-Skinner's Skins,Jeff Skinner,"Williams, Jameson DET WR",108.1,8,,,5.04
-Skinner's Skins,Jeff Skinner,"Kraft, Samuel HOU TE",167.8,6,,,
-Skinner's Skins,Jeff Skinner,"Tipton, Baylor IND TE (R)",108.9,11,,,
-Skinner's Skins,Jeff Skinner,"Shrader, Will NYJ PK",‐,9,,,
-Skinner's Skins,Jeff Skinner,"Steelers, Pittsburgh PIT Def",118,7,,,
-Swantkowski's Smurfs,James Swantkowski,"Mahomes, Patrick KCC QB",409.95,10,,,1.09
-Swantkowski's Smurfs,James Swantkowski,"Minshew, Gardner LVR QB (Q)",‐,8,,,
-Swantkowski's Smurfs,James Swantkowski,"Irving, Jayden TBB RB",212.45,9,3,K13,13.09
-Swantkowski's Smurfs,James Swantkowski,"Johnson, Trenton CIN RB (R)",179.15,10,,,7.09
-Swantkowski's Smurfs,James Swantkowski,"Jones, Dylan MIN RB (R)",224,8,,,11.09
-Swantkowski's Smurfs,James Swantkowski,"Mathis, Raynard MIN RB (R)",156.65,8,,,14.09
-Swantkowski's Smurfs,James Swantkowski,"McBride, Sean CHI RB (R)",184.55,5,,,8.09
-Swantkowski's Smurfs,James Swantkowski,"Metellus, Audric CAR RB (R)",186.4,14,,,10.09
-Swantkowski's Smurfs,James Swantkowski,"Phillips, Jalen TEN RB (R)",182.45,10,,,13.03
-Swantkowski's Smurfs,James Swantkowski,"White, Rachaad TBB RB (I)",‐,9,,,
-Swantkowski's Smurfs,James Swantkowski,"Adams, Davante NYJ WR (Q)",143.4,9,,,2.09
-Swantkowski's Smurfs,James Swantkowski,"Diggs, Stefon HOU WR (I)",‐,6,,,3.09
-Swantkowski's Smurfs,James Swantkowski,"Dotson, Jahan PHI WR",89.9,9,,,5.09
-Swantkowski's Smurfs,James Swantkowski,"Polk, Jalen NEP WR",87.85,14,,,9.09
-Swantkowski's Smurfs,James Swantkowski,"Williams, Jalen LAR WR",205.35,8,,,4.09
-Swantkowski's Smurfs,James Swantkowski,"Hockenson, T.J. MIN TE (H)",‐,8,,,
-Swantkowski's Smurfs,James Swantkowski,"Sanders, Miles CAR PK",92,14,,,
-Swantkowski's Smurfs,James Swantkowski,"Rams, Los Angeles LAR Def",119,8,,,
-Big Money Mike,Michael Bloom,"Prescott, Dak DAL QB (I)",‐,10,,,3.02
-Big Money Mike,Michael Bloom,"Ridder, Desmond ARI QB",201.1,8,,,
-Big Money Mike,Michael Bloom,"Abanikanda, Delvin PIT RB (R)",181.65,7,,,12.02
-Big Money Mike,Michael Bloom,"Elliss, Dillon NEP RB (R)",211.1,14,,,
-Big Money Mike,Michael Bloom,"Etienne, Travis JAC RB",142.55,8,,,2.02
-Big Money Mike,Michael Bloom,"Ford, Jerome CLE RB",204.6,9,,,
-Big Money Mike,Michael Bloom,"Laube, Dylan LVR RB (R)",202.8,8,,,16.02
-Big Money Mike,Michael Bloom,"Miller, Braylon BUF RB",158.45,7,,,
-Big Money Mike,Michael Bloom,"Townsend, Tyreik CIN RB (R)",173.7,10,,,18.02
-Big Money Mike,Michael Bloom,"Allen, Simi DET WR (R) (I)",‐,8,,,6.02
-Big Money Mike,Michael Bloom,"Cooks, Brandin MIA WR (Q)",81.8,12,,,
-Big Money Mike,Michael Bloom,"Doubs, Romeo GBP WR",109.85,5,,,8.02
-Big Money Mike,Michael Bloom,"Godwin, Chris TBB WR",201.35,9,,,5.02
-Big Money Mike,Michael Bloom,"Kittle, George SFO TE",231.95,14,,,10.02
-Big Money Mike,Michael Bloom,"Latu, Laiatu IND TE (R)",196.85,11,,,9.02
-Big Money Mike,Michael Bloom,"Mafe, Elijah SEA TE (R) (I)",‐,8,,,
-Big Money Mike,Michael Bloom,"Strowbridge, Tyler TBB TE (R)",215.2,9,,,
-Big Money Mike,Michael Bloom,"Moody, Jake SFO PK",76,14,,,
-Big Money Mike,Michael Bloom,"Broncos, Denver DEN Def",100,12,,,
-Squirrel Squad,Craig Carlson,"Carr, Derek NOS QB",118.6,13,,,
-Squirrel Squad,Craig Carlson,"Fields, Justin PIT QB",206.65,7,,,
-Squirrel Squad,Craig Carlson,"Ward, Aidan JAC QB (R)",195.15,8,,,
-Squirrel Squad,Craig Carlson,"Atwell, Treylon LAR WR (Q)",119.2,8,,,
-Squirrel Squad,Craig Carlson,"Finley, Jha'Quan LVR WR",183.55,8,,,
-Squirrel Squad,Craig Carlson,"Flowers, Tre IND WR",231.65,11,,,
-Squirrel Squad,Craig Carlson,"Jackson, Devaughn TEN WR (R)",215.1,10,,,
-Squirrel Squad,Craig Carlson,"Johnson, Diontae CAR WR",144.5,14,,,
-Squirrel Squad,Craig Carlson,"Jones, Lejay PIT WR (R)",224.3,7,,,
-Squirrel Squad,Craig Carlson,"Peoples, Sam SEA WR (R)",171.95,8,,,
-Squirrel Squad,Craig Carlson,"Smith, Antwane MIA WR (R)",180.35,12,,,
-Squirrel Squad,Craig Carlson,"Tillman, Cedric CLE WR (R) (Q)",188.45,9,,,
-Squirrel Squad,Craig Carlson,"Warren, Jaylen BAL WR (R)",124.05,7,,,
-Squirrel Squad,Craig Carlson,"Achane, De'Von MIA RB (Q)",248.3,12,,,
-Squirrel Squad,Craig Carlson,"Bigsby, Tank JAC RB",176.3,8,,,
-Squirrel Squad,Craig Carlson,"Conner, James ARI RB",214.2,8,,,
-Squirrel Squad,Craig Carlson,"Dowdle, Rico DAL RB",202.7,10,,,
-Squirrel Squad,Craig Carlson,"Howard, Sean DAL RB (R)",207.3,10,,,
-Squirrel Squad,Craig Carlson,"Kamara, Alvin NOS RB",254.5,13,,,
-Squirrel Squad,Craig Carlson,"Witherspoon, Desmond ATL RB (R)",221.1,5,,,
-Squirrel Squad,Craig Carlson,"Okonkwo, Chig TEN TE",143.6,10,,,
-Squirrel Squad,Craig Carlson,"Carpenter, Brandon LAC PK",169.6,12,,,
-Squirrel Squad,Craig Carlson,"Eagles, Philadelphia PHI Def",75,9,,,
-Fat Troy,Jeremy Schreiber,"Lawrence, Trevor JAC QB (Q)",‐,8,,,5.03
-Fat Troy,Jeremy Schreiber,"Williams, Ben KCC QB (R)",167.55,10,,,
-Fat Troy,Jeremy Schreiber,"Callis, Alec MIA RB (R)",210.7,12,,,10.03
-Fat Troy,Jeremy Schreiber,"Corum, Blake LAR RB",163.05,8,2,K11,11.03
-Fat Troy,Jeremy Schreiber,"Hill, Justice GBP RB (R)",194.25,5,,,6.03
-Fat Troy,Jeremy Schreiber,"Lloyd, Justin JAC RB",196.75,8,,,9.03
-Fat Troy,Jeremy Schreiber,"Benson, Trey ARI RB",204.55,8,,,7.03
-Fat Troy,Jeremy Schreiber,"Williams, Damien DAL RB (R)",185.05,10,,,16.03
-Fat Troy,Jeremy Schreiber,"Chase, Ja'Marr CIN WR",245.3,10,,,1.03
-Fat Troy,Jeremy Schreiber,"Dodd, Trey SEA WR (R)",206.35,8,,,
-Fat Troy,Jeremy Schreiber,"Hill, Tyreek MIA WR (O)",148.55,12,,,2.12
-Fat Troy,Jeremy Schreiber,"Nailor, Jalen MIN WR (Q)",134.85,8,,,
-Fat Troy,Jeremy Schreiber,"Ridley, Calvin TEN WR",157.65,10,,,4.03
-Fat Troy,Jeremy Schreiber,"Shaheed, Rashid NOS WR",145.8,13,,,
-Fat Troy,Jeremy Schreiber,"Smith, Jerome DAL WR (R)",224.8,10,,,14.03
-Fat Troy,Jeremy Schreiber,"Williams, TJ PIT WR (R)",194.75,7,,,15.03
-Fat Troy,Jeremy Schreiber,"Andrews, Mark BAL TE",222.45,7,3,K5,5.03
-Fat Troy,Jeremy Schreiber,"Ryland, Chad ARI PK",133.6,8,,,
-Fat Troy,Jeremy Schreiber,"Texans, Houston HOU Def",127,6,,,
-Delts,Derek Schwandt,"Howell, Sam SEA QB",106.75,8,,,
-Delts,Derek Schwandt,"Jackson, Lamar BAL QB",404.65,7,,,1.06
-Delts,Derek Schwandt,"Achane, Rahsean TEN RB (R)",187.8,10,,,15.06
-Delts,Derek Schwandt,"Adams, Devaughn NYJ RB (R)",211.65,9,,,13.06
-Delts,Derek Schwandt,"Calhoun, Carter NEP RB (R)",226.3,14,,,9.06
-Delts,Derek Schwandt,"Cook, Dalvin NYJ RB (Q)",‐,9,,,7.06
-Delts,Derek Schwandt,"Gainwell, Kenneth PHI RB (Q)",134.8,9,,,
-Delts,Derek Schwandt,"Gibbs, Jahmyr DET RB",323.8,8,,,2.06
-Delts,Derek Schwandt,"Moss, Zander CIN RB",202.5,10,,,
-Delts,Derek Schwandt,"Collins, Nico DAL WR (R)",196.2,10,,,10.06
-Delts,Derek Schwandt,"Cooper, Amari CLE WR",151.65,9,,,4.06
-Delts,Derek Schwandt,"Iosivas, Charlie CIN WR",96.25,10,,,
-Delts,Derek Schwandt,"Jackson, Darnell TBB WR",222.45,9,,,8.06
-Delts,Derek Schwandt,"Moore, Skyy KCC WR",‐,10,,,
-Delts,Derek Schwandt,"Njoku, David CLE TE",156.2,9,,,12.06
-Delts,Derek Schwandt,"Sinnott, Ben WAS TE (R)",180.45,12,,,11.06
-Delts,Derek Schwandt,"Lutz, Wil DEN PK",173.6,12,,,
-Delts,Derek Schwandt,"49ers, San Francisco SFO Def",105,14,,,
-Dem Boyz,Phillip Murray,"Rogers, Aaron NYJ QB (O)",‐,9,,,
-Dem Boyz,Phillip Murray,"Stroud, C.J. HOU QB",267.5,6,,,2.07
-Dem Boyz,Phillip Murray,"Allen, Ray HOU RB (R)",169.8,6,,,5.11
-Dem Boyz,Phillip Murray,"Davis, Jordan NOS RB",164.7,13,,,14.07
-Dem Boyz,Phillip Murray,"Mason, Jordan CIN RB",79.35,10,,,
-Dem Boyz,Phillip Murray,"Spears, Dillon TEN RB (Q)",181,10,,,8.07
-Dem Boyz,Phillip Murray,"Bowen, Bub BAL WR (R)",164.7,7,,,
-Dem Boyz,Phillip Murray,"Burks, Treylon TEN WR (Q)",113.05,10,,,
-Dem Boyz,Phillip Murray,"Coleman, Derion LAC WR (R)",130.55,12,,,12.07
-Dem Boyz,Phillip Murray,"Hutchinson, Levi DET WR (R)",232.4,8,,,7.07
-Dem Boyz,Phillip Murray,"Johnson, Jaelon WAS WR (R)",214.75,12,,,11.07
-Dem Boyz,Phillip Murray,"Legette, Jordan PIT WR (R)",206.05,7,,,6.07
-Dem Boyz,Phillip Murray,"St. Brown, Amon-Ra DET WR",311.75,8,,,1.02
-Dem Boyz,Phillip Murray,"Thornton, Tyquan NEP WR (Q)",88.55,14,,,
-Dem Boyz,Phillip Murray,"Wiley, Cam CHI WR (R)",234.05,5,,,4.07
-Dem Boyz,Phillip Murray,"Dulcich, Greg DEN TE (Q)",‐,12,,,
-Dem Boyz,Phillip Murray,"Engram, Evan JAC TE",134.4,8,,,3.07
-Dem Boyz,Phillip Murray,"McPherson, Evan CIN PK",135.6,10,,,
-Dem Boyz,Phillip Murray,"Jets, New York NYJ Def",90,9,,,`;
+Phoenix Force,Chris Culbreath,"Wilson, Garrett NYJ WR (I)",99.5,9,1,K4,4.03
+Phoenix Force,Chris Culbreath,"Kincaid, Dalton BUF TE (Q)",124.3,7,,,13.1
+Phoenix Force,Chris Culbreath,"Njoku, David CLE TE (Q)",86.3,9,,,8.03
+Phoenix Force,Chris Culbreath,"Little, Cam JAC PK",145,8,,,
+Phoenix Force,Chris Culbreath,"Lutz, Wil DEN PK",116,12,,,
+Phoenix Force,Chris Culbreath,"Browns, Cleveland CLE Def",156,9,,,
+Karaoke Craig,Ever Rivera,"Goff, Jared DET QB",375.85,8,3,K8,8.1
+Karaoke Craig,Ever Rivera,"Herbert, Justin LAC QB",366.15,12,,,9.08
+Karaoke Craig,Ever Rivera,"Hall, Breece NYJ RB (Q)",225.7,9,,,2.1
+Karaoke Craig,Ever Rivera,"Hunt, Kareem KCC RB",141.9,10,,,17.03
+Karaoke Craig,Ever Rivera,"Judkins, Quinshon CLE RB (R) (I)",175.4,9,,,9.03
+Karaoke Craig,Ever Rivera,"Kamara, Alvin NOS RB (Q)",100.7,11,,,3.03
+Karaoke Craig,Ever Rivera,"Chase, Ja'Marr CIN WR",315.3,10,,,1.03
+Karaoke Craig,Ever Rivera,"Doubs, Romeo GBP WR",170.1,5,,,12.1
+Karaoke Craig,Ever Rivera,"Jeudy, Jerry CLE WR",120.5,9,3,K7,7.03
+Karaoke Craig,Ever Rivera,"Kirk, Christian HOU WR",57.2,6,,,15.03
+Karaoke Craig,Ever Rivera,"Kupp, Cooper SEA WR",111.4,8,,,6.1
+Karaoke Craig,Ever Rivera,"Samuel, Deebo WAS WR",207.1,12,,,4.1
+Karaoke Craig,Ever Rivera,"Williams, Jameson DET WR",223.3,8,2,K11,10.1
+Karaoke Craig,Ever Rivera,"Andrews, Mark BAL TE",127.6,7,,,5.03
+Karaoke Craig,Ever Rivera,"Schultz, Dalton HOU TE (Q)",166.4,6,,,14.1
+Karaoke Craig,Ever Rivera,"McLaughlin, Chase TBB PK",140,9,,,18.1
+Karaoke Craig,Ever Rivera,"Myers, Jason SEA PK",189,8,,,
+Karaoke Craig,Ever Rivera,"Texans, Houston HOU Def",208,6,,,13.03
+Sleepy Hollow Stranglers,Damien Long,"Hurts, Jalen PHI QB",365.3,9,,,3.12
+Sleepy Hollow Stranglers,Damien Long,"Benson, Trey ARI RB (I)",35.4,8,,,11.03
+Sleepy Hollow Stranglers,Damien Long,"Irving, Bucky TBB RB",134.7,9,3,K17,17.08
+Sleepy Hollow Stranglers,Damien Long,"Jeanty, Ashton LVR RB (R)",250.7,8,,,1.08
+Sleepy Hollow Stranglers,Damien Long,"Monangai, Kyle CHI RB (R)",146.8,5,,,13.08
+Sleepy Hollow Stranglers,Damien Long,"Rodriguez, Chris WAS RB",76.7,12,,,15.12
+Sleepy Hollow Stranglers,Damien Long,"Boutte, Kayshon NEP WR",122.7,14,,,
+Sleepy Hollow Stranglers,Damien Long,"Burden, Luther CHI WR (R)",142.45,5,,,11.09
+Sleepy Hollow Stranglers,Damien Long,"Diggs, Stefon NEP WR",218,14,,,7.07
+Sleepy Hollow Stranglers,Damien Long,"Flowers, Zay BAL WR",219.5,7,,,4.05
+Sleepy Hollow Stranglers,Damien Long,"Godwin, Chris TBB WR",84.2,9,,,9.12
+Sleepy Hollow Stranglers,Damien Long,"Metcalf, DK PIT WR",197.2,5,,,3.08
+Sleepy Hollow Stranglers,Damien Long,"Pierce, Alec IND WR",157.1,11,,,
+Sleepy Hollow Stranglers,Damien Long,"Wilson, Michael ARI WR",208.7,8,,,
+Sleepy Hollow Stranglers,Damien Long,"Gadsden, Oronde LAC TE (R)",130.1,12,,,
+Sleepy Hollow Stranglers,Damien Long,"Loveland, Colston CHI TE (R) (Q)",147.2,5,,,8.05
+Sleepy Hollow Stranglers,Damien Long,"Boswell, Chris PIT PK",137,5,,,16.09
+Sleepy Hollow Stranglers,Damien Long,"Seahawks, Seattle SEA Def",213,8,,,
+Fightin Irish Mist,Craig Mayo,"Jones, Daniel IND QB (I)",284.55,11,,,
+Fightin Irish Mist,Craig Mayo,"Shough, Tyler NOS QB (R)",183.75,11,,,
+Fightin Irish Mist,Craig Mayo,"Stroud, C.J. HOU QB",258,6,2,K13,13.04
+Fightin Irish Mist,Craig Mayo,"Brown, Chase CIN RB",273.4,10,2,K11,11.04
+Fightin Irish Mist,Craig Mayo,"Chubb, Nick HOU RB",88.9,6,,,9.04
+Fightin Irish Mist,Craig Mayo,"Etienne, Trevor CAR RB (R)",56.35,14,,,10.09
+Fightin Irish Mist,Craig Mayo,"Gibbs, Jahmyr DET RB",370.6,8,,,1.04
+Fightin Irish Mist,Craig Mayo,"Tucker, Sean TBB RB",124.4,9,2,K12,12.09
+Fightin Irish Mist,Craig Mayo,"Higgins, Tee CIN WR",201.9,10,,,2.09
+Fightin Irish Mist,Craig Mayo,"Mooney, Darnell ATL WR",79.3,5,,,8.09
+Fightin Irish Mist,Craig Mayo,"Shakir, Khalil BUF WR",181.9,7,3,K6,5.04
+Fightin Irish Mist,Craig Mayo,"TeSlaa, Isaac DET WR (R)",73.1,8,,,18.09
+Fightin Irish Mist,Craig Mayo,"Thomas Jr., Brian JAC WR",130.9,8,3,K6,6.09
+Fightin Irish Mist,Craig Mayo,"Hockenson, T.J. MIN TE (Q)",112.8,6,3,K7,7.04
+Fightin Irish Mist,Craig Mayo,"Otton, Cade TBB TE",99.8,9,,,
+Fightin Irish Mist,Craig Mayo,"Loop, Tyler BAL PK (R)",132,7,,,15.09
+Fightin Irish Mist,Craig Mayo,"Packers, Green Bay GBP Def",104,5,,,14.01
+Fightin Irish Mist,Craig Mayo,"Patriots, New England NEP Def",146,14,,,14.09
+Midnight Marauders,Rodney Sasher,"Mayfield, Baker TBB QB",331.6,9,2,K9,9.02
+Midnight Marauders,Rodney Sasher,"Rodgers, Aaron PIT QB",273.6,5,,,
+Midnight Marauders,Rodney Sasher,"Ward, Cam TEN QB (R) (Q)",237.25,10,,,11.02
+Midnight Marauders,Rodney Sasher,"Croskey-Merritt, Jacory WAS RB (R)",147.5,12,,,6.11
+Midnight Marauders,Rodney Sasher,"Mason, Jordan MIN RB",122.5,6,3,K12,12.11
+Midnight Marauders,Rodney Sasher,"Montgomery, David DET RB",163.45,8,,,5.02
+Midnight Marauders,Rodney Sasher,"Robinson, Bijan ATL RB",396.5,5,,,1.02
+Midnight Marauders,Rodney Sasher,"Harrison Jr., Marvin ARI WR (I)",127.8,8,,,3.02
+Midnight Marauders,Rodney Sasher,"Mims, Marvin DEN WR",143.9,12,,,16.05
+Midnight Marauders,Rodney Sasher,"Pickens, George DAL WR",307,10,,,4.11
+Midnight Marauders,Rodney Sasher,"Shaheed, Rashid SEA WR",198.8,8,2,K10,10.11
+Midnight Marauders,Rodney Sasher,"Watson, Christian GBP WR",141.4,5,,,
+Midnight Marauders,Rodney Sasher,"Barner, AJ SEA TE",143.9,8,,,
+Midnight Marauders,Rodney Sasher,"Pitts, Kyle ATL TE",202,5,,,13.02
+Midnight Marauders,Rodney Sasher,"McPherson, Evan CIN PK",133,10,,,16.07
+Midnight Marauders,Rodney Sasher,"Chargers, Los Angeles LAC Def",144,12,,,18.05
+Midnight Marauders,Rodney Sasher,"Panthers, Carolina CAR Def",120,14,,,
+Over the Hill,Craig Wiesen,"Tagovailoa, Tua MIA QB",215.4,12,,,10.07
+Over the Hill,Craig Wiesen,"Young, Bryce CAR QB",257.05,14,,,16.12
+Over the Hill,Craig Wiesen,"Etienne, Travis JAC RB",259.1,8,,,6.07
+Over the Hill,Craig Wiesen,"Gainwell, Kenneth PIT RB",232.05,5,,,
+Over the Hill,Craig Wiesen,"Henry, Derrick BAL RB",289.9,7,,,1.06
+Over the Hill,Craig Wiesen,"Neal, Devin NOS RB (R) (I)",67.6,11,,,
+Over the Hill,Craig Wiesen,"Walker III, Kenneth SEA RB",184.7,8,,,3.06
+Over the Hill,Craig Wiesen,"Addison, Jordan MIN WR",143.3,6,,,9.06
+Over the Hill,Craig Wiesen,"Franklin, Troy DEN WR (Q)",177.5,12,,,
+Over the Hill,Craig Wiesen,"Johnston, Quentin LAC WR",178.4,12,,,17.06
+Over the Hill,Craig Wiesen,"Robinson, Wan'Dale NYG WR (I)",228.95,14,,,18.07
+Over the Hill,Craig Wiesen,"Tucker, Tre LVR WR",166.9,8,,,
+Over the Hill,Craig Wiesen,"Washington, Malik MIA WR (Q)",163.35,12,,,
+Over the Hill,Craig Wiesen,"Johnson, Juwan NOS TE",172.8,11,,,
+Over the Hill,Craig Wiesen,"Kelce, Travis KCC TE",189,10,,,8.01
+Over the Hill,Craig Wiesen,"Bates, Jake DET PK",130,8,,,17.09
+Over the Hill,Craig Wiesen,"Rams, Los Angeles LAR Def",143,8,,,
+Over the Hill,Craig Wiesen,"Steelers, Pittsburgh PIT Def",125,5,3,K15,15.11
+Guinness All Blacks,Rob Sherman,"Darnold, Sam SEA QB (Q)",308.4,8,,,
+Guinness All Blacks,Rob Sherman,"Love, Jordan GBP QB",303.15,5,2,K10,10.08
+Guinness All Blacks,Rob Sherman,"Purdy, Brock SFO QB",213.3,14,,,4.08
+Guinness All Blacks,Rob Sherman,"Ford, Jerome CLE RB (I)",59.1,9,,,13.05
+Guinness All Blacks,Rob Sherman,"Robinson, Brian SFO RB",78.8,14,,,14.08
+Guinness All Blacks,Rob Sherman,"Spears, Tyjae TEN RB",102.2,10,2,K8,8.08
+Guinness All Blacks,Rob Sherman,"Warren, Jaylen PIT RB",219.7,5,,,6.08
+Guinness All Blacks,Rob Sherman,"White, Rachaad TBB RB",136.9,9,,,11.05
+Guinness All Blacks,Rob Sherman,"Downs, Josh IND WR",129.55,11,3,K16,16.08
+Guinness All Blacks,Rob Sherman,"Jefferson, Justin MIN WR",189.1,6,,,1.05
+Guinness All Blacks,Rob Sherman,"McLaurin, Terry WAS WR",108.5,12,3,K3,2.08
+Guinness All Blacks,Rob Sherman,"Meyers, Jakobi JAC WR",166.4,8,3,K9,9.05
+Guinness All Blacks,Rob Sherman,"Olave, Chris NOS WR (Q)",281.3,11,,,5.05
+Guinness All Blacks,Rob Sherman,"Sutton, Courtland DEN WR",228.2,12,3,K7,7.05
+Guinness All Blacks,Rob Sherman,"Kittle, George SFO TE (I)",156.9,14,,,3.05
+Guinness All Blacks,Rob Sherman,"Dicker, Cameron LAC PK",163,12,,,17.05
+Guinness All Blacks,Rob Sherman,"Folk, Nick NYJ PK",126,9,,,
+Guinness All Blacks,Rob Sherman,"Jaguars, Jacksonville JAC Def",158,8,,,
+Foladelphia Iggles,Mike Foley,"Flacco, Joe CIN QB",202.55,10,,,
+Foladelphia Iggles,Mike Foley,"Jackson, Lamar BAL QB",228.55,7,,,3.01
+Foladelphia Iggles,Mike Foley,"Stafford, Matthew LAR QB",418.8,8,2,K10,10.12
+Foladelphia Iggles,Mike Foley,"Barkley, Saquon PHI RB",251.5,9,,,1.01
+Foladelphia Iggles,Mike Foley,"Hill, Justice BAL RB (I)",80,7,,,
+Foladelphia Iggles,Mike Foley,"Jones, Aaron MIN RB (Q)",118.7,6,,,4.12
+Foladelphia Iggles,Mike Foley,"Stevenson, Rhamondre NEP RB",145.5,14,,,11.01
+Foladelphia Iggles,Mike Foley,"Adams, Davante LAR WR",227.9,8,,,2.12
+Foladelphia Iggles,Mike Foley,"Coleman, Keon BUF WR",96.8,7,3,K7,7.01
+Foladelphia Iggles,Mike Foley,"Collins, Nico HOU WR (Q)",243.2,6,1,K9,9.01
+Foladelphia Iggles,Mike Foley,"Jennings, Jauan SFO WR",167.8,14,,,8.12
+Foladelphia Iggles,Mike Foley,"Legette, Xavier CAR WR",84.3,14,,,18.12
+Foladelphia Iggles,Mike Foley,"Turpin, KaVontae DAL WR",170.7,10,,,
+Foladelphia Iggles,Mike Foley,"Washington, Parker JAC WR",192.55,8,,,
+Foladelphia Iggles,Mike Foley,"Goedert, Dallas PHI TE",188.1,9,3,K7,6.12
+Foladelphia Iggles,Mike Foley,"Henry, Hunter NEP TE",171.2,14,3,K14,14.12
+Foladelphia Iggles,Mike Foley,"Ryland, Chad ARI PK",111,8,,,
+Foladelphia Iggles,Mike Foley,"Bills, Buffalo BUF Def",139,7,3,K16,16.03
+Hail Marys,Bill Davidson,"Maye, Drake NEP QB (Q)",415.25,14,3,K16,16.04
+Hail Marys,Bill Davidson,"Nix, Bo DEN QB (I)",376.5,12,3,K16,16.11
+Hail Marys,Bill Davidson,"Prescott, Dak DAL QB",421.6,10,,,9.09
+Hail Marys,Bill Davidson,"Allgeier, Tyler ATL RB",120.7,5,,,18.04
+Hail Marys,Bill Davidson,"Dowdle, Rico CAR RB",232.35,14,,,12.08
+Hail Marys,Bill Davidson,"Hampton, Omarion LAC RB (R)",144.2,12,,,2.04
+Hail Marys,Bill Davidson,"McCaffrey, Christian SFO RB",416.9,14,,,1.09
+Hail Marys,Bill Davidson,"Nabers, Malik NYG WR (I)",62.1,14,3,K4,4.04
+Hail Marys,Bill Davidson,"Pearsall, Ricky SFO WR",95,14,,,6.04
+Hail Marys,Bill Davidson,"Smith, DeVonta PHI WR",203.6,9,,,3.09
+Hail Marys,Bill Davidson,"Smith-Njigba, Jaxon SEA WR",382.6,8,3,K5,5.09
+Hail Marys,Bill Davidson,"Worthy, Xavier KCC WR (Q)",109.9,10,3,K7,7.09
+Hail Marys,Bill Davidson,"Ferguson, Jake DAL TE",186.6,10,2,K14,14.04
+Hail Marys,Bill Davidson,"Warren, Tyler IND TE (R)",180.9,11,,,8.04
+Hail Marys,Bill Davidson,"Fairbairn, Ka'imi HOU PK",164,6,,,
+Hail Marys,Bill Davidson,"49ers, San Francisco SFO Def",77,14,,,17.07
+Hail Marys,Bill Davidson,"Chiefs, Kansas City KCC Def",112,10,,,15.05
+Hail Marys,Bill Davidson,"Saints, New Orleans NOS Def",145,11,,,
+BoRaDLeSHoW,Brad Thoesen,"Daniels, Jayden WAS QB (Q)",133.9,12,3,K6,6.02
+BoRaDLeSHoW,Brad Thoesen,"Lawrence, Trevor JAC QB",382.4,8,,,16.06
+BoRaDLeSHoW,Brad Thoesen,"McCarthy, J.J. MIN QB (Q)",140.9,6,3,K16,16.02
+BoRaDLeSHoW,Brad Thoesen,"Achane, De'Von MIA RB (Q)",342.8,12,2,K5,5.11
+BoRaDLeSHoW,Brad Thoesen,"Cook, James BUF RB",337.7,7,,,2.02
+BoRaDLeSHoW,Brad Thoesen,"Corum, Blake LAR RB",136.6,8,,,
+BoRaDLeSHoW,Brad Thoesen,"Skattebo, Cam NYG RB (R) (I)",128,14,,,7.11
+BoRaDLeSHoW,Brad Thoesen,"Vidal, Kimani LAC RB",137.85,12,,,
+BoRaDLeSHoW,Brad Thoesen,"Williams, Javonte DAL RB (I)",248.8,10,,,9.11
+BoRaDLeSHoW,Brad Thoesen,"Wright, Jaylen MIA RB",47.2,12,,,14.07
+BoRaDLeSHoW,Brad Thoesen,"Dike, Chimere TEN WR (R)",219.65,10,,,
+BoRaDLeSHoW,Brad Thoesen,"Moore, D.J. CHI WR",170.5,5,,,3.11
+BoRaDLeSHoW,Brad Thoesen,"Rice, Rashee KCC WR (I)",153.1,10,2,K8,8.02
+BoRaDLeSHoW,Brad Thoesen,"St. Brown, Amon-Ra DET WR",311.1,8,,,1.11
+BoRaDLeSHoW,Brad Thoesen,"Strange, Brenton JAC TE",100.8,8,,,
+BoRaDLeSHoW,Brad Thoesen,"Waller, Darren MIA TE (I)",88.7,12,,,
+BoRaDLeSHoW,Brad Thoesen,"Borregales, Andres NEP PK (R)",133,14,,,
+BoRaDLeSHoW,Brad Thoesen,"Broncos, Denver DEN Def",171,12,,,12.02`;
 
 function parseCSV(csv) {
   const lines = csv.trim().split('\n');
