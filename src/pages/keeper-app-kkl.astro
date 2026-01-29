@@ -10,44 +10,486 @@ const title = "Keeper League Manager";
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title}</title>
   
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: linear-gradient(to bottom right, #020617, #581c87, #020617);
+      min-height: 100vh;
+      color: #e9d5ff;
+    }
+    
+    .bg-overlay {
+      position: fixed;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 0;
+    }
+    
+    .bg-blob-1 {
+      position: absolute;
+      top: 25%;
+      left: 25%;
+      width: 384px;
+      height: 384px;
+      background: rgba(147, 51, 234, 0.1);
+      border-radius: 50%;
+      filter: blur(80px);
+      animation: pulse 2s infinite;
+    }
+    
+    .bg-blob-2 {
+      position: absolute;
+      bottom: 25%;
+      right: 25%;
+      width: 384px;
+      height: 384px;
+      background: rgba(37, 99, 235, 0.1);
+      border-radius: 50%;
+      filter: blur(80px);
+      animation: pulse 2s infinite;
+      animation-delay: 1s;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    
+    .content-wrapper {
+      position: relative;
+      z-index: 10;
+    }
+    
+    header {
+      border-bottom: 1px solid rgba(168, 85, 247, 0.2);
+      background: rgba(2, 6, 23, 0.5);
+      backdrop-filter: blur(20px);
+    }
+    
+    .header-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    
+    .header-title-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .trophy-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      color: #c084fc;
+    }
+    
+    h1 {
+      font-family: 'Bebas Neue', 'Impact', cursive;
+      font-size: 3rem;
+      font-weight: 900;
+      background: linear-gradient(to right, #c084fc, #f9a8d4, #60a5fa);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      line-height: 1;
+    }
+    
+    .subtitle {
+      font-family: 'Space Mono', monospace;
+      color: rgba(216, 180, 254, 0.6);
+      font-size: 1.125rem;
+      margin-left: 3.5rem;
+    }
+    
+    .stats-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+    
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    
+    .stat-card {
+      background: linear-gradient(to bottom right, rgba(88, 28, 135, 0.4), rgba(59, 7, 100, 0.4));
+      backdrop-filter: blur(4px);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      border: 1px solid rgba(168, 85, 247, 0.2);
+    }
+    
+    .stat-card.eligible {
+      background: linear-gradient(to bottom right, rgba(6, 78, 59, 0.4), rgba(4, 47, 46, 0.4));
+      border-color: rgba(74, 222, 128, 0.2);
+    }
+    
+    .stat-card.ineligible {
+      background: linear-gradient(to bottom right, rgba(127, 29, 29, 0.4), rgba(76, 5, 25, 0.4));
+      border-color: rgba(248, 113, 113, 0.2);
+    }
+    
+    .stat-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .stat-icon {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+    
+    .stat-label {
+      color: rgba(216, 180, 254, 0.6);
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 700;
+    }
+    
+    .stat-card.eligible .stat-label {
+      color: rgba(187, 247, 208, 0.6);
+    }
+    
+    .stat-card.ineligible .stat-label {
+      color: rgba(254, 202, 202, 0.6);
+    }
+    
+    .stat-value {
+      font-size: 2.25rem;
+      font-weight: 900;
+      color: #e9d5ff;
+    }
+    
+    .stat-card.eligible .stat-value {
+      color: #bbf7d0;
+    }
+    
+    .stat-card.ineligible .stat-value {
+      color: #fecaca;
+    }
+    
+    .filters-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+    }
+    
+    .filters-flex {
+      display: flex;
+      gap: 1rem;
+    }
+    
+    .search-wrapper {
+      flex: 1;
+      position: relative;
+    }
+    
+    .search-icon {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1.25rem;
+      height: 1.25rem;
+      color: #c084fc;
+    }
+    
+    input[type="text"], select {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      padding-left: 3rem;
+      background: rgba(15, 23, 42, 0.5);
+      border: 1px solid rgba(168, 85, 247, 0.2);
+      border-radius: 0.75rem;
+      color: #e9d5ff;
+      font-size: 1rem;
+    }
+    
+    select {
+      padding-left: 1.5rem;
+    }
+    
+    input::placeholder {
+      color: rgba(192, 132, 252, 0.4);
+    }
+    
+    input:focus, select:focus {
+      outline: none;
+      border-color: rgba(168, 85, 247, 0.6);
+      box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.2);
+    }
+    
+    .teams-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      padding-bottom: 3rem;
+    }
+    
+    .teams-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    
+    .team-card {
+      background: rgba(15, 23, 42, 0.4);
+      backdrop-filter: blur(4px);
+      border-radius: 1rem;
+      border: 1px solid rgba(168, 85, 247, 0.2);
+      overflow: hidden;
+    }
+    
+    .team-header {
+      background: linear-gradient(to right, rgba(88, 28, 135, 0.6), rgba(30, 64, 175, 0.6));
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid rgba(168, 85, 247, 0.2);
+    }
+    
+    .team-name {
+      font-family: 'Bebas Neue', 'Impact', cursive;
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: #e9d5ff;
+      margin-bottom: 0.25rem;
+    }
+    
+    .team-owner {
+      color: rgba(216, 180, 254, 0.6);
+      font-size: 0.875rem;
+    }
+    
+    .table-wrapper {
+      overflow-x: auto;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    thead {
+      background: rgba(2, 6, 23, 0.4);
+    }
+    
+    th {
+      padding: 0.75rem 1.5rem;
+      text-align: left;
+      font-weight: 700;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: rgba(216, 180, 254, 0.6);
+    }
+    
+    tbody tr {
+      border-bottom: 1px solid rgba(168, 85, 247, 0.1);
+      transition: background-color 0.2s;
+    }
+    
+    tbody tr.eligible:hover {
+      background: rgba(74, 222, 128, 0.05);
+    }
+    
+    tbody tr.ineligible {
+      opacity: 0.6;
+    }
+    
+    tbody tr.ineligible:hover {
+      background: rgba(248, 113, 113, 0.05);
+    }
+    
+    td {
+      padding: 1rem 1.5rem;
+    }
+    
+    .player-name {
+      color: #e9d5ff;
+      font-weight: 500;
+    }
+    
+    .player-data {
+      color: rgba(216, 180, 254, 0.8);
+    }
+    
+    .status-eligible, .status-ineligible {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .status-icon {
+      width: 1rem;
+      height: 1rem;
+    }
+    
+    .status-eligible {
+      color: #4ade80;
+      font-weight: 700;
+      font-size: 0.875rem;
+    }
+    
+    .status-ineligible {
+      color: #f87171;
+      font-size: 0.875rem;
+    }
+    
+    .round-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.25rem 0.75rem;
+      background: rgba(168, 85, 247, 0.2);
+      border: 1px solid rgba(168, 85, 247, 0.4);
+      border-radius: 9999px;
+    }
+    
+    .round-number {
+      color: #e9d5ff;
+      font-weight: 900;
+      font-size: 1.125rem;
+    }
+    
+    .rookie-tag {
+      color: #c084fc;
+      font-weight: 700;
+      font-size: 0.75rem;
+    }
+    
+    .years-remaining {
+      color: #d8b4fe;
+      font-weight: 700;
+    }
+    
+    .placeholder {
+      color: rgba(168, 85, 247, 0.4);
+    }
+    
+    .rules-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+      padding-bottom: 2rem;
+    }
+    
+    .rules-card {
+      background: rgba(15, 23, 42, 0.4);
+      backdrop-filter: blur(4px);
+      border-radius: 1rem;
+      border: 1px solid rgba(168, 85, 247, 0.2);
+      padding: 1.5rem;
+    }
+    
+    .rules-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    
+    .rules-title {
+      font-family: 'Bebas Neue', 'Impact', cursive;
+      font-size: 1.25rem;
+      font-weight: 900;
+      color: #e9d5ff;
+    }
+    
+    .rules-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+      color: rgba(216, 180, 254, 0.8);
+      font-size: 0.875rem;
+      line-height: 1.6;
+    }
+    
+    .rules-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .rule-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    
+    .rule-bullet {
+      color: #c084fc;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    
+    .rule-highlight {
+      color: #e9d5ff;
+      font-weight: 600;
+    }
+    
+    @media (max-width: 768px) {
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .filters-flex {
+        flex-direction: column;
+      }
+      
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div id="root"></div>
+  <div class="bg-overlay">
+    <div class="bg-blob-1"></div>
+    <div class="bg-blob-2"></div>
+  </div>
+  
+  <div class="content-wrapper">
+    <header>
+      <div class="header-inner">
+        <div class="header-title-row">
+          <svg class="trophy-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+          </svg>
+          <h1>Keeper League Manager</h1>
+        </div>
+        <p class="subtitle">2026 Season Planning Tool</p>
+      </div>
+    </header>
+    
+    <div id="root"></div>
+  </div>
 
   <!-- React and dependencies -->
-  <script crossorigin="anonymous" src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-  <script crossorigin="anonymous" src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-  
-  <!-- Lucide React (using UMD build) -->
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 
   <script type="module">
     const { useState, useMemo, createElement: h } = React;
     const { createRoot } = ReactDOM;
-
-    // Icon components using Lucide
-    const Search = ({ className }) => {
-      const ref = React.useRef(null);
-      React.useEffect(() => {
-        if (ref.current) {
-          lucide.createIcons({ icons: { Search: lucide.Search }, nameAttr: 'data-lucide', attrs: { class: className } });
-        }
-      }, []);
-      return h('i', { 'data-lucide': 'search', className, ref });
-    };
-
-    const Award = ({ className }) => h('i', { 'data-lucide': 'award', className });
-    const XCircle = ({ className }) => h('i', { 'data-lucide': 'x-circle', className });
-    const CheckCircle = ({ className }) => h('i', { 'data-lucide': 'check-circle', className });
-    const AlertCircle = ({ className }) => h('i', { 'data-lucide': 'alert-circle', className });
-    const Trophy = ({ className }) => h('i', { 'data-lucide': 'trophy', className });
 
     const csvData = `Team,Owner,Player,YTD Pts,Bye,Years,Keeper,Acquired
 Hipster Doofus,Corey Thoesen,"Mariota, Marcus WAS QB (Q)",158.55,12,,,
@@ -348,6 +790,26 @@ Dem Boyz,Phillip Murray,"Jets, New York NYJ Def",90,9,,,`;
       };
     }
 
+    const CheckIcon = () => h('svg', { className: 'status-icon', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' },
+      h('path', { strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: 2, d: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z' })
+    );
+    
+    const XIcon = () => h('svg', { className: 'status-icon', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' },
+      h('path', { strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: 2, d: 'M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z' })
+    );
+    
+    const SearchIcon = () => h('svg', { className: 'search-icon', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' },
+      h('path', { strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: 2, d: 'M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z' })
+    );
+    
+    const AwardIcon = () => h('svg', { className: 'stat-icon', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' },
+      h('path', { strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: 2, d: 'M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z' })
+    );
+    
+    const AlertIcon = () => h('svg', { className: 'stat-icon', fill: 'none', stroke: 'currentColor', viewBox: '0 0 24 24' },
+      h('path', { strokeLinecap: 'round', strokeLinejoin: 'round', strokeWidth: 2, d: 'M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z' })
+    );
+
     function KeeperApp() {
       const [searchTerm, setSearchTerm] = useState('');
       const [selectedTeam, setSelectedTeam] = useState('all');
@@ -400,135 +862,111 @@ Dem Boyz,Phillip Murray,"Jets, New York NYJ Def",90,9,,,`;
         return { total, eligible, ineligible };
       }, [players]);
       
-      return h('div', { className: 'min-h-screen bg-gradient-to-br from-slate-950 via-purple-950 to-slate-950' },
-        h('div', { className: 'fixed inset-0 overflow-hidden pointer-events-none' },
-          h('div', { className: 'absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl animate-pulse' }),
-          h('div', { className: 'absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl animate-pulse', style: { animationDelay: '1s' } })
+      return h('div', null,
+        // Stats
+        h('div', { className: 'stats-container' },
+          h('div', { className: 'stats-grid' },
+            h('div', { className: 'stat-card' },
+              h('div', { className: 'stat-header' },
+                h(AwardIcon),
+                h('span', { className: 'stat-label' }, 'Total Players')
+              ),
+              h('div', { className: 'stat-value' }, stats.total)
+            ),
+            h('div', { className: 'stat-card eligible' },
+              h('div', { className: 'stat-header' },
+                h(CheckIcon),
+                h('span', { className: 'stat-label' }, 'Eligible')
+              ),
+              h('div', { className: 'stat-value' }, stats.eligible)
+            ),
+            h('div', { className: 'stat-card ineligible' },
+              h('div', { className: 'stat-header' },
+                h(XIcon),
+                h('span', { className: 'stat-label' }, 'Ineligible')
+              ),
+              h('div', { className: 'stat-value' }, stats.ineligible)
+            )
+          )
         ),
-        h('div', { className: 'relative z-10' },
-          h('header', { className: 'border-b border-purple-500/20 bg-slate-950/50 backdrop-blur-xl' },
-            h('div', { className: 'max-w-7xl mx-auto px-6 py-8' },
-              h('div', { className: 'flex items-center gap-4 mb-2' },
-                h(Trophy, { className: 'w-10 h-10 text-purple-400' }),
-                h('h1', { 
-                  className: 'text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400',
-                  style: { fontFamily: '"Bebas Neue", "Impact", cursive' }
-                }, 'Keeper League Manager')
-              ),
-              h('p', { 
-                className: 'text-purple-300/60 text-lg ml-14',
-                style: { fontFamily: '"Space Mono", monospace' }
-              }, '2026 Season Planning Tool')
+        
+        // Filters
+        h('div', { className: 'filters-container' },
+          h('div', { className: 'filters-flex' },
+            h('div', { className: 'search-wrapper' },
+              h(SearchIcon),
+              h('input', {
+                type: 'text',
+                placeholder: 'Search players...',
+                value: searchTerm,
+                onChange: (e) => setSearchTerm(e.target.value)
+              })
+            ),
+            h('select', {
+              value: selectedTeam,
+              onChange: (e) => setSelectedTeam(e.target.value)
+            },
+              h('option', { value: 'all' }, 'All Teams'),
+              teams.map(team => h('option', { key: team.name, value: team.name }, team.name))
             )
-          ),
-          
-          h('div', { className: 'max-w-7xl mx-auto px-6 py-6' },
-            h('div', { className: 'grid grid-cols-3 gap-4' },
-              h('div', { className: 'bg-gradient-to-br from-purple-900/40 to-purple-950/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/20' },
-                h('div', { className: 'flex items-center gap-3 mb-2' },
-                  h(Award, { className: 'w-5 h-5 text-purple-400' }),
-                  h('span', { className: 'text-purple-300/60 text-sm uppercase tracking-wider font-bold' }, 'Total Players')
+          )
+        ),
+        
+        // Teams
+        h('div', { className: 'teams-container' },
+          h('div', { className: 'teams-list' },
+            filteredTeams.map(team =>
+              h('div', { key: team.name, className: 'team-card' },
+                h('div', { className: 'team-header' },
+                  h('div', { className: 'team-name' }, team.name),
+                  h('div', { className: 'team-owner' }, team.owner)
                 ),
-                h('div', { className: 'text-4xl font-black text-purple-200' }, stats.total)
-              ),
-              h('div', { className: 'bg-gradient-to-br from-green-900/40 to-emerald-950/40 backdrop-blur-sm rounded-2xl p-6 border border-green-500/20' },
-                h('div', { className: 'flex items-center gap-3 mb-2' },
-                  h(CheckCircle, { className: 'w-5 h-5 text-green-400' }),
-                  h('span', { className: 'text-green-300/60 text-sm uppercase tracking-wider font-bold' }, 'Eligible')
-                ),
-                h('div', { className: 'text-4xl font-black text-green-200' }, stats.eligible)
-              ),
-              h('div', { className: 'bg-gradient-to-br from-red-900/40 to-rose-950/40 backdrop-blur-sm rounded-2xl p-6 border border-red-500/20' },
-                h('div', { className: 'flex items-center gap-3 mb-2' },
-                  h(XCircle, { className: 'w-5 h-5 text-red-400' }),
-                  h('span', { className: 'text-red-300/60 text-sm uppercase tracking-wider font-bold' }, 'Ineligible')
-                ),
-                h('div', { className: 'text-4xl font-black text-red-200' }, stats.ineligible)
-              )
-            )
-          ),
-          
-          h('div', { className: 'max-w-7xl mx-auto px-6 py-4' },
-            h('div', { className: 'flex gap-4' },
-              h('div', { className: 'flex-1 relative' },
-                h(Search, { className: 'absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-purple-400' }),
-                h('input', {
-                  type: 'text',
-                  placeholder: 'Search players...',
-                  value: searchTerm,
-                  onChange: (e) => setSearchTerm(e.target.value),
-                  className: 'w-full pl-12 pr-4 py-3 bg-slate-900/50 border border-purple-500/20 rounded-xl text-purple-100 placeholder-purple-400/40 focus:outline-none focus:border-purple-500/60 focus:ring-2 focus:ring-purple-500/20'
-                })
-              ),
-              h('select', {
-                value: selectedTeam,
-                onChange: (e) => setSelectedTeam(e.target.value),
-                className: 'px-6 py-3 bg-slate-900/50 border border-purple-500/20 rounded-xl text-purple-100 focus:outline-none focus:border-purple-500/60 focus:ring-2 focus:ring-purple-500/20'
-              },
-                h('option', { value: 'all' }, 'All Teams'),
-                teams.map(team => h('option', { key: team.name, value: team.name }, team.name))
-              )
-            )
-          ),
-          
-          h('div', { className: 'max-w-7xl mx-auto px-6 py-6 pb-12' },
-            h('div', { className: 'space-y-6' },
-              filteredTeams.map(team =>
-                h('div', { key: team.name, className: 'bg-slate-900/40 backdrop-blur-sm rounded-2xl border border-purple-500/20 overflow-hidden' },
-                  h('div', { className: 'bg-gradient-to-r from-purple-900/60 to-blue-900/60 px-6 py-4 border-b border-purple-500/20' },
-                    h('h2', { 
-                      className: 'text-2xl font-black text-purple-100',
-                      style: { fontFamily: '"Bebas Neue", "Impact", cursive' }
-                    }, team.name),
-                    h('p', { className: 'text-purple-300/60 text-sm' }, team.owner)
-                  ),
-                  h('div', { className: 'overflow-x-auto' },
-                    h('table', { className: 'w-full' },
-                      h('thead', null,
-                        h('tr', { className: 'bg-slate-950/40 text-purple-300/60 text-xs uppercase tracking-wider' },
-                          h('th', { className: 'px-6 py-3 text-left font-bold' }, 'Player'),
-                          h('th', { className: 'px-6 py-3 text-left font-bold' }, 'Current Acq.'),
-                          h('th', { className: 'px-6 py-3 text-left font-bold' }, 'Current Years'),
-                          h('th', { className: 'px-6 py-3 text-left font-bold' }, 'Status'),
-                          h('th', { className: 'px-6 py-3 text-left font-bold' }, '2026 Round'),
-                          h('th', { className: 'px-6 py-3 text-left font-bold' }, 'Years Left')
-                        )
-                      ),
-                      h('tbody', { className: 'divide-y divide-purple-500/10' },
-                        team.players.map((player, idx) =>
-                          h('tr', {
-                            key: idx,
-                            className: `transition-colors ${player.keeperStatus.eligible ? 'hover:bg-green-500/5' : 'hover:bg-red-500/5 opacity-60'}`
-                          },
-                            h('td', { className: 'px-6 py-4 text-purple-100 font-medium' }, player.Player),
-                            h('td', { className: 'px-6 py-4 text-purple-300/80' }, player.Acquired || '—'),
-                            h('td', { className: 'px-6 py-4 text-purple-300/80' }, player.Years || '—'),
-                            h('td', { className: 'px-6 py-4' },
-                              player.keeperStatus.eligible
-                                ? h('div', { className: 'flex items-center gap-2' },
-                                    h(CheckCircle, { className: 'w-4 h-4 text-green-400' }),
-                                    h('span', { className: 'text-green-400 font-bold text-sm' }, 'Eligible')
-                                  )
-                                : h('div', { className: 'flex items-center gap-2' },
-                                    h(XCircle, { className: 'w-4 h-4 text-red-400' }),
-                                    h('span', { className: 'text-red-400 text-sm' }, player.keeperStatus.reason)
-                                  )
-                            ),
-                            h('td', { className: 'px-6 py-4' },
-                              player.keeperStatus.eligible
-                                ? h('div', { className: 'inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/20 border border-purple-500/40' },
-                                    h('span', { className: 'text-purple-200 font-black text-lg' }, player.keeperStatus.nextRound),
-                                    player.keeperStatus.isRookie && h('span', { className: 'text-xs text-purple-400 font-bold' }, '(R)')
-                                  )
-                                : h('span', { className: 'text-purple-500/40' }, '—')
-                            ),
-                            h('td', { className: 'px-6 py-4' },
-                              player.keeperStatus.eligible
-                                ? h('span', { className: 'text-purple-300 font-bold' }, 
-                                    `${player.keeperStatus.yearsRemaining} ${player.keeperStatus.yearsRemaining === 1 ? 'year' : 'years'}`
-                                  )
-                                : h('span', { className: 'text-purple-500/40' }, '—')
-                            )
+                h('div', { className: 'table-wrapper' },
+                  h('table', null,
+                    h('thead', null,
+                      h('tr', null,
+                        h('th', null, 'Player'),
+                        h('th', null, 'Current Acq.'),
+                        h('th', null, 'Current Years'),
+                        h('th', null, 'Status'),
+                        h('th', null, '2026 Round'),
+                        h('th', null, 'Years Left')
+                      )
+                    ),
+                    h('tbody', null,
+                      team.players.map((player, idx) =>
+                        h('tr', {
+                          key: idx,
+                          className: player.keeperStatus.eligible ? 'eligible' : 'ineligible'
+                        },
+                          h('td', { className: 'player-name' }, player.Player),
+                          h('td', { className: 'player-data' }, player.Acquired || '—'),
+                          h('td', { className: 'player-data' }, player.Years || '—'),
+                          h('td', null,
+                            player.keeperStatus.eligible
+                              ? h('div', { className: 'status-eligible' },
+                                  h(CheckIcon),
+                                  h('span', null, 'Eligible')
+                                )
+                              : h('div', { className: 'status-ineligible' },
+                                  h(XIcon),
+                                  h('span', null, player.keeperStatus.reason)
+                                )
+                          ),
+                          h('td', null,
+                            player.keeperStatus.eligible
+                              ? h('div', { className: 'round-badge' },
+                                  h('span', { className: 'round-number' }, player.keeperStatus.nextRound),
+                                  player.keeperStatus.isRookie && h('span', { className: 'rookie-tag' }, '(R)')
+                                )
+                              : h('span', { className: 'placeholder' }, '—')
+                          ),
+                          h('td', null,
+                            player.keeperStatus.eligible
+                              ? h('span', { className: 'years-remaining' }, 
+                                  `${player.keeperStatus.yearsRemaining} ${player.keeperStatus.yearsRemaining === 1 ? 'year' : 'years'}`
+                                )
+                              : h('span', { className: 'placeholder' }, '—')
                           )
                         )
                       )
@@ -537,45 +975,43 @@ Dem Boyz,Phillip Murray,"Jets, New York NYJ Def",90,9,,,`;
                 )
               )
             )
-          ),
-          
-          h('div', { className: 'max-w-7xl mx-auto px-6 py-8 mb-8' },
-            h('div', { className: 'bg-slate-900/40 backdrop-blur-sm rounded-2xl border border-purple-500/20 p-6' },
-              h('div', { className: 'flex items-center gap-3 mb-4' },
-                h(AlertCircle, { className: 'w-6 h-6 text-purple-400' }),
-                h('h3', { 
-                  className: 'text-xl font-black text-purple-100',
-                  style: { fontFamily: '"Bebas Neue", "Impact", cursive' }
-                }, 'Keeper Rules')
-              ),
-              h('div', { className: 'grid md:grid-cols-2 gap-4 text-purple-300/80 text-sm leading-relaxed' },
-                h('ul', { className: 'space-y-2' },
-                  h('li', { className: 'flex items-start gap-2' },
-                    h('span', { className: 'text-purple-400 font-bold' }, '•'),
-                    h('span', null, 'Players may be kept for a maximum of ', h('strong', { className: 'text-purple-200' }, '3 years'))
-                  ),
-                  h('li', { className: 'flex items-start gap-2' },
-                    h('span', { className: 'text-purple-400 font-bold' }, '•'),
-                    h('span', null, 'Players drafted in ', h('strong', { className: 'text-purple-200' }, 'rounds 1-3'), ' are ineligible')
-                  ),
-                  h('li', { className: 'flex items-start gap-2' },
-                    h('span', { className: 'text-purple-400 font-bold' }, '•'),
-                    h('span', null, 'Undrafted players count as ', h('strong', { className: 'text-purple-200' }, '12th round'), ' picks')
-                  )
+          )
+        ),
+        
+        // Rules
+        h('div', { className: 'rules-container' },
+          h('div', { className: 'rules-card' },
+            h('div', { className: 'rules-header' },
+              h(AlertIcon),
+              h('h3', { className: 'rules-title' }, 'Keeper Rules')
+            ),
+            h('div', { className: 'rules-grid' },
+              h('ul', { className: 'rules-list' },
+                h('li', { className: 'rule-item' },
+                  h('span', { className: 'rule-bullet' }, '•'),
+                  h('span', null, 'Players may be kept for a maximum of ', h('span', { className: 'rule-highlight' }, '3 years'))
                 ),
-                h('ul', { className: 'space-y-2' },
-                  h('li', { className: 'flex items-start gap-2' },
-                    h('span', { className: 'text-purple-400 font-bold' }, '•'),
-                    h('span', null, 'Regular players move up ', h('strong', { className: 'text-purple-200' }, '2 rounds'), ' when kept')
-                  ),
-                  h('li', { className: 'flex items-start gap-2' },
-                    h('span', { className: 'text-purple-400 font-bold' }, '•'),
-                    h('span', null, 'Rookies (R) stay in the ', h('strong', { className: 'text-purple-200' }, 'same round'), ' when kept')
-                  ),
-                  h('li', { className: 'flex items-start gap-2' },
-                    h('span', { className: 'text-purple-400 font-bold' }, '•'),
-                    h('span', null, 'Years remaining calculated as current years ', h('strong', { className: 'text-purple-200' }, 'minus 1'))
-                  )
+                h('li', { className: 'rule-item' },
+                  h('span', { className: 'rule-bullet' }, '•'),
+                  h('span', null, 'Players drafted in ', h('span', { className: 'rule-highlight' }, 'rounds 1-3'), ' are ineligible')
+                ),
+                h('li', { className: 'rule-item' },
+                  h('span', { className: 'rule-bullet' }, '•'),
+                  h('span', null, 'Undrafted players count as ', h('span', { className: 'rule-highlight' }, '12th round'), ' picks')
+                )
+              ),
+              h('ul', { className: 'rules-list' },
+                h('li', { className: 'rule-item' },
+                  h('span', { className: 'rule-bullet' }, '•'),
+                  h('span', null, 'Regular players move up ', h('span', { className: 'rule-highlight' }, '2 rounds'), ' when kept')
+                ),
+                h('li', { className: 'rule-item' },
+                  h('span', { className: 'rule-bullet' }, '•'),
+                  h('span', null, 'Rookies (R) stay in the ', h('span', { className: 'rule-highlight' }, 'same round'), ' when kept')
+                ),
+                h('li', { className: 'rule-item' },
+                  h('span', { className: 'rule-bullet' }, '•'),
+                  h('span', null, 'Years remaining calculated as current years ', h('span', { className: 'rule-highlight' }, 'minus 1'))
                 )
               )
             )
@@ -584,14 +1020,8 @@ Dem Boyz,Phillip Murray,"Jets, New York NYJ Def",90,9,,,`;
       );
     }
 
-    // Render the app
     const root = createRoot(document.getElementById('root'));
     root.render(h(KeeperApp));
-    
-    // Initialize Lucide icons
-    setTimeout(() => {
-      lucide.createIcons();
-    }, 100);
   </script>
 </body>
 </html>
