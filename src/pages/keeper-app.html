@@ -1,41 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Keeper League Manager</title>
-  
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  
-  <!-- React and Babel -->
-  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
-  
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&display=swap');
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keeper League Manager</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
   <div id="root"></div>
 
-  <script type="text/babel">
+  <script type="module">
     const { useState, useMemo } = React;
-    
-    // Lucide icons
-    const Search = ({ className }) => <i data-lucide="search" className={className}></i>;
-    const Award = ({ className }) => <i data-lucide="award" className={className}></i>;
-    const XCircle = ({ className }) => <i data-lucide="x-circle" className={className}></i>;
-    const CheckCircle = ({ className }) => <i data-lucide="check-circle" className={className}></i>;
-    const AlertCircle = ({ className }) => <i data-lucide="alert-circle" className={className}></i>;
-    const Trophy = ({ className }) => <i data-lucide="trophy" className={className}></i>;
+    const { Trophy, Award, CheckCircle, XCircle, Search, AlertCircle } = lucide;
 
-    // Parse CSV data
-    const csvData = \`Team,Owner,Player,YTD Pts,Bye,Years,Keeper,Acquired
+    const csvData = `Team,Owner,Player,YTD Pts,Bye,Years,Keeper,Acquired
 Hipster Doofus,Corey Thoesen,"Mariota, Marcus WAS QB (Q)",158.55,12,,,
 Hipster Doofus,Corey Thoesen,"Williams, Caleb CHI QB",378.3,5,,,9.07
 Hipster Doofus,Corey Thoesen,"Charbonnet, Zach SEA RB (I)",165.7,8,,,8.06
@@ -242,10 +223,10 @@ Dem Boyz,Phillip Murray,"Wiley, Cam CHI WR (R)",234.05,5,,,4.07
 Dem Boyz,Phillip Murray,"Dulcich, Greg DEN TE (Q)",‐,12,,,
 Dem Boyz,Phillip Murray,"Engram, Evan JAC TE",134.4,8,,,3.07
 Dem Boyz,Phillip Murray,"McPherson, Evan CIN PK",135.6,10,,,
-Dem Boyz,Phillip Murray,"Jets, New York NYJ Def",90,9,,,\`;
+Dem Boyz,Phillip Murray,"Jets, New York NYJ Def",90,9,,,`;
 
     function parseCSV(csv) {
-      const lines = csv.trim().split('\\n');
+      const lines = csv.trim().split('\n');
       const headers = lines[0].split(',');
       
       return lines.slice(1).map(line => {
@@ -281,7 +262,7 @@ Dem Boyz,Phillip Murray,"Jets, New York NYJ Def",90,9,,,\`;
       
       let acquiredRound = null;
       if (acquired) {
-        const match = acquired.match(/^(\\d+)\\./);
+        const match = acquired.match(/^(\d+)\./);
         if (match) {
           acquiredRound = parseInt(match[1]);
         }
@@ -488,13 +469,13 @@ Dem Boyz,Phillip Murray,"Jets, New York NYJ Def",90,9,,,\`;
                         </thead>
                         <tbody className="divide-y divide-purple-500/10">
                           {team.players.map((player, idx) => (
-                            <tr key={idx} className={\`
+                            <tr key={idx} className={`
                               transition-colors
-                              \${player.keeperStatus.eligible 
+                              ${player.keeperStatus.eligible 
                                 ? 'hover:bg-green-500/5' 
                                 : 'hover:bg-red-500/5 opacity-60'
                               }
-                            \`}>
+                            `}>
                               <td className="px-6 py-4 text-purple-100 font-medium">
                                 {player.Player}
                               </td>
@@ -595,11 +576,9 @@ Dem Boyz,Phillip Murray,"Jets, New York NYJ Def",90,9,,,\`;
       );
     }
 
-    // Render the app
     const root = ReactDOM.createRoot(document.getElementById('root'));
     root.render(<KeeperApp />);
     
-    // Initialize Lucide icons after render
     setTimeout(() => {
       lucide.createIcons();
     }, 100);
