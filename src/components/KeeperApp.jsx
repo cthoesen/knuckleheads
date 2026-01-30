@@ -3,34 +3,75 @@ import { Search, Award, XCircle, CheckCircle, AlertCircle, Trophy, Loader2 } fro
 
 
 function calculateKeeperStatus(player) {
-  // Add a safety check in case Player is undefined
-  if (!player || !player.Player) return { eligible: false, reason: 'Invalid Data', nextRound: null };
+  if (!player || !player.Player) {
+    return {
+      eligible: false,
+      reason: 'Invalid player data',
+      nextRound: null,
+      yearsRemaining: 0,
+    };
+  }
 
   const isRookie = player.Player.includes('(R)');
-  const acquired = player.Acquired;
-  const currentYears = player.Years ? parseInt(player.Years) : null;
-  let acquiredRound = null;
-  if (acquired) {
-    const match = acquired.match(/^(\d+)\./);
-    if (match) acquiredRound = parseInt(match[1]);
+  const acquiredRaw = player.Acquired?.trim();
+  const acquiredRound = acquiredRaw ? parseInt(acquiredRaw) : null;
+
+  // YEARS LOGIC
+  let yearsRemaining;
+  if (!player.Years || player.Years.trim() === '') {
+    yearsRemaining = 3;
+  } else {
+    yearsRemaining = parseInt(player.Years) - 1;
   }
 
-  if (acquiredRound && acquiredRound <= 3) {
-    return { eligible: false, reason: 'Rounds 1-3 ineligible', nextRound: null, yearsRemaining: null };
-  }
-
-  let yearsRemaining = currentYears === null ? 3 : currentYears - 1;
   if (yearsRemaining <= 0) {
-    return { eligible: false, reason: '0 years left', nextRound: null, yearsRemaining: 0 };
+    return {
+      eligible: false,
+      reason: 'No keeper years remaining',
+      nextRound: null,
+      yearsRemaining: 0,
+    };
   }
 
-  let nextRound;
-  if (!acquired) nextRound = 12;
-  else if (isRookie) nextRound = acquiredRound;
-  else nextRound = Math.max(1, acquiredRound - 2);
+  // ROUND 1–3 BLOCK
+  if (acquiredRound && acquiredRound <= 3) {
+    return {
+      eligible: false,
+      reason: 'Drafted in rounds 1–3',
+      nextRound: null,
+      yearsRemaining,
+    };
+  }
 
-  return { eligible: true, nextRound, yearsRemaining, isRookie };
+  // NEXT ROUND CALCULATION
+  let nextRound;
+
+  if (!acquiredRound) {
+    // Undrafted / FA
+    nextRound = 12;
+  } else if (isRookie) {
+    nextRound = acquiredRound;
+  } else {
+    nextRound = acquiredRound - 2;
+  }
+
+  if (nextRound <= 0) {
+    return {
+      eligible: false,
+      reason: 'Invalid draft round',
+      nextRound: null,
+      yearsRemaining,
+    };
+  }
+
+  return {
+    eligible: true,
+    reason: 'Eligible keeper',
+    nextRound,
+    yearsRemaining,
+  };
 }
+
 
 export default function KeeperApp() {
   const [players, setPlayers] = useState([]);
