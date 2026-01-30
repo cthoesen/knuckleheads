@@ -56,21 +56,20 @@ export default function KeeperApp() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTeam, setSelectedTeam] = useState('all');
 
-  //const MFL_URL = "https://www47.myfantasyleague.com/2025/options?L=45267&O=07&PRINTER=1";
-  // If you hit a CORS error, use: 
-  const PROXY_URL = "https://cors-anywhere.herokuapp.com/" + "https://www47.myfantasyleague.com/2025/options?L=45267&O=07&PRINTER=1";
-
-  useEffect(() => {
+    useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(MFL_URL);
-        if (!response.ok) throw new Error('Failed to fetch from MFL');
+        // Fetch from your own local Astro API route
+        // This bypasses CORS completely because it's the same domain
+        const response = await fetch('/api/league-data'); 
+        
+        if (!response.ok) throw new Error('Failed to fetch league data');
         
         const csvText = await response.text();
         const parsedData = parseCSV(csvText);
         setPlayers(parsedData);
       } catch (err) {
-        setError("Error loading league data. You may need to enable a CORS proxy.");
+        setError("Error loading league data.");
         console.error(err);
       } finally {
         setIsLoading(false);
