@@ -56,9 +56,9 @@ export default function KeeperApp() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTeam, setSelectedTeam] = useState('all');
 
-  const MFL_URL = "https://www47.myfantasyleague.com/2025/options?L=45267&O=07&PRINTER=1";
+  //const MFL_URL = "https://www47.myfantasyleague.com/2025/options?L=45267&O=07&PRINTER=1";
   // If you hit a CORS error, use: 
-  // const PROXY_URL = "https://cors-anywhere.herokuapp.com/" + MFL_URL;
+  const PROXY_URL = "https://cors-anywhere.herokuapp.com/" + "https://www47.myfantasyleague.com/2025/options?L=45267&O=07&PRINTER=1";
 
   useEffect(() => {
     async function fetchData() {
