@@ -1,3 +1,7 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 :root {
     --footer-text: 40, 15, 85;
     --social-icons: 125, 0, 255;
