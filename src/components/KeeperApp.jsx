@@ -1,33 +1,14 @@
-import React, { useState, useMemo } from 'react';
-import { Search, XCircle, CheckCircle, AlertCircle, Trophy } from 'lucide-react';
+import React, { useState, useMemo, useEffect } from 'react';
+import { Search, Award, XCircle, CheckCircle, AlertCircle, Trophy, Loader2 } from 'lucide-react';
 
-
-function parseCSV(csv) {
-  const lines = csv.trim().split('\n');
-  const headers = lines[0].split(',');
-  return lines.slice(1).map(line => {
-    const values = [];
-    let current = '';
-    let inQuotes = false;
-    for (let i = 0; i < line.length; i++) {
-      const char = line[i];
-      if (char === '"') inQuotes = !inQuotes;
-      else if (char === ',' && !inQuotes) { values.push(current.trim()); current = ''; }
-      else { current += char; }
-    }
-    values.push(current.trim());
-    const obj = {};
-    headers.forEach((header, i) => { obj[header.trim()] = values[i] || ''; });
-    return obj;
-  });
-}
 
 function calculateKeeperStatus(player) {
-  // Guard against undefined or missing Player property
-  const playerName = player?.Player || '';
-  const isRookie = playerName.includes('(R)');
-  const acquired = player?.Acquired;
-  const currentYears = player?.Years ? parseInt(player.Years) : null;
+  // Add a safety check in case Player is undefined
+  if (!player || !player.Player) return { eligible: false, reason: 'Invalid Data', nextRound: null };
+
+  const isRookie = player.Player.includes('(R)');
+  const acquired = player.Acquired;
+  const currentYears = player.Years ? parseInt(player.Years) : null;
   let acquiredRound = null;
   if (acquired) {
     const match = acquired.match(/^(\d+)\./);
@@ -51,14 +32,32 @@ function calculateKeeperStatus(player) {
   return { eligible: true, nextRound, yearsRemaining, isRookie };
 }
 
-export default function KeeperApp({ initialData }) {
-  const [players] = useState(() => {
-    // If the fetch failed, initialData might be empty
-    if (!initialData) return [];
-    return parseCSV(initialData);
-  });
+export default function KeeperApp() {
+  const [players, setPlayers] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTeam, setSelectedTeam] = useState('all');
+
+useEffect(() => {
+    async function fetchData() {
+      try {
+        // Fetch from our new local "Translator" API
+        const response = await fetch('/api/league-data');
+        if (!response.ok) throw new Error('Failed to fetch league data');
+        
+        const data = await response.json();
+        console.log("Fetched Data:", data); // Check your console to see what we got!
+        setPlayers(data);
+      } catch (err) {
+        setError("Error loading league data.");
+        console.error(err);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+    fetchData();
+  }, []);
 
   const teams = useMemo(() => {
     const teamMap = new Map();
