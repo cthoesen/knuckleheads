@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import KeeperApp from '../components/KeeperApp.jsx';
-const KeeperAppAny: any = KeeperApp;
 
 // 1. Fetch the data on the server (No CORS issues here!)
 const MFL_URL = "https://www47.myfantasyleague.com/2025/options?L=45267&O=07&PRINTER=1";
@@ -22,7 +21,7 @@ try {
 <Layout title="KKL Keeper Manager">
   <main>
     {/* 2. Pass the data directly to the React component */}
-    <KeeperAppAny client:load initialData={initialCsvData} />
+    <KeeperApp client:load initialData={initialCsvData} />
   </main>
 </Layout>
 

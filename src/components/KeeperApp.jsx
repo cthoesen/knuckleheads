@@ -1,5 +1,5 @@
-import React, { useState, useMemo } from 'react'; // Removed useEffect!
-import { Search, Award, XCircle, CheckCircle, AlertCircle, Trophy } from 'lucide-react';
+import React, { useState, useMemo } from 'react';
+import { Search, XCircle, CheckCircle, AlertCircle, Trophy } from 'lucide-react';
 
 
 function parseCSV(csv) {
@@ -23,9 +23,11 @@ function parseCSV(csv) {
 }
 
 function calculateKeeperStatus(player) {
-  const isRookie = player.Player.includes('(R)');
-  const acquired = player.Acquired;
-  const currentYears = player.Years ? parseInt(player.Years) : null;
+  // Guard against undefined or missing Player property
+  const playerName = player?.Player || '';
+  const isRookie = playerName.includes('(R)');
+  const acquired = player?.Acquired;
+  const currentYears = player?.Years ? parseInt(player.Years) : null;
   let acquiredRound = null;
   if (acquired) {
     const match = acquired.match(/^(\d+)\./);
@@ -61,6 +63,8 @@ export default function KeeperApp({ initialData }) {
   const teams = useMemo(() => {
     const teamMap = new Map();
     players.forEach(player => {
+      // Skip entries with no Player name (malformed data)
+      if (!player.Player) return;
       if (!teamMap.has(player.Team)) {
         teamMap.set(player.Team, { name: player.Team, owner: player.Owner, players: [] });
       }
@@ -81,20 +85,13 @@ export default function KeeperApp({ initialData }) {
     return result;
   }, [teams, selectedTeam, searchTerm]);
 
-if (isLoading) {
+// Show message when no players are loaded
+  if (players.length === 0) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-950">
-        <Loader2 className="w-12 h-12 text-purple-500 animate-spin" />
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-950 text-red-400">
+      <div className="min-h-screen flex items-center justify-center bg-slate-950 text-slate-400">
         <div className="text-center">
           <AlertCircle className="w-12 h-12 mx-auto mb-4" />
-          <p>{error}</p>
+          <p>No player data available</p>
         </div>
       </div>
     );
