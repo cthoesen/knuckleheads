@@ -1,5 +1,5 @@
-import React, { useState, useMemo, useEffect } from 'react';
-import { Search, Award, XCircle, CheckCircle, AlertCircle, Trophy, Loader2 } from 'lucide-react';
+import React, { useState, useMemo } from 'react'; // Removed useEffect!
+import { Search, Award, XCircle, CheckCircle, AlertCircle, Trophy } from 'lucide-react';
 
 
 function parseCSV(csv) {
@@ -49,34 +49,14 @@ function calculateKeeperStatus(player) {
   return { eligible: true, nextRound, yearsRemaining, isRookie };
 }
 
-export default function KeeperApp() {
-  const [players, setPlayers] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
+export default function KeeperApp({ initialData }) {
+  const [players] = useState(() => {
+    // If the fetch failed, initialData might be empty
+    if (!initialData) return [];
+    return parseCSV(initialData);
+  });
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTeam, setSelectedTeam] = useState('all');
-
-    useEffect(() => {
-    async function fetchData() {
-      try {
-        // Fetch from your own local Astro API route
-        // This bypasses CORS completely because it's the same domain
-        const response = await fetch('/api/league-data'); 
-        
-        if (!response.ok) throw new Error('Failed to fetch league data');
-        
-        const csvText = await response.text();
-        const parsedData = parseCSV(csvText);
-        setPlayers(parsedData);
-      } catch (err) {
-        setError("Error loading league data.");
-        console.error(err);
-      } finally {
-        setIsLoading(false);
-      }
-    }
-    fetchData();
-  }, []);
 
   const teams = useMemo(() => {
     const teamMap = new Map();
