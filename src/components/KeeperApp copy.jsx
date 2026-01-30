@@ -1,6 +1,60 @@
-import React, { useState, useMemo, useEffect } from 'react';
-import { Search, Award, XCircle, CheckCircle, AlertCircle, Trophy, Loader2 } from 'lucide-react';
+import React, { useState, useMemo } from 'react';
+import { Search, Award, XCircle, CheckCircle, AlertCircle, Trophy } from 'lucide-react';
 
+// Use the data you provided in the CSV variable
+const csvData = `Team,Owner,Player,YTD Pts,Bye,Years,Keeper,Acquired
+Hipster Doofus,Corey Thoesen,"Mariota, Marcus WAS QB (Q)",158.55,12,,,
+Hipster Doofus,Corey Thoesen,"Williams, Caleb CHI QB",378.3,5,,,9.07
+Hipster Doofus,Corey Thoesen,"Charbonnet, Zach SEA RB (I)",165.7,8,,,8.06
+Hipster Doofus,Corey Thoesen,"Henderson, TreVeyon NEP RB (R)",221.35,14,,,2.06
+Hipster Doofus,Corey Thoesen,"Mixon, Joe HOU RB (I)",‐,6,,,10.05
+Hipster Doofus,Corey Thoesen,"Tuten, Bhayshul JAC RB (R)",107.55,8,,,10.06
+Hipster Doofus,Corey Thoesen,"Williams, Kyren LAR RB",255.6,8,1,K11,11.07
+Hipster Doofus,Corey Thoesen,"Aiyuk, Brandon SFO WR (H)",‐,14,,,15.07
+Hipster Doofus,Corey Thoesen,"Ayomanor, Elic TEN WR (R)",108.5,10,,,
+Hipster Doofus,Corey Thoesen,"Egbuka, Emeka TBB WR (R)",206.9,9,,,5.07
+Hipster Doofus,Corey Thoesen,"Lamb, CeeDee DAL WR",221.5,10,,,1.07
+Hipster Doofus,Corey Thoesen,"McMillan, Tetairoa CAR WR (R)",208.9,14,,,3.07
+Hipster Doofus,Corey Thoesen,"Odunze, Rome CHI WR",152.1,5,3,K6,6.06
+Hipster Doofus,Corey Thoesen,"Reed, Jayden GBP WR",49.55,5,,,5.06
+Hipster Doofus,Corey Thoesen,"Bowers, Brock LVR TE (I)",182.6,8,3,K7,7.12
+Hipster Doofus,Corey Thoesen,"Fannin, Harold CLE TE (R) (Q)",189.4,9,,,
+Hipster Doofus,Corey Thoesen,"Mevis, Harrison LAR PK",66,8,,,
+Hipster Doofus,Corey Thoesen,"Bears, Chicago CHI Def",114,5,,,
+Wa Wa Wee Wa ,Mike Stein,"Burrow, Joe CIN QB",146.05,10,,,3.04
+Wa Wa Wee Wa ,Mike Stein,"Dart, Jaxson NYG QB (R)",259.9,14,,,16.01
+Wa Wa Wee Wa ,Mike Stein,"Carter, Michael ARI RB",93.45,8,,,
+Wa Wa Wee Wa ,Mike Stein,"Harvey, RJ DEN RB (R)",222.05,12,,,4.01
+Wa Wa Wee Wa ,Mike Stein,"Marks, Woody HOU RB (R)",144.8,6,,,14.06
+Wa Wa Wee Wa ,Mike Stein,"Mitchell, Keaton BAL RB",81.75,7,,,18.01
+Wa Wa Wee Wa ,Mike Stein,"Pollard, Tony TEN RB",189.3,10,,,4.09
+Wa Wa Wee Wa ,Mike Stein,"Swift, D'Andre CHI RB",236,5,,,4.06
+Wa Wa Wee Wa ,Mike Stein,"Taylor, Jonathan IND RB",381.4,11,,,1.12
+Wa Wa Wee Wa ,Mike Stein,"Tracy, Tyrone NYG RB",140.3,14,3,K15,15.08
+Wa Wa Wee Wa ,Mike Stein,"Brown, A.J. PHI WR",235.3,9,,,2.05
+Wa Wa Wee Wa ,Mike Stein,"Evans, Mike TBB WR",82.4,9,,,2.11
+Wa Wa Wee Wa ,Mike Stein,"London, Drake ATL WR",199.1,5,,,2.01
+Wa Wa Wee Wa ,Mike Stein,"Pittman, Michael IND WR",202.3,11,,,6.01
+Wa Wa Wee Wa ,Mike Stein,"Waddle, Jaylen MIA WR (Q)",201.2,12,,,5.12
+Wa Wa Wee Wa ,Mike Stein,"McBride, Trey ARI TE",311.4,8,2,K12,12.06
+Wa Wa Wee Wa ,Mike Stein,"Aubrey, Brandon DAL PK",179.6,10,,,11.12
+Wa Wa Wee Wa ,Mike Stein,"Lions, Detroit DET Def",100,8,,,13.06
+Phoenix Force,Chris Culbreath,"Allen, Josh BUF QB (Q)",449.3,7,,,2.03
+Phoenix Force,Chris Culbreath,"Hubbard, Chuba CAR RB",133.35,14,3,K6,6.03
+Phoenix Force,Chris Culbreath,"Jacobs, Josh GBP RB",239.1,5,,,1.1
+Phoenix Force,Chris Culbreath,"Knight, Bam ARI RB (I)",105.9,8,,,
+Phoenix Force,Chris Culbreath,"Pacheco, Isiah KCC RB",87.6,10,,,5.1
+Phoenix Force,Chris Culbreath,"Perine, Samaje CIN RB",91.2,10,,,
+Phoenix Force,Chris Culbreath,"Wilson, Emanuel GBP RB",102.3,5,,,
+Phoenix Force,Chris Culbreath,"Allen, Keenan LAC WR",175.1,12,,,11.1
+Phoenix Force,Chris Culbreath,"Bond, Isaiah CLE WR (R)",52.55,9,,,14.03
+Phoenix Force,Chris Culbreath,"Higgins, Jayden HOU WR (R)",123.2,6,,,9.1
+Phoenix Force,Chris Culbreath,"McConkey, Ladd LAC WR",188.05,12,3,K7,7.1
+Phoenix Force,Chris Culbreath,"Nacua, Puka LAR WR",371,8,2,K12,12.03
+Phoenix Force,Chris Culbreath,"Wilson, Garrett NYJ WR (I)",99.5,9,1,K4,4.03
+Phoenix Force,Chris Culbreath,"Kelce, Travis KCC TE",‐,10,,,13.1
+Phoenix Force,Chris Culbreath,"Zuerlein, Greg NYJ PK",‐,9,,,
+Phoenix Force,Chris Culbreath,"Commanders, Washington WAS Def",118,12,,,`; // Keep your CSV string here
 
 function parseCSV(csv) {
   const lines = csv.trim().split('\n');
@@ -50,34 +104,9 @@ function calculateKeeperStatus(player) {
 }
 
 export default function KeeperApp() {
-  const [players, setPlayers] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTeam, setSelectedTeam] = useState('all');
-
-  const MFL_URL = "https://www47.myfantasyleague.com/2025/options?L=45267&O=07&PRINTER=1";
-  // If you hit a CORS error, use: 
-  // const PROXY_URL = "https://cors-anywhere.herokuapp.com/" + MFL_URL;
-
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const response = await fetch(MFL_URL);
-        if (!response.ok) throw new Error('Failed to fetch from MFL');
-        
-        const csvText = await response.text();
-        const parsedData = parseCSV(csvText);
-        setPlayers(parsedData);
-      } catch (err) {
-        setError("Error loading league data. You may need to enable a CORS proxy.");
-        console.error(err);
-      } finally {
-        setIsLoading(false);
-      }
-    }
-    fetchData();
-  }, []);
+  const players = useMemo(() => parseCSV(csvData), []);
 
   const teams = useMemo(() => {
     const teamMap = new Map();
@@ -101,25 +130,6 @@ export default function KeeperApp() {
     }
     return result;
   }, [teams, selectedTeam, searchTerm]);
-
-if (isLoading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-950">
-        <Loader2 className="w-12 h-12 text-purple-500 animate-spin" />
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-950 text-red-400">
-        <div className="text-center">
-          <AlertCircle className="w-12 h-12 mx-auto mb-4" />
-          <p>{error}</p>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 p-4 md:p-8">
