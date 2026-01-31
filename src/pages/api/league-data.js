@@ -18,10 +18,13 @@ export async function GET({ params, request }) {
     for (let i = 1; i < sections.length; i++) {
       const section = sections[i];
 
-      // Extract Team Name and Owner
-      const headerMatch = section.match(/>(.*?)(?:\((.*?)\))?<\/caption>/);
-      const teamName = headerMatch ? headerMatch[1].trim() : "Unknown Team";
-      const ownerName = headerMatch && headerMatch[2] ? headerMatch[2].trim() : "Unknown Owner";
+      // Extract Team Name from anchor tag and Owner from ownername span
+      // Pattern: <a ...>Hipster Doofus</a><span class="ownername"> - Corey Thoesen</span>
+      const teamMatch = section.match(/<a[^>]*>([^<]+)<\/a>/);
+      const ownerMatch = section.match(/<span class="ownername">\s*-\s*([^<]+)<\/span>/);
+      
+      const teamName = teamMatch ? teamMatch[1].trim() : "Unknown Team";
+      const ownerName = ownerMatch ? ownerMatch[1].trim() : "Unknown Owner";
 
       // Find all table rows
       const rowMatches = section.matchAll(/<tr[^>]*>(.*?)<\/tr>/gs);
@@ -29,34 +32,47 @@ export async function GET({ params, request }) {
       for (const row of rowMatches) {
         const rowContent = row[1];
         
-        // Extract cells (td) - preserve empty cells
-        const cellMatches = [...rowContent.matchAll(/<td[^>]*>(.*?)<\/td>/gs)];
-        const cells = cellMatches.map(m => {
-          // Strip HTML tags but preserve the content (even if empty)
-          return m[1].replace(/<[^>]*>/g, '').trim();
+        // Skip if this is a header row (has th tags)
+        if (rowContent.includes('<th')) continue;
+        
+        // Extract all td cells with their class names
+        const cellMatches = [...rowContent.matchAll(/<td\s+class="([^"]*)"[^>]*>(.*?)<\/td>/gs)];
+        
+        // Skip if not enough cells
+        if (cellMatches.length < 4) continue;
+        
+        // Build a map of class -> content for easier access
+        const cellMap = {};
+        cellMatches.forEach(match => {
+          const className = match[1];
+          const content = match[2].replace(/<[^>]*>/g, '').trim();
+          cellMap[className] = content;
         });
-
-        // Skip header rows
-        if (cells.length < 3 || cells[0].includes('Player')) continue;
-
-        // MFL Roster Report columns (based on your CSV):
-        // [0] Player
-        // [1] YTD Pts (ignore)
-        // [2] Bye (ignore)
-        // [3] Years
-        // [4] Keeper (K11, K12, etc. or blank)
-        // [5] Acquired (round.pick format or blank)
+        
+        // Skip rows without player data
+        if (!cellMap['player']) continue;
+        
+        // Map the columns based on MFL class names:
+        // class="player" -> Player name
+        // class="points" -> YTD Pts (we'll ignore this)
+        // class="week" -> Bye (we'll ignore this)
+        // class="contractyear" -> Years
+        // class="contractinfo" -> Keeper (K11, K12, etc.)
+        // class="drafted" -> Acquired (9.07, 17.06, etc.)
         
         players.push({
           Team: teamName,
           Owner: ownerName,
-          Player: cells[0] || '',
-          Years: cells[3] || '',           // Years column
-          Keeper: cells[4] || '',          // Keeper column (K11, etc.)
-          Acquired: cells[5] || ''         // Acquired column (17.06 format)
+          Player: cellMap['player'] || '',
+          Years: cellMap['contractyear'] || '',
+          Keeper: cellMap['contractinfo'] || '',
+          Acquired: cellMap['drafted'] || ''
         });
       }
     }
+    
+    console.log("Parsed players sample:", players.slice(0, 3)); // Log first 3 for debugging
+    console.log("Total players parsed:", players.length);
     
     return new Response(JSON.stringify(players), {
       status: 200,
@@ -64,6 +80,7 @@ export async function GET({ params, request }) {
     });
 
   } catch (error) {
+    console.error("Error in league-data:", error);
     return new Response(JSON.stringify({ error: error.message }), { status: 500 });
   }
 }
