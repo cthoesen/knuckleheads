@@ -12,48 +12,48 @@ export async function GET({ params, request }) {
     const htmlText = await response.text();
     const players = [];
 
-    // MFL "Printer Friendly" reports usually structure teams in tables
-    // Strategy: Split the HTML by "<caption>" tags, which usually hold the Team Name
+    // Split by table captions (team headers)
     const sections = htmlText.split('<caption');
 
-    // Skip the first chunk (header garbage)
     for (let i = 1; i < sections.length; i++) {
       const section = sections[i];
 
-      // 1. Extract Team Name (and Owner if present)
-      // It usually looks like: ">Hipster Doofus (Corey Thoesen)</caption>"
+      // Extract Team Name and Owner
       const headerMatch = section.match(/>(.*?)(?:\((.*?)\))?<\/caption>/);
       const teamName = headerMatch ? headerMatch[1].trim() : "Unknown Team";
       const ownerName = headerMatch && headerMatch[2] ? headerMatch[2].trim() : "Unknown Owner";
 
-      // 2. Find all table rows
+      // Find all table rows
       const rowMatches = section.matchAll(/<tr[^>]*>(.*?)<\/tr>/gs);
 
       for (const row of rowMatches) {
         const rowContent = row[1];
         
-        // 3. Extract cells (td)
-        // This regex finds content between > and </td>
-        const cells = [...rowContent.matchAll(/<td[^>]*>(.*?)<\/td>/gs)].map(m => {
-            // Strip HTML tags from the cell content to get just the text
-            return m[1].replace(/<[^>]*>/g, '').trim();
+        // Extract cells (td) - preserve empty cells
+        const cellMatches = [...rowContent.matchAll(/<td[^>]*>(.*?)<\/td>/gs)];
+        const cells = cellMatches.map(m => {
+          // Strip HTML tags but preserve the content (even if empty)
+          return m[1].replace(/<[^>]*>/g, '').trim();
         });
 
-        // Skip header rows (usually have "Player" or "Status" in them)
+        // Skip header rows
         if (cells.length < 3 || cells[0].includes('Player')) continue;
 
-        // 4. Map the columns to your data structure
-        // MFL Roster Report columns usually are:
-        // [0] Player, [1] Bye, [2] Status/Pts, [3] Years, [4] Salary/Acquired?
-        // Note: You might need to adjust these indices based on your specific report columns!
-        // Based on your CSV, we'll try to map common positions.
+        // MFL Roster Report columns (based on your CSV):
+        // [0] Player
+        // [1] YTD Pts (ignore)
+        // [2] Bye (ignore)
+        // [3] Years
+        // [4] Keeper (K11, K12, etc. or blank)
+        // [5] Acquired (round.pick format or blank)
         
         players.push({
           Team: teamName,
           Owner: ownerName,
-          Player: cells[0],   // 1st column is usually Player Name
-          Acquired: cells[cells.length - 1], // Last column is often 'Acquired' or 'Salary'
-          Years: cells[cells.length - 2]     // 2nd to last often 'Years' or 'Contract'
+          Player: cells[0] || '',
+          Years: cells[3] || '',           // Years column
+          Keeper: cells[4] || '',          // Keeper column (K11, etc.)
+          Acquired: cells[5] || ''         // Acquired column (17.06 format)
         });
       }
     }

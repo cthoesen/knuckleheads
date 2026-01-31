@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { Search, Award, XCircle, CheckCircle, AlertCircle, Trophy, Loader2 } from 'lucide-react';
+import { Search, Award, XCircle, CheckCircle, AlertCircle, Trophy } from 'lucide-react';
 
 
 function calculateKeeperStatus(player) {
@@ -9,66 +9,79 @@ function calculateKeeperStatus(player) {
       reason: 'Invalid player data',
       nextRound: null,
       yearsRemaining: 0,
+      isRookie: false
     };
   }
 
   const isRookie = player.Player.includes('(R)');
-  const acquiredRaw = player.Acquired?.trim();
-  const acquiredRound = acquiredRaw ? parseInt(acquiredRaw) : null;
-
-  // YEARS LOGIC
+  const acquired = player.Acquired?.trim();
+  const currentYears = player.Years ? parseInt(player.Years) : null;
+  
+  // Parse acquired round (format is like "17.06" where 17 is the round)
+  let acquiredRound = null;
+  if (acquired) {
+    const match = acquired.match(/^(\d+)\./);
+    if (match) {
+      acquiredRound = parseInt(match[1]);
+    }
+  }
+  
+  // Rule: Players drafted in rounds 1-3 are ineligible
+  if (acquiredRound && acquiredRound <= 3) {
+    return {
+      eligible: false,
+      reason: 'Drafted in rounds 1-3',
+      nextRound: null,
+      yearsRemaining: null,
+      isRookie
+    };
+  }
+  
+  // Calculate years remaining for next season
   let yearsRemaining;
-  if (!player.Years || player.Years.trim() === '') {
+  if (currentYears === null || currentYears === '') {
+    // Blank years = 3 years remaining next season
     yearsRemaining = 3;
   } else {
-    yearsRemaining = parseInt(player.Years) - 1;
+    // Subtract 1 from current years
+    yearsRemaining = currentYears - 1;
   }
-
+  
+  // If years remaining is 0 or less, player is ineligible
   if (yearsRemaining <= 0) {
     return {
       eligible: false,
       reason: 'No keeper years remaining',
       nextRound: null,
       yearsRemaining: 0,
+      isRookie
     };
   }
-
-  // ROUND 1–3 BLOCK
-  if (acquiredRound && acquiredRound <= 3) {
-    return {
-      eligible: false,
-      reason: 'Drafted in rounds 1–3',
-      nextRound: null,
-      yearsRemaining,
-    };
-  }
-
-  // NEXT ROUND CALCULATION
+  
+  // Calculate next season's draft round
   let nextRound;
-
-  if (!acquiredRound) {
-    // Undrafted / FA
+  if (!acquired) {
+    // Blank acquired = 12th round
     nextRound = 12;
   } else if (isRookie) {
+    // Rookies stay in same round
     nextRound = acquiredRound;
   } else {
+    // Regular players move up 2 rounds
     nextRound = acquiredRound - 2;
   }
-
-  if (nextRound <= 0) {
-    return {
-      eligible: false,
-      reason: 'Invalid draft round',
-      nextRound: null,
-      yearsRemaining,
-    };
+  
+  // Ensure round doesn't go below 1
+  if (nextRound < 1) {
+    nextRound = 1;
   }
-
+  
   return {
     eligible: true,
-    reason: 'Eligible keeper',
-    nextRound,
-    yearsRemaining,
+    reason: null,
+    nextRound: nextRound,
+    yearsRemaining: yearsRemaining,
+    isRookie: isRookie
   };
 }
 
@@ -80,15 +93,14 @@ export default function KeeperApp() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTeam, setSelectedTeam] = useState('all');
 
-useEffect(() => {
+  useEffect(() => {
     async function fetchData() {
       try {
-        // Fetch from our new local "Translator" API
         const response = await fetch('/api/league-data');
         if (!response.ok) throw new Error('Failed to fetch league data');
         
         const data = await response.json();
-        console.log("Fetched Data:", data); // Check your console to see what we got!
+        console.log("Fetched Data:", data);
         setPlayers(data);
       } catch (err) {
         setError("Error loading league data.");
@@ -103,125 +115,289 @@ useEffect(() => {
   const teams = useMemo(() => {
     const teamMap = new Map();
     players.forEach(player => {
-      // Skip entries with no Player name (malformed data)
       if (!player.Player) return;
       if (!teamMap.has(player.Team)) {
-        teamMap.set(player.Team, { name: player.Team, owner: player.Owner, players: [] });
+        teamMap.set(player.Team, { 
+          name: player.Team, 
+          owner: player.Owner, 
+          players: [] 
+        });
       }
-      teamMap.get(player.Team).players.push({ ...player, keeperStatus: calculateKeeperStatus(player) });
+      teamMap.get(player.Team).players.push({ 
+        ...player, 
+        keeperStatus: calculateKeeperStatus(player) 
+      });
     });
     return Array.from(teamMap.values());
   }, [players]);
 
   const filteredTeams = useMemo(() => {
     let result = teams;
-    if (selectedTeam !== 'all') result = result.filter(t => t.name === selectedTeam);
+    if (selectedTeam !== 'all') {
+      result = result.filter(t => t.name === selectedTeam);
+    }
     if (searchTerm) {
       result = result.map(t => ({
         ...t,
-        players: t.players.filter(p => p.Player.toLowerCase().includes(searchTerm.toLowerCase()))
+        players: t.players.filter(p => 
+          p.Player.toLowerCase().includes(searchTerm.toLowerCase())
+        )
       })).filter(t => t.players.length > 0);
     }
     return result;
   }, [teams, selectedTeam, searchTerm]);
 
-// Show message when no players are loaded
-  if (players.length === 0) {
+  const stats = useMemo(() => {
+    const total = players.length;
+    const eligible = players.filter(p => calculateKeeperStatus(p).eligible).length;
+    const ineligible = total - eligible;
+    return { total, eligible, ineligible };
+  }, [players]);
+
+  if (isLoading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-950 text-slate-400">
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-950 via-purple-950 to-slate-950">
         <div className="text-center">
-          <AlertCircle className="w-12 h-12 mx-auto mb-4" />
-          <p>No player data available</p>
+          <Trophy className="w-12 h-12 mx-auto mb-4 text-purple-400 animate-pulse" />
+          <p className="text-purple-300">Loading keeper data...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (error || players.length === 0) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-950 via-purple-950 to-slate-950">
+        <div className="text-center">
+          <AlertCircle className="w-12 h-12 mx-auto mb-4 text-red-400" />
+          <p className="text-red-300">{error || 'No player data available'}</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 p-4 md:p-8">
-      {/* Header */}
-      <div className="max-w-7xl mx-auto mb-8">
-        <div className="flex items-center gap-3 mb-2">
-          {/* Explicitly size the icon to prevent the "giant icon" bug */}
-          <Trophy className="w-8 h-8 text-purple-400 flex-shrink-0" />
-          <h1 className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400">
-            KKL Keeper Manager
-          </h1>
-        </div>
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-purple-950 to-slate-950">
+      {/* Animated background elements */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
       </div>
-
-      {/* Search & Filter */}
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-4 mb-8">
-        <div className="relative flex-1">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-500" />
-          <input 
-            type="text" 
-            placeholder="Search players..." 
-            className="w-full bg-slate-900 border border-slate-800 rounded-lg py-2 pl-10 pr-4 focus:ring-2 focus:ring-purple-500 outline-none"
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
-        </div>
-        <select 
-          className="bg-slate-900 border border-slate-800 rounded-lg px-4 py-2 outline-none"
-          onChange={(e) => setSelectedTeam(e.target.value)}
-        >
-          <option value="all">All Teams</option>
-          {teams.map(t => <option key={t.name} value={t.name}>{t.name}</option>)}
-        </select>
-      </div>
-
-      {/* Team Cards */}
-      <div className="max-w-7xl mx-auto space-y-6">
-        {filteredTeams.map(team => (
-          <div key={team.name} className="bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden backdrop-blur-sm">
-            <div className="px-6 py-4 border-b border-slate-800 bg-slate-900/80">
-              <h2 className="text-xl font-bold text-purple-300">{team.name}</h2>
-              <p className="text-slate-500 text-sm">{team.owner}</p>
+      
+      <div className="relative z-10">
+        {/* Header */}
+        <header className="border-b border-purple-500/20 bg-slate-950/50 backdrop-blur-xl">
+          <div className="max-w-[1600px] mx-auto px-6 py-8">
+            <div className="flex items-center gap-4 mb-2">
+              <Trophy className="w-10 h-10 text-purple-400 flex-shrink-0" />
+              <h1 
+                className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400" 
+                style={{ fontFamily: '"Bebas Neue", "Impact", cursive' }}
+              >
+                Keeper League Manager
+              </h1>
             </div>
-            <div className="overflow-x-auto">
-              <table className="w-full text-left border-collapse">
-                <thead>
-                  <tr className="text-xs uppercase text-slate-500 bg-slate-950/50">
-                    <th className="px-6 py-3">Player</th>
-                    <th className="px-6 py-3">Acquired</th>
-                    <th className="px-6 py-3">Status</th>
-                    <th className="px-6 py-3">2026 Round</th>
-                    <th className="px-6 py-3">Years Left</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-slate-800">
-                  {team.players.map((p, i) => (
-                    <tr key={i} className={p.keeperStatus.eligible ? "hover:bg-purple-500/5" : "opacity-40"}>
-                      <td className="px-6 py-4 font-medium">{p.Player}</td>
-                      <td className="px-6 py-4 text-slate-400">{p.Acquired || 'FA'}</td>
-                      <td className="px-6 py-4">
-                        {p.keeperStatus.eligible ? (
-                          <span className="flex items-center gap-1 text-green-400 text-sm font-bold">
-                            <CheckCircle className="w-4 h-4" /> Eligible
-                          </span>
-                        ) : (
-                          <span className="flex items-center gap-1 text-red-400 text-sm">
-                            <XCircle className="w-4 h-4" /> {p.keeperStatus.reason}
-                          </span>
-                        )}
-                      </td>
-                      <td className="px-6 py-4">
-                        {p.keeperStatus.eligible ? (
-                          <span className="bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full font-bold border border-purple-500/30">
-                            RD {p.keeperStatus.nextRound} {p.keeperStatus.isRookie && '(R)'}
-                          </span>
-                        ) : '—'}
-                      </td>
-                      <td className="px-6 py-4 text-slate-400">
-                        {p.keeperStatus.eligible ? `${p.keeperStatus.yearsRemaining}y` : '—'}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+            <p 
+              className="text-purple-300/60 text-lg ml-14" 
+              style={{ fontFamily: '"Space Mono", monospace' }}
+            >
+              2026 Season Planning Tool
+            </p>
+          </div>
+        </header>
+        
+        {/* Stats Bar */}
+        <div className="max-w-[1600px] mx-auto px-6 py-6">
+          <div className="grid grid-cols-3 gap-4">
+            <div className="bg-gradient-to-br from-purple-900/40 to-purple-950/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/20">
+              <div className="flex items-center gap-3 mb-2">
+                <Award className="w-5 h-5 text-purple-400" />
+                <span className="text-purple-300/60 text-sm uppercase tracking-wider font-bold">Total Players</span>
+              </div>
+              <div className="text-4xl font-black text-purple-200">{stats.total}</div>
+            </div>
+            
+            <div className="bg-gradient-to-br from-green-900/40 to-emerald-950/40 backdrop-blur-sm rounded-2xl p-6 border border-green-500/20">
+              <div className="flex items-center gap-3 mb-2">
+                <CheckCircle className="w-5 h-5 text-green-400" />
+                <span className="text-green-300/60 text-sm uppercase tracking-wider font-bold">Eligible</span>
+              </div>
+              <div className="text-4xl font-black text-green-200">{stats.eligible}</div>
+            </div>
+            
+            <div className="bg-gradient-to-br from-red-900/40 to-rose-950/40 backdrop-blur-sm rounded-2xl p-6 border border-red-500/20">
+              <div className="flex items-center gap-3 mb-2">
+                <XCircle className="w-5 h-5 text-red-400" />
+                <span className="text-red-300/60 text-sm uppercase tracking-wider font-bold">Ineligible</span>
+              </div>
+              <div className="text-4xl font-black text-red-200">{stats.ineligible}</div>
             </div>
           </div>
-        ))}
+        </div>
+        
+        {/* Filters */}
+        <div className="max-w-[1600px] mx-auto px-6 py-4">
+          <div className="flex gap-4">
+            <div className="flex-1 relative">
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-purple-400" />
+              <input
+                type="text"
+                placeholder="Search players..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full pl-12 pr-4 py-3 bg-slate-900/50 border border-purple-500/20 rounded-xl text-purple-100 placeholder-purple-400/40 focus:outline-none focus:border-purple-500/60 focus:ring-2 focus:ring-purple-500/20"
+              />
+            </div>
+            
+            <select
+              value={selectedTeam}
+              onChange={(e) => setSelectedTeam(e.target.value)}
+              className="px-6 py-3 bg-slate-900/50 border border-purple-500/20 rounded-xl text-purple-100 focus:outline-none focus:border-purple-500/60 focus:ring-2 focus:ring-purple-500/20"
+            >
+              <option value="all">All Teams</option>
+              {teams.map(team => (
+                <option key={team.name} value={team.name}>{team.name}</option>
+              ))}
+            </select>
+          </div>
+        </div>
+        
+        {/* Teams Grid */}
+        <div className="max-w-[1600px] mx-auto px-6 py-6 pb-12">
+          <div className="space-y-6">
+            {filteredTeams.map(team => (
+              <div key={team.name} className="bg-slate-900/40 backdrop-blur-sm rounded-2xl border border-purple-500/20 overflow-hidden">
+                <div className="bg-gradient-to-r from-purple-900/60 to-blue-900/60 px-6 py-4 border-b border-purple-500/20">
+                  <h2 
+                    className="text-2xl font-black text-purple-100" 
+                    style={{ fontFamily: '"Bebas Neue", "Impact", cursive' }}
+                  >
+                    {team.name}
+                  </h2>
+                  <p className="text-purple-300/60 text-sm">{team.owner}</p>
+                </div>
+                
+                <div className="overflow-x-auto">
+                  <table className="w-full">
+                    <thead>
+                      <tr className="bg-slate-950/40 text-purple-300/60 text-xs uppercase tracking-wider">
+                        <th className="px-6 py-3 text-left font-bold whitespace-nowrap">Player</th>
+                        <th className="px-6 py-3 text-left font-bold whitespace-nowrap">Current Acq.</th>
+                        <th className="px-6 py-3 text-left font-bold whitespace-nowrap">Current Years</th>
+                        <th className="px-6 py-3 text-left font-bold whitespace-nowrap">Status</th>
+                        <th className="px-6 py-3 text-left font-bold whitespace-nowrap">2026 Round</th>
+                        <th className="px-6 py-3 text-left font-bold whitespace-nowrap">Years Left</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-purple-500/10">
+                      {team.players.map((player, idx) => (
+                        <tr 
+                          key={idx} 
+                          className={`transition-colors ${
+                            player.keeperStatus.eligible 
+                              ? 'hover:bg-green-500/5' 
+                              : 'hover:bg-red-500/5 opacity-60'
+                          }`}
+                        >
+                          <td className="px-6 py-4 text-purple-100 font-medium whitespace-nowrap">
+                            {player.Player}
+                          </td>
+                          <td className="px-6 py-4 text-purple-300/80 whitespace-nowrap">
+                            {player.Acquired || '—'}
+                          </td>
+                          <td className="px-6 py-4 text-purple-300/80 whitespace-nowrap">
+                            {player.Years || '—'}
+                          </td>
+                          <td className="px-6 py-4 whitespace-nowrap">
+                            {player.keeperStatus.eligible ? (
+                              <div className="flex items-center gap-2">
+                                <CheckCircle className="w-4 h-4 text-green-400" />
+                                <span className="text-green-400 font-bold text-sm">Eligible</span>
+                              </div>
+                            ) : (
+                              <div className="flex items-center gap-2">
+                                <XCircle className="w-4 h-4 text-red-400" />
+                                <span className="text-red-400 text-sm">{player.keeperStatus.reason}</span>
+                              </div>
+                            )}
+                          </td>
+                          <td className="px-6 py-4 whitespace-nowrap">
+                            {player.keeperStatus.eligible ? (
+                              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/20 border border-purple-500/40">
+                                <span className="text-purple-200 font-black text-lg">
+                                  {player.keeperStatus.nextRound}
+                                </span>
+                                {player.keeperStatus.isRookie && (
+                                  <span className="text-xs text-purple-400 font-bold">(R)</span>
+                                )}
+                              </div>
+                            ) : (
+                              <span className="text-purple-500/40">—</span>
+                            )}
+                          </td>
+                          <td className="px-6 py-4 whitespace-nowrap">
+                            {player.keeperStatus.eligible ? (
+                              <span className="text-purple-300 font-bold">
+                                {player.keeperStatus.yearsRemaining} {player.keeperStatus.yearsRemaining === 1 ? 'year' : 'years'}
+                              </span>
+                            ) : (
+                              <span className="text-purple-500/40">—</span>
+                            )}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        {/* Rules Footer */}
+        <div className="max-w-[1600px] mx-auto px-6 py-8 mb-8">
+          <div className="bg-slate-900/40 backdrop-blur-sm rounded-2xl border border-purple-500/20 p-6">
+            <div className="flex items-center gap-3 mb-4">
+              <AlertCircle className="w-6 h-6 text-purple-400" />
+              <h3 
+                className="text-xl font-black text-purple-100" 
+                style={{ fontFamily: '"Bebas Neue", "Impact", cursive' }}
+              >
+                Keeper Rules
+              </h3>
+            </div>
+            <div className="grid md:grid-cols-2 gap-4 text-purple-300/80 text-sm leading-relaxed">
+              <ul className="space-y-2">
+                <li className="flex items-start gap-2">
+                  <span className="text-purple-400 font-bold">•</span>
+                  <span>Players may be kept for a maximum of <strong className="text-purple-200">3 years</strong></span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-purple-400 font-bold">•</span>
+                  <span>Players drafted in <strong className="text-purple-200">rounds 1-3</strong> are ineligible</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-purple-400 font-bold">•</span>
+                  <span>Undrafted players count as <strong className="text-purple-200">12th round</strong> picks</span>
+                </li>
+              </ul>
+              <ul className="space-y-2">
+                <li className="flex items-start gap-2">
+                  <span className="text-purple-400 font-bold">•</span>
+                  <span>Regular players move up <strong className="text-purple-200">2 rounds</strong> when kept</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-purple-400 font-bold">•</span>
+                  <span>Rookies (R) stay in the <strong className="text-purple-200">same round</strong> when kept</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-purple-400 font-bold">•</span>
+                  <span>Years remaining calculated as current years <strong className="text-purple-200">minus 1</strong></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
