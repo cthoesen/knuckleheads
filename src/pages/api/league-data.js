@@ -19,7 +19,6 @@ export async function GET({ params, request }) {
       const section = sections[i];
 
       // Extract Team Name from anchor tag and Owner from ownername span
-      // Pattern: <a ...>Hipster Doofus</a><span class="ownername"> - Corey Thoesen</span>
       const teamMatch = section.match(/<a[^>]*>([^<]+)<\/a>/);
       const ownerMatch = section.match(/<span class="ownername">\s*-\s*([^<]+)<\/span>/);
       
@@ -35,43 +34,48 @@ export async function GET({ params, request }) {
         // Skip if this is a header row (has th tags)
         if (rowContent.includes('<th')) continue;
         
-        // Extract all td cells with their class names
-        const cellMatches = [...rowContent.matchAll(/<td\s+class="([^"]*)"[^>]*>(.*?)<\/td>/gs)];
+        // MFL has malformed HTML - contractinfo td is not closed properly
+        // We need to extract data more carefully
         
-        // Skip if not enough cells
-        if (cellMatches.length < 4) continue;
+        // Extract player name
+        const playerMatch = rowContent.match(/<td class="player">(.*?)<\/td>/s);
+        if (!playerMatch) continue;
+        const playerText = playerMatch[1].replace(/<[^>]*>/g, '').trim();
         
-        // Build a map of class -> content for easier access
-        const cellMap = {};
-        cellMatches.forEach(match => {
-          const className = match[1];
-          const content = match[2].replace(/<[^>]*>/g, '').trim();
-          cellMap[className] = content;
-        });
+        // Extract points (ignore)
+        // Extract week/bye (ignore)
         
-        // Skip rows without player data
-        if (!cellMap['player']) continue;
+        // Extract contractyear (Years)
+        const yearsMatch = rowContent.match(/<td class="contractyear">([^<]*)<\/td>/);
+        const years = yearsMatch ? yearsMatch[1].trim() : '';
         
-        // Map the columns based on MFL class names:
-        // class="player" -> Player name
-        // class="points" -> YTD Pts (we'll ignore this)
-        // class="week" -> Bye (we'll ignore this)
-        // class="contractyear" -> Years
-        // class="contractinfo" -> Keeper (K11, K12, etc.)
-        // class="drafted" -> Acquired (9.07, 17.06, etc.)
+        // Extract contractinfo (Keeper) - this one doesn't have a closing tag!
+        // Pattern: <td class="contractinfo">K11 or <td class="contractinfo"> (blank) followed by <td class="drafted">
+        const keeperMatch = rowContent.match(/<td class="contractinfo">([^<]*)/);
+        let keeper = '';
+        if (keeperMatch) {
+          // The content might have a newline and continue on next line
+          const keeperContent = keeperMatch[1].trim();
+          // Remove any trailing "K" numbers that might span lines
+          keeper = keeperContent.replace(/\n/g, ' ').trim();
+        }
+        
+        // Extract drafted (Acquired)
+        const acquiredMatch = rowContent.match(/<td class="drafted">([^<]*)<\/td>/);
+        const acquired = acquiredMatch ? acquiredMatch[1].trim() : '';
         
         players.push({
           Team: teamName,
           Owner: ownerName,
-          Player: cellMap['player'] || '',
-          Years: cellMap['contractyear'] || '',
-          Keeper: cellMap['contractinfo'] || '',
-          Acquired: cellMap['drafted'] || ''
+          Player: playerText,
+          Years: years,
+          Keeper: keeper,
+          Acquired: acquired
         });
       }
     }
     
-    console.log("Parsed players sample:", players.slice(0, 3)); // Log first 3 for debugging
+    console.log("Parsed players sample:", players.slice(0, 5)); // Log first 5 for debugging
     console.log("Total players parsed:", players.length);
     
     return new Response(JSON.stringify(players), {
